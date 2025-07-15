@@ -167,6 +167,17 @@ jobs:
             node markdown-converter-three-db.js latest
           fi
       
+      # NEW STEP: Generate diffs for changes
+      - name: Generate content diffs
+        if: ${{ env.USE_THREE_DB == 'true' }}
+        run: |
+          cd github-actions-backend
+          echo "🔄 Generating diffs for recent changes..."
+          node scripts/generate-diffs.js || {
+            echo "⚠️ Diff generation failed, but continuing..."
+            # Don't fail the workflow if diff generation fails
+          }
+      
       - name: Convert HTML to Markdown (legacy)
         if: ${{ env.USE_THREE_DB != 'true' }}
         run: |

@@ -146,6 +146,17 @@ jobs:
           GITHUB_ACTIONS: 'true'
           FORCE_SCRAPE: ${{ inputs.force_scrape }}
       
+      # NEW STEP: Clean up old HTML to prevent database bloat
+      - name: Clean up old HTML content
+        if: ${{ env.USE_THREE_DB == 'true' }}
+        run: |
+          cd github-actions-backend
+          echo "🧹 Running HTML cleanup to optimize database size..."
+          node scripts/cleanup-html.js || {
+            echo "⚠️ HTML cleanup failed, but continuing..."
+            # Don't fail the workflow if cleanup fails
+          }
+      
       # REMOVED: Markdown conversion - this belongs in process.yml
       
       - name: Upload database backup (three-db)
