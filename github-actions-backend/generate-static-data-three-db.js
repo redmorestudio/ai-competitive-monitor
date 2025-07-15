@@ -792,18 +792,18 @@ function extractContentSnippets(oldContent, newContent, contextLength = 300) {
 }
 
 /**
- * Generate recent changes data with enhanced AI analysis
+ * Generate recent changes data with enhanced AI analysis and diff support
  */
 function generateRecentChangesData(processedDb, intelligenceDb) {
     try {
-        console.log('📈 Generating recent changes data with AI analysis...');
+        console.log('📈 Generating recent changes data with AI analysis and diffs...');
         
         // FIXED: Attach intelligence database for cross-database queries
         const intelligenceDbPath = path.join(DATA_DIR, 'intelligence.db');
         processedDb.exec(`ATTACH DATABASE '${intelligenceDbPath}' AS intelligence`);
         
         try {
-            // Get recent changes
+            // Get recent changes (including diff data)
             const recentChanges = processedDb.prepare(`
                 SELECT 
                     cd.id,
@@ -814,6 +814,9 @@ function generateRecentChangesData(processedDb, intelligenceDb) {
                     cd.ai_explanation,
                     cd.ai_key_changes,
                     cd.ai_business_context,
+                    cd.content_diff,
+                    cd.diff_type,
+                    cd.diff_stats,
                     intelligence.urls.url,
                     intelligence.urls.url_type,
                     intelligence.companies.name as company,
@@ -898,6 +901,16 @@ function generateRecentChangesData(processedDb, intelligenceDb) {
                     }
                 }
                 
+                // Parse diff stats if available
+                let diffStats = null;
+                if (change.diff_stats) {
+                    try {
+                        diffStats = JSON.parse(change.diff_stats);
+                    } catch (e) {
+                        // Ignore parse errors
+                    }
+                }
+                
                 return {
                     id: change.id,
                     url: change.url,
@@ -926,7 +939,11 @@ function generateRecentChangesData(processedDb, intelligenceDb) {
                     after_content: contentSnippets.after,
                     // Add AI-generated insights if available
                     ai_explanation: change.ai_explanation || null,
-                    ai_business_context: change.ai_business_context || null
+                    ai_business_context: change.ai_business_context || null,
+                    // NEW: Add diff data
+                    has_diff: !!change.content_diff,
+                    diff_type: change.diff_type,
+                    diff_stats: diffStats
                 };
             });
             
