@@ -26,13 +26,12 @@
         }
         
         .collapsible-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
+            display: none;
+            transition: all 0.3s ease;
         }
         
         .collapsible-content.expanded {
-            max-height: 500px; /* Adjust as needed */
+            display: block;
         }
         
         .collapsible-arrow.expanded {
@@ -386,24 +385,29 @@
     <div id="loading">Loading AI Competitive Intelligence Graph...</div>
     
     <div id="info" style="display: none;">
-        <h3>🧠 AI Competitive Monitor</h3>
-        <div id="node-info">
-            <strong>Controls:</strong><br>
-            • Left-click + drag = Rotate view<br>
-            • Right-click + drag = Pan view<br>
-            • Middle-click + drag = Zoom<br>
-            • Scroll = Zoom in/out<br>
-            • Click node = Center camera<br>
-            • Right-click node = Show context menu
+        <div class="collapsible-header" onclick="toggleInfoPanel()" style="margin: 0; padding: 10px 0; border-bottom: 1px solid #333;">
+            <h3 style="margin: 0;">🧠 AI Competitive Monitor</h3>
+            <span class="collapsible-arrow" id="info-panel-arrow">▶</span>
         </div>
-        <div id="graph-summary" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #333;">
-            <div class="collapsible-header" onclick="toggleGraphSummary()">
-                <strong>Graph Intelligence</strong>
-                <span class="collapsible-arrow" id="graph-summary-arrow">▶</span>
+        <div class="collapsible-content" id="info-panel-content">
+            <div id="node-info">
+                <strong>Controls:</strong><br>
+                • Left-click + drag = Rotate view<br>
+                • Right-click + drag = Pan view<br>
+                • Middle-click + drag = Zoom<br>
+                • Scroll = Zoom in/out<br>
+                • Click node = Center camera<br>
+                • Right-click node = Show context menu
             </div>
-            <div class="collapsible-content" id="graph-summary-content">
-                <div id="tech-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
-                <div id="concept-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
+            <div id="graph-summary" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #333;">
+                <div class="collapsible-header" onclick="toggleGraphSummary()">
+                    <strong>Graph Intelligence</strong>
+                    <span class="collapsible-arrow" id="graph-summary-arrow">▶</span>
+                </div>
+                <div class="collapsible-content" id="graph-summary-content">
+                    <div id="tech-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
+                    <div id="concept-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -740,6 +744,16 @@
         function toggleGraphSummary() {
             const content = document.getElementById('graph-summary-content');
             const arrow = document.getElementById('graph-summary-arrow');
+            
+            content.classList.toggle('expanded');
+            arrow.classList.toggle('expanded');
+            
+            arrow.textContent = content.classList.contains('expanded') ? '▼' : '▶';
+        }
+        
+        function toggleInfoPanel() {
+            const content = document.getElementById('info-panel-content');
+            const arrow = document.getElementById('info-panel-arrow');
             
             content.classList.toggle('expanded');
             arrow.classList.toggle('expanded');
