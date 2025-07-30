@@ -846,6 +846,9 @@
             let recentChangesData = null;
             let floatingTooltipEnabled = true;
             let hoveredNode = null;
+            // Initialize mouse position variables
+            window.lastMouseX = window.innerWidth / 2;  // Center of screen
+            window.lastMouseY = window.innerHeight / 2; // Center of screen
             let tooltipTimeout;
             let tooltipFixed = false;
             let linkThreshold = 0;
@@ -2416,9 +2419,9 @@
                 tooltip.innerHTML = content;
                 tooltip.style.display = 'block';
                 
-                // Position tooltip near cursor
-                const x = event.clientX + 15;
-                const y = event.clientY + 15;
+                // Use tracked mouse position with robust fallbacks
+                const x = (window.lastMouseX !== undefined ? window.lastMouseX : window.innerWidth / 2) + 15;
+                const y = (window.lastMouseY !== undefined ? window.lastMouseY : window.innerHeight / 2) + 15;
                 
                 tooltip.style.left = `${x}px`;
                 tooltip.style.top = `${y}px`;
@@ -3963,8 +3966,18 @@
                     });
                 }, 1000);
             
-            // Track mouse movement for tooltip positioning only on initial show
+            // Initialize mouse tracking immediately
             document.addEventListener('mousemove', (e) => {
+                // Always update mouse position for tooltip positioning
+                window.lastMouseX = e.clientX;
+                window.lastMouseY = e.clientY;
+                
+                // Early initialization check
+                if (window.lastMouseX === undefined) {
+                    window.lastMouseX = e.clientX;
+                    window.lastMouseY = e.clientY;
+                }
+                
                 const tooltip = document.getElementById('entity-tooltip');
                 if (tooltip.style.display === 'block' && !tooltipFixed) {
                     // Only position tooltip on initial show, then fix it
