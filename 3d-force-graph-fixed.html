@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Competitive Monitor - 3D Force Graph</title>
     <style>
+        /* Collapsible section styling */
+        .collapsible-header {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 0;
+            border-bottom: 1px solid #333;
+            margin-bottom: 10px;
+        }
+        
+        .collapsible-header:hover {
+            color: #00ff88;
+        }
+        
+        .collapsible-arrow {
+            transition: transform 0.2s ease;
+            font-size: 12px;
+        }
+        
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .collapsible-content.expanded {
+            max-height: 500px; /* Adjust as needed */
+        }
+        
+        .collapsible-arrow.expanded {
+            transform: rotate(90deg);
+        }
+        
         body {
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -363,9 +397,14 @@
             • Right-click node = Show context menu
         </div>
         <div id="graph-summary" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #333;">
-            <strong>Graph Intelligence:</strong><br>
-            <div id="tech-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
-            <div id="concept-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
+            <div class="collapsible-header" onclick="toggleGraphSummary()">
+                <strong>Graph Intelligence</strong>
+                <span class="collapsible-arrow" id="graph-summary-arrow">▶</span>
+            </div>
+            <div class="collapsible-content" id="graph-summary-content">
+                <div id="tech-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
+                <div id="concept-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
+            </div>
         </div>
     </div>
     
@@ -696,6 +735,16 @@
             controls.classList.toggle('collapsed');
             
             btn.textContent = controls.classList.contains('collapsed') ? '▶' : '◀';
+        }
+        
+        function toggleGraphSummary() {
+            const content = document.getElementById('graph-summary-content');
+            const arrow = document.getElementById('graph-summary-arrow');
+            
+            content.classList.toggle('expanded');
+            arrow.classList.toggle('expanded');
+            
+            arrow.textContent = content.classList.contains('expanded') ? '▼' : '▶';
         }
         
         function setConfigMode(mode) {
