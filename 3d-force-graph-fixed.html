@@ -1305,10 +1305,12 @@
                         window.Graph = Graph; // Make it globally accessible
                         
                         // Add continuous 3D enforcement for first 30 seconds
+                        // BUT respect flatten mode if user has toggled it
                         let enforceCount = 0;
                         const enforce3D = setInterval(() => {
                             enforceCount++;
-                            if (Graph && Graph.numDimensions() !== 3) {
+                            // Only enforce 3D if flatten mode is not active
+                            if (Graph && Graph.numDimensions() !== 3 && !flattenGraph) {
                                 console.warn(`⚠️ ENFORCING 3D: Resetting numDimensions to 3 (attempt ${enforceCount})`);
                                 Graph.numDimensions(3);
                             }
@@ -3819,29 +3821,32 @@
                         const dims2D = Graph.numDimensions();
                         console.log(`✅ Flatten confirmed: dimensions = ${dims2D}`);
                         
-                        // Instead of dagMode, use a custom flattening approach
-                        // Add a strong flattening force to keep nodes at z=0
+                        // Add aggressive flattening force
                         Graph.d3Force('flatten', () => {
                             const nodes = Graph.graphData().nodes;
                             nodes.forEach(node => {
-                                // Smoothly push nodes toward z=0
-                                if (node.z !== undefined && Math.abs(node.z) > 0.1) {
-                                    node.vz = (node.vz || 0) - (node.z * 0.3); // Damping toward z=0
-                                    node.z *= 0.9; // Gradual flattening
-                                }
-                                // Ensure z stays near 0
-                                if (Math.abs(node.z || 0) < 0.1) {
+                                // Immediately flatten all nodes to z=0
+                                if (node.z !== undefined && node.z !== 0) {
                                     node.z = 0;
                                     node.vz = 0;
                                 }
                             });
                         });
                         
+                        // Also manually flatten all current nodes immediately
+                        const currentNodes = Graph.graphData().nodes;
+                        currentNodes.forEach(node => {
+                            if (node.z !== undefined) {
+                                node.z = 0;
+                                node.vz = 0;
+                            }
+                        });
+                        
                         // Increase X/Y forces to spread nodes out more in the plane
                         Graph.d3Force('charge').strength(CONFIG.forceStrength * 1.5);
                         Graph.d3Force('link').distance(CONFIG.linkDistance * 1.2);
                         
-                        console.log('📐 2D flattening forces applied');
+                        console.log('📐 2D flattening forces applied - all nodes flattened to z=0');
                         
                     } else {
                         console.log('🌍 UNFLATTEN MODE: Restoring 3D simulation');
