@@ -3955,6 +3955,14 @@
                 applyFilters();
             });
             
+            // DEBUG: Test if element exists
+            const flattenElement = document.getElementById('toggle-flatten-graph');
+            console.log('DEBUG: flatten element found:', !!flattenElement);
+            if (!flattenElement) {
+                console.error('ERROR: toggle-flatten-graph element not found!');
+                return;
+            }
+            
             // Flatten graph toggle - MOVED TO CORRECT SCOPE
             document.getElementById('toggle-flatten-graph').addEventListener('change', (e) => {
                 const isFlattening = e.target.checked;
