@@ -537,11 +537,17 @@
                     Show Change Rings
                     <input type="checkbox" id="toggle-change-rings">
                 </label>
-
+            </div>
+            
+            <div class="control-group simple-group">
+                <h4 style="font-size: 12px; margin-bottom: 8px;">View Mode</h4>
                 <label>
                     Flatten Graph (2D-like)
                     <input type="checkbox" id="toggle-flatten-graph">
                 </label>
+                <div class="info-text">
+                    Toggle between 3D physics and flat 2D layout
+                </div>
             </div>
             
             <div class="control-group simple-group">
@@ -3813,24 +3819,29 @@
                         const dims2D = Graph.numDimensions();
                         console.log(`✅ Flatten confirmed: dimensions = ${dims2D}`);
                         
-                        // Use dagMode to create a 2D layout
-                        Graph
-                            .dagMode('radialout') // This creates a 2D radial layout
-                            .dagLevelDistance(50);
-                        
-                        // Also add a force to keep nodes flat
-                        Graph.d3Force('flatten', (alpha) => {
+                        // Instead of dagMode, use a custom flattening approach
+                        // Add a strong flattening force to keep nodes at z=0
+                        Graph.d3Force('flatten', () => {
                             const nodes = Graph.graphData().nodes;
                             nodes.forEach(node => {
-                                if (node.z !== 0) {
+                                // Smoothly push nodes toward z=0
+                                if (node.z !== undefined && Math.abs(node.z) > 0.1) {
+                                    node.vz = (node.vz || 0) - (node.z * 0.3); // Damping toward z=0
+                                    node.z *= 0.9; // Gradual flattening
+                                }
+                                // Ensure z stays near 0
+                                if (Math.abs(node.z || 0) < 0.1) {
                                     node.z = 0;
                                     node.vz = 0;
                                 }
                             });
                         });
                         
-                        // Increase charge force to spread nodes in X/Y
-                        Graph.d3Force('charge').strength(CONFIG.forceStrength * 2);
+                        // Increase X/Y forces to spread nodes out more in the plane
+                        Graph.d3Force('charge').strength(CONFIG.forceStrength * 1.5);
+                        Graph.d3Force('link').distance(CONFIG.linkDistance * 1.2);
+                        
+                        console.log('📐 2D flattening forces applied');
                         
                     } else {
                         console.log('🌍 UNFLATTEN MODE: Restoring 3D simulation');
@@ -3840,18 +3851,28 @@
                         const dims3D = Graph.numDimensions();
                         console.log(`✅ 3D restored: dimensions = ${dims3D}`);
                         
-                        // Disable dag mode
-                        Graph.dagMode(null);
-                        
-                        // Disable flattening force
+                        // Remove flattening force
                         Graph.d3Force('flatten', null);
                         
-                        // Restore normal charge force
+                        // Restore normal forces
                         Graph.d3Force('charge').strength(CONFIG.forceStrength);
+                        Graph.d3Force('link').distance(CONFIG.linkDistance);
+                        
+                        // Add a small random Z velocity to help nodes spread into 3D
+                        const nodes = Graph.graphData().nodes;
+                        nodes.forEach(node => {
+                            if (node.z !== undefined) {
+                                // Give a small random Z push to break out of 2D plane
+                                node.vz = (Math.random() - 0.5) * 5;
+                            }
+                        });
+                        
+                        console.log('🌍 3D forces restored, Z velocities applied');
                     }
                     
-                    // Refresh the simulation
-                    Graph.refresh();
+                    // Reheat the simulation to apply changes immediately
+                    Graph.d3ReheatSimulation();
+                    console.log('🔥 Simulation reheated for mode change');
                 }
             });
             
