@@ -1273,6 +1273,254 @@
                 }
             }
             
+            function initializeGraph() {
+                console.log('🚀 Initializing 3D force graph with enhanced physics...');
+                
+                try {
+                    // Only create new instance if it doesn't exist
+                    if (!Graph) {
+                        const container = document.getElementById('3d-graph');
+                        Graph = ForceGraph3D()(container)
+                            .width(container.clientWidth)
+                            .height(container.clientHeight)
+                            .backgroundColor('#0a0a0f');
+                        
+                        // ⚠️ CRITICAL: Set 3D dimensions IMMEDIATELY after creation
+                        console.log('🎯 Setting numDimensions(3) - CRITICAL for 3D physics!');
+                        Graph.numDimensions(3);
+                        
+                        // Verify it was set correctly
+                        const dimensions = Graph.numDimensions();
+                        console.log(`✅ 3D Dimensions confirmed: ${dimensions}`);
+                        if (dimensions !== 3) {
+                            console.error('❌ CRITICAL ERROR: Failed to set 3D dimensions!');
+                        }
+                        
+                        window.Graph = Graph; // Make it globally accessible
+                        
+                        // Add continuous 3D enforcement for first 30 seconds
+                        let enforceCount = 0;
+                        const enforce3D = setInterval(() => {
+                            enforceCount++;
+                            if (Graph && Graph.numDimensions() !== 3) {
+                                console.warn(`⚠️ ENFORCING 3D: Resetting numDimensions to 3 (attempt ${enforceCount})`);
+                                Graph.numDimensions(3);
+                            }
+                            if (enforceCount >= 30) {
+                                clearInterval(enforce3D);
+                                console.log('🔒 3D enforcement completed after 30 checks');
+                            }
+                        }, 1000);
+                    }
+                    
+                    // Use full graph data for initial setup
+                    const initialData = {
+                        nodes: graphData.nodes.map(n => ({...n})),
+                        links: graphData.links.map(l => ({...l}))
+                    };
+                    
+                    Graph
+                        .graphData(initialData)
+                        .nodeLabel(node => `${node.name}\n${node.group}\nInterest: ${node.interestLevel}/10\nURLs: ${node.urlCount}\nConnections: ${node.connectionCount}`)
+                        .nodeAutoColorBy('group')
+                        .nodeVal('val')
+                        .nodeThreeObject(node => {
+                            if (!labelsEnabled) {
+                                // Return null to use default sphere
+                                return null;
+                            }
+                            return createNodeObject(node);
+                        })
+                        .nodeThreeObjectExtend(false)
+                        .linkWidth(link => getLinkWidth(link))
+                        .linkColor(link => {
+                            if (monochrome) return '#666666';
+                            
+                            // Advanced link coloring based on type
+                            if (link.label === 'uses concept') {
+                                return '#4ecdc4'; // Cyan for concept links
+                            } else if (link.label) {
+                                return '#00ff88'; // Green for technology links
+                            }
+                            return 'rgba(150, 150, 150, 0.5)'; // Default
+                        })
+                        .linkOpacity(CONFIG.linkOpacity)
+                        .linkDirectionalParticles(2)
+                        .linkDirectionalParticleSpeed(0.001) // Much slower - was 0.006
+                        .linkDirectionalParticleColor(() => '#00ff88')
+                        // numDimensions(3) already set immediately after graph creation above
+                        .onNodeHover((node, prevNode) => {
+                            hoveredNode = node;
+                            const tooltip = document.getElementById('entity-tooltip');
+                            
+                            if (node && floatingTooltipEnabled) {
+                                // Build tooltip content with clickable tags
+                                let content = `<strong>${node.name}</strong><br>`;
+                                content += `Type: ${node.group}<br>`;
+                                content += `Interest Level: ${node.interestLevel}/10<br>`;
+                                content += `URLs: ${node.urlCount}<br>`;
+                                content += `Connections: ${node.connectionCount}<br>`;
+                                
+                                // Find the company data to get technologies and concepts
+                                const companyData = rawData.dashboard.company_activity.find(c => c.company === node.id);
+                                if (companyData) {
+                                    // Show products if available
+                                    if (companyData.intelligence?.products?.length > 0) {
+                                        content += '<br><strong>Products:</strong><br>';
+                                        content += '<div style="font-size: 11px; color: #aaa;">';
+                                        companyData.intelligence.products.forEach(product => {
+                                            content += `• ${product.name || product}<br>`;
+                                        });
+                                        content += '</div>';
+                                    }
+                                    
+                                    if (companyData.intelligence?.ai_technologies?.length > 0) {
+                                        content += '<br><strong>Technologies:</strong><br>';
+                                        companyData.intelligence.ai_technologies.forEach(tech => {
+                                            content += `<span class="clickable-tag" onclick="window.filterByTag('${tech.replace(/'/g, "\\'")}')">${tech}</span>`;
+                                        });
+                                    }
+                                    if (companyData.intelligence?.ai_ml_concepts?.length > 0) {
+                                        content += '<br><strong>AI Concepts:</strong><br>';
+                                        companyData.intelligence.ai_ml_concepts.forEach(concept => {
+                                            content += `<span class="clickable-tag" onclick="window.filterByTag('${concept.replace(/'/g, "\\'")}')">${concept}</span>`;
+                                        });
+                                    }
+                                }
+                                
+                                // Check for recent changes
+                                if (node.isRecentChange && recentChangesData) {
+                                    const change = recentChangesData.changes.find(c => c.company === node.id);
+                                    if (change) {
+                                        content += '<br><br><strong style="color: #ff0000;">Recent Change:</strong><br>';
+                                        content += `<em>${change.summary}</em><br>`;
+                                        content += `<small>${change.time_ago}</small><br>`;
+                                        if (change.ai_explanation) {
+                                            content += `<br><small style="color: #aaa;">${change.ai_explanation}</small>`;
+                                        }
+                                    }
+                                }
+                                
+                                tooltip.innerHTML = content;
+                                tooltip.style.display = 'block';
+                                tooltipFixed = false; // Reset position lock for new tooltip
+                            } else {
+                                // Add delay before hiding to allow mouse to reach tooltip
+                                tooltipTimeout = setTimeout(() => {
+                                    tooltip.style.display = 'none';
+                                }, 300);
+                            }
+                            
+                            // Update the static info panel
+                            if (node) {
+                                let infoContent = `<strong>${node.name}</strong><br>Type: ${node.group}<br>Interest Level: ${node.interestLevel}/10<br>URLs: ${node.urlCount}<br>Connections: ${node.connectionCount}`;
+                                
+                                // Add tech/concept count for this company
+                                const companyData = rawData.dashboard.company_activity.find(c => c.company === node.id);
+                                if (companyData) {
+                                    const techCount = companyData.intelligence?.ai_technologies?.length || 0;
+                                    const conceptCount = companyData.intelligence?.ai_ml_concepts?.length || 0;
+                                    const productCount = companyData.intelligence?.products?.length || 0;
+                                    
+                                    if (techCount > 0 || conceptCount > 0 || productCount > 0) {
+                                        infoContent += '<br><br><em style="color: #888; font-size: 11px;">';
+                                        if (productCount > 0) infoContent += `${productCount} products • `;
+                                        if (techCount > 0) infoContent += `${techCount} technologies • `;
+                                        if (conceptCount > 0) infoContent += `${conceptCount} concepts`;
+                                        infoContent += '</em>';
+                                    }
+                                }
+                                
+                                document.getElementById('node-info').innerHTML = infoContent;
+                            } else {
+                                document.getElementById('node-info').innerHTML = '<strong>Controls:</strong><br>• Left-click + drag = Rotate view<br>• Right-click + drag = Pan view<br>• Middle-click + drag = Zoom<br>• Scroll = Zoom in/out<br>• Click node = Center camera<br>• Right-click node = Show context menu';
+                            }
+                        })
+                        .onNodeClick(node => {
+                            const distance = 300;
+                            const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
+                            Graph.cameraPosition(
+                                { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio },
+                                node,
+                                3000
+                            );
+                        })
+                        .onNodeRightClick((node, event) => {
+                            // Show context menu
+                            event.preventDefault();
+                            const menu = document.getElementById('context-menu');
+                            const title = document.getElementById('context-menu-title');
+                            
+                            contextMenuNode = node;
+                            title.textContent = node.name;
+                            
+                            // Position menu at cursor
+                            menu.style.left = event.clientX + 'px';
+                            menu.style.top = event.clientY + 'px';
+                            menu.style.display = 'block';
+                            
+                            // Prevent menu from going off screen
+                            const rect = menu.getBoundingClientRect();
+                            if (rect.right > window.innerWidth) {
+                                menu.style.left = (event.clientX - rect.width) + 'px';
+                            }
+                            if (rect.bottom > window.innerHeight) {
+                                menu.style.top = (event.clientY - rect.height) + 'px';
+                            }
+                            
+                            return false; // Prevent default browser context menu
+                        })
+                        .enablePointerInteraction(true)
+                        .enableNodeDrag(true);
+                    
+                    Graph.d3Force('charge').strength(CONFIG.forceStrength);
+                    Graph.d3Force('link').distance(CONFIG.linkDistance);
+                    
+                    Graph.cameraPosition({ x: 0, y: 0, z: 500 });
+                    
+                    // Wait a bit for graph to stabilize before applying draw mode
+                    setTimeout(() => {
+                        if (currentDrawMode !== 'normal') {
+                            applyDrawMode();
+                        }
+                    }, 500);
+                    
+                    console.log('✅ Graph initialized successfully with 3D physics!');
+                    
+                    // Final verification after 3 seconds
+                    setTimeout(() => {
+                        const finalDimensions = Graph.numDimensions();
+                        const nodes = Graph.graphData().nodes;
+                        let hasZCoords = false;
+                        let zStats = { min: 0, max: 0, nonZero: 0 };
+                        
+                        nodes.forEach(node => {
+                            if (node.z !== undefined) {
+                                if (node.z !== 0) {
+                                    hasZCoords = true;
+                                    zStats.nonZero++;
+                                }
+                                zStats.min = Math.min(zStats.min, node.z || 0);
+                                zStats.max = Math.max(zStats.max, node.z || 0);
+                            }
+                        });
+                        
+                        console.log(`📊 3D PHYSICS STATUS:`);
+                        console.log(`   - Dimensions: ${finalDimensions}`);
+                        console.log(`   - Nodes with Z coords: ${zStats.nonZero}/${nodes.length}`);
+                        console.log(`   - Z range: ${zStats.min.toFixed(2)} to ${zStats.max.toFixed(2)}`);
+                        console.log(`   - 3D Physics Active: ${hasZCoords ? '✅ YES' : '❌ NO'}`);
+                        
+                        if (!hasZCoords) {
+                            console.error('❌ 3D PHYSICS FAILED - nodes are still flat!');
+                        }
+                    }, 3000);
+                    
+                } catch (error) {
+                    console.error('❌ Error initializing graph:', error);
+                    document.getElementById('node-info').textContent = 'Error: ' + error.message;
+                }
+            }
             function buildGraph() {
                 console.log('Building graph...');
                 
@@ -3432,254 +3680,6 @@
                 });
             }
             
-            function initializeGraph() {
-                console.log('🚀 Initializing 3D force graph with enhanced physics...');
-                
-                try {
-                    // Only create new instance if it doesn't exist
-                    if (!Graph) {
-                        const container = document.getElementById('3d-graph');
-                        Graph = ForceGraph3D()(container)
-                            .width(container.clientWidth)
-                            .height(container.clientHeight)
-                            .backgroundColor('#0a0a0f');
-                        
-                        // ⚠️ CRITICAL: Set 3D dimensions IMMEDIATELY after creation
-                        console.log('🎯 Setting numDimensions(3) - CRITICAL for 3D physics!');
-                        Graph.numDimensions(3);
-                        
-                        // Verify it was set correctly
-                        const dimensions = Graph.numDimensions();
-                        console.log(`✅ 3D Dimensions confirmed: ${dimensions}`);
-                        if (dimensions !== 3) {
-                            console.error('❌ CRITICAL ERROR: Failed to set 3D dimensions!');
-                        }
-                        
-                        window.Graph = Graph; // Make it globally accessible
-                        
-                        // Add continuous 3D enforcement for first 30 seconds
-                        let enforceCount = 0;
-                        const enforce3D = setInterval(() => {
-                            enforceCount++;
-                            if (Graph && Graph.numDimensions() !== 3) {
-                                console.warn(`⚠️ ENFORCING 3D: Resetting numDimensions to 3 (attempt ${enforceCount})`);
-                                Graph.numDimensions(3);
-                            }
-                            if (enforceCount >= 30) {
-                                clearInterval(enforce3D);
-                                console.log('🔒 3D enforcement completed after 30 checks');
-                            }
-                        }, 1000);
-                    }
-                    
-                    // Use full graph data for initial setup
-                    const initialData = {
-                        nodes: graphData.nodes.map(n => ({...n})),
-                        links: graphData.links.map(l => ({...l}))
-                    };
-                    
-                    Graph
-                        .graphData(initialData)
-                        .nodeLabel(node => `${node.name}\n${node.group}\nInterest: ${node.interestLevel}/10\nURLs: ${node.urlCount}\nConnections: ${node.connectionCount}`)
-                        .nodeAutoColorBy('group')
-                        .nodeVal('val')
-                        .nodeThreeObject(node => {
-                            if (!labelsEnabled) {
-                                // Return null to use default sphere
-                                return null;
-                            }
-                            return createNodeObject(node);
-                        })
-                        .nodeThreeObjectExtend(false)
-                        .linkWidth(link => getLinkWidth(link))
-                        .linkColor(link => {
-                            if (monochrome) return '#666666';
-                            
-                            // Advanced link coloring based on type
-                            if (link.label === 'uses concept') {
-                                return '#4ecdc4'; // Cyan for concept links
-                            } else if (link.label) {
-                                return '#00ff88'; // Green for technology links
-                            }
-                            return 'rgba(150, 150, 150, 0.5)'; // Default
-                        })
-                        .linkOpacity(CONFIG.linkOpacity)
-                        .linkDirectionalParticles(2)
-                        .linkDirectionalParticleSpeed(0.001) // Much slower - was 0.006
-                        .linkDirectionalParticleColor(() => '#00ff88')
-                        // numDimensions(3) already set immediately after graph creation above
-                        .onNodeHover((node, prevNode) => {
-                            hoveredNode = node;
-                            const tooltip = document.getElementById('entity-tooltip');
-                            
-                            if (node && floatingTooltipEnabled) {
-                                // Build tooltip content with clickable tags
-                                let content = `<strong>${node.name}</strong><br>`;
-                                content += `Type: ${node.group}<br>`;
-                                content += `Interest Level: ${node.interestLevel}/10<br>`;
-                                content += `URLs: ${node.urlCount}<br>`;
-                                content += `Connections: ${node.connectionCount}<br>`;
-                                
-                                // Find the company data to get technologies and concepts
-                                const companyData = rawData.dashboard.company_activity.find(c => c.company === node.id);
-                                if (companyData) {
-                                    // Show products if available
-                                    if (companyData.intelligence?.products?.length > 0) {
-                                        content += '<br><strong>Products:</strong><br>';
-                                        content += '<div style="font-size: 11px; color: #aaa;">';
-                                        companyData.intelligence.products.forEach(product => {
-                                            content += `• ${product.name || product}<br>`;
-                                        });
-                                        content += '</div>';
-                                    }
-                                    
-                                    if (companyData.intelligence?.ai_technologies?.length > 0) {
-                                        content += '<br><strong>Technologies:</strong><br>';
-                                        companyData.intelligence.ai_technologies.forEach(tech => {
-                                            content += `<span class="clickable-tag" onclick="window.filterByTag('${tech.replace(/'/g, "\\'")}')">${tech}</span>`;
-                                        });
-                                    }
-                                    if (companyData.intelligence?.ai_ml_concepts?.length > 0) {
-                                        content += '<br><strong>AI Concepts:</strong><br>';
-                                        companyData.intelligence.ai_ml_concepts.forEach(concept => {
-                                            content += `<span class="clickable-tag" onclick="window.filterByTag('${concept.replace(/'/g, "\\'")}')">${concept}</span>`;
-                                        });
-                                    }
-                                }
-                                
-                                // Check for recent changes
-                                if (node.isRecentChange && recentChangesData) {
-                                    const change = recentChangesData.changes.find(c => c.company === node.id);
-                                    if (change) {
-                                        content += '<br><br><strong style="color: #ff0000;">Recent Change:</strong><br>';
-                                        content += `<em>${change.summary}</em><br>`;
-                                        content += `<small>${change.time_ago}</small><br>`;
-                                        if (change.ai_explanation) {
-                                            content += `<br><small style="color: #aaa;">${change.ai_explanation}</small>`;
-                                        }
-                                    }
-                                }
-                                
-                                tooltip.innerHTML = content;
-                                tooltip.style.display = 'block';
-                                tooltipFixed = false; // Reset position lock for new tooltip
-                            } else {
-                                // Add delay before hiding to allow mouse to reach tooltip
-                                tooltipTimeout = setTimeout(() => {
-                                    tooltip.style.display = 'none';
-                                }, 300);
-                            }
-                            
-                            // Update the static info panel
-                            if (node) {
-                                let infoContent = `<strong>${node.name}</strong><br>Type: ${node.group}<br>Interest Level: ${node.interestLevel}/10<br>URLs: ${node.urlCount}<br>Connections: ${node.connectionCount}`;
-                                
-                                // Add tech/concept count for this company
-                                const companyData = rawData.dashboard.company_activity.find(c => c.company === node.id);
-                                if (companyData) {
-                                    const techCount = companyData.intelligence?.ai_technologies?.length || 0;
-                                    const conceptCount = companyData.intelligence?.ai_ml_concepts?.length || 0;
-                                    const productCount = companyData.intelligence?.products?.length || 0;
-                                    
-                                    if (techCount > 0 || conceptCount > 0 || productCount > 0) {
-                                        infoContent += '<br><br><em style="color: #888; font-size: 11px;">';
-                                        if (productCount > 0) infoContent += `${productCount} products • `;
-                                        if (techCount > 0) infoContent += `${techCount} technologies • `;
-                                        if (conceptCount > 0) infoContent += `${conceptCount} concepts`;
-                                        infoContent += '</em>';
-                                    }
-                                }
-                                
-                                document.getElementById('node-info').innerHTML = infoContent;
-                            } else {
-                                document.getElementById('node-info').innerHTML = '<strong>Controls:</strong><br>• Left-click + drag = Rotate view<br>• Right-click + drag = Pan view<br>• Middle-click + drag = Zoom<br>• Scroll = Zoom in/out<br>• Click node = Center camera<br>• Right-click node = Show context menu';
-                            }
-                        })
-                        .onNodeClick(node => {
-                            const distance = 300;
-                            const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
-                            Graph.cameraPosition(
-                                { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio },
-                                node,
-                                3000
-                            );
-                        })
-                        .onNodeRightClick((node, event) => {
-                            // Show context menu
-                            event.preventDefault();
-                            const menu = document.getElementById('context-menu');
-                            const title = document.getElementById('context-menu-title');
-                            
-                            contextMenuNode = node;
-                            title.textContent = node.name;
-                            
-                            // Position menu at cursor
-                            menu.style.left = event.clientX + 'px';
-                            menu.style.top = event.clientY + 'px';
-                            menu.style.display = 'block';
-                            
-                            // Prevent menu from going off screen
-                            const rect = menu.getBoundingClientRect();
-                            if (rect.right > window.innerWidth) {
-                                menu.style.left = (event.clientX - rect.width) + 'px';
-                            }
-                            if (rect.bottom > window.innerHeight) {
-                                menu.style.top = (event.clientY - rect.height) + 'px';
-                            }
-                            
-                            return false; // Prevent default browser context menu
-                        })
-                        .enablePointerInteraction(true)
-                        .enableNodeDrag(true);
-                    
-                    Graph.d3Force('charge').strength(CONFIG.forceStrength);
-                    Graph.d3Force('link').distance(CONFIG.linkDistance);
-                    
-                    Graph.cameraPosition({ x: 0, y: 0, z: 500 });
-                    
-                    // Wait a bit for graph to stabilize before applying draw mode
-                    setTimeout(() => {
-                        if (currentDrawMode !== 'normal') {
-                            applyDrawMode();
-                        }
-                    }, 500);
-                    
-                    console.log('✅ Graph initialized successfully with 3D physics!');
-                    
-                    // Final verification after 3 seconds
-                    setTimeout(() => {
-                        const finalDimensions = Graph.numDimensions();
-                        const nodes = Graph.graphData().nodes;
-                        let hasZCoords = false;
-                        let zStats = { min: 0, max: 0, nonZero: 0 };
-                        
-                        nodes.forEach(node => {
-                            if (node.z !== undefined) {
-                                if (node.z !== 0) {
-                                    hasZCoords = true;
-                                    zStats.nonZero++;
-                                }
-                                zStats.min = Math.min(zStats.min, node.z || 0);
-                                zStats.max = Math.max(zStats.max, node.z || 0);
-                            }
-                        });
-                        
-                        console.log(`📊 3D PHYSICS STATUS:`);
-                        console.log(`   - Dimensions: ${finalDimensions}`);
-                        console.log(`   - Nodes with Z coords: ${zStats.nonZero}/${nodes.length}`);
-                        console.log(`   - Z range: ${zStats.min.toFixed(2)} to ${zStats.max.toFixed(2)}`);
-                        console.log(`   - 3D Physics Active: ${hasZCoords ? '✅ YES' : '❌ NO'}`);
-                        
-                        if (!hasZCoords) {
-                            console.error('❌ 3D PHYSICS FAILED - nodes are still flat!');
-                        }
-                    }, 3000);
-                    
-                } catch (error) {
-                    console.error('❌ Error initializing graph:', error);
-                    document.getElementById('node-info').textContent = 'Error: ' + error.message;
-                }
-            }
             
             // Event handlers
             document.getElementById('toggle-links').addEventListener('change', (e) => {
