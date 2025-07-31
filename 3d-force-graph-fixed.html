@@ -688,6 +688,10 @@
     </div>
 
     <script>
+        // Version indicator - ALWAYS logs on page load
+        console.log('🚀 3D Force Graph Version: 1.0.1 - Flatten Toggle Fix Applied - July 31, 2025');
+        console.log('📍 This version includes: Flatten toggle in correct scope (initializeGraph)');
+        
         // Global variables and functions for UI
         let selectedTypes = new Set();
         let contextMenuNode = null;
@@ -1032,6 +1036,7 @@
             
             // Load and process data
             async function loadData() {
+                console.log('\u2705 loadData() EXECUTING - Version 1.0.1 with flatten toggle fix');
                 try {
                     console.log('Loading data...');
                     
@@ -1283,6 +1288,7 @@
             }
             
             function initializeGraph() {
+                console.log('\u2714\ufe0f initializeGraph() STARTING - Version 1.0.1');
                 console.log('🚀 Initializing 3D force graph with enhanced physics...');
                 
                 try {
@@ -2709,7 +2715,11 @@
                 });
                 
                 // Flatten graph toggle - 2D/3D mode switcher
-                document.getElementById('toggle-flatten-graph').addEventListener('change', (e) => {
+                console.log('\u2728 ATTACHING FLATTEN TOGGLE EVENT LISTENER - Version 1.0.1');
+                const flattenToggle = document.getElementById('toggle-flatten-graph');
+                console.log('Flatten toggle element found:', !!flattenToggle);
+                if (flattenToggle) {
+                    flattenToggle.addEventListener('change', (e) => {
                     const isFlattening = e.target.checked;
                     console.log('FLATTEN TOGGLE: ' + (isFlattening ? 'FLATTENING to 2D' : 'EXPANDING to 3D'));
                     
@@ -2753,7 +2763,10 @@
                         Graph.d3ReheatSimulation();
                         console.log('Switched to 3D layout');
                     }
-                });
+                    });
+                } else {
+                    console.error('FLATTEN TOGGLE ELEMENT NOT FOUND!');
+                }
                 
                 // Physics sliders
                 const forceSlider = document.getElementById('force-strength');
