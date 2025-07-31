@@ -389,7 +389,7 @@
     
     <div id="info" style="display: none;">
         <div class="collapsible-header" onclick="toggleInfoPanel()" style="margin: 0; padding: 10px 0; border-bottom: 1px solid #333;">
-            <h3 style="margin: 0;">🧠 AI Competitive Monitor</h3>
+            <h3 style="margin: 0;">AI Competitive Monitor</h3>
             <span class="collapsible-arrow" id="info-panel-arrow">▶</span>
         </div>
         <div class="collapsible-content" id="info-panel-content">
@@ -689,8 +689,8 @@
 
     <script>
         // Version indicator - ALWAYS logs on page load
-        console.log('🚀 3D Force Graph Version: 1.0.1 - Flatten Toggle Fix Applied - July 31, 2025');
-        console.log('📍 This version includes: Flatten toggle in correct scope (initializeGraph)');
+        console.log('3D Force Graph Version: 1.0.2 - Flatten Toggle Fix + No Emojis - July 31, 2025');
+        console.log('This version includes: Flatten toggle in correct scope (initializeGraph)');
         
         // Global variables and functions for UI
         let selectedTypes = new Set();
@@ -1036,7 +1036,7 @@
             
             // Load and process data
             async function loadData() {
-                console.log('\u2705 loadData() EXECUTING - Version 1.0.1 with flatten toggle fix');
+                console.log('loadData() EXECUTING - Version 1.0.2 with flatten toggle fix');
                 try {
                     console.log('Loading data...');
                     
@@ -1288,8 +1288,8 @@
             }
             
             function initializeGraph() {
-                console.log('\u2714\ufe0f initializeGraph() STARTING - Version 1.0.1');
-                console.log('🚀 Initializing 3D force graph with enhanced physics...');
+                console.log('initializeGraph() STARTING - Version 1.0.2');
+                console.log('Initializing 3D force graph with enhanced physics...');
                 
                 try {
                     // Only create new instance if it doesn't exist
@@ -1300,13 +1300,13 @@
                             .height(container.clientHeight)
                             .backgroundColor('#0a0a0f');
                         
-                        // ⚠️ CRITICAL: Set 3D dimensions IMMEDIATELY after creation
-                        console.log('🎯 Setting numDimensions(3) - CRITICAL for 3D physics!');
+                        // CRITICAL: Set 3D dimensions IMMEDIATELY after creation
+                        console.log('Setting numDimensions(3) - CRITICAL for 3D physics!');
                         Graph.numDimensions(3);
                         
                         // Verify it was set correctly
                         const dimensions = Graph.numDimensions();
-                        console.log(`✅ 3D Dimensions confirmed: ${dimensions}`);
+                        console.log(`3D Dimensions confirmed: ${dimensions}`);
                         if (dimensions !== 3) {
                             console.error('❌ CRITICAL ERROR: Failed to set 3D dimensions!');
                         }
@@ -1502,7 +1502,7 @@
                         }
                     }, 500);
                     
-                    console.log('✅ Graph initialized successfully with 3D physics!');
+                    console.log('Graph initialized successfully with 3D physics!');
                     
                     // Final verification after 3 seconds
                     setTimeout(() => {
@@ -1522,14 +1522,14 @@
                             }
                         });
                         
-                        console.log(`📊 3D PHYSICS STATUS:`);
+                        console.log(`3D PHYSICS STATUS:`);
                         console.log(`   - Dimensions: ${finalDimensions}`);
                         console.log(`   - Nodes with Z coords: ${zStats.nonZero}/${nodes.length}`);
                         console.log(`   - Z range: ${zStats.min.toFixed(2)} to ${zStats.max.toFixed(2)}`);
-                        console.log(`   - 3D Physics Active: ${hasZCoords ? '✅ YES' : '❌ NO'}`);
+                        console.log(`   - 3D Physics Active: ${hasZCoords ? 'YES' : 'NO'}`);
                         
                         if (!hasZCoords) {
-                            console.error('❌ 3D PHYSICS FAILED - nodes are still flat!');
+                            console.error('3D PHYSICS FAILED - nodes are still flat!');
                         }
                     }, 3000);
                     
@@ -2546,7 +2546,7 @@
                 
                 // Add change indicator
                 if (node.hasRecentChange && node.changeDetails) {
-                    content += `<div class="change-indicator">⚡ Changed ${Math.round(node.changeDetails.hoursAgo)}h ago<br>`;
+                    content += `<div class="change-indicator">Changed ${Math.round(node.changeDetails.hoursAgo)}h ago<br>`;
                     content += `Interest: ${node.changeDetails.latestChange.interest_level}/10</div>`;
                 }
                 
@@ -2715,7 +2715,7 @@
                 });
                 
                 // Flatten graph toggle - 2D/3D mode switcher
-                console.log('\u2728 ATTACHING FLATTEN TOGGLE EVENT LISTENER - Version 1.0.1');
+                console.log('ATTACHING FLATTEN TOGGLE EVENT LISTENER - Version 1.0.2');
                 const flattenToggle = document.getElementById('toggle-flatten-graph');
                 console.log('Flatten toggle element found:', !!flattenToggle);
                 if (flattenToggle) {
