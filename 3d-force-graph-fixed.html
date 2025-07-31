@@ -3649,6 +3649,7 @@
                         .linkDirectionalParticles(2)
                         .linkDirectionalParticleSpeed(0.001) // Much slower - was 0.006
                         .linkDirectionalParticleColor(() => '#00ff88')
+                        .numDimensions(3)  // Force 3D simulation instead of 2D default
                         .onNodeHover((node, prevNode) => {
                             hoveredNode = node;
                             const tooltip = document.getElementById('entity-tooltip');
