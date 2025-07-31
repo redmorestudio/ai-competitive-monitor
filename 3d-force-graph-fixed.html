@@ -1533,8 +1533,11 @@
                         }
                     }, 3000);
                     
+                    console.log('UI controls initialization moved inline...');
+                    // Controls are initialized directly in initializeGraph now
+                    
                 } catch (error) {
-                    console.error('❌ Error initializing graph:', error);
+                    console.error('Error initializing graph:', error);
                     document.getElementById('node-info').textContent = 'Error: ' + error.message;
                 }
             }
@@ -2697,6 +2700,10 @@
                     });
                 });
                 
+                console.log('Starting UI controls initialization...');
+                
+                // Initialize all UI controls
+                console.log('Setting up node visibility toggles...');
 
                 // Node visibility toggles
                 document.getElementById('toggle-tech-nodes').addEventListener('change', (e) => {
