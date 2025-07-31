@@ -2768,33 +2768,63 @@
                     console.error('FLATTEN TOGGLE ELEMENT NOT FOUND!');
                 }
                 
+                console.log('About to initialize physics sliders...');
                 // Physics sliders
+                try {
                 const forceSlider = document.getElementById('force-strength');
                 const forceValue = document.getElementById('force-value');
-                forceSlider.addEventListener('input', (e) => {
-                    CONFIG.forceStrength = parseFloat(e.target.value);
-                    forceValue.textContent = CONFIG.forceStrength;
-                    Graph.d3Force('charge').strength(CONFIG.forceStrength);
-                    Graph.d3ReheatSimulation();
-                });
+                if (forceSlider && forceValue) {
+                    forceSlider.addEventListener('input', (e) => {
+                        CONFIG.forceStrength = parseFloat(e.target.value);
+                        forceValue.textContent = CONFIG.forceStrength;
+                        if (Graph && Graph.d3Force) {
+                            const chargeForce = Graph.d3Force('charge');
+                            if (chargeForce) {
+                                chargeForce.strength(CONFIG.forceStrength);
+                                Graph.d3ReheatSimulation();
+                            }
+                        }
+                    });
+                }
                 
                 const distanceSlider = document.getElementById('link-distance');
                 const distanceValue = document.getElementById('distance-value');
-                distanceSlider.addEventListener('input', (e) => {
-                    CONFIG.linkDistance = parseFloat(e.target.value);
-                    distanceValue.textContent = CONFIG.linkDistance;
-                    Graph.d3Force('link').distance(CONFIG.linkDistance);
-                    Graph.d3ReheatSimulation();
-                });
+                if (distanceSlider && distanceValue) {
+                    distanceSlider.addEventListener('input', (e) => {
+                        CONFIG.linkDistance = parseFloat(e.target.value);
+                        distanceValue.textContent = CONFIG.linkDistance;
+                        if (Graph && Graph.d3Force) {
+                            const linkForce = Graph.d3Force('link');
+                            if (linkForce) {
+                                linkForce.distance(CONFIG.linkDistance);
+                                Graph.d3ReheatSimulation();
+                            }
+                        }
+                    });
+                }
+                } catch (error) {
+                    console.error('Error initializing physics sliders:', error);
+                }
                 
+                try {
                 const gravitySlider = document.getElementById('center-gravity');
                 const gravityValue = document.getElementById('gravity-value');
-                gravitySlider.addEventListener('input', (e) => {
-                    const gravity = parseFloat(e.target.value);
-                    gravityValue.textContent = gravity;
-                    Graph.d3Force('center').strength(gravity);
-                    Graph.d3ReheatSimulation();
-                });
+                if (gravitySlider && gravityValue) {
+                    gravitySlider.addEventListener('input', (e) => {
+                        const gravity = parseFloat(e.target.value);
+                        gravityValue.textContent = gravity;
+                        if (Graph && Graph.d3Force) {
+                            const centerForce = Graph.d3Force('center');
+                            if (centerForce) {
+                                centerForce.strength(gravity);
+                                Graph.d3ReheatSimulation();
+                            }
+                        }
+                    });
+                }
+                } catch (error) {
+                    console.error('Error initializing gravity slider:', error);
+                }
                 
                 // Link threshold slider
                 const thresholdSlider = document.getElementById('link-threshold');
@@ -3978,8 +4008,12 @@
                 document.getElementById('entity-tooltip').style.display = 'none';
             });
             
-            // Tech/Concept search functionality
-            document.getElementById('tech-search').addEventListener('input', (e) => {
+            // Initialize all UI controls with error handling
+            try {
+                    // Tech/Concept search functionality
+                    const techSearch = document.getElementById('tech-search');
+                    if (techSearch) {
+                        techSearch.addEventListener('input', (e) => {
                 const searchTerm = e.target.value.toLowerCase();
                 const items = document.querySelectorAll('#tech-filters .checkbox-item');
                 
