@@ -3809,126 +3809,63 @@
             });
             
 
-            // Flatten graph control
+            // Flatten graph control - FIXED VERSION
             document.getElementById('toggle-flatten-graph').addEventListener('change', (e) => {
-                flattenGraph = e.target.checked;
-                if (Graph) {
-                    if (flattenGraph) {
-                        console.log('📐 FLATTEN MODE: Switching to 2D simulation');
-                        
-                        // Switch to 2D simulation for flattening
-                        Graph.numDimensions(2);
-                        const dims2D = Graph.numDimensions();
-                        console.log(`✅ Flatten confirmed: dimensions = ${dims2D}`);
-                        
-                        // Create custom Z-flattening force using D3 force pattern
-                        const flattenForce = () => {
-                            let nodes = [];
-                            let strength = 0.1;
-                            
-                            function force(alpha) {
-                                for (let i = 0; i < nodes.length; i++) {
-                                    const node = nodes[i];
-                                    if (node.z !== undefined) {
-                                        // Apply force toward z=0
-                                        node.vz = (node.vz || 0) - node.z * strength * alpha;
-                                    }
-                                }
-                            }
-                            
-                            force.initialize = function(_nodes) {
-                                nodes = _nodes;
-                            };
-                            
-                            force.strength = function(_) {
-                                return arguments.length ? (strength = +_, force) : strength;
-                            };
-                            
-                            return force;
-                        };
-                        
-                        Graph.d3Force('flatten', flattenForce().strength(0.3));
-                        
-                        // Also manually flatten all current nodes immediately
-                        const currentNodes = Graph.graphData().nodes;
-                        let flattened = 0;
-                        currentNodes.forEach(node => {
-                            if (node.z !== undefined) {
-                                if (node.z !== 0) flattened++;
-                                node.z = 0;
-                                node.vz = 0;
-                                node.fz = 0; // Clear any z-force
-                            }
-                        });
-                        
-                        console.log(`🎯 Aggressively flattened ${flattened} nodes to z=0`);
-                        
-                        // Force multiple refreshes to ensure visual update  
-                        Graph.refresh();
-                        setTimeout(() => Graph.refresh(), 50);
-                        setTimeout(() => Graph.refresh(), 100);
-                        
-                        // Increase X/Y forces to spread nodes out more in the plane
-                        Graph.d3Force('charge').strength(CONFIG.forceStrength * 1.5);
-                        Graph.d3Force('link').distance(CONFIG.linkDistance * 1.2);
-                        
-                        console.log('📐 2D flattening forces applied - all nodes flattened to z=0');
-                        
-                        // Force immediate visual update
-                        Graph.refresh();
-                        
-                        // Verify flattening after a short delay
-                        setTimeout(() => {
-                            const stillNotFlat = currentNodes.filter(n => n.z !== undefined && Math.abs(n.z) > 0.01);
-                            if (stillNotFlat.length > 0) {
-                                console.warn(`⚠️ Warning: ${stillNotFlat.length} nodes still not completely flat`);
-                                stillNotFlat.forEach(node => {
-                                    node.z = 0;
-                                    node.vz = 0;
-                                });
-                                Graph.refresh();
-                            } else {
-                                console.log('✅ Verification complete: All nodes successfully flattened');
-                            }
-                        }, 200);
-                        
-                    } else {
-                        console.log('🌍 UNFLATTEN MODE: Restoring 3D simulation');
-                        
-                        // Switch back to 3D simulation
-                        Graph.numDimensions(3);
-                        const dims3D = Graph.numDimensions();
-                        console.log(`✅ 3D restored: dimensions = ${dims3D}`);
-                        
-                        // Remove flattening force
-                        Graph.d3Force('flatten', null);
-                        
-                        // Restore normal forces
-                        Graph.d3Force('charge').strength(CONFIG.forceStrength);
-                        Graph.d3Force('link').distance(CONFIG.linkDistance);
-                        
-                        // Add stronger random Z velocity to help nodes spread into 3D
-                        const nodes = Graph.graphData().nodes;
-                        let spread = 0;
-                        nodes.forEach(node => {
-                            if (node.z !== undefined) {
-                                // Give a stronger random Z push to break out of 2D plane
-                                node.vz = (Math.random() - 0.5) * 10;
-                                node.fz = 0; // Clear any remaining z-force constraints
-                                spread++;
-                            }
-                        });
-                        
-                        console.log(`🌍 3D forces restored, Z velocities applied to ${spread} nodes`);
-                        
-                        // Force visual update for 3D mode
-                        Graph.refresh();
-                    }
-                    
-                    // Reheat the simulation to apply changes immediately
-                    Graph.d3ReheatSimulation();
-                    console.log('🔥 Simulation reheated for mode change');
+                const isFlattening = e.target.checked;
+                console.log(`🎯 FLATTEN TOGGLE: ${isFlattening ? 'FLATTENING' : 'EXPANDING'}`);
+                
+                if (!Graph) {
+                    console.error('Graph not available');
+                    return;
                 }
+                
+                if (isFlattening) {
+                    console.log('📐 Flattening to 2D...');
+                    
+                    // Switch to 2D
+                    Graph.numDimensions(2);
+                    
+                    // Flatten all nodes immediately
+                    const nodes = Graph.graphData().nodes;
+                    let flattened = 0;
+                    nodes.forEach(node => {
+                        if (node.z !== undefined && Math.abs(node.z) > 0.1) {
+                            node.z = 0;
+                            node.vz = 0;
+                            flattened++;
+                        }
+                    });
+                    
+                    console.log(`🎯 Flattened ${flattened} nodes`);
+                    
+                    // Force visual update
+                    Graph.refresh();
+                    
+                } else {
+                    console.log('🌍 Expanding to 3D...');
+                    
+                    // Switch to 3D
+                    Graph.numDimensions(3);
+                    
+                    // Give nodes random Z velocities
+                    const nodes = Graph.graphData().nodes;
+                    let expanded = 0;
+                    nodes.forEach(node => {
+                        if (node.z !== undefined) {
+                            node.vz = (Math.random() - 0.5) * 20;
+                            expanded++;
+                        }
+                    });
+                    
+                    console.log(`🌍 Applied 3D forces to ${expanded} nodes`);
+                    
+                    // Force visual update
+                    Graph.refresh();
+                }
+                
+                // Reheat simulation
+                Graph.d3ReheatSimulation();
+                console.log('🔥 Simulation reheated');
             });
             
             // Handle window resize
