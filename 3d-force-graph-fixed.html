@@ -3821,8 +3821,19 @@
                         const dims2D = Graph.numDimensions();
                         console.log(`✅ Flatten confirmed: dimensions = ${dims2D}`);
                         
-                        // Add aggressive flattening force using d3.forceZ
-                        Graph.d3Force('flatten', d3.forceZ(0).strength(0.8));
+                        // Add custom flattening force (d3.forceZ not available in this D3 version)
+                        Graph.d3Force('flatten', () => {
+                            const nodes = Graph.graphData().nodes;
+                            nodes.forEach(node => {
+                                if (node.z !== undefined && node.z !== 0) {
+                                    // Apply strong force toward z=0
+                                    const zForce = -node.z * 0.8; // Strong attraction to z=0
+                                    node.vz = (node.vz || 0) + zForce;
+                                    // Also directly set z closer to 0
+                                    node.z *= 0.7; // Gradually flatten
+                                }
+                            });
+                        });
                         
                         // Also manually flatten all current nodes immediately
                         const currentNodes = Graph.graphData().nodes;
