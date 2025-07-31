@@ -689,7 +689,7 @@
 
     <script>
         // Version indicator - ALWAYS logs on page load
-        console.log('3D Force Graph Version: 1.0.2 - Flatten Toggle Fix + No Emojis - July 31, 2025');
+        console.log('3D Force Graph Version: 1.0.3 - Controls initialization fix - July 31, 2025');
         console.log('This version includes: Flatten toggle in correct scope (initializeGraph)');
         
         // Global variables and functions for UI
@@ -1036,7 +1036,7 @@
             
             // Load and process data
             async function loadData() {
-                console.log('loadData() EXECUTING - Version 1.0.2 with flatten toggle fix');
+                console.log('loadData() EXECUTING - Version 1.0.3 with controls fix');
                 try {
                     console.log('Loading data...');
                     
@@ -1288,7 +1288,7 @@
             }
             
             function initializeGraph() {
-                console.log('initializeGraph() STARTING - Version 1.0.2');
+                console.log('initializeGraph() STARTING - Version 1.0.3');
                 console.log('Initializing 3D force graph with enhanced physics...');
                 
                 try {
@@ -2722,7 +2722,7 @@
                 });
                 
                 // Flatten graph toggle - 2D/3D mode switcher
-                console.log('ATTACHING FLATTEN TOGGLE EVENT LISTENER - Version 1.0.2');
+                console.log('ATTACHING FLATTEN TOGGLE EVENT LISTENER - Version 1.0.3');
                 const flattenToggle = document.getElementById('toggle-flatten-graph');
                 console.log('Flatten toggle element found:', !!flattenToggle);
                 if (flattenToggle) {
