@@ -3955,15 +3955,15 @@
             // Flatten graph toggle - MOVED TO CORRECT SCOPE
             document.getElementById('toggle-flatten-graph').addEventListener('change', (e) => {
                 const isFlattening = e.target.checked;
-                console.log(`🎯 FLATTEN TOGGLE: ${isFlattening ? 'FLATTENING' : 'EXPANDING'}`);
+                console.log('FLATTEN TOGGLE: ' + (isFlattening ? 'FLATTENING' : 'EXPANDING'));
                 
                 if (!Graph) {
-                    console.error('❌ Graph not available');
+                    console.error('Graph not available');
                     return;
                 }
                 
                 if (isFlattening) {
-                    console.log('📐 Flattening to 2D...');
+                    console.log('Flattening to 2D...');
                     Graph.numDimensions(2);
                     
                     const nodes = Graph.graphData().nodes;
@@ -3977,11 +3977,11 @@
                         }
                     });
                     
-                    console.log(`🎯 Flattened ${flattened} nodes to z=0`);
+                    console.log('Flattened ' + flattened + ' nodes to z=0');
                     Graph.refresh();
                     
                 } else {
-                    console.log('🌍 Expanding to 3D...');
+                    console.log('Expanding to 3D...');
                     Graph.numDimensions(3);
                     
                     const nodes = Graph.graphData().nodes;
@@ -3998,12 +3998,12 @@
                         }
                     });
                     
-                    console.log(`🌍 Applied 3D forces to ${expanded} nodes`);
+                    console.log('Applied 3D forces to ' + expanded + ' nodes');
                     Graph.refresh();
                 }
                 
                 Graph.d3ReheatSimulation();
-                console.log('🔥 Simulation reheated');
+                console.log('Simulation reheated');
             });
             
             // Start loading
