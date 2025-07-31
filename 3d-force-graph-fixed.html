@@ -2268,25 +2268,6 @@
                     });
             }
             
-                // Handle window resize
-                window.addEventListener('resize', () => {
-                    Graph.width(container.clientWidth);
-                    Graph.height(container.clientHeight);
-                });
-                
-                // Setup floating tooltip click handler
-                const tooltip = document.getElementById('entity-tooltip');
-                tooltip.addEventListener('click', (e) => {
-                    if (e.target.classList.contains('clickable-tag')) {
-                        e.stopPropagation();
-                        return;
-                    }
-                    tooltipFixed = !tooltipFixed;
-                    if (!tooltipFixed && !hoveredNode) {
-                        hideFloatingTooltip();
-                    }
-                });
-            }
             
             function showFloatingTooltip(node) {
                 const tooltip = document.getElementById('entity-tooltip');
