@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Physics Debug Test</title>
+    <style>
+        body { margin: 0; background: #0a0a0f; color: #eee; font-family: monospace; }
+        #debug { position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.8); padding: 10px; z-index: 1000; }
+        #graph { width: 100vw; height: 100vh; }
+        .debug-line { margin: 2px 0; font-size: 12px; }
+        .error { color: #ff4444; }
+        .success { color: #00ff88; }
+        .warning { color: #ffaa00; }
+    </style>
+    <script src="https://unpkg.com/three@0.152.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
+    <script src="https://unpkg.com/d3@7.8.5/dist/d3.min.js"></script>
+</head>
+<body>
+    <div id="debug">
+        <div class="debug-line"><strong>3D Physics Debug</strong></div>
+        <div id="debug-log"></div>
+    </div>
+    <div id="graph"></div>
+
+    <script>
+        // Debug logging
+        function debugLog(message, type = 'info') {
+            const logDiv = document.getElementById('debug-log');
+            const className = type === 'error' ? 'error' : type === 'success' ? 'success' : type === 'warning' ? 'warning' : '';
+            logDiv.innerHTML += `<div class="debug-line ${className}">• ${message}</div>`;
+            console.log(`[3D DEBUG] ${message}`);
+        }
+
+        // Create simple test data
+        const testData = {
+            nodes: [
+                { id: 'A', name: 'Node A', val: 3 },
+                { id: 'B', name: 'Node B', val: 2 },  
+                { id: 'C', name: 'Node C', val: 4 },
+                { id: 'D', name: 'Node D', val: 2 },
+                { id: 'E', name: 'Node E', val: 3 }
+            ],
+            links: [
+                { source: 'A', target: 'B' },
+                { source: 'B', target: 'C' },
+                { source: 'C', target: 'D' },
+                { source: 'D', target: 'E' },
+                { source: 'E', target: 'A' }
+            ]
+        };
+
+        debugLog('Starting 3D force graph initialization...');
+
+        try {
+            // Create the graph
+            const Graph = ForceGraph3D()
+                (document.getElementById('graph'))
+                .width(window.innerWidth)
+                .height(window.innerHeight)
+                .backgroundColor('#0a0a0f');
+
+            debugLog('Graph instance created successfully', 'success');
+
+            // Check initial numDimensions
+            const initialDimensions = Graph.numDimensions();
+            debugLog(`Initial numDimensions: ${initialDimensions}`, initialDimensions === 3 ? 'success' : 'warning');
+
+            // Set numDimensions BEFORE loading data
+            debugLog('Setting numDimensions(3) BEFORE data load...');
+            Graph.numDimensions(3);
+            
+            const afterSetDimensions = Graph.numDimensions();
+            debugLog(`After setting numDimensions(3): ${afterSetDimensions}`, afterSetDimensions === 3 ? 'success' : 'error');
+
+            // Load data
+            debugLog('Loading test data...');
+            Graph.graphData(testData);
+            
+            // Check dimensions after data load
+            const afterDataLoad = Graph.numDimensions();
+            debugLog(`After data load: ${afterDataLoad}`, afterDataLoad === 3 ? 'success' : 'error');
+
+            // Check d3 force simulation dimensions
+            setTimeout(() => {
+                try {
+                    const simulation = Graph.d3Force();
+                    const forceCenter = simulation.force('center');
+                    const forceCharge = simulation.force('charge');
+                    const forceLink = simulation.force('link');
+                    
+                    debugLog(`D3 forces found: center=${!!forceCenter}, charge=${!!forceCharge}, link=${!!forceLink}`);
+                    
+                    // Check if nodes have Z coordinates
+                    const nodes = Graph.graphData().nodes;
+                    let hasZCoords = false;
+                    nodes.forEach(node => {
+                        if (node.z !== undefined && node.z !== 0) {
+                            hasZCoords = true;
+                        }
+                    });
+                    
+                    debugLog(`Nodes have Z coordinates: ${hasZCoords}`, hasZCoords ? 'success' : 'error');
+                    
+                    // Sample node positions
+                    if (nodes.length > 0) {
+                        const sample = nodes[0];
+                        debugLog(`Sample node position: x=${sample.x?.toFixed(2)}, y=${sample.y?.toFixed(2)}, z=${sample.z?.toFixed(2)}`);
+                    }
+
+                    // Force re-check dimensions every 2 seconds
+                    setInterval(() => {
+                        const currentDims = Graph.numDimensions();
+                        const currentTime = new Date().toLocaleTimeString();
+                        debugLog(`[${currentTime}] Current dimensions: ${currentDims}`, currentDims === 3 ? 'success' : 'error');
+                    }, 2000);
+
+                } catch (error) {
+                    debugLog(`Error checking forces: ${error.message}`, 'error');
+                }
+            }, 1000);
+
+            // Add manual dimension enforcement
+            debugLog('Setting up manual dimension enforcement...');
+            let enforceCount = 0;
+            const enforceInterval = setInterval(() => {
+                enforceCount++;
+                const current = Graph.numDimensions();
+                if (current !== 3) {
+                    debugLog(`ENFORCING: Resetting numDimensions from ${current} to 3 (attempt ${enforceCount})`, 'warning');
+                    Graph.numDimensions(3);
+                }
+                if (enforceCount > 10) {
+                    clearInterval(enforceInterval);
+                    debugLog('Stopped manual enforcement after 10 attempts');
+                }
+            }, 500);
+
+            // Test the flatten toggle functionality
+            debugLog('Testing flatten functionality...');
+            setTimeout(() => {
+                debugLog('Flattening to 2D...');
+                Graph.numDimensions(2);
+                const after2D = Graph.numDimensions();
+                debugLog(`After flatten: ${after2D}`, after2D === 2 ? 'success' : 'error');
+                
+                setTimeout(() => {
+                    debugLog('Unflattening to 3D...');
+                    Graph.numDimensions(3);
+                    const after3D = Graph.numDimensions();
+                    debugLog(`After unflatten: ${after3D}`, after3D === 3 ? 'success' : 'error');
+                }, 2000);
+            }, 5000);
+
+        } catch (error) {
+            debugLog(`CRITICAL ERROR: ${error.message}`, 'error');
+            debugLog(`Stack: ${error.stack}`, 'error');
+        }
+
+        // Window resize handler
+        window.addEventListener('resize', () => {
+            if (Graph) {
+                Graph.width(window.innerWidth).height(window.innerHeight);
+            }
+        });
+    </script>
+</body>
+</html>
