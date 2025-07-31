@@ -537,10 +537,7 @@
                     Show Change Rings
                     <input type="checkbox" id="toggle-change-rings">
                 </label>
-                <label>
-                    Auto-rotate
-                    <input type="checkbox" id="toggle-auto-rotate">
-                </label>
+
                 <label>
                     Flatten Graph (2D-like)
                     <input type="checkbox" id="toggle-flatten-graph">
@@ -917,7 +914,6 @@
             let linkThreshold = 0;
             let monochrome = false;
             let showChangeRings = false;
-            let autoRotate = false;
             let nodeSizeMode = 'activity';
             let showTechNodes = true;
             let showConceptNodes = true;
@@ -2343,6 +2339,7 @@
                     .linkDirectionalParticleColor(() => '#00ff88')
                     .d3AlphaDecay(0.02)
                     .d3VelocityDecay(0.4)
+                    .numDimensions(3)  // Force 3D simulation instead of 2D default
                     .d3Force('charge', d3.forceManyBody().strength(CONFIG.forceStrength))
                     .d3Force('link', d3.forceLink().distance(CONFIG.linkDistance))
                     .d3Force('center', d3.forceCenter().strength(0.3))
@@ -3920,20 +3917,16 @@
                 // TODO: Implement change rings visualization
             });
             
-            document.getElementById('toggle-auto-rotate').addEventListener('change', (e) => {
-                autoRotate = e.target.checked;
-                if (Graph && Graph.controls) {
-                    Graph.controls().autoRotate = autoRotate;
-                    Graph.controls().autoRotateSpeed = 0.5;
-                }
-            });
-            
+
             // Flatten graph control
             document.getElementById('toggle-flatten-graph').addEventListener('change', (e) => {
                 flattenGraph = e.target.checked;
                 if (Graph) {
                     if (flattenGraph) {
                         console.log('Enabling flatten mode');
+                        
+                        // Switch to 2D simulation for flattening
+                        Graph.numDimensions(2);
                         
                         // Use dagMode to create a 2D layout
                         Graph
@@ -3955,7 +3948,10 @@
                         Graph.d3Force('charge').strength(CONFIG.forceStrength * 2);
                         
                     } else {
-                        console.log('Disabling flatten mode');
+                        console.log('Disabling flatten mode - restoring 3D simulation');
+                        
+                        // Switch back to 3D simulation
+                        Graph.numDimensions(3);
                         
                         // Disable dag mode
                         Graph.dagMode(null);
