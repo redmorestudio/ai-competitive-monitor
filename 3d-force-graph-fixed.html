@@ -2708,6 +2708,53 @@
                     applyFilters();
                 });
                 
+                // Flatten graph toggle - 2D/3D mode switcher
+                document.getElementById('toggle-flatten-graph').addEventListener('change', (e) => {
+                    const isFlattening = e.target.checked;
+                    console.log('FLATTEN TOGGLE: ' + (isFlattening ? 'FLATTENING to 2D' : 'EXPANDING to 3D'));
+                    
+                    if (!Graph) {
+                        console.error('Graph not available');
+                        return;
+                    }
+                    
+                    if (isFlattening) {
+                        console.log('Switching to 2D mode...');
+                        Graph.numDimensions(2);
+                        
+                        // Flatten existing nodes to z=0
+                        const { nodes } = Graph.graphData();
+                        nodes.forEach(node => {
+                            if (node.z !== undefined && Math.abs(node.z) > 0.1) {
+                                node.z = 0;
+                                node.vz = 0;
+                                node.fz = 0;
+                            }
+                        });
+                        
+                        // Reheat simulation for redistribution
+                        Graph.d3ReheatSimulation();
+                        console.log('Switched to 2D layout');
+                    } else {
+                        console.log('Switching to 3D mode...');
+                        Graph.numDimensions(3);
+                        
+                        // Give nodes some initial z-spread
+                        const { nodes } = Graph.graphData();
+                        nodes.forEach(node => {
+                            if (node.z !== undefined) {
+                                // Random initial z-position to encourage 3D spread
+                                node.z = (Math.random() - 0.5) * 100;
+                                node.vz = 0;
+                            }
+                        });
+                        
+                        // Reheat with stronger force for better 3D distribution
+                        Graph.d3ReheatSimulation();
+                        console.log('Switched to 3D layout');
+                    }
+                });
+                
                 // Physics sliders
                 const forceSlider = document.getElementById('force-strength');
                 const forceValue = document.getElementById('force-value');
@@ -3955,6 +4002,7 @@
                 applyFilters();
             });
             
+            /* DUPLICATE CODE - REMOVED: This event listener is now properly placed in initializeGraph function
             // DEBUG: Test if element exists
             const flattenElement = document.getElementById('toggle-flatten-graph');
             console.log('DEBUG: flatten element found:', !!flattenElement);
@@ -4016,6 +4064,7 @@
                 Graph.d3ReheatSimulation();
                 console.log('Simulation reheated');
             });
+            */ // END OF DUPLICATE CODE REMOVAL
             
             // Start loading
             if (document.readyState === 'loading') {
