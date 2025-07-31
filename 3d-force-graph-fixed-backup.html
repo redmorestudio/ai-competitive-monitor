@@ -2268,6 +2268,156 @@
                     });
             }
             
+            function initializeGraph() {
+                console.log('Initializing 3D force graph...');
+                
+                const container = document.getElementById('3d-graph');
+                
+                Graph = ForceGraph3D()(container)
+                    .backgroundColor('#0a0a0f')
+                    .nodeId('id')
+                    .nodeLabel(node => {
+                        if (!floatingTooltipEnabled) {
+                            const companyData = rawData.dashboard.company_activity.find(c => c.company === node.id);
+                            let label = `<strong>${node.name}</strong><br>`;
+                            label += `Type: ${node.group}<br>`;
+                            label += `Interest Level: ${node.interestLevel || 0}<br>`;
+                            label += `URLs: ${node.urlCount || 0}<br>`;
+                            label += `Connections: ${node.connectionCount || 0}<br>`;
+                            
+                            if (node.hasRecentChange && node.changeDetails) {
+                                label += `<br><span style="color: #ff4444;">⚡ Changed ${Math.round(node.changeDetails.hoursAgo)}h ago</span><br>`;
+                                label += `Interest: ${node.changeDetails.latestChange.interest_level}/10<br>`;
+                            }
+                            
+                            if (companyData?.intelligence?.products?.length > 0) {
+                                label += '<br><strong>Products:</strong><br>';
+                                companyData.intelligence.products.forEach(p => {
+                                    label += `• ${p.name}<br>`;
+                                });
+                            }
+                            
+                            if (companyData?.intelligence?.ai_technologies?.length > 0) {
+                                label += '<br><strong>Technologies:</strong><br>';
+                                companyData.intelligence.ai_technologies.forEach(tech => {
+                                    label += `<span class="clickable-tag" onclick="filterByTag('${tech}')">${tech}</span> `;
+                                });
+                                label += '<br>';
+                            }
+                            
+                            if (companyData?.intelligence?.ai_ml_concepts?.length > 0) {
+                                label += '<br><strong>AI Concepts:</strong><br>';
+                                companyData.intelligence.ai_ml_concepts.forEach(concept => {
+                                    label += `<span class="clickable-tag" onclick="filterByTag('${concept}')">${concept}</span> `;
+                                });
+                            }
+                            
+                            return label;
+                        }
+                        return ''; // Return empty for floating tooltip
+                    })
+                    .nodeColor(node => monochrome ? '#00ffff' : (node.currentColor || node.color))
+                    .nodeVal(node => node.val || 1)
+                    .nodeThreeObject(node => {
+                        if (!labelsEnabled) {
+                            return null;
+                        }
+                        return createNodeObject(node);
+                    })
+                    .nodeThreeObjectExtend(true)
+                    .linkColor(link => {
+                        if (monochrome) return '#00ffff';
+                        if (link.label === 'uses concept') return '#4ecdc4';
+                        if (link.label === 'uses technology') return '#00ff88';
+                        return CONFIG.linkOpacity ? `rgba(150, 150, 150, ${CONFIG.linkOpacity})` : '#666';
+                    })
+                    .linkWidth(link => getLinkWidth(link))
+                    .linkOpacity(CONFIG.linkOpacity)
+                    .linkDirectionalParticles(link => particlesEnabled ? 2 : 0)
+                    .linkDirectionalParticleSpeed(0.005)
+                    .linkDirectionalParticleWidth(1.5)
+                    .linkDirectionalParticleColor(() => '#00ff88')
+                    .d3AlphaDecay(0.02)
+                    .d3VelocityDecay(0.4)
+                    .numDimensions(3)  // Force 3D simulation instead of 2D default
+                    .d3Force('charge', d3.forceManyBody().strength(CONFIG.forceStrength))
+                    .d3Force('link', d3.forceLink().distance(CONFIG.linkDistance))
+                    .d3Force('center', d3.forceCenter().strength(0.3))
+                    .d3Force('collide', d3.forceCollide(node => Math.sqrt(node.val) * 10))
+                    // Add custom Z-constraint force (initially null)
+                    .d3Force('flatten', null)
+                    .onNodeClick(node => {
+                        // Center camera on clicked node
+                        const distance = 300;
+                        const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
+                        Graph.cameraPosition(
+                            { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio },
+                            node,
+                            1000
+                        );
+                    })
+                    .onNodeDrag((node, translate) => {
+                        // Apply flattening constraint during drag
+                        if (flattenGraph) {
+                            node.z = 0;
+                            node.fz = 0;
+                        }
+                    })
+                    .onNodeDragEnd(node => {
+                        // Apply final flattening constraint
+                        if (flattenGraph) {
+                            node.z = 0;
+                            node.vz = 0;
+                            node.fz = 0;
+                        }
+                    })
+                    .onNodeRightClick(node => {
+                        // Show context menu
+                        const menu = document.getElementById('context-menu');
+                        const title = document.getElementById('context-menu-title');
+                        title.textContent = node.name;
+                        contextMenuNode = node;
+                        
+                        // Position menu at mouse location
+                        menu.style.display = 'block';
+                        menu.style.left = `${event.clientX}px`;
+                        menu.style.top = `${event.clientY}px`;
+                        
+                        // Prevent menu from going off screen
+                        const rect = menu.getBoundingClientRect();
+                        if (rect.right > window.innerWidth) {
+                            menu.style.left = `${window.innerWidth - rect.width - 10}px`;
+                        }
+                        if (rect.bottom > window.innerHeight) {
+                            menu.style.top = `${window.innerHeight - rect.height - 10}px`;
+                        }
+                        
+                        event.preventDefault();
+                    })
+                    .onNodeHover(node => {
+                        if (!floatingTooltipEnabled) return;
+                        
+                        hoveredNode = node;
+                        
+                        if (node && !tooltipFixed) {
+                            clearTimeout(tooltipTimeout);
+                            tooltipTimeout = setTimeout(() => {
+                                showFloatingTooltip(node);
+                            }, 300); // Small delay to prevent flashing
+                        } else if (!node && !tooltipFixed) {
+                            clearTimeout(tooltipTimeout);
+                            tooltipTimeout = setTimeout(() => {
+                                hideFloatingTooltip();
+                            }, 200);
+                        }
+                    });
+                
+                // Make Graph globally accessible
+                window.Graph = Graph;
+                
+                // Setup controls
+                setupControls();
+                
                 // Handle window resize
                 window.addEventListener('resize', () => {
                     Graph.width(container.clientWidth);
@@ -3452,7 +3602,7 @@
             }
             
             function initializeGraph() {
-                console.log('🚀 Initializing 3D force graph with enhanced physics...');
+                console.log('Initializing 3D graph...');
                 
                 try {
                     // Only create new instance if it doesn't exist
@@ -3460,35 +3610,8 @@
                         const container = document.getElementById('3d-graph');
                         Graph = ForceGraph3D()(container)
                             .width(container.clientWidth)
-                            .height(container.clientHeight)
-                            .backgroundColor('#0a0a0f');
-                        
-                        // ⚠️ CRITICAL: Set 3D dimensions IMMEDIATELY after creation
-                        console.log('🎯 Setting numDimensions(3) - CRITICAL for 3D physics!');
-                        Graph.numDimensions(3);
-                        
-                        // Verify it was set correctly
-                        const dimensions = Graph.numDimensions();
-                        console.log(`✅ 3D Dimensions confirmed: ${dimensions}`);
-                        if (dimensions !== 3) {
-                            console.error('❌ CRITICAL ERROR: Failed to set 3D dimensions!');
-                        }
-                        
+                            .height(container.clientHeight);
                         window.Graph = Graph; // Make it globally accessible
-                        
-                        // Add continuous 3D enforcement for first 30 seconds
-                        let enforceCount = 0;
-                        const enforce3D = setInterval(() => {
-                            enforceCount++;
-                            if (Graph && Graph.numDimensions() !== 3) {
-                                console.warn(`⚠️ ENFORCING 3D: Resetting numDimensions to 3 (attempt ${enforceCount})`);
-                                Graph.numDimensions(3);
-                            }
-                            if (enforceCount >= 30) {
-                                clearInterval(enforce3D);
-                                console.log('🔒 3D enforcement completed after 30 checks');
-                            }
-                        }, 1000);
                     }
                     
                     // Use full graph data for initial setup
@@ -3526,7 +3649,7 @@
                         .linkDirectionalParticles(2)
                         .linkDirectionalParticleSpeed(0.001) // Much slower - was 0.006
                         .linkDirectionalParticleColor(() => '#00ff88')
-                        // numDimensions(3) already set immediately after graph creation above
+                        .numDimensions(3)  // Force 3D simulation instead of 2D default
                         .onNodeHover((node, prevNode) => {
                             hoveredNode = node;
                             const tooltip = document.getElementById('entity-tooltip');
@@ -3663,39 +3786,10 @@
                         }
                     }, 500);
                     
-                    console.log('✅ Graph initialized successfully with 3D physics!');
-                    
-                    // Final verification after 3 seconds
-                    setTimeout(() => {
-                        const finalDimensions = Graph.numDimensions();
-                        const nodes = Graph.graphData().nodes;
-                        let hasZCoords = false;
-                        let zStats = { min: 0, max: 0, nonZero: 0 };
-                        
-                        nodes.forEach(node => {
-                            if (node.z !== undefined) {
-                                if (node.z !== 0) {
-                                    hasZCoords = true;
-                                    zStats.nonZero++;
-                                }
-                                zStats.min = Math.min(zStats.min, node.z || 0);
-                                zStats.max = Math.max(zStats.max, node.z || 0);
-                            }
-                        });
-                        
-                        console.log(`📊 3D PHYSICS STATUS:`);
-                        console.log(`   - Dimensions: ${finalDimensions}`);
-                        console.log(`   - Nodes with Z coords: ${zStats.nonZero}/${nodes.length}`);
-                        console.log(`   - Z range: ${zStats.min.toFixed(2)} to ${zStats.max.toFixed(2)}`);
-                        console.log(`   - 3D Physics Active: ${hasZCoords ? '✅ YES' : '❌ NO'}`);
-                        
-                        if (!hasZCoords) {
-                            console.error('❌ 3D PHYSICS FAILED - nodes are still flat!');
-                        }
-                    }, 3000);
+                    console.log('Graph initialized successfully!');
                     
                 } catch (error) {
-                    console.error('❌ Error initializing graph:', error);
+                    console.error('Error initializing graph:', error);
                     document.getElementById('node-info').textContent = 'Error: ' + error.message;
                 }
             }
@@ -3825,12 +3919,10 @@
                 flattenGraph = e.target.checked;
                 if (Graph) {
                     if (flattenGraph) {
-                        console.log('📐 FLATTEN MODE: Switching to 2D simulation');
+                        console.log('Enabling flatten mode');
                         
                         // Switch to 2D simulation for flattening
                         Graph.numDimensions(2);
-                        const dims2D = Graph.numDimensions();
-                        console.log(`✅ Flatten confirmed: dimensions = ${dims2D}`);
                         
                         // Use dagMode to create a 2D layout
                         Graph
@@ -3852,12 +3944,10 @@
                         Graph.d3Force('charge').strength(CONFIG.forceStrength * 2);
                         
                     } else {
-                        console.log('🌍 UNFLATTEN MODE: Restoring 3D simulation');
+                        console.log('Disabling flatten mode - restoring 3D simulation');
                         
                         // Switch back to 3D simulation
                         Graph.numDimensions(3);
-                        const dims3D = Graph.numDimensions();
-                        console.log(`✅ 3D restored: dimensions = ${dims3D}`);
                         
                         // Disable dag mode
                         Graph.dagMode(null);

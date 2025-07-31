@@ -5,39 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Competitive Monitor - 3D Force Graph</title>
     <style>
-        /* Collapsible section styling */
-        .collapsible-header {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 5px 0;
-            border-bottom: 1px solid #333;
-            margin-bottom: 10px;
-        }
-        
-        .collapsible-header:hover {
-            color: #00ff88;
-        }
-        
-        .collapsible-arrow {
-            transition: transform 0.2s ease;
-            font-size: 12px;
-        }
-        
-        .collapsible-content {
-            display: none;
-            transition: all 0.3s ease;
-        }
-        
-        .collapsible-content.expanded {
-            display: block;
-        }
-        
-        .collapsible-arrow.expanded {
-            transform: rotate(90deg);
-        }
-        
         body {
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -378,37 +345,25 @@
     </style>
     <script src="https://unpkg.com/three@0.152.0/build/three.min.js"></script>
     <script src="https://unpkg.com/three-spritetext@1.8.0/dist/three-spritetext.min.js"></script>
-    <script src="https://unpkg.com/d3@7.8.5/dist/d3.min.js"></script>
     <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
 </head>
 <body>
     <div id="loading">Loading AI Competitive Intelligence Graph...</div>
     
     <div id="info" style="display: none;">
-        <div class="collapsible-header" onclick="toggleInfoPanel()" style="margin: 0; padding: 10px 0; border-bottom: 1px solid #333;">
-            <h3 style="margin: 0;">🧠 AI Competitive Monitor</h3>
-            <span class="collapsible-arrow" id="info-panel-arrow">▶</span>
+        <h3>🧠 AI Competitive Monitor</h3>
+        <div id="node-info">
+            <strong>Controls:</strong><br>
+            • Left-click + drag = Rotate view<br>
+            • Right-click + drag = Pan view<br>
+            • Scroll = Zoom in/out<br>
+            • Click node = Center camera<br>
+            • Right-click node = Show context menu
         </div>
-        <div class="collapsible-content" id="info-panel-content">
-            <div id="node-info">
-                <strong>Controls:</strong><br>
-                • Left-click + drag = Rotate view<br>
-                • Right-click + drag = Pan view<br>
-                • Middle-click + drag = Zoom<br>
-                • Scroll = Zoom in/out<br>
-                • Click node = Center camera<br>
-                • Right-click node = Show context menu
-            </div>
-            <div id="graph-summary" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #333;">
-                <div class="collapsible-header" onclick="toggleGraphSummary()">
-                    <strong>Graph Intelligence</strong>
-                    <span class="collapsible-arrow" id="graph-summary-arrow">▶</span>
-                </div>
-                <div class="collapsible-content" id="graph-summary-content">
-                    <div id="tech-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
-                    <div id="concept-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
-                </div>
-            </div>
+        <div id="graph-summary" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #333;">
+            <strong>Graph Intelligence:</strong><br>
+            <div id="tech-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
+            <div id="concept-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
         </div>
     </div>
     
@@ -507,23 +462,12 @@
                     <input type="checkbox" id="toggle-labels" checked>
                 </label>
                 <label>
-                    Label Font Size
-                    <input type="range" id="label-font-size" min="4" max="16" value="8" step="1">
-                    <span class="slider-value" id="font-size-value">8</span>
-                </label>
-                <label>
                     Show Particles
                     <input type="checkbox" id="toggle-particles" checked>
                 </label>
                 <label>
-                    Link Width Multiplier
-                    <input type="range" id="link-width-multiplier" min="1" max="50" value="12" step="1">
-                    <span class="slider-value" id="link-width-value">12</span>
-                </label>
-                <label>
-                    Link Opacity
-                    <input type="range" id="link-opacity" min="0.1" max="1" value="0.5" step="0.1">
-                    <span class="slider-value" id="link-opacity-value">0.5</span>
+                    Thin Lines Mode
+                    <input type="checkbox" id="toggle-thin-lines">
                 </label>
                 <label>
                     Floating Tooltip
@@ -537,10 +481,9 @@
                     Show Change Rings
                     <input type="checkbox" id="toggle-change-rings">
                 </label>
-
                 <label>
-                    Flatten Graph (2D-like)
-                    <input type="checkbox" id="toggle-flatten-graph">
+                    Auto-rotate
+                    <input type="checkbox" id="toggle-auto-rotate">
                 </label>
             </div>
             
@@ -738,38 +681,21 @@
             btn.textContent = controls.classList.contains('collapsed') ? '▶' : '◀';
         }
         
-        function toggleGraphSummary() {
-            const content = document.getElementById('graph-summary-content');
-            const arrow = document.getElementById('graph-summary-arrow');
-            
-            content.classList.toggle('expanded');
-            arrow.classList.toggle('expanded');
-            
-            arrow.textContent = content.classList.contains('expanded') ? '▼' : '▶';
-        }
-        
-        function toggleInfoPanel() {
-            const content = document.getElementById('info-panel-content');
-            const arrow = document.getElementById('info-panel-arrow');
-            
-            content.classList.toggle('expanded');
-            arrow.classList.toggle('expanded');
-            
-            arrow.textContent = content.classList.contains('expanded') ? '▼' : '▶';
-        }
-        
         function setConfigMode(mode) {
             const simpleBtn = document.getElementById('simple-mode-btn');
             const advancedBtn = document.getElementById('advanced-mode-btn');
+            const simpleGroups = document.querySelectorAll('.simple-group');
             const advancedGroups = document.querySelectorAll('.advanced-group');
             
             if (mode === 'simple') {
                 simpleBtn.style.background = 'rgba(0, 255, 136, 0.2)';
                 advancedBtn.style.background = 'transparent';
+                simpleGroups.forEach(g => g.style.display = 'block');
                 advancedGroups.forEach(g => g.style.display = 'none');
             } else {
                 simpleBtn.style.background = 'transparent';
                 advancedBtn.style.background = 'rgba(0, 255, 136, 0.2)';
+                simpleGroups.forEach(g => g.style.display = 'block');
                 advancedGroups.forEach(g => g.style.display = 'block');
             }
         }
@@ -882,7 +808,7 @@
         window.clearTagFilter = function() {
             window.customTagFilter = null;
             window.applyFilters();
-            document.getElementById('node-info').innerHTML = '<strong>Controls:</strong><br>• Left-click + drag = Rotate view<br>• Right-click + drag = Pan view<br>• Middle-click + drag = Zoom<br>• Scroll = Zoom in/out<br>• Click node = Center camera<br>• Right-click node = Show context menu';
+            document.getElementById('node-info').innerHTML = '<strong>Controls:</strong><br>• Left-click + drag = Rotate view<br>• Right-click + drag = Pan view<br>• Scroll = Zoom in/out<br>• Click node = Center camera<br>• Right-click node = Show context menu';
         };
         
         // Wrap main code in IIFE
@@ -895,32 +821,25 @@
             let rawData = null;
             let linksEnabled = true;
             let labelsEnabled = true;
-            let labelFontSize = 8;
             let particlesEnabled = true;
-            let linkWidthMultiplier = 12;
-            let linkOpacity = 0.5;
-            let flattenGraph = false;
+            let thinLinesEnabled = false;
             let currentViewMode = 'entity-type';
             let currentDrawMode = 'normal';
             let entityLimit = 200;
             let recentChangesData = null;
             let floatingTooltipEnabled = true;
             let hoveredNode = null;
-            // Initialize mouse position variables
-            window.lastMouseX = window.innerWidth / 2;  // Center of screen
-            window.lastMouseY = window.innerHeight / 2; // Center of screen
             let tooltipTimeout;
             let tooltipFixed = false;
             let linkThreshold = 0;
             let monochrome = false;
             let showChangeRings = false;
+            let autoRotate = false;
             let nodeSizeMode = 'activity';
             let showTechNodes = true;
             let showConceptNodes = true;
             let showCompanyNodes = true;
             let searchDepth = 1; // Default to 1 level out
-            let activeChangeFilter = null; // For filtering by recent changes
-            let changedCompaniesMap = new Map(); // Store companies with recent changes
             
             // Make applyFilters and Graph global for button access
             window.applyFilters = null;
@@ -984,7 +903,7 @@
                 const sprite = new SpriteText(node.name);
                 sprite.material.depthWrite = false;
                 sprite.color = node.currentColor || node.color || CONFIG.nodeColors[node.group] || CONFIG.nodeColors.default;
-                sprite.textHeight = labelFontSize;
+                sprite.textHeight = 8;
                 sprite.fontWeight = node.isRecentChange ? 700 : CONFIG.fontWeight;
                 sprite.backgroundColor = false;
                 return sprite;
@@ -992,33 +911,38 @@
             
             // Calculate link width based on connection strength
             function getLinkWidth(link) {
-                // Base width stays thin
+                // If thin lines mode is enabled, return minimal but visible width
+                if (thinLinesEnabled) {
+                    return 0.2;  // Increased from 0.1 to be barely visible
+                }
+                
+                // Start with very thin base width
                 let width = 0.1;
                 
                 // Calculate strength based on shared properties
                 let strength = 0;
                 
-                // Concept links get full multiplier
+                // Only make concept links thick - these are the most important
                 if (link.label && link.label === 'uses concept') {
-                    strength = linkWidthMultiplier;
+                    strength += 12;  // Much thicker for better visual impact
                 }
-                // Technology links get scaled by connection count
-                else if (link.label && link.connectionCount) {
-                    strength = linkWidthMultiplier * Math.min(link.connectionCount / 10, 1);
+                // Make technology links only slightly thicker if they have many connections
+                else if (link.label && link.connectionCount && link.connectionCount > 3) {
+                    strength += 1;  // Just barely visible increase
                 }
                 
-                // Apply multiplier
+                // Only add thickness for very high connection counts
+                if (link.connectionCount && link.connectionCount > 5) {
+                    strength += 1;
+                }
+                
+                // Calculate final width - more dramatic range
                 if (strength > 0) {
-                    width = 0.1 + (strength * 0.1);
+                    width = 0.1 + (strength * 0.2);
                 }
                 
-                // Cap at reasonable maximum
-                return Math.min(width, 5.0);
-            }
-            
-            // Get link opacity based on settings
-            function getLinkOpacity(link) {
-                return linkOpacity;
+                // Cap at reasonable maximum but allow thicker lines
+                return Math.min(width, 2.5);
             }
             
             // Load and process data
@@ -1044,19 +968,6 @@
                     if (changesResponse && changesResponse.ok) {
                         recentChangesData = await changesResponse.json();
                         console.log('Loaded recent changes:', recentChangesData);
-                        
-                        // Populate changedCompaniesMap
-                        if (recentChangesData && recentChangesData.changes) {
-                            recentChangesData.changes.forEach(change => {
-                                if (change.company_name && change.hours_ago !== undefined) {
-                                    changedCompaniesMap.set(change.company_name, {
-                                        hoursAgo: change.hours_ago,
-                                        changeCount: change.change_count || 1
-                                    });
-                                }
-                            });
-                            console.log('Changed companies:', changedCompaniesMap.size);
-                        }
                     } else {
                         console.log('No recent changes data available');
                     }
@@ -1081,7 +992,7 @@
                             company: companyName,
                             type: company.type || company.category,
                             entity_type: company.type || company.category,
-                            url_count: company.urls ? company.urls.length : (company.url_count || company.stats?.url_count || 0),
+                            url_count: company.urls ? company.urls.length : (company.url_count || 0),
                             intelligence: {
                                 interest_level: details?.interest_level || 5,
                                 ai_technologies: [],
@@ -1177,7 +1088,7 @@
                                         company: company.name,
                                         type: company.category || 'Other',
                                         entity_type: company.category || 'Other',
-                                        url_count: company.urls ? company.urls.length : (company.stats?.url_count || company.url_count || 0),
+                                        url_count: company.urls ? company.urls.length : 0,
                                         recent_changes: company.stats ? company.stats.totalChanges : 0,
                                         high_interest_changes: company.stats ? company.stats.highInterestChanges : 0,
                                         intelligence: {
@@ -1298,8 +1209,7 @@
                         val: company.url_count || 1,
                         interestLevel: company.intelligence?.interest_level || 0,
                         urlCount: company.url_count || 0,
-                        connectionCount: 0,
-                        hasRecentChange: changedCompaniesMap.has(company.company)
+                        connectionCount: 0
                     };
                     graphData.nodes.push(node);
                     nodeMap.set(company.company, node);
@@ -2268,6 +2178,138 @@
                     });
             }
             
+            function initializeGraph() {
+                console.log('Initializing 3D force graph...');
+                
+                const container = document.getElementById('3d-graph');
+                
+                Graph = ForceGraph3D()(container)
+                    .backgroundColor('#0a0a0f')
+                    .nodeId('id')
+                    .nodeLabel(node => {
+                        if (!floatingTooltipEnabled) {
+                            const companyData = rawData.dashboard.company_activity.find(c => c.company === node.id);
+                            let label = `<strong>${node.name}</strong><br>`;
+                            label += `Type: ${node.group}<br>`;
+                            label += `Interest Level: ${node.interestLevel || 0}<br>`;
+                            label += `URLs: ${node.urlCount || 0}<br>`;
+                            label += `Connections: ${node.connectionCount || 0}<br>`;
+                            
+                            if (node.hasRecentChange && node.changeDetails) {
+                                label += `<br><span style="color: #ff4444;">⚡ Changed ${Math.round(node.changeDetails.hoursAgo)}h ago</span><br>`;
+                                label += `Interest: ${node.changeDetails.latestChange.interest_level}/10<br>`;
+                            }
+                            
+                            if (companyData?.intelligence?.products?.length > 0) {
+                                label += '<br><strong>Products:</strong><br>';
+                                companyData.intelligence.products.forEach(p => {
+                                    label += `• ${p.name}<br>`;
+                                });
+                            }
+                            
+                            if (companyData?.intelligence?.ai_technologies?.length > 0) {
+                                label += '<br><strong>Technologies:</strong><br>';
+                                companyData.intelligence.ai_technologies.forEach(tech => {
+                                    label += `<span class="clickable-tag" onclick="filterByTag('${tech}')">${tech}</span> `;
+                                });
+                                label += '<br>';
+                            }
+                            
+                            if (companyData?.intelligence?.ai_ml_concepts?.length > 0) {
+                                label += '<br><strong>AI Concepts:</strong><br>';
+                                companyData.intelligence.ai_ml_concepts.forEach(concept => {
+                                    label += `<span class="clickable-tag" onclick="filterByTag('${concept}')">${concept}</span> `;
+                                });
+                            }
+                            
+                            return label;
+                        }
+                        return ''; // Return empty for floating tooltip
+                    })
+                    .nodeColor(node => monochrome ? '#00ffff' : (node.currentColor || node.color))
+                    .nodeVal(node => node.val || 1)
+                    .nodeThreeObject(node => {
+                        if (!labelsEnabled) {
+                            return null;
+                        }
+                        return createNodeObject(node);
+                    })
+                    .nodeThreeObjectExtend(true)
+                    .linkColor(link => {
+                        if (monochrome) return '#00ffff';
+                        if (link.label === 'uses concept') return '#4ecdc4';
+                        if (link.label === 'uses technology') return '#00ff88';
+                        return CONFIG.linkOpacity ? `rgba(150, 150, 150, ${CONFIG.linkOpacity})` : '#666';
+                    })
+                    .linkWidth(link => getLinkWidth(link))
+                    .linkOpacity(CONFIG.linkOpacity)
+                    .linkDirectionalParticles(link => particlesEnabled ? 2 : 0)
+                    .linkDirectionalParticleSpeed(0.005)
+                    .linkDirectionalParticleWidth(1.5)
+                    .linkDirectionalParticleColor(() => '#00ff88')
+                    .d3AlphaDecay(0.02)
+                    .d3VelocityDecay(0.4)
+                    .d3Force('charge', d3.forceManyBody().strength(CONFIG.forceStrength))
+                    .d3Force('link', d3.forceLink().distance(CONFIG.linkDistance))
+                    .d3Force('center', d3.forceCenter().strength(0.3))
+                    .d3Force('collide', d3.forceCollide(node => Math.sqrt(node.val) * 10))
+                    .onNodeClick(node => {
+                        // Center camera on clicked node
+                        const distance = 300;
+                        const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
+                        Graph.cameraPosition(
+                            { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio },
+                            node,
+                            1000
+                        );
+                    })
+                    .onNodeRightClick(node => {
+                        // Show context menu
+                        const menu = document.getElementById('context-menu');
+                        const title = document.getElementById('context-menu-title');
+                        title.textContent = node.name;
+                        contextMenuNode = node;
+                        
+                        // Position menu at mouse location
+                        menu.style.display = 'block';
+                        menu.style.left = `${event.clientX}px`;
+                        menu.style.top = `${event.clientY}px`;
+                        
+                        // Prevent menu from going off screen
+                        const rect = menu.getBoundingClientRect();
+                        if (rect.right > window.innerWidth) {
+                            menu.style.left = `${window.innerWidth - rect.width - 10}px`;
+                        }
+                        if (rect.bottom > window.innerHeight) {
+                            menu.style.top = `${window.innerHeight - rect.height - 10}px`;
+                        }
+                        
+                        event.preventDefault();
+                    })
+                    .onNodeHover(node => {
+                        if (!floatingTooltipEnabled) return;
+                        
+                        hoveredNode = node;
+                        
+                        if (node && !tooltipFixed) {
+                            clearTimeout(tooltipTimeout);
+                            tooltipTimeout = setTimeout(() => {
+                                showFloatingTooltip(node);
+                            }, 300); // Small delay to prevent flashing
+                        } else if (!node && !tooltipFixed) {
+                            clearTimeout(tooltipTimeout);
+                            tooltipTimeout = setTimeout(() => {
+                                hideFloatingTooltip();
+                            }, 200);
+                        }
+                    });
+                
+                // Make Graph globally accessible
+                window.Graph = Graph;
+                
+                // Setup controls
+                setupControls();
+                
                 // Handle window resize
                 window.addEventListener('resize', () => {
                     Graph.width(container.clientWidth);
@@ -2329,9 +2371,9 @@
                 tooltip.innerHTML = content;
                 tooltip.style.display = 'block';
                 
-                // Use tracked mouse position with robust fallbacks
-                const x = (window.lastMouseX !== undefined ? window.lastMouseX : window.innerWidth / 2) + 15;
-                const y = (window.lastMouseY !== undefined ? window.lastMouseY : window.innerHeight / 2) + 15;
+                // Position tooltip near cursor
+                const x = event.clientX + 15;
+                const y = event.clientY + 15;
                 
                 tooltip.style.left = `${x}px`;
                 tooltip.style.top = `${y}px`;
@@ -2395,36 +2437,14 @@
                     });
                 });
                 
-                // Font size control
-                document.getElementById('label-font-size').addEventListener('input', (e) => {
-                    labelFontSize = parseInt(e.target.value);
-                    document.getElementById('font-size-value').textContent = e.target.value;
-                    if (Graph && labelsEnabled) {
-                        Graph.nodeThreeObject(node => createNodeObject(node));
-                    }
-                });
-                
                 document.getElementById('toggle-particles').addEventListener('change', (e) => {
                     particlesEnabled = e.target.checked;
                     Graph.linkDirectionalParticles(link => particlesEnabled ? 2 : 0);
                 });
                 
-                // Link width multiplier control
-                document.getElementById('link-width-multiplier').addEventListener('input', (e) => {
-                    linkWidthMultiplier = parseFloat(e.target.value);
-                    document.getElementById('link-width-value').textContent = e.target.value;
-                    if (Graph) {
-                        Graph.linkWidth(link => getLinkWidth(link));
-                    }
-                });
-                
-                // Link opacity control
-                document.getElementById('link-opacity').addEventListener('input', (e) => {
-                    linkOpacity = parseFloat(e.target.value);
-                    document.getElementById('link-opacity-value').textContent = e.target.value;
-                    if (Graph) {
-                        Graph.linkOpacity(linkOpacity);
-                    }
+                document.getElementById('toggle-thin-lines').addEventListener('change', (e) => {
+                    thinLinesEnabled = e.target.checked;
+                    Graph.linkWidth(link => getLinkWidth(link));
                 });
                 
                 document.getElementById('toggle-floating-tooltip').addEventListener('change', (e) => {
@@ -2451,7 +2471,12 @@
                     });
                 });
                 
-
+                document.getElementById('toggle-auto-rotate').addEventListener('change', (e) => {
+                    autoRotate = e.target.checked;
+                    // This would need OrbitControls integration
+                    console.log('Auto-rotate:', autoRotate);
+                });
+                
                 // Node visibility toggles
                 document.getElementById('toggle-tech-nodes').addEventListener('change', (e) => {
                     showTechNodes = e.target.checked;
@@ -3452,7 +3477,7 @@
             }
             
             function initializeGraph() {
-                console.log('🚀 Initializing 3D force graph with enhanced physics...');
+                console.log('Initializing 3D graph...');
                 
                 try {
                     // Only create new instance if it doesn't exist
@@ -3460,35 +3485,8 @@
                         const container = document.getElementById('3d-graph');
                         Graph = ForceGraph3D()(container)
                             .width(container.clientWidth)
-                            .height(container.clientHeight)
-                            .backgroundColor('#0a0a0f');
-                        
-                        // ⚠️ CRITICAL: Set 3D dimensions IMMEDIATELY after creation
-                        console.log('🎯 Setting numDimensions(3) - CRITICAL for 3D physics!');
-                        Graph.numDimensions(3);
-                        
-                        // Verify it was set correctly
-                        const dimensions = Graph.numDimensions();
-                        console.log(`✅ 3D Dimensions confirmed: ${dimensions}`);
-                        if (dimensions !== 3) {
-                            console.error('❌ CRITICAL ERROR: Failed to set 3D dimensions!');
-                        }
-                        
+                            .height(container.clientHeight);
                         window.Graph = Graph; // Make it globally accessible
-                        
-                        // Add continuous 3D enforcement for first 30 seconds
-                        let enforceCount = 0;
-                        const enforce3D = setInterval(() => {
-                            enforceCount++;
-                            if (Graph && Graph.numDimensions() !== 3) {
-                                console.warn(`⚠️ ENFORCING 3D: Resetting numDimensions to 3 (attempt ${enforceCount})`);
-                                Graph.numDimensions(3);
-                            }
-                            if (enforceCount >= 30) {
-                                clearInterval(enforce3D);
-                                console.log('🔒 3D enforcement completed after 30 checks');
-                            }
-                        }, 1000);
                     }
                     
                     // Use full graph data for initial setup
@@ -3526,7 +3524,6 @@
                         .linkDirectionalParticles(2)
                         .linkDirectionalParticleSpeed(0.001) // Much slower - was 0.006
                         .linkDirectionalParticleColor(() => '#00ff88')
-                        // numDimensions(3) already set immediately after graph creation above
                         .onNodeHover((node, prevNode) => {
                             hoveredNode = node;
                             const tooltip = document.getElementById('entity-tooltip');
@@ -3611,7 +3608,7 @@
                                 
                                 document.getElementById('node-info').innerHTML = infoContent;
                             } else {
-                                document.getElementById('node-info').innerHTML = '<strong>Controls:</strong><br>• Left-click + drag = Rotate view<br>• Right-click + drag = Pan view<br>• Middle-click + drag = Zoom<br>• Scroll = Zoom in/out<br>• Click node = Center camera<br>• Right-click node = Show context menu';
+                                document.getElementById('node-info').innerHTML = '<strong>Controls:</strong><br>• Left-click + drag = Rotate view<br>• Right-click + drag = Pan view<br>• Scroll = Zoom in/out<br>• Click node = Center camera<br>• Right-click node = Show context menu';
                             }
                         })
                         .onNodeClick(node => {
@@ -3663,39 +3660,10 @@
                         }
                     }, 500);
                     
-                    console.log('✅ Graph initialized successfully with 3D physics!');
-                    
-                    // Final verification after 3 seconds
-                    setTimeout(() => {
-                        const finalDimensions = Graph.numDimensions();
-                        const nodes = Graph.graphData().nodes;
-                        let hasZCoords = false;
-                        let zStats = { min: 0, max: 0, nonZero: 0 };
-                        
-                        nodes.forEach(node => {
-                            if (node.z !== undefined) {
-                                if (node.z !== 0) {
-                                    hasZCoords = true;
-                                    zStats.nonZero++;
-                                }
-                                zStats.min = Math.min(zStats.min, node.z || 0);
-                                zStats.max = Math.max(zStats.max, node.z || 0);
-                            }
-                        });
-                        
-                        console.log(`📊 3D PHYSICS STATUS:`);
-                        console.log(`   - Dimensions: ${finalDimensions}`);
-                        console.log(`   - Nodes with Z coords: ${zStats.nonZero}/${nodes.length}`);
-                        console.log(`   - Z range: ${zStats.min.toFixed(2)} to ${zStats.max.toFixed(2)}`);
-                        console.log(`   - 3D Physics Active: ${hasZCoords ? '✅ YES' : '❌ NO'}`);
-                        
-                        if (!hasZCoords) {
-                            console.error('❌ 3D PHYSICS FAILED - nodes are still flat!');
-                        }
-                    }, 3000);
+                    console.log('Graph initialized successfully!');
                     
                 } catch (error) {
-                    console.error('❌ Error initializing graph:', error);
+                    console.error('Error initializing graph:', error);
                     document.getElementById('node-info').textContent = 'Error: ' + error.message;
                 }
             }
@@ -3708,7 +3676,17 @@
                 }
             });
             
-            // Already handled above - remove duplicate handler
+            document.getElementById('toggle-labels').addEventListener('change', (e) => {
+                labelsEnabled = e.target.checked;
+                if (Graph) {
+                    Graph.nodeThreeObject(node => {
+                        if (!labelsEnabled) {
+                            return null;
+                        }
+                        return createNodeObject(node);
+                    });
+                }
+            });
             
             document.getElementById('toggle-particles').addEventListener('change', (e) => {
                 particlesEnabled = e.target.checked;
@@ -3717,7 +3695,13 @@
                 }
             });
             
-            // Already handled above - remove duplicate handler
+            document.getElementById('toggle-thin-lines').addEventListener('change', (e) => {
+                thinLinesEnabled = e.target.checked;
+                if (Graph) {
+                    // Re-apply link width function
+                    Graph.linkWidth(link => getLinkWidth(link));
+                }
+            });
             
             document.getElementById('toggle-floating-tooltip').addEventListener('change', (e) => {
                 floatingTooltipEnabled = e.target.checked;
@@ -3819,130 +3803,28 @@
                 // TODO: Implement change rings visualization
             });
             
-
-            // Flatten graph control
-            document.getElementById('toggle-flatten-graph').addEventListener('change', (e) => {
-                flattenGraph = e.target.checked;
-                if (Graph) {
-                    if (flattenGraph) {
-                        console.log('📐 FLATTEN MODE: Switching to 2D simulation');
-                        
-                        // Switch to 2D simulation for flattening
-                        Graph.numDimensions(2);
-                        const dims2D = Graph.numDimensions();
-                        console.log(`✅ Flatten confirmed: dimensions = ${dims2D}`);
-                        
-                        // Use dagMode to create a 2D layout
-                        Graph
-                            .dagMode('radialout') // This creates a 2D radial layout
-                            .dagLevelDistance(50);
-                        
-                        // Also add a force to keep nodes flat
-                        Graph.d3Force('flatten', (alpha) => {
-                            const nodes = Graph.graphData().nodes;
-                            nodes.forEach(node => {
-                                if (node.z !== 0) {
-                                    node.z = 0;
-                                    node.vz = 0;
-                                }
-                            });
-                        });
-                        
-                        // Increase charge force to spread nodes in X/Y
-                        Graph.d3Force('charge').strength(CONFIG.forceStrength * 2);
-                        
-                    } else {
-                        console.log('🌍 UNFLATTEN MODE: Restoring 3D simulation');
-                        
-                        // Switch back to 3D simulation
-                        Graph.numDimensions(3);
-                        const dims3D = Graph.numDimensions();
-                        console.log(`✅ 3D restored: dimensions = ${dims3D}`);
-                        
-                        // Disable dag mode
-                        Graph.dagMode(null);
-                        
-                        // Disable flattening force
-                        Graph.d3Force('flatten', null);
-                        
-                        // Restore normal charge force
-                        Graph.d3Force('charge').strength(CONFIG.forceStrength);
-                    }
-                    
-                    // Refresh the simulation
-                    Graph.refresh();
+            document.getElementById('toggle-auto-rotate').addEventListener('change', (e) => {
+                autoRotate = e.target.checked;
+                if (Graph && Graph.controls) {
+                    Graph.controls().autoRotate = autoRotate;
+                    Graph.controls().autoRotateSpeed = 0.5;
                 }
             });
             
             // Handle window resize
             window.addEventListener('resize', () => {
-            if (Graph && Graph.renderer()) {
-            const container = document.getElementById('3d-graph');
-            Graph.width(container.clientWidth);
-            Graph.height(container.clientHeight);
-            Graph.renderer().setSize(container.clientWidth, container.clientHeight);
-            Graph.camera().aspect = container.clientWidth / container.clientHeight;
-            Graph.camera().updateProjectionMatrix();
-            }
-            });
-                
-                // Enable proper mouse controls
-                // The 3d-force-graph uses three.js OrbitControls
-                // By default: left=rotate, right=pan, middle=zoom
-                // We need to check if we can modify these
-                setTimeout(() => {
-                    if (!Graph) return;
-                    
-                    console.log('Checking Graph methods:', {
-                        controls: typeof Graph.controls,
-                        controlType: typeof Graph.controlType,
-                        renderer: typeof Graph.renderer
-                    });
-                    
-                    // Try to enable right-click panning properly
-                    if (Graph.controls && Graph.controls()) {
-                        const controls = Graph.controls();
-                        console.log('Controls found:', controls);
-                        // OrbitControls mouse buttons: LEFT=0, MIDDLE=1, RIGHT=2
-                        // Default is: rotate=LEFT, zoom=MIDDLE, pan=RIGHT
-                        // Make sure right-click panning is enabled
-                        if (controls.mouseButtons) {
-                            controls.mouseButtons.RIGHT = THREE.MOUSE.PAN;
-                            console.log('Enabled right-click panning');
-                        }
-                    }
-                    
-                    // Prevent context menu on canvas (but not on nodes)
-                    const canvas = Graph.renderer().domElement;
-                    canvas.addEventListener('contextmenu', (e) => {
-                        // Only prevent if not clicking on a node
-                        const raycaster = new THREE.Raycaster();
-                        const mouse = new THREE.Vector2();
-                        mouse.x = (e.clientX / canvas.clientWidth) * 2 - 1;
-                        mouse.y = -(e.clientY / canvas.clientHeight) * 2 + 1;
-                        
-                        raycaster.setFromCamera(mouse, Graph.camera());
-                        const intersects = raycaster.intersectObjects(Graph.scene().children, true);
-                        
-                        // If no node was clicked, prevent context menu to allow panning
-                        if (intersects.length === 0) {
-                            e.preventDefault();
-                        }
-                    });
-                }, 1000);
-            
-            // Initialize mouse tracking immediately
-            document.addEventListener('mousemove', (e) => {
-                // Always update mouse position for tooltip positioning
-                window.lastMouseX = e.clientX;
-                window.lastMouseY = e.clientY;
-                
-                // Early initialization check
-                if (window.lastMouseX === undefined) {
-                    window.lastMouseX = e.clientX;
-                    window.lastMouseY = e.clientY;
+                if (Graph && Graph.renderer()) {
+                    const container = document.getElementById('3d-graph');
+                    Graph.width(container.clientWidth);
+                    Graph.height(container.clientHeight);
+                    Graph.renderer().setSize(container.clientWidth, container.clientHeight);
+                    Graph.camera().aspect = container.clientWidth / container.clientHeight;
+                    Graph.camera().updateProjectionMatrix();
                 }
-                
+            });
+            
+            // Track mouse movement for tooltip positioning only on initial show
+            document.addEventListener('mousemove', (e) => {
                 const tooltip = document.getElementById('entity-tooltip');
                 if (tooltip.style.display === 'block' && !tooltipFixed) {
                     // Only position tooltip on initial show, then fix it

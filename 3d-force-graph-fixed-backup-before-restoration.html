@@ -1,0 +1,1970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Competitive Monitor - 3D Force Graph</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #eee;
+            overflow: hidden;
+        }
+        
+        /* Mobile controls styling */
+        #toggle-controls {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(20, 20, 30, 0.95);
+            padding: 12px 16px;
+            border-radius: 25px;
+            border: 1px solid #333;
+            cursor: pointer;
+            z-index: 101;
+            color: #00ff88;
+            font-size: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Desktop collapse button */
+        .collapse-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: transparent;
+            border: none;
+            color: #00ff88;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 5px;
+        }
+        
+        .collapse-btn:hover {
+            color: #00ff88;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            #toggle-controls {
+                display: block;
+            }
+            
+            #controls {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                transform: translateY(100%);
+                transition: transform 0.3s ease;
+                border-radius: 20px 20px 0 0;
+                max-height: 60vh;
+                width: auto;
+                margin: 0;
+            }
+            
+            #controls.open {
+                transform: translateY(0);
+            }
+
+        }
+        
+        @media (min-width: 769px) {
+            #controls.collapsed {
+                width: auto;
+                padding: 10px;
+            }
+            
+            #controls.collapsed .control-content {
+                display: none;
+            }
+            
+            #controls.collapsed h4 {
+                margin: 0;
+                display: inline-block;
+            }
+
+        }
+        
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(20, 20, 30, 0.95);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            max-width: 350px;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+        
+        #controls {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(20, 20, 30, 0.95);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            z-index: 100;
+            width: 280px;
+            backdrop-filter: blur(10px);
+            max-height: 90vh;
+            overflow-y: auto;
+            transition: all 0.3s ease;
+        }
+        
+        .control-group {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .control-group:last-child {
+            border-bottom: none;
+        }
+        
+        label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #aaa;
+            font-size: 12px;
+        }
+        
+        h3 {
+            margin: 0 0 10px 0;
+            color: #00ff88;
+        }
+        
+        h4 {
+            margin: 0 0 10px 0;
+            color: #00ff88;
+            font-size: 14px;
+        }
+        
+        .green { color: #00ff88; }
+        .stat-item { margin: 5px 0; font-size: 12px; }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+        
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #00ff88;
+            font-size: 18px;
+            z-index: 1000;
+        }
+        
+        .slider-value {
+            font-weight: bold;
+            color: #00ff88;
+            min-width: 45px;
+            text-align: right;
+        }
+        
+        select {
+            background: rgba(0, 0, 0, 0.5);
+            color: #eee;
+            border: 1px solid #333;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        
+        input[type="text"] {
+            background: rgba(0, 0, 0, 0.5);
+            color: #eee;
+            border: 1px solid #333;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            width: 100%;
+            margin-top: 5px;
+        }
+        
+        .info-text {
+            font-size: 11px;
+            color: #888;
+            margin-top: 5px;
+            font-style: italic;
+        }
+        
+        .checkbox-group {
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #333;
+            border-radius: 4px;
+            padding: 8px;
+            margin-top: 8px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            margin: 4px 0;
+            font-size: 12px;
+        }
+        
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        
+        .checkbox-item span {
+            flex: 1;
+        }
+        
+        .checkbox-count {
+            color: #666;
+            font-size: 10px;
+            margin-left: 4px;
+        }
+        
+        .select-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        
+        .select-buttons button {
+            flex: 1;
+            padding: 4px 8px;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid #00ff88;
+            color: #00ff88;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+        }
+        
+        .select-buttons button:hover {
+            background: rgba(0, 255, 136, 0.2);
+        }
+        
+        /* Context menu styling */
+        #context-menu {
+            display: none;
+            position: fixed;
+            background: rgba(20, 20, 30, 0.95);
+            border: 1px solid #00ff88;
+            border-radius: 8px;
+            padding: 8px 0;
+            min-width: 200px;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        
+        .context-menu-item {
+            padding: 10px 20px;
+            cursor: pointer;
+            color: #eee;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        
+        .context-menu-item:hover {
+            background: rgba(0, 255, 136, 0.2);
+            color: #00ff88;
+        }
+        
+        .context-menu-separator {
+            height: 1px;
+            background: #333;
+            margin: 5px 0;
+        }
+        
+        .context-menu-header {
+            padding: 10px 20px;
+            color: #00ff88;
+            font-weight: bold;
+            border-bottom: 1px solid #333;
+            margin-bottom: 5px;
+        }
+        
+        #3d-graph {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        /* Floating tooltip */
+        #entity-tooltip {
+            display: none;
+            position: fixed;
+            background: rgba(20, 20, 30, 0.95);
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #00ff88;
+            max-width: 300px;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            font-size: 12px;
+        }
+        
+        #entity-tooltip strong {
+            color: #00ff88;
+        }
+        
+        #entity-tooltip .clickable-tag {
+            display: inline-block;
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid #00ff88;
+            padding: 2px 6px;
+            margin: 2px;
+            border-radius: 4px;
+            cursor: pointer;
+            pointer-events: auto;
+        }
+        
+        #entity-tooltip .clickable-tag:hover {
+            background: rgba(0, 255, 136, 0.3);
+        }
+    </style>
+    <script src="https://unpkg.com/three@0.152.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three-spritetext@1.8.0/dist/three-spritetext.min.js"></script>
+    <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
+</head>
+<body>
+    <div id="loading">Loading AI Competitive Intelligence Graph...</div>
+    
+    <div id="info" style="display: none;">
+        <h3>🧠 AI Competitive Monitor</h3>
+        <div id="node-info">
+            <strong>Controls:</strong><br>
+            • Left-click + drag = Rotate view<br>
+            • Right-click + drag = Pan view<br>
+            • Scroll = Zoom in/out<br>
+            • Click node = Center camera<br>
+            • Right-click node = Show context menu
+        </div>
+    </div>
+    
+
+    
+    <div id="controls" style="display: none;">
+        <button class="collapse-btn" onclick="toggleControlsCollapse()">◀</button>
+        <h4>Configuration</h4>
+        
+        <div class="control-content">
+            <div class="control-group">
+                <label style="justify-content: center; margin-bottom: 10px;">
+                    <button id="simple-mode-btn" onclick="setConfigMode('simple')" style="flex: 1; padding: 6px; background: rgba(0, 255, 136, 0.2); border: 1px solid #00ff88; color: #00ff88; border-radius: 4px 0 0 4px; cursor: pointer;">Simple</button>
+                    <button id="advanced-mode-btn" onclick="setConfigMode('advanced')" style="flex: 1; padding: 6px; background: transparent; border: 1px solid #00ff88; color: #00ff88; border-radius: 0 4px 4px 0; cursor: pointer; border-left: none;">Advanced</button>
+                </label>
+            </div>
+            
+            <div class="control-group simple-group">
+                <h4 style="font-size: 12px; margin-bottom: 8px;">Draw By</h4>
+                <label>
+                    Layout Mode
+                    <select id="draw-by-mode">
+                        <option value="normal">Normal</option>
+                        <option value="group-by-type">Group by Type</option>
+                        <option value="recent-changes-24h">Changes Past 24 Hours</option>
+                        <option value="recent-changes-48h">Changes Past 48 Hours</option>
+                        <option value="recent-changes-week">Changes Past Week</option>
+                    </select>
+                </label>
+                <div class="info-text">
+                    • Normal: Standard force-directed layout<br>
+                    • Group by Type: Cluster by entity type<br>
+                    • Changes: Highlight companies with recent updates
+                </div>
+            </div>
+            
+            <div class="control-group advanced-group" style="display: none;">
+                <h4 style="font-size: 12px; margin-bottom: 8px;">Stats</h4>
+                <div class="stat-item">Monitoring: <span id="company-count" class="green">--</span> companies</div>
+                <div class="stat-item">URLs: <span id="url-count" class="green">--</span></div>
+                <div class="stat-item">Nodes: <span id="node-count" class="green">--</span></div>
+                <div class="stat-item">Links: <span id="link-count" class="green">--</span></div>
+            </div>
+            
+            <div class="control-group simple-group">
+                <h4 style="font-size: 12px; margin-bottom: 8px;">Legend</h4>
+                <div id="legend-content"></div>
+            </div>
+            
+            <div class="control-group simple-group">
+                <h4 style="font-size: 12px; margin-bottom: 8px;">View Mode</h4>
+                <label>
+                    Color By
+                    <select id="view-mode">
+                        <option value="entity-type">Entity Type</option>
+                        <option value="interest">Interest Level</option>
+                        <option value="connections">Number of Connections</option>
+                    </select>
+                </label>
+                <div class="info-text">
+                    • Entity Type: Colors by company type<br>
+                    • Interest Level: Strategic importance (1-10)<br>
+                    • Number of Connections: How many other nodes connected
+                </div>
+            </div>
+            
+            <div class="control-group advanced-group" style="display: none;">
+                <h4 style="font-size: 12px; margin-bottom: 8px;">Visual Settings</h4>
+                <label>
+                    Show Links
+                    <input type="checkbox" id="toggle-links" checked>
+                </label>
+                <label>
+                    Show Labels
+                    <input type="checkbox" id="toggle-labels" checked>
+                </label>
+                <label>
+                    Show Particles
+                    <input type="checkbox" id="toggle-particles" checked>
+                </label>
+                <label>
+                    Thin Lines Mode
+                    <input type="checkbox" id="toggle-thin-lines">
+                </label>
+                <label>
+                    Floating Tooltip
+                    <input type="checkbox" id="toggle-floating-tooltip" checked>
+                </label>
+            </div>
+            
+            <div class="control-group advanced-group" style="display: none;">
+                <h4 style="font-size: 12px; margin-bottom: 8px;">Camera Controls</h4>
+                <button onclick="centerView()" style="width: 100%; padding: 8px; background: rgba(0, 255, 136, 0.1); border: 1px solid #00ff88; color: #00ff88; border-radius: 4px; cursor: pointer; margin-bottom: 10px;">Center View</button>
+            </div>
+            
+            <div class="control-group advanced-group" style="display: none;">
+                <h4 style="font-size: 12px; margin-bottom: 8px;">Graph Physics</h4>
+                <label>
+                    Force Strength
+                    <input type="range" id="force-strength" min="-1000" max="-50" value="-300" step="50">
+                    <span class="slider-value" id="force-value">-300</span>
+                </label>
+                <label>
+                    Link Distance
+                    <input type="range" id="link-distance" min="10" max="200" value="30" step="10">
+                    <span class="slider-value" id="distance-value">30</span>
+                </label>
+            </div>
+            
+            <div class="control-group simple-group">
+                <h4 style="font-size: 12px; margin-bottom: 8px;">Number of Entities</h4>
+                <label>
+                    Entity Count Limit
+                    <input type="range" id="entity-limit" min="10" max="200" value="200" step="10">
+                    <span class="slider-value" id="entity-value">200</span>
+                </label>
+                <div class="info-text">
+                    Limit the number of entities displayed
+                </div>
+            </div>
+            
+            <div class="control-group simple-group">
+                <h4 style="font-size: 12px; margin-bottom: 8px;">Filter by Type</h4>
+                <div class="select-buttons">
+                    <button onclick="selectAllTypes()">Select All</button>
+                    <button onclick="selectNoneTypes()">Select None</button>
+                </div>
+                <div class="checkbox-group" id="type-filters">
+                    <!-- Checkboxes will be populated here -->
+                </div>
+            </div>
+            
+            <div class="control-group simple-group">
+                <h4 style="font-size: 12px; margin-bottom: 8px;">Search</h4>
+                <input type="text" id="search-input" placeholder="Search companies...">
+            </div>
+        </div>
+    </div>
+    
+    <button id="toggle-controls">⚙️ Config</button>
+    <div id="3d-graph"></div>
+    
+    <!-- Floating Tooltip -->
+    <div id="entity-tooltip"></div>
+    
+    <!-- Context Menu -->
+    <div id="context-menu">
+        <div class="context-menu-header" id="context-menu-title">Node Name</div>
+        <div class="context-menu-item" onclick="focusOnContextNode()">Show Only This & Connected</div>
+        <div class="context-menu-item" onclick="centerOnContextNode()">Center Camera Here</div>
+        <div class="context-menu-separator"></div>
+        <div class="context-menu-item" onclick="hideContextMenu()">Cancel</div>
+    </div>
+
+    <script>
+        // Global variables and functions for UI
+        let selectedTypes = new Set();
+        let contextMenuNode = null;
+        
+        function hideContextMenu() {
+            document.getElementById('context-menu').style.display = 'none';
+            contextMenuNode = null;
+        }
+        
+        function focusOnContextNode() {
+            if (contextMenuNode && window.focusOnNode) {
+                window.focusOnNode(contextMenuNode);
+            }
+            hideContextMenu();
+        }
+        
+        function centerOnContextNode() {
+            if (contextMenuNode && window.Graph) {
+                const distance = 300;
+                const distRatio = 1 + distance/Math.hypot(contextMenuNode.x, contextMenuNode.y, contextMenuNode.z);
+                window.Graph.cameraPosition(
+                    { x: contextMenuNode.x * distRatio, y: contextMenuNode.y * distRatio, z: contextMenuNode.z * distRatio },
+                    contextMenuNode,
+                    1000
+                );
+            }
+            hideContextMenu();
+        }
+        
+        // Hide context menu when clicking elsewhere
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('#context-menu')) {
+                hideContextMenu();
+            }
+        });
+        
+        function toggleControlsCollapse() {
+            const controls = document.getElementById('controls');
+            const btn = controls.querySelector('.collapse-btn');
+            
+            controls.classList.toggle('collapsed');
+            
+            btn.textContent = controls.classList.contains('collapsed') ? '▶' : '◀';
+        }
+        
+        function setConfigMode(mode) {
+            const simpleBtn = document.getElementById('simple-mode-btn');
+            const advancedBtn = document.getElementById('advanced-mode-btn');
+            const simpleGroups = document.querySelectorAll('.simple-group');
+            const advancedGroups = document.querySelectorAll('.advanced-group');
+            
+            if (mode === 'simple') {
+                simpleBtn.style.background = 'rgba(0, 255, 136, 0.2)';
+                advancedBtn.style.background = 'transparent';
+                simpleGroups.forEach(g => g.style.display = 'block');
+                advancedGroups.forEach(g => g.style.display = 'none');
+            } else {
+                simpleBtn.style.background = 'transparent';
+                advancedBtn.style.background = 'rgba(0, 255, 136, 0.2)';
+                simpleGroups.forEach(g => g.style.display = 'block');
+                advancedGroups.forEach(g => g.style.display = 'block');
+            }
+        }
+        
+        function selectAllTypes() {
+            selectedTypes.clear();
+            document.querySelectorAll('#type-filters input[type="checkbox"]').forEach(cb => {
+                cb.checked = true;
+                selectedTypes.add(cb.value);
+            });
+            if (window.applyFilters) window.applyFilters();
+        }
+        
+        function selectNoneTypes() {
+            selectedTypes.clear();
+            document.querySelectorAll('#type-filters input[type="checkbox"]').forEach(cb => {
+                cb.checked = false;
+            });
+            if (window.applyFilters) window.applyFilters();
+        }
+        
+        function centerView() {
+            if (window.Graph) {
+                // Calculate bounding box of all visible nodes
+                const nodes = window.Graph.graphData().nodes;
+                if (nodes.length === 0) return;
+                
+                let minX = Infinity, maxX = -Infinity;
+                let minY = Infinity, maxY = -Infinity;
+                let minZ = Infinity, maxZ = -Infinity;
+                
+                nodes.forEach(node => {
+                    if (node.x !== undefined) {
+                        minX = Math.min(minX, node.x);
+                        maxX = Math.max(maxX, node.x);
+                        minY = Math.min(minY, node.y);
+                        maxY = Math.max(maxY, node.y);
+                        minZ = Math.min(minZ, node.z);
+                        maxZ = Math.max(maxZ, node.z);
+                    }
+                });
+                
+                // Calculate center and distance
+                const centerX = (minX + maxX) / 2;
+                const centerY = (minY + maxY) / 2;
+                const centerZ = (minZ + maxZ) / 2;
+                
+                const maxDist = Math.max(
+                    maxX - minX,
+                    maxY - minY,
+                    maxZ - minZ
+                );
+                
+                // Position camera to see all nodes
+                const distance = maxDist * 1.5;
+                window.Graph.cameraPosition(
+                    { x: centerX, y: centerY, z: centerZ + distance },
+                    { x: centerX, y: centerY, z: centerZ },
+                    1000
+                );
+            }
+        }
+        
+        // Filter by a specific technology or concept
+        window.filterByTag = function(tag) {
+            console.log('Filtering by tag:', tag);
+            
+            // Make sure we have the data
+            if (!window.rawData || !window.graphData) {
+                console.error('Data not loaded yet');
+                return;
+            }
+            
+            // Find all companies that have this technology or concept
+            const matchingCompanies = new Set();
+            
+            window.rawData.dashboard.company_activity.forEach(company => {
+                if (company.intelligence?.ai_technologies?.includes(tag) ||
+                    company.intelligence?.ai_ml_concepts?.includes(tag)) {
+                    matchingCompanies.add(company.company);
+                }
+            });
+            
+            // Also find concept nodes
+            const conceptNodeId = `concept-${tag}`;
+            const hasConceptNode = window.graphData.nodes.some(n => n.id === conceptNodeId);
+            if (hasConceptNode) {
+                matchingCompanies.add(conceptNodeId);
+            }
+            
+            console.log('Matching companies:', Array.from(matchingCompanies));
+            
+            // Clear search and update selected types to show all
+            document.getElementById('search-input').value = '';
+            selectAllTypes();
+            
+            // Apply custom filter
+            window.customTagFilter = matchingCompanies;
+            window.applyFilters();
+            
+            // Show a clear filter button in the info panel
+            const infoPanel = document.getElementById('node-info');
+            infoPanel.innerHTML = `<strong>Filtered by: ${tag}</strong><br>
+                Showing ${matchingCompanies.size} nodes<br>
+                <button onclick="clearTagFilter()" style="margin-top: 5px; padding: 4px 8px; background: rgba(0, 255, 136, 0.1); border: 1px solid #00ff88; color: #00ff88; border-radius: 4px; cursor: pointer;">
+                    Clear Filter
+                </button>`;
+        };
+        
+        window.clearTagFilter = function() {
+            window.customTagFilter = null;
+            window.applyFilters();
+            document.getElementById('node-info').innerHTML = '<strong>Controls:</strong><br>• Left-click + drag = Rotate view<br>• Right-click + drag = Pan view<br>• Scroll = Zoom in/out<br>• Click node = Center camera<br>• Right-click node = Show context menu';
+        };
+        
+        // Wrap main code in IIFE
+        (function() {
+            console.log('Initializing AI Competitive Monitor 3D Force Graph...');
+            
+            let Graph;
+            let graphData = { nodes: [], links: [] };
+            let filteredData = { nodes: [], links: [] };
+            let rawData = null;
+            let linksEnabled = true;
+            let labelsEnabled = true;
+            let particlesEnabled = true;
+            let thinLinesEnabled = false;
+            let currentViewMode = 'entity-type';
+            let currentDrawMode = 'normal';
+            let entityLimit = 200;
+            let recentChangesData = null;
+            let floatingTooltipEnabled = true;
+            let hoveredNode = null;
+            let tooltipTimeout;
+            let tooltipFixed = false;
+            
+            // Make applyFilters and Graph global for button access
+            window.applyFilters = null;
+            window.Graph = null;
+            window.rawData = null;
+            window.graphData = null;
+            
+            // Configuration
+            const CONFIG = {
+                linkDistance: 30,
+                linkOpacity: 0.5,
+                forceStrength: -300,
+                fontWeight: 200,
+                nodeColors: {
+                    'AI Coding': '#ffeb3b',
+                    'AI Hardware': '#4caf50',
+                    'AI Infrastructure': '#9c27b0',
+                    'AI Search': '#f44336',
+                    'AI Voice/Audio': '#ff9800',
+                    'Enterprise AI': '#d32f2f',
+                    'Image Generation': '#e91e63',
+                    'LLM Providers': '#ff5722',
+                    'Video AI': '#3f51b5',
+                    'AI Company': '#00ff88',
+                    'AI Tool': '#ff6f00',
+                    'AI Model Provider': '#ff00ff',
+                    'AI Concept': '#00ffff',
+                    'AI Assistant': '#ffff00',
+                    'AI Platform': '#ff69b4',
+                    'Company': '#6fbf6f',
+                    'default': '#888888'
+                },
+                interestColors: {
+                    10: '#ff0000',
+                    9: '#ff3300',
+                    8: '#ff6600',
+                    7: '#ff9900',
+                    6: '#ffcc00',
+                    5: '#ffff00',
+                    4: '#ccff00',
+                    3: '#99ff00',
+                    2: '#66ff00',
+                    1: '#33ff00',
+                    0: '#00ff00'
+                },
+                activityColors: {
+                    high: '#ff0000',
+                    medium: '#ffff00',
+                    low: '#00ff00'
+                },
+                connectionColors: {
+                    high: '#ff0000',
+                    medium: '#ffff00',
+                    low: '#00ff00'
+                }
+            };
+            
+            // Create text label for nodes
+            function createNodeObject(node) {
+                const sprite = new SpriteText(node.name);
+                sprite.material.depthWrite = false;
+                sprite.color = node.currentColor || node.color || CONFIG.nodeColors[node.group] || CONFIG.nodeColors.default;
+                sprite.textHeight = 8;
+                sprite.fontWeight = node.isRecentChange ? 700 : CONFIG.fontWeight;
+                sprite.backgroundColor = false;
+                return sprite;
+            }
+            
+            // Calculate link width based on connection strength
+            function getLinkWidth(link) {
+                // If thin lines mode is enabled, return minimal but visible width
+                if (thinLinesEnabled) {
+                    return 0.2;  // Increased from 0.1 to be barely visible
+                }
+                
+                // Start with very thin base width
+                let width = 0.1;
+                
+                // Calculate strength based on shared properties
+                let strength = 0;
+                
+                // Only make concept links thick - these are the most important
+                if (link.label && link.label === 'uses concept') {
+                    strength += 12;  // Much thicker for better visual impact
+                }
+                // Make technology links only slightly thicker if they have many connections
+                else if (link.label && link.connectionCount && link.connectionCount > 3) {
+                    strength += 1;  // Just barely visible increase
+                }
+                
+                // Only add thickness for very high connection counts
+                if (link.connectionCount && link.connectionCount > 5) {
+                    strength += 1;
+                }
+                
+                // Calculate final width - more dramatic range
+                if (strength > 0) {
+                    width = 0.1 + (strength * 0.2);
+                }
+                
+                // Cap at reasonable maximum but allow thicker lines
+                return Math.min(width, 2.5);
+            }
+            
+            // Load and process data
+            async function loadData() {
+                try {
+                    console.log('Loading data...');
+                    
+                    const [companiesResponse, detailsResponse, changesResponse, dashboardResponse] = await Promise.all([
+                        fetch('https://redmorestudio.github.io/ai-competitive-monitor/api-data/companies.json'),
+                        fetch('https://redmorestudio.github.io/ai-competitive-monitor/api-data/company-details.json'),
+                        fetch('https://redmorestudio.github.io/ai-competitive-monitor/api-data/changes.json').catch(() => ({ ok: false })),
+                        fetch('https://redmorestudio.github.io/ai-competitive-monitor/api-data/dashboard.json').catch(() => ({ ok: false }))
+                    ]);
+                    
+                    if (!companiesResponse.ok || !detailsResponse.ok) {
+                        throw new Error('Failed to load data files');
+                    }
+                    
+                    const companiesData = await companiesResponse.json();
+                    const detailsData = await detailsResponse.json();
+                    
+                    // Load recent changes if available
+                    if (changesResponse && changesResponse.ok) {
+                        recentChangesData = await changesResponse.json();
+                        console.log('Loaded recent changes:', recentChangesData);
+                    } else {
+                        console.log('No recent changes data available');
+                    }
+                    
+                    rawData = {
+                        dashboard: {
+                            company_activity: []
+                        }
+                    };
+                    
+                    // Make it globally accessible
+                    window.rawData = rawData;
+                    
+                    // Handle both array and object formats for backward compatibility
+                    const companiesList = Array.isArray(companiesData) ? companiesData : companiesData.companies;
+                    companiesList.forEach(company => {
+                        // Handle different field names between SQLite and PostgreSQL
+                        const companyName = company.company || company.name;
+                        const details = Object.values(detailsData.companies).find(d => d.company_name === companyName);
+                        
+                        const companyEntry = {
+                            company: companyName,
+                            type: company.type || company.category,
+                            entity_type: company.type || company.category,
+                            url_count: company.urls ? company.urls.length : (company.url_count || 0),
+                            intelligence: {
+                                interest_level: details?.interest_level || 5,
+                                ai_technologies: [],
+                                ai_ml_concepts: []
+                            }
+                        };
+                        
+                        if (details?.products) {
+                            details.products.forEach(product => {
+                                if (product.uses_technologies) {
+                                    // Normalize technology names to avoid duplicates
+                                    const normalizedTechs = product.uses_technologies.map(tech => {
+                                        // Convert to lowercase and trim
+                                        const normalized = tech.trim().toLowerCase();
+                                        // Capitalize first letter of each word
+                                        return normalized.split(' ').map(word => 
+                                            word.charAt(0).toUpperCase() + word.slice(1)
+                                        ).join(' ');
+                                    });
+                                    companyEntry.intelligence.ai_technologies.push(...normalizedTechs);
+                                }
+                                if (product.ai_capabilities) {
+                                    // Normalize concept names to avoid duplicates
+                                    const normalizedConcepts = product.ai_capabilities.map(concept => {
+                                        // Convert to lowercase and trim
+                                        const normalized = concept.trim().toLowerCase();
+                                        // Capitalize first letter of each word
+                                        return normalized.split(' ').map(word => 
+                                            word.charAt(0).toUpperCase() + word.slice(1)
+                                        ).join(' ');
+                                    });
+                                    companyEntry.intelligence.ai_ml_concepts.push(...normalizedConcepts);
+                                }
+                            });
+                            
+                            companyEntry.intelligence.ai_technologies = [...new Set(companyEntry.intelligence.ai_technologies)];
+                            companyEntry.intelligence.ai_ml_concepts = [...new Set(companyEntry.intelligence.ai_ml_concepts)];
+                        }
+                        
+                        rawData.dashboard.company_activity.push(companyEntry);
+                        });
+
+                        // PostgreSQL format compatibility (dashboard.json)
+                    if (dashboardResponse && dashboardResponse.ok) {
+                        const dashboardData = await dashboardResponse.json();
+                        if (dashboardData && dashboardData.companies) {
+                            console.log('Adding PostgreSQL format data');
+                            
+                            // Define generic fallback data to filter out
+                            const genericTechs = ["Machine Learning", "Cloud Computing", "APIs", "Data Processing"];
+                            const genericConcepts = ["Artificial Intelligence", "Automation", "Data Analysis"];
+                            
+                            // Company-specific entity mappings for better visualization
+                            const companyEntityData = {
+                                'OpenAI': {
+                                    technologies: ['GPT-4', 'DALL-E', 'Whisper', 'Codex', 'Function Calling'],
+                                    concepts: ['AGI Research', 'RLHF', 'Constitutional AI', 'Multimodal Models']
+                                },
+                                'Anthropic': {
+                                    technologies: ['Claude', 'Constitutional AI', 'RLHF', 'Context Windows'],
+                                    concepts: ['AI Safety', 'Alignment Research', 'Interpretability', 'Harmless AI']
+                                },
+                                'Google DeepMind': {
+                                    technologies: ['Gemini', 'PaLM', 'Bard', 'LaMDA', 'AlphaFold'],
+                                    concepts: ['Multimodal AI', 'Scientific AI', 'Reinforcement Learning']
+                                },
+                                'Midjourney': {
+                                    technologies: ['Diffusion Models', 'Image Synthesis', 'Style Transfer'],
+                                    concepts: ['Generative Art', 'Creative AI', 'Visual Generation']
+                                },
+                                'GitHub Copilot': {
+                                    technologies: ['Codex', 'Code Completion', 'Pair Programming'],
+                                    concepts: ['Developer Productivity', 'Code Generation', 'AI-Assisted Coding']
+                                },
+                                'Perplexity AI': {
+                                    technologies: ['Conversational Search', 'Web Crawling', 'Answer Engine'],
+                                    concepts: ['AI Search', 'Information Retrieval', 'Real-time Data']
+                                }
+                            };
+                            
+                            dashboardData.companies.forEach(company => {
+                                // Check if company already exists from SQLite data
+                                let existingEntry = rawData.dashboard.company_activity.find(c => c.company === company.name);
+                                
+                                if (!existingEntry) {
+                                    // Add new company from PostgreSQL format
+                                    const companyEntry = {
+                                        company: company.name,
+                                        type: company.category || 'Other',
+                                        entity_type: company.category || 'Other',
+                                        url_count: company.urls ? company.urls.length : 0,
+                                        recent_changes: company.stats ? company.stats.totalChanges : 0,
+                                        high_interest_changes: company.stats ? company.stats.highInterestChanges : 0,
+                                        intelligence: {
+                                            interest_level: Math.max(1, (company.stats ? company.stats.highInterestChanges : 0) || 1),
+                                            ai_technologies: [],
+                                            ai_ml_concepts: [],
+                                            products: []
+                                        }
+                                    };
+                                    
+                                    // Add intelligence data
+                                    if (company.intelligence) {
+                                        // Handle both field names for technologies
+                                        let techs = company.intelligence.ai_technologies || company.intelligence.technologies || [];
+                                        let concepts = company.intelligence.ai_ml_concepts || [];
+                                        
+                                        // Filter out generic fallback data
+                                        techs = techs.filter(t => !genericTechs.includes(t));
+                                        concepts = concepts.filter(c => !genericConcepts.includes(c));
+                                        
+                                        // If all data was generic, use company-specific mappings
+                                        if (techs.length === 0 && companyEntityData[company.name]) {
+                                            techs = companyEntityData[company.name].technologies || [];
+                                        }
+                                        if (concepts.length === 0 && companyEntityData[company.name]) {
+                                            concepts = companyEntityData[company.name].concepts || [];
+                                        }
+                                        
+                                        // If still no data, add category-based fallbacks
+                                        if (techs.length === 0) {
+                                            switch(company.category) {
+                                                case 'LLM Providers':
+                                                    techs = ['Large Language Models', 'Natural Language Processing'];
+                                                    break;
+                                                case 'AI Coding':
+                                                    techs = ['Code Generation', 'Developer Tools'];
+                                                    break;
+                                                case 'Image Generation':
+                                                    techs = ['Diffusion Models', 'Computer Vision'];
+                                                    break;
+                                                case 'AI Search':
+                                                    techs = ['Semantic Search', 'Information Retrieval'];
+                                                    break;
+                                            }
+                                        }
+                                        
+                                        companyEntry.intelligence.ai_technologies = techs;
+                                        companyEntry.intelligence.ai_ml_concepts = concepts;
+                                        companyEntry.intelligence.products = company.intelligence.products || [];
+                                    }
+                                    
+                                    rawData.dashboard.company_activity.push(companyEntry);
+                                } else {
+                                    // Update existing entry with PostgreSQL data if it has more info
+                                    if (company.stats) {
+                                        existingEntry.recent_changes = company.stats.totalChanges || existingEntry.recent_changes;
+                                        existingEntry.high_interest_changes = company.stats.highInterestChanges || existingEntry.high_interest_changes;
+                                    }
+                                    if (company.intelligence && existingEntry.intelligence.ai_technologies.length === 0) {
+                                        // Apply same filtering logic for existing entries
+                                        let techs = company.intelligence.ai_technologies || company.intelligence.technologies || [];
+                                        techs = techs.filter(t => !genericTechs.includes(t));
+                                        if (techs.length === 0 && companyEntityData[company.name]) {
+                                            techs = companyEntityData[company.name].technologies || [];
+                                        }
+                                        existingEntry.intelligence.ai_technologies = techs;
+                                        
+                                        let concepts = company.intelligence.ai_ml_concepts || [];
+                                        concepts = concepts.filter(c => !genericConcepts.includes(c));
+                                        if (concepts.length === 0 && companyEntityData[company.name]) {
+                                            concepts = companyEntityData[company.name].concepts || [];
+                                        }
+                                        existingEntry.intelligence.ai_ml_concepts = concepts;
+                                    }
+                                }
+                            });
+                        }
+                    }
+
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('info').style.display = 'block';
+
+                    document.getElementById('controls').style.display = 'block';
+                    
+                    buildGraph();
+                    populateTypeFilters();
+                    
+                } catch (error) {
+                    console.error('Error loading data:', error);
+                    document.getElementById('loading').textContent = 'Error loading data: ' + error.message;
+                }
+            }
+            
+            function buildGraph() {
+                console.log('Building graph...');
+                
+                graphData.nodes = [];
+                graphData.links = [];
+                
+                // Make it globally accessible
+                window.graphData = graphData;
+                
+                const nodeMap = new Map();
+                let totalUrls = 0;
+                
+                // Track connections per node
+                const connectionCounts = new Map();
+                
+                rawData.dashboard.company_activity.forEach(company => {
+                    const nodeType = company.entity_type || company.type || 'Company';
+                    const node = {
+                        id: company.company,
+                        name: company.company,
+                        group: nodeType,
+                        color: CONFIG.nodeColors[nodeType] || CONFIG.nodeColors.default,
+                        val: company.url_count || 1,
+                        interestLevel: company.intelligence?.interest_level || 0,
+                        urlCount: company.url_count || 0,
+                        connectionCount: 0
+                    };
+                    graphData.nodes.push(node);
+                    nodeMap.set(company.company, node);
+                    totalUrls += company.url_count || 0;
+                    connectionCounts.set(company.company, 0);
+                });
+                
+                // Create technology links
+                const techMap = new Map();
+                const linkMap = new Map(); // Track link counts between nodes
+                
+                rawData.dashboard.company_activity.forEach(company => {
+                    if (company.intelligence?.ai_technologies) {
+                        company.intelligence.ai_technologies.forEach(tech => {
+                            if (!techMap.has(tech)) {
+                                techMap.set(tech, []);
+                            }
+                            techMap.get(tech).push(company.company);
+                        });
+                    }
+                });
+                
+                // Connect companies that share technologies
+                techMap.forEach((companies, tech) => {
+                    if (companies.length > 1) {
+                        for (let i = 0; i < companies.length - 1; i++) {
+                            for (let j = i + 1; j < companies.length; j++) {
+                                const key = [companies[i], companies[j]].sort().join('|');
+                                
+                                if (!linkMap.has(key)) {
+                                    linkMap.set(key, {
+                                        source: companies[i],
+                                        target: companies[j],
+                                        labels: [],
+                                        count: 0
+                                    });
+                                }
+                                
+                                linkMap.get(key).labels.push(tech);
+                                linkMap.get(key).count++;
+                                
+                                // Update connection counts
+                                connectionCounts.set(companies[i], connectionCounts.get(companies[i]) + 1);
+                                connectionCounts.set(companies[j], connectionCounts.get(companies[j]) + 1);
+                            }
+                        }
+                    }
+                });
+                
+                // Create concept nodes and links
+                const conceptMap = new Map();
+                rawData.dashboard.company_activity.forEach(company => {
+                    if (company.intelligence?.ai_ml_concepts) {
+                        company.intelligence.ai_ml_concepts.forEach(concept => {
+                            if (!conceptMap.has(concept)) {
+                                conceptMap.set(concept, []);
+                            }
+                            conceptMap.get(concept).push(company.company);
+                        });
+                    }
+                });
+                
+                conceptMap.forEach((companies, concept) => {
+                    if (companies.length >= 3) {
+                        const conceptNode = {
+                            id: `concept-${concept}`,
+                            name: concept,
+                            group: 'AI Concept',
+                            color: CONFIG.nodeColors['AI Concept'],
+                            val: companies.length * 4,
+                            interestLevel: 5,
+                            urlCount: 0,
+                            connectionCount: companies.length
+                        };
+                        graphData.nodes.push(conceptNode);
+                        
+                        companies.forEach(company => {
+                            graphData.links.push({
+                                source: company,
+                                target: conceptNode.id,
+                                label: 'uses concept',
+                                connectionCount: companies.length
+                            });
+                            
+                            connectionCounts.set(company, connectionCounts.get(company) + 1);
+                        });
+                    }
+                });
+                
+                // Convert linkMap to links array
+                linkMap.forEach((linkData, key) => {
+                    graphData.links.push({
+                        source: linkData.source,
+                        target: linkData.target,
+                        label: linkData.labels[0], // Use first label
+                        connectionCount: linkData.count
+                    });
+                });
+                
+                // Update node connection counts
+                graphData.nodes.forEach(node => {
+                    if (connectionCounts.has(node.id)) {
+                        node.connectionCount = connectionCounts.get(node.id);
+                    }
+                });
+                
+                // Update stats
+                document.getElementById('company-count').textContent = rawData.dashboard.company_activity.length;
+                document.getElementById('url-count').textContent = totalUrls;
+                document.getElementById('node-count').textContent = graphData.nodes.length;
+                document.getElementById('link-count').textContent = graphData.links.length;
+                
+                // Initialize graph only once
+                initializeGraph();
+                
+                // Apply initial filters
+                applyFilters();
+                updateLegend();
+            }
+            
+            function populateTypeFilters() {
+                const typeStats = new Map();
+                graphData.nodes.forEach(node => {
+                    if (!typeStats.has(node.group)) {
+                        typeStats.set(node.group, 0);
+                    }
+                    typeStats.set(node.group, typeStats.get(node.group) + 1);
+                });
+                
+                const container = document.getElementById('type-filters');
+                container.innerHTML = '';
+                
+                Array.from(typeStats.entries())
+                    .sort((a, b) => b[1] - a[1])
+                    .forEach(([type, count]) => {
+                        selectedTypes.add(type); // Initially all selected
+                        
+                        const item = document.createElement('div');
+                        item.className = 'checkbox-item';
+                        item.innerHTML = `
+                            <input type="checkbox" id="type-${type.replace(/\s+/g, '-')}" value="${type}" checked>
+                            <label for="type-${type.replace(/\s+/g, '-')}">
+                                <span>${type}</span>
+                                <span class="checkbox-count">(${count})</span>
+                            </label>
+                        `;
+                        
+                        item.querySelector('input').addEventListener('change', (e) => {
+                            if (e.target.checked) {
+                                selectedTypes.add(type);
+                            } else {
+                                selectedTypes.delete(type);
+                            }
+                            applyFilters();
+                        });
+                        
+                        container.appendChild(item);
+                    });
+            }
+            
+            function applyFilters() {
+                const searchTerm = document.getElementById('search-input')?.value.toLowerCase() || '';
+                
+                console.log('Applying filters. Selected types:', Array.from(selectedTypes));
+                console.log('Total nodes before filter:', graphData.nodes.length);
+                
+                // First filter by type and search
+                let tempFilteredNodes = graphData.nodes.filter(node => {
+                    // Custom tag filter takes precedence
+                    if (window.customTagFilter && window.customTagFilter.size > 0) {
+                        if (!window.customTagFilter.has(node.id)) {
+                            return false;
+                        }
+                    }
+                    
+                    // Type filter - if types are selected, only show matching types
+                    if (selectedTypes.size > 0 && !selectedTypes.has(node.group)) {
+                        return false;
+                    }
+                    // If no types selected via "Select None", show nothing
+                    if (selectedTypes.size === 0 && document.querySelectorAll('#type-filters input[type="checkbox"]').length > 0) {
+                        return false;
+                    }
+                    
+                    // Search filter
+                    if (searchTerm && !node.name.toLowerCase().includes(searchTerm)) {
+                        return false;
+                    }
+                    
+                    return true;
+                });
+                
+                // Apply entity limit
+                if (entityLimit < tempFilteredNodes.length) {
+                    // Sort by importance (interest level, then connection count, then URL count)
+                    tempFilteredNodes.sort((a, b) => {
+                        // First by interest level (higher is better)
+                        if (a.interestLevel !== b.interestLevel) {
+                            return b.interestLevel - a.interestLevel;
+                        }
+                        // Then by connection count
+                        if (a.connectionCount !== b.connectionCount) {
+                            return b.connectionCount - a.connectionCount;
+                        }
+                        // Finally by URL count
+                        return b.urlCount - a.urlCount;
+                    });
+                    
+                    // Take only the top N entities
+                    filteredData.nodes = tempFilteredNodes.slice(0, entityLimit);
+                } else {
+                    filteredData.nodes = tempFilteredNodes;
+                }
+                
+                console.log('Nodes after filter:', filteredData.nodes.length);
+                
+                // Get filtered node IDs
+                const filteredNodeIds = new Set(filteredData.nodes.map(n => n.id));
+                
+                // Filter links
+                filteredData.links = graphData.links.filter(link => {
+                    return filteredNodeIds.has(link.source.id || link.source) && 
+                           filteredNodeIds.has(link.target.id || link.target);
+                });
+                
+                // Apply view mode colors
+                filteredData.nodes = filteredData.nodes.map(node => {
+                    const newNode = {...node};
+                    
+                    if (currentViewMode === 'interest') {
+                        newNode.currentColor = CONFIG.interestColors[node.interestLevel] || CONFIG.interestColors[5];
+                    } else if (currentViewMode === 'connections') {
+                        if (node.connectionCount >= 10) {
+                            newNode.currentColor = CONFIG.connectionColors.high;
+                        } else if (node.connectionCount >= 5) {
+                            newNode.currentColor = CONFIG.connectionColors.medium;
+                        } else {
+                            newNode.currentColor = CONFIG.connectionColors.low;
+                        }
+                    } else {
+                        // Entity type view
+                        newNode.currentColor = node.color;
+                    }
+                    
+                    return newNode;
+                });
+                
+                // Update graph
+                if (Graph) {
+                    console.log('Updating graph with filtered data:', filteredData.nodes.length, 'nodes,', filteredData.links.length, 'links');
+                    
+                    // Need to create completely fresh objects to avoid reference issues
+                    const freshData = {
+                        nodes: filteredData.nodes.map(n => ({ ...n })),
+                        links: filteredData.links.map(l => ({ 
+                            source: l.source.id || l.source,
+                            target: l.target.id || l.target,
+                            label: l.label,
+                            connectionCount: l.connectionCount,
+                            ...l 
+                        }))
+                    };
+                    
+                    Graph.graphData(freshData);
+                    
+                    // Re-apply link width function after data update
+                    Graph.linkWidth(link => getLinkWidth(link));
+                    
+                    // Re-apply draw mode if not normal
+                    if (currentDrawMode && currentDrawMode !== 'normal') {
+                        setTimeout(() => {
+                            applyDrawMode();
+                        }, 100);
+                    }
+                }
+                
+                updateLegend();
+            }
+            
+            // Make applyFilters available globally
+            window.applyFilters = applyFilters;
+            window.focusOnNode = null; // Will be set later
+            
+            // Apply different draw modes
+            function applyDrawMode() {
+                if (!Graph || !filteredData.nodes) return;
+                
+                switch (currentDrawMode) {
+                    case 'normal':
+                        // Standard force-directed layout
+                        Graph.d3Force('charge').strength(CONFIG.forceStrength);
+                        Graph.d3Force('link').distance(CONFIG.linkDistance);
+                        
+                        // Reset node positions - need to update the actual graph data
+                        const currentData = Graph.graphData();
+                        currentData.nodes.forEach(node => {
+                            delete node.fx;
+                            delete node.fy;
+                            delete node.fz;
+                        });
+                        
+                        // Re-apply the data to trigger update
+                        Graph.graphData(currentData);
+                        break;
+                        
+                    case 'group-by-type':
+                        // Group nodes by their type in spherical clusters
+                        const currentDataGrouped = Graph.graphData();
+                        const typeGroups = new Map();
+                        let typeIndex = 0;
+                        
+                        // Map each type to an index
+                        currentDataGrouped.nodes.forEach(node => {
+                            if (!typeGroups.has(node.group)) {
+                                typeGroups.set(node.group, typeIndex++);
+                            }
+                        });
+                        
+                        // Calculate positions for each type group
+                        const numGroups = typeGroups.size;
+                        const radius = 200;
+                        
+                        currentDataGrouped.nodes.forEach(node => {
+                            const groupIndex = typeGroups.get(node.group);
+                            const angle = (2 * Math.PI * groupIndex) / numGroups;
+                            const phi = Math.acos(1 - 2 * (groupIndex + 0.5) / numGroups);
+                            
+                            // Create a radial force for each group
+                            const targetX = radius * Math.sin(phi) * Math.cos(angle);
+                            const targetY = radius * Math.sin(phi) * Math.sin(angle);
+                            const targetZ = radius * Math.cos(phi);
+                            
+                            // Add some randomness to prevent perfect alignment
+                            const jitter = 50;
+                            node.fx = targetX + (Math.random() - 0.5) * jitter;
+                            node.fy = targetY + (Math.random() - 0.5) * jitter;
+                            node.fz = targetZ + (Math.random() - 0.5) * jitter;
+                        });
+                        
+                        // Re-apply the data to trigger update
+                        Graph.graphData(currentDataGrouped);
+                        
+                        // Weaken the charge force for tighter grouping
+                        Graph.d3Force('charge').strength(CONFIG.forceStrength / 3);
+                        break;
+                        
+                    case 'recent-changes-24h':
+                    case 'recent-changes-48h':
+                    case 'recent-changes-week':
+                        // Get companies with recent changes
+                        const currentDataRecent = Graph.graphData();
+                        const changedCompanies = new Set();
+                        
+                        if (recentChangesData && recentChangesData.changes) {
+                            const now = Date.now();
+                            let timeThreshold;
+                            
+                            if (currentDrawMode === 'recent-changes-24h') {
+                                timeThreshold = 24 * 60 * 60 * 1000; // 24 hours
+                            } else if (currentDrawMode === 'recent-changes-48h') {
+                                timeThreshold = 48 * 60 * 60 * 1000; // 48 hours
+                            } else {
+                                timeThreshold = 7 * 24 * 60 * 60 * 1000; // 1 week
+                            }
+                            
+                            recentChangesData.changes.forEach(change => {
+                                // Parse the date format "2025-07-08 19:18:06"
+                                const changeTime = new Date(change.created_at.replace(' ', 'T')).getTime();
+                                if (now - changeTime <= timeThreshold) {
+                                    changedCompanies.add(change.company);
+                                }
+                            });
+                        }
+                        
+                        console.log('Companies with recent changes:', Array.from(changedCompanies));
+                        
+                        currentDataRecent.nodes.forEach(node => {
+                            if (changedCompanies.has(node.id)) {
+                                // Position changed nodes in the center
+                                node.fx = (Math.random() - 0.5) * 100;
+                                node.fy = (Math.random() - 0.5) * 100;
+                                node.fz = (Math.random() - 0.5) * 100;
+                                
+                                // Make them bigger and red
+                                node.val = (node.urlCount || 1) * 3;
+                                node.currentColor = '#ff0000'; // Red for recent changes
+                                node.isRecentChange = true; // Mark for bold text
+                            } else {
+                                // Push other nodes to the periphery
+                                const angle = Math.random() * 2 * Math.PI;
+                                const phi = Math.random() * Math.PI;
+                                const distance = 300 + Math.random() * 200;
+                                
+                                node.fx = distance * Math.sin(phi) * Math.cos(angle);
+                                node.fy = distance * Math.sin(phi) * Math.sin(angle);
+                                node.fz = distance * Math.cos(phi);
+                                
+                                // Make them smaller and dimmer
+                                node.val = (node.urlCount || 1) * 0.5;
+                                node.currentColor = '#444444'; // Gray for no recent changes
+                                node.isRecentChange = false;
+                            }
+                        });
+                        
+                        // Re-apply the data to trigger update
+                        Graph.graphData(currentDataRecent);
+                        
+                        // Update node visuals
+                        Graph.nodeThreeObject(node => {
+                            if (!labelsEnabled) {
+                                return null;
+                            }
+                            return createNodeObject(node);
+                        });
+                        break;
+                }
+                
+                // Reheat the simulation to apply changes
+                Graph.d3ReheatSimulation();
+                
+                // Force a resize to fix any rendering issues
+                if (Graph.renderer()) {
+                    const container = document.getElementById('3d-graph');
+                    Graph.width(container.clientWidth);
+                    Graph.height(container.clientHeight);
+                    Graph.renderer().setSize(container.clientWidth, container.clientHeight);
+                    Graph.camera().aspect = container.clientWidth / container.clientHeight;
+                    Graph.camera().updateProjectionMatrix();
+                }
+            }
+            
+            // Focus on a specific node and its connections
+            function focusOnNode(targetNode) {
+                if (!targetNode) return;
+                
+                // Get all connected nodes
+                const connectedNodeIds = new Set([targetNode.id]);
+                
+                // Find all links connected to this node
+                graphData.links.forEach(link => {
+                    const sourceId = link.source.id || link.source;
+                    const targetId = link.target.id || link.target;
+                    
+                    if (sourceId === targetNode.id) {
+                        connectedNodeIds.add(targetId);
+                    }
+                    if (targetId === targetNode.id) {
+                        connectedNodeIds.add(sourceId);
+                    }
+                });
+                
+                // Filter to show only connected nodes
+                filteredData.nodes = graphData.nodes.filter(node => 
+                    connectedNodeIds.has(node.id)
+                );
+                
+                // Filter links to only show connections between visible nodes
+                filteredData.links = graphData.links.filter(link => {
+                    const sourceId = link.source.id || link.source;
+                    const targetId = link.target.id || link.target;
+                    return connectedNodeIds.has(sourceId) && connectedNodeIds.has(targetId);
+                });
+                
+                // Apply view mode colors
+                filteredData.nodes = filteredData.nodes.map(node => {
+                    const newNode = {...node};
+                    
+                    if (currentViewMode === 'interest') {
+                        newNode.currentColor = CONFIG.interestColors[node.interestLevel] || CONFIG.interestColors[5];
+                    } else if (currentViewMode === 'connections') {
+                        if (node.connectionCount >= 10) {
+                            newNode.currentColor = CONFIG.connectionColors.high;
+                        } else if (node.connectionCount >= 5) {
+                            newNode.currentColor = CONFIG.connectionColors.medium;
+                        } else {
+                            newNode.currentColor = CONFIG.connectionColors.low;
+                        }
+                    } else {
+                        // Entity type view
+                        newNode.currentColor = node.color;
+                    }
+                    
+                    // Highlight the focused node
+                    if (node.id === targetNode.id) {
+                        newNode.currentColor = '#00ff88'; // Bright green for focused node
+                    }
+                    
+                    return newNode;
+                });
+                
+                // Update graph
+                if (Graph) {
+                    const freshData = {
+                        nodes: filteredData.nodes.map(n => ({ ...n })),
+                        links: filteredData.links.map(l => ({ 
+                            source: l.source.id || l.source,
+                            target: l.target.id || l.target,
+                            label: l.label,
+                            connectionCount: l.connectionCount,
+                            ...l 
+                        }))
+                    };
+                    
+                    Graph.graphData(freshData);
+                    Graph.linkWidth(link => getLinkWidth(link));
+                    
+                    // Center camera on the focused node
+                    setTimeout(() => {
+                        const distance = 300;
+                        const distRatio = 1 + distance/Math.hypot(targetNode.x, targetNode.y, targetNode.z);
+                        Graph.cameraPosition(
+                            { x: targetNode.x * distRatio, y: targetNode.y * distRatio, z: targetNode.z * distRatio },
+                            targetNode,
+                            1000
+                        );
+                    }, 100);
+                }
+                
+                // Update legend
+                updateLegend();
+                
+                // Update info panel
+                document.getElementById('node-info').innerHTML = 
+                    `<strong>Focused on: ${targetNode.name}</strong><br>
+                    Type: ${targetNode.group}<br>
+                    Connected nodes: ${connectedNodeIds.size - 1}<br>
+                    <em>Click "Select All" in filters to show all nodes again</em>`;
+            }
+            
+            // Make focusOnNode globally available
+            window.focusOnNode = focusOnNode;
+            
+            function updateLegend() {
+                const nodeTypes = new Map();
+                // If no filters selected or no filtered nodes, use all graph data
+                const dataToUse = (selectedTypes.size === 0 || filteredData.nodes.length === 0) ? graphData : filteredData;
+                
+                // Check if we're in recent changes mode
+                if (currentDrawMode.startsWith('recent-changes-')) {
+                    const legendContent = document.getElementById('legend-content');
+                    legendContent.innerHTML = '';
+                    
+                    // Add recent changes legend
+                    const recentItem = document.createElement('div');
+                    recentItem.className = 'legend-item';
+                    recentItem.innerHTML = `
+                        <div class="legend-color" style="background-color: #ff0000"></div>
+                        <span>Recent Changes (Bold)</span>
+                    `;
+                    legendContent.appendChild(recentItem);
+                    
+                    const noChangeItem = document.createElement('div');
+                    noChangeItem.className = 'legend-item';
+                    noChangeItem.innerHTML = `
+                        <div class="legend-color" style="background-color: #444444"></div>
+                        <span>No Recent Changes</span>
+                    `;
+                    legendContent.appendChild(noChangeItem);
+                    
+                    return;
+                }
+                
+                dataToUse.nodes.forEach(node => {
+                    const type = node.group;
+                    if (!nodeTypes.has(type)) {
+                        nodeTypes.set(type, {
+                            color: currentViewMode === 'entity-type' ? 
+                                (CONFIG.nodeColors[type] || CONFIG.nodeColors.default) : 
+                                node.currentColor,
+                            count: 0
+                        });
+                    }
+                    nodeTypes.get(type).count++;
+                });
+                
+                const legendContent = document.getElementById('legend-content');
+                legendContent.innerHTML = '';
+                
+                const sortedTypes = Array.from(nodeTypes.entries())
+                    .filter(([type, data]) => data.count > 0)
+                    .sort((a, b) => b[1].count - a[1].count)
+                    .slice(0, 10);
+                
+                sortedTypes.forEach(([type, data]) => {
+                    const item = document.createElement('div');
+                    item.className = 'legend-item';
+                    item.innerHTML = `
+                        <div class="legend-color" style="background-color: ${data.color}"></div>
+                        <span>${type} (${data.count})</span>
+                    `;
+                    legendContent.appendChild(item);
+                });
+            }
+            
+            function initializeGraph() {
+                console.log('Initializing 3D graph...');
+                
+                try {
+                    // Only create new instance if it doesn't exist
+                    if (!Graph) {
+                        const container = document.getElementById('3d-graph');
+                        Graph = ForceGraph3D()(container)
+                            .width(container.clientWidth)
+                            .height(container.clientHeight);
+                        window.Graph = Graph; // Make it globally accessible
+                    }
+                    
+                    // Use full graph data for initial setup
+                    const initialData = {
+                        nodes: graphData.nodes.map(n => ({...n})),
+                        links: graphData.links.map(l => ({...l}))
+                    };
+                    
+                    Graph
+                        .graphData(initialData)
+                        .nodeLabel(node => `${node.name}\n${node.group}\nInterest: ${node.interestLevel}/10\nURLs: ${node.urlCount}\nConnections: ${node.connectionCount}`)
+                        .nodeAutoColorBy('group')
+                        .nodeVal('val')
+                        .nodeThreeObject(node => {
+                            if (!labelsEnabled) {
+                                // Return null to use default sphere
+                                return null;
+                            }
+                            return createNodeObject(node);
+                        })
+                        .nodeThreeObjectExtend(false)
+                        .linkWidth(link => getLinkWidth(link))
+                        .linkColor(() => 'rgba(150, 150, 150, 0.5)')
+                        .linkOpacity(CONFIG.linkOpacity)
+                        .linkDirectionalParticles(2)
+                        .linkDirectionalParticleSpeed(0.001) // Much slower - was 0.006
+                        .linkDirectionalParticleColor(() => '#00ff88')
+                        .onNodeHover((node, prevNode) => {
+                            hoveredNode = node;
+                            const tooltip = document.getElementById('entity-tooltip');
+                            
+                            if (node && floatingTooltipEnabled) {
+                                // Build tooltip content with clickable tags
+                                let content = `<strong>${node.name}</strong><br>`;
+                                content += `Type: ${node.group}<br>`;
+                                content += `Interest Level: ${node.interestLevel}/10<br>`;
+                                content += `URLs: ${node.urlCount}<br>`;
+                                content += `Connections: ${node.connectionCount}<br>`;
+                                
+                                // Find the company data to get technologies and concepts
+                                const companyData = rawData.dashboard.company_activity.find(c => c.company === node.id);
+                                if (companyData) {
+                                    if (companyData.intelligence?.ai_technologies?.length > 0) {
+                                        content += '<br><strong>Technologies:</strong><br>';
+                                        companyData.intelligence.ai_technologies.forEach(tech => {
+                                            content += `<span class="clickable-tag" onclick="window.filterByTag('${tech.replace(/'/g, "\\'")}')">${tech}</span>`;
+                                        });
+                                    }
+                                    if (companyData.intelligence?.ai_ml_concepts?.length > 0) {
+                                        content += '<br><strong>AI Concepts:</strong><br>';
+                                        companyData.intelligence.ai_ml_concepts.forEach(concept => {
+                                            content += `<span class="clickable-tag" onclick="window.filterByTag('${concept.replace(/'/g, "\\'")}')">${concept}</span>`;
+                                        });
+                                    }
+                                }
+                                
+                                // Check for recent changes
+                                if (node.isRecentChange && recentChangesData) {
+                                    const change = recentChangesData.changes.find(c => c.company === node.id);
+                                    if (change) {
+                                        content += '<br><br><strong style="color: #ff0000;">Recent Change:</strong><br>';
+                                        content += `<em>${change.summary}</em><br>`;
+                                        content += `<small>${change.time_ago}</small><br>`;
+                                        if (change.ai_explanation) {
+                                            content += `<br><small style="color: #aaa;">${change.ai_explanation}</small>`;
+                                        }
+                                    }
+                                }
+                                
+                                tooltip.innerHTML = content;
+                                tooltip.style.display = 'block';
+                                tooltipFixed = false; // Reset position lock for new tooltip
+                            } else {
+                                // Add delay before hiding to allow mouse to reach tooltip
+                                tooltipTimeout = setTimeout(() => {
+                                    tooltip.style.display = 'none';
+                                }, 300);
+                            }
+                            
+                            // Update the static info panel
+                            document.getElementById('node-info').innerHTML = node ? 
+                                `<strong>${node.name}</strong><br>Type: ${node.group}<br>Interest Level: ${node.interestLevel}/10<br>URLs: ${node.urlCount}<br>Connections: ${node.connectionCount}` : 
+                                '<strong>Controls:</strong><br>• Left-click + drag = Rotate view<br>• Right-click + drag = Pan view<br>• Scroll = Zoom in/out<br>• Click node = Center camera<br>• Right-click node = Show context menu';
+                        })
+                        .onNodeClick(node => {
+                            const distance = 300;
+                            const distRatio = 1 + distance/Math.hypot(node.x, node.y, node.z);
+                            Graph.cameraPosition(
+                                { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio },
+                                node,
+                                3000
+                            );
+                        })
+                        .onNodeRightClick((node, event) => {
+                            // Show context menu
+                            event.preventDefault();
+                            const menu = document.getElementById('context-menu');
+                            const title = document.getElementById('context-menu-title');
+                            
+                            contextMenuNode = node;
+                            title.textContent = node.name;
+                            
+                            // Position menu at cursor
+                            menu.style.left = event.clientX + 'px';
+                            menu.style.top = event.clientY + 'px';
+                            menu.style.display = 'block';
+                            
+                            // Prevent menu from going off screen
+                            const rect = menu.getBoundingClientRect();
+                            if (rect.right > window.innerWidth) {
+                                menu.style.left = (event.clientX - rect.width) + 'px';
+                            }
+                            if (rect.bottom > window.innerHeight) {
+                                menu.style.top = (event.clientY - rect.height) + 'px';
+                            }
+                            
+                            return false; // Prevent default browser context menu
+                        })
+                        .enablePointerInteraction(true)
+                        .enableNodeDrag(true);
+                    
+                    Graph.d3Force('charge').strength(CONFIG.forceStrength);
+                    Graph.d3Force('link').distance(CONFIG.linkDistance);
+                    
+                    Graph.cameraPosition({ x: 0, y: 0, z: 500 });
+                    
+                    // Wait a bit for graph to stabilize before applying draw mode
+                    setTimeout(() => {
+                        if (currentDrawMode !== 'normal') {
+                            applyDrawMode();
+                        }
+                    }, 500);
+                    
+                    console.log('Graph initialized successfully!');
+                    
+                } catch (error) {
+                    console.error('Error initializing graph:', error);
+                    document.getElementById('node-info').textContent = 'Error: ' + error.message;
+                }
+            }
+            
+            // Event handlers
+            document.getElementById('toggle-links').addEventListener('change', (e) => {
+                linksEnabled = e.target.checked;
+                if (Graph) {
+                    Graph.linkOpacity(linksEnabled ? CONFIG.linkOpacity : 0);
+                }
+            });
+            
+            document.getElementById('toggle-labels').addEventListener('change', (e) => {
+                labelsEnabled = e.target.checked;
+                if (Graph) {
+                    Graph.nodeThreeObject(node => {
+                        if (!labelsEnabled) {
+                            return null;
+                        }
+                        return createNodeObject(node);
+                    });
+                }
+            });
+            
+            document.getElementById('toggle-particles').addEventListener('change', (e) => {
+                particlesEnabled = e.target.checked;
+                if (Graph) {
+                    Graph.linkDirectionalParticles(particlesEnabled ? 2 : 0);
+                }
+            });
+            
+            document.getElementById('toggle-thin-lines').addEventListener('change', (e) => {
+                thinLinesEnabled = e.target.checked;
+                if (Graph) {
+                    // Re-apply link width function
+                    Graph.linkWidth(link => getLinkWidth(link));
+                }
+            });
+            
+            document.getElementById('toggle-floating-tooltip').addEventListener('change', (e) => {
+                floatingTooltipEnabled = e.target.checked;
+                if (!floatingTooltipEnabled) {
+                    document.getElementById('entity-tooltip').style.display = 'none';
+                }
+            });
+            
+            document.getElementById('force-strength').addEventListener('input', (e) => {
+                const value = parseInt(e.target.value);
+                document.getElementById('force-value').textContent = value;
+                CONFIG.forceStrength = value;
+                if (Graph) {
+                    // Apply based on current draw mode
+                    if (currentDrawMode === 'group-by-type') {
+                        Graph.d3Force('charge').strength(value / 3);
+                    } else if (currentDrawMode === 'normal') {
+                        Graph.d3Force('charge').strength(value);
+                    }
+                    Graph.d3ReheatSimulation();
+                }
+            });
+            
+            document.getElementById('link-distance').addEventListener('input', (e) => {
+                const value = parseInt(e.target.value);
+                document.getElementById('distance-value').textContent = value;
+                CONFIG.linkDistance = value;
+                if (Graph && currentDrawMode === 'normal') {
+                    Graph.d3Force('link').distance(value);
+                    Graph.d3ReheatSimulation();
+                }
+            });
+            
+            document.getElementById('view-mode').addEventListener('change', (e) => {
+                currentViewMode = e.target.value;
+                applyFilters();
+            });
+            
+            document.getElementById('search-input').addEventListener('input', (e) => {
+                applyFilters();
+            });
+            
+            document.getElementById('draw-by-mode').addEventListener('change', (e) => {
+                currentDrawMode = e.target.value;
+                applyDrawMode();
+            });
+            
+            document.getElementById('entity-limit').addEventListener('input', (e) => {
+                const value = parseInt(e.target.value);
+                document.getElementById('entity-value').textContent = value;
+                entityLimit = value;
+                applyFilters();
+            });
+            
+            // Toggle controls on mobile
+            document.getElementById('toggle-controls').addEventListener('click', () => {
+                document.getElementById('controls').classList.toggle('open');
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                if (Graph && Graph.renderer()) {
+                    const container = document.getElementById('3d-graph');
+                    Graph.width(container.clientWidth);
+                    Graph.height(container.clientHeight);
+                    Graph.renderer().setSize(container.clientWidth, container.clientHeight);
+                    Graph.camera().aspect = container.clientWidth / container.clientHeight;
+                    Graph.camera().updateProjectionMatrix();
+                }
+            });
+            
+            // Track mouse movement for tooltip positioning only on initial show
+            document.addEventListener('mousemove', (e) => {
+                const tooltip = document.getElementById('entity-tooltip');
+                if (tooltip.style.display === 'block' && !tooltipFixed) {
+                    // Only position tooltip on initial show, then fix it
+                    const x = e.clientX + 15;
+                    const y = e.clientY + 15;
+                    
+                    // Keep tooltip on screen
+                    const rect = tooltip.getBoundingClientRect();
+                    if (x + rect.width > window.innerWidth) {
+                        tooltip.style.left = (e.clientX - rect.width - 15) + 'px';
+                    } else {
+                        tooltip.style.left = x + 'px';
+                    }
+                    
+                    if (y + rect.height > window.innerHeight) {
+                        tooltip.style.top = (e.clientY - rect.height - 15) + 'px';
+                    } else {
+                        tooltip.style.top = y + 'px';
+                    }
+                    
+                    // Fix the position after initial placement
+                    tooltipFixed = true;
+                }
+            });
+            
+            // Keep tooltip visible when hovering over it
+            document.getElementById('entity-tooltip').addEventListener('mouseenter', () => {
+                clearTimeout(tooltipTimeout);
+            });
+            
+            document.getElementById('entity-tooltip').addEventListener('mouseleave', () => {
+                document.getElementById('entity-tooltip').style.display = 'none';
+            });
+            
+            // Start loading
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', loadData);
+            } else {
+                loadData();
+            }
+        })();
+    </script>
+</body>
+</html>
