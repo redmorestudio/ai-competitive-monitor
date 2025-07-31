@@ -3809,64 +3809,100 @@
             });
             
 
-            // Flatten graph control - FIXED VERSION
-            document.getElementById('toggle-flatten-graph').addEventListener('change', (e) => {
-                const isFlattening = e.target.checked;
-                console.log(`🎯 FLATTEN TOGGLE: ${isFlattening ? 'FLATTENING' : 'EXPANDING'}`);
+            // Flatten graph control - DOM-READY VERSION
+            function attachFlattenToggle() {
+                console.log('🔧 Attaching flatten toggle event listener...');
                 
-                if (!Graph) {
-                    console.error('Graph not available');
-                    return;
+                const toggle = document.getElementById('toggle-flatten-graph');
+                if (!toggle) {
+                    console.error('❌ toggle-flatten-graph element not found!');
+                    return false;
                 }
                 
-                if (isFlattening) {
-                    console.log('📐 Flattening to 2D...');
-                    
-                    // Switch to 2D
-                    Graph.numDimensions(2);
-                    
-                    // Flatten all nodes immediately
-                    const nodes = Graph.graphData().nodes;
-                    let flattened = 0;
-                    nodes.forEach(node => {
-                        if (node.z !== undefined && Math.abs(node.z) > 0.1) {
-                            node.z = 0;
-                            node.vz = 0;
-                            flattened++;
-                        }
-                    });
-                    
-                    console.log(`🎯 Flattened ${flattened} nodes`);
-                    
-                    // Force visual update
-                    Graph.refresh();
-                    
-                } else {
-                    console.log('🌍 Expanding to 3D...');
-                    
-                    // Switch to 3D
-                    Graph.numDimensions(3);
-                    
-                    // Give nodes random Z velocities
-                    const nodes = Graph.graphData().nodes;
-                    let expanded = 0;
-                    nodes.forEach(node => {
-                        if (node.z !== undefined) {
-                            node.vz = (Math.random() - 0.5) * 20;
-                            expanded++;
-                        }
-                    });
-                    
-                    console.log(`🌍 Applied 3D forces to ${expanded} nodes`);
-                    
-                    // Force visual update
-                    Graph.refresh();
-                }
+                console.log('✅ Found toggle element, attaching listener...');
                 
-                // Reheat simulation
-                Graph.d3ReheatSimulation();
-                console.log('🔥 Simulation reheated');
-            });
+                // Remove any existing listeners by cloning the element
+                const newToggle = toggle.cloneNode(true);
+                toggle.parentNode.replaceChild(newToggle, toggle);
+                
+                // Add our working event listener
+                newToggle.addEventListener('change', (e) => {
+                    const isFlattening = e.target.checked;
+                    console.log(`🎯 FLATTEN TOGGLE: ${isFlattening ? 'FLATTENING' : 'EXPANDING'}`);
+                    
+                    if (!Graph) {
+                        console.error('❌ Graph not available');
+                        return;
+                    }
+                    
+                    if (isFlattening) {
+                        console.log('📐 Flattening to 2D...');
+                        
+                        // Switch to 2D mode
+                        Graph.numDimensions(2);
+                        
+                        // Flatten all nodes immediately and forcefully
+                        const nodes = Graph.graphData().nodes;
+                        let flattened = 0;
+                        
+                        nodes.forEach(node => {
+                            if (node.z !== undefined && Math.abs(node.z) > 0.1) {
+                                node.z = 0;
+                                node.vz = 0;
+                                flattened++;
+                            }
+                        });
+                        
+                        console.log(`🎯 Flattened ${flattened} nodes to z=0`);
+                        
+                        // Force immediate visual update
+                        Graph.refresh();
+                        
+                    } else {
+                        console.log('🌍 Expanding to 3D...');
+                        
+                        // Switch to 3D mode
+                        Graph.numDimensions(3);
+                        
+                        // Give nodes random Z velocities for 3D expansion
+                        const nodes = Graph.graphData().nodes;
+                        let expanded = 0;
+                        
+                        nodes.forEach(node => {
+                            if (node.z !== undefined) {
+                                // Strong random Z velocity for 3D spreading
+                                node.vz = (Math.random() - 0.5) * 20;
+                                expanded++;
+                            }
+                        });
+                        
+                        console.log(`🌍 Applied 3D forces to ${expanded} nodes`);
+                        
+                        // Force immediate visual update
+                        Graph.refresh();
+                    }
+                    
+                    // Reheat simulation for immediate effect
+                    Graph.d3ReheatSimulation();
+                    console.log('🔥 Simulation reheated');
+                });
+                
+                console.log('✅ Flatten toggle event listener attached successfully!');
+                return true;
+            }
+            
+            // Attach the flatten toggle when DOM is ready - GUARANTEED TIMING
+            if (document.readyState === 'loading') {
+                // DOM not ready yet
+                document.addEventListener('DOMContentLoaded', () => {
+                    console.log('📅 DOM loaded, attaching flatten toggle...');
+                    setTimeout(attachFlattenToggle, 100); // Small delay to ensure element exists
+                });
+            } else {
+                // DOM already loaded
+                console.log('📅 DOM already loaded, attaching flatten toggle...');
+                setTimeout(attachFlattenToggle, 100); // Small delay to ensure element exists
+            }
             
             // Handle window resize
             window.addEventListener('resize', () => {
