@@ -14,6 +14,7 @@ import {
 } from './data.js';
 import { api } from './api.js';
 import { formatDate, getRelativeTime, storage } from './utils.js';
+import { initControls } from './controls.js';
 
 // Export modules for global access
 export { CONFIG, api };
@@ -36,6 +37,9 @@ export async function init() {
         
         // Set up state listeners
         setupStateListeners();
+        
+        // Initialize controls
+        initControls();
         
         // Initialize UI
         updateUI();
