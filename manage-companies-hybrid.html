@@ -300,7 +300,9 @@
 
         <div class="status" id="status"></div>
         <div class="workflow-status" id="workflowStatus" style="display: none;"></div>
-        <div class="debug-info" id="debugInfo" style="display: none;"></div>
+        <div class="debug-info" id="debugInfo" style="display: none;">
+            <button onclick="clearDebugInfo()" style="float: right; padding: 2px 8px; font-size: 10px; margin-bottom: 5px;">Clear</button>
+        </div>
 
         <div class="actions">
             <div class="action-card">
@@ -380,18 +382,28 @@
         let lastDatabaseUpdate = null;
         let lastJsonUpdate = null;
 
-        // Debug logging function
-        function debugLog(message, data = null) {
+        // Debug logging function - only shows on errors
+        function debugLog(message, data = null, isError = false) {
             const debugInfo = document.getElementById('debugInfo');
             const timestamp = new Date().toLocaleTimeString();
             const logMessage = `[${timestamp}] ${message}`;
             
             console.log(logMessage, data);
             
-            if (debugInfo) {
+            // Only show debug panel for errors or when explicitly requested
+            if (debugInfo && isError) {
                 debugInfo.style.display = 'block';
                 debugInfo.innerHTML += logMessage + (data ? '\n' + JSON.stringify(data, null, 2) : '') + '\n\n';
                 debugInfo.scrollTop = debugInfo.scrollHeight;
+            }
+        }
+
+        // Clear debug info function
+        function clearDebugInfo() {
+            const debugInfo = document.getElementById('debugInfo');
+            if (debugInfo) {
+                debugInfo.innerHTML = '<button onclick="clearDebugInfo()" style="float: right; padding: 2px 8px; font-size: 10px; margin-bottom: 5px;">Clear</button>';
+                debugInfo.style.display = 'none';
             }
         }
 
@@ -423,10 +435,10 @@
                         updateFreshnessDisplay();
                     }
                 } else {
-                    debugLog('Failed to get commits', { status: response.status, statusText: response.statusText });
+                    debugLog('Failed to get commits', { status: response.status, statusText: response.statusText }, true);
                 }
             } catch (error) {
-                debugLog('Error checking data freshness', error.message);
+                debugLog('Error checking data freshness', error.message, true);
                 console.error('Error checking data freshness:', error);
             }
         }
@@ -483,10 +495,12 @@
                 
                 // Check if companies array exists and is valid
                 if (!data.companies) {
+                    debugLog('Missing companies array', data, true);
                     throw new Error('No companies array found in response');
                 }
                 
                 if (!Array.isArray(data.companies)) {
+                    debugLog('Companies is not an array', { type: typeof data.companies, value: data.companies }, true);
                     throw new Error('Companies is not an array');
                 }
                 
@@ -525,7 +539,7 @@
                 
             } catch (error) {
                 const errorMessage = `Error loading companies: ${error.message}`;
-                debugLog('Load companies error', error);
+                debugLog('Load companies error', error, true); // Show debug info for errors
                 console.error('Error loading companies:', error);
                 showStatus(errorMessage, 'error');
                 
