@@ -26,8 +26,9 @@ async function importCompanies() {
     
     // Clear PostgreSQL companies (careful!)
     console.log('\n⚠️  Clearing PostgreSQL companies...');
-    await pgDb.run('DELETE FROM intelligence.company_urls');
-    await pgDb.run('DELETE FROM intelligence.url_metadata');
+    
+    // Delete in correct order to respect foreign keys
+    // Note: intelligence.company_urls is a VIEW, not a table!
     await pgDb.run('DELETE FROM intelligence.urls');
     await pgDb.run('DELETE FROM intelligence.companies');
     
@@ -49,20 +50,14 @@ async function importCompanies() {
       `).all(company.id);
       
       for (const url of urls) {
-        // Insert URL
-        const urlResult = await pgDb.get(`
-          INSERT INTO intelligence.urls (url, url_type)
-          VALUES ($1, $2)
-          ON CONFLICT (url) DO UPDATE SET url_type = $2
-          RETURNING id
-        `, [url.url, url.url_type || 'homepage']);
-        
-        // Link to company
+        // Insert URL directly with company_id (since it's part of the urls table)
         await pgDb.run(`
-          INSERT INTO intelligence.company_urls (company_id, url_id)
-          VALUES ($1, $2)
-          ON CONFLICT DO NOTHING
-        `, [result.id, urlResult.id]);
+          INSERT INTO intelligence.urls (company_id, url, url_type)
+          VALUES ($1, $2, $3)
+          ON CONFLICT (url) DO UPDATE SET 
+            company_id = $1,
+            url_type = $3
+        `, [result.id, url.url, url.url_type || 'homepage']);
       }
       
       console.log(`   → Added ${urls.length} URLs`);
