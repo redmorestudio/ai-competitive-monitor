@@ -4,21 +4,21 @@
   "page_url": "docs",
   "detected_at": "2025-08-01T20:39:58.043Z",
   "change_type": "modified",
-  "interest_level": 1,
-  "ai_confidence": 0.8,
-  "summary": "No significant changes were detected in the provided content.",
+  "interest_level": 2,
+  "ai_confidence": 0.9,
+  "summary": "No significant changes were detected in the content structure or links between the two versions.",
   "category": "minor_change",
   "change_summary": {
-    "what_changed": "No significant changes were detected in the provided content.",
+    "what_changed": "No significant changes were detected in the content structure or links between the two versions.",
     "change_type": "no change",
     "change_scale": "minor",
     "specific_changes": []
   },
   "strategic_analysis": {
-    "business_impact": "No significant changes were detected, so there is no expected business impact.",
+    "business_impact": "No significant business impact is expected from these changes.",
     "market_signals": [],
-    "competitive_implications": "No significant changes were detected, so there are no expected competitive implications.",
-    "strategic_direction": "No significant changes were detected, so there is no expected change in strategic direction."
+    "competitive_implications": "No competitive implications are expected from these changes.",
+    "strategic_direction": "No change in strategic direction is indicated by these changes."
   },
   "entities": {
     "products": [],
@@ -36,8 +36,8 @@
     "recommended_actions": []
   },
   "key_insights": [],
-  "business_impact": "No significant changes were detected, so there is no expected business impact.",
-  "competitive_implications": "No significant changes were detected, so there are no expected competitive implications.",
+  "business_impact": "No significant business impact is expected from these changes.",
+  "competitive_implications": "No competitive implications are expected from these changes.",
   "content_hash_before": "53e594b3c533fd32a6a5d4eee6e85a7317a2257f0f4b648ee249bf9b27baa5a7",
   "content_hash_after": "eee98ef53ff9d35c4984dc39842c05f36c5b8a74199786fbbc97f2212f09844a",
   "ai_model": "groq-llama-3.3-70b",
