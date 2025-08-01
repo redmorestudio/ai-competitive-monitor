@@ -150,6 +150,37 @@ class UI {
             this.changesContainer.innerHTML = `<p class="empty-state">${escapeHtml(message)}</p>`;
         }
     }
+
+    /**
+     * Hide loading state
+     */
+    hideLoading() {
+        // Remove loading indicators from all containers
+        const loadingElements = document.querySelectorAll('.loading');
+        loadingElements.forEach(el => el.remove());
+    }
+
+    /**
+     * Show notification
+     */
+    showNotification(message, type = 'info') {
+        // Create notification element
+        const notification = document.createElement('div');
+        notification.className = `notification notification-${type}`;
+        notification.textContent = message;
+        
+        // Add to body
+        document.body.appendChild(notification);
+        
+        // Animate in
+        setTimeout(() => notification.classList.add('show'), 10);
+        
+        // Remove after 3 seconds
+        setTimeout(() => {
+            notification.classList.remove('show');
+            setTimeout(() => notification.remove(), 300);
+        }, 3000);
+    }
 }
 
 // Create and export singleton
