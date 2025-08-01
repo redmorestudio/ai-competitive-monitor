@@ -15,6 +15,7 @@ import {
 import { api } from './api.js';
 import { formatDate, getRelativeTime, storage } from './utils.js';
 import { initControls } from './controls.js';
+import { initFilters, applyFilters, createFilterUI, uiHandlers } from './filters.js';
 
 // Export modules for global access
 export { CONFIG, api };
@@ -40,6 +41,9 @@ export async function init() {
         
         // Initialize controls
         initControls();
+        
+        // Initialize filters
+        initFilters(handleFiltersChanged);
         
         // Initialize UI
         updateUI();
@@ -170,5 +174,20 @@ export const app = {
     // API access
     api
 };
+
+// Handle filter changes
+function handleFiltersChanged(filterState) {
+    console.log('Filters changed:', filterState);
+    // Apply filters to changes and update UI
+    const changes = getChangesData();
+    const filteredChanges = applyFilters(changes);
+    updateFilteredUI(filteredChanges);
+}
+
+// Update UI with filtered data
+function updateFilteredUI(filteredChanges) {
+    // This will be expanded in the main coordinator session
+    console.log(`Showing ${filteredChanges.length} filtered changes`);
+}
 
 // App will be initialized explicitly when needed

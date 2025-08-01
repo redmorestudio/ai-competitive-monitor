@@ -5,6 +5,14 @@
 
 import { getInterestColor, getInterestEmoji, escapeHtml } from './utils.js';
 import { loadStaticData } from './api.js';
+import { 
+    applyFilters, 
+    createFilterUI, 
+    uiHandlers, 
+    getUniqueCompanies,
+    groupChangesByDate,
+    setFiltersChangedCallback 
+} from './filters.js';
 
 // Tab management
 export function showTab(event, tabName) {
@@ -290,6 +298,7 @@ async function loadCompanyRecentChanges(companyName) {
 export async function loadAllChanges() {
     const changesData = await loadStaticData('changes.json');
     const contentDiv = document.getElementById('changesContent');
+    const filterContainer = document.getElementById('filterContainer');
 
     // Handle both array and object structures
     let changes = [];
@@ -307,30 +316,49 @@ export async function loadAllChanges() {
         return;
     }
 
-    // Sort changes by date (newest first)
-    changes.sort((a, b) => {
-        const dateA = new Date(a.detected_at || a.detectedAt || a.created_at);
-        const dateB = new Date(b.detected_at || b.detectedAt || b.created_at);
-        return dateB - dateA;
-    });
-
-    // Group changes by date
-    const changesByDate = {};
+    // Ensure all changes have IDs
     changes.forEach((change, index) => {
-        const changeDate = new Date(change.detected_at || change.detectedAt || change.created_at);
-        const dateKey = changeDate.toLocaleDateString();
-        if (!changesByDate[dateKey]) {
-            changesByDate[dateKey] = [];
-        }
-        // Generate ID if missing
         if (!change.id) {
             change.id = `change-${index}-${Date.now()}`;
         }
-        changesByDate[dateKey].push(change);
     });
 
+    // Store changes globally for filtering
+    window.allChanges = changes;
+
+    // Create filter UI if not already present
+    if (filterContainer && !filterContainer.innerHTML) {
+        const companies = getUniqueCompanies(changes);
+        filterContainer.innerHTML = createFilterUI(companies);
+        
+        // Set up filter change handler
+        setFiltersChangedCallback(() => {
+            renderFilteredChanges();
+        });
+    }
+
+    // Initial render
+    renderFilteredChanges();
+}
+
+// Render filtered changes
+function renderFilteredChanges() {
+    const contentDiv = document.getElementById('changesContent');
+    const changes = window.allChanges || [];
+    
+    // Apply filters
+    const filteredChanges = applyFilters(changes);
+    
+    if (filteredChanges.length === 0) {
+        contentDiv.innerHTML = '<div class="error-message">No changes match the current filters.</div>';
+        return;
+    }
+
+    // Group changes by date
+    const changesByDate = groupChangesByDate(filteredChanges);
+
     let html = `
-        <p style="margin-bottom: 20px;">Showing ${changes.length} total changes</p>
+        <p style="margin-bottom: 20px;">Showing ${filteredChanges.length} of ${changes.length} changes</p>
         <div style="max-height: 600px; overflow-y: auto;">
     `;
 
@@ -395,4 +423,7 @@ export function initControls() {
         showCompanyUrls,
         showChangeDetail
     };
+    
+    // Export filter handlers to window
+    window.filters = uiHandlers;
 }

@@ -55,6 +55,7 @@
 
         <div id="changes" class="tab-content">
             <h3>📈 All Change History</h3>
+            <div id="filterContainer"></div>
             <div id="changesContent">
                 <div class="loading">Loading change history...</div>
             </div>
@@ -78,6 +79,13 @@
     <script type="module">
         import { app } from './js/modules/main.js';
         import { escapeHtml, formatTimeAgo, getInterestEmoji } from './js/modules/utils.js';
+        import { 
+            applyFilters, 
+            createFilterUI, 
+            uiHandlers, 
+            filterHighInterestChanges,
+            getUniqueCompanies 
+        } from './js/modules/filters.js';
         
         // Global state (will be moved to modules in future sessions)
         let companies = [];
@@ -283,8 +291,7 @@
                 }
                 
                 // Filter for high-interest changes (7+ interest level)
-                const highInterestChanges = changes
-                    .filter(change => (change.interest_level || 0) >= 7)
+                const highInterestChanges = filterHighInterestChanges(changes, 7)
                     .sort((a, b) => new Date(b.detected_at || b.detectedAt) - new Date(a.detected_at || a.detectedAt))
                     .slice(0, 5); // Show top 5
                 
