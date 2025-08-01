@@ -361,6 +361,26 @@ body {
     color: var(--primary-color);
 }
 
+/* Version Info */
+.version-info {
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: var(--accent-bg);
+    border-radius: 20px;
+    display: inline-block;
+    cursor: help;
+    transition: all 0.3s ease;
+}
+
+.version-info:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     body {

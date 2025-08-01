@@ -10,7 +10,7 @@
  */
 
 import { getInterestColor, getInterestEmoji, escapeHtml } from './utils.js';
-import { loadStaticData } from './api.js';
+import { loadStaticData } from './data.js';
 import { 
     applyFilters, 
     createFilterUI, 
