@@ -1,7 +1,31 @@
 {
-  "generated_at": "2025-07-22T23:58:09.397Z",
-  "backend": "postgresql",
-  "files_generated": 14,
-  "compatible_with_dashboard": true,
-  "fixes_applied": true
+  "generated_at": "2025-08-01T17:13:32.994Z",
+  "files_generated": 6,
+  "architecture": "three-database",
+  "database_info": {
+    "architecture": "three-db",
+    "databases": {
+      "raw": {
+        "path": "/home/runner/work/ai-competitive-monitor/ai-competitive-monitor/github-actions-backend/data/raw_content.db",
+        "size": "0.00 MB",
+        "modified": "2025-08-01T17:13:17.546Z"
+      },
+      "processed": {
+        "path": "/home/runner/work/ai-competitive-monitor/ai-competitive-monitor/github-actions-backend/data/processed_content.db",
+        "size": "8.76 MB",
+        "modified": "2025-08-01T17:13:17.546Z"
+      },
+      "intelligence": {
+        "path": "/home/runner/work/ai-competitive-monitor/ai-competitive-monitor/github-actions-backend/data/intelligence.db",
+        "size": "4.83 MB",
+        "modified": "2025-08-01T17:13:17.357Z"
+      }
+    }
+  },
+  "backend_type": "github-actions-static-three-db",
+  "version": "2.0.0",
+  "ai_analysis": {
+    "enabled": true,
+    "processed_items": 100
+  }
 }
