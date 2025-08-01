@@ -238,10 +238,16 @@ export async function showChangeDetail(changeId, companyName, event) {
         
         // Strategy 1.5: Check if it's a high-interest change from the dashboard
         if (!changeData && changeId.startsWith('high-interest-')) {
-            const parts = changeId.split('-');
-            const index = parseInt(parts[2]);
-            if (!isNaN(index) && window.highInterestChanges && window.highInterestChanges[index]) {
-                changeData = window.highInterestChanges[index];
+            // First try to get the data directly from the stored reference
+            if (window[`changeData_${changeId}`]) {
+                changeData = window[`changeData_${changeId}`];
+            } else {
+                // Fall back to parsing the index
+                const parts = changeId.split('-');
+                const index = parseInt(parts[2]);
+                if (!isNaN(index) && window.highInterestChanges && window.highInterestChanges[index]) {
+                    changeData = window.highInterestChanges[index];
+                }
             }
         }
         

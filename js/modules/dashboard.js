@@ -204,6 +204,13 @@ class Dashboard {
             
             // Store high interest changes globally for the modal to access
             window.highInterestChanges = highInterestChanges;
+        
+        // Also create a map for quick lookup by a unique key
+        window.highInterestChangesMap = new Map();
+        highInterestChanges.forEach((change, index) => {
+            const key = `${change.company}-${change.detected_at || change.detectedAt}-${index}`;
+            window.highInterestChangesMap.set(key, change);
+        });
             
             if (highInterestChanges.length === 0) {
                 this.recentChangesContainer.innerHTML = 
@@ -247,8 +254,11 @@ class Dashboard {
         
         const interestEmoji = getInterestEmoji(change.interest_level);
         
-        // Use the index from the high interest changes array
-        const changeId = `high-interest-${index}`;
+        // Create a unique identifier that includes the timestamp
+        const changeId = `high-interest-${index}-${(change.detected_at || change.detectedAt).replace(/[:.]/g, '-')}`;
+        
+        // Store the change data directly on the element for retrieval
+        window[`changeData_${changeId}`] = change;
         
         return `
             <div class="recent-change-item" 
