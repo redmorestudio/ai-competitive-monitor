@@ -1,6 +1,6 @@
 /**
- * Main Module
- * Coordinates initialization and module integration
+ * Main Module - Central Application Coordinator
+ * Manages initialization, module integration, and cross-module communication
  */
 
 import { CONFIG, timingConfig, features } from './config.js';
@@ -13,49 +13,92 @@ import {
     subscribeToState 
 } from './data.js';
 import { api } from './api.js';
-import { formatDate, getRelativeTime, storage } from './utils.js';
+import { formatDate, getRelativeTime, storage, escapeHtml, formatTimeAgo, getInterestEmoji } from './utils.js';
 import { initControls } from './controls.js';
-import { initFilters, applyFilters, createFilterUI, uiHandlers } from './filters.js';
+import { initFilters, applyFilters, createFilterUI } from './filters.js';
+import { dashboard } from './dashboard.js';
 
-// Export modules for global access
-export { CONFIG, api };
+// Global application state
+const appState = {
+    initialized: false,
+    currentView: 'dashboard',
+    filterState: {},
+    refreshInterval: null
+};
 
-// Initialize the application
+/**
+ * Initialize the application
+ */
 export async function init() {
     console.log('🚀 AI Competitive Monitor - Modular Architecture');
-    console.log('📊 Initializing modules...');
+    console.log('📊 Initializing application...');
+    
+    if (appState.initialized) {
+        console.warn('⚠️ Application already initialized');
+        return;
+    }
     
     try {
-        // Load initial data
-        await loadDashboardData();
+        // Initialize modules in correct order
+        console.log('📦 Initializing modules...');
         
-        // Set up auto-refresh if enabled
-        if (features.enableAutoRefresh && timingConfig.autoRefresh) {
-            setInterval(() => {
-                refreshData();
-            }, timingConfig.refreshInterval);
-        }
-        
-        // Set up state listeners
-        setupStateListeners();
-        
-        // Initialize controls
+        // 1. Initialize controls (handles modals, tabs, etc.)
         initControls();
         
-        // Initialize filters
+        // 2. Initialize dashboard UI
+        dashboard.init();
+        
+        // 3. Initialize filters
         initFilters(handleFiltersChanged);
         
-        // Initialize UI
-        updateUI();
+        // 4. Set up state listeners
+        setupStateListeners();
         
+        // 5. Load initial data
+        await loadInitialData();
+        
+        // 6. Set up auto-refresh if enabled
+        if (features.enableAutoRefresh && timingConfig.autoRefresh) {
+            setupAutoRefresh();
+        }
+        
+        // 7. Set up global event handlers
+        setupGlobalHandlers();
+        
+        appState.initialized = true;
         console.log('✅ Application initialized successfully');
+        
     } catch (error) {
         console.error('❌ Failed to initialize application:', error);
         showError('Failed to initialize application. Please refresh the page.');
     }
 }
 
-// Set up state change listeners
+/**
+ * Load initial data for all components
+ */
+async function loadInitialData() {
+    console.log('📥 Loading initial data...');
+    
+    try {
+        // Load dashboard data (companies, changes, status)
+        await loadDashboardData();
+        
+        // Update UI with loaded data
+        await updateAllUI();
+        
+        // Load changes for the changes tab
+        await loadChangesTab();
+        
+    } catch (error) {
+        console.error('❌ Error loading initial data:', error);
+        throw error;
+    }
+}
+
+/**
+ * Set up state change listeners
+ */
 function setupStateListeners() {
     // Listen for loading state changes
     subscribeToState('loading', ({ component, isLoading }) => {
@@ -68,69 +111,230 @@ function setupStateListeners() {
             showError(`Error loading ${component}: ${error}`);
         }
     });
+    
+    // Listen for data updates
+    subscribeToState('dataUpdated', ({ component }) => {
+        console.log(`📊 Data updated for ${component}`);
+        updateComponentUI(component);
+    });
 }
 
-// Refresh data
-export async function refreshData() {
-    console.log('🔄 Refreshing data...');
+/**
+ * Set up global event handlers
+ */
+function setupGlobalHandlers() {
+    // Make refresh function globally available
+    window.refreshStatus = refreshData;
+    
+    // Tab switching
+    window.addEventListener('tabChanged', (event) => {
+        appState.currentView = event.detail.tab;
+        console.log(`📑 Switched to ${appState.currentView} view`);
+    });
+}
+
+/**
+ * Set up auto-refresh
+ */
+function setupAutoRefresh() {
+    console.log(`⏰ Setting up auto-refresh (${timingConfig.refreshInterval}ms)`);
+    
+    appState.refreshInterval = setInterval(async () => {
+        console.log('🔄 Auto-refresh triggered');
+        await refreshData();
+    }, timingConfig.refreshInterval);
+}
+
+/**
+ * Refresh all data
+ */
+export async function refreshData(event) {
+    if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    
+    console.log('🔄 Starting comprehensive data refresh...');
+    
     try {
+        // Show loading states
+        updateLoadingState('dashboard', true);
+        updateLoadingState('changes', true);
+        updateLoadingState('recent', true);
+        
+        // Refresh all data through the data module
         await api.refresh('all');
+        
+        // Reload dashboard data
+        await loadDashboardData();
+        
+        // Update all UI components
+        await updateAllUI();
+        
+        // Update changes tab if visible
+        if (appState.currentView === 'changes') {
+            await loadChangesTab();
+        }
+        
+        console.log('✨ Data refresh complete!');
         showSuccess('Data refreshed successfully');
+        
     } catch (error) {
-        console.error('Failed to refresh data:', error);
+        console.error('❌ Error during refresh:', error);
         showError('Failed to refresh data. Please try again.');
+    } finally {
+        // Hide loading states
+        updateLoadingState('dashboard', false);
+        updateLoadingState('changes', false);
+        updateLoadingState('recent', false);
     }
 }
 
-// Update UI with current data
-function updateUI() {
-    const dashboard = getDashboardData();
-    const changes = getChangesData();
-    const workflow = getWorkflowStatus();
+/**
+ * Update all UI components
+ */
+async function updateAllUI() {
+    const dashboardData = getDashboardData();
+    const workflowStatus = getWorkflowStatus();
+    const companies = getCompanies();
     
     // Update stats bar
-    updateStatsBar(dashboard, workflow);
+    dashboard.updateStatsBar(dashboardData, workflowStatus);
     
     // Update companies display
-    updateCompaniesDisplay(getCompanies());
+    dashboard.updateCompaniesDisplay(companies);
     
     // Update recent changes
-    updateRecentChanges(changes);
+    const changesData = await api.fetchJSON('changes.json');
+    await dashboard.updateRecentChanges(changesData);
 }
 
-// Update stats bar
-function updateStatsBar(dashboard, workflow) {
-    const statsBar = document.getElementById('statsBar');
-    if (!statsBar || !dashboard) return;
+/**
+ * Update specific component UI
+ */
+function updateComponentUI(component) {
+    switch (component) {
+        case 'dashboard':
+            const companies = getCompanies();
+            dashboard.updateCompaniesDisplay(companies);
+            break;
+            
+        case 'changes':
+            if (appState.currentView === 'changes') {
+                loadChangesTab();
+            }
+            break;
+            
+        case 'stats':
+            const dashboardData = getDashboardData();
+            const workflowStatus = getWorkflowStatus();
+            dashboard.updateStatsBar(dashboardData, workflowStatus);
+            break;
+    }
+}
+
+/**
+ * Load and display changes tab
+ */
+async function loadChangesTab() {
+    const changesContent = document.getElementById('changesContent');
+    if (!changesContent) return;
     
-    const totalCompanies = dashboard.companies?.length || 0;
-    const totalUrls = dashboard.companies?.reduce((sum, company) => 
-        sum + (company.urls?.length || 0), 0) || 0;
-    const totalChanges = dashboard.totalChanges || 0;
-    const lastCheck = workflow?.last_run ? 
-        formatDate(workflow.last_run, { relative: true }) : 'Never';
+    try {
+        const changes = getChangesData();
+        
+        // Create filter UI if not exists
+        const filterContainer = document.getElementById('filterContainer');
+        if (filterContainer && !filterContainer.hasChildNodes()) {
+            filterContainer.innerHTML = createFilterUI();
+        }
+        
+        // Apply filters and display
+        const filteredChanges = applyFilters(changes);
+        displayChanges(filteredChanges);
+        
+    } catch (error) {
+        console.error('Error loading changes:', error);
+        changesContent.innerHTML = '<div class="error-message">Error loading changes</div>';
+    }
+}
+
+/**
+ * Display filtered changes
+ */
+function displayChanges(changes) {
+    const changesContent = document.getElementById('changesContent');
+    if (!changesContent) return;
     
-    statsBar.innerHTML = `
-        <div class="stat-item">🏢 <strong>${totalCompanies}</strong> Companies</div>
-        <div class="stat-item">🔍 <strong>${totalUrls}</strong> URLs Monitored</div>
-        <div class="stat-item">📊 <strong>${totalChanges}</strong> Changes Tracked</div>
-        <div class="stat-item">⏰ Last Check: <strong>${lastCheck}</strong></div>
+    if (!changes || changes.length === 0) {
+        changesContent.innerHTML = '<p>No changes found matching the filters.</p>';
+        return;
+    }
+    
+    // Group changes by date
+    const changesByDate = {};
+    changes.forEach(change => {
+        const date = new Date(change.detected_at || change.detectedAt).toLocaleDateString();
+        if (!changesByDate[date]) {
+            changesByDate[date] = [];
+        }
+        changesByDate[date].push(change);
+    });
+    
+    // Generate HTML
+    let html = '';
+    Object.entries(changesByDate)
+        .sort(([a], [b]) => new Date(b) - new Date(a))
+        .forEach(([date, dateChanges]) => {
+            html += `<h4>${date}</h4>`;
+            html += '<div class="changes-list">';
+            
+            dateChanges.forEach(change => {
+                html += renderChangeItem(change);
+            });
+            
+            html += '</div>';
+        });
+    
+    changesContent.innerHTML = html;
+}
+
+/**
+ * Render a single change item
+ */
+function renderChangeItem(change) {
+    const timeAgo = formatTimeAgo(new Date(change.detected_at || change.detectedAt));
+    const interestEmoji = getInterestEmoji(change.interest_level);
+    
+    return `
+        <div class="change-item" onclick="window.controls.showChangeDetail('${change.id}', '${escapeHtml(change.company)}', event)">
+            <div class="change-header">
+                <span class="company">${escapeHtml(change.company)}</span>
+                <span class="interest">${interestEmoji} ${change.interest_level}/10</span>
+            </div>
+            <div class="change-url">${escapeHtml(change.url)}</div>
+            <div class="change-type">${escapeHtml(change.change_type)}</div>
+            <div class="change-time">${timeAgo}</div>
+        </div>
     `;
 }
 
-// Update companies display (placeholder - will be replaced by UI module)
-function updateCompaniesDisplay(companies) {
-    // This will be handled by the UI module in future sessions
-    console.log('Companies update - to be implemented');
+/**
+ * Handle filter changes
+ */
+function handleFiltersChanged(filterState) {
+    console.log('🎛️ Filters changed:', filterState);
+    appState.filterState = filterState;
+    
+    // Reload changes tab with new filters
+    if (appState.currentView === 'changes') {
+        loadChangesTab();
+    }
 }
 
-// Update recent changes (placeholder - will be replaced by UI module)
-function updateRecentChanges(changes) {
-    // This will be handled by the UI module in future sessions
-    console.log('Recent changes update - to be implemented');
-}
-
-// Loading state management
+/**
+ * Update loading state for components
+ */
 function updateLoadingState(component, isLoading) {
     const elements = {
         dashboard: document.querySelector('#companiesDisplay .loading'),
@@ -144,21 +348,41 @@ function updateLoadingState(component, isLoading) {
     }
 }
 
-// Error/Success message display
+/**
+ * Show error message
+ */
 function showError(message) {
-    console.error(message);
-    // TODO: Implement toast/notification system
+    console.error('❌', message);
+    // TODO: Implement toast notification system
+    // For now, use alert as fallback
+    if (appState.initialized) {
+        // Only show alerts after initialization to avoid blocking
+        setTimeout(() => {
+            if (confirm(message + '\n\nWould you like to refresh the page?')) {
+                window.location.reload();
+            }
+        }, 100);
+    }
 }
 
+/**
+ * Show success message
+ */
 function showSuccess(message) {
-    console.log(message);
-    // TODO: Implement toast/notification system
+    console.log('✅', message);
+    // TODO: Implement toast notification system
 }
 
-// Public API for integration with existing code
+/**
+ * Public API
+ */
 export const app = {
+    // Core functions
     init,
     refreshData,
+    
+    // State
+    getState: () => ({ ...appState }),
     
     // Data access
     getCompanies,
@@ -166,28 +390,23 @@ export const app = {
     getChangesData,
     getWorkflowStatus,
     
+    // UI updates
+    updateAllUI,
+    showError,
+    showSuccess,
+    
+    // Module access
+    api,
+    dashboard,
+    
     // Utilities
     formatDate,
     getRelativeTime,
-    storage,
-    
-    // API access
-    api
+    storage
 };
 
-// Handle filter changes
-function handleFiltersChanged(filterState) {
-    console.log('Filters changed:', filterState);
-    // Apply filters to changes and update UI
-    const changes = getChangesData();
-    const filteredChanges = applyFilters(changes);
-    updateFilteredUI(filteredChanges);
-}
+// Make app globally available
+window.app = app;
 
-// Update UI with filtered data
-function updateFilteredUI(filteredChanges) {
-    // This will be expanded in the main coordinator session
-    console.log(`Showing ${filteredChanges.length} filtered changes`);
-}
-
-// App will be initialized explicitly when needed
+// Export for module usage
+export default app;

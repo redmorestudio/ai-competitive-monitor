@@ -6,9 +6,9 @@
 // Filter state
 let filterState = {
     searchQuery: '',
-    companyFilter: 'all',
-    technologyFilter: 'all',
-    conceptFilter: 'all',
+    companyFilters: new Set(), // Changed to Set for multiple selections
+    technologyFilters: new Set(), // Changed to Set for multiple selections
+    conceptFilters: new Set(), // Changed to Set for multiple selections
     interestLevelMin: 1,
     interestLevelMax: 10,
     dateRangeStart: null,
@@ -79,24 +79,24 @@ export function applyFilters(changes) {
         });
     }
 
-    // Apply company filter
-    if (filterState.companyFilter !== 'all') {
+    // Apply company filter (OR logic)
+    if (filterState.companyFilters.size > 0) {
         filtered = filtered.filter(change => 
-            change.company === filterState.companyFilter
+            filterState.companyFilters.has(change.company)
         );
     }
 
-    // Apply technology filter
-    if (filterState.technologyFilter !== 'all') {
+    // Apply technology filter (OR logic)
+    if (filterState.technologyFilters.size > 0) {
         filtered = filtered.filter(change => 
-            change.technology === filterState.technologyFilter
+            change.technology && filterState.technologyFilters.has(change.technology)
         );
     }
 
-    // Apply concept filter
-    if (filterState.conceptFilter !== 'all') {
+    // Apply concept filter (OR logic)
+    if (filterState.conceptFilters.size > 0) {
         filtered = filtered.filter(change => 
-            change.concept === filterState.conceptFilter
+            change.concept && filterState.conceptFilters.has(change.concept)
         );
     }
 
@@ -182,29 +182,41 @@ export function setSearchQuery(query) {
 }
 
 /**
- * Update company filter
- * @param {string} company - Company name or 'all'
+ * Toggle company filter
+ * @param {string} company - Company name to toggle
  */
-export function setCompanyFilter(company) {
-    filterState.companyFilter = company;
+export function toggleCompanyFilter(company) {
+    if (filterState.companyFilters.has(company)) {
+        filterState.companyFilters.delete(company);
+    } else {
+        filterState.companyFilters.add(company);
+    }
     notifyFiltersChanged();
 }
 
 /**
- * Update technology filter
- * @param {string} technology - Technology name or 'all'
+ * Toggle technology filter
+ * @param {string} technology - Technology name to toggle
  */
-export function setTechnologyFilter(technology) {
-    filterState.technologyFilter = technology;
+export function toggleTechnologyFilter(technology) {
+    if (filterState.technologyFilters.has(technology)) {
+        filterState.technologyFilters.delete(technology);
+    } else {
+        filterState.technologyFilters.add(technology);
+    }
     notifyFiltersChanged();
 }
 
 /**
- * Update concept filter
- * @param {string} concept - Concept name or 'all'
+ * Toggle concept filter
+ * @param {string} concept - Concept name to toggle
  */
-export function setConceptFilter(concept) {
-    filterState.conceptFilter = concept;
+export function toggleConceptFilter(concept) {
+    if (filterState.conceptFilters.has(concept)) {
+        filterState.conceptFilters.delete(concept);
+    } else {
+        filterState.conceptFilters.add(concept);
+    }
     notifyFiltersChanged();
 }
 
@@ -247,9 +259,9 @@ export function setSorting(sortBy, sortOrder = 'desc') {
 export function resetFilters() {
     filterState = {
         searchQuery: '',
-        companyFilter: 'all',
-        technologyFilter: 'all',
-        conceptFilter: 'all',
+        companyFilters: new Set(),
+        technologyFilters: new Set(),
+        conceptFilters: new Set(),
         interestLevelMin: 1,
         interestLevelMax: 10,
         dateRangeStart: null,
@@ -400,96 +412,112 @@ export function createFilterUI(options = {}) {
     const { companies = [], technologies = [], concepts = [] } = options;
     return `
         <div class="filter-controls">
-            <div class="filter-row">
+            <div class="filter-section">
                 <!-- Search Input -->
-                <div class="filter-group">
+                <div class="filter-group full-width">
                     <label for="searchInput">Search:</label>
                     <input type="text" 
                            id="searchInput" 
                            placeholder="Search company, tech, concept, summary..." 
                            class="filter-input"
-                           style="min-width: 250px;"
                            oninput="window.filters.handleSearchInput(this.value)">
                 </div>
-                
+            </div>
+            
+            <div class="filter-row">
                 <!-- Company Filter -->
-                <div class="filter-group">
-                    <label for="companyFilter">Company:</label>
-                    <select id="companyFilter" 
-                            class="filter-select"
-                            onchange="window.filters.handleCompanyFilter(this.value)">
-                        <option value="all">All Companies</option>
-                        ${companies.map(company => 
-                            `<option value="${company}">${company}</option>`
-                        ).join('')}
-                    </select>
-                </div>
-                
-                <!-- Technology Filter -->
-                <div class="filter-group">
-                    <label for="technologyFilter">Technology:</label>
-                    <select id="technologyFilter" 
-                            class="filter-select"
-                            onchange="window.filters.handleTechnologyFilter(this.value)">
-                        <option value="all">All Technologies</option>
-                        ${technologies.map(tech => 
-                            `<option value="${tech}">${tech}</option>`
-                        ).join('')}
-                    </select>
-                </div>
-                
-                <!-- Concept Filter -->
-                <div class="filter-group">
-                    <label for="conceptFilter">Concept:</label>
-                    <select id="conceptFilter" 
-                            class="filter-select"
-                            onchange="window.filters.handleConceptFilter(this.value)">
-                        <option value="all">All Concepts</option>
-                        ${concepts.map(concept => 
-                            `<option value="${concept}">${concept}</option>`
-                        ).join('')}
-                    </select>
-                </div>
-                
-                <!-- Interest Level Range -->
-                <div class="filter-group">
-                    <label>Interest Level:</label>
-                    <div class="range-inputs">
-                        <input type="number" 
-                               id="interestMin" 
-                               min="1" max="10" 
-                               value="1" 
-                               class="filter-input-small"
-                               onchange="window.filters.handleInterestRange()">
-                        <span>-</span>
-                        <input type="number" 
-                               id="interestMax" 
-                               min="1" max="10" 
-                               value="10" 
-                               class="filter-input-small"
-                               onchange="window.filters.handleInterestRange()">
+                ${companies.length > 0 ? `
+                <div class="filter-checkbox-group">
+                    <label class="filter-group-label">Companies:</label>
+                    <div class="checkbox-list">
+                        ${companies.map(company => `
+                            <label class="checkbox-label">
+                                <input type="checkbox" 
+                                       value="${company}"
+                                       onchange="window.filters.handleCompanyCheckbox('${company}', this.checked)">
+                                <span>${company}</span>
+                            </label>
+                        `).join('')}
                     </div>
                 </div>
+                ` : ''}
                 
-                <!-- Sort Options -->
-                <div class="filter-group">
-                    <label for="sortBy">Sort by:</label>
-                    <select id="sortBy" 
-                            class="filter-select"
-                            onchange="window.filters.handleSort(this.value)">
-                        <option value="date">Date</option>
-                        <option value="interest">Interest Level</option>
-                        <option value="company">Company</option>
-                    </select>
+                <!-- Technology Filter -->
+                ${technologies.length > 0 ? `
+                <div class="filter-checkbox-group">
+                    <label class="filter-group-label">Technologies:</label>
+                    <div class="checkbox-list">
+                        ${technologies.map(tech => `
+                            <label class="checkbox-label">
+                                <input type="checkbox" 
+                                       value="${tech}"
+                                       onchange="window.filters.handleTechnologyCheckbox('${tech}', this.checked)">
+                                <span>${tech}</span>
+                            </label>
+                        `).join('')}
+                    </div>
                 </div>
+                ` : ''}
                 
-                <!-- Reset Button -->
-                <div class="filter-group">
-                    <button type="button" 
-                            class="button button-secondary" 
-                            onclick="window.filters.handleReset()">
-                        Reset Filters
-                    </button>
+                <!-- Concept Filter -->
+                ${concepts.length > 0 ? `
+                <div class="filter-checkbox-group">
+                    <label class="filter-group-label">Concepts:</label>
+                    <div class="checkbox-list">
+                        ${concepts.map(concept => `
+                            <label class="checkbox-label">
+                                <input type="checkbox" 
+                                       value="${concept}"
+                                       onchange="window.filters.handleConceptCheckbox('${concept}', this.checked)">
+                                <span>${concept}</span>
+                            </label>
+                        `).join('')}
+                    </div>
+                </div>
+                ` : ''}
+                
+                <!-- Other Controls -->
+                <div class="filter-controls-right">
+                    <!-- Interest Level Range -->
+                    <div class="filter-group">
+                        <label>Interest Level:</label>
+                        <div class="range-inputs">
+                            <input type="number" 
+                                   id="interestMin" 
+                                   min="1" max="10" 
+                                   value="1" 
+                                   class="filter-input-small"
+                                   onchange="window.filters.handleInterestRange()">
+                            <span>-</span>
+                            <input type="number" 
+                                   id="interestMax" 
+                                   min="1" max="10" 
+                                   value="10" 
+                                   class="filter-input-small"
+                                   onchange="window.filters.handleInterestRange()">
+                        </div>
+                    </div>
+                    
+                    <!-- Sort Options -->
+                    <div class="filter-group">
+                        <label for="sortBy">Sort by:</label>
+                        <select id="sortBy" 
+                                class="filter-select"
+                                onchange="window.filters.handleSort(this.value)">
+                            <option value="date">Date</option>
+                            <option value="interest">Interest Level</option>
+                            <option value="company">Company</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Reset Button -->
+                    <div class="filter-group">
+                        <button type="button" 
+                                class="button button-secondary" 
+                                onclick="window.filters.handleReset()">
+                            Reset Filters
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -502,16 +530,31 @@ export const uiHandlers = {
         setSearchQuery(value);
     },
     
-    handleCompanyFilter(value) {
-        setCompanyFilter(value);
+    handleCompanyCheckbox(company, isChecked) {
+        if (isChecked) {
+            filterState.companyFilters.add(company);
+        } else {
+            filterState.companyFilters.delete(company);
+        }
+        notifyFiltersChanged();
     },
     
-    handleTechnologyFilter(value) {
-        setTechnologyFilter(value);
+    handleTechnologyCheckbox(technology, isChecked) {
+        if (isChecked) {
+            filterState.technologyFilters.add(technology);
+        } else {
+            filterState.technologyFilters.delete(technology);
+        }
+        notifyFiltersChanged();
     },
     
-    handleConceptFilter(value) {
-        setConceptFilter(value);
+    handleConceptCheckbox(concept, isChecked) {
+        if (isChecked) {
+            filterState.conceptFilters.add(concept);
+        } else {
+            filterState.conceptFilters.delete(concept);
+        }
+        notifyFiltersChanged();
     },
     
     handleInterestRange() {
@@ -528,9 +571,12 @@ export const uiHandlers = {
         resetFilters();
         // Reset UI elements
         document.getElementById('searchInput').value = '';
-        document.getElementById('companyFilter').value = 'all';
-        document.getElementById('technologyFilter').value = 'all';
-        document.getElementById('conceptFilter').value = 'all';
+        
+        // Uncheck all checkboxes
+        document.querySelectorAll('.filter-checkbox-group input[type="checkbox"]').forEach(cb => {
+            cb.checked = false;
+        });
+        
         document.getElementById('interestMin').value = '1';
         document.getElementById('interestMax').value = '10';
         document.getElementById('sortBy').value = 'date';
