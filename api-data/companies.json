@@ -8,16 +8,16 @@
       "top_products": [
         "claude",
         "claude code",
-        "api",
         "max plan",
-        "team plan"
+        "team plan",
+        "enterprise plan"
       ],
       "ai_technologies": [
         "python",
         "amazon bedrock",
         "aws",
         "github",
-        "google cloud’s vertex ai"
+        "google cloud's vertex ai"
       ]
     }
   },
@@ -30,13 +30,13 @@
       "top_products": [
         "github copilot",
         "github advanced security",
-        "github copilot free",
-        "github copilot pro",
-        "github models"
+        "github models",
+        "github codespaces",
+        "github actions"
       ],
       "ai_technologies": [
         "github",
-        "windows terminal",
+        "python",
         "microsoft azure",
         "saml",
         "scim"
@@ -50,11 +50,11 @@
     "industry": null,
     "intelligence": {
       "top_products": [
-        "gemini",
         "google ai studio",
+        "gemini",
         "gemini app",
         "vertex ai studio",
-        "gemini api"
+        "google workspace"
       ],
       "ai_technologies": [
         "python",
@@ -72,11 +72,11 @@
     "industry": null,
     "intelligence": {
       "top_products": [
-        "midjourney",
         "basic plan",
         "standard plan",
         "pro plan",
-        "mega plan"
+        "mega plan",
+        "midjourney magazine subscription"
       ],
       "ai_technologies": [
         "discord",
@@ -100,10 +100,10 @@
       ],
       "ai_technologies": [
         "python",
-        "javascript",
-        "aws",
-        "azure",
-        "gcp"
+        "tensorflow",
+        "pytorch",
+        "jax",
+        "aws"
       ]
     }
   },
@@ -117,13 +117,14 @@
         "perplexity pro",
         "perplexity max",
         "perplexity labs",
-        "perplexity research"
+        "perplexity research",
+        "perplexity ai"
       ],
       "ai_technologies": [
         "unlimited file uploads",
-        "unlimited photo uploads",
         "image generation",
-        "cloudflare"
+        "cloudflare",
+        "favicon"
       ]
     }
   }

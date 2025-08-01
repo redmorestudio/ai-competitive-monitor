@@ -1,61 +1,4 @@
 {
-  "recent_changes_summary": {
-    "last_5_changes": [
-      {
-        "change_id": 486,
-        "company": "OpenAI",
-        "url": "blog",
-        "summary": "The website content has changed from a security verification page to a full-fledged OpenAI blog with various sections and links to different products, research, safety, and company information.",
-        "interest_level": 9,
-        "time_ago": "1 hours ago",
-        "detected_at": "2025-08-01T19:20:20.321Z",
-        "change_type": "modified"
-      },
-      {
-        "change_id": 487,
-        "company": "OpenAI",
-        "url": "product",
-        "summary": "The content changed from a security verification page for www.perplexity.ai to a ChatGPT interface",
-        "interest_level": 9,
-        "time_ago": "1 hours ago",
-        "detected_at": "2025-08-01T19:20:13.064Z",
-        "change_type": "modified"
-      },
-      {
-        "change_id": 488,
-        "company": "OpenAI",
-        "url": "pricing",
-        "summary": "The content changed from a blocked page to a detailed pricing page for ChatGPT by OpenAI, including various plans such as Free, Plus, Pro, Team, and Enterprise.",
-        "interest_level": 9,
-        "time_ago": "1 hours ago",
-        "detected_at": "2025-08-01T19:20:07.000Z",
-        "change_type": "modified"
-      },
-      {
-        "change_id": 480,
-        "company": "Google DeepMind",
-        "url": "blog",
-        "summary": "New articles and updates were added to the Google Blog, including 'Google Earth AI', 'The inside story of building NotebookLM', and updates to Gemini Code Assist and goo.gl links.",
-        "interest_level": 8,
-        "time_ago": "2 hours ago",
-        "detected_at": "2025-08-01T18:39:22.393Z",
-        "change_type": "modified"
-      },
-      {
-        "change_id": 482,
-        "company": "GitHub Copilot",
-        "url": "docs",
-        "summary": "Billing section updated to 'organizations and enterprises' from 'billing for organizations' and 'billing for enterprises'",
-        "interest_level": 6,
-        "time_ago": "2 hours ago",
-        "detected_at": "2025-08-01T18:38:57.523Z",
-        "change_type": "modified"
-      }
-    ],
-    "last_24h_count": 7,
-    "last_7d_count": 14,
-    "high_priority_last_7d": 8
-  },
   "companies": [
     {
       "id": 2,
@@ -95,163 +38,179 @@
       ],
       "recentChanges": [
         {
-          "change_id": 484,
           "id": 484,
           "url": "product",
           "detectedAt": "2025-08-01T18:38:27.433Z",
           "relativeTime": "2 hours ago",
-          "interestLevel": 4,
-          "summary": "The download and login links for Claude have been updated with a new URL parameter.",
+          "interestLevel": 3,
+          "summary": "{\"change_summary\":{\"what_changed\":\"The download link for Claude's app has changed from 'https://claude.ai/redirect/website.v1.d125650c-4414-41bc-834b-2158785bb504/download' to 'https://claude.ai/redirect/website.v1.04abeae8-1daf-4c6b-93e5-263ba2b851c7/download'\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Updated download link for Claude's app\"]},\"interest_assessment\":{\"interest_level\":3,\"reasoning\":\"The change is minor and only affects the download link for Claude's app. It does not indicate any significant updates or changes to the company's strategy or products.\",\"category\":\"minor_change\",\"confidence\":0.8},\"entities\":{\"products\":[\"Claude\"],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The change is unlikely to have a significant impact on the company's business or revenue.\",\"market_signals\":[\"The updated download link may indicate that the company is continuing to develop and improve its products.\"],\"competitive_implications\":\"The change is unlikely to affect the company's competitive position in the market.\",\"strategic_direction\":\"The company may be focusing on improving its products and user experience.\"},\"insights\":{\"key_findings\":[\"The updated download link may indicate that the company is continuing to develop and improve its products.\"],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[\"Continue to monitor the company's website and products for any significant updates or changes.\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 485,
           "id": 485,
           "url": "news",
           "detectedAt": "2025-08-01T18:38:20.653Z",
           "relativeTime": "2 hours ago",
           "interestLevel": 6,
-          "summary": "New article 'Anthropic Signs CMS Health Tech Ecosystem Pledge to Advance Healthcare Interoperability' was added to the news section",
+          "summary": "{\"change_summary\":{\"what_changed\":\"Addition of a new news article titled 'Anthropic Signs CMS Health Tech Ecosystem Pledge to Advance Healthcare Interoperability' and removal of several older news articles\",\"change_type\":\"addition and removal\",\"change_scale\":\"minor\",\"specific_changes\":[\"Added new article about Anthropic signing the CMS Health Tech Ecosystem Pledge\",\"Removed several older news articles from the news feed\"]},\"interest_assessment\":{\"interest_level\":6,\"reasoning\":\"The addition of a new news article about a pledge to advance healthcare interoperability is notable but not a major strategic move. The removal of older news articles is a routine update.\",\"category\":\"content_update\",\"confidence\":0.8},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[\"CMS Health Tech Ecosystem Pledge\"],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[\"healthcare\"]},\"strategic_analysis\":{\"business_impact\":\"The signing of the CMS Health Tech Ecosystem Pledge may enhance Anthropic's reputation in the healthcare sector and demonstrate its commitment to advancing healthcare interoperability.\",\"market_signals\":[\"increased focus on healthcare interoperability\"],\"competitive_implications\":\"This move may position Anthropic as a leader in healthcare technology and increase its competitiveness in the market.\",\"strategic_direction\":\"Anthropic is likely to continue focusing on healthcare and technology, potentially leading to further partnerships and innovations in this space.\"},\"insights\":{\"key_findings\":[\"Anthropic's commitment to healthcare interoperability\",\"Potential for increased competitiveness in the healthcare technology market\"],\"opportunities\":[\"Further partnerships in the healthcare sector\",\"Increased reputation and credibility\"],\"threats\":[\"Intensified competition in the healthcare technology market\"],\"recommended_actions\":[\"Monitor Anthropic's activities in the healthcare sector\",\"Assess the impact of the CMS Health Tech Ecosystem Pledge on the company's reputation and competitiveness\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 454,
           "id": 454,
           "url": "homepage",
           "detectedAt": "2025-07-29T14:45:29.310Z",
           "relativeTime": "3 days ago",
           "interestLevel": 3,
-          "summary": "Update of download and login links for Claude.ai",
+          "summary": "{\"change_summary\":{\"what_changed\":\"Update of download and login links for Claude.ai\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Updated download link for Claude.ai from https://claude.ai/redirect/website.v1.f1d860cf-d18a-4694-bb3d-9d8f5920d73d/download to https://claude.ai/redirect/website.v1.d125650c-4414-41bc-834b-2158785bb504/download\",\"Updated login link for Claude.ai from https://claude.ai/redirect/website.v1.f1d860cf-d18a-4694-bb3d-9d8f5920d73d/login to https://claude.ai/redirect/website.v1.d125650c-4414-41bc-834b-2158785bb504/login\"]},\"interest_assessment\":{\"interest_level\":3,\"reasoning\":\"The change is minor and only affects the download and login links for Claude.ai, which does not indicate any significant strategic moves or updates.\",\"category\":\"minor_change\",\"confidence\":0.8},\"entities\":{\"products\":[\"Claude.ai\"],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No significant business impact is expected from this minor update.\",\"market_signals\":[\"Maintenance and updates of existing products\"],\"competitive_implications\":\"No competitive implications are expected from this minor update.\",\"strategic_direction\":\"The update does not indicate any change in the company's strategic direction.\"},\"insights\":{\"key_findings\":[\"Minor update of download and login links for Claude.ai\"],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[\"Continue monitoring the company's updates and announcements for any significant changes or strategic moves.\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 455,
           "id": 455,
           "url": "product",
           "detectedAt": "2025-07-29T14:45:23.411Z",
           "relativeTime": "3 days ago",
           "interestLevel": 3,
-          "summary": "The URL parameters for downloading the Claude app and logging in have changed.",
+          "summary": "{\"change_summary\":{\"what_changed\":\"The URL parameters for downloading the Claude app and logging in have changed.\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Updated download app URL from https://claude.ai/redirect/website.v1.e0360d15-f344-4083-ad78-29350c54037c/download to https://claude.ai/redirect/website.v1.d125650c-4414-41bc-834b-2158785bb504/download\",\"Updated log in URL from https://claude.ai/redirect/website.v1.e0360d15-f344-4083-ad78-29350c54037c to https://claude.ai/redirect/website.v1.d125650c-4414-41bc-834b-2158785bb504\",\"Example use case of Claude changed from 'debug a wedding website' to 'build a bedtime story app'\"]},\"interest_assessment\":{\"interest_level\":3,\"reasoning\":\"The changes are minor and primarily involve updates to URLs and a change in the example use case of Claude. These changes do not indicate any significant strategic moves or major updates to the product or service.\",\"category\":\"minor_change\",\"confidence\":0.8},\"entities\":{\"products\":[\"Claude\"],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The updated URLs may affect user access temporarily but do not signify a substantial change in the business strategy. The change in example use case might reflect a broader application of Claude but does not fundamentally alter its positioning.\",\"market_signals\":[\"Minor updates to product access points\"],\"competitive_implications\":\"Competitors may note the update but are unlikely to be significantly impacted by such minor changes.\",\"strategic_direction\":\"The strategic direction of Anthropic, as indicated by these changes, remains focused on refining and possibly expanding the use cases of Claude, but without a major shift in strategy.\"},\"insights\":{\"key_findings\":[\"Minor updates to URLs and example use case\"],\"opportunities\":[\"Potential for expanded use cases of Claude\"],\"threats\":[\"Temporary access issues due to URL changes\"],\"recommended_actions\":[\"Monitor user feedback on updated URLs and example use case\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 456,
           "id": 456,
           "url": "news",
           "detectedAt": "2025-07-29T14:45:17.004Z",
           "relativeTime": "3 days ago",
           "interestLevel": 5,
-          "summary": "Addition of a new case study on how Anthropic teams use Claude Code",
+          "summary": "{\"change_summary\":{\"what_changed\":\"Addition of a new case study on how Anthropic teams use Claude Code\",\"change_type\":\"addition\",\"change_scale\":\"minor\",\"specific_changes\":[\"New case study added: 'How Anthropic teams use Claude Code' dated Jul 24, 2025\"]},\"interest_assessment\":{\"interest_level\":5,\"reasoning\":\"The addition of a new case study indicates the company's efforts to showcase the practical applications and internal uses of their product, Claude Code. This suggests a focus on demonstrating value and usability, which is notable but not a major strategic shift.\",\"category\":\"product_update\",\"confidence\":0.8},\"entities\":{\"products\":[\"Claude Code\"],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The addition of a case study may help in marketing and sales efforts by providing tangible examples of Claude Code's utility within Anthropic itself.\",\"market_signals\":[\"Increased transparency into internal product usage\"],\"competitive_implications\":\"May slightly enhance Anthropic's competitive positioning by showcasing the versatility and internal adoption of Claude Code.\",\"strategic_direction\":\"Indicates a strategic focus on demonstrating product value through real-world, internal applications.\"},\"insights\":{\"key_findings\":[\"Anthropic is using case studies to demonstrate the value of Claude Code.\"],\"opportunities\":[\"Potential for increased adoption of Claude Code based on demonstrated internal use cases.\"],\"threats\":[\"Competitors may respond with their own case studies or product demonstrations, mitigating the competitive advantage.\"],\"recommended_actions\":[\"Monitor Anthropic's marketing strategy and product development to understand how they leverage internal case studies for external marketing.\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 457,
           "id": 457,
           "url": "pricing",
           "detectedAt": "2025-07-29T14:45:10.018Z",
           "relativeTime": "3 days ago",
           "interestLevel": 8,
-          "summary": "Changes in pricing plans, specifically in the 'Max' plan where usage is now described as 'per session', and the addition of 'Almost* everything in Pro' to the Team plan with Claude Code available separately. Updates in the 'Team' and 'Enterprise' plans regarding usage limits and Claude Code availability.",
+          "summary": "{\"change_summary\":{\"what_changed\":\"Changes in pricing plans, specifically in the 'Max' plan where usage is now described as 'per session', and the addition of 'Almost* everything in Pro' to the Team plan with Claude Code available separately. Updates in the 'Team' and 'Enterprise' plans regarding usage limits and Claude Code availability.\",\"change_type\":\"update\",\"change_scale\":\"significant\",\"specific_changes\":[\"Max plan usage description changed to 'per session'\",\"Team plan now includes 'Almost* everything in Pro' with Claude Code available separately\",\"Updates in usage limits and Claude Code availability for Team and Enterprise plans\"]},\"interest_assessment\":{\"interest_level\":8,\"reasoning\":\"The changes indicate a strategic adjustment in pricing and plan features, potentially reflecting a shift in target market or competitive strategy. This level of change suggests a notable evolution in the company's approach to its services and customer segments.\",\"category\":\"product_update\",\"confidence\":0.9},\"entities\":{\"products\":[\"Claude\"],\"features\":[\"Claude Code\",\"Prompt caching\"],\"partnerships\":[],\"technologies\":[\"AI\"],\"people\":[],\"pricing\":[\"Max plan\",\"Team plan\",\"Enterprise plan\"],\"markets\":[\"Education\",\"Enterprise\"]},\"strategic_analysis\":{\"business_impact\":\"The changes could impact customer acquisition and retention, particularly in the education and enterprise sectors, by offering more tailored solutions. The adjustments in pricing and features may influence the competitive landscape, potentially attracting more customers seeking flexible and scalable AI solutions.\",\"market_signals\":[\"Increased focus on enterprise and education sectors\",\"Enhanced competitiveness through flexible pricing and features\"],\"competitive_implications\":\"Competitors may need to reassess their pricing strategies and service offerings to remain competitive, especially in the enterprise and education markets.\",\"strategic_direction\":\"The company appears to be focusing on expanding its presence in the enterprise and education sectors, emphasizing scalability, flexibility, and tailored solutions.\"},\"insights\":{\"key_findings\":[\"Shift in pricing strategy\",\"Enhanced focus on enterprise and education sectors\"],\"opportunities\":[\"Increased market share in target sectors\",\"Improved customer satisfaction through tailored plans\"],\"threats\":[\"Potential backlash from existing customers due to pricing changes\",\"Competitive response from other AI service providers\"],\"recommended_actions\":[\"Monitor customer feedback and market response\",\"Continuously evaluate and adjust pricing and feature strategies to maintain competitiveness\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 440,
           "id": 440,
           "url": "product",
           "detectedAt": "2025-07-24T15:44:05.779Z",
           "relativeTime": "7/24/2025",
           "interestLevel": 4,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"The download link for the Claude app has been updated with a new redirect URL.\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Updated download link for Claude app from https://claude.ai/redirect/website.v1.f1d860cf-d18a-4694-bb3d-9d8f5920d73d/download to https://claude.ai/redirect/website.v1.e0360d15-f344-4083-ad78-29350c54037c/download\",\"Example use case changed from 'build a bedtime story app' to 'debug a wedding website'\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 295,
           "id": 295,
           "url": "news",
           "detectedAt": "2025-07-23T19:39:42.299Z",
           "relativeTime": "7/23/2025",
           "interestLevel": 8,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"Addition of new news articles and removal of old ones, update of featured news section\",\"change_type\":\"update\",\"change_scale\":\"significant\",\"specific_changes\":[\"Addition of 'Thoughts on America’s AI Action Plan' article\",\"Removal of 'Anthropic Economic Index: AI’s impact on software development' from featured section\",\"Update of 'Introducing Claude 4' article\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 286,
           "id": 286,
           "url": "news",
           "detectedAt": "2025-07-23T19:02:49.922Z",
           "relativeTime": "7/23/2025",
           "interestLevel": 8,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"Addition of new news articles and updates to existing ones, including announcements, product updates, and policy changes\",\"change_type\":\"addition\",\"change_scale\":\"significant\",\"specific_changes\":[\"New partnership with the University of Chicago's Becker Friedman Institute on AI economic research\",\"Introduction of Claude for Financial Services\",\"Advancements in Claude for Education\",\"Expansion of Claude for Enterprise use by Lawrence Livermore National Laboratory\",\"Appointment of Paul Smith as Chief Commercial Officer\",\"Introduction of the Anthropic Economic Futures Program\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 219,
           "id": 219,
           "url": "news",
           "detectedAt": "2025-07-22T17:13:18.357Z",
           "relativeTime": "7/22/2025",
           "interestLevel": 6,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"New article 'Build AI in America' added, and 'No results found' message removed\",\"change_type\":\"addition\",\"change_scale\":\"minor\",\"specific_changes\":[\"Added new article 'Build AI in America' on Jul 21, 2025\",\"Removed 'No results found' message from news section\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         }
       ],
       "intelligence": {
         "products": [
-          "Claude",
-          "Claude Code",
-          "Max plan",
-          "Team plan",
-          "Enterprise plan",
-          "Claude for Enterprise",
-          "Claude for Education",
-          "API",
-          "Anthropic Console",
-          "Artifacts",
-          "Contextual Retrieval",
-          "Message Batches API",
-          "Projects",
-          "Anthropic API",
-          "Anthropic Courses"
+          "claude",
+          "claude code",
+          "max plan",
+          "team plan",
+          "enterprise plan"
         ],
         "ai_technologies": [
-          "Python",
-          "HTML",
-          "CSS",
-          "JS",
-          "Google Cloud’s Vertex AI",
-          "Amazon Bedrock",
-          "AWS",
-          "GitHub",
-          "Google Cloud",
-          "Vertex AI",
-          "TensorFlow",
-          "PyTorch",
-          "API",
-          "SDKs",
-          "Google Cloud's Vertex AI"
+          "python",
+          "amazon bedrock",
+          "aws",
+          "github",
+          "google cloud's vertex ai"
         ],
-        "ai_ml_concepts": []
+        "ai_ml_concepts": [
+          "AI Safety",
+          "Alignment Research",
+          "Interpretability",
+          "Harmless AI"
+        ]
       },
+      "attributes": {},
       "stats": {
         "totalChanges": 10,
         "highInterestChanges": 3,
@@ -290,174 +249,178 @@
       ],
       "recentChanges": [
         {
-          "change_id": 495,
           "id": 495,
           "url": "docs",
           "detectedAt": "2025-08-01T20:39:58.043Z",
-          "relativeTime": "4 min ago",
-          "interestLevel": 2,
-          "summary": "No significant changes were detected in the content structure or links.",
+          "relativeTime": "28 min ago",
+          "interestLevel": 1,
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the provided content.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":1,\"reasoning\":\"No significant changes were detected in the provided content.\",\"category\":\"minor_change\",\"confidence\":0},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No significant changes were detected, so there is no expected business impact.\",\"market_signals\":[],\"competitive_implications\":\"No significant changes were detected, so there are no expected competitive implications.\",\"strategic_direction\":\"No significant changes were detected, so there is no expected change in strategic direction.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 482,
           "id": 482,
           "url": "docs",
           "detectedAt": "2025-08-01T18:38:57.523Z",
           "relativeTime": "2 hours ago",
           "interestLevel": 6,
-          "summary": "Billing section updated to 'organizations and enterprises' from 'billing for organizations' and 'billing for enterprises'",
+          "summary": "{\"change_summary\":{\"what_changed\":\"Billing section updated to 'organizations and enterprises' from 'billing for organizations' and 'billing for enterprises'\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Updated billing section to include 'organizations and enterprises' instead of separate sections for 'billing for organizations' and 'billing for enterprises'\",\"Added 'Upgrade plan' option under 'Manage for enterprise' in the 'Administer Copilot' section\"]},\"interest_assessment\":{\"interest_level\":6,\"reasoning\":\"The changes are minor updates to the billing and administration sections, which may indicate a refinement of the Copilot service but do not represent a major strategic shift.\",\"category\":\"content_update\",\"confidence\":0.8},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[\"organizations and enterprises\"],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The updates to the billing section may simplify the billing process for organizations and enterprises, potentially improving the user experience and reducing administrative burdens.\",\"market_signals\":[\"Refinement of the Copilot service to better meet the needs of organizations and enterprises\"],\"competitive_implications\":\"The changes do not significantly alter the competitive landscape, but they may contribute to a more streamlined and user-friendly experience for Copilot users.\",\"strategic_direction\":\"The updates suggest a continued focus on refining and improving the Copilot service, particularly for organizational and enterprise users.\"},\"insights\":{\"key_findings\":[\"The Copilot service is being refined to better meet the needs of organizations and enterprises.\",\"The updates may improve the user experience and reduce administrative burdens for these users.\"],\"opportunities\":[\"The refined billing process may attract more organizations and enterprises to the Copilot service.\"],\"threats\":[\"The changes may not be significant enough to differentiate Copilot from its competitors.\"],\"recommended_actions\":[\"Monitor user feedback and adoption rates to assess the impact of the updates.\",\"Consider further refinements to the Copilot service to maintain a competitive edge.\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 483,
           "id": 483,
           "url": "blog",
           "detectedAt": "2025-08-01T18:38:51.413Z",
           "relativeTime": "2 hours ago",
-          "interestLevel": 1,
-          "summary": "No significant changes were detected in the provided content.",
+          "interestLevel": 2,
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the content structure or links between the two versions.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":2,\"reasoning\":\"The content appears to be a blog archive with various categories and links. No significant updates or changes were detected.\",\"category\":\"minor_change\",\"confidence\":0.8},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No significant business impact is expected from the detected changes.\",\"market_signals\":[],\"competitive_implications\":\"No competitive implications are expected from the detected changes.\",\"strategic_direction\":\"No clear strategic direction is indicated by the detected changes.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 470,
           "id": 470,
           "url": "docs",
           "detectedAt": "2025-07-30T14:14:55.328Z",
           "relativeTime": "2 days ago",
           "interestLevel": 2,
-          "summary": "No significant changes were detected in the content structure or links between the two versions.",
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the content structure or links between the two versions.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":2,\"reasoning\":\"The analysis did not reveal any substantial updates, additions, or removals that would indicate a significant strategic move, product update, or change in competitive positioning.\",\"category\":\"minor_change\",\"confidence\":0.9},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No apparent business impact from the changes detected.\",\"market_signals\":[],\"competitive_implications\":\"No significant implications for competitive positioning or strategy.\",\"strategic_direction\":\"No change in strategic direction is evident from the analysis.\"},\"insights\":{\"key_findings\":[\"No significant changes were found.\"],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[\"Continue monitoring for future updates that may signal strategic changes or competitive moves.\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 452,
           "id": 452,
           "url": "docs",
           "detectedAt": "2025-07-29T14:45:53.478Z",
           "relativeTime": "3 days ago",
           "interestLevel": 7,
-          "summary": "Reorganization and renaming of certain sections and links within the GitHub Copilot documentation",
+          "summary": "{\"change_summary\":{\"what_changed\":\"Reorganization and renaming of certain sections and links within the GitHub Copilot documentation\",\"change_type\":\"update/restructure\",\"change_scale\":\"significant\",\"specific_changes\":[\"Renaming of 'Plans for Copilot' to 'Plans'\",\"Renaming of 'Copilot features' to 'Features'\",\"Reorganization of 'How-tos' section with updated links and categories\",\"Addition of new links and sections such as 'About MCP' and 'Manage network access'\",\"Removal or rephrasing of certain links and descriptions for better clarity\"]},\"interest_assessment\":{\"interest_level\":7,\"reasoning\":\"The changes indicate an effort to improve user experience and clarity in the documentation, which is significant for users and administrators of GitHub Copilot.\",\"category\":\"documentation_update\",\"confidence\":0.8},\"entities\":{\"products\":[\"GitHub Copilot\"],\"features\":[\"Coding agent\",\"Chat\",\"Code review\",\"MCP\"],\"partnerships\":[],\"technologies\":[\"AI models\"],\"people\":[],\"pricing\":[\"Free\",\"Pro\",\"Team\"],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"Improved user experience and clarity in documentation can lead to increased adoption and satisfaction with GitHub Copilot, potentially driving business growth.\",\"market_signals\":[\"Enhanced focus on user experience\",\"Expansion of documentation to cover more features and use cases\"],\"competitive_implications\":\"GitHub Copilot's competitors may need to respond with similar improvements in their documentation and user experience to remain competitive.\",\"strategic_direction\":\"The changes suggest a strategic direction towards enhancing user experience, expanding feature sets, and improving documentation to support growth and competitiveness.\"},\"insights\":{\"key_findings\":[\"GitHub Copilot is investing in improving user experience and documentation\",\"The platform is expanding its feature set and use cases\"],\"opportunities\":[\"Increased adoption and satisfaction with GitHub Copilot\",\"Potential for GitHub Copilot to become a leader in its market due to enhanced user experience and feature set\"],\"threats\":[\"Competitors may respond with similar improvements, potentially mitigating GitHub Copilot's competitive advantage\"],\"recommended_actions\":[\"Monitor competitor responses and market trends\",\"Continuously evaluate and improve user experience and documentation\",\"Consider expanding feature sets and use cases to maintain competitiveness\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 453,
           "id": 453,
           "url": "blog",
           "detectedAt": "2025-07-29T14:45:46.743Z",
           "relativeTime": "3 days ago",
           "interestLevel": 1,
-          "summary": "No significant changes were detected in the provided content.",
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the provided content.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":1,\"reasoning\":\"The provided content does not show any significant changes or updates.\",\"category\":\"minor_change\",\"confidence\":0.9},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No significant business impact is expected from the provided content.\",\"market_signals\":[],\"competitive_implications\":\"No competitive implications are expected from the provided content.\",\"strategic_direction\":\"No clear strategic direction is evident from the provided content.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 439,
           "id": 439,
           "url": "docs",
           "detectedAt": "2025-07-24T15:44:39.009Z",
           "relativeTime": "7/24/2025",
           "interestLevel": 8,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"Reorganization and updates of GitHub Copilot documentation\",\"change_type\":\"update/restructure\",\"change_scale\":\"significant\",\"specific_changes\":[\"Reorganized 'Concepts' section\",\"Updated 'How-tos' section with new links and reorganized content\",\"Removed or renamed certain links and sections\",\"Added new links for 'Coding agent', 'Code review', and 'Spaces'\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 310,
           "id": 310,
           "url": "docs",
           "detectedAt": "2025-07-23T23:36:42.053Z",
           "relativeTime": "7/23/2025",
           "interestLevel": 2,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"No significant changes were detected in the provided content.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 298,
           "id": 298,
           "url": "docs",
           "detectedAt": "2025-07-23T19:03:26.617Z",
           "relativeTime": "7/23/2025",
           "interestLevel": 8,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"Reorganization and updates of GitHub Copilot documentation, including changes to billing, concepts, and how-to sections\",\"change_type\":\"update/restructure\",\"change_scale\":\"significant\",\"specific_changes\":[\"Updated billing section to include information on Spark billing\",\"Added new concepts such as text completion and code referencing\",\"Reorganized how-to sections for better clarity and added new topics such as using Copilot for common tasks and managing spending\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 285,
           "id": 285,
           "url": "homepage",
           "detectedAt": "2025-07-23T19:03:14.475Z",
           "relativeTime": "7/23/2025",
           "interestLevel": 8,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"Introduction of GitHub Spark, update to pricing plans and addition of new models\",\"change_type\":\"update\",\"change_scale\":\"significant\",\"specific_changes\":[\"Introduction of GitHub Spark\",\"Update to pricing plans, including the addition of a free tier and changes to the Pro and Pro+ plans\",\"Addition of new models, including Claude Opus 4 and o3\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         }
       ],
       "intelligence": {
         "products": [
-          "GitHub Copilot",
-          "GitHub Copilot Spaces",
-          "GitHub",
-          "GitHub Docs",
-          "GitHub Desktop",
-          "GitHub Models",
-          "GitHub Advanced Security",
-          "GitHub Codespaces",
-          "GitHub Actions",
-          "GitHub Packages",
-          "Copilot Chat",
-          "Copilot Extensions",
-          "Copilot coding agent",
-          "GitHub Copilot Pro",
-          "GitHub Copilot Free",
-          "GitHub Copilot Pro+",
-          "GitHub Copilot Business",
-          "GitHub Copilot Enterprise",
-          "GitHub Spark"
+          "github copilot",
+          "github advanced security",
+          "github models",
+          "github codespaces",
+          "github actions"
         ],
         "ai_technologies": [
-          "Git",
-          "Python",
-          "JavaScript",
-          "GitHub Actions",
-          "GitHub API",
-          "GitHub",
-          "Microsoft Azure",
-          "SAML",
-          "SCIM",
-          "CLI",
-          "IDE",
-          "Windows Terminal",
-          "GitHub Mobile",
-          "GitHub Desktop",
-          "Azure",
-          "Visual Studio Code",
-          "Visual Studio",
-          "JetBrains IDEs",
-          "Neovim",
-          "Azure Data Studio",
-          "Eclipse",
-          "GitHub CLI"
+          "github",
+          "python",
+          "microsoft azure",
+          "saml",
+          "scim"
         ],
-        "ai_ml_concepts": []
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
       },
+      "attributes": {},
       "stats": {
         "totalChanges": 10,
         "highInterestChanges": 4,
@@ -502,203 +465,178 @@
       ],
       "recentChanges": [
         {
-          "change_id": 480,
           "id": 480,
           "url": "blog",
           "detectedAt": "2025-08-01T18:39:22.393Z",
           "relativeTime": "2 hours ago",
           "interestLevel": 8,
-          "summary": "New articles and updates were added to the Google Blog, including 'Google Earth AI', 'The inside story of building NotebookLM', and updates to Gemini Code Assist and goo.gl links.",
+          "summary": "{\"change_summary\":{\"what_changed\":\"New articles and updates were added to the Google Blog, including 'Google Earth AI', 'The inside story of building NotebookLM', and updates to Gemini Code Assist and goo.gl links.\",\"change_type\":\"addition\",\"change_scale\":\"significant\",\"specific_changes\":[\"Added new article: 'Google Earth AI: Our state-of-the-art geospatial AI models'\",\"Added new article: 'The inside story of building NotebookLM'\",\"Updated Gemini Code Assist with Agent Mode and IDE enhancements\",\"Updated plans for goo.gl links to preserve actively used links\"]},\"interest_assessment\":{\"interest_level\":8,\"reasoning\":\"The updates indicate significant developments in Google's AI capabilities, including geospatial AI models and advancements in language models. These changes demonstrate Google's ongoing investment in AI research and development, which is likely to impact the company's competitive positioning and market offerings.\",\"category\":\"significant updates\",\"confidence\":0.9},\"entities\":{\"products\":[\"Gemini\",\"Google Earth\",\"NotebookLM\"],\"features\":[\"Agent Mode\",\"IDE enhancements\"],\"partnerships\":[],\"technologies\":[\"AI\",\"geospatial AI models\",\"language models\"],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The updates demonstrate Google's commitment to advancing its AI capabilities, which is likely to drive innovation and competitiveness in the market. The developments in geospatial AI models and language models may lead to new product offerings or enhancements to existing products.\",\"market_signals\":[\"Increased investment in AI research and development\",\"Expansion of AI capabilities into new areas, such as geospatial models\"],\"competitive_implications\":\"Google's advancements in AI may increase its competitive advantage in the market, particularly in areas where AI is a key differentiator. Competitors may need to respond with their own AI investments to remain competitive.\",\"strategic_direction\":\"The updates suggest that Google is continuing to prioritize AI research and development, with a focus on advancing its capabilities in areas like geospatial models and language models.\"},\"insights\":{\"key_findings\":[\"Google is investing heavily in AI research and development\",\"The company is expanding its AI capabilities into new areas, such as geospatial models\"],\"opportunities\":[\"Potential for new product offerings or enhancements to existing products\",\"Increased competitiveness in the market due to advanced AI capabilities\"],\"threats\":[\"Competitors may respond with their own AI investments, increasing competition\",\"Regulatory challenges or public concerns around AI development and deployment\"],\"recommended_actions\":[\"Monitor Google's AI developments and investments\",\"Assess the potential impact on the market and competitive landscape\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 481,
           "id": 481,
           "url": "homepage",
           "detectedAt": "2025-08-01T18:39:06.003Z",
           "relativeTime": "2 hours ago",
           "interestLevel": 2,
-          "summary": "No significant changes were detected in the content structure or major updates to the models, research, or science sections.",
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the content between the two versions.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":2,\"reasoning\":\"The content appears to be identical in both versions, with no notable updates or changes.\",\"category\":\"no change\",\"confidence\":0.9},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No significant business impact is expected from this change.\",\"market_signals\":[],\"competitive_implications\":\"No competitive implications are expected from this change.\",\"strategic_direction\":\"No change in strategic direction is indicated by this update.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 467,
           "id": 467,
           "url": "product",
           "detectedAt": "2025-07-30T14:15:28.890Z",
           "relativeTime": "2 days ago",
           "interestLevel": 1,
-          "summary": "No changes were detected in the content between the two versions.",
+          "summary": "{\"change_summary\":{\"what_changed\":\"No changes were detected in the content between the two versions.\",\"change_type\":\"no change\",\"change_scale\":\"none\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":1,\"reasoning\":\"The content remains the same, indicating no new developments or updates.\",\"category\":\"no change\",\"confidence\":1},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No impact, as there are no changes.\",\"market_signals\":[],\"competitive_implications\":\"No implications, as there are no changes.\",\"strategic_direction\":\"No direction, as there are no changes.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 468,
           "id": 468,
           "url": "blog",
           "detectedAt": "2025-07-30T14:15:22.285Z",
           "relativeTime": "2 days ago",
           "interestLevel": 8,
-          "summary": "New articles and updates were added to the Google Blog, including Google Earth AI, NotebookLM, and Gemini updates",
+          "summary": "{\"change_summary\":{\"what_changed\":\"New articles and updates were added to the Google Blog, including Google Earth AI, NotebookLM, and Gemini updates\",\"change_type\":\"addition\",\"change_scale\":\"significant\",\"specific_changes\":[\"Addition of Google Earth AI article\",\"Addition of NotebookLM article\",\"Update to Gemini Code Assist\",\"Introduction of Gemini CLI\"]},\"interest_assessment\":{\"interest_level\":8,\"reasoning\":\"The updates indicate significant advancements in Google's AI capabilities, including geospatial AI models and open-source AI agents, which could have major implications for various industries and users\",\"category\":\"AI updates\",\"confidence\":0.9},\"entities\":{\"products\":[\"Gemini\",\"Google Earth\",\"NotebookLM\"],\"features\":[\"Gemini Code Assist\",\"Gemini CLI\"],\"partnerships\":[],\"technologies\":[\"AI\",\"Geospatial AI\"],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The updates demonstrate Google's continued investment in AI research and development, which could lead to new business opportunities and revenue streams\",\"market_signals\":[\"Increased competition in the AI market\",\"Growing demand for AI-powered solutions\"],\"competitive_implications\":\"Google's advancements in AI could give the company a competitive edge over its rivals, particularly in areas like search and geospatial technology\",\"strategic_direction\":\"The updates suggest that Google is committed to pushing the boundaries of AI research and development, with a focus on practical applications and real-world impact\"},\"insights\":{\"key_findings\":[\"Google is making significant investments in AI research and development\",\"The company is focused on developing practical AI applications with real-world impact\"],\"opportunities\":[\"Partnerships and collaborations with Google on AI-powered projects\",\"Integration of Google's AI technologies into existing products and services\"],\"threats\":[\"Increased competition in the AI market\",\"Potential regulatory challenges related to AI development and deployment\"],\"recommended_actions\":[\"Monitor Google's AI developments and updates\",\"Explore potential partnerships and collaborations with Google on AI-powered projects\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 469,
           "id": 469,
           "url": "homepage",
           "detectedAt": "2025-07-30T14:15:04.585Z",
           "relativeTime": "2 days ago",
           "interestLevel": 2,
-          "summary": "No significant changes were detected in the content between the two versions.",
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the content between the two versions.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":2,\"reasoning\":\"The content appears to be identical, with no notable updates or changes.\",\"category\":\"no change\",\"confidence\":0.9},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No impact, as there are no changes.\",\"market_signals\":[],\"competitive_implications\":\"No implications, as there are no changes.\",\"strategic_direction\":\"No direction, as there are no changes.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 449,
           "id": 449,
           "url": "blog",
           "detectedAt": "2025-07-29T14:46:17.001Z",
           "relativeTime": "3 days ago",
           "interestLevel": 8,
-          "summary": "New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inference?', 'Find out the latest Gemini updates with Gemini Drops', 'Turn your photos into videos in Gemini', 'Plan ahead with scheduled actions in the Gemini app', 'Check out the first images of wildfires detected by FireSat', 'How we built one of the most ambitious datasets in brain activity research', 'Google Beam: Our AI-first 3D video communication platform', 'New in Gemini Code Assist: Agent Mode and IDE enhancements', 'Gemini CLI: your open-source AI agent', 'Gemini Code Assist adds Gemini 2.5, personalization and context management', 'Try on styles with AI, jump on great prices and more', 'Web Guide: An experimental AI-organized search results page'",
+          "summary": "{\"change_summary\":{\"what_changed\":\"New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inference?', 'Find out the latest Gemini updates with Gemini Drops', 'Turn your photos into videos in Gemini', 'Plan ahead with scheduled actions in the Gemini app', 'Check out the first images of wildfires detected by FireSat', 'How we built one of the most ambitious datasets in brain activity research', 'Google Beam: Our AI-first 3D video communication platform', 'New in Gemini Code Assist: Agent Mode and IDE enhancements', 'Gemini CLI: your open-source AI agent', 'Gemini Code Assist adds Gemini 2.5, personalization and context management', 'Try on styles with AI, jump on great prices and more', 'Web Guide: An experimental AI-organized search results page'\",\"change_type\":\"addition\",\"change_scale\":\"significant\",\"specific_changes\":[\"Added new articles under 'AI', 'Gemini App', 'Research', 'Developers', and 'All the Latest' sections\",\"Introduced new features and updates for Gemini and Search\",\"Published new research and developments in AI and related fields\"]},\"interest_assessment\":{\"interest_level\":8,\"reasoning\":\"The changes indicate significant updates and advancements in Google's AI technology, Gemini app, and Search features, which could impact the company's competitive positioning and market influence.\",\"category\":\"product_update\",\"confidence\":0.9},\"entities\":{\"products\":[\"Gemini\",\"Google Search\",\"Google Cloud\",\"Google Workspace\"],\"features\":[\"Gemini Code Assist\",\"Gemini CLI\",\"Web Guide\"],\"partnerships\":[],\"technologies\":[\"AI\",\"Machine Learning\"],\"people\":[\"Demis Hassabis\",\"Sundar Pichai\"],\"pricing\":[],\"markets\":[\"Global\",\"Asia\",\"Europe\",\"Latin America\"]},\"strategic_analysis\":{\"business_impact\":\"The updates and new features could enhance Google's position in the AI and search markets, potentially increasing revenue and user engagement.\",\"market_signals\":[\"Growing investment in AI research and development\",\"Increasing competition in the search and virtual assistant markets\"],\"competitive_implications\":\"Google's advancements in AI could challenge competitors like Amazon, Microsoft, and Facebook, and potentially lead to new partnerships and collaborations.\",\"strategic_direction\":\"The changes suggest Google is focusing on developing and integrating AI technology across its products and services, with an emphasis on innovation and user experience.\"},\"insights\":{\"key_findings\":[\"Google is prioritizing AI research and development\",\"The company is expanding its Gemini app and Search features\",\"New partnerships and collaborations may be formed as a result of these updates\"],\"opportunities\":[\"Increased revenue and user engagement\",\"Improved competitive positioning\",\"New business opportunities through AI-powered services\"],\"threats\":[\"Intensified competition in the AI and search markets\",\"Potential regulatory challenges\",\"Dependence on AI technology for future growth\"],\"recommended_actions\":[\"Monitor Google's AI developments and strategic direction\",\"Assess the impact of these updates on the competitive landscape\",\"Consider potential partnerships or collaborations with Google\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 450,
           "id": 450,
           "url": "pricing",
           "detectedAt": "2025-07-29T14:46:11.731Z",
           "relativeTime": "3 days ago",
           "interestLevel": 2,
-          "summary": "No significant content changes were detected between the two versions of the webpage.",
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant content changes were detected between the two versions of the webpage.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":2,\"reasoning\":\"The analysis did not reveal any significant changes or updates to the content, indicating a low level of interest.\",\"category\":\"minor_change\",\"confidence\":0.8},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No significant business impact is expected from the lack of changes to the webpage content.\",\"market_signals\":[],\"competitive_implications\":\"The absence of changes does not provide any new competitive advantages or disadvantages.\",\"strategic_direction\":\"No new strategic direction is indicated by the lack of changes to the webpage content.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[\"Monitor the webpage for future updates and changes to identify potential opportunities or threats.\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 451,
           "id": 451,
           "url": "homepage",
           "detectedAt": "2025-07-29T14:46:00.101Z",
           "relativeTime": "3 days ago",
           "interestLevel": 2,
-          "summary": "No significant changes were detected in the content structure or major updates to the models, research, or science sections.",
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the content structure or major updates to the models, research, or science sections.\",\"change_type\":\"no significant update\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":2,\"reasoning\":\"The content appears to be largely unchanged, with no new major announcements, updates, or breakthroughs.\",\"category\":\"minor_change\",\"confidence\":0.8},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No significant business impact is expected from these changes.\",\"market_signals\":[],\"competitive_implications\":\"No competitive implications are evident from the lack of significant changes.\",\"strategic_direction\":\"The strategic direction of Google DeepMind remains focused on AI research and development.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[\"Monitor Google DeepMind's blog and research sections for future updates and announcements.\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 438,
           "id": 438,
           "url": "blog",
           "detectedAt": "2025-07-24T15:45:05.834Z",
           "relativeTime": "7/24/2025",
           "interestLevel": 8,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inference?', 'Find out the latest Gemini updates with Gemini Drops', 'Check out the first images of wildfires detected by FireSat', and 'Try on styles with AI, jump on great prices and more'\",\"change_type\":\"addition\",\"change_scale\":\"significant\",\"specific_changes\":[\"Added new article 'Ask a Techspert: What is inference?'\",\"Added new article 'Find out the latest Gemini updates with Gemini Drops'\",\"Added new article 'Check out the first images of wildfires detected by FireSat'\",\"Added new article 'Try on styles with AI, jump on great prices and more'\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 289,
           "id": 289,
           "url": "blog",
           "detectedAt": "2025-07-23T19:40:46.363Z",
           "relativeTime": "7/23/2025",
           "interestLevel": 8,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inference?', 'Find out the latest Gemini updates with Gemini Drops', 'Turn your photos into videos in Gemini', 'Check out the first images of wildfires detected by FireSat', 'How we built one of the most ambitious datasets in brain activity research', 'Google Beam: Our AI-first 3D video communication platform', 'New in Gemini Code Assist: Agent Mode and IDE enhancements', 'Gemini CLI: your open-source AI agent', 'Gemini Code Assist adds Gemini 2.5, personalization and context management', 'Listen to a conversation about the newest AI capabilities in Search', 'Transform your photos into videos and remix your pics in Google Photos'\",\"change_type\":\"addition\",\"change_scale\":\"significant\",\"specific_changes\":[\"Added new articles under 'AI', 'Gemini App', 'Research', 'Developers', and 'All the Latest' sections\",\"Updated Gemini Code Assist with new features\",\"Introduced Gemini CLI as an open-source AI agent\",\"Announced the first images of wildfires detected by FireSat\",\"Published a podcast about the newest AI capabilities in Search\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         }
       ],
       "intelligence": {
         "products": [
-          "Gemini",
-          "Google AI Studio",
-          "Vertex AI",
-          "Gemini API",
-          "Colab",
-          "Jules",
-          "Android Studio",
-          "Chrome DevTools",
-          "Firebase Studio",
-          "Gemma open models",
-          "Google AI Edge",
-          "Gemini Nano on Android",
-          "Chrome built-in web APIs",
-          "Responsible GenAI Toolkit",
-          "Secure AI Framework",
-          "Gemini App",
-          "Google Earth AI",
-          "Google Cloud",
-          "Google Workspace",
-          "Google Play",
-          "Google Nest",
-          "Pixel",
-          "Wear OS",
-          "Fitbit",
-          "Chrome",
-          "Chromebooks",
-          "Google Maps",
-          "Google Search",
-          "Google Photos",
-          "Google Translate",
-          "Gemma",
-          "Veo",
-          "Imagen",
-          "Lyria",
-          "Gemini app",
-          "Vertex AI Studio",
-          "Flow",
-          "Whisk",
-          "MusicFX DJ",
-          "Project Astra",
-          "Project Mariner",
-          "Vertex AI Platform",
-          "Vertex AI Agent Builder",
-          "Cloud Run",
-          "Google Kubernetes Engine",
-          "Looker",
-          "Apigee API Management",
-          "Cloud SQL"
+          "google ai studio",
+          "gemini",
+          "gemini app",
+          "vertex ai studio",
+          "google workspace"
         ],
         "ai_technologies": [
-          "Python",
-          "Google Cloud",
-          "Android",
-          "Chrome",
-          "Firebase",
-          "Colab",
-          "Jules",
-          "VS Code",
-          "JetBrains",
-          "Google Cloud Platform",
-          "TensorFlow",
-          "PyTorch",
-          "JAX",
-          "Muons",
-          "Satellite Constellation",
-          "Transformer",
-          "CNN",
-          "RNN",
-          "Kubernetes",
-          "Docker",
-          "Apache Spark",
-          "Apache Hadoop"
+          "python",
+          "google cloud",
+          "tensorflow",
+          "pytorch",
+          "jax"
         ],
-        "ai_ml_concepts": []
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
       },
+      "attributes": {},
       "stats": {
         "totalChanges": 10,
         "highInterestChanges": 5,
@@ -731,45 +669,56 @@
       ],
       "recentChanges": [
         {
-          "change_id": 160,
           "id": 160,
           "url": "docs",
           "detectedAt": "2025-07-21T15:18:22.044Z",
           "relativeTime": "7/21/2025",
           "interestLevel": 8,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"Initial content creation for Midjourney documentation\",\"change_type\":\"addition\",\"change_scale\":\"major\",\"specific_changes\":[\"Introduction of help center with various sections\",\"Addition of getting started, documentation, and billing support links\",\"Inclusion of policies and guidelines such as terms of service, privacy policy, data deletion & privacy FAQ, and community guidelines\",\"Links to Midjourney website and Discord server\"]}",
           "changeType": "new",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 161,
           "id": 161,
           "url": "pricing",
           "detectedAt": "2025-07-21T15:17:43.481Z",
           "relativeTime": "7/21/2025",
           "interestLevel": 9,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"Introduction of a new pricing page with detailed plan comparisons and features\",\"change_type\":\"addition\",\"change_scale\":\"major\",\"specific_changes\":[\"Introduction of four subscription tiers: Basic, Standard, Pro, and Mega\",\"Detailed comparison of plan features, including GPU time, image and video generation, and stealth mode\",\"Information on pricing, including monthly and annual rates, and discounts for annual commitments\"]}",
           "changeType": "new",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         }
       ],
       "intelligence": {
         "products": [
-          "Midjourney",
-          "Basic Plan",
-          "Standard Plan",
-          "Pro Plan",
-          "Mega Plan"
+          "basic plan",
+          "standard plan",
+          "pro plan",
+          "mega plan",
+          "midjourney magazine subscription"
         ],
         "ai_technologies": [
-          "Python",
-          "Discord",
-          "Web"
+          "discord",
+          "web",
+          "python"
         ],
-        "ai_ml_concepts": []
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
       },
+      "attributes": {},
       "stats": {
         "totalChanges": 2,
         "highInterestChanges": 2,
@@ -814,138 +763,164 @@
       ],
       "recentChanges": [
         {
-          "change_id": 486,
           "id": 486,
           "url": "blog",
           "detectedAt": "2025-08-01T19:20:20.321Z",
           "relativeTime": "1 hours ago",
           "interestLevel": 9,
-          "summary": "The website content has changed from a security verification page to a full-fledged OpenAI blog with various sections and links to different products, research, safety, and company information.",
+          "summary": "{\"change_summary\":{\"what_changed\":\"The website content has been completely overhauled, transitioning from a security verification page to a full-fledged OpenAI news and information portal.\",\"change_type\":\"major overhaul\",\"change_scale\":\"major\",\"specific_changes\":[\"Introduction of a new website layout and design\",\"Addition of various sections such as Research, Safety, ChatGPT, Sora, API Platform, For Business, and Company\",\"Inclusion of news articles, research publications, and product updates\",\"Removal of the security verification page\"]},\"interest_assessment\":{\"interest_level\":9,\"reasoning\":\"The changes indicate a significant shift in OpenAI's online presence, suggesting an increased focus on transparency, research, and product development.\",\"category\":\"strategic_move\",\"confidence\":0.95},\"entities\":{\"products\":[\"ChatGPT\",\"Sora\",\"API Platform\"],\"features\":[\"Study mode in ChatGPT\",\"Image generation API\"],\"partnerships\":[\"Partnership with Oracle\"],\"technologies\":[\"GPT-4.5\",\"OpenAI o3\",\"OpenAI o4-mini\"],\"people\":[\"Sam Altman\",\"Jony Ive\"],\"pricing\":[\"Pricing for ChatGPT\",\"Pricing for Sora\"],\"markets\":[\"Australia\"]},\"strategic_analysis\":{\"business_impact\":\"The changes are likely to enhance OpenAI's reputation, increase transparency, and demonstrate its commitment to research and development.\",\"market_signals\":[\"Increased focus on AI research and development\",\"Expansion of product offerings and services\"],\"competitive_implications\":\"The overhaul may put pressure on competitors to enhance their own online presence and transparency.\",\"strategic_direction\":\"The changes suggest that OpenAI is focusing on establishing itself as a leader in the AI research and development space.\"},\"insights\":{\"key_findings\":[\"OpenAI is prioritizing transparency and research\",\"The company is expanding its product offerings and services\"],\"opportunities\":[\"Partnership opportunities with OpenAI\",\"Access to OpenAI's research and development\"],\"threats\":[\"Increased competition in the AI space\",\"Potential risks associated with OpenAI's expanded product offerings\"],\"recommended_actions\":[\"Monitor OpenAI's research and development\",\"Explore potential partnership opportunities\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 487,
           "id": 487,
           "url": "product",
           "detectedAt": "2025-08-01T19:20:13.064Z",
           "relativeTime": "1 hours ago",
           "interestLevel": 9,
-          "summary": "The content changed from a security verification page for www.perplexity.ai to a ChatGPT interface",
+          "summary": "{\"change_summary\":{\"what_changed\":\"The content changed from a security verification page for www.perplexity.ai to a ChatGPT interface\",\"change_type\":\"update\",\"change_scale\":\"major\",\"specific_changes\":[\"Removal of security verification content\",\"Introduction of ChatGPT interface\",\"Addition of login and sign-up options\",\"Inclusion of terms and privacy policy links\"]},\"interest_assessment\":{\"interest_level\":9,\"reasoning\":\"The change indicates a significant shift in the product offering, potentially signaling a new strategic direction for OpenAI\",\"category\":\"strategic_move\",\"confidence\":0.9},\"entities\":{\"products\":[\"ChatGPT\"],\"features\":[\"Temporary Chat\",\"Attach\",\"Search\",\"Voice\"],\"partnerships\":[],\"technologies\":[\"Cloudflare\"],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The change may impact OpenAI's revenue streams and user engagement, potentially increasing adoption and usage of ChatGPT\",\"market_signals\":[\"Increased focus on conversational AI\",\"Expansion of product offerings\"],\"competitive_implications\":\"The update may position OpenAI as a leader in the conversational AI market, potentially threatening competitors\",\"strategic_direction\":\"The change suggests a strategic shift towards more user-friendly and interactive AI products\"},\"insights\":{\"key_findings\":[\"OpenAI is expanding its product offerings\",\"ChatGPT is a key focus area for the company\"],\"opportunities\":[\"Increased adoption of ChatGPT\",\"New revenue streams for OpenAI\"],\"threats\":[\"Potential competition from other conversational AI providers\",\"Regulatory challenges related to AI usage\"],\"recommended_actions\":[\"Monitor OpenAI's product developments\",\"Assess the competitive landscape in conversational AI\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 488,
           "id": 488,
           "url": "pricing",
           "detectedAt": "2025-08-01T19:20:07.000Z",
           "relativeTime": "1 hours ago",
           "interestLevel": 9,
-          "summary": "The content changed from a blocked page to a detailed pricing page for ChatGPT by OpenAI, including various plans such as Free, Plus, Pro, Team, and Enterprise.",
+          "summary": "{\"change_summary\":{\"what_changed\":\"The content changed from a blocked page to a detailed pricing page for ChatGPT, including various plans such as Free, Plus, Pro, Team, and Enterprise, with their respective features and pricing.\",\"change_type\":\"update\",\"change_scale\":\"major\",\"specific_changes\":[\"Introduction of a new pricing page\",\"Details of different plans and their features\",\"Pricing information for each plan\",\"Comparison of features across plans\"]},\"interest_assessment\":{\"interest_level\":9,\"reasoning\":\"The introduction of a detailed pricing page indicates a significant development in OpenAI's commercial strategy, suggesting a major strategic move towards monetizing ChatGPT.\",\"category\":\"strategic_move\",\"confidence\":0.95},\"entities\":{\"products\":[\"ChatGPT\",\"Sora\",\"API Platform\"],\"features\":[\"GPT-4o\",\"GPT-4.1 mini\",\"GPT-4.1\",\"GPT-4.5 research preview\",\"OpenAI o3\",\"OpenAI o4-mini\",\"OpenAI o4-mini-high\",\"OpenAI o3-pro\"],\"partnerships\":[],\"technologies\":[\"AI\",\"Machine Learning\"],\"people\":[],\"pricing\":[\"Free: $0/month\",\"Plus: $20/month\",\"Pro: $200/month\",\"Team: $25/user/month (billed annually), $30/user/month (billed monthly)\"],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The introduction of a pricing page and various plans indicates OpenAI's effort to commercialize ChatGPT, potentially generating significant revenue and expanding its customer base.\",\"market_signals\":[\"OpenAI is moving towards a more commercial approach\",\"ChatGPT is being positioned as a key product for the company\"],\"competitive_implications\":\"This move may increase competition in the AI market, as other companies may need to respond with similar pricing strategies or improved offerings.\",\"strategic_direction\":\"OpenAI is focusing on developing and monetizing its AI products, indicating a strategic direction towards becoming a leading player in the AI industry.\"},\"insights\":{\"key_findings\":[\"OpenAI is commercializing ChatGPT with various pricing plans\",\"The company is focusing on developing and monetizing its AI products\"],\"opportunities\":[\"Potential for significant revenue generation\",\"Expansion of customer base\"],\"threats\":[\"Increased competition in the AI market\",\"Potential backlash from users who prefer free or low-cost alternatives\"],\"recommended_actions\":[\"Monitor OpenAI's pricing strategy and its impact on the market\",\"Consider similar pricing strategies or improved offerings to remain competitive\"]}}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 225,
           "id": 225,
           "url": "pricing",
           "detectedAt": "2025-07-22T19:04:23.608Z",
           "relativeTime": "7/22/2025",
           "interestLevel": 8,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"The OpenAI pricing page has been updated with new features, models, and pricing plans.\",\"change_type\":\"update\",\"change_scale\":\"significant\",\"specific_changes\":[\"New features added to each plan, including access to GPT-4.5 research preview and OpenAI o3-pro\",\"Changes to the pricing plans, including the introduction of a new 'Pro' plan\",\"Updates to the 'Team' and 'Enterprise' plans, including new features and security controls\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 347,
           "id": 347,
           "url": "product",
           "detectedAt": "2025-07-22T19:04:16.736Z",
           "relativeTime": "7/22/2025",
           "interestLevel": 6,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"Addition of 'Voice' feature\",\"change_type\":\"addition\",\"change_scale\":\"minor\",\"specific_changes\":[\"Introduction of a 'Voice' option in the chat interface\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 226,
           "id": 226,
           "url": "pricing",
           "detectedAt": "2025-07-22T18:46:27.592Z",
           "relativeTime": "7/22/2025",
           "interestLevel": 2,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"The 'openaicom-did' parameter in the URLs has changed from '99580f75-39b7-4bf3-9a9c-e2a544c14234' to '4aa03562-c3c6-4634-98a2-6d29cf24c479'.\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Updated 'openaicom-did' parameter in URLs for ChatGPT, Sora, and API Platform.\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 227,
           "id": 227,
           "url": "product",
           "detectedAt": "2025-07-22T18:46:20.404Z",
           "relativeTime": "7/22/2025",
           "interestLevel": 3,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"Removal of the 'Voice' feature\",\"change_type\":\"removal\",\"change_scale\":\"minor\",\"specific_changes\":[\"The 'Voice' button has been removed from the interface\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 228,
           "id": 228,
           "url": "homepage",
           "detectedAt": "2025-07-22T18:18:01.891Z",
           "relativeTime": "7/22/2025",
           "interestLevel": 9,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"The content has changed from a security verification page to the OpenAI homepage, featuring various products, research, and company information.\",\"change_type\":\"update\",\"change_scale\":\"major\",\"specific_changes\":[\"Introduction of new products and features such as ChatGPT, Sora, and API Platform\",\"Addition of research and company information sections\",\"Removal of security verification page content\",\"Update of the overall layout and design\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 208,
           "id": 208,
           "url": "product",
           "detectedAt": "2025-07-22T17:33:40.166Z",
           "relativeTime": "7/22/2025",
           "interestLevel": 9,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"The content has changed from a security verification page to a ChatGPT interface\",\"change_type\":\"update\",\"change_scale\":\"major\",\"specific_changes\":[\"Removal of security verification content\",\"Introduction of ChatGPT interface\",\"Addition of login and sign-up options\",\"Inclusion of terms and privacy policy links\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         }
       ],
       "intelligence": {
         "products": [
-          "ChatGPT",
-          "API Platform",
-          "Sora",
-          "Image generation API",
-          "ChatGPT Plus",
-          "ChatGPT Pro",
-          "ChatGPT Team",
-          "ChatGPT Enterprise",
-          "API"
+          "chatgpt",
+          "sora",
+          "api platform",
+          "chatgpt plus",
+          "chatgpt pro"
         ],
         "ai_technologies": [
-          "Python",
-          "TensorFlow",
-          "PyTorch",
-          "JAX",
-          "AWS",
-          "Azure",
-          "GCP",
-          "JavaScript"
+          "python",
+          "tensorflow",
+          "pytorch",
+          "jax",
+          "aws"
         ],
-        "ai_ml_concepts": []
+        "ai_ml_concepts": [
+          "AGI Research",
+          "RLHF",
+          "Constitutional AI",
+          "Multimodal Models"
+        ]
       },
+      "attributes": {},
       "stats": {
         "totalChanges": 9,
         "highInterestChanges": 6,
@@ -978,45 +953,57 @@
       ],
       "recentChanges": [
         {
-          "change_id": 275,
           "id": 275,
           "url": "product",
           "detectedAt": "2025-07-23T00:38:32.210Z",
           "relativeTime": "7/23/2025",
           "interestLevel": 4,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"Rephrased introduction to Perplexity Pro\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Changed 'Perplexity Pro is the most powerful way to search the internet' to 'Perplexity Pro unlocks more ways to learn and get work done'\",\"Removed 'unlimited Pro Search' and 'collaborative spaces' from the introduction\",\"Added 'unlimited Research' to the introduction\"]}",
           "changeType": "modified",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         },
         {
-          "change_id": 72,
           "id": 72,
           "url": "product",
           "detectedAt": "2025-07-21T15:21:10.364Z",
           "relativeTime": "7/21/2025",
           "interestLevel": 9,
-          "summary": "Change detected",
+          "summary": "{\"what_changed\":\"Introduction of Perplexity Pro and Max plans with various features and pricing\",\"change_type\":\"addition\",\"change_scale\":\"major\",\"specific_changes\":[\"Introduction of Perplexity Pro plan at $20.00/month\",\"Introduction of Perplexity Max plan at $200.00/month\",\"Listing of features for each plan, including unlimited Pro Search, AI models, file upload, image generation, and more\"]}",
           "changeType": "new",
           "businessImpact": null,
-          "competitiveImplications": null
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
         }
       ],
       "intelligence": {
         "products": [
-          "Perplexity Pro",
-          "Perplexity Max",
-          "Perplexity Labs",
-          "Perplexity Research"
+          "perplexity pro",
+          "perplexity max",
+          "perplexity labs",
+          "perplexity research",
+          "perplexity ai"
         ],
         "ai_technologies": [
-          "Unlimited file uploads",
-          "Unlimited photo uploads",
-          "Image generation",
-          "Cloudflare"
+          "unlimited file uploads",
+          "image generation",
+          "cloudflare",
+          "favicon"
         ],
-        "ai_ml_concepts": []
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
       },
+      "attributes": {},
       "stats": {
         "totalChanges": 2,
         "highInterestChanges": 1,
@@ -1024,38 +1011,7 @@
       }
     }
   ],
-  "lastUpdated": "2025-08-01T20:44:54.707Z",
+  "lastUpdated": "2025-08-01T21:07:57.713Z",
   "totalChanges": 43,
-  "highInterestChanges": 21,
-  "backend": "postgresql",
-  "company_activity": [
-    {
-      "company_name": "Google DeepMind",
-      "change_count": 8,
-      "max_interest_level": 8,
-      "last_activity": "2025-08-01T18:39:22.393Z",
-      "relative_time": "2 hours ago"
-    },
-    {
-      "company_name": "Anthropic",
-      "change_count": 6,
-      "max_interest_level": 8,
-      "last_activity": "2025-08-01T18:38:27.433Z",
-      "relative_time": "2 hours ago"
-    },
-    {
-      "company_name": "GitHub Copilot",
-      "change_count": 6,
-      "max_interest_level": 7,
-      "last_activity": "2025-08-01T20:39:58.043Z",
-      "relative_time": "4 min ago"
-    },
-    {
-      "company_name": "OpenAI",
-      "change_count": 3,
-      "max_interest_level": 9,
-      "last_activity": "2025-08-01T19:20:20.321Z",
-      "relative_time": "1 hours ago"
-    }
-  ]
+  "highInterestChanges": 21
 }
