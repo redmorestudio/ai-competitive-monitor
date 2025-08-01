@@ -119,19 +119,23 @@ export async function showCompanyDetails(companyName) {
             <div class="config-section">
                 <h4>🏷️ AI Intelligence</h4>
                 ${companyInfo.intelligence.top_products && companyInfo.intelligence.top_products.length > 0 ? `
-                    <p><strong>Products:</strong></p>
-                    <div class="tag-list">
-                        ${companyInfo.intelligence.top_products.map(product => 
-                            `<span class="tag">${escapeHtml(product)}</span>`
-                        ).join('')}
+                    <div class="intel-section">
+                        <div class="intel-label">Products:</div>
+                        <div class="intel-pills">
+                            ${companyInfo.intelligence.top_products.map(product => 
+                                `<span class="intel-pill">${escapeHtml(product)}</span>`
+                            ).join('')}
+                        </div>
                     </div>
                 ` : ''}
                 ${companyInfo.intelligence.ai_technologies && companyInfo.intelligence.ai_technologies.length > 0 ? `
-                    <p style="margin-top: 10px;"><strong>Technologies:</strong></p>
-                    <div class="tag-list">
-                        ${companyInfo.intelligence.ai_technologies.map(tech => 
-                            `<span class="tag tech-tag">${escapeHtml(tech)}</span>`
-                        ).join('')}
+                    <div class="intel-section">
+                        <div class="intel-label">Technologies:</div>
+                        <div class="intel-pills">
+                            ${companyInfo.intelligence.ai_technologies.map(tech => 
+                                `<span class="intel-pill tech-tag">${escapeHtml(tech)}</span>`
+                            ).join('')}
+                        </div>
                     </div>
                 ` : ''}
             </div>

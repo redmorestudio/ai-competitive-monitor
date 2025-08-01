@@ -418,114 +418,75 @@ export function createFilterUI(options = {}) {
     const { companies = [], technologies = [], concepts = [] } = options;
     return `
         <div class="filter-controls">
-            <div class="filter-section">
-                <!-- Search Input -->
-                <div class="filter-group full-width">
+            <h4>🔍 Filter & Search Options</h4>
+            
+            <!-- Primary Filter Row: Search, Sort, Interest Range -->
+            <div class="filter-row">
+                <div class="filter-group">
                     <label for="searchInput">Search:</label>
                     <input type="text" 
                            id="searchInput" 
-                           placeholder="Search company, tech, concept, summary..." 
+                           placeholder="Search companies, technologies, summaries..." 
                            class="filter-input"
                            oninput="window.filters.handleSearchInput(this.value)">
                 </div>
+                
+                <div class="filter-group">
+                    <label for="sortBy">Sort by:</label>
+                    <select id="sortBy" 
+                            class="filter-select"
+                            onchange="window.filters.handleSort(this.value)">
+                        <option value="date">Date (Newest)</option>
+                        <option value="interest">Interest Level</option>
+                        <option value="company">Company A-Z</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label>Interest Level:</label>
+                    <div class="range-inputs">
+                        <input type="number" 
+                               id="interestMin" 
+                               min="1" max="10" 
+                               value="1" 
+                               class="filter-input-small"
+                               onchange="window.filters.handleInterestRange()">
+                        <span>to</span>
+                        <input type="number" 
+                               id="interestMax" 
+                               min="1" max="10" 
+                               value="10" 
+                               class="filter-input-small"
+                               onchange="window.filters.handleInterestRange()">
+                    </div>
+                </div>
+                
+                <button type="button" 
+                        class="reset-filters-btn" 
+                        onclick="window.filters.handleReset()">
+                    Reset Filters
+                </button>
             </div>
             
-            <div class="filter-row">
-                <!-- Company Filter -->
-                ${companies.length > 0 ? `
-                <div class="filter-checkbox-group">
-                    <label class="filter-group-label">Companies:</label>
-                    <div class="checkbox-list">
+            <!-- Secondary Filter Row: Company Checkboxes -->
+            ${companies.length > 0 ? `
+            <div class="filter-row-secondary">
+                <div class="companies-filter">
+                    <label>Companies:</label>
+                    <div class="companies-checkboxes">
                         ${companies.map(company => `
-                            <label class="checkbox-label">
+                            <div class="company-checkbox">
                                 <input type="checkbox" 
+                                       id="company-${company.replace(/\s+/g, '-').toLowerCase()}" 
                                        value="${company}"
                                        onchange="window.filters.handleCompanyCheckbox('${company}', this.checked)">
-                                <span>${company}</span>
-                            </label>
+                                <label for="company-${company.replace(/\s+/g, '-').toLowerCase()}">${company}</label>
+                            </div>
                         `).join('')}
-                    </div>
-                </div>
-                ` : ''}
-                
-                <!-- Technology Filter -->
-                ${technologies.length > 0 ? `
-                <div class="filter-checkbox-group">
-                    <label class="filter-group-label">Technologies:</label>
-                    <div class="checkbox-list">
-                        ${technologies.map(tech => `
-                            <label class="checkbox-label">
-                                <input type="checkbox" 
-                                       value="${tech}"
-                                       onchange="window.filters.handleTechnologyCheckbox('${tech}', this.checked)">
-                                <span>${tech}</span>
-                            </label>
-                        `).join('')}
-                    </div>
-                </div>
-                ` : ''}
-                
-                <!-- Concept Filter -->
-                ${concepts.length > 0 ? `
-                <div class="filter-checkbox-group">
-                    <label class="filter-group-label">Concepts:</label>
-                    <div class="checkbox-list">
-                        ${concepts.map(concept => `
-                            <label class="checkbox-label">
-                                <input type="checkbox" 
-                                       value="${concept}"
-                                       onchange="window.filters.handleConceptCheckbox('${concept}', this.checked)">
-                                <span>${concept}</span>
-                            </label>
-                        `).join('')}
-                    </div>
-                </div>
-                ` : ''}
-                
-                <!-- Other Controls -->
-                <div class="filter-controls-right">
-                    <!-- Interest Level Range -->
-                    <div class="filter-group">
-                        <label>Interest Level:</label>
-                        <div class="range-inputs">
-                            <input type="number" 
-                                   id="interestMin" 
-                                   min="1" max="10" 
-                                   value="1" 
-                                   class="filter-input-small"
-                                   onchange="window.filters.handleInterestRange()">
-                            <span>-</span>
-                            <input type="number" 
-                                   id="interestMax" 
-                                   min="1" max="10" 
-                                   value="10" 
-                                   class="filter-input-small"
-                                   onchange="window.filters.handleInterestRange()">
-                        </div>
-                    </div>
-                    
-                    <!-- Sort Options -->
-                    <div class="filter-group">
-                        <label for="sortBy">Sort by:</label>
-                        <select id="sortBy" 
-                                class="filter-select"
-                                onchange="window.filters.handleSort(this.value)">
-                            <option value="date">Date</option>
-                            <option value="interest">Interest Level</option>
-                            <option value="company">Company</option>
-                        </select>
-                    </div>
-                    
-                    <!-- Reset Button -->
-                    <div class="filter-group">
-                        <button type="button" 
-                                class="button button-secondary" 
-                                onclick="window.filters.handleReset()">
-                            Reset Filters
-                        </button>
                     </div>
                 </div>
             </div>
+            ` : ''}
         </div>
     `;
 }
@@ -579,7 +540,7 @@ export const uiHandlers = {
         document.getElementById('searchInput').value = '';
         
         // Uncheck all checkboxes
-        document.querySelectorAll('.filter-checkbox-group input[type="checkbox"]').forEach(cb => {
+        document.querySelectorAll('.companies-checkboxes input[type="checkbox"]').forEach(cb => {
             cb.checked = false;
         });
         
