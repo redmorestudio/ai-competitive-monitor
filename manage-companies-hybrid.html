@@ -251,6 +251,18 @@
             background: #fff3cd;
             border-color: #ffc107;
         }
+        .debug-info {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 10px;
+            margin-top: 10px;
+            font-family: monospace;
+            font-size: 0.8em;
+            color: #666;
+            max-height: 200px;
+            overflow-y: auto;
+        }
     </style>
 </head>
 <body>
@@ -288,6 +300,7 @@
 
         <div class="status" id="status"></div>
         <div class="workflow-status" id="workflowStatus" style="display: none;"></div>
+        <div class="debug-info" id="debugInfo" style="display: none;"></div>
 
         <div class="actions">
             <div class="action-card">
@@ -367,8 +380,24 @@
         let lastDatabaseUpdate = null;
         let lastJsonUpdate = null;
 
+        // Debug logging function
+        function debugLog(message, data = null) {
+            const debugInfo = document.getElementById('debugInfo');
+            const timestamp = new Date().toLocaleTimeString();
+            const logMessage = `[${timestamp}] ${message}`;
+            
+            console.log(logMessage, data);
+            
+            if (debugInfo) {
+                debugInfo.style.display = 'block';
+                debugInfo.innerHTML += logMessage + (data ? '\n' + JSON.stringify(data, null, 2) : '') + '\n\n';
+                debugInfo.scrollTop = debugInfo.scrollHeight;
+            }
+        }
+
         // Initialize on page load
         window.addEventListener('DOMContentLoaded', () => {
+            debugLog('Page loaded, initializing...');
             loadSavedToken();
             loadCompanies();
             startAutoRefresh();
@@ -378,6 +407,7 @@
         // Check data freshness
         async function checkDataFreshness() {
             try {
+                debugLog('Checking data freshness...');
                 // Check when companies.json was last updated
                 const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/commits?path=api-data/companies.json&per_page=1`, {
                     headers: {
@@ -387,12 +417,16 @@
                 
                 if (response.ok) {
                     const commits = await response.json();
+                    debugLog('Got commits response', commits);
                     if (commits.length > 0) {
                         lastJsonUpdate = new Date(commits[0].commit.author.date);
                         updateFreshnessDisplay();
                     }
+                } else {
+                    debugLog('Failed to get commits', { status: response.status, statusText: response.statusText });
                 }
             } catch (error) {
+                debugLog('Error checking data freshness', error.message);
                 console.error('Error checking data freshness:', error);
             }
         }
@@ -415,6 +449,95 @@
             } else {
                 freshnessDiv.className = 'data-freshness';
                 freshnessDiv.innerHTML = `✅ Dashboard data updated ${timeAgo}`;
+            }
+        }
+
+        // Load companies from API with improved error handling
+        async function loadCompanies() {
+            // Don't refresh if we're in the middle of adding a category
+            if (isAddingCategory) {
+                debugLog('Skipping refresh - adding category in progress');
+                return;
+            }
+            
+            debugLog('Loading companies...');
+            
+            try {
+                const url = `https://redmorestudio.github.io/ai-competitive-monitor/api-data/companies.json?t=${Date.now()}`;
+                debugLog('Fetching from URL', url);
+                
+                const response = await fetch(url);
+                debugLog('Got response', { status: response.status, statusText: response.statusText, ok: response.ok });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                debugLog('Parsed JSON data', { 
+                    hasCompanies: !!data.companies,
+                    companiesLength: data.companies ? data.companies.length : 0,
+                    generatedAt: data.generated_at,
+                    dataKeys: Object.keys(data)
+                });
+                
+                // Check if companies array exists and is valid
+                if (!data.companies) {
+                    throw new Error('No companies array found in response');
+                }
+                
+                if (!Array.isArray(data.companies)) {
+                    throw new Error('Companies is not an array');
+                }
+                
+                // Normalize the data structure
+                allCompaniesData = data.companies.map(c => {
+                    if (!c) {
+                        debugLog('Warning: found null/undefined company', c);
+                        return null;
+                    }
+                    
+                    return {
+                        name: c.company || c.name || 'Unknown',
+                        category: c.type || c.category || 'Other',
+                        urls: Array.isArray(c.urls) ? c.urls : [],
+                        urls_count: Array.isArray(c.urls) ? c.urls.length : 0,
+                        created_at: c.created_at || 'Unknown'
+                    };
+                }).filter(c => c !== null); // Remove any null entries
+                
+                companiesData = [...allCompaniesData];
+                
+                debugLog('Processed companies data', { count: allCompaniesData.length });
+                
+                // Extract categories from existing companies
+                const dataCategories = new Set(allCompaniesData.map(c => c.category));
+                // Merge with any locally added categories
+                categories = new Set([...dataCategories, ...categories]);
+                
+                debugLog('Categories found', Array.from(categories));
+                
+                updateCategorySelects();
+                displayCompanies();
+                updateSelects();
+                
+                showStatus(`✅ Loaded ${allCompaniesData.length} companies successfully`, 'success');
+                
+            } catch (error) {
+                const errorMessage = `Error loading companies: ${error.message}`;
+                debugLog('Load companies error', error);
+                console.error('Error loading companies:', error);
+                showStatus(errorMessage, 'error');
+                
+                // Show empty state in table
+                const container = document.getElementById('companiesTable');
+                container.innerHTML = `
+                    <div class="error-state" style="text-align: center; padding: 40px; color: #dc3545;">
+                        <h3>❌ Failed to Load Companies</h3>
+                        <p>${errorMessage}</p>
+                        <button onclick="loadCompanies()" style="margin-top: 15px;">🔄 Try Again</button>
+                    </div>
+                `;
             }
         }
 
@@ -633,80 +756,6 @@
             return 'just now';
         }
 
-        // Trigger workflow
-        async function triggerWorkflow(inputs) {
-            const token = getToken();
-            if (!token) {
-                showStatus('Please enter your GitHub token', 'error');
-                return false;
-            }
-
-            showStatus('Triggering workflow...', 'info');
-
-            try {
-                const response = await fetch(
-                    `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/dispatches`,
-                    {
-                        method: 'POST',
-                        headers: {
-                            'Authorization': `Bearer ${token}`,
-                            'Accept': 'application/vnd.github.v3+json',
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            ref: 'main',
-                            inputs: inputs
-                        })
-                    }
-                );
-
-                if (response.status === 204) {
-                    showStatus(`✅ ${inputs.action} completed! Database updated. Click "Refresh Dashboard Data" above to see changes immediately.`, 'success');
-                    return true;
-                } else {
-                    const error = await response.text();
-                    showStatus(`Error: ${error}`, 'error');
-                    return false;
-                }
-            } catch (error) {
-                showStatus(`Error: ${error.message}`, 'error');
-                return false;
-            }
-        }
-
-        // Load companies from API
-        async function loadCompanies() {
-            // Don't refresh if we're in the middle of adding a category
-            if (isAddingCategory) return;
-            
-            try {
-                const response = await fetch(
-                    `https://redmorestudio.github.io/ai-competitive-monitor/api-data/companies.json?t=${Date.now()}`
-                );
-                const data = await response.json();
-                // Normalize the data structure
-                allCompaniesData = data.companies.map(c => ({
-                    name: c.company || c.name,
-                    category: c.type || c.category,
-                    urls: c.urls || [],
-                    urls_count: c.urls ? c.urls.length : 0,
-                    created_at: c.created_at
-                }));
-                companiesData = [...allCompaniesData];
-                
-                // Extract categories from existing companies
-                const dataCategories = new Set(allCompaniesData.map(c => c.category));
-                // Merge with any locally added categories
-                categories = new Set([...dataCategories, ...categories]);
-                updateCategorySelects();
-                
-                displayCompanies();
-                updateSelects();
-            } catch (error) {
-                showStatus(`Error loading companies: ${error.message}`, 'error');
-            }
-        }
-
         // Display companies in table
         function displayCompanies() {
             const container = document.getElementById('companiesTable');
@@ -763,6 +812,47 @@
             
             urlSelect.innerHTML = '<option value="">Select a company...</option>' + options;
             deleteSelect.innerHTML = '<option value="">Select a company...</option>' + options;
+        }
+
+        // Trigger workflow
+        async function triggerWorkflow(inputs) {
+            const token = getToken();
+            if (!token) {
+                showStatus('Please enter your GitHub token', 'error');
+                return false;
+            }
+
+            showStatus('Triggering workflow...', 'info');
+
+            try {
+                const response = await fetch(
+                    `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/dispatches`,
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Accept': 'application/vnd.github.v3+json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            ref: 'main',
+                            inputs: inputs
+                        })
+                    }
+                );
+
+                if (response.status === 204) {
+                    showStatus(`✅ ${inputs.action} completed! Database updated. Click "Refresh Dashboard Data" above to see changes immediately.`, 'success');
+                    return true;
+                } else {
+                    const error = await response.text();
+                    showStatus(`Error: ${error}`, 'error');
+                    return false;
+                }
+            } catch (error) {
+                showStatus(`Error: ${error.message}`, 'error');
+                return false;
+            }
         }
 
         // Action functions
