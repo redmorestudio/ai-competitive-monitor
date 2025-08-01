@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Monitor - Company Manager</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .refresh-section {
+            background: #e8f5e9;
+            border: 1px solid #4caf50;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .refresh-section h3 {
+            margin-top: 0;
+            color: #2e7d32;
+        }
+        .refresh-section p {
+            color: #1b5e20;
+            margin: 10px 0;
+        }
+        .actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .action-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background: #fafafa;
+        }
+        .action-card h3 {
+            margin-top: 0;
+            color: #555;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .delete-btn {
+            background: #dc3545;
+        }
+        .delete-btn:hover {
+            background: #c82333;
+        }
+        .success-btn {
+            background: #28a745;
+        }
+        .success-btn:hover {
+            background: #218838;
+        }
+        .refresh-btn {
+            background: #4caf50;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            width: auto;
+            padding: 12px 24px;
+            font-size: 16px;
+        }
+        .refresh-btn:hover {
+            background: #45a049;
+        }
+        .status {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 4px;
+            display: none;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .status.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        .status.warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+        .companies-list {
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            vertical-align: top;
+        }
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+        .url-list {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .url-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2px 0;
+            gap: 10px;
+        }
+        .url-item span {
+            flex: 1;
+            min-width: 0;
+        }
+        .delete-url-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 0;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 10px;
+            font-weight: normal;
+            margin-left: 5px;
+            white-space: nowrap;
+            line-height: 1;
+            width: 14px;
+            height: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .delete-url-btn:hover {
+            background: #c82333;
+        }
+        .loading {
+            text-align: center;
+            color: #666;
+            padding: 20px;
+        }
+        .config-section {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .config-section h4 {
+            margin-top: 0;
+            color: #495057;
+        }
+        .token-input {
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .save-token-btn {
+            width: auto;
+            padding: 5px 15px;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .clear-token-btn {
+            width: auto;
+            padding: 5px 15px;
+            font-size: 12px;
+            margin-top: 5px;
+            margin-left: 10px;
+            background: #6c757d;
+        }
+        .clear-token-btn:hover {
+            background: #5a6268;
+        }
+        .auto-refresh-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .auto-refresh-control input[type="checkbox"] {
+            width: auto;
+            margin: 0;
+        }
+        .workflow-status {
+            margin-top: 15px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .workflow-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .workflow-link:hover {
+            text-decoration: underline;
+        }
+        .data-freshness {
+            background: #e3f2fd;
+            border: 1px solid #2196f3;
+            border-radius: 4px;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .stale-data {
+            background: #fff3cd;
+            border-color: #ffc107;
+        }
+        .debug-info {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 10px;
+            margin-top: 10px;
+            font-family: monospace;
+            font-size: 0.8em;
+            color: #666;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 AI Competitive Monitor - Company Manager</h1>
+        
+        <div class="refresh-section">
+            <h3>🔄 Data Refresh</h3>
+            <p>After adding or modifying companies/URLs, click the button below to update the dashboard:</p>
+            <button onclick="refreshData()" class="refresh-btn">
+                <span>🔄</span>
+                <span>Refresh Dashboard Data</span>
+            </button>
+            <div class="data-freshness" id="dataFreshness">
+                Checking data freshness...
+            </div>
+        </div>
+        
+        <div class="config-section">
+            <h4>⚙️ Configuration</h4>
+            <input type="password" id="githubToken" class="token-input" 
+                   placeholder="GitHub Personal Access Token (starts with ghp_)" 
+                   value="">
+            <div>
+                <button onclick="saveToken()" class="save-token-btn">Save Token</button>
+                <button onclick="clearToken()" class="clear-token-btn">Clear Token</button>
+            </div>
+            <small style="color: #666;">Token is encrypted and stored in browser localStorage</small>
+            
+            <div class="auto-refresh-control">
+                <input type="checkbox" id="autoRefresh" checked onchange="toggleAutoRefresh()">
+                <label for="autoRefresh">Auto-refresh data every 30 seconds</label>
+            </div>
+        </div>
+
+        <div class="status" id="status"></div>
+        <div class="workflow-status" id="workflowStatus" style="display: none;"></div>
+        <div class="debug-info" id="debugInfo" style="display: none;"></div>
+
+        <div class="actions">
+            <div class="action-card">
+                <h3>📁 Manage Categories</h3>
+                <select id="categoryFilter" onchange="filterByCategory()">
+                    <option value="">All Categories</option>
+                </select>
+                <button onclick="showAddCategoryDialog()">Add New Category</button>
+                <button onclick="showRenameCategoryDialog()" class="success-btn">Rename Category</button>
+                <button onclick="showDeleteCategoryDialog()" class="delete-btn">Delete Category</button>
+            </div>
+
+            <div class="action-card">
+                <h3>➕ Add Company</h3>
+                <input type="text" id="companyName" placeholder="Company Name">
+                <select id="companyCategory">
+                    <option value="LLM Providers">LLM Providers</option>
+                    <option value="AI Tools">AI Tools</option>
+                    <option value="Infrastructure">Infrastructure</option>
+                    <option value="Research Labs">Research Labs</option>
+                    <option value="Computer Vision">Computer Vision</option>
+                    <option value="NLP">NLP</option>
+                    <option value="Testing">Testing</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="url" id="companyUrl" placeholder="Homepage URL (optional)">
+                <button onclick="addCompany()">Add Company</button>
+            </div>
+
+            <div class="action-card">
+                <h3>🔗 Add URL to Company</h3>
+                <select id="urlCompanySelect">
+                    <option value="">Select a company...</option>
+                </select>
+                <input type="url" id="newUrl" placeholder="URL to add">
+                <select id="urlType">
+                    <option value="homepage">Homepage</option>
+                    <option value="blog">Blog</option>
+                    <option value="docs">Documentation</option>
+                    <option value="api">API</option>
+                    <option value="news">News</option>
+                    <option value="careers">Careers</option>
+                </select>
+                <button onclick="addUrl()">Add URL</button>
+            </div>
+
+            <div class="action-card">
+                <h3>❌ Delete Company</h3>
+                <select id="deleteCompanySelect">
+                    <option value="">Select a company...</option>
+                </select>
+                <button class="delete-btn" onclick="deleteCompany()">Delete Company</button>
+                <small style="color: #dc3545;">⚠️ This will delete all associated URLs</small>
+            </div>
+        </div>
+
+        <div class="companies-list">
+            <h2>📊 Current Companies 
+                <button onclick="loadCompanies()" style="float: right; font-size: 14px; padding: 5px 10px;">Refresh 🔄</button>
+            </h2>
+            <div id="companiesTable" class="loading">Loading companies...</div>
+        </div>
+    </div>
+
+    <script>
+        const REPO_OWNER = 'redmorestudio';
+        const REPO_NAME = 'ai-competitive-monitor';
+        const WORKFLOW_FILE = 'manage-companies.yml';
+        const REFRESH_WORKFLOW_FILE = 'refresh-data.yml';
+        const TOKEN_KEY = 'ai_monitor_github_token';
+
+        let companiesData = [];
+        let allCompaniesData = []; // Store unfiltered data
+        let categories = new Set();
+        let isAddingCategory = false; // Flag to prevent refresh during category add
+        let autoRefreshInterval = null;
+        let lastDatabaseUpdate = null;
+        let lastJsonUpdate = null;
+
+        // Debug logging function
+        function debugLog(message, data = null) {
+            const debugInfo = document.getElementById('debugInfo');
+            const timestamp = new Date().toLocaleTimeString();
+            const logMessage = `[${timestamp}] ${message}`;
+            
+            console.log(logMessage, data);
+            
+            if (debugInfo) {
+                debugInfo.style.display = 'block';
+                debugInfo.innerHTML += logMessage + (data ? '\n' + JSON.stringify(data, null, 2) : '') + '\n\n';
+                debugInfo.scrollTop = debugInfo.scrollHeight;
+            }
+        }
+
+        // Initialize on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            debugLog('Page loaded, initializing...');
+            loadSavedToken();
+            loadCompanies();
+            startAutoRefresh();
+            checkDataFreshness();
+        });
+
+        // Check data freshness
+        async function checkDataFreshness() {
+            try {
+                debugLog('Checking data freshness...');
+                // Check when companies.json was last updated
+                const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/commits?path=api-data/companies.json&per_page=1`, {
+                    headers: {
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                });
+                
+                if (response.ok) {
+                    const commits = await response.json();
+                    debugLog('Got commits response', commits);
+                    if (commits.length > 0) {
+                        lastJsonUpdate = new Date(commits[0].commit.author.date);
+                        updateFreshnessDisplay();
+                    }
+                } else {
+                    debugLog('Failed to get commits', { status: response.status, statusText: response.statusText });
+                }
+            } catch (error) {
+                debugLog('Error checking data freshness', error.message);
+                console.error('Error checking data freshness:', error);
+            }
+        }
+
+        // Update freshness display
+        function updateFreshnessDisplay() {
+            const freshnessDiv = document.getElementById('dataFreshness');
+            if (!lastJsonUpdate) {
+                freshnessDiv.textContent = 'Unable to determine data freshness';
+                return;
+            }
+            
+            const now = new Date();
+            const hoursSinceUpdate = (now - lastJsonUpdate) / (1000 * 60 * 60);
+            const timeAgo = formatTimeAgo(lastJsonUpdate);
+            
+            if (hoursSinceUpdate > 6) {
+                freshnessDiv.className = 'data-freshness stale-data';
+                freshnessDiv.innerHTML = `⚠️ Dashboard data is ${timeAgo} old. Consider refreshing if you've made recent changes.`;
+            } else {
+                freshnessDiv.className = 'data-freshness';
+                freshnessDiv.innerHTML = `✅ Dashboard data updated ${timeAgo}`;
+            }
+        }
+
+        // Load companies from API with improved error handling
+        async function loadCompanies() {
+            // Don't refresh if we're in the middle of adding a category
+            if (isAddingCategory) {
+                debugLog('Skipping refresh - adding category in progress');
+                return;
+            }
+            
+            debugLog('Loading companies...');
+            
+            try {
+                const url = `https://redmorestudio.github.io/ai-competitive-monitor/api-data/companies.json?t=${Date.now()}`;
+                debugLog('Fetching from URL', url);
+                
+                const response = await fetch(url);
+                debugLog('Got response', { status: response.status, statusText: response.statusText, ok: response.ok });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                debugLog('Parsed JSON data', { 
+                    hasCompanies: !!data.companies,
+                    companiesLength: data.companies ? data.companies.length : 0,
+                    generatedAt: data.generated_at,
+                    dataKeys: Object.keys(data)
+                });
+                
+                // Check if companies array exists and is valid
+                if (!data.companies) {
+                    throw new Error('No companies array found in response');
+                }
+                
+                if (!Array.isArray(data.companies)) {
+                    throw new Error('Companies is not an array');
+                }
+                
+                // Normalize the data structure
+                allCompaniesData = data.companies.map(c => {
+                    if (!c) {
+                        debugLog('Warning: found null/undefined company', c);
+                        return null;
+                    }
+                    
+                    return {
+                        name: c.company || c.name || 'Unknown',
+                        category: c.type || c.category || 'Other',
+                        urls: Array.isArray(c.urls) ? c.urls : [],
+                        urls_count: Array.isArray(c.urls) ? c.urls.length : 0,
+                        created_at: c.created_at || 'Unknown'
+                    };
+                }).filter(c => c !== null); // Remove any null entries
+                
+                companiesData = [...allCompaniesData];
+                
+                debugLog('Processed companies data', { count: allCompaniesData.length });
+                
+                // Extract categories from existing companies
+                const dataCategories = new Set(allCompaniesData.map(c => c.category));
+                // Merge with any locally added categories
+                categories = new Set([...dataCategories, ...categories]);
+                
+                debugLog('Categories found', Array.from(categories));
+                
+                updateCategorySelects();
+                displayCompanies();
+                updateSelects();
+                
+                showStatus(`✅ Loaded ${allCompaniesData.length} companies successfully`, 'success');
+                
+            } catch (error) {
+                const errorMessage = `Error loading companies: ${error.message}`;
+                debugLog('Load companies error', error);
+                console.error('Error loading companies:', error);
+                showStatus(errorMessage, 'error');
+                
+                // Show empty state in table
+                const container = document.getElementById('companiesTable');
+                container.innerHTML = `
+                    <div class="error-state" style="text-align: center; padding: 40px; color: #dc3545;">
+                        <h3>❌ Failed to Load Companies</h3>
+                        <p>${errorMessage}</p>
+                        <button onclick="loadCompanies()" style="margin-top: 15px;">🔄 Try Again</button>
+                    </div>
+                `;
+            }
+        }
+
+        // Refresh data using the new workflow
+        async function refreshData() {
+            const token = getToken();
+            if (!token) {
+                showStatus('Please enter your GitHub token', 'error');
+                return;
+            }
+
+            showStatus('🔄 Triggering data refresh workflow...', 'info');
+
+            try {
+                const response = await fetch(
+                    `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${REFRESH_WORKFLOW_FILE}/dispatches`,
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Accept': 'application/vnd.github.v3+json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            ref: 'main',
+                            inputs: {
+                                reason: 'Manual refresh from company manager'
+                            }
+                        })
+                    }
+                );
+
+                if (response.status === 204) {
+                    showStatus('✅ Data refresh started! The dashboard will update in 1-2 minutes.', 'success');
+                    
+                    // Check for workflow run after a moment
+                    setTimeout(async () => {
+                        const runsResponse = await fetch(
+                            `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${REFRESH_WORKFLOW_FILE}/runs?per_page=1`,
+                            {
+                                headers: {
+                                    'Authorization': `Bearer ${token}`,
+                                    'Accept': 'application/vnd.github.v3+json'
+                                }
+                            }
+                        );
+                        
+                        if (runsResponse.ok) {
+                            const runsData = await runsResponse.json();
+                            if (runsData.workflow_runs && runsData.workflow_runs.length > 0) {
+                                const runId = runsData.workflow_runs[0].id;
+                                const workflowUrl = `https://github.com/${REPO_OWNER}/${REPO_NAME}/actions/runs/${runId}`;
+                                
+                                const workflowStatus = document.getElementById('workflowStatus');
+                                workflowStatus.innerHTML = `
+                                    🔄 Data refresh in progress - 
+                                    <a href="${workflowUrl}" target="_blank" class="workflow-link">View progress</a>
+                                    <br>
+                                    <small>This usually takes 1-2 minutes. The page will auto-refresh when complete.</small>
+                                `;
+                                workflowStatus.style.display = 'block';
+                                
+                                // Start checking for completion
+                                checkRefreshCompletion(runId);
+                            }
+                        }
+                    }, 2000);
+                } else {
+                    const error = await response.text();
+                    showStatus(`Error: ${error}`, 'error');
+                }
+            } catch (error) {
+                showStatus(`Error: ${error.message}`, 'error');
+            }
+        }
+
+        // Check if refresh workflow completed
+        async function checkRefreshCompletion(runId) {
+            const token = getToken();
+            if (!token) return;
+            
+            const checkInterval = setInterval(async () => {
+                try {
+                    const response = await fetch(
+                        `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/runs/${runId}`,
+                        {
+                            headers: {
+                                'Authorization': `Bearer ${token}`,
+                                'Accept': 'application/vnd.github.v3+json'
+                            }
+                        }
+                    );
+                    
+                    if (response.ok) {
+                        const data = await response.json();
+                        
+                        if (data.status === 'completed') {
+                            clearInterval(checkInterval);
+                            
+                            if (data.conclusion === 'success') {
+                                showStatus('✅ Data refresh completed! Reloading...', 'success');
+                                document.getElementById('workflowStatus').style.display = 'none';
+                                
+                                // Wait a moment for GitHub Pages to update
+                                setTimeout(() => {
+                                    loadCompanies();
+                                    checkDataFreshness();
+                                }, 3000);
+                            } else {
+                                showStatus('❌ Data refresh failed. Check the workflow logs.', 'error');
+                                document.getElementById('workflowStatus').style.display = 'none';
+                            }
+                        }
+                    }
+                } catch (error) {
+                    // Ignore errors, keep checking
+                }
+            }, 5000); // Check every 5 seconds
+            
+            // Stop checking after 5 minutes
+            setTimeout(() => {
+                clearInterval(checkInterval);
+                document.getElementById('workflowStatus').style.display = 'none';
+            }, 300000);
+        }
+
+        // Token management functions
+        function saveToken() {
+            const token = document.getElementById('githubToken').value;
+            if (token) {
+                // Simple obfuscation (not real encryption, but better than plaintext)
+                const encoded = btoa(token);
+                localStorage.setItem(TOKEN_KEY, encoded);
+                showStatus('✅ Token saved successfully', 'success');
+            }
+        }
+
+        function loadSavedToken() {
+            const encoded = localStorage.getItem(TOKEN_KEY);
+            if (encoded) {
+                try {
+                    const token = atob(encoded);
+                    document.getElementById('githubToken').value = token;
+                } catch (e) {
+                    // Invalid token, clear it
+                    localStorage.removeItem(TOKEN_KEY);
+                }
+            }
+        }
+
+        function clearToken() {
+            localStorage.removeItem(TOKEN_KEY);
+            document.getElementById('githubToken').value = '';
+            showStatus('Token cleared', 'info');
+        }
+
+        function getToken() {
+            return document.getElementById('githubToken').value;
+        }
+
+        // Auto-refresh management
+        function toggleAutoRefresh() {
+            const enabled = document.getElementById('autoRefresh').checked;
+            if (enabled) {
+                startAutoRefresh();
+            } else {
+                stopAutoRefresh();
+            }
+        }
+
+        function startAutoRefresh() {
+            stopAutoRefresh(); // Clear any existing interval
+            const enabled = document.getElementById('autoRefresh').checked;
+            if (enabled) {
+                autoRefreshInterval = setInterval(() => {
+                    // Only refresh if we're not in the middle of adding something
+                    if (!isAddingCategory && document.activeElement.tagName !== 'INPUT') {
+                        loadCompanies();
+                    }
+                }, 30000);
+            }
+        }
+
+        function stopAutoRefresh() {
+            if (autoRefreshInterval) {
+                clearInterval(autoRefreshInterval);
+                autoRefreshInterval = null;
+            }
+        }
+
+        // Show status message
+        function showStatus(message, type = 'info') {
+            const status = document.getElementById('status');
+            status.className = `status ${type}`;
+            status.textContent = message;
+            status.style.display = 'block';
+            
+            if (type === 'success') {
+                setTimeout(() => {
+                    status.style.display = 'none';
+                }, 5000);
+            }
+        }
+
+        // Format time ago
+        function formatTimeAgo(date) {
+            const now = new Date();
+            const diff = now - date;
+            const minutes = Math.floor(diff / 60000);
+            const hours = Math.floor(minutes / 60);
+            const days = Math.floor(hours / 24);
+
+            if (days > 0) return `${days} day${days > 1 ? 's' : ''} ago`;
+            if (hours > 0) return `${hours} hour${hours > 1 ? 's' : ''} ago`;
+            if (minutes > 0) return `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+            return 'just now';
+        }
+
+        // Display companies in table
+        function displayCompanies() {
+            const container = document.getElementById('companiesTable');
+            
+            if (companiesData.length === 0) {
+                container.innerHTML = '<p>No companies found</p>';
+                return;
+            }
+
+            const table = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Category</th>
+                            <th>URLs</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${companiesData.map(company => `
+                            <tr>
+                                <td><strong>${company.name}</strong></td>
+                                <td>${company.category}</td>
+                                <td>${company.urls_count}</td>
+                                <td>
+                                    ${company.urls && company.urls.length > 0 ? `
+                                        <div class="url-list">
+                                            ${company.urls.map((url, idx) => `
+                                                <div class="url-item">
+                                                    <span style="font-size: 0.85em; word-break: break-all;">${url}</span>
+                                                    <button class="delete-url-btn" onclick="deleteUrl('${url}')" title="Delete URL">×</button>
+                                                </div>
+                                            `).join('')}
+                                        </div>
+                                    ` : '<em>No URLs</em>'}
+                                </td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            `;
+            container.innerHTML = table;
+        }
+
+        // Update select dropdowns
+        function updateSelects() {
+            const urlSelect = document.getElementById('urlCompanySelect');
+            const deleteSelect = document.getElementById('deleteCompanySelect');
+            
+            const options = companiesData.map(c => 
+                `<option value="${c.name}">${c.name}</option>`
+            ).join('');
+            
+            urlSelect.innerHTML = '<option value="">Select a company...</option>' + options;
+            deleteSelect.innerHTML = '<option value="">Select a company...</option>' + options;
+        }
+
+        // Trigger workflow
+        async function triggerWorkflow(inputs) {
+            const token = getToken();
+            if (!token) {
+                showStatus('Please enter your GitHub token', 'error');
+                return false;
+            }
+
+            showStatus('Triggering workflow...', 'info');
+
+            try {
+                const response = await fetch(
+                    `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/${WORKFLOW_FILE}/dispatches`,
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Accept': 'application/vnd.github.v3+json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            ref: 'main',
+                            inputs: inputs
+                        })
+                    }
+                );
+
+                if (response.status === 204) {
+                    showStatus(`✅ ${inputs.action} completed! Database updated. Click "Refresh Dashboard Data" above to see changes immediately.`, 'success');
+                    return true;
+                } else {
+                    const error = await response.text();
+                    showStatus(`Error: ${error}`, 'error');
+                    return false;
+                }
+            } catch (error) {
+                showStatus(`Error: ${error.message}`, 'error');
+                return false;
+            }
+        }
+
+        // Action functions
+        async function addCompany() {
+            const name = document.getElementById('companyName').value;
+            const category = document.getElementById('companyCategory').value;
+            const url = document.getElementById('companyUrl').value;
+
+            if (!name) {
+                showStatus('Please enter a company name', 'error');
+                return;
+            }
+
+            const success = await triggerWorkflow({
+                action: 'add-company',
+                company_name: name,
+                company_category: category,
+                url: url || ''
+            });
+
+            if (success) {
+                // Clear inputs
+                document.getElementById('companyName').value = '';
+                document.getElementById('companyUrl').value = '';
+            }
+        }
+
+        async function addUrl() {
+            const company = document.getElementById('urlCompanySelect').value;
+            const url = document.getElementById('newUrl').value;
+            const type = document.getElementById('urlType').value;
+
+            if (!company || !url) {
+                showStatus('Please select a company and enter a URL', 'error');
+                return;
+            }
+
+            const success = await triggerWorkflow({
+                action: 'add-url',
+                company_name: company,
+                url: url,
+                url_type: type
+            });
+
+            if (success) {
+                // Clear input
+                document.getElementById('newUrl').value = '';
+            }
+        }
+
+        async function deleteCompany() {
+            const company = document.getElementById('deleteCompanySelect').value;
+
+            if (!company) {
+                showStatus('Please select a company to delete', 'error');
+                return;
+            }
+
+            if (!confirm(`Are you sure you want to delete "${company}" and all its URLs?`)) {
+                return;
+            }
+
+            await triggerWorkflow({
+                action: 'delete-company',
+                company_name: company
+            });
+        }
+
+        async function deleteUrl(url) {
+            if (!confirm(`Delete this URL?\n${url}`)) {
+                return;
+            }
+
+            await triggerWorkflow({
+                action: 'delete-url',
+                url: url
+            });
+        }
+
+        // Update category selects
+        function updateCategorySelects() {
+            const filterSelect = document.getElementById('categoryFilter');
+            const companySelect = document.getElementById('companyCategory');
+            
+            const categoryOptions = Array.from(categories).sort().map(cat => 
+                `<option value="${cat}">${cat}</option>`
+            ).join('');
+            
+            filterSelect.innerHTML = '<option value="">All Categories</option>' + categoryOptions;
+            
+            // Update company category select - keep the current value if it exists
+            const currentValue = companySelect.value;
+            companySelect.innerHTML = categoryOptions;
+            
+            // Add "Other" option at the end
+            const otherOption = document.createElement('option');
+            otherOption.value = 'Other';
+            otherOption.textContent = 'Other';
+            companySelect.appendChild(otherOption);
+            
+            // Restore the previous selection if it still exists
+            if (currentValue && Array.from(companySelect.options).some(opt => opt.value === currentValue)) {
+                companySelect.value = currentValue;
+            }
+        }
+
+        // Filter by category
+        function filterByCategory() {
+            const selectedCategory = document.getElementById('categoryFilter').value;
+            if (selectedCategory === '') {
+                companiesData = [...allCompaniesData];
+            } else {
+                companiesData = allCompaniesData.filter(c => c.category === selectedCategory);
+            }
+            displayCompanies();
+            updateSelects();
+        }
+
+        // Category management functions
+        function showAddCategoryDialog() {
+            isAddingCategory = true;
+            const newCategory = prompt('Enter new category name:');
+            if (newCategory && newCategory.trim()) {
+                const trimmedCategory = newCategory.trim();
+                // Check if category already exists
+                if (categories.has(trimmedCategory)) {
+                    showStatus('Category already exists!', 'error');
+                    isAddingCategory = false;
+                    return;
+                }
+                // Add to categories set
+                categories.add(trimmedCategory);
+                // Update all dropdowns
+                updateCategorySelects();
+                // Select the new category in the Add Company dropdown
+                const companySelect = document.getElementById('companyCategory');
+                companySelect.value = trimmedCategory;
+                // Force the dropdown to update its display
+                companySelect.dispatchEvent(new Event('change'));
+                showStatus('Category added! You can now add companies to this category.', 'success');
+            }
+            isAddingCategory = false;
+        }
+
+        function showRenameCategoryDialog() {
+            const oldCategory = prompt('Enter the category to rename:');
+            if (!oldCategory || !categories.has(oldCategory)) {
+                showStatus('Category not found', 'error');
+                return;
+            }
+            
+            const newCategory = prompt(`Enter new name for "${oldCategory}":`);
+            if (newCategory && newCategory.trim()) {
+                // This would need a backend workflow to update all companies
+                showStatus('Category rename requires updating all companies. This feature is coming soon.', 'info');
+            }
+        }
+
+        function showDeleteCategoryDialog() {
+            const categoryToDelete = prompt('Enter the category to delete:');
+            if (!categoryToDelete || !categories.has(categoryToDelete)) {
+                showStatus('Category not found', 'error');
+                return;
+            }
+            
+            const companiesInCategory = allCompaniesData.filter(c => c.category === categoryToDelete).length;
+            if (companiesInCategory > 0) {
+                showStatus(`Cannot delete category with ${companiesInCategory} companies. Remove companies first.`, 'error');
+                return;
+            }
+            
+            if (confirm(`Delete category "${categoryToDelete}"?`)) {
+                categories.delete(categoryToDelete);
+                updateCategorySelects();
+                showStatus('Category removed locally', 'success');
+            }
+        }
+    </script>
+</body>
+</html>

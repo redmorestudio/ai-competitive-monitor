@@ -65,9 +65,11 @@ class Dashboard {
     updateStatsBar(dashboardData, workflowStatus) {
         if (!this.statsBar) return;
         
-        const companyCount = dashboardData?.companies?.length || 0;
-        const urlCount = dashboardData?.companies?.reduce((sum, company) => 
-            sum + (company.urls?.length || 0), 0) || 0;
+        // Use company_activity since that's where the data is
+        const companies = dashboardData?.company_activity || dashboardData?.companies || [];
+        const companyCount = companies.length;
+        const urlCount = companies.reduce((sum, company) => 
+            sum + (company.urls?.length || company.url_count || 0), 0) || 0;
         
         // Get total changes from various sources
         let totalChanges = 0;
@@ -126,11 +128,12 @@ class Dashboard {
      * Render a single company card
      */
     renderCompanyCard(company) {
-        const companyName = company.name;
-        const urlCount = company.urls?.length || 0;
-        const changeCount = company.changeCount || 0;
-        const lastChange = company.lastChange;
-        const hasRecentChanges = company.hasRecentActivity || false;
+        // Handle both data structures (company_activity has different field names)
+        const companyName = company.company || company.name;
+        const urlCount = company.url_count || company.urls?.length || 0;
+        const changeCount = company.changeCount || company.recent_activity?.change_count_7d || 0;
+        const lastChange = company.latest_change?.time_ago || company.lastChange;
+        const hasRecentChanges = company.hasRecentActivity || (company.recent_activity?.change_count_7d > 0) || false;
         
         // Get recent high-interest changes
         const recentHighInterest = company.recentChanges?.filter(c => 
@@ -164,7 +167,7 @@ class Dashboard {
                 
                 ${lastChange ? `
                 <div class="last-activity">
-                    <small>Last change: ${getRelativeTime(new Date(lastChange))}</small>
+                    <small>Last change: ${typeof lastChange === 'string' && lastChange.includes('/') ? lastChange : getRelativeTime(new Date(lastChange))}</small>
                 </div>
                 ` : ''}
                 
@@ -307,7 +310,8 @@ class Dashboard {
             
             // Update all components
             this.updateStatsBar(dashboardData, workflowStatus);
-            this.updateCompaniesDisplay(dashboardData?.companies || []);
+            // Use company_activity instead of companies since that's where the data is
+            this.updateCompaniesDisplay(dashboardData?.company_activity || dashboardData?.companies || []);
             await this.updateRecentChanges(changesData || dashboardData?.changes || []);
             
         } catch (error) {
