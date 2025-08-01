@@ -280,6 +280,7 @@ export async function showChangeDetail(changeId, companyName, event) {
         }
         
         // Strategy 3: Try to load from manifest and individual file for richer data
+        // BUT ONLY USE IT FOR ADDITIONAL DATA, NOT TO OVERRIDE SCORES
         if (changeData && changeData.company) {
             try {
                 const manifestResponse = await fetch('./api-data/changes/manifest.json');
@@ -300,8 +301,9 @@ export async function showChangeDetail(changeId, companyName, event) {
                         const fileResponse = await fetch(`./api-data/changes/${changeFile.filename}`);
                         if (fileResponse.ok) {
                             const detailedData = await fileResponse.json();
-                            // Merge the detailed data with what we already have
-                            changeData = { ...changeData, ...detailedData };
+                            // Only merge non-conflicting data - keep the original interest_level from changes.json
+                            const { interest_level, ...otherDetailedData } = detailedData;
+                            changeData = { ...otherDetailedData, ...changeData };
                         }
                     }
                 }
