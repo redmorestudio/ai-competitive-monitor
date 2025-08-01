@@ -1,0 +1,116 @@
+name: Manage Companies (PostgreSQL)
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to perform'
+        required: true
+        type: choice
+        options:
+          - list-companies
+          - add-company
+          - delete-company
+          - add-url
+          - import-all-54
+      company_name:
+        description: 'Company name (for add/delete/add-url)'
+        required: false
+        type: string
+      company_category:
+        description: 'Company category (for add-company)'
+        required: false
+        type: string
+        default: 'AI Tools'
+      url:
+        description: 'URL to add'
+        required: false
+        type: string
+      url_type:
+        description: 'URL type (homepage/blog/docs/api/pricing)'
+        required: false
+        type: string
+        default: 'homepage'
+
+jobs:
+  manage-companies:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: |
+          cd github-actions-backend
+          npm install
+      
+      - name: Execute company management
+        env:
+          POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+        run: |
+          cd github-actions-backend
+          
+          case "${{ inputs.action }}" in
+            "list-companies")
+              echo "📋 Listing all PostgreSQL companies..."
+              node manage-companies-postgres.js list
+              ;;
+              
+            "add-company")
+              echo "➕ Adding company: ${{ inputs.company_name }}"
+              node manage-companies-postgres.js add "${{ inputs.company_name }}" "${{ inputs.company_category }}"
+              ;;
+              
+            "delete-company")
+              echo "❌ Deleting company: ${{ inputs.company_name }}"
+              node manage-companies-postgres.js delete "${{ inputs.company_name }}"
+              ;;
+              
+            "add-url")
+              echo "🔗 Adding URL to ${{ inputs.company_name }}"
+              node manage-companies-postgres.js add-url "${{ inputs.company_name }}" "${{ inputs.url }}" "${{ inputs.url_type }}"
+              ;;
+              
+            "import-all-54")
+              echo "📥 Importing all 54 companies from SQLite to PostgreSQL..."
+              echo "⚠️  This will REPLACE all PostgreSQL companies!"
+              
+              # The import script has a 5-second delay for safety
+              node import-companies-to-postgres.js
+              ;;
+              
+            *)
+              echo "❌ Unknown action: ${{ inputs.action }}"
+              exit 1
+              ;;
+          esac
+      
+      - name: Generate static data
+        if: ${{ inputs.action != 'list-companies' }}
+        env:
+          POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+        run: |
+          cd github-actions-backend
+          echo "📊 Regenerating static data from PostgreSQL..."
+          node generate-static-data-three-db-postgres.js || echo "⚠️  Static data generation failed"
+      
+      - name: Commit changes
+        if: ${{ inputs.action != 'list-companies' }}
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          git add api-data/*.json || true
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🏢 PostgreSQL company management: ${{ inputs.action }} ${{ inputs.company_name || '' }}"
+            git push || echo "No changes to push"
+          fi
