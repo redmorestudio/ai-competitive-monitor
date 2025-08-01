@@ -9,7 +9,7 @@
  * Handles general UI rendering helpers and change display
  */
 
-import { escapeHtml, formatTimeAgo, getInterestEmoji } from './utils.js';
+import { escapeHtml, getRelativeTime, getInterestEmoji } from './utils.js';
 
 class UI {
     constructor() {
@@ -80,7 +80,7 @@ class UI {
      * Render a single change item
      */
     renderChangeItem(change) {
-        const timeAgo = formatTimeAgo(new Date(change.detected_at || change.detectedAt));
+        const timeAgo = getRelativeTime(new Date(change.detected_at || change.detectedAt));
         const interestEmoji = getInterestEmoji(change.interest_level);
         
         // Parse AI analysis for better display
