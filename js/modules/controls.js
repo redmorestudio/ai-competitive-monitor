@@ -264,27 +264,34 @@ export async function showChangeDetail(changeId, companyName, event) {
             }
         }
         
-        // Strategy 3: Try to load from manifest and individual file
-        if (!changeData) {
+        // Strategy 3: Try to load from manifest and individual file for richer data
+        if (changeData && changeData.company) {
             try {
                 const manifestResponse = await fetch('./api-data/changes/manifest.json');
                 if (manifestResponse.ok) {
                     const manifest = await manifestResponse.json();
                     
-                    // Find a file for this company
-                    const changeFile = manifest.files.find(f => 
-                        f.company === companyName
-                    );
+                    // Find a file for this company and approximate time
+                    const changeFile = manifest.files.find(f => {
+                        if (f.company !== companyName) return false;
+                        
+                        // Check if the times are close (within 1 minute)
+                        const fileTime = new Date(f.detected_at).getTime();
+                        const changeTime = new Date(changeData.detected_at || changeData.detectedAt).getTime();
+                        return Math.abs(fileTime - changeTime) < 60000; // 1 minute tolerance
+                    });
                     
                     if (changeFile) {
                         const fileResponse = await fetch(`./api-data/changes/${changeFile.filename}`);
                         if (fileResponse.ok) {
-                            changeData = await fileResponse.json();
+                            const detailedData = await fileResponse.json();
+                            // Merge the detailed data with what we already have
+                            changeData = { ...changeData, ...detailedData };
                         }
                     }
                 }
             } catch (e) {
-                console.warn('Could not load from manifest:', e);
+                console.warn('Could not load detailed data from manifest:', e);
             }
         }
         
@@ -317,10 +324,12 @@ export async function showChangeDetail(changeId, companyName, event) {
             
             <div class="config-section">
                 <h4>🔍 AI Analysis</h4>
-                <p><strong>Summary:</strong> ${escapeHtml(aiAnalysis.summary || changeData.summary || 'No summary available')}</p>
-                ${aiAnalysis.category ? `<p><strong>Category:</strong> ${escapeHtml(aiAnalysis.category)}</p>` : ''}
+                <p><strong>Summary:</strong> ${escapeHtml(changeData.summary || aiAnalysis.summary || 'No summary available')}</p>
+                ${aiAnalysis.category || changeData.category ? `<p><strong>Category:</strong> ${escapeHtml(changeData.category || aiAnalysis.category)}</p>` : ''}
                 ${aiAnalysis.technical_innovation_score !== undefined ? `<p><strong>Technical Innovation Score:</strong> ${aiAnalysis.technical_innovation_score}/10</p>` : ''}
                 ${aiAnalysis.business_impact_score !== undefined ? `<p><strong>Business Impact Score:</strong> ${aiAnalysis.business_impact_score}/10</p>` : ''}
+                ${changeData.business_impact ? `<p><strong>Business Impact:</strong> ${escapeHtml(changeData.business_impact)}</p>` : ''}
+                ${changeData.competitive_implications ? `<p><strong>Competitive Implications:</strong> ${escapeHtml(changeData.competitive_implications)}</p>` : ''}
             </div>
             
             ${aiAnalysis.interest_drivers && aiAnalysis.interest_drivers.length > 0 ? `
@@ -340,6 +349,69 @@ export async function showChangeDetail(changeId, companyName, event) {
                         `<span class="tag">${escapeHtml(area)}</span>`
                     ).join('')}
                 </div>
+            </div>
+            ` : ''}
+            
+            ${changeData.change_summary && changeData.change_summary.specific_changes ? `
+            <div class="config-section">
+                <h4>🔄 Specific Changes</h4>
+                <ul>
+                    ${changeData.change_summary.specific_changes.slice(0, 5).map(change => 
+                        `<li>${escapeHtml(change)}</li>`
+                    ).join('')}
+                    ${changeData.change_summary.specific_changes.length > 5 ? 
+                        `<li><em>...and ${changeData.change_summary.specific_changes.length - 5} more changes</em></li>` : ''}
+                </ul>
+            </div>
+            ` : ''}
+            
+            ${changeData.key_insights && changeData.key_insights.length > 0 ? `
+            <div class="config-section">
+                <h4>💡 Key Insights</h4>
+                <ul>
+                    ${changeData.key_insights.map(insight => `<li>${escapeHtml(insight)}</li>`).join('')}
+                </ul>
+            </div>
+            ` : ''}
+            
+            ${changeData.insights && changeData.insights.recommended_actions ? `
+            <div class="config-section">
+                <h4>🎯 Recommended Actions</h4>
+                <ul>
+                    ${changeData.insights.recommended_actions.map(action => 
+                        `<li>${escapeHtml(action)}</li>`
+                    ).join('')}
+                </ul>
+            </div>
+            ` : ''}
+            
+            ${changeData.entities && (changeData.entities.products || changeData.entities.features || changeData.entities.technologies) ? `
+            <div class="config-section">
+                <h4>🏷️ Entities Detected</h4>
+                ${changeData.entities.products && changeData.entities.products.length > 0 ? `
+                    <p><strong>Products:</strong></p>
+                    <div class="tag-list">
+                        ${changeData.entities.products.map(product => 
+                            `<span class="tag">${escapeHtml(product)}</span>`
+                        ).join('')}
+                    </div>
+                ` : ''}
+                ${changeData.entities.features && changeData.entities.features.length > 0 ? `
+                    <p><strong>Features:</strong></p>
+                    <div class="tag-list">
+                        ${changeData.entities.features.map(feature => 
+                            `<span class="tag">${escapeHtml(feature)}</span>`
+                        ).join('')}
+                    </div>
+                ` : ''}
+                ${changeData.entities.technologies && changeData.entities.technologies.length > 0 ? `
+                    <p><strong>Technologies:</strong></p>
+                    <div class="tag-list">
+                        ${changeData.entities.technologies.map(tech => 
+                            `<span class="tag tech-tag">${escapeHtml(tech)}</span>`
+                        ).join('')}
+                    </div>
+                ` : ''}
             </div>
             ` : ''}
             
