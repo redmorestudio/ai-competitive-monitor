@@ -1,0 +1,79 @@
+{
+  "id": 468,
+  "company": "Google DeepMind",
+  "page_url": "blog",
+  "detected_at": "2025-07-30T14:15:22.285Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New articles and updates were added to the Google Blog, including Google Earth AI, NotebookLM, and Gemini updates",
+  "category": "AI updates",
+  "change_summary": {
+    "what_changed": "New articles and updates were added to the Google Blog, including Google Earth AI, NotebookLM, and Gemini updates",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of Google Earth AI article",
+      "Addition of NotebookLM article",
+      "Update to Gemini Code Assist",
+      "Introduction of Gemini CLI"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates demonstrate Google's continued investment in AI research and development, which could lead to new business opportunities and revenue streams",
+    "market_signals": [
+      "Increased competition in the AI market",
+      "Growing demand for AI-powered solutions"
+    ],
+    "competitive_implications": "Google's advancements in AI could give the company a competitive edge over its rivals, particularly in areas like search and geospatial technology",
+    "strategic_direction": "The updates suggest that Google is committed to pushing the boundaries of AI research and development, with a focus on practical applications and real-world impact"
+  },
+  "entities": {
+    "products": [
+      "Gemini",
+      "Google Earth",
+      "NotebookLM"
+    ],
+    "features": [
+      "Gemini Code Assist",
+      "Gemini CLI"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Geospatial AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Google is making significant investments in AI research and development",
+      "The company is focused on developing practical AI applications with real-world impact"
+    ],
+    "opportunities": [
+      "Partnerships and collaborations with Google on AI-powered projects",
+      "Integration of Google's AI technologies into existing products and services"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential regulatory challenges related to AI development and deployment"
+    ],
+    "recommended_actions": [
+      "Monitor Google's AI developments and updates",
+      "Explore potential partnerships and collaborations with Google on AI-powered projects"
+    ]
+  },
+  "key_insights": [
+    "Google is making significant investments in AI research and development",
+    "The company is focused on developing practical AI applications with real-world impact"
+  ],
+  "business_impact": "The updates demonstrate Google's continued investment in AI research and development, which could lead to new business opportunities and revenue streams",
+  "competitive_implications": "Google's advancements in AI could give the company a competitive edge over its rivals, particularly in areas like search and geospatial technology",
+  "content_hash_before": "0549ad04b5e0f9e861ade37e6916a4288f615af0c4efd3eee1b415d752ee7e46",
+  "content_hash_after": "8dfa0e634702734d185c6e1c7fa3a1bd5a46c0ec79a3852992f9df88a33bbf64",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,46 @@
+{
+  "id": 467,
+  "company": "Google DeepMind",
+  "page_url": "product",
+  "detected_at": "2025-07-30T14:15:28.890Z",
+  "change_type": "modified",
+  "interest_level": 1,
+  "ai_confidence": 1,
+  "summary": "No changes were detected in the content between the two versions.",
+  "category": "no change",
+  "change_summary": {
+    "what_changed": "No changes were detected in the content between the two versions.",
+    "change_type": "no change",
+    "change_scale": "none",
+    "specific_changes": []
+  },
+  "strategic_analysis": {
+    "business_impact": "No impact, as there are no changes.",
+    "market_signals": [],
+    "competitive_implications": "No implications, as there are no changes.",
+    "strategic_direction": "No direction, as there are no changes."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [],
+  "business_impact": "No impact, as there are no changes.",
+  "competitive_implications": "No implications, as there are no changes.",
+  "content_hash_before": "fb68f4f17a176d730b4bbeabcfe54b7e3f5638424726a61ec9d32ab95aecce14",
+  "content_hash_after": "2fab4886300158b317a79c4030a611ff3a233c0d6f71cf6915266d4e23cc3dc0",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

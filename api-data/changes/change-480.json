@@ -1,0 +1,82 @@
+{
+  "id": 480,
+  "company": "Google DeepMind",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T18:39:22.393Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Addition of new articles and updates to existing ones, including 'Google Earth AI', 'The inside story of building NotebookLM', and 'We’re updating our plans for goo.gl links'",
+  "category": "significant updates",
+  "change_summary": {
+    "what_changed": "Addition of new articles and updates to existing ones, including 'Google Earth AI', 'The inside story of building NotebookLM', and 'We’re updating our plans for goo.gl links'",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New article on Google Earth AI",
+      "New article on the inside story of building NotebookLM",
+      "Update on goo.gl link shortening",
+      "New features in Gemini Code Assist and Gemini CLI"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates could enhance Google's position in the AI and developer tools market, and potentially attract new customers and talent",
+    "market_signals": [
+      "Increased focus on AI and machine learning",
+      "Expansion of developer tools and services"
+    ],
+    "competitive_implications": "The updates could put pressure on competitors to match Google's offerings and innovations",
+    "strategic_direction": "The changes suggest that Google is committed to investing in AI and developer tools, and is likely to continue to expand its offerings in these areas"
+  },
+  "entities": {
+    "products": [
+      "Gemini",
+      "Google Earth AI",
+      "NotebookLM",
+      "Gemini Code Assist",
+      "Gemini CLI"
+    ],
+    "features": [
+      "Agent Mode",
+      "IDE enhancements",
+      "open-source AI agent"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "geospatial AI models"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Google is investing heavily in AI and developer tools",
+      "The company is expanding its offerings in these areas"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Google in AI and developer tools",
+      "Potential for new business models and revenue streams"
+    ],
+    "threats": [
+      "Increased competition in the AI and developer tools market",
+      "Potential disruption to existing business models"
+    ],
+    "recommended_actions": [
+      "Monitor Google's developments in AI and developer tools",
+      "Consider partnership opportunities or investments in these areas"
+    ]
+  },
+  "key_insights": [
+    "Google is investing heavily in AI and developer tools",
+    "The company is expanding its offerings in these areas"
+  ],
+  "business_impact": "The updates could enhance Google's position in the AI and developer tools market, and potentially attract new customers and talent",
+  "competitive_implications": "The updates could put pressure on competitors to match Google's offerings and innovations",
+  "content_hash_before": "8dfa0e634702734d185c6e1c7fa3a1bd5a46c0ec79a3852992f9df88a33bbf64",
+  "content_hash_after": "e23c54caab7d53bba60371d64edce8c04c729b809cef7936d851167022dd840b",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
