@@ -396,6 +396,13 @@ function generateCompaniesData(intelligenceDb) {
     try {
         console.log('🏢 Generating companies data...');
         
+        // Debug: Check database path and existence
+        console.log('📍 Database path:', intelligenceDb.name);
+        
+        // Debug: Count companies before query
+        const countResult = intelligenceDb.prepare('SELECT COUNT(*) as count FROM companies').get();
+        console.log('🔢 Total companies in database:', countResult.count);
+        
         const companies = intelligenceDb.prepare(`
             SELECT 
                 c.id,
@@ -405,6 +412,9 @@ function generateCompaniesData(intelligenceDb) {
             FROM companies c
             ORDER BY c.name
         `).all();
+        
+        console.log('📊 Companies retrieved from query:', companies.length);
+        console.log('🏢 Company names:', companies.map(c => c.company).join(', '));
         
         // Get URLs for each company
         const urlsStmt = intelligenceDb.prepare('SELECT url FROM urls WHERE company_id = ?');
@@ -419,10 +429,14 @@ function generateCompaniesData(intelligenceDb) {
             };
         });
         
-        return {
+        const result = {
             companies: processedCompanies,
             generated_at: new Date().toISOString()
         };
+        
+        console.log('🔍 Final companies.json will contain:', result.companies.length, 'companies');
+        
+        return result;
     } catch (error) {
         console.error('❌ Error generating companies data:', error);
         return {
