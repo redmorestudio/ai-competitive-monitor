@@ -1,0 +1,89 @@
+{
+  "id": 574,
+  "company": "Palantir",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:39:39.901Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New content added to the Palantir homepage, including navigation, latest news, offerings, impact studies, and quick links",
+  "category": "major_update",
+  "change_summary": {
+    "what_changed": "New content added to the Palantir homepage, including navigation, latest news, offerings, impact studies, and quick links",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Added navigation menu with links to various Palantir platforms and services",
+      "Added latest news section with links to recent news articles and videos",
+      "Added offerings section with descriptions of Palantir's platforms and services",
+      "Added impact studies section with links to case studies and success stories",
+      "Added quick links section with links to various Palantir resources and pages"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes may indicate a shift in Palantir's business strategy, potentially focusing more on the defense and industrial sectors",
+    "market_signals": [
+      "Increased focus on AI-powered automation",
+      "Expansion into new markets and industries"
+    ],
+    "competitive_implications": "The changes may position Palantir as a more competitive player in the data integration and analytics market",
+    "strategic_direction": "The company may be moving towards a more platform-based approach, with a focus on providing integrated solutions for various industries"
+  },
+  "entities": {
+    "products": [
+      "AIP",
+      "Foundry",
+      "Gotham",
+      "Apollo",
+      "TITAN",
+      "Vantage"
+    ],
+    "features": [
+      "AI-powered automation",
+      "Data integration",
+      "Cybernetic enterprise"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Artificial intelligence",
+      "Machine learning"
+    ],
+    "people": [
+      "Alex Karp"
+    ],
+    "pricing": [],
+    "markets": [
+      "Defense",
+      "Industrial"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Palantir is expanding its online presence and marketing efforts",
+      "The company is focusing on AI-powered automation and data integration"
+    ],
+    "opportunities": [
+      "Potential for increased market share in the defense and industrial sectors",
+      "Opportunities for partnerships and collaborations with other companies in these sectors"
+    ],
+    "threats": [
+      "Increased competition from other companies in the data integration and analytics market",
+      "Potential regulatory challenges in the defense and industrial sectors"
+    ],
+    "recommended_actions": [
+      "Monitor Palantir's progress and updates in the defense and industrial sectors",
+      "Assess potential partnership opportunities with Palantir"
+    ]
+  },
+  "key_insights": [
+    "Palantir is expanding its online presence and marketing efforts",
+    "The company is focusing on AI-powered automation and data integration"
+  ],
+  "business_impact": "The changes may indicate a shift in Palantir's business strategy, potentially focusing more on the defense and industrial sectors",
+  "competitive_implications": "The changes may position Palantir as a more competitive player in the data integration and analytics market",
+  "content_hash_before": null,
+  "content_hash_after": "eb16a5e27432f84c9b4a96a6c4fc7a402512fe692d6274c643f20e5fd7a352f0",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

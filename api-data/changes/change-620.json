@@ -1,0 +1,83 @@
+{
+  "id": 620,
+  "company": "Descript",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:29:51.463Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Introduction of Underlord, an AI-powered editing assistant, and updates to the Descript blog and website",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of Underlord, an AI-powered editing assistant, and updates to the Descript blog and website",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of Underlord, an AI-powered editing assistant",
+      "Updates to the Descript blog, including new articles and categories",
+      "Changes to the website's layout and design"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of Underlord and updates to the Descript blog and website are likely to improve the company's competitive position in the video editing and content creation markets",
+    "market_signals": [
+      "Increased focus on AI-powered editing",
+      "Growing demand for content creation tools"
+    ],
+    "competitive_implications": "The introduction of Underlord may give Descript a competitive advantage over other video editing and content creation tools",
+    "strategic_direction": "Descript is likely to continue to focus on AI-powered editing and content creation, and may expand its offerings to include more features and tools"
+  },
+  "entities": {
+    "products": [
+      "Underlord, an AI-powered editing assistant"
+    ],
+    "features": [
+      "AI-powered editing",
+      "Automatic transcription",
+      "AI speech"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Video editing",
+      "Podcasting",
+      "Content creation"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "The introduction of Underlord is a significant update to the Descript platform",
+      "The Descript blog has been updated with new articles and categories",
+      "The company is focusing on AI-powered editing and content creation"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the video editing and content creation spaces",
+      "Expansion into new markets, such as social media and online education"
+    ],
+    "threats": [
+      "Competition from other video editing and content creation tools",
+      "Technical challenges in implementing AI-powered editing"
+    ],
+    "recommended_actions": [
+      "Monitor the company's progress and updates to the Descript platform",
+      "Consider partnership opportunities with Descript",
+      "Keep an eye on the competitive landscape and adjust strategies accordingly"
+    ]
+  },
+  "key_insights": [
+    "The introduction of Underlord is a significant update to the Descript platform",
+    "The Descript blog has been updated with new articles and categories",
+    "The company is focusing on AI-powered editing and content creation"
+  ],
+  "business_impact": "The introduction of Underlord and updates to the Descript blog and website are likely to improve the company's competitive position in the video editing and content creation markets",
+  "competitive_implications": "The introduction of Underlord may give Descript a competitive advantage over other video editing and content creation tools",
+  "content_hash_before": null,
+  "content_hash_after": "46520eb0de01f220be5be6cf143b683994f6814edd55e74812736341174a769a",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

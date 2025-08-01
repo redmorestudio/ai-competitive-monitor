@@ -1,0 +1,79 @@
+{
+  "id": 588,
+  "company": "Meta AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:36:50.361Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of the new Meta AI app, updates to Meta AI features, and the announcement of Llama 4",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of the new Meta AI app, updates to Meta AI features, and the announcement of Llama 4",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New Meta AI app with personal AI and video restyling capabilities",
+      "Advanced capabilities such as image and video creation tools",
+      "Llama 4 with best-in-class performance and efficiency",
+      "Seamless access to Meta AI across multiple platforms"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The new Meta AI app and updates to Meta AI features are likely to enhance user engagement and drive business growth for Meta",
+    "market_signals": [
+      "Increasing focus on AI-powered products and services",
+      "Growing demand for personalized AI experiences"
+    ],
+    "competitive_implications": "The introduction of the new Meta AI app and updates to Meta AI features may give Meta a competitive edge in the AI market",
+    "strategic_direction": "Meta's strategic direction is focused on developing and integrating AI technology into its products and services"
+  },
+  "entities": {
+    "products": [
+      "Meta AI app",
+      "Llama 4"
+    ],
+    "features": [
+      "Personal AI",
+      "Video restyling",
+      "Image and video creation tools"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The new Meta AI app offers advanced capabilities such as personal AI and video restyling",
+      "Llama 4 provides best-in-class performance and efficiency"
+    ],
+    "opportunities": [
+      "Increased user engagement and business growth for Meta",
+      "New revenue streams through AI-powered products and services"
+    ],
+    "threats": [
+      "Intensified competition in the AI market",
+      "Potential regulatory challenges"
+    ],
+    "recommended_actions": [
+      "Monitor user adoption and feedback on the new Meta AI app",
+      "Continuously evaluate and improve AI technology to stay competitive"
+    ]
+  },
+  "key_insights": [
+    "The new Meta AI app offers advanced capabilities such as personal AI and video restyling",
+    "Llama 4 provides best-in-class performance and efficiency"
+  ],
+  "business_impact": "The new Meta AI app and updates to Meta AI features are likely to enhance user engagement and drive business growth for Meta",
+  "competitive_implications": "The introduction of the new Meta AI app and updates to Meta AI features may give Meta a competitive edge in the AI market",
+  "content_hash_before": null,
+  "content_hash_after": "4e2a63f234f10752d2641172c3923650164a94646de080828880a4034948d345",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

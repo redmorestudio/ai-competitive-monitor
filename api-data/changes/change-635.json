@@ -1,0 +1,91 @@
+{
+  "id": 635,
+  "company": "Codeium",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:28:03.110Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New homepage content for Codeium, now rebranded as Windsurf, with a focus on AI-powered code editing and collaboration",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New homepage content for Codeium, now rebranded as Windsurf, with a focus on AI-powered code editing and collaboration",
+    "change_type": "update",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Windsurf as the new brand name",
+      "Emphasis on AI-powered code editing and collaboration",
+      "New features and tools announced, including Cascade and Tab",
+      "Rebranding of the company and its products",
+      "New website design and layout"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The rebranding and new product offerings are likely to have a significant impact on the company's market position and revenue",
+    "market_signals": [
+      "Growing demand for AI-powered coding tools",
+      "Increasing competition in the software development market"
+    ],
+    "competitive_implications": "The company's new brand and products may pose a competitive threat to established players in the market",
+    "strategic_direction": "The company is likely to focus on expanding its product offerings and improving its market position through strategic partnerships and investments"
+  },
+  "entities": {
+    "products": [
+      "Windsurf",
+      "Cascade",
+      "Tab"
+    ],
+    "features": [
+      "AI-powered code editing",
+      "Collaboration tools",
+      "Cascade",
+      "Tab"
+    ],
+    "partnerships": [
+      "Cognition"
+    ],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [
+      "Garry Tan"
+    ],
+    "pricing": [
+      "Token-based pricing"
+    ],
+    "markets": [
+      "Software development",
+      "AI-powered coding"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "The company's rebranding and new product offerings represent a significant strategic move",
+      "The company is likely to focus on expanding its product offerings and improving its market position"
+    ],
+    "opportunities": [
+      "Growing demand for AI-powered coding tools",
+      "Increasing competition in the software development market"
+    ],
+    "threats": [
+      "Established competitors in the market",
+      "Rapidly changing technology landscape"
+    ],
+    "recommended_actions": [
+      "Monitor the company's progress and adjust competitive strategies accordingly",
+      "Consider investing in AI-powered coding tools and collaboration platforms"
+    ]
+  },
+  "key_insights": [
+    "The company's rebranding and new product offerings represent a significant strategic move",
+    "The company is likely to focus on expanding its product offerings and improving its market position"
+  ],
+  "business_impact": "The rebranding and new product offerings are likely to have a significant impact on the company's market position and revenue",
+  "competitive_implications": "The company's new brand and products may pose a competitive threat to established players in the market",
+  "content_hash_before": null,
+  "content_hash_after": "e874c1daab00c595610c83fc74770adaf92c43004835c914da982e6c2eafffab",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

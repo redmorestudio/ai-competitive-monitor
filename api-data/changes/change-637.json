@@ -1,0 +1,82 @@
+{
+  "id": 637,
+  "company": "Codeium",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:27:52.597Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of new pricing plans and features for Codeium, now rebranded as Windsurf",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Introduction of new pricing plans and features for Codeium, now rebranded as Windsurf",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "New pricing plans: Free, Pro, Teams, and Enterprise",
+      "Introduction of prompt credits and their pricing",
+      "Addition of new features such as Windsurf Reviews, Centralized billing, and Admin dashboard with analytics",
+      "Rebranding from Codeium to Windsurf"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The rebranding and introduction of new pricing plans and features is likely to attract more customers and increase revenue",
+    "market_signals": [
+      "Increased competition in the AI-powered coding tools market",
+      "Growing demand for AI-powered coding tools"
+    ],
+    "competitive_implications": "The rebranding and introduction of new pricing plans and features positions Windsurf as a major player in the AI-powered coding tools market",
+    "strategic_direction": "Windsurf is focusing on providing a comprehensive platform for developers, with a range of features and pricing plans to suit different needs"
+  },
+  "entities": {
+    "products": [
+      "Windsurf Editor",
+      "Windsurf Reviews"
+    ],
+    "features": [
+      "Prompt credits",
+      "Windsurf Reviews",
+      "Centralized billing",
+      "Admin dashboard with analytics"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Free: $0/month, 25 prompt credits/month",
+      "Pro: $15/month, 500 prompt credits/month",
+      "Teams: $30/user/month, 500 prompt credits/user/month",
+      "Enterprise: starting at $60/user/month, 1,000 prompt credits/user/month"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Windsurf is targeting a wide range of customers, from individual developers to large enterprises",
+      "The introduction of prompt credits and their pricing indicates a focus on providing a flexible and scalable pricing model"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the AI-powered coding tools market",
+      "Expansion into new markets, such as education and research"
+    ],
+    "threats": [
+      "Increased competition from other companies in the AI-powered coding tools market",
+      "Regulatory challenges related to the use of AI-powered coding tools"
+    ],
+    "recommended_actions": [
+      "Monitor Windsurf's progress and adjust our own strategy accordingly",
+      "Consider partnership opportunities with Windsurf"
+    ]
+  },
+  "key_insights": [
+    "Windsurf is targeting a wide range of customers, from individual developers to large enterprises",
+    "The introduction of prompt credits and their pricing indicates a focus on providing a flexible and scalable pricing model"
+  ],
+  "business_impact": "The rebranding and introduction of new pricing plans and features is likely to attract more customers and increase revenue",
+  "competitive_implications": "The rebranding and introduction of new pricing plans and features positions Windsurf as a major player in the AI-powered coding tools market",
+  "content_hash_before": null,
+  "content_hash_after": "ae86ee1e7670070eca651d68ddc9de9aad71f2f79fe04c738c0df9bb8eafdf3e",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

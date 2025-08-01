@@ -1,0 +1,76 @@
+{
+  "id": 526,
+  "company": "WellSaid Labs",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:46:58.981Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Introduction of a new AI voice model, Caruso, and updates to the website's content and structure",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of a new AI voice model, Caruso, and updates to the website's content and structure",
+    "change_type": "addition/update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New AI voice model, Caruso, announced",
+      "Updates to the website's navigation and content",
+      "Addition of new solutions and resources sections",
+      "Introduction of a new 'Collaboration made easy' section",
+      "Updates to the 'Trusted by the world's biggest brands' section with new logos"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of a new AI voice model and updates to the website's content and structure are likely to improve the company's competitiveness and attractiveness to potential customers",
+    "market_signals": [
+      "Increased investment in product development and marketing",
+      "Expansion of solutions and resources offerings"
+    ],
+    "competitive_implications": "The company is likely to gain a competitive advantage through its new AI voice model and updated website, potentially attracting more customers and increasing market share",
+    "strategic_direction": "The company appears to be focusing on product development, marketing, and customer acquisition, indicating a strong strategic direction"
+  },
+  "entities": {
+    "products": [
+      "Caruso AI voice model"
+    ],
+    "features": [
+      "New solutions and resources sections",
+      "Collaboration made easy section"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI voice models"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is investing heavily in product development and marketing",
+      "The new AI voice model, Caruso, is a significant addition to the company's product offerings"
+    ],
+    "opportunities": [
+      "Potential for increased market share and customer acquisition",
+      "Opportunities for partnerships and collaborations with other companies"
+    ],
+    "threats": [
+      "Potential competition from other companies offering similar AI voice models and solutions"
+    ],
+    "recommended_actions": [
+      "Monitor the company's progress and updates to its product offerings",
+      "Consider potential partnerships or collaborations with the company"
+    ]
+  },
+  "key_insights": [
+    "The company is investing heavily in product development and marketing",
+    "The new AI voice model, Caruso, is a significant addition to the company's product offerings"
+  ],
+  "business_impact": "The introduction of a new AI voice model and updates to the website's content and structure are likely to improve the company's competitiveness and attractiveness to potential customers",
+  "competitive_implications": "The company is likely to gain a competitive advantage through its new AI voice model and updated website, potentially attracting more customers and increasing market share",
+  "content_hash_before": null,
+  "content_hash_after": "30fb5203d0c7ca7e22dca4a194aabca60fd0f23af04cdc4807b97dc3ec571a52",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

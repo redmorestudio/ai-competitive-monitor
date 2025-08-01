@@ -1,0 +1,90 @@
+{
+  "id": 555,
+  "company": "Runway",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:42:33.790Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.95,
+  "summary": "New pricing page with detailed plans and features",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New pricing page with detailed plans and features",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Free, Standard, Pro, Unlimited, and Enterprise plans",
+      "Detailed features and credits for each plan",
+      "Pricing information for monthly and yearly subscriptions",
+      "Call-to-actions for signing up or subscribing to plans"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Runway AI is expanding its offerings with new pricing plans, targeting a wider range of customers, from individuals to large enterprises",
+    "market_signals": [
+      "Increased competition in the AI tools market",
+      "Growing demand for AI-powered content creation"
+    ],
+    "competitive_implications": "Runway AI is positioning itself as a leader in the AI tools market, with a range of plans and features to attract different types of customers",
+    "strategic_direction": "Expansion of product offerings and targeting of new customer segments"
+  },
+  "entities": {
+    "products": [
+      "Runway AI Tools",
+      "Gen-4 Turbo",
+      "Gen-3 Alpha Turbo",
+      "Aleph",
+      "Act-Two"
+    ],
+    "features": [
+      "Generative Video",
+      "Generative Image",
+      "Video Editor Projects",
+      "Asset Storage",
+      "Technical Support"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [
+      "Free",
+      "$12/user/month (Standard)",
+      "$28/user/month (Pro)",
+      "$76/user/month (Unlimited)"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Runway AI is investing heavily in its product offerings and marketing efforts",
+      "The company is targeting a wide range of customers, from individuals to large enterprises"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Runway AI for businesses and organizations",
+      "Growth potential in the AI tools market"
+    ],
+    "threats": [
+      "Increased competition in the AI tools market",
+      "Potential pricing pressure from competitors"
+    ],
+    "recommended_actions": [
+      "Monitor Runway AI's product offerings and marketing efforts",
+      "Consider partnership opportunities with Runway AI",
+      "Assess the competitive landscape and adjust pricing strategies accordingly"
+    ]
+  },
+  "key_insights": [
+    "Runway AI is investing heavily in its product offerings and marketing efforts",
+    "The company is targeting a wide range of customers, from individuals to large enterprises"
+  ],
+  "business_impact": "Runway AI is expanding its offerings with new pricing plans, targeting a wider range of customers, from individuals to large enterprises",
+  "competitive_implications": "Runway AI is positioning itself as a leader in the AI tools market, with a range of plans and features to attract different types of customers",
+  "content_hash_before": null,
+  "content_hash_after": "eaf7c3e854aaa0562b41d0c7741b0cba7a80f213486cb03728be58d6686b9879",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

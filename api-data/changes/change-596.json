@@ -1,0 +1,92 @@
+{
+  "id": 596,
+  "company": "Leonardo AI",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:35:30.210Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Introduction of new API plans and pricing structure",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of new API plans and pricing structure",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "API Basic plan introduced at $9/month",
+      "API Standard plan introduced at $49/month",
+      "API Pro plan introduced at $299/month",
+      "API Custom plan for custom API credits amount"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The new API plans and pricing structure can help Leonardo AI increase revenue and expand its customer base.",
+    "market_signals": [
+      "increased competition in the AI API market",
+      "growing demand for AI-powered solutions"
+    ],
+    "competitive_implications": "Leonardo AI's new API plans and pricing structure can help the company stay competitive in the market.",
+    "strategic_direction": "Leonardo AI is focusing on expanding its offerings and catering to different customer segments."
+  },
+  "entities": {
+    "products": [
+      "Leonardo AI API"
+    ],
+    "features": [
+      "API credits",
+      "concurrent generations",
+      "Alchemy",
+      "Prompt Magic v3",
+      "PhotoReal",
+      "Motion"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "API"
+    ],
+    "people": [],
+    "pricing": [
+      "$9/month",
+      "$49/month",
+      "$299/month"
+    ],
+    "markets": [
+      "marketing",
+      "game development",
+      "education",
+      "e-commerce",
+      "film and animation",
+      "IT and SaaS"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Leonardo AI has introduced new API plans and pricing structure",
+      "The company is focusing on expanding its offerings and catering to different customer segments."
+    ],
+    "opportunities": [
+      "increased revenue",
+      "expanded customer base"
+    ],
+    "threats": [
+      "increased competition",
+      "market saturation"
+    ],
+    "recommended_actions": [
+      "monitor market trends",
+      "adjust pricing strategy as needed"
+    ]
+  },
+  "key_insights": [
+    "Leonardo AI has introduced new API plans and pricing structure",
+    "The company is focusing on expanding its offerings and catering to different customer segments."
+  ],
+  "business_impact": "The new API plans and pricing structure can help Leonardo AI increase revenue and expand its customer base.",
+  "competitive_implications": "Leonardo AI's new API plans and pricing structure can help the company stay competitive in the market.",
+  "content_hash_before": null,
+  "content_hash_after": "9978575d3f5bdc78c603075d81c2794f8782e4cd0583215a492a0a9d440ea48c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,86 @@
+{
+  "id": 638,
+  "company": "Codeium",
+  "page_url": "product",
+  "detected_at": "2025-08-01T22:27:44.678Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of the Windsurf Editor, a new AI-powered IDE, with features like Cascade, Tab, and Windsurf Previews, along with the announcement of joining forces with Cognition",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Introduction of the Windsurf Editor, a new AI-powered IDE, with features like Cascade, Tab, and Windsurf Previews, along with the announcement of joining forces with Cognition",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of the Windsurf Editor",
+      "Announcement of joining forces with Cognition",
+      "Introduction of features like Cascade, Tab, and Windsurf Previews",
+      "Emphasis on AI-powered coding experience",
+      "Mention of 70M+ lines of code written by AI every day",
+      "Mention of 1M+ active users on the Windsurf Editor",
+      "Mention of 94% percent of code written by AI",
+      "Mention of 59% Fortune 500 companies building with Windsurf"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of the Windsurf Editor and its features has the potential to significantly impact the software development industry, with potential major implications for the company's market position and revenue",
+    "market_signals": [
+      "Growing demand for AI-powered coding solutions",
+      "Increasing competition in the software development industry"
+    ],
+    "competitive_implications": "The introduction of the Windsurf Editor and its features may pose a competitive threat to other companies in the software development industry, particularly those that do not have similar AI-powered coding solutions",
+    "strategic_direction": "The company's strategic direction appears to be focused on developing and marketing AI-powered coding solutions, with a focus on software development and the Windsurf Editor"
+  },
+  "entities": {
+    "products": [
+      "Windsurf Editor"
+    ],
+    "features": [
+      "Cascade",
+      "Tab",
+      "Windsurf Previews"
+    ],
+    "partnerships": [
+      "Cognition"
+    ],
+    "technologies": [
+      "AI-powered IDE"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Software development",
+      "AI-powered coding"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "The Windsurf Editor and its features have the potential to significantly impact the software development industry",
+      "The company's strategic direction is focused on developing and marketing AI-powered coding solutions"
+    ],
+    "opportunities": [
+      "Growing demand for AI-powered coding solutions",
+      "Potential for the company to establish itself as a leader in the software development industry"
+    ],
+    "threats": [
+      "Increasing competition in the software development industry",
+      "Potential for the company's AI-powered coding solutions to be replicated by competitors"
+    ],
+    "recommended_actions": [
+      "Continued investment in the development and marketing of AI-powered coding solutions",
+      "Monitoring of competitors and market trends to stay ahead of the competition"
+    ]
+  },
+  "key_insights": [
+    "The Windsurf Editor and its features have the potential to significantly impact the software development industry",
+    "The company's strategic direction is focused on developing and marketing AI-powered coding solutions"
+  ],
+  "business_impact": "The introduction of the Windsurf Editor and its features has the potential to significantly impact the software development industry, with potential major implications for the company's market position and revenue",
+  "competitive_implications": "The introduction of the Windsurf Editor and its features may pose a competitive threat to other companies in the software development industry, particularly those that do not have similar AI-powered coding solutions",
+  "content_hash_before": null,
+  "content_hash_after": "33f06bf4aba1a856506778dc47303e637d7c28b0a09546a432ba6cd443d35b28",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

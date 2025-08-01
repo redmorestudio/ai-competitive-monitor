@@ -1,0 +1,66 @@
+{
+  "id": 541,
+  "company": "Stability AI",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:44:35.647Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "The content of the pricing page has changed to a 404 error page, indicating that the original content is no longer available or has been removed.",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "The content of the pricing page has changed to a 404 error page, indicating that the original content is no longer available or has been removed.",
+    "change_type": "removal",
+    "change_scale": "major",
+    "specific_changes": [
+      "The original content of the pricing page is no longer available.",
+      "A 404 error page has been displayed instead, with links to other pages on the website."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The removal of the pricing page content could impact the company's revenue and customer acquisition strategy.",
+    "market_signals": [
+      "The company may be re-evaluating its pricing strategy in response to market changes or competition."
+    ],
+    "competitive_implications": "The removal of the pricing page content could be a competitive move to hide pricing information from competitors or to create a sense of exclusivity.",
+    "strategic_direction": "The company may be shifting its focus towards other areas of the business, such as product development or marketing."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "The original pricing page content is no longer available."
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The removal of the pricing page content is a significant change that could impact the company's business strategy.",
+      "The company may be re-evaluating its pricing strategy in response to market changes or competition."
+    ],
+    "opportunities": [
+      "The company could be creating a new pricing strategy that is more competitive or innovative."
+    ],
+    "threats": [
+      "The removal of the pricing page content could create uncertainty among customers and impact sales."
+    ],
+    "recommended_actions": [
+      "Monitor the company's website and social media for updates on pricing and business strategy.",
+      "Analyze the company's competitors to see if they have made similar changes to their pricing strategies."
+    ]
+  },
+  "key_insights": [
+    "The removal of the pricing page content is a significant change that could impact the company's business strategy.",
+    "The company may be re-evaluating its pricing strategy in response to market changes or competition."
+  ],
+  "business_impact": "The removal of the pricing page content could impact the company's revenue and customer acquisition strategy.",
+  "competitive_implications": "The removal of the pricing page content could be a competitive move to hide pricing information from competitors or to create a sense of exclusivity.",
+  "content_hash_before": null,
+  "content_hash_after": "c14d2ecb6d1d42f775537aa1a98f6c3e4838bf6d2b79575d5f4a73339cd03378",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

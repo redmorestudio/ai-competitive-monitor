@@ -1,0 +1,84 @@
+{
+  "id": 558,
+  "company": "Resemble AI",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:42:15.824Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New content added for Resemble AI pricing page",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New content added for Resemble AI pricing page",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of flexible credit packages",
+      "Description of AI voice generator and its features",
+      "Mention of case studies and research",
+      "Addition of resources and links to other pages"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update to the pricing page and the introduction of new features and products indicates a strategic move by Resemble AI to expand its offerings and attract more customers.",
+    "market_signals": [
+      "Increased focus on AI-generated content",
+      "Growing demand for voice cloning and speech-to-speech technology"
+    ],
+    "competitive_implications": "The update positions Resemble AI as a major player in the AI voice generator market, potentially threatening competitors.",
+    "strategic_direction": "The company is likely to continue investing in research and development to improve its products and stay ahead of the competition."
+  },
+  "entities": {
+    "products": [
+      "AI Voice Generator",
+      "Detect",
+      "Resemblyzer",
+      "Chatterbox"
+    ],
+    "features": [
+      "Voice Cloning",
+      "Text to Speech",
+      "Speech to Speech",
+      "Multilingual"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Generative AI",
+      "Deep Learning"
+    ],
+    "people": [],
+    "pricing": [
+      "Flexible credit packages"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Resemble AI is expanding its product offerings to include more features and technologies.",
+      "The company is focusing on providing flexible pricing options to attract a wider range of customers."
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the AI and audio industries.",
+      "Expansion into new markets and industries."
+    ],
+    "threats": [
+      "Increased competition from other AI voice generator companies.",
+      "Regulatory challenges related to the use of AI-generated content."
+    ],
+    "recommended_actions": [
+      "Monitor Resemble AI's product development and marketing strategies.",
+      "Assess the potential for partnership or collaboration with Resemble AI."
+    ]
+  },
+  "key_insights": [
+    "Resemble AI is expanding its product offerings to include more features and technologies.",
+    "The company is focusing on providing flexible pricing options to attract a wider range of customers."
+  ],
+  "business_impact": "The update to the pricing page and the introduction of new features and products indicates a strategic move by Resemble AI to expand its offerings and attract more customers.",
+  "competitive_implications": "The update positions Resemble AI as a major player in the AI voice generator market, potentially threatening competitors.",
+  "content_hash_before": null,
+  "content_hash_after": "126970cfb8c44c02eb260075381872d4c3aa208386243577c32cb6e78025dff1",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

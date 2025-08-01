@@ -1,0 +1,71 @@
+{
+  "id": 594,
+  "company": "Luma AI",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:35:43.468Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "The pricing page content was replaced with a 'Page Not Found' message",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "The pricing page content was replaced with a 'Page Not Found' message",
+    "change_type": "removal",
+    "change_scale": "major",
+    "specific_changes": [
+      "Removal of pricing information",
+      "Introduction of a 'Page Not Found' error message",
+      "Presence of social media links and footer content"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The removal of pricing information may impact customer decision-making and potentially drive them to competitors with more transparent pricing",
+    "market_signals": [
+      "Potential shift in pricing strategy",
+      "Possible rebranding or restructuring effort"
+    ],
+    "competitive_implications": "Competitors may capitalize on the lack of transparency in Luma AI's pricing strategy",
+    "strategic_direction": "Luma AI may be re-evaluating its pricing strategy to remain competitive or to prepare for a new product launch"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Removal of pricing information"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Luma AI has removed its pricing information, which may indicate a significant change in its pricing strategy",
+      "The company's social media links and footer content remain intact, suggesting that the removal of pricing information is a deliberate decision"
+    ],
+    "opportunities": [
+      "Competitors can capitalize on the lack of transparency in Luma AI's pricing strategy",
+      "Luma AI may be open to partnerships or collaborations that can help it re-evaluate its pricing strategy"
+    ],
+    "threats": [
+      "The removal of pricing information may drive customers to competitors with more transparent pricing",
+      "Luma AI's competitors may use this as an opportunity to promote their own pricing strategies"
+    ],
+    "recommended_actions": [
+      "Monitor Luma AI's website and social media channels for updates on its pricing strategy",
+      "Analyze competitors' pricing strategies to identify potential opportunities or threats",
+      "Consider reaching out to Luma AI to inquire about its pricing strategy and potential partnership opportunities"
+    ]
+  },
+  "key_insights": [
+    "Luma AI has removed its pricing information, which may indicate a significant change in its pricing strategy",
+    "The company's social media links and footer content remain intact, suggesting that the removal of pricing information is a deliberate decision"
+  ],
+  "business_impact": "The removal of pricing information may impact customer decision-making and potentially drive them to competitors with more transparent pricing",
+  "competitive_implications": "Competitors may capitalize on the lack of transparency in Luma AI's pricing strategy",
+  "content_hash_before": null,
+  "content_hash_after": "5328ad6aedb99c125875293effdec42d6dc7696e85f61eae6eada080dba74b6f",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

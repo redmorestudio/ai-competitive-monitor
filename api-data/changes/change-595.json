@@ -1,0 +1,87 @@
+{
+  "id": 595,
+  "company": "Leonardo AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:35:35.597Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Introduction of Veo 3, a new AI image and video generation feature, and updates to the website's layout and content",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of Veo 3, a new AI image and video generation feature, and updates to the website's layout and content",
+    "change_type": "addition/update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of Veo 3",
+      "Updates to the website's layout and content",
+      "New features and solutions added",
+      "Changes to the navigation and menu"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of Veo 3 and updates to the website's layout and content are likely to enhance Leonardo AI's competitive position and attract new customers",
+    "market_signals": [
+      "Growing demand for AI-powered image and video generation",
+      "Increasing competition in the AI market"
+    ],
+    "competitive_implications": "Leonardo AI's competitors may need to respond with similar offerings to remain competitive",
+    "strategic_direction": "Leonardo AI is likely to continue investing in AI research and development to maintain its competitive edge"
+  },
+  "entities": {
+    "products": [
+      "Veo 3",
+      "AI Image Generator",
+      "AI Video Generator",
+      "Transparent PNG Generator"
+    ],
+    "features": [
+      "Generate video with sound from a single prompt",
+      "Effortlessly achieve visual consistency in image generations",
+      "Flow State delivers a stream of visual possibilities"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Marketing",
+      "Graphic Design",
+      "Print on Demand",
+      "Interior Design",
+      "Architecture"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Veo 3 is a significant new feature that enhances Leonardo AI's capabilities",
+      "The website's layout and content updates improve user experience and showcase Leonardo AI's offerings"
+    ],
+    "opportunities": [
+      "Partnerships with marketing and design agencies to promote Veo 3 and other features",
+      "Expansion into new markets, such as education and healthcare"
+    ],
+    "threats": [
+      "Competition from established players in the AI market",
+      "Regulatory challenges related to AI development and deployment"
+    ],
+    "recommended_actions": [
+      "Monitor Leonardo AI's further developments and updates",
+      "Assess the potential for partnerships or collaborations with Leonardo AI"
+    ]
+  },
+  "key_insights": [
+    "Veo 3 is a significant new feature that enhances Leonardo AI's capabilities",
+    "The website's layout and content updates improve user experience and showcase Leonardo AI's offerings"
+  ],
+  "business_impact": "The introduction of Veo 3 and updates to the website's layout and content are likely to enhance Leonardo AI's competitive position and attract new customers",
+  "competitive_implications": "Leonardo AI's competitors may need to respond with similar offerings to remain competitive",
+  "content_hash_before": null,
+  "content_hash_after": "882ae5e2c3dd6e4d485349889c2c53ce2423d5f2f7a7bbd6627e5fdd70110e40",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,81 @@
+{
+  "id": 649,
+  "company": "Amazon CodeWhisperer",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:25:44.664Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of Amazon Q Developer, a generative AI assistant for software development",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Introduction of Amazon Q Developer, a generative AI assistant for software development",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Amazon Q Developer",
+      "Availability of Amazon Q Developer in various IDEs",
+      "Features such as code suggestions, agentic capabilities, and security scanning",
+      "Pricing and AWS Free Tier details"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Amazon Q Developer has the potential to significantly impact the software development industry by increasing productivity and efficiency",
+    "market_signals": [
+      "Growing demand for AI-powered development tools",
+      "Increasing competition in the software development market"
+    ],
+    "competitive_implications": "Amazon Q Developer poses a competitive threat to other development tool providers",
+    "strategic_direction": "Amazon is investing heavily in AI-powered development tools"
+  },
+  "entities": {
+    "products": [
+      "Amazon Q Developer"
+    ],
+    "features": [
+      "Code suggestions",
+      "Agentic capabilities",
+      "Security scanning"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Generative AI"
+    ],
+    "people": [],
+    "pricing": [
+      "AWS Free Tier"
+    ],
+    "markets": [
+      "Software development"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Amazon Q Developer is a major new product with significant features and capabilities",
+      "Amazon Q Developer has the potential to significantly impact the software development industry"
+    ],
+    "opportunities": [
+      "Increased productivity and efficiency for software developers",
+      "New revenue streams for Amazon"
+    ],
+    "threats": [
+      "Competition from other development tool providers",
+      "Potential disruption to traditional software development workflows"
+    ],
+    "recommended_actions": [
+      "Monitor the adoption and impact of Amazon Q Developer",
+      "Consider investing in AI-powered development tools"
+    ]
+  },
+  "key_insights": [
+    "Amazon Q Developer is a major new product with significant features and capabilities",
+    "Amazon Q Developer has the potential to significantly impact the software development industry"
+  ],
+  "business_impact": "Amazon Q Developer has the potential to significantly impact the software development industry by increasing productivity and efficiency",
+  "competitive_implications": "Amazon Q Developer poses a competitive threat to other development tool providers",
+  "content_hash_before": null,
+  "content_hash_after": "b31fec6cd8e911d9e508e434789dbe88398d1f65a5758337d5dd7be13862df49",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

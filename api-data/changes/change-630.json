@@ -1,0 +1,101 @@
+{
+  "id": 630,
+  "company": "Cursor",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:28:44.625Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "Initial pricing page content creation",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Initial pricing page content creation",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of pricing plans (Hobby, Pro, Ultra, Teams, Enterprise)",
+      "Description of features included in each plan",
+      "Pricing details for each plan",
+      "Information on custom models and API models",
+      "Details on code ownership and privacy",
+      "Introduction of the Cursor Tab feature"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of pricing plans and features suggests Cursor is transitioning from a free or beta service to a commercial offering, which could significantly impact revenue and user adoption.",
+    "market_signals": [
+      "Cursor is preparing for commercial launch or expansion",
+      "The company is targeting both individual and enterprise customers"
+    ],
+    "competitive_implications": "Cursor's pricing and feature offerings may influence the competitive landscape in the AI code editor market, potentially attracting users from competitors or prompting competitors to adjust their pricing and feature strategies.",
+    "strategic_direction": "Cursor appears to be focusing on providing a range of features and pricing options to appeal to different customer segments, while also emphasizing the value of its custom models and API models."
+  },
+  "entities": {
+    "products": [
+      "Cursor"
+    ],
+    "features": [
+      "Pro two-week trial",
+      "Limited agent requests",
+      "Limited tab completions",
+      "Extended limits on agent",
+      "Unlimited tab completions",
+      "Access to Background Agents",
+      "Access to Bugbot",
+      "Access to maximum context windows",
+      "20x usage on all OpenAI, Claude, Gemini models",
+      "Priority access to new features",
+      "Enforce Privacy Mode org-wide",
+      "Admin Dashboard with usage stats",
+      "Centralized team billing",
+      "SAML/OIDC SSO",
+      "SCIM seat management",
+      "Access control features",
+      "Priority support and account management"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "OpenAI",
+      "Claude",
+      "Gemini"
+    ],
+    "people": [],
+    "pricing": [
+      "Free (Hobby)",
+      "$20/mo (Pro)",
+      "$200/mo (Ultra)",
+      "$40/user/mo (Teams)",
+      "Custom (Enterprise)"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Cursor's pricing strategy may be designed to balance revenue goals with user adoption and retention",
+      "The company's focus on custom models and API models could be a key differentiator in the market"
+    ],
+    "opportunities": [
+      "Cursor may be able to attract users who are looking for a more comprehensive AI code editor with a range of features and pricing options",
+      "The company's emphasis on custom models and API models could create opportunities for partnerships or collaborations with other companies in the AI and coding spaces"
+    ],
+    "threats": [
+      "Cursor's pricing strategy may not be competitive with other AI code editors on the market",
+      "The company's focus on custom models and API models may not resonate with all users, potentially limiting adoption"
+    ],
+    "recommended_actions": [
+      "Monitor Cursor's pricing and feature strategies to understand their impact on the market",
+      "Analyze user feedback and adoption rates to gauge the effectiveness of Cursor's pricing and feature offerings"
+    ]
+  },
+  "key_insights": [
+    "Cursor's pricing strategy may be designed to balance revenue goals with user adoption and retention",
+    "The company's focus on custom models and API models could be a key differentiator in the market"
+  ],
+  "business_impact": "The introduction of pricing plans and features suggests Cursor is transitioning from a free or beta service to a commercial offering, which could significantly impact revenue and user adoption.",
+  "competitive_implications": "Cursor's pricing and feature offerings may influence the competitive landscape in the AI code editor market, potentially attracting users from competitors or prompting competitors to adjust their pricing and feature strategies.",
+  "content_hash_before": null,
+  "content_hash_after": "9a76be9e8625a80a7d83616620308cb84d9936fc1088a063cdcfd29ed1b53292",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

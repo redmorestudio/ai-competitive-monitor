@@ -1,0 +1,89 @@
+{
+  "id": 535,
+  "company": "Tabnine",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:45:37.784Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New pricing plans and features were introduced, including a free 30-day trial for the Dev plan and a 14-day free preview experience for the Dev Preview plan. The Enterprise plan now includes advanced AI agents, fully private deployment, and customized AI code validation rules.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New pricing plans and features were introduced, including a free 30-day trial for the Dev plan and a 14-day free preview experience for the Dev Preview plan. The Enterprise plan now includes advanced AI agents, fully private deployment, and customized AI code validation rules.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of a free 30-day trial for the Dev plan",
+      "Introduction of a 14-day free preview experience for the Dev Preview plan",
+      "Addition of advanced AI agents to the Enterprise plan",
+      "Fully private deployment option for the Enterprise plan",
+      "Customized AI code validation rules for the Enterprise plan"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of new pricing plans and features could attract more customers and increase revenue for the company.",
+    "market_signals": [
+      "Increased competition in the AI-powered software development market",
+      "Growing demand for AI-powered coding tools"
+    ],
+    "competitive_implications": "The update could give Tabnine a competitive advantage over other companies in the market.",
+    "strategic_direction": "The company is focusing on expanding its product offerings and improving its competitive position in the market."
+  },
+  "entities": {
+    "products": [
+      "Tabnine Dev",
+      "Tabnine Enterprise",
+      "Tabnine Dev Preview"
+    ],
+    "features": [
+      "AI code assistant",
+      "AI chat",
+      "AI-powered code completion",
+      "Natural language code generation",
+      "Code explanations",
+      "Test generation",
+      "AI-generated documentation",
+      "Code Review Agent"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [
+      "Tabnine Dev: $9 per month",
+      "Tabnine Enterprise: $39 per user per month"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The introduction of new pricing plans and features is a significant update to the company's offerings.",
+      "The update could attract more customers and increase revenue for the company."
+    ],
+    "opportunities": [
+      "Increased demand for AI-powered coding tools",
+      "Growing competition in the market could drive innovation and improvement."
+    ],
+    "threats": [
+      "Increased competition could lead to market saturation and decreased market share.",
+      "The update may not be enough to differentiate the company from its competitors."
+    ],
+    "recommended_actions": [
+      "Monitor the market response to the update and adjust the company's strategy accordingly.",
+      "Continue to innovate and improve the product offerings to stay competitive."
+    ]
+  },
+  "key_insights": [
+    "The introduction of new pricing plans and features is a significant update to the company's offerings.",
+    "The update could attract more customers and increase revenue for the company."
+  ],
+  "business_impact": "The introduction of new pricing plans and features could attract more customers and increase revenue for the company.",
+  "competitive_implications": "The update could give Tabnine a competitive advantage over other companies in the market.",
+  "content_hash_before": null,
+  "content_hash_after": "3216ce902972f1643737ecd7a41ef18fe65ccbc2f2fe3b177ac251c8fe4c6a82",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

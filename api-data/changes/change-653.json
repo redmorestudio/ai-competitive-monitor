@@ -1,0 +1,66 @@
+{
+  "id": 653,
+  "company": "Aleph Alpha",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:25:09.983Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "The pricing page is no longer available and now displays a 'Page not found' error",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "The pricing page is no longer available and now displays a 'Page not found' error",
+    "change_type": "removal",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Removal of pricing page content",
+      "Introduction of a 'Page not found' error message"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The removal of the pricing page may impact the company's ability to attract new customers and provide transparency about its pricing",
+    "market_signals": [
+      "Potential rebranding or pricing strategy change"
+    ],
+    "competitive_implications": "Competitors may view this change as an opportunity to gain an advantage by providing more transparent pricing information",
+    "strategic_direction": "The company may be shifting its focus towards more customized pricing or subscription-based models"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Pricing page removed"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The removal of the pricing page is a significant change that may impact the company's sales and marketing efforts",
+      "The company may be rebranding or changing its pricing strategy"
+    ],
+    "opportunities": [
+      "Competitors can capitalize on the lack of pricing transparency by providing more detailed pricing information"
+    ],
+    "threats": [
+      "The company may face a decline in sales or customer interest due to the lack of pricing information"
+    ],
+    "recommended_actions": [
+      "Monitor the company's website and marketing materials for further changes or updates",
+      "Analyze competitors' pricing strategies and adjust accordingly"
+    ]
+  },
+  "key_insights": [
+    "The removal of the pricing page is a significant change that may impact the company's sales and marketing efforts",
+    "The company may be rebranding or changing its pricing strategy"
+  ],
+  "business_impact": "The removal of the pricing page may impact the company's ability to attract new customers and provide transparency about its pricing",
+  "competitive_implications": "Competitors may view this change as an opportunity to gain an advantage by providing more transparent pricing information",
+  "content_hash_before": null,
+  "content_hash_after": "c00241c9aa6538306567ebacdfd473fbf70d25b5e473c13b6586c2aca07ee1fc",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

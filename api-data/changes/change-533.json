@@ -1,0 +1,88 @@
+{
+  "id": 533,
+  "company": "Tabnine",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:45:54.097Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content added to the homepage, including features, pricing, and resources",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content added to the homepage, including features, pricing, and resources",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Added AI code assistant features",
+      "Introduced air-gapped deployments",
+      "Emphasized private, personalized, and protected code development",
+      "Added resources section with guides, reports, and videos",
+      "Introduced new AI agents for the entire SDLC",
+      "Highlighted complete code privacy and protection from IP liability"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes indicate a significant expansion of the company's product and services, with a focus on AI-powered code development and security, which could attract new customers and increase revenue",
+    "market_signals": [
+      "Increasing demand for AI-powered code development tools",
+      "Growing importance of code security and privacy"
+    ],
+    "competitive_implications": "The changes could give Tabnine a competitive advantage in the market, as it offers a unique combination of AI-powered code development and security features",
+    "strategic_direction": "The company is likely to continue investing in AI-powered code development and security features, and expanding its product and services to meet the growing demand for these solutions"
+  },
+  "entities": {
+    "products": [
+      "Tabnine AI Code Assistant",
+      "AI Chat",
+      "Code Review Agent",
+      "Testing Agent",
+      "Code Fix Agent",
+      "Documentation Agent"
+    ],
+    "features": [
+      "Private code development",
+      "Personalized code suggestions",
+      "Protected code with zero data retention",
+      "Air-gapped deployments"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Tabnine is focusing on AI-powered code development and security",
+      "The company is emphasizing private, personalized, and protected code development",
+      "The changes could give Tabnine a competitive advantage in the market"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the code development and security space",
+      "Expansion into new markets, such as enterprise customers"
+    ],
+    "threats": [
+      "Competition from other companies offering similar AI-powered code development and security solutions",
+      "Regulatory challenges related to code security and privacy"
+    ],
+    "recommended_actions": [
+      "Monitor Tabnine's progress and adjust our own strategy accordingly",
+      "Consider partnership opportunities with Tabnine or other companies in the code development and security space"
+    ]
+  },
+  "key_insights": [
+    "Tabnine is focusing on AI-powered code development and security",
+    "The company is emphasizing private, personalized, and protected code development",
+    "The changes could give Tabnine a competitive advantage in the market"
+  ],
+  "business_impact": "The changes indicate a significant expansion of the company's product and services, with a focus on AI-powered code development and security, which could attract new customers and increase revenue",
+  "competitive_implications": "The changes could give Tabnine a competitive advantage in the market, as it offers a unique combination of AI-powered code development and security features",
+  "content_hash_before": null,
+  "content_hash_after": "31c81fe00ab63f1c1ff4c9a367b0b0c63552cfc55dff7f45faa6d5a82f0607ba",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

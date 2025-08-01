@@ -1,0 +1,87 @@
+{
+  "id": 553,
+  "company": "Runway",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:42:43.591Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New homepage content for Runway, including introduction of Aleph, a new AI research model, and updates to product, research, and company sections",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New homepage content for Runway, including introduction of Aleph, a new AI research model, and updates to product, research, and company sections",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Aleph, a new AI research model",
+      "Updates to product section, including new tools and API",
+      "Updates to research section, including new publications and initiatives",
+      "Updates to company section, including new careers and about us pages"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of Aleph and updates to product, research, and company sections indicate significant strategic moves by Runway, potentially expanding its market share and influence in the AI research and entertainment industries",
+    "market_signals": [
+      "Increased focus on AI research and development",
+      "Expansion into new markets, such as entertainment and film production"
+    ],
+    "competitive_implications": "Runway's strategic moves may pose a competitive threat to other companies in the AI research and entertainment industries, potentially disrupting market dynamics and forcing competitors to adapt",
+    "strategic_direction": "Runway's strategic direction appears to be focused on developing and applying AI research models to various industries, including entertainment, film production, and music videos"
+  },
+  "entities": {
+    "products": [
+      "Aleph",
+      "Gen-4",
+      "Act-Two"
+    ],
+    "features": [
+      "Multimodal simulators of the world",
+      "Narrative capabilities"
+    ],
+    "partnerships": [
+      "Tribeca Festival",
+      "Lionsgate"
+    ],
+    "technologies": [
+      "AI research models",
+      "General-purpose multimodal simulators"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Entertainment",
+      "Film production",
+      "Music videos"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Runway's introduction of Aleph and updates to product, research, and company sections indicate significant strategic moves",
+      "Runway's focus on AI research and development may pose a competitive threat to other companies in the industry"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Runway in the entertainment and film production industries",
+      "Potential for collaboration on AI research and development projects"
+    ],
+    "threats": [
+      "Competitive threat from Runway's strategic moves in the AI research and entertainment industries",
+      "Potential disruption to market dynamics and forced adaptation by competitors"
+    ],
+    "recommended_actions": [
+      "Monitor Runway's strategic moves and market developments",
+      "Consider partnership opportunities with Runway in the entertainment and film production industries",
+      "Develop strategies to address potential competitive threats from Runway's AI research and development focus"
+    ]
+  },
+  "key_insights": [
+    "Runway's introduction of Aleph and updates to product, research, and company sections indicate significant strategic moves",
+    "Runway's focus on AI research and development may pose a competitive threat to other companies in the industry"
+  ],
+  "business_impact": "The introduction of Aleph and updates to product, research, and company sections indicate significant strategic moves by Runway, potentially expanding its market share and influence in the AI research and entertainment industries",
+  "competitive_implications": "Runway's strategic moves may pose a competitive threat to other companies in the AI research and entertainment industries, potentially disrupting market dynamics and forcing competitors to adapt",
+  "content_hash_before": null,
+  "content_hash_after": "a425f8bd85883b918e8c16b5ce0a0caa11961e17c718b22e1d8ba700ad475c58",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

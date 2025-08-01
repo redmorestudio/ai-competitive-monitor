@@ -1,0 +1,90 @@
+{
+  "id": 623,
+  "company": "DataRobot",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:29:28.906Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New homepage content with updated product information, partnerships, and customer testimonials",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New homepage content with updated product information, partnerships, and customer testimonials",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Added new sections for 'Why DataRobot', 'Apps & Agents', 'Platform', 'Resources', and 'About'",
+      "Updated product descriptions and features",
+      "Highlighted partnerships with NVIDIA and SAP",
+      "Added customer testimonials and success stories"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates suggest a stronger focus on enterprise AI and partnerships, which could lead to increased revenue and market share",
+    "market_signals": [
+      "Growing demand for enterprise AI solutions",
+      "Increasing importance of partnerships in the AI industry"
+    ],
+    "competitive_implications": "The updates could pose a competitive threat to other AI companies, particularly those focused on enterprise solutions",
+    "strategic_direction": "DataRobot appears to be focusing on expanding its product offerings and partnerships to become a leading player in the enterprise AI market"
+  },
+  "entities": {
+    "products": [
+      "AI Apps & Agents",
+      "Agentic AI Platform",
+      "Covalent",
+      "syftr"
+    ],
+    "features": [
+      "AI Governance",
+      "AI Observability",
+      "AI Foundation"
+    ],
+    "partnerships": [
+      "NVIDIA",
+      "SAP"
+    ],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [
+      "John Fanelli, Vice President, Enterprise Software at NVIDIA"
+    ],
+    "pricing": [],
+    "markets": [
+      "Enterprise AI",
+      "AI Governance",
+      "ML Operations"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "DataRobot is expanding its product offerings to include more AI solutions",
+      "Partnerships with NVIDIA and SAP are key to DataRobot's strategy"
+    ],
+    "opportunities": [
+      "Growing demand for enterprise AI solutions",
+      "Increasing importance of partnerships in the AI industry"
+    ],
+    "threats": [
+      "Intensifying competition in the AI industry",
+      "Potential challenges in integrating new products and partnerships"
+    ],
+    "recommended_actions": [
+      "Monitor DataRobot's progress and adjust competitive strategy accordingly",
+      "Consider partnering with DataRobot or other AI companies to stay competitive"
+    ]
+  },
+  "key_insights": [
+    "DataRobot is expanding its product offerings to include more AI solutions",
+    "Partnerships with NVIDIA and SAP are key to DataRobot's strategy"
+  ],
+  "business_impact": "The updates suggest a stronger focus on enterprise AI and partnerships, which could lead to increased revenue and market share",
+  "competitive_implications": "The updates could pose a competitive threat to other AI companies, particularly those focused on enterprise solutions",
+  "content_hash_before": null,
+  "content_hash_after": "3e6949a4fd732ed261cfc6cc6b35ab0ddfc677b9297e3fb6b3bcc94de7ca1fd5",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,99 @@
+{
+  "id": 583,
+  "company": "Mistral AI",
+  "page_url": "docs",
+  "detected_at": "2025-08-01T22:37:54.081Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "Initial documentation release",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Initial documentation release",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Mistral AI documentation",
+      "Release of premier and free models information",
+      "Introduction of Mistral AI APIs and capabilities"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The release of documentation, premier and free models, and APIs is a major strategic move that showcases Mistral AI's capabilities and products, potentially attracting developers and enterprises to build new products and applications",
+    "market_signals": [
+      "Increased competition in the AI market",
+      "Growing demand for open-source and commercial LLMs"
+    ],
+    "competitive_implications": "Mistral AI is positioning itself as a leader in the AI market with its state-of-the-art models and capabilities, potentially threatening competitors",
+    "strategic_direction": "Mistral AI is focusing on building and releasing premier and free models, as well as providing APIs and documentation to support developers and enterprises"
+  },
+  "entities": {
+    "products": [
+      "Mistral Medium",
+      "Codestral",
+      "Mistral OCR",
+      "Mistral Saba",
+      "Mistral Large",
+      "Pixtral Large",
+      "Ministral 3B",
+      "Ministral 8B",
+      "Mistral Embed",
+      "Mistral Moderation",
+      "Mistral Small",
+      "Devstral Small",
+      "Pixtral",
+      "Mistral NeMo",
+      "Codestral Mamba",
+      "Mathstral 7b"
+    ],
+    "features": [
+      "Text generation",
+      "Vision",
+      "OCR",
+      "Code generation",
+      "Embeddings",
+      "Function calling",
+      "Citations",
+      "Structured Outputs",
+      "Fine-tuning",
+      "Guardrailing"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Large Language Models (LLMs)",
+      "APIs"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Mistral AI is releasing a wide range of premier and free models",
+      "The company is providing APIs and documentation to support developers and enterprises"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Mistral AI",
+      "Integration of Mistral AI models and APIs into existing products and applications"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential for Mistral AI to become a dominant player in the market"
+    ],
+    "recommended_actions": [
+      "Monitor Mistral AI's releases and updates",
+      "Consider partnering with Mistral AI or integrating their models and APIs into existing products and applications"
+    ]
+  },
+  "key_insights": [
+    "Mistral AI is releasing a wide range of premier and free models",
+    "The company is providing APIs and documentation to support developers and enterprises"
+  ],
+  "business_impact": "The release of documentation, premier and free models, and APIs is a major strategic move that showcases Mistral AI's capabilities and products, potentially attracting developers and enterprises to build new products and applications",
+  "competitive_implications": "Mistral AI is positioning itself as a leader in the AI market with its state-of-the-art models and capabilities, potentially threatening competitors",
+  "content_hash_before": null,
+  "content_hash_after": "ea5dca90a85938b0203c2d5185069e715d945ce67806d525ee8b88dec932e948",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

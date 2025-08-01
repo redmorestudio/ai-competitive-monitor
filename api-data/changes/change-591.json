@@ -1,0 +1,87 @@
+{
+  "id": 591,
+  "company": "Meta AI",
+  "page_url": "api",
+  "detected_at": "2025-08-01T22:36:24.378Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of Llama 4 models with native multimodality, advanced reasoning, and industry-leading context windows",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Introduction of Llama 4 models with native multimodality, advanced reasoning, and industry-leading context windows",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Llama 4 models announced",
+      "Native multimodality feature introduced",
+      "Advanced reasoning capabilities added",
+      "Industry-leading context windows implemented",
+      "Llama API and Llama Stack introduced for seamless deployment",
+      "Partnership with AWS for startup support announced"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Enhanced competitiveness in AI market, potential for increased revenue and market share",
+    "market_signals": [
+      "Increased investment in AI technology",
+      "Growing demand for AI solutions"
+    ],
+    "competitive_implications": "Competitors may need to respond with similar investments in AI technology to remain competitive",
+    "strategic_direction": "Expansion into AI market, increased focus on innovation and R&D"
+  },
+  "entities": {
+    "products": [
+      "Llama 4",
+      "Llama API",
+      "Llama Stack"
+    ],
+    "features": [
+      "Native multimodality",
+      "Advanced reasoning",
+      "Industry-leading context windows"
+    ],
+    "partnerships": [
+      "AWS"
+    ],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "AI market",
+      "Startup ecosystem"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Llama 4 models offer significant advancements in AI technology",
+      "Partnership with AWS indicates growing ecosystem for AI startups"
+    ],
+    "opportunities": [
+      "Potential for increased adoption of Llama 4 models",
+      "Growing demand for AI solutions in various industries"
+    ],
+    "threats": [
+      "Competitors may respond with similar investments in AI technology",
+      "Regulatory challenges in AI market"
+    ],
+    "recommended_actions": [
+      "Monitor competitor responses to Llama 4 models",
+      "Explore potential applications of Llama 4 models in various industries"
+    ]
+  },
+  "key_insights": [
+    "Llama 4 models offer significant advancements in AI technology",
+    "Partnership with AWS indicates growing ecosystem for AI startups"
+  ],
+  "business_impact": "Enhanced competitiveness in AI market, potential for increased revenue and market share",
+  "competitive_implications": "Competitors may need to respond with similar investments in AI technology to remain competitive",
+  "content_hash_before": null,
+  "content_hash_after": "743f740fb962ed96beb181fefd8ab25a0c855782d3291f96eb8d19c5ccf865bc",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

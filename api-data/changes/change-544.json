@@ -1,0 +1,93 @@
+{
+  "id": 544,
+  "company": "Sourcegraph",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:44:12.809Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog content and features announced",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog content and features announced",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of Deep Search feature",
+      "Changes to Cody Free, Pro, and Enterprise Starter plans",
+      "Announcement of Sourcegraph Enterprise Starter",
+      "Introduction of Agentic chat and auto-edit features",
+      "Partnership with DX to measure and improve developer productivity"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes could lead to increased adoption of Sourcegraph's products and features, potentially disrupting the competitive landscape",
+    "market_signals": [
+      "Growing demand for AI-powered code search and development tools",
+      "Increasing importance of developer productivity and efficiency"
+    ],
+    "competitive_implications": "Sourcegraph's updates could pose a competitive threat to other companies in the software development and enterprise software markets",
+    "strategic_direction": "Sourcegraph is focusing on AI-powered code search and development tools, with a emphasis on developer productivity and efficiency"
+  },
+  "entities": {
+    "products": [
+      "Cody",
+      "Code Search",
+      "Batch Changes",
+      "Amp"
+    ],
+    "features": [
+      "Deep Search",
+      "Agentic chat",
+      "auto-edit"
+    ],
+    "partnerships": [
+      "DX"
+    ],
+    "technologies": [
+      "AI",
+      "code search"
+    ],
+    "people": [
+      "Kelvin Yap",
+      "Steve Yegge",
+      "Ado Kukic",
+      "Quinn Slack"
+    ],
+    "pricing": [
+      "Cody Free, Pro, and Enterprise Starter plans"
+    ],
+    "markets": [
+      "software development",
+      "enterprise software"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Sourcegraph is investing heavily in AI-powered code search and development tools",
+      "The company is expanding its product offerings and features to meet growing demand"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Sourcegraph to leverage its AI-powered code search and development tools",
+      "Potential for increased adoption of Sourcegraph's products and features"
+    ],
+    "threats": [
+      "Competitive threat from Sourcegraph's updates to other companies in the software development and enterprise software markets"
+    ],
+    "recommended_actions": [
+      "Monitor Sourcegraph's product updates and feature announcements",
+      "Consider partnership opportunities with Sourcegraph to leverage its AI-powered code search and development tools"
+    ]
+  },
+  "key_insights": [
+    "Sourcegraph is investing heavily in AI-powered code search and development tools",
+    "The company is expanding its product offerings and features to meet growing demand"
+  ],
+  "business_impact": "The changes could lead to increased adoption of Sourcegraph's products and features, potentially disrupting the competitive landscape",
+  "competitive_implications": "Sourcegraph's updates could pose a competitive threat to other companies in the software development and enterprise software markets",
+  "content_hash_before": null,
+  "content_hash_after": "344400fc3320838e362e913964f0bd970b945809ab5b54aad4fd6570d5ba27e4",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

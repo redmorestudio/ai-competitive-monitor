@@ -1,0 +1,77 @@
+{
+  "id": 640,
+  "company": "Cerebras",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:27:31.276Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content added to the homepage, including product announcements, customer spotlights, and AI model services",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content added to the homepage, including product announcements, customer spotlights, and AI model services",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Qwen3-480B coder",
+      "Mention of Cerebras Inference running 20x faster than ChatGPT",
+      "Customer spotlights for AlphaSense and Mayo Clinic",
+      "Introduction of AI Model Services"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest that Cerebras is expanding its product offerings and services, which could lead to increased revenue and market share",
+    "market_signals": [
+      "Increased competition in the AI market",
+      "Growing demand for fast and accurate AI models"
+    ],
+    "competitive_implications": "Cerebras is positioning itself as a leader in the AI market, which could pose a threat to competitors such as NVIDIA",
+    "strategic_direction": "Cerebras is focusing on developing and marketing its AI products and services, with a emphasis on speed and accuracy"
+  },
+  "entities": {
+    "products": [
+      "Qwen3-480B coder",
+      "Cerebras Inference"
+    ],
+    "features": [
+      "20x faster than ChatGPT",
+      "AI Model Services"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Cerebras Wafer Scale Engine"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Cerebras is introducing new products and services to expand its offerings",
+      "The company is focusing on speed and accuracy in its AI models"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Cerebras to develop and market new AI products and services",
+      "Investment opportunities in Cerebras or its competitors"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential disruption to existing business models"
+    ],
+    "recommended_actions": [
+      "Monitor Cerebras' product and service offerings",
+      "Assess the potential impact of Cerebras' products and services on existing business models"
+    ]
+  },
+  "key_insights": [
+    "Cerebras is introducing new products and services to expand its offerings",
+    "The company is focusing on speed and accuracy in its AI models"
+  ],
+  "business_impact": "The changes suggest that Cerebras is expanding its product offerings and services, which could lead to increased revenue and market share",
+  "competitive_implications": "Cerebras is positioning itself as a leader in the AI market, which could pose a threat to competitors such as NVIDIA",
+  "content_hash_before": null,
+  "content_hash_after": "041ab3d4c505748da1a4d8b085c0b374c7fac8f7dcc83998c71f531207dc32a1",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

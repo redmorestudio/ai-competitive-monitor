@@ -1,0 +1,65 @@
+{
+  "id": 614,
+  "company": "Flux",
+  "page_url": "product",
+  "detected_at": "2025-08-01T22:30:42.948Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "The content of the product page changed from no content to a 404 error page",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "The content of the product page changed from no content to a 404 error page",
+    "change_type": "update",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of a 404 error message",
+      "Removal of any potential product information"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may impact customer perception and trust in the company, potentially affecting sales and revenue",
+    "market_signals": [
+      "Potential rebranding or restructuring",
+      "Removal of a product line"
+    ],
+    "competitive_implications": "Competitors may capitalize on the uncertainty surrounding Flux's product offerings",
+    "strategic_direction": "Flux may be shifting focus towards new products or services, or undergoing a significant transformation"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The 404 error page may be temporary, but it raises questions about the company's product strategy",
+      "The lack of information on the product page may lead to customer confusion and dissatisfaction"
+    ],
+    "opportunities": [
+      "Competitors can offer alternative products or services to fill the potential gap left by Flux"
+    ],
+    "threats": [
+      "Loss of customer trust and loyalty due to the uncertainty surrounding Flux's product offerings"
+    ],
+    "recommended_actions": [
+      "Monitor Flux's website and social media for updates on their product strategy",
+      "Analyze customer feedback and sentiment to understand the impact of the change"
+    ]
+  },
+  "key_insights": [
+    "The 404 error page may be temporary, but it raises questions about the company's product strategy",
+    "The lack of information on the product page may lead to customer confusion and dissatisfaction"
+  ],
+  "business_impact": "The change may impact customer perception and trust in the company, potentially affecting sales and revenue",
+  "competitive_implications": "Competitors may capitalize on the uncertainty surrounding Flux's product offerings",
+  "content_hash_before": null,
+  "content_hash_after": "6f59c3475028f4f792bd077c18d1ed46b90a099f74b8ff7fa6d1b0ce96b6443a",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
