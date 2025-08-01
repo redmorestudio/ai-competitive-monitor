@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Controls Module</title>
+</head>
+<body>
+    <h1>Testing Controls Module</h1>
+    <script type="module">
+        import { initControls } from './js/modules/controls.js';
+        
+        console.log('Testing controls module...');
+        
+        try {
+            initControls();
+            console.log('✅ Controls module loaded successfully');
+            console.log('Available functions:', Object.keys(window.controls));
+        } catch (error) {
+            console.error('❌ Error loading controls module:', error);
+        }
+    </script>
+</body>
+</html>

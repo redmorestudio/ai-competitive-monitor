@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Competitive Monitor - 3D Force Graph</title>
+    <link rel="stylesheet" href="css/graph.css">
+    <style>
+        /* Additional page-specific styles */
+        #loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            color: #00ff88;
+            text-align: center;
+        }
+        
+        #debug {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(20, 20, 30, 0.9);
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            font-size: 10px;
+            z-index: 100;
+            max-width: 300px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+    <!-- Fixed CDN links with HTTPS and specific versions -->
+    <script src="https://unpkg.com/three@0.152.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three-spritetext@1.8.0/dist/three-spritetext.min.js"></script>
+    <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
+</head>
+<body>
+    <div id="loading">
+        Loading AI Competitive Intelligence Graph...<br/>
+        <div style="font-size: 14px; margin-top: 10px;">v3.0 Modular - July 31, 2025</div>
+    </div>
+    <div id="info" style="display: none;">
+        <h3>AI Competitive Monitor</h3>
+        <div id="node-info">Hover over nodes for details</div>
+    </div>
+    
+    <div id="controls" style="display: none;">
+        <div class="control-group">
+            <label>View Mode:</label>
+            <select id="viewMode">
+                <option value="companies">Company Network</option>
+                <option value="technologies">Technology Landscape</option>
+                <option value="concepts">AI/ML Concepts</option>
+                <option value="changes">Recent Changes</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label>Filter by Type:</label>
+            <select id="filterType">
+                <option value="all">All Companies</option>
+                <option value="LLM Providers">LLM Providers</option>
+                <option value="AI Coding">AI Coding</option>
+                <option value="Image Generation">Image Generation</option>
+                <option value="AI Search">AI Search</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <button id="toggleParticles">Toggle Particles</button>
+        </div>
+        <div class="control-group">
+            <button id="resetView">Reset View</button>
+        </div>
+    </div>
+    
+    <div id="stats" style="display: none;">
+        <div id="statsContent"></div>
+    </div>
+
+    <div id="debug" style="display: none;">
+        <strong>Debug Info:</strong><br/>
+        <div id="debugContent"></div>
+    </div>
+    
+    <div id="3d-graph"></div>
+
+    <script type="module">
+        import { CONFIG } from './js/modules/config.js';
+        import { fetchWithRetry } from './js/modules/utils.js';
+        import * as Graph3D from './js/modules/graph-3d.js';
+
+        // Debug function
+        function debug(message) {
+            console.log(message);
+            const debugElement = document.getElementById('debugContent');
+            if (debugElement) {
+                debugElement.innerHTML += message + '<br/>';
+            }
+        }
+
+        // Update statistics display
+        function updateStats() {
+            const stats = Graph3D.getStats();
+            
+            document.getElementById('statsContent').innerHTML = `
+                <strong>Network Stats:</strong><br/>
+                Companies: ${stats.companies}<br/>
+                Total Changes: ${stats.totalChanges}<br/>
+                High Interest: ${stats.highInterestChanges}<br/>
+                Nodes: ${stats.nodes}<br/>
+                Links: ${stats.links}
+            `;
+        }
+
+        // Initialize the application
+        async function init() {
+            try {
+                debug('Starting application initialization...');
+                
+                // Show debug panel
+                document.getElementById('debug').style.display = 'block';
+                
+                // Fetch dashboard data
+                const cacheBuster = Date.now();
+                const dashboardUrl = `${CONFIG.api.baseUrl}/dashboard.json?v=${cacheBuster}`;
+                debug(`Fetching: ${dashboardUrl}`);
+                
+                const dashboardData = await fetchWithRetry(dashboardUrl);
+                debug(`Loaded data: ${dashboardData.companies.length} companies`);
+                
+                // Debug: Show company data
+                dashboardData.companies.forEach((company, i) => {
+                    debug(`${i+1}. ${company.name} (${company.category})`);
+                    if (company.intelligence && company.intelligence.ai_technologies) {
+                        debug(`   Tech: ${company.intelligence.ai_technologies.slice(0, 3).join(', ')}`);
+                    }
+                });
+                
+                // Hide loading, show controls
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('info').style.display = 'block';
+                document.getElementById('controls').style.display = 'block';
+                document.getElementById('stats').style.display = 'block';
+                
+                // Initialize the graph
+                await Graph3D.initGraph('3d-graph', { dashboard: dashboardData });
+                
+                // Update statistics
+                updateStats();
+                
+                debug('Application initialization complete!');
+                
+            } catch (error) {
+                console.error('Error during initialization:', error);
+                debug(`ERROR: ${error.message}`);
+                document.getElementById('loading').innerHTML = `Error loading data: ${error.message}`;
+            }
+        }
+
+        // Event handlers
+        document.getElementById('viewMode').addEventListener('change', (e) => {
+            Graph3D.changeView(e.target.value);
+            updateStats();
+        });
+
+        document.getElementById('filterType').addEventListener('change', (e) => {
+            Graph3D.filterByType(e.target.value);
+            updateStats();
+        });
+
+        document.getElementById('toggleParticles').addEventListener('click', () => {
+            const enabled = Graph3D.toggleParticles();
+            debug(`Particles: ${enabled}`);
+        });
+
+        document.getElementById('resetView').addEventListener('click', () => {
+            Graph3D.resetView();
+        });
+
+        // Initialize on load
+        init();
+    </script>
+</body>
+</html>
