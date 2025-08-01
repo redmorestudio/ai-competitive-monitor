@@ -17,6 +17,7 @@ import { formatDate, getRelativeTime, storage, escapeHtml, formatTimeAgo, getInt
 import { initControls } from './controls.js';
 import { initFilters, applyFilters, createFilterUI } from './filters.js';
 import { dashboard } from './dashboard.js';
+import { ui } from './ui.js';
 
 // Global application state
 const appState = {
@@ -48,21 +49,24 @@ export async function init() {
         // 2. Initialize dashboard UI
         dashboard.init();
         
-        // 3. Initialize filters
+        // 3. Initialize UI module
+        ui.init();
+        
+        // 4. Initialize filters
         initFilters(handleFiltersChanged);
         
-        // 4. Set up state listeners
+        // 5. Set up state listeners
         setupStateListeners();
         
-        // 5. Load initial data
+        // 6. Load initial data
         await loadInitialData();
         
-        // 6. Set up auto-refresh if enabled
+        // 7. Set up auto-refresh if enabled
         if (features.enableAutoRefresh && timingConfig.autoRefresh) {
             setupAutoRefresh();
         }
         
-        // 7. Set up global event handlers
+        // 8. Set up global event handlers
         setupGlobalHandlers();
         
         appState.initialized = true;
@@ -251,7 +255,7 @@ async function loadChangesTab() {
         
         // Apply filters and display
         const filteredChanges = applyFilters(changes);
-        displayChanges(filteredChanges);
+        ui.displayChanges(filteredChanges);
         
     } catch (error) {
         console.error('Error loading changes:', error);
@@ -259,65 +263,7 @@ async function loadChangesTab() {
     }
 }
 
-/**
- * Display filtered changes
- */
-function displayChanges(changes) {
-    const changesContent = document.getElementById('changesContent');
-    if (!changesContent) return;
-    
-    if (!changes || changes.length === 0) {
-        changesContent.innerHTML = '<p>No changes found matching the filters.</p>';
-        return;
-    }
-    
-    // Group changes by date
-    const changesByDate = {};
-    changes.forEach(change => {
-        const date = new Date(change.detected_at || change.detectedAt).toLocaleDateString();
-        if (!changesByDate[date]) {
-            changesByDate[date] = [];
-        }
-        changesByDate[date].push(change);
-    });
-    
-    // Generate HTML
-    let html = '';
-    Object.entries(changesByDate)
-        .sort(([a], [b]) => new Date(b) - new Date(a))
-        .forEach(([date, dateChanges]) => {
-            html += `<h4>${date}</h4>`;
-            html += '<div class="changes-list">';
-            
-            dateChanges.forEach(change => {
-                html += renderChangeItem(change);
-            });
-            
-            html += '</div>';
-        });
-    
-    changesContent.innerHTML = html;
-}
 
-/**
- * Render a single change item
- */
-function renderChangeItem(change) {
-    const timeAgo = formatTimeAgo(new Date(change.detected_at || change.detectedAt));
-    const interestEmoji = getInterestEmoji(change.interest_level);
-    
-    return `
-        <div class="change-item" onclick="window.controls.showChangeDetail('${change.id}', '${escapeHtml(change.company)}', event)">
-            <div class="change-header">
-                <span class="company">${escapeHtml(change.company)}</span>
-                <span class="interest">${interestEmoji} ${change.interest_level}/10</span>
-            </div>
-            <div class="change-url">${escapeHtml(change.url)}</div>
-            <div class="change-type">${escapeHtml(change.change_type)}</div>
-            <div class="change-time">${timeAgo}</div>
-        </div>
-    `;
-}
 
 /**
  * Handle filter changes
@@ -407,6 +353,15 @@ export const app = {
 
 // Make app globally available
 window.app = app;
+
+// Also expose utilities globally for backward compatibility
+window.utils = {
+    escapeHtml,
+    formatTimeAgo,
+    getInterestEmoji,
+    formatDate,
+    getRelativeTime
+};
 
 // Export for module usage
 export default app;
