@@ -1,65 +1,3484 @@
 {
-  "recent_changes_summary": {
-    "last_5_changes": [
-      {
-        "change_id": 486,
-        "company": "OpenAI",
-        "url": "blog",
-        "summary": "The website content has been completely overhauled, shifting from a security verification page to a full-fledged OpenAI blog and news site.",
-        "interest_level": 9,
-        "time_ago": "2 hours ago",
-        "detected_at": "2025-08-01T19:20:20.321Z",
-        "change_type": "modified"
+  "companies": [
+    {
+      "id": 7,
+      "name": "AI21 Labs",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 30,
+          "url": "https://ai21.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 33,
+          "url": "https://ai21.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 31,
+          "url": "https://ai21.com/jamba",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 32,
+          "url": "https://ai21.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
       },
-      {
-        "change_id": 487,
-        "company": "OpenAI",
-        "url": "product",
-        "summary": "The content changed from a security verification page for www.perplexity.ai to a ChatGPT interface",
-        "interest_level": 9,
-        "time_ago": "2 hours ago",
-        "detected_at": "2025-08-01T19:20:13.064Z",
-        "change_type": "modified"
-      },
-      {
-        "change_id": 488,
-        "company": "OpenAI",
-        "url": "pricing",
-        "summary": "The content changed from a security verification page to a pricing page for ChatGPT by OpenAI, revealing various plans and features.",
-        "interest_level": 9,
-        "time_ago": "2 hours ago",
-        "detected_at": "2025-08-01T19:20:07.000Z",
-        "change_type": "modified"
-      },
-      {
-        "change_id": 480,
-        "company": "Google DeepMind",
-        "url": "blog",
-        "summary": "New articles and updates were added to the Google Blog, including 'Google Earth AI', 'The inside story of building NotebookLM', and updates to Gemini Code Assist and Gemini CLI.",
-        "interest_level": 8,
-        "time_ago": "3 hours ago",
-        "detected_at": "2025-08-01T18:39:22.393Z",
-        "change_type": "modified"
-      },
-      {
-        "change_id": 482,
-        "company": "GitHub Copilot",
-        "url": "docs",
-        "summary": "Billing section updated to reflect changes in organization and enterprise billing",
-        "interest_level": 6,
-        "time_ago": "3 hours ago",
-        "detected_at": "2025-08-01T18:38:57.523Z",
-        "change_type": "modified"
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
       }
-    ],
-    "last_24h_count": 7,
-    "last_7d_count": 14,
-    "high_priority_last_7d": 9
-  },
-  "companies": [],
-  "lastUpdated": "2025-08-01T22:01:49.989Z",
-  "totalChanges": 0,
-  "highInterestChanges": 0,
-  "backend": "postgresql",
-  "company_activity": []
+    },
+    {
+      "id": 9,
+      "name": "Aleph Alpha",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 37,
+          "url": "https://aleph-alpha.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 38,
+          "url": "https://aleph-alpha.com/luminous",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 39,
+          "url": "https://aleph-alpha.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 40,
+          "url": "https://docs.aleph-alpha.com",
+          "type": "docs",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 16,
+      "name": "Amazon CodeWhisperer",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 67,
+          "url": "https://aws.amazon.com/blogs/aws/tag/amazon-codewhisperer",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 65,
+          "url": "https://aws.amazon.com/codewhisperer",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 66,
+          "url": "https://aws.amazon.com/codewhisperer/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 68,
+          "url": "https://docs.aws.amazon.com/codewhisperer",
+          "type": "docs",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 49,
+      "name": "AMD",
+      "category": "AI Hardware",
+      "urls": [
+        {
+          "id": 165,
+          "url": "https://amd.com/en/graphics/instinct-server-accelerators",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 166,
+          "url": "https://amd.com/en/newsroom",
+          "type": "news",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 22,
+      "name": "Andi",
+      "category": "AI Search",
+      "urls": [
+        {
+          "id": 85,
+          "url": "https://andisearch.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 2,
+      "name": "Anthropic",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 6,
+          "url": "https://anthropic.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 7,
+          "url": "https://anthropic.com/claude",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 9,
+          "url": "https://anthropic.com/news",
+          "type": "news",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 8,
+          "url": "https://anthropic.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 10,
+          "url": "https://docs.anthropic.com",
+          "type": "docs",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "id": 484,
+          "url": "product",
+          "detectedAt": "2025-08-01T18:38:27.433Z",
+          "relativeTime": "4 hours ago",
+          "interestLevel": 4,
+          "summary": "{\"change_summary\":{\"what_changed\":\"The download link for Claude's app has been updated with a new URL\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Updated download link for Claude's app from https://claude.ai/redirect/website.v1.d125650c-4414-41bc-834b-2158785bb504/download to https://claude.ai/redirect/website.v1.04abeae8-1daf-4c6b-93e5-263ba2b851c7/download\"]},\"interest_assessment\":{\"interest_level\":4,\"reasoning\":\"The change is minor and only affects the download link for Claude's app. It does not indicate any significant updates or changes to the product or service.\",\"category\":\"minor_change\",\"confidence\":0.8},\"entities\":{\"products\":[\"Claude\"],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The updated download link may improve the user experience for customers trying to download the app, but it is unlikely to have a significant impact on the business.\",\"market_signals\":[\"Maintenance and updates to existing products\"],\"competitive_implications\":\"The change does not indicate any significant competitive advantages or disadvantages.\",\"strategic_direction\":\"The company is likely focused on maintaining and improving its existing products and services.\"},\"insights\":{\"key_findings\":[\"The company is actively maintaining and updating its products\"],\"opportunities\":[\"Improved user experience for customers\"],\"threats\":[\"Potential technical issues with the updated download link\"],\"recommended_actions\":[\"Monitor the updated download link for any technical issues\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 485,
+          "url": "news",
+          "detectedAt": "2025-08-01T18:38:20.653Z",
+          "relativeTime": "4 hours ago",
+          "interestLevel": 7,
+          "summary": "{\"change_summary\":{\"what_changed\":\"Addition of new news articles and removal of older ones, update of Anthropic's newsroom page\",\"change_type\":\"update\",\"change_scale\":\"significant\",\"specific_changes\":[\"Addition of 'Anthropic Signs CMS Health Tech Ecosystem Pledge to Advance Healthcare Interoperability' article\",\"Removal of older news articles to make room for newer ones\",\"Update of page structure to accommodate new content\"]},\"interest_assessment\":{\"interest_level\":7,\"reasoning\":\"The changes indicate an active effort by Anthropic to update its newsroom with fresh content, potentially signaling new developments or initiatives within the company.\",\"category\":\"product_update\",\"confidence\":0.8},\"entities\":{\"products\":[\"Claude\"],\"features\":[\"Web search\",\"Claude Code\"],\"partnerships\":[\"University of Chicago's Becker Friedman Institute\",\"Department of Defense\"],\"technologies\":[\"Anthropic API\",\"Google Cloud's Vertex AI\"],\"people\":[\"Paul Smith\",\"Richard Fontaine\",\"Reed Hastings\",\"Guillaume Princen\"],\"pricing\":[],\"markets\":[\"Healthcare\",\"Education\",\"Financial Services\"]},\"strategic_analysis\":{\"business_impact\":\"The updates suggest Anthropic is expanding its reach and capabilities, potentially increasing its competitiveness in the AI market.\",\"market_signals\":[\"Increased focus on healthcare and education\",\"Expansion of partnerships and collaborations\"],\"competitive_implications\":\"Anthropic's active updates and expansions may pressure competitors to accelerate their own development and partnership efforts.\",\"strategic_direction\":\"Anthropic appears to be focusing on applying AI to various industries and expanding its services, indicating a strategic direction towards becoming a leading AI solutions provider.\"},\"insights\":{\"key_findings\":[\"Anthropic is actively updating its newsroom with new content\",\"The company is expanding its partnerships and collaborations\"],\"opportunities\":[\"Potential for increased adoption of Anthropic's AI solutions in new markets\",\"Opportunities for partnerships and collaborations with other companies\"],\"threats\":[\"Increased competition in the AI market\",\"Potential regulatory challenges in new markets\"],\"recommended_actions\":[\"Monitor Anthropic's newsroom for further updates\",\"Analyze the company's partnerships and collaborations for potential opportunities or threats\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 454,
+          "url": "homepage",
+          "detectedAt": "2025-07-29T14:45:29.310Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 3,
+          "summary": "{\"change_summary\":{\"what_changed\":\"Update of download and login links for Claude.ai\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Updated download link for Claude.ai from https://claude.ai/redirect/website.v1.f1d860cf-d18a-4694-bb3d-9d8f5920d73d/download to https://claude.ai/redirect/website.v1.d125650c-4414-41bc-834b-2158785bb504/download\",\"Updated login link for Claude.ai from https://claude.ai/redirect/website.v1.f1d860cf-d18a-4694-bb3d-9d8f5920d73d/login to https://claude.ai/redirect/website.v1.d125650c-4414-41bc-834b-2158785bb504/login\"]},\"interest_assessment\":{\"interest_level\":3,\"reasoning\":\"The change is minor and only affects the download and login links for Claude.ai, which does not indicate any significant strategic moves or updates.\",\"category\":\"minor_change\",\"confidence\":0.8},\"entities\":{\"products\":[\"Claude.ai\"],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No significant business impact is expected from this minor update.\",\"market_signals\":[\"Maintenance and updates of existing products\"],\"competitive_implications\":\"No competitive implications are expected from this minor update.\",\"strategic_direction\":\"The update does not indicate any change in the company's strategic direction.\"},\"insights\":{\"key_findings\":[\"Minor update of download and login links for Claude.ai\"],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[\"Continue monitoring the company's updates and announcements for any significant changes or strategic moves.\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 455,
+          "url": "product",
+          "detectedAt": "2025-07-29T14:45:23.411Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 3,
+          "summary": "{\"change_summary\":{\"what_changed\":\"The URL parameters for downloading the Claude app and logging in have changed.\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Updated download app URL from https://claude.ai/redirect/website.v1.e0360d15-f344-4083-ad78-29350c54037c/download to https://claude.ai/redirect/website.v1.d125650c-4414-41bc-834b-2158785bb504/download\",\"Updated log in URL from https://claude.ai/redirect/website.v1.e0360d15-f344-4083-ad78-29350c54037c to https://claude.ai/redirect/website.v1.d125650c-4414-41bc-834b-2158785bb504\",\"Example use case of Claude changed from 'debug a wedding website' to 'build a bedtime story app'\"]},\"interest_assessment\":{\"interest_level\":3,\"reasoning\":\"The changes are minor and primarily involve updates to URLs and a change in the example use case of Claude. These changes do not indicate any significant strategic moves or major updates to the product or service.\",\"category\":\"minor_change\",\"confidence\":0.8},\"entities\":{\"products\":[\"Claude\"],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The updated URLs may affect user access temporarily but do not signify a substantial change in the business strategy. The change in example use case might reflect a broader application of Claude but does not fundamentally alter its positioning.\",\"market_signals\":[\"Minor updates to product access points\"],\"competitive_implications\":\"Competitors may note the update but are unlikely to be significantly impacted by such minor changes.\",\"strategic_direction\":\"The strategic direction of Anthropic, as indicated by these changes, remains focused on refining and possibly expanding the use cases of Claude, but without a major shift in strategy.\"},\"insights\":{\"key_findings\":[\"Minor updates to URLs and example use case\"],\"opportunities\":[\"Potential for expanded use cases of Claude\"],\"threats\":[\"Temporary access issues due to URL changes\"],\"recommended_actions\":[\"Monitor user feedback on updated URLs and example use case\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 456,
+          "url": "news",
+          "detectedAt": "2025-07-29T14:45:17.004Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 5,
+          "summary": "{\"change_summary\":{\"what_changed\":\"Addition of a new case study on how Anthropic teams use Claude Code\",\"change_type\":\"addition\",\"change_scale\":\"minor\",\"specific_changes\":[\"New case study added: 'How Anthropic teams use Claude Code' dated Jul 24, 2025\"]},\"interest_assessment\":{\"interest_level\":5,\"reasoning\":\"The addition of a new case study indicates the company's efforts to showcase the practical applications and internal uses of their product, Claude Code. This suggests a focus on demonstrating value and usability, which is notable but not a major strategic shift.\",\"category\":\"product_update\",\"confidence\":0.8},\"entities\":{\"products\":[\"Claude Code\"],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The addition of a case study may help in marketing and sales efforts by providing tangible examples of Claude Code's utility within Anthropic itself.\",\"market_signals\":[\"Increased transparency into internal product usage\"],\"competitive_implications\":\"May slightly enhance Anthropic's competitive positioning by showcasing the versatility and internal adoption of Claude Code.\",\"strategic_direction\":\"Indicates a strategic focus on demonstrating product value through real-world, internal applications.\"},\"insights\":{\"key_findings\":[\"Anthropic is using case studies to demonstrate the value of Claude Code.\"],\"opportunities\":[\"Potential for increased adoption of Claude Code based on demonstrated internal use cases.\"],\"threats\":[\"Competitors may respond with their own case studies or product demonstrations, mitigating the competitive advantage.\"],\"recommended_actions\":[\"Monitor Anthropic's marketing strategy and product development to understand how they leverage internal case studies for external marketing.\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 457,
+          "url": "pricing",
+          "detectedAt": "2025-07-29T14:45:10.018Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 8,
+          "summary": "{\"change_summary\":{\"what_changed\":\"Changes in pricing plans, specifically in the 'Max' plan where usage is now described as 'per session', and the addition of 'Almost* everything in Pro' to the Team plan with Claude Code available separately. Updates in the 'Team' and 'Enterprise' plans regarding usage limits and Claude Code availability.\",\"change_type\":\"update\",\"change_scale\":\"significant\",\"specific_changes\":[\"Max plan usage description changed to 'per session'\",\"Team plan now includes 'Almost* everything in Pro' with Claude Code available separately\",\"Updates in usage limits and Claude Code availability for Team and Enterprise plans\"]},\"interest_assessment\":{\"interest_level\":8,\"reasoning\":\"The changes indicate a strategic adjustment in pricing and plan features, potentially reflecting a shift in target market or competitive strategy. This level of change suggests a notable evolution in the company's approach to its services and customer segments.\",\"category\":\"product_update\",\"confidence\":0.9},\"entities\":{\"products\":[\"Claude\"],\"features\":[\"Claude Code\",\"Prompt caching\"],\"partnerships\":[],\"technologies\":[\"AI\"],\"people\":[],\"pricing\":[\"Max plan\",\"Team plan\",\"Enterprise plan\"],\"markets\":[\"Education\",\"Enterprise\"]},\"strategic_analysis\":{\"business_impact\":\"The changes could impact customer acquisition and retention, particularly in the education and enterprise sectors, by offering more tailored solutions. The adjustments in pricing and features may influence the competitive landscape, potentially attracting more customers seeking flexible and scalable AI solutions.\",\"market_signals\":[\"Increased focus on enterprise and education sectors\",\"Enhanced competitiveness through flexible pricing and features\"],\"competitive_implications\":\"Competitors may need to reassess their pricing strategies and service offerings to remain competitive, especially in the enterprise and education markets.\",\"strategic_direction\":\"The company appears to be focusing on expanding its presence in the enterprise and education sectors, emphasizing scalability, flexibility, and tailored solutions.\"},\"insights\":{\"key_findings\":[\"Shift in pricing strategy\",\"Enhanced focus on enterprise and education sectors\"],\"opportunities\":[\"Increased market share in target sectors\",\"Improved customer satisfaction through tailored plans\"],\"threats\":[\"Potential backlash from existing customers due to pricing changes\",\"Competitive response from other AI service providers\"],\"recommended_actions\":[\"Monitor customer feedback and market response\",\"Continuously evaluate and adjust pricing and feature strategies to maintain competitiveness\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 440,
+          "url": "product",
+          "detectedAt": "2025-07-24T15:44:05.779Z",
+          "relativeTime": "7/24/2025",
+          "interestLevel": 4,
+          "summary": "{\"what_changed\":\"The download link for the Claude app has been updated with a new redirect URL.\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Updated download link for Claude app from https://claude.ai/redirect/website.v1.f1d860cf-d18a-4694-bb3d-9d8f5920d73d/download to https://claude.ai/redirect/website.v1.e0360d15-f344-4083-ad78-29350c54037c/download\",\"Example use case changed from 'build a bedtime story app' to 'debug a wedding website'\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 295,
+          "url": "news",
+          "detectedAt": "2025-07-23T19:39:42.299Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 8,
+          "summary": "{\"what_changed\":\"Addition of new news articles and removal of old ones, update of featured news section\",\"change_type\":\"update\",\"change_scale\":\"significant\",\"specific_changes\":[\"Addition of 'Thoughts on America’s AI Action Plan' article\",\"Removal of 'Anthropic Economic Index: AI’s impact on software development' from featured section\",\"Update of 'Introducing Claude 4' article\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 286,
+          "url": "news",
+          "detectedAt": "2025-07-23T19:02:49.922Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 8,
+          "summary": "{\"what_changed\":\"Addition of new news articles and updates to existing ones, including announcements, product updates, and policy changes\",\"change_type\":\"addition\",\"change_scale\":\"significant\",\"specific_changes\":[\"New partnership with the University of Chicago's Becker Friedman Institute on AI economic research\",\"Introduction of Claude for Financial Services\",\"Advancements in Claude for Education\",\"Expansion of Claude for Enterprise use by Lawrence Livermore National Laboratory\",\"Appointment of Paul Smith as Chief Commercial Officer\",\"Introduction of the Anthropic Economic Futures Program\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 219,
+          "url": "news",
+          "detectedAt": "2025-07-22T17:13:18.357Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 6,
+          "summary": "{\"what_changed\":\"New article 'Build AI in America' added, and 'No results found' message removed\",\"change_type\":\"addition\",\"change_scale\":\"minor\",\"specific_changes\":[\"Added new article 'Build AI in America' on Jul 21, 2025\",\"Removed 'No results found' message from news section\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "claude code",
+          "claude",
+          "max plan",
+          "team plan",
+          "enterprise plan"
+        ],
+        "ai_technologies": [
+          "python",
+          "amazon bedrock",
+          "aws",
+          "github",
+          "google cloud's vertex ai"
+        ],
+        "ai_ml_concepts": [
+          "AI Safety",
+          "Alignment Research",
+          "Interpretability",
+          "Harmless AI"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 10,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T18:38:27.433Z"
+      }
+    },
+    {
+      "id": 46,
+      "name": "Anyscale",
+      "category": "AI Infrastructure",
+      "urls": [
+        {
+          "id": 155,
+          "url": "https://anyscale.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 157,
+          "url": "https://anyscale.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 156,
+          "url": "https://anyscale.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "GPU Chips",
+          "AI Accelerators",
+          "Cloud Services",
+          "Development Tools"
+        ],
+        "ai_technologies": [
+          "CUDA",
+          "GPU Computing",
+          "Tensor Processing",
+          "Cloud Infrastructure",
+          "MLOps"
+        ],
+        "ai_ml_concepts": [
+          "Model Training",
+          "Inference Optimization",
+          "Distributed Computing",
+          "Model Deployment"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 51,
+      "name": "Cerebras",
+      "category": "AI Hardware",
+      "urls": [
+        {
+          "id": 169,
+          "url": "https://cerebras.net",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 171,
+          "url": "https://cerebras.net/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 170,
+          "url": "https://cerebras.net/product-system",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 54,
+      "name": "Cisco Systems",
+      "category": "Other",
+      "urls": [
+        {
+          "id": 177,
+          "url": "https://www.cisco.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 12,
+      "name": "Codeium",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 49,
+          "url": "https://codeium.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 52,
+          "url": "https://codeium.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 51,
+          "url": "https://codeium.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 50,
+          "url": "https://codeium.com/windsurf",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 6,
+      "name": "Cohere",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 25,
+          "url": "https://cohere.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 28,
+          "url": "https://cohere.ai/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 27,
+          "url": "https://cohere.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 26,
+          "url": "https://cohere.ai/products",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 29,
+          "url": "https://docs.cohere.ai",
+          "type": "docs",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 13,
+      "name": "Cursor",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 53,
+          "url": "https://cursor.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 56,
+          "url": "https://cursor.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 54,
+          "url": "https://cursor.com/features",
+          "type": "features",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 55,
+          "url": "https://cursor.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 35,
+      "name": "DALL-E",
+      "category": "Image Generation",
+      "urls": [
+        {
+          "id": 124,
+          "url": "https://openai.com/dall-e-3",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 125,
+          "url": "https://openai.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 41,
+      "name": "DataRobot",
+      "category": "Enterprise AI",
+      "urls": [
+        {
+          "id": 138,
+          "url": "https://datarobot.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 140,
+          "url": "https://datarobot.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 139,
+          "url": "https://datarobot.com/platform",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 25,
+      "name": "Descript",
+      "category": "AI Voice/Audio",
+      "urls": [
+        {
+          "id": 91,
+          "url": "https://descript.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 94,
+          "url": "https://descript.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 92,
+          "url": "https://descript.com/overdub",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 93,
+          "url": "https://descript.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 24,
+      "name": "ElevenLabs",
+      "category": "AI Voice/Audio",
+      "urls": [
+        {
+          "id": 87,
+          "url": "https://elevenlabs.io",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 90,
+          "url": "https://elevenlabs.io/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 89,
+          "url": "https://elevenlabs.io/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 88,
+          "url": "https://elevenlabs.io/voice-generator",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 38,
+      "name": "Flux",
+      "category": "Image Generation",
+      "urls": [
+        {
+          "id": 130,
+          "url": "https://blackforestlabs.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 131,
+          "url": "https://blackforestlabs.ai/our-models",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 11,
+      "name": "GitHub Copilot",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 48,
+          "url": "https://docs.github.com/en/copilot",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 47,
+          "url": "https://github.blog/tag/github-copilot",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 45,
+          "url": "https://github.com/features/copilot",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 46,
+          "url": "https://github.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "id": 495,
+          "url": "docs",
+          "detectedAt": "2025-08-01T20:39:58.043Z",
+          "relativeTime": "2 hours ago",
+          "interestLevel": 2,
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the content structure or links between the two versions.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":2,\"reasoning\":\"The changes are trivial and do not indicate any significant updates or strategic moves.\",\"category\":\"minor_change\",\"confidence\":0.9},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No significant business impact is expected from these changes.\",\"market_signals\":[],\"competitive_implications\":\"No competitive implications are expected from these changes.\",\"strategic_direction\":\"No change in strategic direction is indicated by these changes.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 482,
+          "url": "docs",
+          "detectedAt": "2025-08-01T18:38:57.523Z",
+          "relativeTime": "4 hours ago",
+          "interestLevel": 6,
+          "summary": "{\"change_summary\":{\"what_changed\":\"Billing section updated to reflect changes in organization and enterprise billing\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Updated 'Billing for individuals' to 'Individual plans'\",\"Updated 'Billing for organizations' to 'Organizations and enterprises'\",\"Added 'Upgrade plan' option for enterprise plan management\"]},\"interest_assessment\":{\"interest_level\":6,\"reasoning\":\"The changes are minor updates to the billing section, which may indicate a shift in pricing strategy or an attempt to simplify the billing process for users.\",\"category\":\"content_update\",\"confidence\":0.8},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[\"Individual plans\",\"Organizations and enterprises\"],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The updates to the billing section may improve user experience and simplify the billing process, potentially leading to increased customer satisfaction and retention.\",\"market_signals\":[\"Pricing strategy shift\",\"Simplification of billing process\"],\"competitive_implications\":\"The changes may not have a significant impact on the competitive landscape, but they demonstrate GitHub's focus on improving the user experience and streamlining its services.\",\"strategic_direction\":\"The updates suggest that GitHub is focused on refining its services and improving the overall user experience, which may be a strategic direction for the company.\"},\"insights\":{\"key_findings\":[\"Minor updates to the billing section\",\"Potential shift in pricing strategy\"],\"opportunities\":[\"Improved user experience\",\"Increased customer satisfaction\"],\"threats\":[\"Potential backlash from users if pricing changes are not well-received\"],\"recommended_actions\":[\"Monitor user feedback and adjust pricing strategy accordingly\",\"Continue to simplify and streamline services to improve user experience\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 483,
+          "url": "blog",
+          "detectedAt": "2025-08-01T18:38:51.413Z",
+          "relativeTime": "4 hours ago",
+          "interestLevel": 1,
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the content structure or links between the two versions.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":1,\"reasoning\":\"The content appears to be identical, with no notable updates or changes.\",\"category\":\"minor_change\",\"confidence\":0.99},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No significant business impact is expected from these changes.\",\"market_signals\":[],\"competitive_implications\":\"No competitive implications are apparent from the lack of changes.\",\"strategic_direction\":\"No new strategic direction is indicated by the absence of changes.\"},\"insights\":{\"key_findings\":[\"No significant changes were detected.\"],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[\"Monitor for future updates that may indicate strategic shifts or new developments.\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 470,
+          "url": "docs",
+          "detectedAt": "2025-07-30T14:14:55.328Z",
+          "relativeTime": "2 days ago",
+          "interestLevel": 2,
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the content structure or links between the two versions.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":2,\"reasoning\":\"The analysis did not reveal any substantial updates, additions, or removals that would indicate a significant strategic move, product update, or change in competitive positioning.\",\"category\":\"minor_change\",\"confidence\":0.9},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No apparent business impact from the changes detected.\",\"market_signals\":[],\"competitive_implications\":\"No significant implications for competitive positioning or strategy.\",\"strategic_direction\":\"No change in strategic direction is evident from the analysis.\"},\"insights\":{\"key_findings\":[\"No significant changes were found.\"],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[\"Continue monitoring for future updates that may signal strategic changes or competitive moves.\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 452,
+          "url": "docs",
+          "detectedAt": "2025-07-29T14:45:53.478Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 7,
+          "summary": "{\"change_summary\":{\"what_changed\":\"Reorganization and renaming of certain sections and links within the GitHub Copilot documentation\",\"change_type\":\"update/restructure\",\"change_scale\":\"significant\",\"specific_changes\":[\"Renaming of 'Plans for Copilot' to 'Plans'\",\"Renaming of 'Copilot features' to 'Features'\",\"Reorganization of 'How-tos' section with updated links and categories\",\"Addition of new links and sections such as 'About MCP' and 'Manage network access'\",\"Removal or rephrasing of certain links and descriptions for better clarity\"]},\"interest_assessment\":{\"interest_level\":7,\"reasoning\":\"The changes indicate an effort to improve user experience and clarity in the documentation, which is significant for users and administrators of GitHub Copilot.\",\"category\":\"documentation_update\",\"confidence\":0.8},\"entities\":{\"products\":[\"GitHub Copilot\"],\"features\":[\"Coding agent\",\"Chat\",\"Code review\",\"MCP\"],\"partnerships\":[],\"technologies\":[\"AI models\"],\"people\":[],\"pricing\":[\"Free\",\"Pro\",\"Team\"],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"Improved user experience and clarity in documentation can lead to increased adoption and satisfaction with GitHub Copilot, potentially driving business growth.\",\"market_signals\":[\"Enhanced focus on user experience\",\"Expansion of documentation to cover more features and use cases\"],\"competitive_implications\":\"GitHub Copilot's competitors may need to respond with similar improvements in their documentation and user experience to remain competitive.\",\"strategic_direction\":\"The changes suggest a strategic direction towards enhancing user experience, expanding feature sets, and improving documentation to support growth and competitiveness.\"},\"insights\":{\"key_findings\":[\"GitHub Copilot is investing in improving user experience and documentation\",\"The platform is expanding its feature set and use cases\"],\"opportunities\":[\"Increased adoption and satisfaction with GitHub Copilot\",\"Potential for GitHub Copilot to become a leader in its market due to enhanced user experience and feature set\"],\"threats\":[\"Competitors may respond with similar improvements, potentially mitigating GitHub Copilot's competitive advantage\"],\"recommended_actions\":[\"Monitor competitor responses and market trends\",\"Continuously evaluate and improve user experience and documentation\",\"Consider expanding feature sets and use cases to maintain competitiveness\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 453,
+          "url": "blog",
+          "detectedAt": "2025-07-29T14:45:46.743Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 1,
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the provided content.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":1,\"reasoning\":\"The provided content does not show any significant changes or updates.\",\"category\":\"minor_change\",\"confidence\":0.9},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No significant business impact is expected from the provided content.\",\"market_signals\":[],\"competitive_implications\":\"No competitive implications are expected from the provided content.\",\"strategic_direction\":\"No clear strategic direction is evident from the provided content.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 439,
+          "url": "docs",
+          "detectedAt": "2025-07-24T15:44:39.009Z",
+          "relativeTime": "7/24/2025",
+          "interestLevel": 8,
+          "summary": "{\"what_changed\":\"Reorganization and updates of GitHub Copilot documentation\",\"change_type\":\"update/restructure\",\"change_scale\":\"significant\",\"specific_changes\":[\"Reorganized 'Concepts' section\",\"Updated 'How-tos' section with new links and reorganized content\",\"Removed or renamed certain links and sections\",\"Added new links for 'Coding agent', 'Code review', and 'Spaces'\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 310,
+          "url": "docs",
+          "detectedAt": "2025-07-23T23:36:42.053Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 2,
+          "summary": "{\"what_changed\":\"No significant changes were detected in the provided content.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 298,
+          "url": "docs",
+          "detectedAt": "2025-07-23T19:03:26.617Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 8,
+          "summary": "{\"what_changed\":\"Reorganization and updates of GitHub Copilot documentation, including changes to billing, concepts, and how-to sections\",\"change_type\":\"update/restructure\",\"change_scale\":\"significant\",\"specific_changes\":[\"Updated billing section to include information on Spark billing\",\"Added new concepts such as text completion and code referencing\",\"Reorganized how-to sections for better clarity and added new topics such as using Copilot for common tasks and managing spending\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 285,
+          "url": "homepage",
+          "detectedAt": "2025-07-23T19:03:14.475Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 8,
+          "summary": "{\"what_changed\":\"Introduction of GitHub Spark, update to pricing plans and addition of new models\",\"change_type\":\"update\",\"change_scale\":\"significant\",\"specific_changes\":[\"Introduction of GitHub Spark\",\"Update to pricing plans, including the addition of a free tier and changes to the Pro and Pro+ plans\",\"Addition of new models, including Claude Opus 4 and o3\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "github copilot",
+          "github advanced security",
+          "github copilot free",
+          "github copilot pro",
+          "github models"
+        ],
+        "ai_technologies": [
+          "github",
+          "python",
+          "microsoft azure",
+          "saml",
+          "scim"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 10,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T20:39:58.043Z"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Google DeepMind",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 15,
+          "url": "https://ai.google.dev",
+          "type": "api",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 12,
+          "url": "https://ai.google/discover/gemini",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 14,
+          "url": "https://blog.google/technology/ai",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 13,
+          "url": "https://cloud.google.com/vertex-ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 11,
+          "url": "https://deepmind.google",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "id": 480,
+          "url": "blog",
+          "detectedAt": "2025-08-01T18:39:22.393Z",
+          "relativeTime": "4 hours ago",
+          "interestLevel": 8,
+          "summary": "{\"change_summary\":{\"what_changed\":\"New articles and updates were added to the Google Blog, including 'Google Earth AI', 'The inside story of building NotebookLM', and updates to Gemini Code Assist and Gemini CLI.\",\"change_type\":\"addition\",\"change_scale\":\"significant\",\"specific_changes\":[\"New article: Google Earth AI\",\"New article: The inside story of building NotebookLM\",\"Update to Gemini Code Assist: Agent Mode and IDE enhancements\",\"Update to Gemini CLI: open-source AI agent\"]},\"interest_assessment\":{\"interest_level\":8,\"reasoning\":\"The updates indicate significant advancements in Google's AI capabilities, including geospatial AI models and open-source AI agents, which could have major implications for various industries and users.\",\"category\":\"significant updates\",\"confidence\":0.9},\"entities\":{\"products\":[\"Gemini\",\"Google Earth\",\"NotebookLM\"],\"features\":[\"Agent Mode\",\"IDE enhancements\"],\"partnerships\":[],\"technologies\":[\"AI\",\"geospatial AI models\"],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The updates demonstrate Google's continued investment in AI research and development, which could lead to new business opportunities and revenue streams.\",\"market_signals\":[\"Increased competition in the AI market\",\"Growing demand for AI-powered solutions\"],\"competitive_implications\":\"Google's advancements in AI could pose a competitive threat to other companies in the industry, particularly those that are not investing heavily in AI research and development.\",\"strategic_direction\":\"Google's strategic direction is focused on developing and applying AI to various industries and use cases, with a goal of making AI more accessible and useful for everyone.\"},\"insights\":{\"key_findings\":[\"Google is making significant advancements in AI research and development\",\"The company is focused on developing and applying AI to various industries and use cases\"],\"opportunities\":[\"New business opportunities and revenue streams from AI-powered solutions\",\"Increased competitiveness in the AI market\"],\"threats\":[\"Increased competition in the AI market\",\"Potential disruption to existing business models\"],\"recommended_actions\":[\"Monitor Google's AI developments and advancements\",\"Consider investing in AI research and development to remain competitive\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 481,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T18:39:06.003Z",
+          "relativeTime": "4 hours ago",
+          "interestLevel": 2,
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the content between the two versions.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":2,\"reasoning\":\"The content appears to be identical, with no notable updates or changes.\",\"category\":\"no change\",\"confidence\":0.9},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No impact, as there were no changes.\",\"market_signals\":[],\"competitive_implications\":\"No implications, as there were no changes.\",\"strategic_direction\":\"No direction, as there were no changes.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 467,
+          "url": "product",
+          "detectedAt": "2025-07-30T14:15:28.890Z",
+          "relativeTime": "2 days ago",
+          "interestLevel": 1,
+          "summary": "{\"change_summary\":{\"what_changed\":\"No changes were detected in the content between the two versions.\",\"change_type\":\"no change\",\"change_scale\":\"none\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":1,\"reasoning\":\"The content remains the same, indicating no new developments or updates.\",\"category\":\"no change\",\"confidence\":1},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No impact, as there are no changes.\",\"market_signals\":[],\"competitive_implications\":\"No implications, as there are no changes.\",\"strategic_direction\":\"No direction, as there are no changes.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 468,
+          "url": "blog",
+          "detectedAt": "2025-07-30T14:15:22.285Z",
+          "relativeTime": "2 days ago",
+          "interestLevel": 8,
+          "summary": "{\"change_summary\":{\"what_changed\":\"New articles and updates were added to the Google Blog, including Google Earth AI, NotebookLM, and Gemini updates\",\"change_type\":\"addition\",\"change_scale\":\"significant\",\"specific_changes\":[\"Addition of Google Earth AI article\",\"Addition of NotebookLM article\",\"Update to Gemini Code Assist\",\"Introduction of Gemini CLI\"]},\"interest_assessment\":{\"interest_level\":8,\"reasoning\":\"The updates indicate significant advancements in Google's AI capabilities, including geospatial AI models and open-source AI agents, which could have major implications for various industries and users\",\"category\":\"AI updates\",\"confidence\":0.9},\"entities\":{\"products\":[\"Gemini\",\"Google Earth\",\"NotebookLM\"],\"features\":[\"Gemini Code Assist\",\"Gemini CLI\"],\"partnerships\":[],\"technologies\":[\"AI\",\"Geospatial AI\"],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The updates demonstrate Google's continued investment in AI research and development, which could lead to new business opportunities and revenue streams\",\"market_signals\":[\"Increased competition in the AI market\",\"Growing demand for AI-powered solutions\"],\"competitive_implications\":\"Google's advancements in AI could give the company a competitive edge over its rivals, particularly in areas like search and geospatial technology\",\"strategic_direction\":\"The updates suggest that Google is committed to pushing the boundaries of AI research and development, with a focus on practical applications and real-world impact\"},\"insights\":{\"key_findings\":[\"Google is making significant investments in AI research and development\",\"The company is focused on developing practical AI applications with real-world impact\"],\"opportunities\":[\"Partnerships and collaborations with Google on AI-powered projects\",\"Integration of Google's AI technologies into existing products and services\"],\"threats\":[\"Increased competition in the AI market\",\"Potential regulatory challenges related to AI development and deployment\"],\"recommended_actions\":[\"Monitor Google's AI developments and updates\",\"Explore potential partnerships and collaborations with Google on AI-powered projects\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 469,
+          "url": "homepage",
+          "detectedAt": "2025-07-30T14:15:04.585Z",
+          "relativeTime": "2 days ago",
+          "interestLevel": 2,
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the content between the two versions.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":2,\"reasoning\":\"The content appears to be identical, with no notable updates or changes.\",\"category\":\"no change\",\"confidence\":0.9},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No impact, as there are no changes.\",\"market_signals\":[],\"competitive_implications\":\"No implications, as there are no changes.\",\"strategic_direction\":\"No direction, as there are no changes.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 449,
+          "url": "blog",
+          "detectedAt": "2025-07-29T14:46:17.001Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 8,
+          "summary": "{\"change_summary\":{\"what_changed\":\"New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inference?', 'Find out the latest Gemini updates with Gemini Drops', 'Turn your photos into videos in Gemini', 'Plan ahead with scheduled actions in the Gemini app', 'Check out the first images of wildfires detected by FireSat', 'How we built one of the most ambitious datasets in brain activity research', 'Google Beam: Our AI-first 3D video communication platform', 'New in Gemini Code Assist: Agent Mode and IDE enhancements', 'Gemini CLI: your open-source AI agent', 'Gemini Code Assist adds Gemini 2.5, personalization and context management', 'Try on styles with AI, jump on great prices and more', 'Web Guide: An experimental AI-organized search results page'\",\"change_type\":\"addition\",\"change_scale\":\"significant\",\"specific_changes\":[\"Added new articles under 'AI', 'Gemini App', 'Research', 'Developers', and 'All the Latest' sections\",\"Introduced new features and updates for Gemini and Search\",\"Published new research and developments in AI and related fields\"]},\"interest_assessment\":{\"interest_level\":8,\"reasoning\":\"The changes indicate significant updates and advancements in Google's AI technology, Gemini app, and Search features, which could impact the company's competitive positioning and market influence.\",\"category\":\"product_update\",\"confidence\":0.9},\"entities\":{\"products\":[\"Gemini\",\"Google Search\",\"Google Cloud\",\"Google Workspace\"],\"features\":[\"Gemini Code Assist\",\"Gemini CLI\",\"Web Guide\"],\"partnerships\":[],\"technologies\":[\"AI\",\"Machine Learning\"],\"people\":[\"Demis Hassabis\",\"Sundar Pichai\"],\"pricing\":[],\"markets\":[\"Global\",\"Asia\",\"Europe\",\"Latin America\"]},\"strategic_analysis\":{\"business_impact\":\"The updates and new features could enhance Google's position in the AI and search markets, potentially increasing revenue and user engagement.\",\"market_signals\":[\"Growing investment in AI research and development\",\"Increasing competition in the search and virtual assistant markets\"],\"competitive_implications\":\"Google's advancements in AI could challenge competitors like Amazon, Microsoft, and Facebook, and potentially lead to new partnerships and collaborations.\",\"strategic_direction\":\"The changes suggest Google is focusing on developing and integrating AI technology across its products and services, with an emphasis on innovation and user experience.\"},\"insights\":{\"key_findings\":[\"Google is prioritizing AI research and development\",\"The company is expanding its Gemini app and Search features\",\"New partnerships and collaborations may be formed as a result of these updates\"],\"opportunities\":[\"Increased revenue and user engagement\",\"Improved competitive positioning\",\"New business opportunities through AI-powered services\"],\"threats\":[\"Intensified competition in the AI and search markets\",\"Potential regulatory challenges\",\"Dependence on AI technology for future growth\"],\"recommended_actions\":[\"Monitor Google's AI developments and strategic direction\",\"Assess the impact of these updates on the competitive landscape\",\"Consider potential partnerships or collaborations with Google\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 450,
+          "url": "pricing",
+          "detectedAt": "2025-07-29T14:46:11.731Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 2,
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant content changes were detected between the two versions of the webpage.\",\"change_type\":\"no change\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":2,\"reasoning\":\"The analysis did not reveal any significant changes or updates to the content, indicating a low level of interest.\",\"category\":\"minor_change\",\"confidence\":0.8},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No significant business impact is expected from the lack of changes to the webpage content.\",\"market_signals\":[],\"competitive_implications\":\"The absence of changes does not provide any new competitive advantages or disadvantages.\",\"strategic_direction\":\"No new strategic direction is indicated by the lack of changes to the webpage content.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[\"Monitor the webpage for future updates and changes to identify potential opportunities or threats.\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 451,
+          "url": "homepage",
+          "detectedAt": "2025-07-29T14:46:00.101Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 2,
+          "summary": "{\"change_summary\":{\"what_changed\":\"No significant changes were detected in the content structure or major updates to the models, research, or science sections.\",\"change_type\":\"no significant update\",\"change_scale\":\"minor\",\"specific_changes\":[]},\"interest_assessment\":{\"interest_level\":2,\"reasoning\":\"The content appears to be largely unchanged, with no new major announcements, updates, or breakthroughs.\",\"category\":\"minor_change\",\"confidence\":0.8},\"entities\":{\"products\":[],\"features\":[],\"partnerships\":[],\"technologies\":[],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"No significant business impact is expected from these changes.\",\"market_signals\":[],\"competitive_implications\":\"No competitive implications are evident from the lack of significant changes.\",\"strategic_direction\":\"The strategic direction of Google DeepMind remains focused on AI research and development.\"},\"insights\":{\"key_findings\":[],\"opportunities\":[],\"threats\":[],\"recommended_actions\":[\"Monitor Google DeepMind's blog and research sections for future updates and announcements.\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 438,
+          "url": "blog",
+          "detectedAt": "2025-07-24T15:45:05.834Z",
+          "relativeTime": "7/24/2025",
+          "interestLevel": 8,
+          "summary": "{\"what_changed\":\"New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inference?', 'Find out the latest Gemini updates with Gemini Drops', 'Check out the first images of wildfires detected by FireSat', and 'Try on styles with AI, jump on great prices and more'\",\"change_type\":\"addition\",\"change_scale\":\"significant\",\"specific_changes\":[\"Added new article 'Ask a Techspert: What is inference?'\",\"Added new article 'Find out the latest Gemini updates with Gemini Drops'\",\"Added new article 'Check out the first images of wildfires detected by FireSat'\",\"Added new article 'Try on styles with AI, jump on great prices and more'\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 289,
+          "url": "blog",
+          "detectedAt": "2025-07-23T19:40:46.363Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 8,
+          "summary": "{\"what_changed\":\"New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inference?', 'Find out the latest Gemini updates with Gemini Drops', 'Turn your photos into videos in Gemini', 'Check out the first images of wildfires detected by FireSat', 'How we built one of the most ambitious datasets in brain activity research', 'Google Beam: Our AI-first 3D video communication platform', 'New in Gemini Code Assist: Agent Mode and IDE enhancements', 'Gemini CLI: your open-source AI agent', 'Gemini Code Assist adds Gemini 2.5, personalization and context management', 'Listen to a conversation about the newest AI capabilities in Search', 'Transform your photos into videos and remix your pics in Google Photos'\",\"change_type\":\"addition\",\"change_scale\":\"significant\",\"specific_changes\":[\"Added new articles under 'AI', 'Gemini App', 'Research', 'Developers', and 'All the Latest' sections\",\"Updated Gemini Code Assist with new features\",\"Introduced Gemini CLI as an open-source AI agent\",\"Announced the first images of wildfires detected by FireSat\",\"Published a podcast about the newest AI capabilities in Search\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "google ai studio",
+          "gemini app",
+          "vertex ai",
+          "google workspace",
+          "chrome"
+        ],
+        "ai_technologies": [
+          "python",
+          "google cloud",
+          "tensorflow",
+          "pytorch",
+          "jax"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 10,
+        "highInterestChanges": 5,
+        "lastActivity": "2025-08-01T18:39:22.393Z"
+      }
+    },
+    {
+      "id": 42,
+      "name": "H2O.ai",
+      "category": "Enterprise AI",
+      "urls": [
+        {
+          "id": 141,
+          "url": "https://h2o.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 143,
+          "url": "https://h2o.ai/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 142,
+          "url": "https://h2o.ai/platform",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 30,
+      "name": "HeyGen",
+      "category": "Video AI",
+      "urls": [
+        {
+          "id": 108,
+          "url": "https://heygen.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 111,
+          "url": "https://heygen.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 109,
+          "url": "https://heygen.com/features",
+          "type": "features",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 110,
+          "url": "https://heygen.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 43,
+      "name": "Hugging Face",
+      "category": "AI Infrastructure",
+      "urls": [
+        {
+          "id": 144,
+          "url": "https://huggingface.co",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 146,
+          "url": "https://huggingface.co/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 147,
+          "url": "https://huggingface.co/docs",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 145,
+          "url": "https://huggingface.co/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "GPU Chips",
+          "AI Accelerators",
+          "Cloud Services",
+          "Development Tools"
+        ],
+        "ai_technologies": [
+          "CUDA",
+          "GPU Computing",
+          "Tensor Processing",
+          "Cloud Infrastructure",
+          "MLOps"
+        ],
+        "ai_ml_concepts": [
+          "Model Training",
+          "Inference Optimization",
+          "Distributed Computing",
+          "Model Deployment"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 36,
+      "name": "Ideogram",
+      "category": "Image Generation",
+      "urls": [
+        {
+          "id": 126,
+          "url": "https://ideogram.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 127,
+          "url": "https://ideogram.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 8,
+      "name": "Inflection AI",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 34,
+          "url": "https://inflection.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 36,
+          "url": "https://inflection.ai/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 35,
+          "url": "https://pi.ai",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 50,
+      "name": "Intel",
+      "category": "AI Hardware",
+      "urls": [
+        {
+          "id": 167,
+          "url": "https://intel.com/content/www/us/en/artificial-intelligence",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 168,
+          "url": "https://intel.com/content/www/us/en/newsroom",
+          "type": "news",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 45,
+      "name": "LangChain",
+      "category": "AI Infrastructure",
+      "urls": [
+        {
+          "id": 153,
+          "url": "https://blog.langchain.dev",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 154,
+          "url": "https://docs.langchain.com",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 151,
+          "url": "https://langchain.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 152,
+          "url": "https://langchain.com/langsmith",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "GPU Chips",
+          "AI Accelerators",
+          "Cloud Services",
+          "Development Tools"
+        ],
+        "ai_technologies": [
+          "CUDA",
+          "GPU Computing",
+          "Tensor Processing",
+          "Cloud Infrastructure",
+          "MLOps"
+        ],
+        "ai_ml_concepts": [
+          "Model Training",
+          "Inference Optimization",
+          "Distributed Computing",
+          "Model Deployment"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 37,
+      "name": "Leonardo AI",
+      "category": "Image Generation",
+      "urls": [
+        {
+          "id": 128,
+          "url": "https://leonardo.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 129,
+          "url": "https://leonardo.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 33,
+      "name": "Luma AI",
+      "category": "Video AI",
+      "urls": [
+        {
+          "id": 118,
+          "url": "https://lumalabs.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 119,
+          "url": "https://lumalabs.ai/dream-machine",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 120,
+          "url": "https://lumalabs.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 4,
+      "name": "Meta AI",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 16,
+          "url": "https://ai.meta.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 18,
+          "url": "https://ai.meta.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 17,
+          "url": "https://ai.meta.com/llama",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 19,
+          "url": "https://llama.meta.com",
+          "type": "api",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 34,
+      "name": "Midjourney",
+      "category": "Image Generation",
+      "urls": [
+        {
+          "id": 122,
+          "url": "https://docs.midjourney.com",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 123,
+          "url": "https://docs.midjourney.com/docs/plans",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 121,
+          "url": "https://midjourney.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "id": 160,
+          "url": "docs",
+          "detectedAt": "2025-07-21T15:18:22.044Z",
+          "relativeTime": "7/21/2025",
+          "interestLevel": 8,
+          "summary": "{\"what_changed\":\"Initial content creation for Midjourney documentation\",\"change_type\":\"addition\",\"change_scale\":\"major\",\"specific_changes\":[\"Introduction of help center with various sections\",\"Addition of getting started, documentation, and billing support links\",\"Inclusion of policies and guidelines such as terms of service, privacy policy, data deletion & privacy FAQ, and community guidelines\",\"Links to Midjourney website and Discord server\"]}",
+          "changeType": "new",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 161,
+          "url": "pricing",
+          "detectedAt": "2025-07-21T15:17:43.481Z",
+          "relativeTime": "7/21/2025",
+          "interestLevel": 9,
+          "summary": "{\"what_changed\":\"Introduction of a new pricing page with detailed plan comparisons and features\",\"change_type\":\"addition\",\"change_scale\":\"major\",\"specific_changes\":[\"Introduction of four subscription tiers: Basic, Standard, Pro, and Mega\",\"Detailed comparison of plan features, including GPU time, image and video generation, and stealth mode\",\"Information on pricing, including monthly and annual rates, and discounts for annual commitments\"]}",
+          "changeType": "new",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "midjourney",
+          "basic plan",
+          "standard plan",
+          "pro plan",
+          "mega plan"
+        ],
+        "ai_technologies": [
+          "discord",
+          "web",
+          "html",
+          "css",
+          "javascript"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 2,
+        "highInterestChanges": 2,
+        "lastActivity": "2025-07-21T15:18:22.044Z"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Mistral AI",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 24,
+          "url": "https://docs.mistral.ai",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 20,
+          "url": "https://mistral.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 23,
+          "url": "https://mistral.ai/news",
+          "type": "news",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 22,
+          "url": "https://mistral.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 21,
+          "url": "https://mistral.ai/technology",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 27,
+      "name": "Murf AI",
+      "category": "AI Voice/Audio",
+      "urls": [
+        {
+          "id": 98,
+          "url": "https://murf.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 99,
+          "url": "https://murf.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 100,
+          "url": "https://murf.ai/resources/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 23,
+      "name": "Neeva",
+      "category": "AI Search",
+      "urls": [
+        {
+          "id": 86,
+          "url": "https://neeva.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 48,
+      "name": "NVIDIA",
+      "category": "AI Hardware",
+      "urls": [
+        {
+          "id": 163,
+          "url": "https://blogs.nvidia.com/ai",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 164,
+          "url": "https://developer.nvidia.com",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 161,
+          "url": "https://nvidia.com/ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 162,
+          "url": "https://nvidia.com/en-us/data-center/products",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "H100",
+          "A100",
+          "DGX Cloud",
+          "NVIDIA AI Workbench",
+          "GeForce RTX"
+        ],
+        "ai_technologies": [
+          "CUDA",
+          "TensorRT",
+          "cuDNN",
+          "NVIDIA AI Enterprise",
+          "DGX Systems"
+        ],
+        "ai_ml_concepts": [
+          "GPU Computing",
+          "AI Hardware",
+          "Accelerated Computing",
+          "Data Center AI"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 1,
+      "name": "OpenAI",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 1,
+          "url": "https://openai.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 4,
+          "url": "https://openai.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 2,
+          "url": "https://openai.com/chatgpt",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 3,
+          "url": "https://openai.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 5,
+          "url": "https://platform.openai.com",
+          "type": "api",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "id": 486,
+          "url": "blog",
+          "detectedAt": "2025-08-01T19:20:20.321Z",
+          "relativeTime": "3 hours ago",
+          "interestLevel": 9,
+          "summary": "{\"change_summary\":{\"what_changed\":\"The website content has been completely overhauled, shifting from a security verification page to a full-fledged OpenAI blog and news site.\",\"change_type\":\"major overhaul\",\"change_scale\":\"major\",\"specific_changes\":[\"Introduction of a new blog section with various categories (News, Research, Safety, etc.)\",\"Addition of a navigation menu with links to different OpenAI products and services (ChatGPT, Sora, API Platform, etc.)\",\"Inclusion of a 'For Business' section with solutions and contact sales information\",\"Updated 'About Us' and 'Careers' sections\",\"Introduction of a 'Stories' section and a 'Podcast' section\",\"Updated terms and policies\"]},\"interest_assessment\":{\"interest_level\":9,\"reasoning\":\"The changes indicate a significant shift in OpenAI's online presence, suggesting a more comprehensive and user-friendly approach to sharing information and engaging with the public.\",\"category\":\"major strategic move\",\"confidence\":0.95},\"entities\":{\"products\":[\"ChatGPT\",\"Sora\",\"API Platform\"],\"features\":[\"Study mode in ChatGPT\",\"Image generation model in the API\"],\"partnerships\":[\"Partnership with Oracle\"],\"technologies\":[\"GPT-4.5\",\"OpenAI o3\",\"OpenAI o4-mini\"],\"people\":[\"Sam Altman\"],\"pricing\":[\"Pricing information for ChatGPT and Sora\"],\"markets\":[\"Australia (mentioned in the context of OpenAI's economic blueprint)\"]},\"strategic_analysis\":{\"business_impact\":\"The changes are likely to improve OpenAI's visibility, credibility, and user engagement, ultimately driving business growth and revenue.\",\"market_signals\":[\"Increased focus on transparency and user experience\",\"Expansion into new markets and industries\"],\"competitive_implications\":\"The overhaul positions OpenAI as a leader in the AI industry, potentially threatening competitors and setting a new standard for online presence and user engagement.\",\"strategic_direction\":\"The changes suggest that OpenAI is prioritizing user-centricity, transparency, and business growth, indicating a strategic direction focused on long-term success and industry dominance.\"},\"insights\":{\"key_findings\":[\"OpenAI is investing heavily in its online presence and user experience\",\"The company is expanding its product and service offerings\",\"Transparency and credibility are key priorities for OpenAI\"],\"opportunities\":[\"Partnership opportunities with OpenAI\",\"Growth potential in the AI industry\"],\"threats\":[\"Increased competition in the AI industry\",\"Regulatory challenges and potential backlash\"],\"recommended_actions\":[\"Monitor OpenAI's progress and adjust business strategies accordingly\",\"Explore potential partnership opportunities with OpenAI\",\"Invest in AI-related research and development to stay competitive\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 487,
+          "url": "product",
+          "detectedAt": "2025-08-01T19:20:13.064Z",
+          "relativeTime": "3 hours ago",
+          "interestLevel": 9,
+          "summary": "{\"change_summary\":{\"what_changed\":\"The content changed from a security verification page for www.perplexity.ai to a ChatGPT interface\",\"change_type\":\"update\",\"change_scale\":\"major\",\"specific_changes\":[\"Removal of security verification content\",\"Introduction of ChatGPT interface\",\"Addition of login and sign-up options\",\"Inclusion of terms and privacy policy links\"]},\"interest_assessment\":{\"interest_level\":9,\"reasoning\":\"The change indicates a significant shift in the product offering, potentially signaling a new strategic direction for OpenAI\",\"category\":\"strategic_move\",\"confidence\":0.9},\"entities\":{\"products\":[\"ChatGPT\"],\"features\":[\"Temporary Chat\",\"Attach\",\"Search\",\"Voice\"],\"partnerships\":[],\"technologies\":[\"Cloudflare\"],\"people\":[],\"pricing\":[],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The change may impact OpenAI's revenue streams and user engagement, potentially increasing adoption and usage of ChatGPT\",\"market_signals\":[\"Increased focus on conversational AI\",\"Expansion of product offerings\"],\"competitive_implications\":\"The update may position OpenAI as a leader in the conversational AI market, potentially threatening competitors\",\"strategic_direction\":\"The change suggests a strategic shift towards more user-friendly and interactive AI products\"},\"insights\":{\"key_findings\":[\"OpenAI is expanding its product offerings\",\"ChatGPT is a key focus area for the company\"],\"opportunities\":[\"Increased adoption of ChatGPT\",\"Potential for new revenue streams\"],\"threats\":[\"Competitive response from other AI companies\",\"Potential privacy and security concerns\"],\"recommended_actions\":[\"Monitor ChatGPT's performance and user engagement\",\"Analyze competitor responses and market trends\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 488,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T19:20:07.000Z",
+          "relativeTime": "3 hours ago",
+          "interestLevel": 9,
+          "summary": "{\"change_summary\":{\"what_changed\":\"The content changed from a security verification page to a pricing page for ChatGPT by OpenAI, revealing various plans and features.\",\"change_type\":\"update\",\"change_scale\":\"major\",\"specific_changes\":[\"Introduction of Free, Plus, Pro, Team, and Enterprise plans\",\"Details on features such as access to GPT-4o, GPT-4.1 mini, OpenAI o3, and o4-mini\",\"Pricing information for each plan\",\"Comparison of features across different plans\"]},\"interest_assessment\":{\"interest_level\":9,\"reasoning\":\"The change reveals significant strategic moves by OpenAI, including the introduction of various pricing plans and features, which indicates a major shift in their business strategy.\",\"category\":\"strategic_move\",\"confidence\":0.95},\"entities\":{\"products\":[\"ChatGPT\",\"GPT-4o\",\"GPT-4.1 mini\",\"OpenAI o3\",\"OpenAI o4-mini\"],\"features\":[\"Access to advanced models\",\"Unlimited messaging\",\"File uploads\",\"Data analysis\",\"Image generation\",\"Voice mode\"],\"partnerships\":[],\"technologies\":[\"GPT-4o\",\"GPT-4.1 mini\",\"OpenAI o3\",\"OpenAI o4-mini\"],\"people\":[],\"pricing\":[\"Free: $0/month\",\"Plus: $20/month\",\"Pro: $200/month\",\"Team: $25/user/month (billed annually), $30/user/month (billed monthly)\"],\"markets\":[]},\"strategic_analysis\":{\"business_impact\":\"The introduction of various pricing plans and features by OpenAI indicates a significant shift in their business strategy, aiming to cater to a broader range of customers and increase revenue.\",\"market_signals\":[\"OpenAI is expanding its offerings to attract more customers\",\"The company is focusing on providing a range of features and pricing plans to compete with other AI companies\"],\"competitive_implications\":\"The introduction of various pricing plans and features by OpenAI may force competitors to reassess their own pricing strategies and feature offerings to remain competitive.\",\"strategic_direction\":\"OpenAI's strategic direction is focused on expanding its customer base, increasing revenue, and establishing itself as a leader in the AI industry.\"},\"insights\":{\"key_findings\":[\"OpenAI is introducing various pricing plans to cater to different customer segments\",\"The company is focusing on providing a range of features, including access to advanced models and unlimited messaging\"],\"opportunities\":[\"OpenAI's new pricing plans and features may attract more customers and increase revenue\",\"The company's focus on providing a range of features may help it establish itself as a leader in the AI industry\"],\"threats\":[\"Competitors may respond to OpenAI's new pricing plans and features by introducing their own competitive offerings\",\"OpenAI's expanded feature set may increase the risk of errors or security breaches\"],\"recommended_actions\":[\"Monitor OpenAI's pricing plans and features to assess their impact on the market\",\"Consider adjusting own pricing strategies and feature offerings in response to OpenAI's moves\"]}}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 225,
+          "url": "pricing",
+          "detectedAt": "2025-07-22T19:04:23.608Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 8,
+          "summary": "{\"what_changed\":\"The OpenAI pricing page has been updated with new features, models, and pricing plans.\",\"change_type\":\"update\",\"change_scale\":\"significant\",\"specific_changes\":[\"New features added to each plan, including access to GPT-4.5 research preview and OpenAI o3-pro\",\"Changes to the pricing plans, including the introduction of a new 'Pro' plan\",\"Updates to the 'Team' and 'Enterprise' plans, including new features and security controls\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 347,
+          "url": "product",
+          "detectedAt": "2025-07-22T19:04:16.736Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 6,
+          "summary": "{\"what_changed\":\"Addition of 'Voice' feature\",\"change_type\":\"addition\",\"change_scale\":\"minor\",\"specific_changes\":[\"Introduction of a 'Voice' option in the chat interface\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 226,
+          "url": "pricing",
+          "detectedAt": "2025-07-22T18:46:27.592Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 2,
+          "summary": "{\"what_changed\":\"The 'openaicom-did' parameter in the URLs has changed from '99580f75-39b7-4bf3-9a9c-e2a544c14234' to '4aa03562-c3c6-4634-98a2-6d29cf24c479'.\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Updated 'openaicom-did' parameter in URLs for ChatGPT, Sora, and API Platform.\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 227,
+          "url": "product",
+          "detectedAt": "2025-07-22T18:46:20.404Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 3,
+          "summary": "{\"what_changed\":\"Removal of the 'Voice' feature\",\"change_type\":\"removal\",\"change_scale\":\"minor\",\"specific_changes\":[\"The 'Voice' button has been removed from the interface\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 228,
+          "url": "homepage",
+          "detectedAt": "2025-07-22T18:18:01.891Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 9,
+          "summary": "{\"what_changed\":\"The content has changed from a security verification page to the OpenAI homepage, featuring various products, research, and company information.\",\"change_type\":\"update\",\"change_scale\":\"major\",\"specific_changes\":[\"Introduction of new products and features such as ChatGPT, Sora, and API Platform\",\"Addition of research and company information sections\",\"Removal of security verification page content\",\"Update of the overall layout and design\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 208,
+          "url": "product",
+          "detectedAt": "2025-07-22T17:33:40.166Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 9,
+          "summary": "{\"what_changed\":\"The content has changed from a security verification page to a ChatGPT interface\",\"change_type\":\"update\",\"change_scale\":\"major\",\"specific_changes\":[\"Removal of security verification content\",\"Introduction of ChatGPT interface\",\"Addition of login and sign-up options\",\"Inclusion of terms and privacy policy links\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "chatgpt",
+          "sora",
+          "api platform",
+          "chatgpt plus",
+          "chatgpt pro"
+        ],
+        "ai_technologies": [
+          "python",
+          "aws",
+          "azure",
+          "gcp",
+          "oracle"
+        ],
+        "ai_ml_concepts": [
+          "AGI Research",
+          "RLHF",
+          "Constitutional AI",
+          "Multimodal Models"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 9,
+        "highInterestChanges": 6,
+        "lastActivity": "2025-08-01T19:20:20.321Z"
+      }
+    },
+    {
+      "id": 39,
+      "name": "Palantir",
+      "category": "Enterprise AI",
+      "urls": [
+        {
+          "id": 134,
+          "url": "https://blog.palantir.com",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 132,
+          "url": "https://palantir.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 133,
+          "url": "https://palantir.com/platforms/aip",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 19,
+      "name": "Perplexity AI",
+      "category": "AI Search",
+      "urls": [
+        {
+          "id": 79,
+          "url": "https://blog.perplexity.ai",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 77,
+          "url": "https://perplexity.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 78,
+          "url": "https://perplexity.ai/pro",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "id": 275,
+          "url": "product",
+          "detectedAt": "2025-07-23T00:38:32.210Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 4,
+          "summary": "{\"what_changed\":\"Rephrased introduction to Perplexity Pro\",\"change_type\":\"update\",\"change_scale\":\"minor\",\"specific_changes\":[\"Changed 'Perplexity Pro is the most powerful way to search the internet' to 'Perplexity Pro unlocks more ways to learn and get work done'\",\"Removed 'unlimited Pro Search' and 'collaborative spaces' from the introduction\",\"Added 'unlimited Research' to the introduction\"]}",
+          "changeType": "modified",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        },
+        {
+          "id": 72,
+          "url": "product",
+          "detectedAt": "2025-07-21T15:21:10.364Z",
+          "relativeTime": "7/21/2025",
+          "interestLevel": 9,
+          "summary": "{\"what_changed\":\"Introduction of Perplexity Pro and Max plans with various features and pricing\",\"change_type\":\"addition\",\"change_scale\":\"major\",\"specific_changes\":[\"Introduction of Perplexity Pro plan at $20.00/month\",\"Introduction of Perplexity Max plan at $200.00/month\",\"Listing of features for each plan, including unlimited Pro Search, AI models, file upload, image generation, and more\"]}",
+          "changeType": "new",
+          "businessImpact": null,
+          "enhancedAnalysis": {
+            "competitiveImplications": null,
+            "riskAssessment": null,
+            "opportunityScore": null
+          }
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "perplexity pro",
+          "perplexity max",
+          "perplexity ai"
+        ],
+        "ai_technologies": [
+          "unlimited file uploads",
+          "exclusive pro perks",
+          "cloudflare",
+          "favicon"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 2,
+        "highInterestChanges": 1,
+        "lastActivity": "2025-07-23T00:38:32.210Z"
+      }
+    },
+    {
+      "id": 21,
+      "name": "Phind",
+      "category": "AI Search",
+      "urls": [
+        {
+          "id": 83,
+          "url": "https://phind.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 84,
+          "url": "https://phind.com/search?q=pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 18,
+      "name": "Pieces",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 73,
+          "url": "https://pieces.app",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 76,
+          "url": "https://pieces.app/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 74,
+          "url": "https://pieces.app/features",
+          "type": "features",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 75,
+          "url": "https://pieces.app/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 31,
+      "name": "Pika",
+      "category": "Video AI",
+      "urls": [
+        {
+          "id": 112,
+          "url": "https://pika.art",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 114,
+          "url": "https://pika.art/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 113,
+          "url": "https://pika.art/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 53,
+      "name": "Redmore Studio",
+      "category": "AI Consulting and Education",
+      "urls": [
+        {
+          "id": 175,
+          "url": "https://redmore.studio",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 176,
+          "url": "https://redmore.studio/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 47,
+      "name": "Replicate",
+      "category": "AI Infrastructure",
+      "urls": [
+        {
+          "id": 158,
+          "url": "https://replicate.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 160,
+          "url": "https://replicate.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 159,
+          "url": "https://replicate.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "GPU Chips",
+          "AI Accelerators",
+          "Cloud Services",
+          "Development Tools"
+        ],
+        "ai_technologies": [
+          "CUDA",
+          "GPU Computing",
+          "Tensor Processing",
+          "Cloud Infrastructure",
+          "MLOps"
+        ],
+        "ai_ml_concepts": [
+          "Model Training",
+          "Inference Optimization",
+          "Distributed Computing",
+          "Model Deployment"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 15,
+      "name": "Replit",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 64,
+          "url": "https://blog.replit.com",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 61,
+          "url": "https://replit.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 62,
+          "url": "https://replit.com/ai",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 63,
+          "url": "https://replit.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 26,
+      "name": "Resemble AI",
+      "category": "AI Voice/Audio",
+      "urls": [
+        {
+          "id": 95,
+          "url": "https://resemble.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 97,
+          "url": "https://resemble.ai/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 96,
+          "url": "https://resemble.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 32,
+      "name": "Runway",
+      "category": "Video AI",
+      "urls": [
+        {
+          "id": 115,
+          "url": "https://runwayml.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 117,
+          "url": "https://runwayml.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 116,
+          "url": "https://runwayml.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 52,
+      "name": "SambaNova",
+      "category": "AI Hardware",
+      "urls": [
+        {
+          "id": 172,
+          "url": "https://sambanova.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 174,
+          "url": "https://sambanova.ai/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 173,
+          "url": "https://sambanova.ai/products",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 40,
+      "name": "Scale AI",
+      "category": "Enterprise AI",
+      "urls": [
+        {
+          "id": 135,
+          "url": "https://scale.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 137,
+          "url": "https://scale.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 136,
+          "url": "https://scale.com/enterprise",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 17,
+      "name": "Sourcegraph",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 69,
+          "url": "https://sourcegraph.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 72,
+          "url": "https://sourcegraph.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 70,
+          "url": "https://sourcegraph.com/cody",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 71,
+          "url": "https://sourcegraph.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 10,
+      "name": "Stability AI",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 41,
+          "url": "https://stability.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 44,
+          "url": "https://stability.ai/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 43,
+          "url": "https://stability.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 42,
+          "url": "https://stability.ai/stable-diffusion",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 29,
+      "name": "Synthesia",
+      "category": "Video AI",
+      "urls": [
+        {
+          "id": 104,
+          "url": "https://synthesia.io",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 107,
+          "url": "https://synthesia.io/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 105,
+          "url": "https://synthesia.io/features",
+          "type": "features",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 106,
+          "url": "https://synthesia.io/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 14,
+      "name": "Tabnine",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 60,
+          "url": "https://docs.tabnine.com",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 57,
+          "url": "https://tabnine.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 59,
+          "url": "https://tabnine.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 58,
+          "url": "https://tabnine.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 44,
+      "name": "Weights & Biases",
+      "category": "AI Infrastructure",
+      "urls": [
+        {
+          "id": 148,
+          "url": "https://wandb.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 150,
+          "url": "https://wandb.ai/fully-connected",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 149,
+          "url": "https://wandb.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "GPU Chips",
+          "AI Accelerators",
+          "Cloud Services",
+          "Development Tools"
+        ],
+        "ai_technologies": [
+          "CUDA",
+          "GPU Computing",
+          "Tensor Processing",
+          "Cloud Infrastructure",
+          "MLOps"
+        ],
+        "ai_ml_concepts": [
+          "Model Training",
+          "Inference Optimization",
+          "Distributed Computing",
+          "Model Deployment"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 28,
+      "name": "WellSaid Labs",
+      "category": "AI Voice/Audio",
+      "urls": [
+        {
+          "id": 101,
+          "url": "https://wellsaidlabs.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 103,
+          "url": "https://wellsaidlabs.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 102,
+          "url": "https://wellsaidlabs.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 20,
+      "name": "You.com",
+      "category": "AI Search",
+      "urls": [
+        {
+          "id": 80,
+          "url": "https://you.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 82,
+          "url": "https://you.com/code",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 81,
+          "url": "https://you.com/search?q=pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [
+          "AI Platform",
+          "Developer Tools",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Machine Learning",
+          "Cloud Computing",
+          "APIs",
+          "Data Processing"
+        ],
+        "ai_ml_concepts": [
+          "Artificial Intelligence",
+          "Automation",
+          "Data Analysis"
+        ]
+      },
+      "attributes": {},
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    }
+  ],
+  "lastUpdated": "2025-08-01T22:48:25.037Z",
+  "totalChanges": 43,
+  "highInterestChanges": 22
 }
