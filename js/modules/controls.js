@@ -10,6 +10,8 @@ import {
     createFilterUI, 
     uiHandlers, 
     getUniqueCompanies,
+    getUniqueTechnologies,
+    getUniqueConcepts,
     groupChangesByDate,
     setFiltersChangedCallback 
 } from './filters.js';
@@ -329,7 +331,14 @@ export async function loadAllChanges() {
     // Create filter UI if not already present
     if (filterContainer && !filterContainer.innerHTML) {
         const companies = getUniqueCompanies(changes);
-        filterContainer.innerHTML = createFilterUI(companies);
+        const technologies = getUniqueTechnologies(changes);
+        const concepts = getUniqueConcepts(changes);
+        
+        filterContainer.innerHTML = createFilterUI({
+            companies,
+            technologies,
+            concepts
+        });
         
         // Set up filter change handler
         setFiltersChangedCallback(() => {

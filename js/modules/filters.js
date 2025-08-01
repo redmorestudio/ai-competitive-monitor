@@ -7,6 +7,8 @@
 let filterState = {
     searchQuery: '',
     companyFilter: 'all',
+    technologyFilter: 'all',
+    conceptFilter: 'all',
     interestLevelMin: 1,
     interestLevelMax: 10,
     dateRangeStart: null,
@@ -51,11 +53,29 @@ export function applyFilters(changes) {
             const summary = (change.summary || '').toLowerCase();
             const url = (change.url || change.page_url || '').toLowerCase();
             const category = (change.category || '').toLowerCase();
+            const technology = (change.technology || '').toLowerCase();
+            const concept = (change.concept || '').toLowerCase();
+            
+            // Also check in AI analysis if available
+            let aiContent = '';
+            if (change.ai_analysis) {
+                try {
+                    const analysis = typeof change.ai_analysis === 'string' 
+                        ? JSON.parse(change.ai_analysis) 
+                        : change.ai_analysis;
+                    aiContent = JSON.stringify(analysis).toLowerCase();
+                } catch (e) {
+                    aiContent = change.ai_analysis.toLowerCase();
+                }
+            }
             
             return company.includes(query) || 
                    summary.includes(query) || 
                    url.includes(query) ||
-                   category.includes(query);
+                   category.includes(query) ||
+                   technology.includes(query) ||
+                   concept.includes(query) ||
+                   aiContent.includes(query);
         });
     }
 
@@ -63,6 +83,20 @@ export function applyFilters(changes) {
     if (filterState.companyFilter !== 'all') {
         filtered = filtered.filter(change => 
             change.company === filterState.companyFilter
+        );
+    }
+
+    // Apply technology filter
+    if (filterState.technologyFilter !== 'all') {
+        filtered = filtered.filter(change => 
+            change.technology === filterState.technologyFilter
+        );
+    }
+
+    // Apply concept filter
+    if (filterState.conceptFilter !== 'all') {
+        filtered = filtered.filter(change => 
+            change.concept === filterState.conceptFilter
         );
     }
 
@@ -157,6 +191,24 @@ export function setCompanyFilter(company) {
 }
 
 /**
+ * Update technology filter
+ * @param {string} technology - Technology name or 'all'
+ */
+export function setTechnologyFilter(technology) {
+    filterState.technologyFilter = technology;
+    notifyFiltersChanged();
+}
+
+/**
+ * Update concept filter
+ * @param {string} concept - Concept name or 'all'
+ */
+export function setConceptFilter(concept) {
+    filterState.conceptFilter = concept;
+    notifyFiltersChanged();
+}
+
+/**
  * Update interest level filter
  * @param {number} min - Minimum interest level
  * @param {number} max - Maximum interest level
@@ -196,6 +248,8 @@ export function resetFilters() {
     filterState = {
         searchQuery: '',
         companyFilter: 'all',
+        technologyFilter: 'all',
+        conceptFilter: 'all',
         interestLevelMin: 1,
         interestLevelMax: 10,
         dateRangeStart: null,
@@ -227,6 +281,36 @@ export function getUniqueCompanies(changes) {
         }
     });
     return Array.from(companies).sort();
+}
+
+/**
+ * Get list of unique technologies from changes
+ * @param {Array} changes - Array of changes
+ * @returns {Array} Unique technology names
+ */
+export function getUniqueTechnologies(changes) {
+    const technologies = new Set();
+    changes.forEach(change => {
+        if (change.technology) {
+            technologies.add(change.technology);
+        }
+    });
+    return Array.from(technologies).sort();
+}
+
+/**
+ * Get list of unique concepts from changes
+ * @param {Array} changes - Array of changes
+ * @returns {Array} Unique concept names
+ */
+export function getUniqueConcepts(changes) {
+    const concepts = new Set();
+    changes.forEach(change => {
+        if (change.concept) {
+            concepts.add(change.concept);
+        }
+    });
+    return Array.from(concepts).sort();
 }
 
 /**
@@ -306,10 +390,14 @@ function notifyFiltersChanged() {
 
 /**
  * Create filter UI HTML
- * @param {Array} companies - List of companies for dropdown
+ * @param {Object} options - Options for filter dropdowns
+ * @param {Array} options.companies - List of companies
+ * @param {Array} options.technologies - List of technologies
+ * @param {Array} options.concepts - List of concepts
  * @returns {string} HTML for filter controls
  */
-export function createFilterUI(companies = []) {
+export function createFilterUI(options = {}) {
+    const { companies = [], technologies = [], concepts = [] } = options;
     return `
         <div class="filter-controls">
             <div class="filter-row">
@@ -318,8 +406,9 @@ export function createFilterUI(companies = []) {
                     <label for="searchInput">Search:</label>
                     <input type="text" 
                            id="searchInput" 
-                           placeholder="Search changes..." 
+                           placeholder="Search company, tech, concept, summary..." 
                            class="filter-input"
+                           style="min-width: 250px;"
                            oninput="window.filters.handleSearchInput(this.value)">
                 </div>
                 
@@ -332,6 +421,32 @@ export function createFilterUI(companies = []) {
                         <option value="all">All Companies</option>
                         ${companies.map(company => 
                             `<option value="${company}">${company}</option>`
+                        ).join('')}
+                    </select>
+                </div>
+                
+                <!-- Technology Filter -->
+                <div class="filter-group">
+                    <label for="technologyFilter">Technology:</label>
+                    <select id="technologyFilter" 
+                            class="filter-select"
+                            onchange="window.filters.handleTechnologyFilter(this.value)">
+                        <option value="all">All Technologies</option>
+                        ${technologies.map(tech => 
+                            `<option value="${tech}">${tech}</option>`
+                        ).join('')}
+                    </select>
+                </div>
+                
+                <!-- Concept Filter -->
+                <div class="filter-group">
+                    <label for="conceptFilter">Concept:</label>
+                    <select id="conceptFilter" 
+                            class="filter-select"
+                            onchange="window.filters.handleConceptFilter(this.value)">
+                        <option value="all">All Concepts</option>
+                        ${concepts.map(concept => 
+                            `<option value="${concept}">${concept}</option>`
                         ).join('')}
                     </select>
                 </div>
@@ -391,6 +506,14 @@ export const uiHandlers = {
         setCompanyFilter(value);
     },
     
+    handleTechnologyFilter(value) {
+        setTechnologyFilter(value);
+    },
+    
+    handleConceptFilter(value) {
+        setConceptFilter(value);
+    },
+    
     handleInterestRange() {
         const min = parseInt(document.getElementById('interestMin').value) || 1;
         const max = parseInt(document.getElementById('interestMax').value) || 10;
@@ -406,6 +529,8 @@ export const uiHandlers = {
         // Reset UI elements
         document.getElementById('searchInput').value = '';
         document.getElementById('companyFilter').value = 'all';
+        document.getElementById('technologyFilter').value = 'all';
+        document.getElementById('conceptFilter').value = 'all';
         document.getElementById('interestMin').value = '1';
         document.getElementById('interestMax').value = '10';
         document.getElementById('sortBy').value = 'date';
