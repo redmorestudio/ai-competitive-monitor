@@ -74,12 +74,6 @@
         </div>
     </div>
 
-    <!-- Load ES6 modules with migration helper -->
-    <script type="module">
-        import './js/modules/migration.js';
-        // Modules will set up global compatibility layer
-    </script>
-
     <script>
         // Configuration
         const CONFIG = {
