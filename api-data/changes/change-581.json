@@ -1,0 +1,87 @@
+{
+  "id": 581,
+  "company": "Murf AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:38:19.182Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content added to the homepage of Murf AI",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content added to the homepage of Murf AI",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of AI voice generator and text to speech software",
+      "Mention of various products and features such as Murf Studio, Text to Speech, Voice Cloning, AI Dubbing, and Murf API",
+      "Addition of integrations with other tools like Canva, Google Slides, Adobe Audition, and PowerPoint",
+      "Introduction of resources section with Help Center, Community, Academy, Blog, and Affiliate Partner Program"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest that Murf AI is expanding its product offerings and integrating with other tools to increase its market reach and competitiveness",
+    "market_signals": [
+      "Increased focus on AI-powered voice generation and text to speech conversion",
+      "Expansion into new markets through integrations with other tools"
+    ],
+    "competitive_implications": "The changes may pose a competitive threat to other companies in the AI voice generation and text to speech conversion space",
+    "strategic_direction": "The company appears to be focusing on expanding its product offerings and increasing its market reach through strategic partnerships and integrations"
+  },
+  "entities": {
+    "products": [
+      "Murf Studio",
+      "Text to Speech",
+      "Voice Cloning",
+      "AI Dubbing",
+      "Murf API"
+    ],
+    "features": [
+      "AI voice generator",
+      "Text to speech conversion",
+      "Voice cloning",
+      "AI dubbing"
+    ],
+    "partnerships": [
+      "Canva",
+      "Google Slides",
+      "Adobe Audition",
+      "PowerPoint"
+    ],
+    "technologies": [
+      "AI",
+      "Text to speech"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Murf AI is expanding its product offerings and integrating with other tools",
+      "The company is focusing on AI-powered voice generation and text to speech conversion"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the AI and text to speech space",
+      "Expansion into new markets through strategic integrations"
+    ],
+    "threats": [
+      "Competitive threat from other companies in the AI voice generation and text to speech conversion space"
+    ],
+    "recommended_actions": [
+      "Monitor Murf AI's product offerings and strategic partnerships",
+      "Consider partnership opportunities with Murf AI or other companies in the AI and text to speech space"
+    ]
+  },
+  "key_insights": [
+    "Murf AI is expanding its product offerings and integrating with other tools",
+    "The company is focusing on AI-powered voice generation and text to speech conversion"
+  ],
+  "business_impact": "The changes suggest that Murf AI is expanding its product offerings and integrating with other tools to increase its market reach and competitiveness",
+  "competitive_implications": "The changes may pose a competitive threat to other companies in the AI voice generation and text to speech conversion space",
+  "content_hash_before": null,
+  "content_hash_after": "5ba530ccc7860a3215fc6b6f19e21c01b54c405fb737f0aca603c48b91f30b6a",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

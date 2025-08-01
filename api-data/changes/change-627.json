@@ -1,0 +1,100 @@
+{
+  "id": 627,
+  "company": "Cursor",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:29:02.299Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content introduction",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content introduction",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Cursor, an AI code editor",
+      "Description of its features and benefits",
+      "Testimonials from various users and companies",
+      "Links to pricing, features, and other relevant pages"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Cursor's introduction could significantly impact the software development industry, potentially disrupting traditional code editing tools",
+    "market_signals": [
+      "Growing demand for AI-powered tools",
+      "Increasing competition in the code editing market"
+    ],
+    "competitive_implications": "Cursor's features and user testimonials may pose a competitive threat to existing code editing tools",
+    "strategic_direction": "Cursor's introduction suggests a strategic direction towards AI-powered software development tools"
+  },
+  "entities": {
+    "products": [
+      "Cursor"
+    ],
+    "features": [
+      "AI-powered code completion",
+      "Auto-complete",
+      "Code editing"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [
+      "Ben Bernard",
+      "Kevin Whinnery",
+      "Sawyer Hood",
+      "Andrew Milich",
+      "Morgan McGuire",
+      "Andrew McCalip",
+      "Logan Kilpatrick",
+      "Sam Whitmore",
+      "Alex MacCaw",
+      "Zeke Sikelianos",
+      "Cory Etzkorn",
+      "Marc Köhlbrugge",
+      "Wes Bos",
+      "Steven Tey",
+      "shadcn",
+      "Josh Miller",
+      "Kent C. Dodds",
+      "Johannes Schickling"
+    ],
+    "pricing": [],
+    "markets": [
+      "Software Development",
+      "Coding"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Cursor's AI-powered code completion and auto-complete features",
+      "User testimonials and company endorsements"
+    ],
+    "opportunities": [
+      "Potential for Cursor to disrupt traditional code editing tools",
+      "Growing demand for AI-powered software development tools"
+    ],
+    "threats": [
+      "Competition from existing code editing tools",
+      "Potential for Cursor's features to become outdated"
+    ],
+    "recommended_actions": [
+      "Monitor Cursor's development and user adoption",
+      "Assess potential partnerships or integrations with Cursor"
+    ]
+  },
+  "key_insights": [
+    "Cursor's AI-powered code completion and auto-complete features",
+    "User testimonials and company endorsements"
+  ],
+  "business_impact": "Cursor's introduction could significantly impact the software development industry, potentially disrupting traditional code editing tools",
+  "competitive_implications": "Cursor's features and user testimonials may pose a competitive threat to existing code editing tools",
+  "content_hash_before": null,
+  "content_hash_after": "923cd25f7081d6ffcee9186f97b7b1b789b44aa2b12c5fc79936019d7af09ccc",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

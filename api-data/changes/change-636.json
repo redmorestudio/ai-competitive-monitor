@@ -1,0 +1,79 @@
+{
+  "id": 636,
+  "company": "Codeium",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:27:57.567Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog content and partnership announcement with Cognition",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog content and partnership announcement with Cognition",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of a new blog section with multiple articles",
+      "Announcement of a partnership with Cognition",
+      "Addition of new features and updates to the Windsurf platform"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The partnership with Cognition and introduction of new features and updates indicates a significant expansion of the company's offerings and a potential increase in market share",
+    "market_signals": [
+      "Expansion into new markets",
+      "Increased competition in the AI DevOps space"
+    ],
+    "competitive_implications": "The partnership with Cognition and introduction of new features and updates positions Windsurf as a major player in the AI DevOps space, potentially threatening competitors",
+    "strategic_direction": "The company is focusing on expanding its offerings and partnerships to increase its market share and competitiveness"
+  },
+  "entities": {
+    "products": [
+      "Windsurf Editor",
+      "Windsurf Platform"
+    ],
+    "features": [
+      "Cascade",
+      "Tab",
+      "Cascade on JetBrains"
+    ],
+    "partnerships": [
+      "Cognition",
+      "AHEAD"
+    ],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Windsurf is expanding its offerings and partnerships to increase its market share and competitiveness",
+      "The company is focusing on the AI DevOps space and potentially threatening competitors"
+    ],
+    "opportunities": [
+      "Potential for increased market share and revenue growth",
+      "Expansion into new markets and industries"
+    ],
+    "threats": [
+      "Increased competition in the AI DevOps space",
+      "Potential for partnership or integration issues with Cognition"
+    ],
+    "recommended_actions": [
+      "Monitor the company's progress and announcements",
+      "Analyze the competitive landscape and potential threats",
+      "Consider potential partnership or integration opportunities"
+    ]
+  },
+  "key_insights": [
+    "Windsurf is expanding its offerings and partnerships to increase its market share and competitiveness",
+    "The company is focusing on the AI DevOps space and potentially threatening competitors"
+  ],
+  "business_impact": "The partnership with Cognition and introduction of new features and updates indicates a significant expansion of the company's offerings and a potential increase in market share",
+  "competitive_implications": "The partnership with Cognition and introduction of new features and updates positions Windsurf as a major player in the AI DevOps space, potentially threatening competitors",
+  "content_hash_before": null,
+  "content_hash_after": "83e6afe7fdba120f5740cdb30195f7046cea6cd825309aa6e85f95f90824620e",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

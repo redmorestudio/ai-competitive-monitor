@@ -1,0 +1,93 @@
+{
+  "id": 615,
+  "company": "ElevenLabs",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:30:32.940Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.95,
+  "summary": "Initial content creation",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Initial content creation",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of ElevenLabs' Text to Speech and AI Voice Generator",
+      "Presentation of various features and solutions",
+      "Mention of partnerships and integrations",
+      "Introduction of the Eleven v3 model"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "ElevenLabs is positioning itself as a leader in the AI audio space, offering a range of services and solutions for various industries.",
+    "market_signals": [
+      "Growing demand for AI-powered audio solutions",
+      "Increasing competition in the AI audio market"
+    ],
+    "competitive_implications": "ElevenLabs' strategic move may force competitors to reassess their offerings and strategies.",
+    "strategic_direction": "ElevenLabs is likely to continue investing in AI research and development, expanding its services and partnerships."
+  },
+  "entities": {
+    "products": [
+      "Eleven v3",
+      "Text to Speech",
+      "AI Voice Generator"
+    ],
+    "features": [
+      "Voice Cloning",
+      "Dubbing",
+      "Conversational AI"
+    ],
+    "partnerships": [
+      "TIME",
+      "Synthesia",
+      "Lex Fridman",
+      "Seth Godin"
+    ],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [
+      "Andrew Huberman",
+      "Arianna Huffington",
+      "Drew Binsky"
+    ],
+    "pricing": [],
+    "markets": [
+      "Media and Entertainment",
+      "Education",
+      "Customer Service"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "ElevenLabs is a new player in the AI audio market",
+      "The company offers a range of services, including Text to Speech, Voice Cloning, and Dubbing"
+    ],
+    "opportunities": [
+      "Partnership opportunities with ElevenLabs",
+      "Potential for growth in the AI audio market"
+    ],
+    "threats": [
+      "Increasing competition in the AI audio market",
+      "Potential regulatory challenges"
+    ],
+    "recommended_actions": [
+      "Monitor ElevenLabs' progress and strategic moves",
+      "Assess potential partnership opportunities"
+    ]
+  },
+  "key_insights": [
+    "ElevenLabs is a new player in the AI audio market",
+    "The company offers a range of services, including Text to Speech, Voice Cloning, and Dubbing"
+  ],
+  "business_impact": "ElevenLabs is positioning itself as a leader in the AI audio space, offering a range of services and solutions for various industries.",
+  "competitive_implications": "ElevenLabs' strategic move may force competitors to reassess their offerings and strategies.",
+  "content_hash_before": null,
+  "content_hash_after": "59b79686cc1517bbfbada195f2a3746fe6e93cdf7d8d2d13916a6df00d152368",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

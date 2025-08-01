@@ -1,0 +1,95 @@
+{
+  "id": 628,
+  "company": "Cursor",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:28:56.151Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Initial blog content creation with various articles and links",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Initial blog content creation with various articles and links",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of the blog section with multiple articles",
+      "Addition of links to pricing, features, enterprise, and other resources",
+      "Inclusion of social media and contact links",
+      "Creation of a changelog and forum links"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The creation of a blog and investment in content creation indicates a focus on community engagement, customer education, and thought leadership",
+    "market_signals": [
+      "Increased focus on AI coding research and development",
+      "Expansion of product offerings and features"
+    ],
+    "competitive_implications": "The investment in content creation and community engagement may indicate a competitive advantage in terms of customer education and support",
+    "strategic_direction": "The company appears to be focusing on establishing itself as a thought leader in the AI coding research and development space"
+  },
+  "entities": {
+    "products": [
+      "Cursor",
+      "Bugbot"
+    ],
+    "features": [
+      "AI code editor",
+      "Cursor Agent on web and mobile"
+    ],
+    "partnerships": [
+      "Supermaven"
+    ],
+    "technologies": [
+      "AI coding research",
+      "Llama"
+    ],
+    "people": [
+      "Jon",
+      "Lee",
+      "Rohan",
+      "Andrew",
+      "Jason",
+      "Jacob",
+      "Aman",
+      "Michael",
+      "Sualeh Asif",
+      "Phillip",
+      "Arvid"
+    ],
+    "pricing": [
+      "New Pro plan",
+      "$200 / mo tier for power users"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is investing heavily in content creation and community engagement",
+      "The blog features a range of articles on topics related to AI coding research and development"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the AI coding research and development space",
+      "Expansion of product offerings and features to meet growing customer demand"
+    ],
+    "threats": [
+      "Increased competition in the AI coding research and development space",
+      "Difficulty in maintaining a high level of content quality and community engagement"
+    ],
+    "recommended_actions": [
+      "Monitor the company's blog and social media channels for updates on new products and features",
+      "Consider partnering with the company to leverage their expertise in AI coding research and development"
+    ]
+  },
+  "key_insights": [
+    "The company is investing heavily in content creation and community engagement",
+    "The blog features a range of articles on topics related to AI coding research and development"
+  ],
+  "business_impact": "The creation of a blog and investment in content creation indicates a focus on community engagement, customer education, and thought leadership",
+  "competitive_implications": "The investment in content creation and community engagement may indicate a competitive advantage in terms of customer education and support",
+  "content_hash_before": null,
+  "content_hash_after": "877242f07aadc997d3ac494536aa35e55573baa5d0bdc1e81363916693b59c5b",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

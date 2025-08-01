@@ -1,0 +1,90 @@
+{
+  "id": 641,
+  "company": "Cerebras",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:27:24.434Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog content and updates to existing blog posts",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog content and updates to existing blog posts",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of new AI models such as Qwen3-32B and Qwen3 Coder 480B",
+      "Updates to existing models like Llama 3.1 405B",
+      "New partnerships and integrations with companies like IBM and Quora",
+      "Introduction of new technologies like CePO and LongCePO",
+      "Expansion of Cerebras' offerings in areas like natural language processing and computer vision"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates could lead to increased adoption of Cerebras' AI solutions, particularly in the enterprise sector",
+    "market_signals": [
+      "Growing demand for AI-powered solutions",
+      "Increasing importance of strategic partnerships in the AI industry"
+    ],
+    "competitive_implications": "Cerebras' advancements in AI technology and strategic partnerships could pose a competitive threat to other companies in the industry",
+    "strategic_direction": "Cerebras is likely to continue investing in AI research and development, and expanding its partnerships and offerings in the enterprise sector"
+  },
+  "entities": {
+    "products": [
+      "Qwen3-32B",
+      "Qwen3 Coder 480B",
+      "Llama 3.1 405B",
+      "CePO",
+      "LongCePO"
+    ],
+    "features": [
+      "Real-time reasoning",
+      "Instant inference",
+      "Test-time planning"
+    ],
+    "partnerships": [
+      "IBM",
+      "Quora"
+    ],
+    "technologies": [
+      "AI",
+      "Natural Language Processing",
+      "Computer Vision"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Enterprise AI",
+      "Natural Language Processing"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Cerebras is making significant advancements in AI technology",
+      "Strategic partnerships are crucial for the company's growth and adoption"
+    ],
+    "opportunities": [
+      "Increased adoption of Cerebras' AI solutions in the enterprise sector",
+      "Expansion into new markets and industries"
+    ],
+    "threats": [
+      "Intensifying competition in the AI industry",
+      "Regulatory challenges and concerns around AI adoption"
+    ],
+    "recommended_actions": [
+      "Monitor Cerebras' advancements in AI technology and strategic partnerships",
+      "Assess the potential impact on the competitive landscape and adjust strategies accordingly"
+    ]
+  },
+  "key_insights": [
+    "Cerebras is making significant advancements in AI technology",
+    "Strategic partnerships are crucial for the company's growth and adoption"
+  ],
+  "business_impact": "The updates could lead to increased adoption of Cerebras' AI solutions, particularly in the enterprise sector",
+  "competitive_implications": "Cerebras' advancements in AI technology and strategic partnerships could pose a competitive threat to other companies in the industry",
+  "content_hash_before": null,
+  "content_hash_after": "c33cd175eb9a4c929c357cc294b4cf5c1565c9449ce9d04adc4b49c289cc92de",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

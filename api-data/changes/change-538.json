@@ -1,0 +1,83 @@
+{
+  "id": 538,
+  "company": "Synthesia",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:44:57.088Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Introduction of new pricing plans and features",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of new pricing plans and features",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New pricing plans: Basic, Starter, Creator, Enterprise",
+      "Introduction of new features: AI Video Assistant, AI Dubbing, Branded video pages, API access",
+      "Changes in usage limits: 3 minutes of video/month for Basic, 10 minutes of video/month for Starter, 30 minutes of video/month for Creator",
+      "Introduction of custom pricing for Enterprise plan"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes could lead to increased customer acquisition and revenue growth, as well as improved competitiveness in the market.",
+    "market_signals": [
+      "Increased focus on AI-powered video creation",
+      "Growing demand for scalable video production solutions"
+    ],
+    "competitive_implications": "The changes could put pressure on competitors to update their pricing and feature offerings to remain competitive.",
+    "strategic_direction": "The company is likely focusing on expanding its customer base and increasing revenue through the introduction of new pricing plans and features."
+  },
+  "entities": {
+    "products": [
+      "Synthesia"
+    ],
+    "features": [
+      "AI Video Assistant",
+      "AI Dubbing",
+      "Branded video pages",
+      "API access"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [
+      "Basic: $0/mo",
+      "Starter: $29/mo",
+      "Creator: $89/mo",
+      "Enterprise: custom pricing"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The new pricing plans and features are likely to appeal to a wider range of customers, from small businesses to enterprises.",
+      "The introduction of custom pricing for the Enterprise plan could lead to increased revenue from large customers."
+    ],
+    "opportunities": [
+      "Increased customer acquisition and revenue growth",
+      "Improved competitiveness in the market"
+    ],
+    "threats": [
+      "Increased competition from other video creation platforms",
+      "Potential cannibalization of existing customer base with new pricing plans"
+    ],
+    "recommended_actions": [
+      "Monitor customer feedback and adjust pricing and feature offerings accordingly",
+      "Invest in marketing and sales efforts to promote the new pricing plans and features"
+    ]
+  },
+  "key_insights": [
+    "The new pricing plans and features are likely to appeal to a wider range of customers, from small businesses to enterprises.",
+    "The introduction of custom pricing for the Enterprise plan could lead to increased revenue from large customers."
+  ],
+  "business_impact": "The changes could lead to increased customer acquisition and revenue growth, as well as improved competitiveness in the market.",
+  "competitive_implications": "The changes could put pressure on competitors to update their pricing and feature offerings to remain competitive.",
+  "content_hash_before": null,
+  "content_hash_after": "6e3f030f7e84cc0b554a66f2765cbc1b249711364ca5894ebf852d406a5589ba",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

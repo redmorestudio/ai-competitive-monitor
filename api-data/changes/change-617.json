@@ -1,0 +1,94 @@
+{
+  "id": 617,
+  "company": "ElevenLabs",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:30:17.996Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of a new pricing page with various plans for creators and businesses",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Introduction of a new pricing page with various plans for creators and businesses",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Free, Starter, Creator, Pro, Scale, and Business plans",
+      "Details on credits, pricing, and features for each plan",
+      "Information on annual billing, usage-based billing, and custom pricing for Enterprise plan"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The new pricing page is likely to attract a wider range of customers, from individuals to large enterprises, and increase revenue for ElevenLabs",
+    "market_signals": [
+      "Growing demand for AI audio solutions",
+      "Increasing competition in the AI audio market"
+    ],
+    "competitive_implications": "ElevenLabs is positioning itself as a leader in the AI audio market with a flexible pricing strategy that caters to different customer segments",
+    "strategic_direction": "Expansion of customer base, revenue growth, and increased market share"
+  },
+  "entities": {
+    "products": [
+      "Text to Speech",
+      "Speech to Text",
+      "Conversational AI",
+      "Studio",
+      "Automated Dubbing",
+      "API access"
+    ],
+    "features": [
+      "Commercial license",
+      "Instant Voice Cloning",
+      "Professional Voice Cloning",
+      "Usage-based billing",
+      "Multi-seat Workspace"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI audio"
+    ],
+    "people": [],
+    "pricing": [
+      "Free plan: $0/month, 10k credits/month",
+      "Starter plan: $5/month, 30k credits/month",
+      "Creator plan: $22/month, 100k credits/month",
+      "Pro plan: $99/month, 500k credits/month",
+      "Scale plan: $330/month, 2M credits/month",
+      "Business plan: $1,320/month, 11M credits/month"
+    ],
+    "markets": [
+      "Creators",
+      "Businesses",
+      "Enterprises"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "ElevenLabs is targeting a wide range of customers with its new pricing plans",
+      "The company is offering a mix of features and pricing options to attract different customer segments"
+    ],
+    "opportunities": [
+      "Partnership opportunities with businesses and enterprises",
+      "Expansion into new markets and industries"
+    ],
+    "threats": [
+      "Increasing competition in the AI audio market",
+      "Potential pricing pressure from competitors"
+    ],
+    "recommended_actions": [
+      "Monitor ElevenLabs' pricing strategy and customer acquisition efforts",
+      "Analyze the company's market positioning and competitive advantages"
+    ]
+  },
+  "key_insights": [
+    "ElevenLabs is targeting a wide range of customers with its new pricing plans",
+    "The company is offering a mix of features and pricing options to attract different customer segments"
+  ],
+  "business_impact": "The new pricing page is likely to attract a wider range of customers, from individuals to large enterprises, and increase revenue for ElevenLabs",
+  "competitive_implications": "ElevenLabs is positioning itself as a leader in the AI audio market with a flexible pricing strategy that caters to different customer segments",
+  "content_hash_before": null,
+  "content_hash_after": "c2c4ba26dbf0f5b9ef3ea644a702c957617dc490041321a05a2fe7080751ba6a",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,80 @@
+{
+  "id": 634,
+  "company": "Cohere",
+  "page_url": "docs",
+  "detected_at": "2025-08-01T22:28:10.561Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New documentation and website content for Cohere",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New documentation and website content for Cohere",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of a new multimodal model: Command A Vision",
+      "Updated API documentation and reference materials",
+      "New guides and concepts section for deeper understanding of the API",
+      "Introduction of LLM University for learning about Enterprise AI and NLP",
+      "Changes to cookie policy and user consent management"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates and new model introduction are likely to enhance Cohere's competitive positioning in the AI and NLP market, attracting more developers and enterprises.",
+    "market_signals": [
+      "Increased focus on multimodal models",
+      "Growing importance of NLP and AI in enterprise solutions"
+    ],
+    "competitive_implications": "Cohere's advancements may challenge competitors in the AI and NLP space, particularly those focused on enterprise solutions.",
+    "strategic_direction": "Cohere is likely focusing on expanding its offerings and capabilities in the enterprise AI and NLP market, with a strong emphasis on education and developer support through LLM University."
+  },
+  "entities": {
+    "products": [
+      "Command A Vision"
+    ],
+    "features": [
+      "New API endpoints",
+      "LLM University"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "NLP",
+      "Large Language Models"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Enterprise AI"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Cohere is investing heavily in its API and documentation",
+      "The company is expanding its focus to include multimodal models and enterprise AI education"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Cohere for enterprises looking to integrate AI and NLP solutions",
+      "Growth in demand for developers skilled in Cohere's technologies"
+    ],
+    "threats": [
+      "Increased competition in the AI and NLP market may challenge Cohere's growth",
+      "Dependence on the success of new models and technologies"
+    ],
+    "recommended_actions": [
+      "Monitor Cohere's advancements and market response",
+      "Consider partnerships or integrations with Cohere for AI and NLP solutions"
+    ]
+  },
+  "key_insights": [
+    "Cohere is investing heavily in its API and documentation",
+    "The company is expanding its focus to include multimodal models and enterprise AI education"
+  ],
+  "business_impact": "The updates and new model introduction are likely to enhance Cohere's competitive positioning in the AI and NLP market, attracting more developers and enterprises.",
+  "competitive_implications": "Cohere's advancements may challenge competitors in the AI and NLP space, particularly those focused on enterprise solutions.",
+  "content_hash_before": null,
+  "content_hash_after": "e943d7dd4bbc5ddd867223bf94cc861b9fb54532de74988a4f8fa5045a1adc34",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

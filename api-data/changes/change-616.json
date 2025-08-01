@@ -1,0 +1,101 @@
+{
+  "id": 616,
+  "company": "ElevenLabs",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:30:25.606Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New blog content and updates on AI audio research, product deployment, and company updates",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New blog content and updates on AI audio research, product deployment, and company updates",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of Eleven v3 (alpha), the most expressive Text to Speech model",
+      "Deepak Chopra bringing his voice and teachings to life with ElevenLabs and Supertab",
+      "Launch of 11.ai (alpha), a voice assistant built to explore the potential of ElevenLabs Conversational AI technology",
+      "Introduction of the ElevenLabs app for iOS and Android",
+      "Partnership with Cisco to bring voice-first, agentic customer support to the enterprise",
+      "Partnership with PERSO.ai to bring natural voiceovers and frame-accurate lip-sync to global video localization",
+      "Strategic partnership with KPN to explore and deploy next-generation voice AI experiences"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates and partnerships demonstrate ElevenLabs' commitment to advancing AI audio research and product deployment, potentially increasing its market share and competitiveness",
+    "market_signals": [
+      "Growing demand for AI-powered audio solutions",
+      "Increasing importance of conversational AI in customer support and user experience"
+    ],
+    "competitive_implications": "ElevenLabs' strategic moves may pose a threat to competitors in the AI audio research and product deployment space, while also creating opportunities for collaboration and partnership",
+    "strategic_direction": "ElevenLabs is likely to continue investing in AI audio research and product deployment, with a focus on expanding its partnerships and market reach"
+  },
+  "entities": {
+    "products": [
+      "Eleven v3 (alpha)",
+      "11.ai (alpha)",
+      "ElevenLabs app"
+    ],
+    "features": [
+      "Text to Speech model",
+      "Conversational AI technology",
+      "Voice assistant"
+    ],
+    "partnerships": [
+      "Supertab",
+      "Cisco",
+      "PERSO.ai",
+      "KPN"
+    ],
+    "technologies": [
+      "AI audio research",
+      "Conversational AI"
+    ],
+    "people": [
+      "Deepak Chopra",
+      "Dustin Blank",
+      "Louis Jordan",
+      "Luka Terzić",
+      "Dalton Pakkala",
+      "Sangwon Hong",
+      "Carles Reina",
+      "Ryan Morrison",
+      "Angelo Giacco"
+    ],
+    "pricing": [],
+    "markets": [
+      "Netherlands"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "ElevenLabs is advancing its AI audio research and product deployment capabilities",
+      "The company is forming strategic partnerships to expand its market reach and competitiveness"
+    ],
+    "opportunities": [
+      "Potential for collaboration and partnership with ElevenLabs",
+      "Growing demand for AI-powered audio solutions"
+    ],
+    "threats": [
+      "Increased competition in the AI audio research and product deployment space",
+      "Potential risks associated with partnering with ElevenLabs"
+    ],
+    "recommended_actions": [
+      "Monitor ElevenLabs' progress and updates",
+      "Consider potential partnership or collaboration opportunities",
+      "Assess the competitive implications of ElevenLabs' strategic moves"
+    ]
+  },
+  "key_insights": [
+    "ElevenLabs is advancing its AI audio research and product deployment capabilities",
+    "The company is forming strategic partnerships to expand its market reach and competitiveness"
+  ],
+  "business_impact": "The updates and partnerships demonstrate ElevenLabs' commitment to advancing AI audio research and product deployment, potentially increasing its market share and competitiveness",
+  "competitive_implications": "ElevenLabs' strategic moves may pose a threat to competitors in the AI audio research and product deployment space, while also creating opportunities for collaboration and partnership",
+  "content_hash_before": null,
+  "content_hash_after": "73a855c210346c8b19c6b35bd54d6ce513717a337803eeffadb64a4646f01b54",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

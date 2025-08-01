@@ -2,64 +2,5699 @@
   "recent_changes_summary": {
     "last_5_changes": [
       {
-        "change_id": 486,
-        "company": "OpenAI",
-        "url": "blog",
-        "summary": "The website content has been completely overhauled, shifting from a security verification page to a full-fledged OpenAI blog and news site.",
+        "change_id": 525,
+        "company": "You.com",
+        "url": "homepage",
+        "summary": "New content added to the homepage of You.com, including introduction to AI for workplace productivity, trusted AI agents, and the #1 web search API for LLMs",
         "interest_level": 9,
-        "time_ago": "2 hours ago",
-        "detected_at": "2025-08-01T19:20:20.321Z",
-        "change_type": "modified"
+        "time_ago": "17 min ago",
+        "detected_at": "2025-08-01T22:47:13.402Z",
+        "change_type": "new"
       },
       {
-        "change_id": 487,
-        "company": "OpenAI",
-        "url": "product",
-        "summary": "The content changed from a security verification page for www.perplexity.ai to a ChatGPT interface",
-        "interest_level": 9,
-        "time_ago": "2 hours ago",
-        "detected_at": "2025-08-01T19:20:13.064Z",
-        "change_type": "modified"
-      },
-      {
-        "change_id": 488,
-        "company": "OpenAI",
-        "url": "pricing",
-        "summary": "The content changed from a security verification page to a pricing page for ChatGPT by OpenAI, revealing various plans and features.",
-        "interest_level": 9,
-        "time_ago": "2 hours ago",
-        "detected_at": "2025-08-01T19:20:07.000Z",
-        "change_type": "modified"
-      },
-      {
-        "change_id": 480,
-        "company": "Google DeepMind",
-        "url": "blog",
-        "summary": "New articles and updates were added to the Google Blog, including 'Google Earth AI', 'The inside story of building NotebookLM', and updates to Gemini Code Assist and Gemini CLI.",
+        "change_id": 526,
+        "company": "WellSaid Labs",
+        "url": "homepage",
+        "summary": "Introduction of a new AI voice model, Caruso, and updates to the website's content and structure",
         "interest_level": 8,
-        "time_ago": "3 hours ago",
-        "detected_at": "2025-08-01T18:39:22.393Z",
-        "change_type": "modified"
+        "time_ago": "17 min ago",
+        "detected_at": "2025-08-01T22:46:58.981Z",
+        "change_type": "new"
       },
       {
-        "change_id": 482,
-        "company": "GitHub Copilot",
-        "url": "docs",
-        "summary": "Billing section updated to reflect changes in organization and enterprise billing",
-        "interest_level": 6,
-        "time_ago": "3 hours ago",
-        "detected_at": "2025-08-01T18:38:57.523Z",
-        "change_type": "modified"
+        "change_id": 527,
+        "company": "WellSaid Labs",
+        "url": "blog",
+        "summary": "New blog content and features added to the WellSaid Labs website",
+        "interest_level": 8,
+        "time_ago": "17 min ago",
+        "detected_at": "2025-08-01T22:46:50.466Z",
+        "change_type": "new"
+      },
+      {
+        "change_id": 528,
+        "company": "WellSaid Labs",
+        "url": "pricing",
+        "summary": "New pricing page with detailed plans and features",
+        "interest_level": 9,
+        "time_ago": "17 min ago",
+        "detected_at": "2025-08-01T22:46:41.865Z",
+        "change_type": "new"
+      },
+      {
+        "change_id": 529,
+        "company": "Weights & Biases",
+        "url": "homepage",
+        "summary": "New content added to the homepage of Weights & Biases",
+        "interest_level": 9,
+        "time_ago": "18 min ago",
+        "detected_at": "2025-08-01T22:46:30.385Z",
+        "change_type": "new"
       }
     ],
-    "last_24h_count": 7,
-    "last_7d_count": 14,
-    "high_priority_last_7d": 9
+    "last_24h_count": 141,
+    "last_7d_count": 148,
+    "high_priority_last_7d": 141
   },
-  "companies": [],
-  "lastUpdated": "2025-08-01T22:01:49.989Z",
-  "totalChanges": 0,
-  "highInterestChanges": 0,
+  "companies": [
+    {
+      "id": 7,
+      "name": "AI21 Labs",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 30,
+          "url": "https://ai21.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 33,
+          "url": "https://ai21.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 31,
+          "url": "https://ai21.com/jamba",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 32,
+          "url": "https://ai21.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 655,
+          "id": 655,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:24:56.140Z",
+          "relativeTime": "39 min ago",
+          "interestLevel": 9,
+          "summary": "New homepage content for AI21 Labs, including product descriptions, deployment options, and company information",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 656,
+          "id": 656,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:24:46.399Z",
+          "relativeTime": "39 min ago",
+          "interestLevel": 8,
+          "summary": "New blog content and website structure",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 657,
+          "id": 657,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:24:38.485Z",
+          "relativeTime": "40 min ago",
+          "interestLevel": 8,
+          "summary": "Introduction of Jamba 1.6, a new open model for enterprise deployment, with improved quality and speed",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 658,
+          "id": 658,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:24:30.586Z",
+          "relativeTime": "40 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of a new pricing page with detailed pricing information for AI21 products, including Foundation Models, Pay As You Go, and Custom Plan options",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "AI21 Maestro",
+          "Jamba Models",
+          "Custom AI Systems",
+          "Flexible Deployment Options",
+          "Jamba 1.6",
+          "AI21 Studio",
+          "Developer Hub",
+          "Playground",
+          "Documentation"
+        ],
+        "ai_technologies": [
+          "Python",
+          "Google Cloud",
+          "AWS",
+          "Microsoft",
+          "Snowflake",
+          "Nvidia",
+          "NVIDIA",
+          "Linux",
+          "TensorFlow",
+          "PyTorch",
+          "APIs",
+          "SDKs",
+          "Private cloud hosting"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:24:56.140Z"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Aleph Alpha",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 37,
+          "url": "https://aleph-alpha.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 38,
+          "url": "https://aleph-alpha.com/luminous",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 39,
+          "url": "https://aleph-alpha.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 40,
+          "url": "https://docs.aleph-alpha.com",
+          "type": "docs",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 651,
+          "id": 651,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:25:23.365Z",
+          "relativeTime": "39 min ago",
+          "interestLevel": 9,
+          "summary": "New content introduction",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 652,
+          "id": 652,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:25:16.860Z",
+          "relativeTime": "39 min ago",
+          "interestLevel": 9,
+          "summary": "New content introduction with detailed information about Aleph Alpha's AI solutions, research, and company overview",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 653,
+          "id": 653,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:25:09.983Z",
+          "relativeTime": "39 min ago",
+          "interestLevel": 8,
+          "summary": "The pricing page is no longer available and now displays a 'Page not found' error",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 654,
+          "id": 654,
+          "url": "docs",
+          "detectedAt": "2025-08-01T22:25:02.059Z",
+          "relativeTime": "39 min ago",
+          "interestLevel": 9,
+          "summary": "Initial documentation release for Aleph Alpha",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "PhariaAI",
+          "Creance",
+          "DORA Contract Compliance",
+          "GovTech AI Assistant",
+          "Industrial Engineering",
+          "Lumi",
+          "PhariaAssistant",
+          "PhariaCatch",
+          "PhariaStudio",
+          "PhariaOS",
+          "Pharia-1-LLM",
+          "APIs"
+        ],
+        "ai_technologies": [
+          "Python",
+          "Aleph Alpha Research Team",
+          "TensorFlow",
+          "PyTorch",
+          "JAX",
+          "AWS",
+          "Azure",
+          "GCP",
+          "WordPress",
+          "GitHub"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:25:23.365Z"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Amazon CodeWhisperer",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 67,
+          "url": "https://aws.amazon.com/blogs/aws/tag/amazon-codewhisperer",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 65,
+          "url": "https://aws.amazon.com/codewhisperer",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 66,
+          "url": "https://aws.amazon.com/codewhisperer/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 68,
+          "url": "https://docs.aws.amazon.com/codewhisperer",
+          "type": "docs",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 647,
+          "id": 647,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:26:03.770Z",
+          "relativeTime": "38 min ago",
+          "interestLevel": 8,
+          "summary": "The content changed from no previous version to a comprehensive AWS website page with various sections and links.",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 648,
+          "id": 648,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:25:58.632Z",
+          "relativeTime": "38 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of Amazon Q Developer, a generative AI assistant for software development",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 649,
+          "id": 649,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:25:44.664Z",
+          "relativeTime": "38 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of Amazon Q Developer, a generative AI assistant for software development",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 650,
+          "id": 650,
+          "url": "docs",
+          "detectedAt": "2025-08-01T22:25:30.943Z",
+          "relativeTime": "39 min ago",
+          "interestLevel": 9,
+          "summary": "Initial creation of Amazon CodeWhisperer documentation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Amazon EC2",
+          "Amazon S3",
+          "Amazon DynamoDB",
+          "Amazon RDS",
+          "AWS Lambda",
+          "Amazon API Gateway",
+          "Amazon CloudWatch",
+          "AWS CloudFormation",
+          "AWS CodePipeline",
+          "AWS CodeBuild",
+          "AWS CodeCommit",
+          "AWS CodeDeploy",
+          "AWS X-Ray",
+          "AWS CloudTrail",
+          "AWS Config",
+          "AWS IAM",
+          "Amazon Connect",
+          "Amazon Pinpoint",
+          "Amazon SES",
+          "Amazon SQS",
+          "Amazon SNS",
+          "Amazon Q Developer",
+          "AWS Free Tier",
+          "Amazon CodeWhisperer",
+          "AWS Toolkit for Visual Studio Code",
+          "AWS Toolkit for JetBrains",
+          "Amazon SageMaker AI Studio",
+          "JupyterLab",
+          "Amazon EMR Studio",
+          "AWS Glue Studio",
+          "AWS Cloud9",
+          "AWS Toolkit for Visual Studio"
+        ],
+        "ai_technologies": [
+          "Python",
+          "Java",
+          "Node.js",
+          "AWS",
+          "Docker",
+          "Kubernetes",
+          "Apache Spark",
+          "Hadoop",
+          "NoSQL",
+          "MySQL",
+          "PostgreSQL",
+          "Redis",
+          "MongoDB",
+          "Apache Kafka",
+          "Apache Cassandra",
+          "Apache HBase",
+          "JetBrains",
+          "VS Code",
+          "Visual Studio",
+          "Eclipse",
+          "CLI",
+          "Microsoft Teams",
+          "Slack",
+          "GitLab",
+          "GitHub",
+          "Visual Studio Code",
+          "Jupyter"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:26:03.770Z"
+      }
+    },
+    {
+      "id": 49,
+      "name": "AMD",
+      "category": "AI Hardware",
+      "urls": [
+        {
+          "id": 165,
+          "url": "https://amd.com/en/graphics/instinct-server-accelerators",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 166,
+          "url": "https://amd.com/en/newsroom",
+          "type": "news",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [],
+        "ai_technologies": [],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 22,
+      "name": "Andi",
+      "category": "AI Search",
+      "urls": [
+        {
+          "id": 85,
+          "url": "https://andisearch.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 646,
+          "id": 646,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:26:17.493Z",
+          "relativeTime": "38 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the homepage",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Andi App",
+          "Andi Chrome Extension"
+        ],
+        "ai_technologies": [
+          "Cutting-edge AI"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 1,
+        "highInterestChanges": 1,
+        "lastActivity": "2025-08-01T22:26:17.493Z"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Anthropic",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 6,
+          "url": "https://anthropic.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 7,
+          "url": "https://anthropic.com/claude",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 9,
+          "url": "https://anthropic.com/news",
+          "type": "news",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 8,
+          "url": "https://anthropic.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 10,
+          "url": "https://docs.anthropic.com",
+          "type": "docs",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 484,
+          "id": 484,
+          "url": "product",
+          "detectedAt": "2025-08-01T18:38:27.433Z",
+          "relativeTime": "4 hours ago",
+          "interestLevel": 4,
+          "summary": "The download link for Claude has been updated with a new URL parameter",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 485,
+          "id": 485,
+          "url": "news",
+          "detectedAt": "2025-08-01T18:38:20.653Z",
+          "relativeTime": "4 hours ago",
+          "interestLevel": 8,
+          "summary": "Addition of a new news article titled 'Anthropic Signs CMS Health Tech Ecosystem Pledge to Advance Healthcare Interoperability' and removal of several older news articles",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 454,
+          "id": 454,
+          "url": "homepage",
+          "detectedAt": "2025-07-29T14:45:29.310Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 3,
+          "summary": "Update of download and login links for Claude.ai",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 455,
+          "id": 455,
+          "url": "product",
+          "detectedAt": "2025-07-29T14:45:23.411Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 3,
+          "summary": "The URL parameters for downloading the Claude app and logging in have changed.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 456,
+          "id": 456,
+          "url": "news",
+          "detectedAt": "2025-07-29T14:45:17.004Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 5,
+          "summary": "Addition of a new case study on how Anthropic teams use Claude Code",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 457,
+          "id": 457,
+          "url": "pricing",
+          "detectedAt": "2025-07-29T14:45:10.018Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 8,
+          "summary": "Changes in pricing plans, specifically in the 'Max' plan where usage is now described as 'per session', and the addition of 'Almost* everything in Pro' to the Team plan with Claude Code available separately. Updates in the 'Team' and 'Enterprise' plans regarding usage limits and Claude Code availability.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 440,
+          "id": 440,
+          "url": "product",
+          "detectedAt": "2025-07-24T15:44:05.779Z",
+          "relativeTime": "7/24/2025",
+          "interestLevel": 4,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 295,
+          "id": 295,
+          "url": "news",
+          "detectedAt": "2025-07-23T19:39:42.299Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 8,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 286,
+          "id": 286,
+          "url": "news",
+          "detectedAt": "2025-07-23T19:02:49.922Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 8,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 219,
+          "id": 219,
+          "url": "news",
+          "detectedAt": "2025-07-22T17:13:18.357Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 6,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Claude",
+          "Claude Code",
+          "Max plan",
+          "Team plan",
+          "Enterprise plan",
+          "API",
+          "Anthropic API",
+          "Anthropic Console",
+          "Claude for Education",
+          "Claude for Enterprise",
+          "Artifacts",
+          "Max Plan",
+          "Claude Console"
+        ],
+        "ai_technologies": [
+          "Python",
+          "HTML",
+          "CSS",
+          "JS",
+          "Google Cloud’s Vertex AI",
+          "Amazon Bedrock",
+          "AWS",
+          "Google Cloud",
+          "Vertex AI",
+          "GitHub",
+          "GitHub Copilot",
+          "API",
+          "SDKs",
+          "Google Cloud's Vertex AI"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 10,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T18:38:27.433Z"
+      }
+    },
+    {
+      "id": 46,
+      "name": "Anyscale",
+      "category": "AI Infrastructure",
+      "urls": [
+        {
+          "id": 155,
+          "url": "https://anyscale.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 157,
+          "url": "https://anyscale.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 156,
+          "url": "https://anyscale.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 643,
+          "id": 643,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:27:08.982Z",
+          "relativeTime": "37 min ago",
+          "interestLevel": 9,
+          "summary": "New homepage content for Anyscale, including product information, customer testimonials, and calls to action",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 644,
+          "id": 644,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:27:02.150Z",
+          "relativeTime": "37 min ago",
+          "interestLevel": 9,
+          "summary": "Initial blog content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 645,
+          "id": 645,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:26:54.250Z",
+          "relativeTime": "37 min ago",
+          "interestLevel": 9,
+          "summary": "Initial content creation for Anyscale pricing page",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Anyscale Platform",
+          "Ray Open Source",
+          "Anyscale Support"
+        ],
+        "ai_technologies": [
+          "Python",
+          "VSCode",
+          "Jupyter",
+          "Cursor",
+          "K8s",
+          "GPU",
+          "CPU",
+          "Prometheus",
+          "Grafana",
+          "Kubernetes",
+          "Azure Kubernetes Service",
+          "Google Cloud",
+          "GKE",
+          "Alibaba Cloud",
+          "ACK",
+          "AWS",
+          "GCP"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:27:08.982Z"
+      }
+    },
+    {
+      "id": 51,
+      "name": "Cerebras",
+      "category": "AI Hardware",
+      "urls": [
+        {
+          "id": 169,
+          "url": "https://cerebras.net",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 171,
+          "url": "https://cerebras.net/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 170,
+          "url": "https://cerebras.net/product-system",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 640,
+          "id": 640,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:27:31.276Z",
+          "relativeTime": "37 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the homepage, including product announcements, customer spotlights, and AI model services",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 641,
+          "id": 641,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:27:24.434Z",
+          "relativeTime": "37 min ago",
+          "interestLevel": 8,
+          "summary": "New blog content and updates to existing blog posts",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 642,
+          "id": 642,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:27:17.168Z",
+          "relativeTime": "37 min ago",
+          "interestLevel": 9,
+          "summary": "New content introduction",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Cerebras Wafer Scale Engine",
+          "Cerebras Inference",
+          "Cerebras AI Model Services",
+          "Cerebras Code",
+          "Cerebras Wafer-Scale Engine",
+          "CS-3 System",
+          "CS-3",
+          "Cerebras Cloud",
+          "API Key"
+        ],
+        "ai_technologies": [
+          "Wafer Scale Engine",
+          "GPU",
+          "Cloud",
+          "Serverless API",
+          "Private Cloud",
+          "On-Premises",
+          "Python",
+          "Cerebras WSE",
+          "NVIDIA H100",
+          "Groq",
+          "SambaNova",
+          "TensorFlow",
+          "PyTorch",
+          "Wafer packaging",
+          "Water loop cooling",
+          "Redundant power supplies",
+          "Hot-swappable components",
+          "100 Gigabit Ethernet",
+          "TCP-IP",
+          "Cerebras protocol"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:27:31.276Z"
+      }
+    },
+    {
+      "id": 54,
+      "name": "Cisco Systems",
+      "category": "Other",
+      "urls": [
+        {
+          "id": 177,
+          "url": "https://www.cisco.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 639,
+          "id": 639,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:27:37.151Z",
+          "relativeTime": "37 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the Cisco Systems homepage, including product and service descriptions, promotions, and free trials",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Cisco 100G or 400G optical transceiver modules",
+          "Cisco Duo",
+          "Cisco Intersight",
+          "Cisco Meraki",
+          "Cisco Nexus",
+          "Cisco Routers",
+          "Cisco Switches",
+          "Cisco Umbrella",
+          "Cisco Webex",
+          "Cisco XDR",
+          "Cyber Vision",
+          "Email Threat Defense",
+          "Firewall",
+          "Hypershield",
+          "Identity Services Engine (ISE)",
+          "Secure Access (SSE)",
+          "Secure Endpoint",
+          "Splunk AppDynamics"
+        ],
+        "ai_technologies": [
+          "Cloud",
+          "Converged infrastructure",
+          "Hybrid cloud",
+          "Hyperconverged infrastructure",
+          "Internet of Things (IoT)",
+          "Networking",
+          "SD-WAN",
+          "Software-defined access",
+          "Software-defined networking (SDN)",
+          "Virtual desktop infrastructure"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 1,
+        "highInterestChanges": 1,
+        "lastActivity": "2025-08-01T22:27:37.151Z"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Codeium",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 49,
+          "url": "https://codeium.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 52,
+          "url": "https://codeium.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 51,
+          "url": "https://codeium.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 50,
+          "url": "https://codeium.com/windsurf",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 635,
+          "id": 635,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:28:03.110Z",
+          "relativeTime": "36 min ago",
+          "interestLevel": 9,
+          "summary": "New homepage content for Codeium, now rebranded as Windsurf, with a focus on AI-powered code editing and collaboration",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 636,
+          "id": 636,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:27:57.567Z",
+          "relativeTime": "36 min ago",
+          "interestLevel": 8,
+          "summary": "New blog content and partnership announcement with Cognition",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 637,
+          "id": 637,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:27:52.597Z",
+          "relativeTime": "36 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of new pricing plans and features for Codeium, now rebranded as Windsurf",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 638,
+          "id": 638,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:27:44.678Z",
+          "relativeTime": "36 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of the Windsurf Editor, a new AI-powered IDE, with features like Cascade, Tab, and Windsurf Previews, along with the announcement of joining forces with Cognition",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Windsurf Editor",
+          "Windsurf Reviews",
+          "Cascade",
+          "Tab",
+          "Windsurf Plugins",
+          "Windsurf for Enterprise",
+          "Cascade on JetBrains"
+        ],
+        "ai_technologies": [
+          "macOS",
+          "Apple Silicon",
+          "Intel",
+          "JetBrains",
+          "Next.js",
+          "TypeScript",
+          "PostgresSQL",
+          "Playwright",
+          "Neon",
+          "Figma",
+          "Slack",
+          "Stripe",
+          "GitHub",
+          "Windows",
+          "x64",
+          "arm64",
+          "VS Code",
+          "GitHub Copilot",
+          "JPMorgan Chase Hall of Innovation"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:28:03.110Z"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Cohere",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 25,
+          "url": "https://cohere.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 28,
+          "url": "https://cohere.ai/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 27,
+          "url": "https://cohere.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 26,
+          "url": "https://cohere.ai/products",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 29,
+          "url": "https://docs.cohere.ai",
+          "type": "docs",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 631,
+          "id": 631,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:28:37.532Z",
+          "relativeTime": "36 min ago",
+          "interestLevel": 8,
+          "summary": "New homepage content with updated product and feature descriptions, industry solutions, and customer stories",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 632,
+          "id": 632,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:28:28.227Z",
+          "relativeTime": "36 min ago",
+          "interestLevel": 8,
+          "summary": "New blog posts and updates to the Cohere website, including the introduction of Command A Vision, a partnership with Bell, and a focus on secure and responsible AI for Europe",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 633,
+          "id": 633,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:28:16.630Z",
+          "relativeTime": "36 min ago",
+          "interestLevel": 9,
+          "summary": "New content introduction with detailed product and service offerings, industry solutions, research initiatives, and customer stories",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 634,
+          "id": 634,
+          "url": "docs",
+          "detectedAt": "2025-08-01T22:28:10.561Z",
+          "relativeTime": "36 min ago",
+          "interestLevel": 9,
+          "summary": "New documentation and website content for Cohere",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Platform",
+          "Command",
+          "Aya Expanse",
+          "Embed",
+          "Rerank",
+          "North",
+          "Compass",
+          "Customization",
+          "Pricing",
+          "Cohere Platform",
+          "v2 API",
+          "Dashboard",
+          "Playground",
+          "LLMU",
+          "Cookbooks"
+        ],
+        "ai_technologies": [
+          "Python",
+          "Sanity.io",
+          "Cloud Platforms",
+          "Databases",
+          "DevOps Tools",
+          "APIs",
+          "SDKs",
+          "API",
+          "JavaScript",
+          "AWS",
+          "Google Inc.",
+          "Linux x86_64",
+          "Fern",
+          "Twitter",
+          "Discord"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:28:37.532Z"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Cursor",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 53,
+          "url": "https://cursor.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 56,
+          "url": "https://cursor.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 54,
+          "url": "https://cursor.com/features",
+          "type": "features",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 55,
+          "url": "https://cursor.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 627,
+          "id": 627,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:29:02.299Z",
+          "relativeTime": "35 min ago",
+          "interestLevel": 9,
+          "summary": "New content introduction",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 628,
+          "id": 628,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:28:56.151Z",
+          "relativeTime": "35 min ago",
+          "interestLevel": 8,
+          "summary": "Initial blog content creation with various articles and links",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 629,
+          "id": 629,
+          "url": "features",
+          "detectedAt": "2025-08-01T22:28:50.514Z",
+          "relativeTime": "35 min ago",
+          "interestLevel": 9,
+          "summary": "New content introduction",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 630,
+          "id": 630,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:28:44.625Z",
+          "relativeTime": "35 min ago",
+          "interestLevel": 9,
+          "summary": "Initial pricing page content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Cursor",
+          "Copilot",
+          "VSCode",
+          "Cursor Agent",
+          "Bugbot",
+          "Ultra",
+          "Pro",
+          "Agent",
+          "Hobby",
+          "Teams",
+          "Enterprise"
+        ],
+        "ai_technologies": [
+          "Python",
+          "JavaScript",
+          "Web",
+          "Mobile",
+          "Next.js",
+          "React",
+          "API",
+          "SAML",
+          "OIDC",
+          "SCIM"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:29:02.299Z"
+      }
+    },
+    {
+      "id": 35,
+      "name": "DALL-E",
+      "category": "Image Generation",
+      "urls": [
+        {
+          "id": 124,
+          "url": "https://openai.com/dall-e-3",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 125,
+          "url": "https://openai.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 626,
+          "id": 626,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:29:08.840Z",
+          "relativeTime": "35 min ago",
+          "interestLevel": 9,
+          "summary": "The content changed from a blocked page to a pricing page for ChatGPT by OpenAI, revealing various plans and features.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "ChatGPT",
+          "ChatGPT Plus",
+          "ChatGPT Pro",
+          "ChatGPT Team",
+          "ChatGPT Enterprise",
+          "Sora",
+          "API Platform"
+        ],
+        "ai_technologies": [
+          "Python",
+          "Web",
+          "iOS",
+          "Android",
+          "Google Drive",
+          "SharePoint",
+          "GitHub",
+          "Dropbox"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 1,
+        "highInterestChanges": 1,
+        "lastActivity": "2025-08-01T22:29:08.840Z"
+      }
+    },
+    {
+      "id": 41,
+      "name": "DataRobot",
+      "category": "Enterprise AI",
+      "urls": [
+        {
+          "id": 138,
+          "url": "https://datarobot.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 140,
+          "url": "https://datarobot.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 139,
+          "url": "https://datarobot.com/platform",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 623,
+          "id": 623,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:29:28.906Z",
+          "relativeTime": "35 min ago",
+          "interestLevel": 8,
+          "summary": "New homepage content with updated product information, partnerships, and customer testimonials",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 624,
+          "id": 624,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:29:24.084Z",
+          "relativeTime": "35 min ago",
+          "interestLevel": 8,
+          "summary": "New blog content and updated website structure",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 625,
+          "id": 625,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:29:18.958Z",
+          "relativeTime": "35 min ago",
+          "interestLevel": 9,
+          "summary": "New content added for DataRobot's AI platform, including product descriptions, features, and customer testimonials",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "AI Apps & Agents",
+          "Agentic AI Platform",
+          "Covalent",
+          "syftr",
+          "Agent Workforce Platform",
+          "DataRobot",
+          "Demand Planning App",
+          "NVIDIA AI Enterprise"
+        ],
+        "ai_technologies": [
+          "NVIDIA Enterprise AI",
+          "SAP",
+          "Snowflake",
+          "SQL",
+          "S3",
+          "NVIDIA",
+          "Nutanix"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:29:28.906Z"
+      }
+    },
+    {
+      "id": 25,
+      "name": "Descript",
+      "category": "AI Voice/Audio",
+      "urls": [
+        {
+          "id": 91,
+          "url": "https://descript.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 94,
+          "url": "https://descript.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 92,
+          "url": "https://descript.com/overdub",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 93,
+          "url": "https://descript.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 619,
+          "id": 619,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:30:01.025Z",
+          "relativeTime": "34 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the Descript homepage, including features, AI tools, and company information",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 620,
+          "id": 620,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:29:51.463Z",
+          "relativeTime": "34 min ago",
+          "interestLevel": 8,
+          "summary": "Introduction of Underlord, an AI-powered editing assistant, and updates to the Descript blog and website",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 621,
+          "id": 621,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:29:45.409Z",
+          "relativeTime": "34 min ago",
+          "interestLevel": 9,
+          "summary": "New website content and features introduction",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 622,
+          "id": 622,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:29:38.651Z",
+          "relativeTime": "35 min ago",
+          "interestLevel": 8,
+          "summary": "New pricing plans and features",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Descript",
+          "Free Plan",
+          "Hobbyist Plan",
+          "Creator Plan",
+          "Underlord",
+          "Descript Blog",
+          "Rooms",
+          "Clips",
+          "Screen recording",
+          "Overdub",
+          "Teams",
+          "Enterprise",
+          "Free",
+          "Hobbyist",
+          "Creator",
+          "Business"
+        ],
+        "ai_technologies": [
+          "Text-based Editing",
+          "Timeline Editor",
+          "Royalty-free Stock Library",
+          "Python",
+          "JavaScript",
+          "HTML/CSS",
+          "AWS",
+          "Cloud platforms",
+          "Video editing",
+          "Screen recording",
+          "Podcasting",
+          "Multicam editing",
+          "Green screen"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:30:01.025Z"
+      }
+    },
+    {
+      "id": 24,
+      "name": "ElevenLabs",
+      "category": "AI Voice/Audio",
+      "urls": [
+        {
+          "id": 87,
+          "url": "https://elevenlabs.io",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 90,
+          "url": "https://elevenlabs.io/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 89,
+          "url": "https://elevenlabs.io/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 88,
+          "url": "https://elevenlabs.io/voice-generator",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 615,
+          "id": 615,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:30:32.940Z",
+          "relativeTime": "34 min ago",
+          "interestLevel": 9,
+          "summary": "Initial content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 616,
+          "id": 616,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:30:25.606Z",
+          "relativeTime": "34 min ago",
+          "interestLevel": 9,
+          "summary": "New blog content and updates on AI audio research, product deployment, and company updates",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 617,
+          "id": 617,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:30:17.996Z",
+          "relativeTime": "34 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of a new pricing page with various plans for creators and businesses",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 618,
+          "id": 618,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:30:10.878Z",
+          "relativeTime": "34 min ago",
+          "interestLevel": 8,
+          "summary": "Initial content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Studio",
+          "Conversational AI",
+          "Dubbing Studio",
+          "Voice Library",
+          "Audio Native",
+          "ElevenStudios",
+          "API",
+          "Voiceover Studio",
+          "ElevenReader",
+          "Mobile App",
+          "ElevenLabs App"
+        ],
+        "ai_technologies": [
+          "WebRTC",
+          "Python",
+          "TypeScript",
+          "JavaScript",
+          "HTML/CSS",
+          "AWS",
+          "Azure",
+          "GCP",
+          "Docker",
+          "Kubernetes"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:30:32.940Z"
+      }
+    },
+    {
+      "id": 38,
+      "name": "Flux",
+      "category": "Image Generation",
+      "urls": [
+        {
+          "id": 130,
+          "url": "https://blackforestlabs.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 131,
+          "url": "https://blackforestlabs.ai/our-models",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 613,
+          "id": 613,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:30:47.561Z",
+          "relativeTime": "33 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of FLUX.1 Kontext, a suite of generative flow matching models for text-and-image-driven generation and editing",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 614,
+          "id": 614,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:30:42.948Z",
+          "relativeTime": "33 min ago",
+          "interestLevel": 8,
+          "summary": "The content of the product page changed from no content to a 404 error page",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "FLUX.1 Kontext [dev]",
+          "FLUX.1 Kontext [pro]",
+          "FLUX.1 Kontext [max]",
+          "Black Forest Labs API",
+          "Playground"
+        ],
+        "ai_technologies": [
+          "Python",
+          "GitHub",
+          "Hugging Face",
+          "AWS",
+          "Azure",
+          "GCP"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 2,
+        "highInterestChanges": 2,
+        "lastActivity": "2025-08-01T22:30:47.561Z"
+      }
+    },
+    {
+      "id": 11,
+      "name": "GitHub Copilot",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 48,
+          "url": "https://docs.github.com/en/copilot",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 47,
+          "url": "https://github.blog/tag/github-copilot",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 45,
+          "url": "https://github.com/features/copilot",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 46,
+          "url": "https://github.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 495,
+          "id": 495,
+          "url": "docs",
+          "detectedAt": "2025-08-01T20:39:58.043Z",
+          "relativeTime": "2 hours ago",
+          "interestLevel": 1,
+          "summary": "No significant changes were detected in the provided content.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 482,
+          "id": 482,
+          "url": "docs",
+          "detectedAt": "2025-08-01T18:38:57.523Z",
+          "relativeTime": "4 hours ago",
+          "interestLevel": 4,
+          "summary": "Billing section updated to 'organizations and enterprises' from 'billing for organizations' and 'billing for enterprises'",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 483,
+          "id": 483,
+          "url": "blog",
+          "detectedAt": "2025-08-01T18:38:51.413Z",
+          "relativeTime": "4 hours ago",
+          "interestLevel": 1,
+          "summary": "No significant changes were detected in the content structure or links between the two versions.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 470,
+          "id": 470,
+          "url": "docs",
+          "detectedAt": "2025-07-30T14:14:55.328Z",
+          "relativeTime": "2 days ago",
+          "interestLevel": 2,
+          "summary": "No significant changes were detected in the content structure or links between the two versions.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 452,
+          "id": 452,
+          "url": "docs",
+          "detectedAt": "2025-07-29T14:45:53.478Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 7,
+          "summary": "Reorganization and renaming of certain sections and links within the GitHub Copilot documentation",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 453,
+          "id": 453,
+          "url": "blog",
+          "detectedAt": "2025-07-29T14:45:46.743Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 1,
+          "summary": "No significant changes were detected in the provided content.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 439,
+          "id": 439,
+          "url": "docs",
+          "detectedAt": "2025-07-24T15:44:39.009Z",
+          "relativeTime": "7/24/2025",
+          "interestLevel": 8,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 310,
+          "id": 310,
+          "url": "docs",
+          "detectedAt": "2025-07-23T23:36:42.053Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 2,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 298,
+          "id": 298,
+          "url": "docs",
+          "detectedAt": "2025-07-23T19:03:26.617Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 8,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 285,
+          "id": 285,
+          "url": "homepage",
+          "detectedAt": "2025-07-23T19:03:14.475Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 8,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "GitHub Copilot",
+          "GitHub Copilot Spaces",
+          "GitHub",
+          "GitHub Docs",
+          "GitHub Desktop",
+          "Atom",
+          "Electron",
+          "GitHub Codespaces",
+          "GitHub Actions",
+          "GitHub Packages",
+          "GitHub Advanced Security",
+          "GitHub Secret Protection",
+          "Copilot Chat",
+          "Copilot Coding Agent",
+          "Copilot Extensions",
+          "GitHub Copilot Free",
+          "GitHub Copilot Pro",
+          "GitHub Copilot Team",
+          "GitHub Copilot Pro+",
+          "GitHub Copilot Business",
+          "GitHub Copilot Enterprise",
+          "GitHub Spark"
+        ],
+        "ai_technologies": [
+          "Git",
+          "GitHub Actions",
+          "GitHub API",
+          "Playwright",
+          "Python",
+          "JavaScript",
+          "GitHub Codespaces",
+          "GitHub Packages",
+          "Azure",
+          "SAML",
+          "SCIM",
+          "GitHub",
+          "CLI",
+          "IDE",
+          "Windows Terminal",
+          "GitHub Mobile",
+          "Visual Studio Code",
+          "Visual Studio",
+          "JetBrains IDEs",
+          "Neovim",
+          "Azure Data Studio",
+          "Eclipse"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 10,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T20:39:58.043Z"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Google DeepMind",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 15,
+          "url": "https://ai.google.dev",
+          "type": "api",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 12,
+          "url": "https://ai.google/discover/gemini",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 14,
+          "url": "https://blog.google/technology/ai",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 13,
+          "url": "https://cloud.google.com/vertex-ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 11,
+          "url": "https://deepmind.google",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 480,
+          "id": 480,
+          "url": "blog",
+          "detectedAt": "2025-08-01T18:39:22.393Z",
+          "relativeTime": "4 hours ago",
+          "interestLevel": 8,
+          "summary": "New articles and updates were added to the Google Blog, including 'Google Earth AI', 'The inside story of building NotebookLM', and updates to Gemini Code Assist and goo.gl links.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 481,
+          "id": 481,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T18:39:06.003Z",
+          "relativeTime": "4 hours ago",
+          "interestLevel": 2,
+          "summary": "No significant changes were detected in the content, only minor formatting and wording tweaks.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 467,
+          "id": 467,
+          "url": "product",
+          "detectedAt": "2025-07-30T14:15:28.890Z",
+          "relativeTime": "2 days ago",
+          "interestLevel": 1,
+          "summary": "No changes were detected in the content between the two versions.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 468,
+          "id": 468,
+          "url": "blog",
+          "detectedAt": "2025-07-30T14:15:22.285Z",
+          "relativeTime": "2 days ago",
+          "interestLevel": 8,
+          "summary": "New articles and updates were added to the Google Blog, including Google Earth AI, NotebookLM, and Gemini updates",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 469,
+          "id": 469,
+          "url": "homepage",
+          "detectedAt": "2025-07-30T14:15:04.585Z",
+          "relativeTime": "2 days ago",
+          "interestLevel": 2,
+          "summary": "No significant changes were detected in the content between the two versions.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 449,
+          "id": 449,
+          "url": "blog",
+          "detectedAt": "2025-07-29T14:46:17.001Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 8,
+          "summary": "New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inference?', 'Find out the latest Gemini updates with Gemini Drops', 'Turn your photos into videos in Gemini', 'Plan ahead with scheduled actions in the Gemini app', 'Check out the first images of wildfires detected by FireSat', 'How we built one of the most ambitious datasets in brain activity research', 'Google Beam: Our AI-first 3D video communication platform', 'New in Gemini Code Assist: Agent Mode and IDE enhancements', 'Gemini CLI: your open-source AI agent', 'Gemini Code Assist adds Gemini 2.5, personalization and context management', 'Try on styles with AI, jump on great prices and more', 'Web Guide: An experimental AI-organized search results page'",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 450,
+          "id": 450,
+          "url": "pricing",
+          "detectedAt": "2025-07-29T14:46:11.731Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 2,
+          "summary": "No significant content changes were detected between the two versions of the webpage.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 451,
+          "id": 451,
+          "url": "homepage",
+          "detectedAt": "2025-07-29T14:46:00.101Z",
+          "relativeTime": "3 days ago",
+          "interestLevel": 2,
+          "summary": "No significant changes were detected in the content structure or major updates to the models, research, or science sections.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 438,
+          "id": 438,
+          "url": "blog",
+          "detectedAt": "2025-07-24T15:45:05.834Z",
+          "relativeTime": "7/24/2025",
+          "interestLevel": 8,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 289,
+          "id": 289,
+          "url": "blog",
+          "detectedAt": "2025-07-23T19:40:46.363Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 8,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Gemini API",
+          "Google AI Studio",
+          "Gemini Nano",
+          "Google AI Edge",
+          "Gemma open models",
+          "Responsible GenAI Toolkit",
+          "Secure AI Framework",
+          "Gemini",
+          "Gemma",
+          "Veo",
+          "Imagen",
+          "Lyria",
+          "Gemini app",
+          "Vertex AI Studio",
+          "Flow",
+          "MusicFX DJ",
+          "Whisk",
+          "Vertex AI",
+          "Google Search",
+          "Google Maps",
+          "Google Photos",
+          "Google Workspace",
+          "Chrome",
+          "Android",
+          "YouTube",
+          "Gemini App",
+          "Google Earth AI",
+          "Google Cloud",
+          "Google Play",
+          "Google Nest",
+          "Pixel",
+          "Wear OS",
+          "Fitbit",
+          "Google Translate",
+          "Vertex AI Platform",
+          "Vertex AI Agent Builder",
+          "Cloud Run",
+          "Google Kubernetes Engine",
+          "Looker",
+          "Apigee API Management",
+          "Cloud SQL",
+          "Cloud Storage",
+          "BigQuery",
+          "Dataflow",
+          "Pub/Sub",
+          "Dataproc",
+          "Cloud Data Fusion",
+          "Cloud Composer",
+          "BigLake",
+          "Dataplex",
+          "Dataform",
+          "Analytics Hub"
+        ],
+        "ai_technologies": [
+          "Python",
+          "Google Cloud",
+          "Android",
+          "Chrome",
+          "Colab",
+          "Firebase",
+          "JetBrains",
+          "VS Code",
+          "TensorFlow",
+          "PyTorch",
+          "JAX",
+          "Jules",
+          "Android Studio",
+          "Chrome DevTools",
+          "Firebase Studio",
+          "Google Cloud Platform",
+          "RSS",
+          "Kubernetes",
+          "Docker",
+          "Apache Spark",
+          "Apache Hadoop",
+          "Apache Airflow"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 10,
+        "highInterestChanges": 5,
+        "lastActivity": "2025-08-01T18:39:22.393Z"
+      }
+    },
+    {
+      "id": 42,
+      "name": "H2O.ai",
+      "category": "Enterprise AI",
+      "urls": [
+        {
+          "id": 141,
+          "url": "https://h2o.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 143,
+          "url": "https://h2o.ai/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 142,
+          "url": "https://h2o.ai/platform",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 610,
+          "id": 610,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:32:18.618Z",
+          "relativeTime": "32 min ago",
+          "interestLevel": 9,
+          "summary": "New homepage content for H2O.ai, including updated navigation, product descriptions, and calls-to-action",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 611,
+          "id": 611,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:31:58.553Z",
+          "relativeTime": "32 min ago",
+          "interestLevel": 8,
+          "summary": "New content added to the H2O.ai blog page, including various sections and links to different resources, products, and company information",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 612,
+          "id": 612,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:31:49.991Z",
+          "relativeTime": "32 min ago",
+          "interestLevel": 9,
+          "summary": "New content introduction for H2O AI Cloud, including platform, solutions, customers, partners, resources, events, and company information",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "H2O AI Cloud",
+          "H2O GenAI App Store",
+          "H2O AI AppStore",
+          "H2O Document AI",
+          "H2O Hospital Occupancy Simulator",
+          "H2O Driverless AI",
+          "H2O-3",
+          "H2O Hydrogen Torch",
+          "H2O Wave",
+          "H2O Label Genie",
+          "H2O AI Feature Store",
+          "H2O MLOps",
+          "GenAI App Store",
+          "H2O Feature Store"
+        ],
+        "ai_technologies": [
+          "Python",
+          "K8s",
+          "H2O Sparkling Water",
+          "AWS",
+          "Dell",
+          "Kubernetes",
+          "Snowflake",
+          "Azure",
+          "GCP",
+          "Red Hat",
+          "HPE"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:32:18.618Z"
+      }
+    },
+    {
+      "id": 30,
+      "name": "HeyGen",
+      "category": "Video AI",
+      "urls": [
+        {
+          "id": 108,
+          "url": "https://heygen.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 111,
+          "url": "https://heygen.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 109,
+          "url": "https://heygen.com/features",
+          "type": "features",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 110,
+          "url": "https://heygen.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [],
+        "ai_technologies": [],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 43,
+      "name": "Hugging Face",
+      "category": "AI Infrastructure",
+      "urls": [
+        {
+          "id": 144,
+          "url": "https://huggingface.co",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 146,
+          "url": "https://huggingface.co/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 147,
+          "url": "https://huggingface.co/docs",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 145,
+          "url": "https://huggingface.co/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 606,
+          "id": 606,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:34:06.271Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 9,
+          "summary": "New homepage content for Hugging Face, including updated sections for models, datasets, spaces, and community features",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 607,
+          "id": 607,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:34:01.501Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 8,
+          "summary": "New blog posts and articles were added to the Hugging Face blog, including topics such as AI shopping assistants, multimodal AI, and LLM continuity.",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 608,
+          "id": 608,
+          "url": "docs",
+          "detectedAt": "2025-08-01T22:33:56.154Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 9,
+          "summary": "Initial documentation content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 609,
+          "id": 609,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:33:51.383Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 9,
+          "summary": "Initial pricing page content",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Hugging Face Hub",
+          "Hugging Face Models",
+          "Hugging Face Datasets",
+          "Hugging Face Spaces",
+          "Hugging Face Inference Endpoints",
+          "Hugging Face Compute",
+          "Hugging Face Enterprise",
+          "Hugging Face MCP Server",
+          "Gradio MCP Servers",
+          "Trackio",
+          "hf CLI",
+          "Parquet Content-Defined Chunking",
+          "TimeScope",
+          "ScreenEnv",
+          "Consilium",
+          "FutureBench",
+          "Hugging Face API",
+          "Gradio",
+          "AutoTrain",
+          "Chat UI",
+          "Leaderboards",
+          "PRO Account",
+          "Team",
+          "Enterprise",
+          "Inference Endpoints",
+          "Spaces",
+          "Dataset Viewer",
+          "Models",
+          "Datasets"
+        ],
+        "ai_technologies": [
+          "PyTorch",
+          "Python",
+          "GPU",
+          "APIs",
+          "SDKs",
+          "Git LFS",
+          "Xet",
+          "AWS",
+          "TensorFlow",
+          "JAX",
+          "JavaScript",
+          "Azure",
+          "Git",
+          "Docker",
+          "GCP",
+          "SSH",
+          "VS Code"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:34:06.271Z"
+      }
+    },
+    {
+      "id": 36,
+      "name": "Ideogram",
+      "category": "Image Generation",
+      "urls": [
+        {
+          "id": 126,
+          "url": "https://ideogram.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 127,
+          "url": "https://ideogram.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [],
+        "ai_technologies": [],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 8,
+      "name": "Inflection AI",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 34,
+          "url": "https://inflection.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 36,
+          "url": "https://inflection.ai/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 35,
+          "url": "https://pi.ai",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 603,
+          "id": 603,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:34:35.362Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 8,
+          "summary": "Initial content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 604,
+          "id": 604,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:34:28.129Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 9,
+          "summary": "Initial blog content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 605,
+          "id": 605,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:34:21.332Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of a new product/feature named 'Pi' with emphasis on emotional intelligence, along with a 'Pi Classic' option",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Inflection Platform",
+          "Pi",
+          "Pi Lab",
+          "Inflection AI",
+          "Inflection for Enterprise",
+          "Inflection-1",
+          "Inflection-2",
+          "Inflection-2.5",
+          "API",
+          "Pi Classic"
+        ],
+        "ai_technologies": [
+          "Cloud",
+          "Enterprise-grade solutions",
+          "Python",
+          "Intel Gaudi",
+          "NVIDIA",
+          "CoreWeave",
+          "AWS",
+          "Azure",
+          "GCP",
+          "TensorFlow",
+          "PyTorch",
+          "JAX",
+          "Inflection AI Website"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:34:35.362Z"
+      }
+    },
+    {
+      "id": 50,
+      "name": "Intel",
+      "category": "AI Hardware",
+      "urls": [
+        {
+          "id": 167,
+          "url": "https://intel.com/content/www/us/en/artificial-intelligence",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 168,
+          "url": "https://intel.com/content/www/us/en/newsroom",
+          "type": "news",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 601,
+          "id": 601,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:34:54.805Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 8,
+          "summary": "New content added to Intel's homepage, focusing on Artificial Intelligence (AI) solutions",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 602,
+          "id": 602,
+          "url": "news",
+          "detectedAt": "2025-08-01T22:34:42.892Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 8,
+          "summary": "New content added to Intel Newsroom Home, including recent articles, social news, and a section for artificial intelligence news",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Intel Core Ultra Processors",
+          "Intel Xeon Processors",
+          "Intel Xeon CPU Max Series",
+          "Intel Atom Processors",
+          "AI PCs Powered by Intel",
+          "Gaming Systems",
+          "Intel vPro for Business",
+          "Intel Arc Discrete Graphics",
+          "Intel Wi-Fi Products",
+          "Intel Gaudi AI Accelerators",
+          "AI Software Solutions",
+          "Intel Data Center GPU Flex Series",
+          "Intel-powered AI PCs",
+          "Aurora Supercomputer",
+          "Intel Xeon 6",
+          "RibbonFET Transistor",
+          "Intel Core Ultra"
+        ],
+        "ai_technologies": [
+          "Python",
+          "oneAPI Unified Runtime",
+          "OpenVINO Toolkit",
+          "Intel Tiber Trust Authority",
+          "Open Source Projects",
+          "Intel Developer Catalog",
+          "Hugging Face",
+          "Intel Foundry",
+          "Silicon Die",
+          "Chip Packages"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 2,
+        "highInterestChanges": 2,
+        "lastActivity": "2025-08-01T22:34:54.805Z"
+      }
+    },
+    {
+      "id": 45,
+      "name": "LangChain",
+      "category": "AI Infrastructure",
+      "urls": [
+        {
+          "id": 153,
+          "url": "https://blog.langchain.dev",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 154,
+          "url": "https://docs.langchain.com",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 151,
+          "url": "https://langchain.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 152,
+          "url": "https://langchain.com/langsmith",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 597,
+          "id": 597,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:35:21.545Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 9,
+          "summary": "Initial content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 598,
+          "id": 598,
+          "url": "docs",
+          "detectedAt": "2025-08-01T22:35:15.467Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 9,
+          "summary": "Initial content creation for LangChain documentation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 599,
+          "id": 599,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:35:09.421Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 8,
+          "summary": "New content added to the homepage, including product descriptions, customer logos, and calls-to-action",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 600,
+          "id": 600,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:35:02.644Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of LangSmith, a unified observability and evaluation platform for AI applications",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "LangGraph Platform",
+          "LangSmith",
+          "Align Evals",
+          "LangChain",
+          "LangGraph Studio",
+          "LangGraph"
+        ],
+        "ai_technologies": [
+          "Python",
+          "AWS",
+          "AWS Marketplace",
+          "JavaScript",
+          "Mintlify",
+          "TypeScript",
+          "GitHub",
+          "GCP",
+          "Kubernetes"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:35:21.545Z"
+      }
+    },
+    {
+      "id": 37,
+      "name": "Leonardo AI",
+      "category": "Image Generation",
+      "urls": [
+        {
+          "id": 128,
+          "url": "https://leonardo.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 129,
+          "url": "https://leonardo.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 595,
+          "id": 595,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:35:35.597Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 8,
+          "summary": "Introduction of Veo 3, a new AI image and video generation feature, and updates to the website's layout and content",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 596,
+          "id": 596,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:35:30.210Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 8,
+          "summary": "Introduction of new API plans and pricing structure",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Leonardo AI",
+          "Veo 3",
+          "Elements",
+          "Flow State",
+          "Phoenix",
+          "AI Art Generator",
+          "Transparent PNG Generator",
+          "AI Video Generator",
+          "AI Marketing Tools",
+          "AI Graphic Design",
+          "AI Print on Demand",
+          "AI Photography",
+          "AI Interior Design",
+          "AI Architecture",
+          "Leonardo API"
+        ],
+        "ai_technologies": [
+          "AI Canvas",
+          "3D Texture Generation",
+          "Python",
+          "API"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 2,
+        "highInterestChanges": 2,
+        "lastActivity": "2025-08-01T22:35:35.597Z"
+      }
+    },
+    {
+      "id": 33,
+      "name": "Luma AI",
+      "category": "Video AI",
+      "urls": [
+        {
+          "id": 118,
+          "url": "https://lumalabs.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 119,
+          "url": "https://lumalabs.ai/dream-machine",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 120,
+          "url": "https://lumalabs.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 592,
+          "id": 592,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:36:14.509Z",
+          "relativeTime": "28 min ago",
+          "interestLevel": 9,
+          "summary": "New content introduction, including product announcements, features, and company mission",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 593,
+          "id": 593,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:35:51.312Z",
+          "relativeTime": "28 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of Luma Dream Machine, a new product for creating stunning images and videos",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 594,
+          "id": 594,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:35:43.468Z",
+          "relativeTime": "28 min ago",
+          "interestLevel": 8,
+          "summary": "The pricing page content was replaced with a 'Page Not Found' message",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Dream Machine",
+          "Ray2",
+          "Photon",
+          "Luma API",
+          "Modify Video",
+          "Luma App",
+          "Genie",
+          "App",
+          "Flythroughs",
+          "Web",
+          "API"
+        ],
+        "ai_technologies": [
+          "Python",
+          "iOS",
+          "Web",
+          "App Store",
+          "Twitter",
+          "Instagram",
+          "LinkedIn",
+          "YouTube",
+          "Discord"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:36:14.509Z"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Meta AI",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 16,
+          "url": "https://ai.meta.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 18,
+          "url": "https://ai.meta.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 17,
+          "url": "https://ai.meta.com/llama",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 19,
+          "url": "https://llama.meta.com",
+          "type": "api",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 588,
+          "id": 588,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:36:50.361Z",
+          "relativeTime": "27 min ago",
+          "interestLevel": 8,
+          "summary": "Introduction of the new Meta AI app, updates to Meta AI features, and the announcement of Llama 4",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 589,
+          "id": 589,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:36:44.407Z",
+          "relativeTime": "27 min ago",
+          "interestLevel": 8,
+          "summary": "New content added to the Meta AI blog",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 590,
+          "id": 590,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:36:34.438Z",
+          "relativeTime": "28 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of Llama 4, a new generation of AI models with native multimodality, advanced reasoning, and industry-leading context windows",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 591,
+          "id": 591,
+          "url": "api",
+          "detectedAt": "2025-08-01T22:36:24.378Z",
+          "relativeTime": "28 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of Llama 4 models with native multimodality, advanced reasoning, and industry-leading context windows",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Meta AI app",
+          "Llama",
+          "AI Studio",
+          "Ray-Ban Meta glasses",
+          "Meta AI",
+          "Llama API",
+          "Llama Stack",
+          "Llama 4 Maverick",
+          "Llama 4 Scout",
+          "Llama 4 Behemoth"
+        ],
+        "ai_technologies": [
+          "Python",
+          "Facebook",
+          "Instagram",
+          "Google Play",
+          "App Store",
+          "AWS",
+          "TensorFlow",
+          "PyTorch",
+          "JAX"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:36:50.361Z"
+      }
+    },
+    {
+      "id": 34,
+      "name": "Midjourney",
+      "category": "Image Generation",
+      "urls": [
+        {
+          "id": 122,
+          "url": "https://docs.midjourney.com",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 123,
+          "url": "https://docs.midjourney.com/docs/plans",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 121,
+          "url": "https://midjourney.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 160,
+          "id": 160,
+          "url": "docs",
+          "detectedAt": "2025-07-21T15:18:22.044Z",
+          "relativeTime": "7/21/2025",
+          "interestLevel": 8,
+          "summary": "Change detected",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 161,
+          "id": 161,
+          "url": "pricing",
+          "detectedAt": "2025-07-21T15:17:43.481Z",
+          "relativeTime": "7/21/2025",
+          "interestLevel": 9,
+          "summary": "Change detected",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Midjourney",
+          "Documentation",
+          "Billing Support",
+          "Basic Plan",
+          "Standard Plan",
+          "Pro Plan",
+          "Mega Plan",
+          "Midjourney Magazine"
+        ],
+        "ai_technologies": [
+          "Python",
+          "Discord",
+          "AWS",
+          "Web"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 2,
+        "highInterestChanges": 2,
+        "lastActivity": "2025-07-21T15:18:22.044Z"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Mistral AI",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 24,
+          "url": "https://docs.mistral.ai",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 20,
+          "url": "https://mistral.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 23,
+          "url": "https://mistral.ai/news",
+          "type": "news",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 22,
+          "url": "https://mistral.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 21,
+          "url": "https://mistral.ai/technology",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 583,
+          "id": 583,
+          "url": "docs",
+          "detectedAt": "2025-08-01T22:37:54.081Z",
+          "relativeTime": "26 min ago",
+          "interestLevel": 9,
+          "summary": "Initial documentation release",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 584,
+          "id": 584,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:37:48.406Z",
+          "relativeTime": "26 min ago",
+          "interestLevel": 9,
+          "summary": "The entire content of the Mistral AI homepage has been added, including product descriptions, customer testimonials, and partnership announcements.",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 585,
+          "id": 585,
+          "url": "news",
+          "detectedAt": "2025-08-01T22:37:43.351Z",
+          "relativeTime": "26 min ago",
+          "interestLevel": 9,
+          "summary": "Initial content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 586,
+          "id": 586,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:37:38.486Z",
+          "relativeTime": "27 min ago",
+          "interestLevel": 9,
+          "summary": "New pricing page with detailed plans and features",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 587,
+          "id": 587,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:37:33.098Z",
+          "relativeTime": "27 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of La Plateforme, a comprehensive AI platform for building, customizing, and deploying AI solutions",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Mistral Medium",
+          "Codestral",
+          "Mistral OCR",
+          "Mistral Saba",
+          "Mistral Large",
+          "Pixtral Large",
+          "Ministral 3B",
+          "Ministral 8B",
+          "Mistral Embed",
+          "Mistral Moderation",
+          "Mistral Small",
+          "Devstral Small",
+          "Pixtral",
+          "Mistral NeMo",
+          "Codestral Mamba",
+          "Mathstral 7b",
+          "Mistral AI APIs",
+          "Le Chat",
+          "La Plateforme",
+          "Mistral Code",
+          "Mistral Compute",
+          "API",
+          "Deep Research"
+        ],
+        "ai_technologies": [
+          "Python",
+          "GitHub",
+          "Discord",
+          "La Plateforme",
+          "Azure",
+          "Cloud",
+          "Edge",
+          "Devices",
+          "Satellite Imagery",
+          "Microsoft Azure",
+          "AWS",
+          "Google Cloud",
+          "Mistral Cloud",
+          "SAP",
+          "IBM",
+          "Snowflake",
+          "NVIDIA",
+          "Outscale"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 5,
+        "highInterestChanges": 5,
+        "lastActivity": "2025-08-01T22:37:54.081Z"
+      }
+    },
+    {
+      "id": 27,
+      "name": "Murf AI",
+      "category": "AI Voice/Audio",
+      "urls": [
+        {
+          "id": 98,
+          "url": "https://murf.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 99,
+          "url": "https://murf.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 100,
+          "url": "https://murf.ai/resources/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 581,
+          "id": 581,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:38:19.182Z",
+          "relativeTime": "26 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the homepage of Murf AI",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 582,
+          "id": 582,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:38:02.664Z",
+          "relativeTime": "26 min ago",
+          "interestLevel": 8,
+          "summary": "The Murf AI blog page now displays a 404 error page, indicating that the requested page could not be found.",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Murf Studio",
+          "Murf API",
+          "Murf Voices Installer",
+          "Murf Text to Speech API",
+          "AI Voice Generator",
+          "Voice Changer",
+          "Canva add-on",
+          "Integrations"
+        ],
+        "ai_technologies": [
+          "HTML",
+          "HTML Embed Code",
+          "WordPress",
+          "Notion",
+          "Wix",
+          "Adobe Audition",
+          "Adobe Captivate",
+          "Google Slides",
+          "PowerPoint",
+          "Canva",
+          "Python",
+          "JavaScript",
+          "HTML/CSS",
+          "AWS",
+          "Azure",
+          "GCP"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 2,
+        "highInterestChanges": 2,
+        "lastActivity": "2025-08-01T22:38:19.182Z"
+      }
+    },
+    {
+      "id": 23,
+      "name": "Neeva",
+      "category": "AI Search",
+      "urls": [
+        {
+          "id": 86,
+          "url": "https://neeva.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 580,
+          "id": 580,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:38:29.451Z",
+          "relativeTime": "26 min ago",
+          "interestLevel": 6,
+          "summary": "Initial content addition",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [],
+        "ai_technologies": [],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 1,
+        "highInterestChanges": 0,
+        "lastActivity": "2025-08-01T22:38:29.451Z"
+      }
+    },
+    {
+      "id": 48,
+      "name": "NVIDIA",
+      "category": "AI Hardware",
+      "urls": [
+        {
+          "id": 163,
+          "url": "https://blogs.nvidia.com/ai",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 164,
+          "url": "https://developer.nvidia.com",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 161,
+          "url": "https://nvidia.com/ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 162,
+          "url": "https://nvidia.com/en-us/data-center/products",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 576,
+          "id": 576,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:39:03.901Z",
+          "relativeTime": "25 min ago",
+          "interestLevel": 8,
+          "summary": "The NVIDIA blog content changed from no previous version to a fully structured blog with various sections and articles.",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 577,
+          "id": 577,
+          "url": "docs",
+          "detectedAt": "2025-08-01T22:38:57.925Z",
+          "relativeTime": "25 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the NVIDIA Developer website, including learning pathways, tutorials, news, training, and on-demand videos",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 578,
+          "id": 578,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:38:49.958Z",
+          "relativeTime": "25 min ago",
+          "interestLevel": 8,
+          "summary": "New homepage content with updated product and solution offerings",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 579,
+          "id": 579,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:38:39.478Z",
+          "relativeTime": "26 min ago",
+          "interestLevel": 9,
+          "summary": "New content added for NVIDIA Data Center Products",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "GeForce NOW",
+          "NVIDIA RTX PCs",
+          "CUDA Toolkit",
+          "CUDA-X Libraries",
+          "Nsight Developer Tools",
+          "Omniverse",
+          "Cosmos",
+          "ACE",
+          "Universal Scene Description (USD)",
+          "NVIDIA DGX Cloud",
+          "NGC Catalog",
+          "RTX AI Apps",
+          "NVIDIA Llama Nemotron Super",
+          "FourCastNet",
+          "BioNeMo",
+          "DGX Cloud",
+          "NVIDIA APIs",
+          "Omniverse Cloud",
+          "Private Registry",
+          "NVIDIA NGC",
+          "GeForce",
+          "GeForce Graphics Cards",
+          "Gaming Laptops",
+          "G-SYNC Monitors",
+          "RTX AI PCs",
+          "NVIDIA Studio",
+          "NVIDIA Broadcast App",
+          "SHIELD TV",
+          "Blackwell Architecture",
+          "Hopper Architecture",
+          "Ada Lovelace Architecture",
+          "NVIDIA RTX PRO",
+          "Virtual GPU",
+          "Jetson",
+          "DRIVE AGX",
+          "Clara AGX",
+          "DGX Platform",
+          "Grace CPU",
+          "HGX Platform",
+          "IGX Platform",
+          "MGX Platform",
+          "OVX Systems",
+          "DLSS",
+          "Reflex",
+          "GeForce NOW Cloud Gaming",
+          "NVIDIA App"
+        ],
+        "ai_technologies": [
+          "Python",
+          "Cloud Computing",
+          "CUDA",
+          "Nsight Systems",
+          "Nsight Graphics",
+          "TensorRT",
+          "cuQuantum",
+          "cuPQC",
+          "Google Kubernetes Engine (GKE)",
+          "GPU Computing",
+          "AI Computing",
+          "Machine Learning",
+          "Deep Learning",
+          "Natural Language Processing",
+          "Computer Vision",
+          "Data Science",
+          "Containerization",
+          "Virtualization",
+          "Blackwell Architecture",
+          "Hopper Architecture",
+          "Ada Lovelace Architecture"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:39:03.901Z"
+      }
+    },
+    {
+      "id": 1,
+      "name": "OpenAI",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 1,
+          "url": "https://openai.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 4,
+          "url": "https://openai.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 2,
+          "url": "https://openai.com/chatgpt",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 3,
+          "url": "https://openai.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 5,
+          "url": "https://platform.openai.com",
+          "type": "api",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 486,
+          "id": 486,
+          "url": "blog",
+          "detectedAt": "2025-08-01T19:20:20.321Z",
+          "relativeTime": "3 hours ago",
+          "interestLevel": 9,
+          "summary": "The website content has been completely overhauled, shifting from a security verification page to a full-fledged OpenAI news and information portal.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 487,
+          "id": 487,
+          "url": "product",
+          "detectedAt": "2025-08-01T19:20:13.064Z",
+          "relativeTime": "3 hours ago",
+          "interestLevel": 9,
+          "summary": "The content has changed from a security verification page to a ChatGPT interface",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 488,
+          "id": 488,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T19:20:07.000Z",
+          "relativeTime": "3 hours ago",
+          "interestLevel": 9,
+          "summary": "The content changed from a blocked page to a detailed pricing page for ChatGPT, including various plans such as Free, Plus, Pro, Team, and Enterprise.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 225,
+          "id": 225,
+          "url": "pricing",
+          "detectedAt": "2025-07-22T19:04:23.608Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 8,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 347,
+          "id": 347,
+          "url": "product",
+          "detectedAt": "2025-07-22T19:04:16.736Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 6,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 226,
+          "id": 226,
+          "url": "pricing",
+          "detectedAt": "2025-07-22T18:46:27.592Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 2,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 227,
+          "id": 227,
+          "url": "product",
+          "detectedAt": "2025-07-22T18:46:20.404Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 3,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 228,
+          "id": 228,
+          "url": "homepage",
+          "detectedAt": "2025-07-22T18:18:01.891Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 9,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 208,
+          "id": 208,
+          "url": "product",
+          "detectedAt": "2025-07-22T17:33:40.166Z",
+          "relativeTime": "7/22/2025",
+          "interestLevel": 9,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "ChatGPT",
+          "API Platform",
+          "Sora",
+          "Image Generation API",
+          "ChatGPT Plus",
+          "ChatGPT Pro",
+          "ChatGPT Team",
+          "ChatGPT Enterprise",
+          "API"
+        ],
+        "ai_technologies": [
+          "Python",
+          "TensorFlow",
+          "PyTorch",
+          "JAX",
+          "AWS",
+          "Azure",
+          "GCP",
+          "Web",
+          "iOS",
+          "Android",
+          "macOS"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 9,
+        "highInterestChanges": 6,
+        "lastActivity": "2025-08-01T19:20:20.321Z"
+      }
+    },
+    {
+      "id": 39,
+      "name": "Palantir",
+      "category": "Enterprise AI",
+      "urls": [
+        {
+          "id": 134,
+          "url": "https://blog.palantir.com",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 132,
+          "url": "https://palantir.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 133,
+          "url": "https://palantir.com/platforms/aip",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 574,
+          "id": 574,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:39:39.901Z",
+          "relativeTime": "24 min ago",
+          "interestLevel": 8,
+          "summary": "New content added to the Palantir homepage, including navigation, latest news, offerings, impact studies, and quick links",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 575,
+          "id": 575,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:39:33.236Z",
+          "relativeTime": "25 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of Palantir Artificial Intelligence Platform (AIP) content",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "AIP",
+          "Foundry",
+          "Gotham",
+          "Apollo",
+          "TITAN",
+          "Maven Smart System",
+          "AIP Now",
+          "Palantir for Builders",
+          "Mission Manager",
+          "Pipeline Builder",
+          "Titanium"
+        ],
+        "ai_technologies": [
+          "Ontology-powered software",
+          "Mixed reality",
+          "Data integration",
+          "Machine learning AI",
+          "Python",
+          "Cloud",
+          "API",
+          "SDK",
+          "Workflow Builder"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 2,
+        "highInterestChanges": 2,
+        "lastActivity": "2025-08-01T22:39:39.901Z"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Perplexity AI",
+      "category": "AI Search",
+      "urls": [
+        {
+          "id": 79,
+          "url": "https://blog.perplexity.ai",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 77,
+          "url": "https://perplexity.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 78,
+          "url": "https://perplexity.ai/pro",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 275,
+          "id": 275,
+          "url": "product",
+          "detectedAt": "2025-07-23T00:38:32.210Z",
+          "relativeTime": "7/23/2025",
+          "interestLevel": 4,
+          "summary": "Change detected",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 72,
+          "id": 72,
+          "url": "product",
+          "detectedAt": "2025-07-21T15:21:10.364Z",
+          "relativeTime": "7/21/2025",
+          "interestLevel": 9,
+          "summary": "Change detected",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Perplexity Pro",
+          "Perplexity Max",
+          "Perplexity Labs",
+          "Perplexity Research",
+          "Perplexity AI"
+        ],
+        "ai_technologies": [
+          "Unlimited file uploads",
+          "Unlimited photo uploads",
+          "Image generation",
+          "Cloudflare",
+          "Favicon"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 2,
+        "highInterestChanges": 1,
+        "lastActivity": "2025-07-23T00:38:32.210Z"
+      }
+    },
+    {
+      "id": 21,
+      "name": "Phind",
+      "category": "AI Search",
+      "urls": [
+        {
+          "id": 83,
+          "url": "https://phind.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 84,
+          "url": "https://phind.com/search?q=pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [],
+      "intelligence": {
+        "products": [],
+        "ai_technologies": [],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 0,
+        "highInterestChanges": 0,
+        "lastActivity": null
+      }
+    },
+    {
+      "id": 18,
+      "name": "Pieces",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 73,
+          "url": "https://pieces.app",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 76,
+          "url": "https://pieces.app/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 74,
+          "url": "https://pieces.app/features",
+          "type": "features",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 75,
+          "url": "https://pieces.app/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 570,
+          "id": 570,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:40:41.480Z",
+          "relativeTime": "23 min ago",
+          "interestLevel": 9,
+          "summary": "New content introduction for Pieces for Developers, highlighting its long-term memory features for developer workstreams",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 571,
+          "id": 571,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:40:33.047Z",
+          "relativeTime": "24 min ago",
+          "interestLevel": 8,
+          "summary": "Initial blog content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 572,
+          "id": 572,
+          "url": "features",
+          "detectedAt": "2025-08-01T22:40:25.881Z",
+          "relativeTime": "24 min ago",
+          "interestLevel": 9,
+          "summary": "Initial content creation for Pieces features page",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 573,
+          "id": 573,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:40:17.920Z",
+          "relativeTime": "24 min ago",
+          "interestLevel": 8,
+          "summary": "Initial content creation for Pieces pricing page",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Pieces",
+          "Pieces for Developers",
+          "MCP",
+          "Meet Pieces",
+          "Windows Installation Guide",
+          "macOS Installation Guide",
+          "Linux Installation Guide",
+          "The Pieces Post",
+          "Pieces Drive",
+          "Pieces Copilot",
+          "Individual Plan",
+          "Teams Plan"
+        ],
+        "ai_technologies": [
+          "OS-Level",
+          "Cloud",
+          "Local Providers",
+          "Python",
+          "Windows",
+          "macOS",
+          "Linux",
+          "Discord",
+          "Twitter",
+          "Tiktok",
+          "Instagram",
+          "Linkedin",
+          "YouTube",
+          "GitHub",
+          "MCP"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:40:41.480Z"
+      }
+    },
+    {
+      "id": 31,
+      "name": "Pika",
+      "category": "Video AI",
+      "urls": [
+        {
+          "id": 112,
+          "url": "https://pika.art",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 114,
+          "url": "https://pika.art/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 113,
+          "url": "https://pika.art/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 567,
+          "id": 567,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:40:57.193Z",
+          "relativeTime": "23 min ago",
+          "interestLevel": 9,
+          "summary": "Initial content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 568,
+          "id": 568,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:40:51.919Z",
+          "relativeTime": "23 min ago",
+          "interestLevel": 9,
+          "summary": "Initial content creation with fundraising announcement",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 569,
+          "id": 569,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:40:47.209Z",
+          "relativeTime": "23 min ago",
+          "interestLevel": 8,
+          "summary": "Introduction of new pricing plans and features for Pika's video creation services",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Pika",
+          "Pika Web App",
+          "Pika API",
+          "Free plan",
+          "Basic plan",
+          "Standard plan",
+          "Pro plan",
+          "Fancy plan",
+          "API",
+          "Pikapocalypse Pikaffects"
+        ],
+        "ai_technologies": [
+          "Discord",
+          "Python",
+          "Spark Capital",
+          "JavaScript",
+          "HTML/CSS",
+          "AWS",
+          "Azure",
+          "GCP",
+          "Google Sign-in",
+          "Facebook Sign-in",
+          "Discord Sign-in",
+          "Email Sign-in"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:40:57.193Z"
+      }
+    },
+    {
+      "id": 53,
+      "name": "Redmore Studio",
+      "category": "AI Consulting and Education",
+      "urls": [
+        {
+          "id": 175,
+          "url": "https://redmore.studio",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 176,
+          "url": "https://redmore.studio/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 565,
+          "id": 565,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:41:13.468Z",
+          "relativeTime": "23 min ago",
+          "interestLevel": 9,
+          "summary": "Initial content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 566,
+          "id": 566,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:41:07.613Z",
+          "relativeTime": "23 min ago",
+          "interestLevel": 6,
+          "summary": "The blog content changed from no content to a 404 error page with a cookie policy and various links to other pages on the website",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Generative AI for the Curious Businessperson",
+          "IlluminAIte",
+          "CookieYes",
+          "Redmore Studio"
+        ],
+        "ai_technologies": [
+          "WordPress",
+          "CookieYes",
+          "Python",
+          "JavaScript"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 2,
+        "highInterestChanges": 1,
+        "lastActivity": "2025-08-01T22:41:13.468Z"
+      }
+    },
+    {
+      "id": 47,
+      "name": "Replicate",
+      "category": "AI Infrastructure",
+      "urls": [
+        {
+          "id": 158,
+          "url": "https://replicate.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 160,
+          "url": "https://replicate.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 159,
+          "url": "https://replicate.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 562,
+          "id": 562,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:41:35.694Z",
+          "relativeTime": "23 min ago",
+          "interestLevel": 9,
+          "summary": "Initial content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 563,
+          "id": 563,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:41:25.508Z",
+          "relativeTime": "23 min ago",
+          "interestLevel": 9,
+          "summary": "Initial blog content creation with 50 posts",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 564,
+          "id": 564,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:41:20.456Z",
+          "relativeTime": "23 min ago",
+          "interestLevel": 9,
+          "summary": "Initial pricing page content",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Replicate",
+          "Cog",
+          "Replicate API",
+          "Replicate Playground",
+          "ComfyUI"
+        ],
+        "ai_technologies": [
+          "Python",
+          "Nvidia A100 GPU",
+          "Nvidia H100 GPU",
+          "Nvidia L40S GPU",
+          "Nvidia T4 GPU",
+          "Node",
+          "HTTP",
+          "TensorFlow",
+          "PyTorch",
+          "GitHub",
+          "AWS",
+          "Google Cloud",
+          "Azure",
+          "Docker",
+          "Kubernetes",
+          "NVIDIA H100 GPUs",
+          "NVIDIA L40S GPUs",
+          "MPS acceleration"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:41:35.694Z"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Replit",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 64,
+          "url": "https://blog.replit.com",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 61,
+          "url": "https://replit.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 62,
+          "url": "https://replit.com/ai",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 63,
+          "url": "https://replit.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 559,
+          "id": 559,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:42:08.348Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 9,
+          "summary": "New blog content and features announcement",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 560,
+          "id": 560,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:42:01.992Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 9,
+          "summary": "New homepage content with AI-powered app building features and customer testimonials",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 561,
+          "id": 561,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:41:49.664Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 9,
+          "summary": "Introduction of Replit AI, a new feature that allows users to turn natural language into apps and websites",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Replit",
+          "Replit Agent",
+          "Replit Import",
+          "Replit Auth",
+          "Replit Databases",
+          "App Builder",
+          "Website Builder",
+          "Game Builder",
+          "Dashboard Builder",
+          "Chatbot Builder"
+        ],
+        "ai_technologies": [
+          "Figma",
+          "Replit",
+          "Anthropic",
+          "Python",
+          "JavaScript",
+          "TypeScript",
+          "Node.js",
+          "Nix",
+          "HTML",
+          "CSS",
+          "C++",
+          "Golang",
+          "Stripe",
+          "Open AI",
+          "Database",
+          "Auth",
+          "Javascript"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:42:08.348Z"
+      }
+    },
+    {
+      "id": 26,
+      "name": "Resemble AI",
+      "category": "AI Voice/Audio",
+      "urls": [
+        {
+          "id": 95,
+          "url": "https://resemble.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 97,
+          "url": "https://resemble.ai/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 96,
+          "url": "https://resemble.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 556,
+          "id": 556,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:42:27.596Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the homepage of Resemble AI, including AI Voice Generator and Deepfake Detection for Enterprise, product features, case studies, research, and resources.",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 557,
+          "id": 557,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:42:22.023Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the Resemble AI blog, including product features, case studies, research, and resources",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 558,
+          "id": 558,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:42:15.824Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 8,
+          "summary": "New content added for Resemble AI pricing page",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Resemble AI Voice Generator",
+          "Resemble AI Deepfake Detection",
+          "Chatterbox",
+          "On Prem",
+          "API Docs",
+          "Status",
+          "Ethics",
+          "Blog",
+          "Resemble AI",
+          "Voice Cloning",
+          "Text to Speech",
+          "Speech to Speech",
+          "Deepfake Detection",
+          "AI Watermarker",
+          "Identity",
+          "Audio Intelligence",
+          "Security Awareness Training",
+          "Resemble AI Voice Cloning",
+          "Resemble AI Text to Speech",
+          "Resemble AI Speech to Speech",
+          "Resemble AI Voice Design",
+          "Resemble AI Multilingual",
+          "Resemble AI Audio Editing",
+          "Resemble AI Chatterbox",
+          "Resemble AI Detect",
+          "Resemble AI Watermarker",
+          "Resemble AI Security Awareness Training"
+        ],
+        "ai_technologies": [
+          "Python",
+          "API",
+          "SDKs",
+          "Cloud Platforms",
+          "Databases",
+          "DevOps Tools",
+          "SVG",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "SDK",
+          "Cloud",
+          "On-Prem"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:42:27.596Z"
+      }
+    },
+    {
+      "id": 32,
+      "name": "Runway",
+      "category": "Video AI",
+      "urls": [
+        {
+          "id": 115,
+          "url": "https://runwayml.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 117,
+          "url": "https://runwayml.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 116,
+          "url": "https://runwayml.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 553,
+          "id": 553,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:42:43.591Z",
+          "relativeTime": "21 min ago",
+          "interestLevel": 9,
+          "summary": "New homepage content for Runway, including introduction of Aleph, a new AI research model, and updates to product, research, and company sections",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 554,
+          "id": 554,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:42:38.845Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the Runway blog, including news articles, product updates, and company information",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 555,
+          "id": 555,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:42:33.790Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 9,
+          "summary": "New pricing page with detailed plans and features",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Runway",
+          "Runway Studios",
+          "AI Film Festival",
+          "Telescope Magazine",
+          "Gen:48",
+          "Watch",
+          "Academy",
+          "Creative Partners Program",
+          "The Hundred Film Fund",
+          "Runway API",
+          "Runway Gen-4",
+          "Runway Aleph",
+          "Runway Acceleration Program",
+          "Free Plan",
+          "Standard Plan",
+          "Pro Plan",
+          "Unlimited Plan",
+          "Enterprise Plan"
+        ],
+        "ai_technologies": [
+          "Python",
+          "Cloudfront",
+          "AWS",
+          "API"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:42:43.591Z"
+      }
+    },
+    {
+      "id": 52,
+      "name": "SambaNova",
+      "category": "AI Hardware",
+      "urls": [
+        {
+          "id": 172,
+          "url": "https://sambanova.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 174,
+          "url": "https://sambanova.ai/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 173,
+          "url": "https://sambanova.ai/products",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 550,
+          "id": 550,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:43:26.853Z",
+          "relativeTime": "21 min ago",
+          "interestLevel": 9,
+          "summary": "New website content and structure for SambaNova, including new product announcements, solutions, and partnerships",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 551,
+          "id": 551,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:43:18.018Z",
+          "relativeTime": "21 min ago",
+          "interestLevel": 8,
+          "summary": "New product page for SambaStack, a full-stack enterprise AI platform, with detailed features, benefits, and related resources",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 552,
+          "id": 552,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:43:17.817Z",
+          "relativeTime": "21 min ago",
+          "interestLevel": 8,
+          "summary": "New blog posts and resources added to the SambaNova website",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "SambaCloud",
+          "SambaStack",
+          "SambaManaged",
+          "SambaRack",
+          "RDU",
+          "SambaNova Cloud Developer Tier"
+        ],
+        "ai_technologies": [
+          "Python",
+          "AWS",
+          "Gradio",
+          "Linux",
+          "Cloud Hosting"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:43:26.853Z"
+      }
+    },
+    {
+      "id": 40,
+      "name": "Scale AI",
+      "category": "Enterprise AI",
+      "urls": [
+        {
+          "id": 135,
+          "url": "https://scale.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 137,
+          "url": "https://scale.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 136,
+          "url": "https://scale.com/enterprise",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 547,
+          "id": 547,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:43:51.645Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the Scale AI homepage, including product descriptions, customer logos, and research initiatives",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 548,
+          "id": 548,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:43:43.882Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 8,
+          "summary": "New blog content and updated product information",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 549,
+          "id": 549,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:43:35.917Z",
+          "relativeTime": "21 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the Scale AI product page, including products, features, resources, and customer information",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Scale Data Engine",
+          "Scale GenAI Platform",
+          "Scale Donovan",
+          "SEAL Leaderboards",
+          "Scale Evaluation"
+        ],
+        "ai_technologies": [
+          "Python",
+          "Cloud Infrastructure",
+          "APIs",
+          "SDKs",
+          "DevOps Tools",
+          "Databases",
+          "AWS",
+          "Azure",
+          "GCP",
+          "TensorFlow",
+          "PyTorch",
+          "JAX",
+          "Linux"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:43:51.645Z"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Sourcegraph",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 69,
+          "url": "https://sourcegraph.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 72,
+          "url": "https://sourcegraph.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 70,
+          "url": "https://sourcegraph.com/cody",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 71,
+          "url": "https://sourcegraph.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 543,
+          "id": 543,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:44:20.347Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 9,
+          "summary": "New website content and structure",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 544,
+          "id": 544,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:44:12.809Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 8,
+          "summary": "New blog content and features announced",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 545,
+          "id": 545,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:44:05.824Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 8,
+          "summary": "Introduction of Cody, an AI coding assistant, with updates to pricing plans and exclusive availability for Enterprise plans",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 546,
+          "id": 546,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:43:58.494Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 8,
+          "summary": "New pricing page with detailed plans for Amp and Code Search",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Cody",
+          "Code Search",
+          "Amp",
+          "Batch Changes",
+          "Sourcegraph Enterprise Starter",
+          "Prompt Library",
+          "Amp Teams",
+          "Amp Enterprise"
+        ],
+        "ai_technologies": [
+          "VS Code",
+          "Cursor",
+          "Windsurf",
+          "CLI",
+          "GitHub",
+          "GitLab",
+          "Google",
+          "Visual Studio Code",
+          "Python",
+          "Bitbucket",
+          "VSCode",
+          "IntelliJ IDEA",
+          "Okta",
+          "SAML"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:44:20.347Z"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Stability AI",
+      "category": "LLM Providers",
+      "urls": [
+        {
+          "id": 41,
+          "url": "https://stability.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 44,
+          "url": "https://stability.ai/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 43,
+          "url": "https://stability.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 42,
+          "url": "https://stability.ai/stable-diffusion",
+          "type": "product",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 539,
+          "id": 539,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:44:48.398Z",
+          "relativeTime": "19 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the Stability AI homepage",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 540,
+          "id": 540,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:44:41.467Z",
+          "relativeTime": "19 min ago",
+          "interestLevel": 8,
+          "summary": "Initial content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 541,
+          "id": 541,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:44:35.647Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 8,
+          "summary": "The content of the pricing page has changed to a 404 error page, indicating that the original content is no longer available or has been removed.",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 542,
+          "id": 542,
+          "url": "product",
+          "detectedAt": "2025-08-01T22:44:29.148Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 9,
+          "summary": "Initial content creation",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Stable Image",
+          "Stable Video",
+          "Stable Audio",
+          "Stable 3D",
+          "Stable Assistant",
+          "Platform API",
+          "Stability AI API",
+          "Self-Hosted License"
+        ],
+        "ai_technologies": [
+          "Python",
+          "NVIDIA",
+          "ARM",
+          "AWS",
+          "Azure",
+          "Google Cloud",
+          "Lenovo",
+          "Squarespace",
+          "Google Drive",
+          "Discord",
+          "LinkedIn",
+          "Twitter",
+          "YouTube",
+          "Cloud Platforms"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:44:48.398Z"
+      }
+    },
+    {
+      "id": 29,
+      "name": "Synthesia",
+      "category": "Video AI",
+      "urls": [
+        {
+          "id": 104,
+          "url": "https://synthesia.io",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 107,
+          "url": "https://synthesia.io/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 105,
+          "url": "https://synthesia.io/features",
+          "type": "features",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 106,
+          "url": "https://synthesia.io/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 536,
+          "id": 536,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:45:11.192Z",
+          "relativeTime": "19 min ago",
+          "interestLevel": 8,
+          "summary": "New content added to the Synthesia blog, including how-to guides, case studies, and more",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 537,
+          "id": 537,
+          "url": "features",
+          "detectedAt": "2025-08-01T22:45:04.139Z",
+          "relativeTime": "19 min ago",
+          "interestLevel": 8,
+          "summary": "New features and updates were added to the Synthesia platform, including Personal Avatars, Interactivity, and AI Dubbing.",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 538,
+          "id": 538,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:44:57.088Z",
+          "relativeTime": "19 min ago",
+          "interestLevel": 8,
+          "summary": "Introduction of new pricing plans and features",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Synthesia",
+          "Synthesia API",
+          "Synthesia Academy",
+          "AI Screen Recorder",
+          "AI Video Editor",
+          "Video Templates",
+          "Basic Plan",
+          "Starter Plan",
+          "Creator Plan",
+          "Enterprise Plan"
+        ],
+        "ai_technologies": [
+          "Python",
+          "Google Cloud",
+          "NVIDIA",
+          "JavaScript",
+          "HTML/CSS",
+          "AWS",
+          "Azure",
+          "GCP"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:45:11.192Z"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Tabnine",
+      "category": "AI Coding",
+      "urls": [
+        {
+          "id": 60,
+          "url": "https://docs.tabnine.com",
+          "type": "docs",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 57,
+          "url": "https://tabnine.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 59,
+          "url": "https://tabnine.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 58,
+          "url": "https://tabnine.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 532,
+          "id": 532,
+          "url": "docs",
+          "detectedAt": "2025-08-01T22:46:02.007Z",
+          "relativeTime": "18 min ago",
+          "interestLevel": 9,
+          "summary": "Initial documentation creation for Tabnine",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 533,
+          "id": 533,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:45:54.097Z",
+          "relativeTime": "18 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the homepage, including features, pricing, and resources",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 534,
+          "id": 534,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:45:45.811Z",
+          "relativeTime": "18 min ago",
+          "interestLevel": 8,
+          "summary": "New blog content and features were added to the Tabnine website, including a new air-gapped AI software development platform, support for Perforce Helix Core, and various blog posts on AI, software development, and more.",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 535,
+          "id": 535,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:45:37.784Z",
+          "relativeTime": "19 min ago",
+          "interestLevel": 8,
+          "summary": "New pricing plans and features were introduced, including a free 30-day trial for the Dev plan and a 14-day free preview experience for the Dev Preview plan. The Enterprise plan now includes advanced AI agents, fully private deployment, and customized AI code validation rules.",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Tabnine",
+          "Tabnine Pro Team",
+          "Tabnine Enterprise",
+          "Tabnine Pro",
+          "Code Review Agent",
+          "AI code assistant",
+          "Tabnine Code Privacy",
+          "Tabnine Protection",
+          "Tabnine Dev",
+          "Tabnine Dev Preview"
+        ],
+        "ai_technologies": [
+          "GitBook",
+          "Kubernetes",
+          "MicroK8s",
+          "IDEs",
+          "Python",
+          "JavaScript",
+          "HTML5",
+          "React",
+          "VS Code",
+          "IntelliJ",
+          "Eclipse",
+          "Android Studio",
+          "Neovim",
+          "PhpStorm",
+          "PyCharm",
+          "RubyMine",
+          "WebStorm",
+          "AWS",
+          "GCP",
+          "Azure",
+          "Java",
+          "Visual Studio",
+          "AppCode",
+          "CLion",
+          "GoLand",
+          "Rider",
+          "NVIDIA",
+          "Perforce Helix Core",
+          "GitHub",
+          "GitLab",
+          "Bitbucket",
+          "Jira",
+          "Atlassian"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 4,
+        "highInterestChanges": 4,
+        "lastActivity": "2025-08-01T22:46:02.007Z"
+      }
+    },
+    {
+      "id": 44,
+      "name": "Weights & Biases",
+      "category": "AI Infrastructure",
+      "urls": [
+        {
+          "id": 148,
+          "url": "https://wandb.ai",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 150,
+          "url": "https://wandb.ai/fully-connected",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 149,
+          "url": "https://wandb.ai/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 529,
+          "id": 529,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:46:30.385Z",
+          "relativeTime": "18 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the homepage of Weights & Biases",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 530,
+          "id": 530,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:46:19.872Z",
+          "relativeTime": "18 min ago",
+          "interestLevel": 8,
+          "summary": "New blog content and product announcements",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 531,
+          "id": 531,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:46:11.653Z",
+          "relativeTime": "18 min ago",
+          "interestLevel": 8,
+          "summary": "New content added for Weights & Biases pricing page",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Weave",
+          "Models",
+          "Traces",
+          "Evaluations",
+          "Playground",
+          "Agents",
+          "Guardrails",
+          "Monitors",
+          "Inference",
+          "Registry",
+          "Artifacts",
+          "Reports",
+          "SDK",
+          "Automations",
+          "W&B Inference",
+          "W&B Weave",
+          "CoreWeave AI Object Storage",
+          "Weights & Biases",
+          "Experiments",
+          "Sweeps",
+          "Tables"
+        ],
+        "ai_technologies": [
+          "Python",
+          "AWS",
+          "Azure",
+          "GCP",
+          "CoreWeave",
+          "HuggingFace",
+          "Keras",
+          "PyTorch",
+          "GPT",
+          "YOLO",
+          "Docker"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:46:30.385Z"
+      }
+    },
+    {
+      "id": 28,
+      "name": "WellSaid Labs",
+      "category": "AI Voice/Audio",
+      "urls": [
+        {
+          "id": 101,
+          "url": "https://wellsaidlabs.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 103,
+          "url": "https://wellsaidlabs.com/blog",
+          "type": "blog",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 102,
+          "url": "https://wellsaidlabs.com/pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 526,
+          "id": 526,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:46:58.981Z",
+          "relativeTime": "17 min ago",
+          "interestLevel": 8,
+          "summary": "Introduction of a new AI voice model, Caruso, and updates to the website's content and structure",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 527,
+          "id": 527,
+          "url": "blog",
+          "detectedAt": "2025-08-01T22:46:50.466Z",
+          "relativeTime": "17 min ago",
+          "interestLevel": 8,
+          "summary": "New blog content and features added to the WellSaid Labs website",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 528,
+          "id": 528,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T22:46:41.865Z",
+          "relativeTime": "17 min ago",
+          "interestLevel": 9,
+          "summary": "New pricing page with detailed plans and features",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "Studio",
+          "API",
+          "Voices",
+          "Teams",
+          "Security",
+          "Integrations",
+          "WellSaid Studio",
+          "WellSaid API",
+          "WellSaid Voices",
+          "WellSaid Teams",
+          "WellSaid Security",
+          "WellSaid Integrations",
+          "Team",
+          "Trial",
+          "Creative",
+          "Business",
+          "Enterprise"
+        ],
+        "ai_technologies": [
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "AWS",
+          "Adobe Premiere Pro",
+          "Python",
+          "MP3",
+          "WAV",
+          "OGG",
+          "TXT",
+          "SRT",
+          "VTT",
+          "Adobe Express"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 3,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-01T22:46:58.981Z"
+      }
+    },
+    {
+      "id": 20,
+      "name": "You.com",
+      "category": "AI Search",
+      "urls": [
+        {
+          "id": 80,
+          "url": "https://you.com",
+          "type": "homepage",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 82,
+          "url": "https://you.com/code",
+          "type": "product",
+          "checkFrequency": "daily"
+        },
+        {
+          "id": 81,
+          "url": "https://you.com/search?q=pricing",
+          "type": "pricing",
+          "checkFrequency": "daily"
+        }
+      ],
+      "recentChanges": [
+        {
+          "change_id": 525,
+          "id": 525,
+          "url": "homepage",
+          "detectedAt": "2025-08-01T22:47:13.402Z",
+          "relativeTime": "17 min ago",
+          "interestLevel": 9,
+          "summary": "New content added to the homepage of You.com, including introduction to AI for workplace productivity, trusted AI agents, and the #1 web search API for LLMs",
+          "changeType": "new",
+          "businessImpact": null,
+          "competitiveImplications": null
+        }
+      ],
+      "intelligence": {
+        "products": [
+          "ARI",
+          "YOU.com API",
+          "Enterprise Solutions"
+        ],
+        "ai_technologies": [
+          "Python",
+          "JavaScript",
+          "AWS",
+          "APIs",
+          "SDKs"
+        ],
+        "ai_ml_concepts": []
+      },
+      "stats": {
+        "totalChanges": 1,
+        "highInterestChanges": 1,
+        "lastActivity": "2025-08-01T22:47:13.402Z"
+      }
+    }
+  ],
+  "lastUpdated": "2025-08-01T23:04:39.035Z",
+  "totalChanges": 177,
+  "highInterestChanges": 154,
   "backend": "postgresql",
-  "company_activity": []
+  "company_activity": [
+    {
+      "company_name": "Google DeepMind",
+      "change_count": 8,
+      "max_interest_level": 8,
+      "last_activity": "2025-08-01T18:39:22.393Z",
+      "relative_time": "4 hours ago"
+    },
+    {
+      "company_name": "GitHub Copilot",
+      "change_count": 6,
+      "max_interest_level": 7,
+      "last_activity": "2025-08-01T20:39:58.043Z",
+      "relative_time": "2 hours ago"
+    },
+    {
+      "company_name": "Anthropic",
+      "change_count": 6,
+      "max_interest_level": 8,
+      "last_activity": "2025-08-01T18:38:27.433Z",
+      "relative_time": "4 hours ago"
+    },
+    {
+      "company_name": "Mistral AI",
+      "change_count": 5,
+      "max_interest_level": 9,
+      "last_activity": "2025-08-01T22:37:54.081Z",
+      "relative_time": "26 min ago"
+    },
+    {
+      "company_name": "Aleph Alpha",
+      "change_count": 4,
+      "max_interest_level": 9,
+      "last_activity": "2025-08-01T22:25:23.365Z",
+      "relative_time": "39 min ago"
+    },
+    {
+      "company_name": "Cursor",
+      "change_count": 4,
+      "max_interest_level": 9,
+      "last_activity": "2025-08-01T22:29:02.299Z",
+      "relative_time": "35 min ago"
+    },
+    {
+      "company_name": "Hugging Face",
+      "change_count": 4,
+      "max_interest_level": 9,
+      "last_activity": "2025-08-01T22:34:06.271Z",
+      "relative_time": "30 min ago"
+    },
+    {
+      "company_name": "Cohere",
+      "change_count": 4,
+      "max_interest_level": 9,
+      "last_activity": "2025-08-01T22:28:37.532Z",
+      "relative_time": "36 min ago"
+    },
+    {
+      "company_name": "Tabnine",
+      "change_count": 4,
+      "max_interest_level": 9,
+      "last_activity": "2025-08-01T22:46:02.007Z",
+      "relative_time": "18 min ago"
+    },
+    {
+      "company_name": "Codeium",
+      "change_count": 4,
+      "max_interest_level": 9,
+      "last_activity": "2025-08-01T22:28:03.110Z",
+      "relative_time": "36 min ago"
+    }
+  ]
 }

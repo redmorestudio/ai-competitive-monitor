@@ -1,0 +1,74 @@
+{
+  "id": 567,
+  "company": "Pika",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:40:57.193Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "Initial content creation",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Initial content creation",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Pika's brand voice and tone",
+      "Launch of Pikapocalypse effects",
+      "Sign-in functionality with multiple options",
+      "Terms of Service, Acceptable Use Policy, and Privacy Policy implementation",
+      "Social media links and career page addition"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Establishment of Pika as a unique brand with a focus on innovative effects, potentially disrupting the market",
+    "market_signals": [
+      "Growing demand for immersive and interactive experiences",
+      "Increasing importance of social media presence"
+    ],
+    "competitive_implications": "Pika's launch sets a new standard for innovative effects, potentially forcing competitors to adapt and innovate",
+    "strategic_direction": "Expansion into new markets and development of more immersive experiences"
+  },
+  "entities": {
+    "products": [
+      "Pikapocalypse effects"
+    ],
+    "features": [
+      "Sign-in functionality"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Pika's focus on user experience and interactivity",
+      "Importance of social media presence and community building"
+    ],
+    "opportunities": [
+      "Partnership opportunities with social media platforms",
+      "Expansion into new markets and demographics"
+    ],
+    "threats": [
+      "Competition from established brands",
+      "Regulatory challenges with Terms of Service and Privacy Policy"
+    ],
+    "recommended_actions": [
+      "Monitor Pika's growth and market response",
+      "Analyze competitors' reactions and adaptations"
+    ]
+  },
+  "key_insights": [
+    "Pika's focus on user experience and interactivity",
+    "Importance of social media presence and community building"
+  ],
+  "business_impact": "Establishment of Pika as a unique brand with a focus on innovative effects, potentially disrupting the market",
+  "competitive_implications": "Pika's launch sets a new standard for innovative effects, potentially forcing competitors to adapt and innovate",
+  "content_hash_before": null,
+  "content_hash_after": "139703c9fd74a0b53101ef977775d4c1b48078a03c05de9bae17c8d9fa99a105",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

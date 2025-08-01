@@ -1,0 +1,86 @@
+{
+  "id": 633,
+  "company": "Cohere",
+  "page_url": "product",
+  "detected_at": "2025-08-01T22:28:16.630Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content introduction with detailed product and service offerings, industry solutions, research initiatives, and customer stories",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content introduction with detailed product and service offerings, industry solutions, research initiatives, and customer stories",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of generative models (Command, Aya Expanse), advanced retrieval models (Embed, Rerank), and workplace systems (North, Compass)",
+      "Addition of industry solutions for technology, financial services, healthcare, manufacturing, energy, and public sector",
+      "Introduction of research initiatives (Cohere Labs, Open Science Community, Scholars Program, Catalyst Grant Program)",
+      "Customer stories from various industries (DraftWise, Fujitsu, BambooHR, Notion, Oracle, Johnson Lambert, etc.)"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Expansion of product and service offerings, increased research initiatives, and enhanced customer engagement",
+    "market_signals": [
+      "Growing demand for AI solutions",
+      "Increasing importance of research and development in AI"
+    ],
+    "competitive_implications": "Cohere is positioning itself as a leader in the AI industry with a wide range of products and services",
+    "strategic_direction": "Focus on innovation, research, and customer satisfaction"
+  },
+  "entities": {
+    "products": [
+      "Command",
+      "Aya Expanse",
+      "Embed",
+      "Rerank",
+      "North",
+      "Compass"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "technology",
+      "financial services",
+      "healthcare",
+      "manufacturing",
+      "energy",
+      "public sector"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Cohere is expanding its product and service offerings",
+      "Research initiatives are a key focus area for Cohere",
+      "Customer engagement and satisfaction are crucial for Cohere's success"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Cohere",
+      "Potential for growth in the AI industry"
+    ],
+    "threats": [
+      "Increasing competition in the AI industry",
+      "Regulatory challenges in the AI sector"
+    ],
+    "recommended_actions": [
+      "Monitor Cohere's product and service offerings",
+      "Engage with Cohere's research initiatives",
+      "Explore partnership opportunities with Cohere"
+    ]
+  },
+  "key_insights": [
+    "Cohere is expanding its product and service offerings",
+    "Research initiatives are a key focus area for Cohere",
+    "Customer engagement and satisfaction are crucial for Cohere's success"
+  ],
+  "business_impact": "Expansion of product and service offerings, increased research initiatives, and enhanced customer engagement",
+  "competitive_implications": "Cohere is positioning itself as a leader in the AI industry with a wide range of products and services",
+  "content_hash_before": null,
+  "content_hash_after": "59386d2b4381d22ffc1087368d466daf0ffe13f52a7850e56367d0dea25f3ee4",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,99 @@
+{
+  "id": 552,
+  "company": "SambaNova",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:43:17.817Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog posts and resources added to the SambaNova website",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog posts and resources added to the SambaNova website",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of SambaManaged: A Turnkey Path to AI for Data Centers",
+      "Launch of SambaNova 2.0: Build with Relentless Intelligence",
+      "Addition of new models such as DeepSeek R1-0528, Whisper Large-V3, Qwen3, and Tülu 3 405B",
+      "Partnerships with Meta, Hugging Face, and CrewAI",
+      "Introduction of the SambaNova Startup Accelerator"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes could lead to increased adoption of SambaNova's products and services, particularly in the data center and developer markets",
+    "market_signals": [
+      "Growing demand for AI and machine learning solutions",
+      "Increasing importance of partnerships and collaborations in the AI industry"
+    ],
+    "competitive_implications": "The changes could position SambaNova as a leader in the AI industry, particularly in the areas of data center and developer solutions",
+    "strategic_direction": "The changes suggest that SambaNova is focusing on expanding its product and service offerings, as well as building strategic partnerships to drive growth and adoption"
+  },
+  "entities": {
+    "products": [
+      "SambaCloud",
+      "SambaStack",
+      "SambaManaged",
+      "DeepSeek R1-0528",
+      "Whisper Large-V3",
+      "Qwen3",
+      "Tülu 3 405B"
+    ],
+    "features": [
+      "Turnkey AI solution for data centers",
+      "Relentless intelligence",
+      "High-speed support for large models"
+    ],
+    "partnerships": [
+      "Meta",
+      "Hugging Face",
+      "CrewAI"
+    ],
+    "technologies": [
+      "AI",
+      "Machine learning",
+      "Deep learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Data centers",
+      "Developers and enterprises",
+      "Government and public sector"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "SambaNova is investing heavily in AI and machine learning research and development",
+      "The company is building strategic partnerships to drive growth and adoption",
+      "The changes could lead to increased competition in the AI industry, particularly in the areas of data center and developer solutions"
+    ],
+    "opportunities": [
+      "Partnership opportunities with SambaNova",
+      "Adoption of SambaNova's products and services",
+      "Investment opportunities in AI and machine learning research and development"
+    ],
+    "threats": [
+      "Increased competition in the AI industry",
+      "Dependence on strategic partnerships",
+      "Rapidly changing technology landscape"
+    ],
+    "recommended_actions": [
+      "Monitor SambaNova's product and service offerings",
+      "Evaluate partnership opportunities with SambaNova",
+      "Invest in AI and machine learning research and development"
+    ]
+  },
+  "key_insights": [
+    "SambaNova is investing heavily in AI and machine learning research and development",
+    "The company is building strategic partnerships to drive growth and adoption",
+    "The changes could lead to increased competition in the AI industry, particularly in the areas of data center and developer solutions"
+  ],
+  "business_impact": "The changes could lead to increased adoption of SambaNova's products and services, particularly in the data center and developer markets",
+  "competitive_implications": "The changes could position SambaNova as a leader in the AI industry, particularly in the areas of data center and developer solutions",
+  "content_hash_before": null,
+  "content_hash_after": "1b19a33be3e05da84fd888f0fc0d13819f0af9499700b994913aab13de748b64",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

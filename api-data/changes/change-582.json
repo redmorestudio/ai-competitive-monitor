@@ -1,0 +1,85 @@
+{
+  "id": 582,
+  "company": "Murf AI",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:38:02.664Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "The Murf AI blog page now displays a 404 error page, indicating that the requested page could not be found.",
+  "category": "website_update",
+  "change_summary": {
+    "what_changed": "The Murf AI blog page now displays a 404 error page, indicating that the requested page could not be found.",
+    "change_type": "update",
+    "change_scale": "major",
+    "specific_changes": [
+      "The blog content is no longer available",
+      "A 404 error page is displayed instead",
+      "The page includes links to the company's home page, studio, pricing, and other relevant pages"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may impact the company's content marketing strategy and search engine optimization (SEO).",
+    "market_signals": [
+      "The company may be reorganizing its website or content strategy",
+      "The company may be focusing on other marketing channels or tactics"
+    ],
+    "competitive_implications": "The change may provide an opportunity for competitors to fill the content gap or may indicate a shift in the market landscape.",
+    "strategic_direction": "The company may be moving towards a more streamlined or focused content strategy."
+  },
+  "entities": {
+    "products": [
+      "AI Voice Generator",
+      "Text to speech",
+      "AI Translation",
+      "AI Dubbing",
+      "Transcription",
+      "Voice Cloning",
+      "Voice over Video",
+      "Voice over Google Slides",
+      "Voice Changer",
+      "Murf Text to Speech API",
+      "Accent Generator",
+      "Integrations",
+      "Canva add-on",
+      "Speech to text",
+      "Read Aloud",
+      "Audio to text converter"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The Murf AI blog page is no longer available",
+      "The company's website has been updated to include a 404 error page"
+    ],
+    "opportunities": [
+      "Competitors may be able to fill the content gap",
+      "The company may be able to improve its content strategy and SEO"
+    ],
+    "threats": [
+      "The company may lose search engine rankings or visibility",
+      "The company may be perceived as less active or engaged in the market"
+    ],
+    "recommended_actions": [
+      "Monitor the company's website and content strategy for further updates",
+      "Analyze the impact of the change on the company's search engine rankings and visibility"
+    ]
+  },
+  "key_insights": [
+    "The Murf AI blog page is no longer available",
+    "The company's website has been updated to include a 404 error page"
+  ],
+  "business_impact": "The change may impact the company's content marketing strategy and search engine optimization (SEO).",
+  "competitive_implications": "The change may provide an opportunity for competitors to fill the content gap or may indicate a shift in the market landscape.",
+  "content_hash_before": null,
+  "content_hash_after": "efd2d5af62e36f8eb4bddc282f698f2a13b288009db1a213120bfb803289035d",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

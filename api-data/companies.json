@@ -1,1 +1,1159 @@
-[]
+[
+  {
+    "id": 7,
+    "name": "AI21 Labs",
+    "category": "LLM Providers",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "ai21 maestro",
+        "custom ai systems",
+        "flexible deployment options",
+        "jamba models",
+        "developer hub"
+      ],
+      "ai_technologies": [
+        "python",
+        "nvidia",
+        "google cloud",
+        "aws",
+        "microsoft"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "name": "Aleph Alpha",
+    "category": "LLM Providers",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "phariaai",
+        "phariaassistant",
+        "phariastudio",
+        "phariaos",
+        "phariacatch"
+      ],
+      "ai_technologies": [
+        "python",
+        "aws",
+        "azure",
+        "gcp",
+        "github"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "name": "Amazon CodeWhisperer",
+    "category": "AI Coding",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "aws lambda",
+        "amazon codewhisperer",
+        "aws toolkit for visual studio code",
+        "aws toolkit for jetbrains",
+        "amazon sagemaker ai studio"
+      ],
+      "ai_technologies": [
+        "aws",
+        "python",
+        "jetbrains",
+        "visual studio code",
+        "jupyter"
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "name": "AMD",
+    "category": "AI Hardware",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "AI Platform",
+        "Developer Tools",
+        "Enterprise Solutions"
+      ],
+      "ai_technologies": [
+        "Machine Learning",
+        "Cloud Computing",
+        "APIs",
+        "Data Processing"
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "name": "Andi",
+    "category": "AI Search",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "andi app",
+        "andi chrome extension"
+      ],
+      "ai_technologies": [
+        "cutting-edge ai"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Anthropic",
+    "category": "LLM Providers",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "claude code",
+        "claude",
+        "max plan",
+        "api",
+        "team plan"
+      ],
+      "ai_technologies": [
+        "python",
+        "amazon bedrock",
+        "aws",
+        "github",
+        "google cloud’s vertex ai"
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "name": "Anyscale",
+    "category": "AI Infrastructure",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "anyscale platform",
+        "anyscale support",
+        "ray open source"
+      ],
+      "ai_technologies": [
+        "python",
+        "kubernetes",
+        "aws",
+        "gcp",
+        "azure kubernetes service"
+      ]
+    }
+  },
+  {
+    "id": 51,
+    "name": "Cerebras",
+    "category": "AI Hardware",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "cerebras inference",
+        "cs-3 system",
+        "cs-3",
+        "cerebras cloud",
+        "api key"
+      ],
+      "ai_technologies": [
+        "wafer packaging",
+        "water loop cooling",
+        "redundant power supplies",
+        "hot-swappable components",
+        "100 gigabit ethernet"
+      ]
+    }
+  },
+  {
+    "id": 54,
+    "name": "Cisco Systems",
+    "category": "Other",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "cisco 100g or 400g optical transceiver modules",
+        "cisco duo",
+        "cisco intersight",
+        "cisco meraki",
+        "cisco nexus"
+      ],
+      "ai_technologies": [
+        "cloud",
+        "converged infrastructure",
+        "hybrid cloud",
+        "hyperconverged infrastructure",
+        "internet of things (iot)"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "name": "Codeium",
+    "category": "AI Coding",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "windsurf editor",
+        "windsurf plugins",
+        "windsurf reviews",
+        "windsurf for enterprise",
+        "cascade"
+      ],
+      "ai_technologies": [
+        "windows",
+        "x64",
+        "arm64",
+        "github",
+        "jetbrains"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "name": "Cohere",
+    "category": "LLM Providers",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "command",
+        "embed",
+        "rerank",
+        "north",
+        "compass"
+      ],
+      "ai_technologies": [
+        "python",
+        "javascript",
+        "aws",
+        "google inc.",
+        "linux x86_64"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "name": "Cursor",
+    "category": "AI Coding",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "cursor",
+        "pro",
+        "ultra",
+        "hobby",
+        "teams"
+      ],
+      "ai_technologies": [
+        "python",
+        "javascript",
+        "api",
+        "saml",
+        "oidc"
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "name": "DALL-E",
+    "category": "Image Generation",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "chatgpt",
+        "chatgpt plus",
+        "chatgpt pro",
+        "chatgpt team",
+        "chatgpt enterprise"
+      ],
+      "ai_technologies": [
+        "python",
+        "web",
+        "ios",
+        "android",
+        "google drive"
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "name": "DataRobot",
+    "category": "Enterprise AI",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "ai apps & agents",
+        "agentic ai platform",
+        "covalent",
+        "syftr",
+        "datarobot"
+      ],
+      "ai_technologies": [
+        "sap",
+        "nvidia",
+        "nutanix",
+        "nvidia enterprise ai",
+        "snowflake"
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "name": "Descript",
+    "category": "AI Voice/Audio",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "descript",
+        "enterprise",
+        "rooms",
+        "free",
+        "hobbyist"
+      ],
+      "ai_technologies": [
+        "python",
+        "video editing",
+        "screen recording",
+        "podcasting",
+        "multicam editing"
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "name": "ElevenLabs",
+    "category": "AI Voice/Audio",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "studio",
+        "conversational ai",
+        "dubbing studio",
+        "voice library",
+        "audio native"
+      ],
+      "ai_technologies": [
+        "python",
+        "javascript",
+        "html/css",
+        "aws",
+        "azure"
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "name": "Flux",
+    "category": "Image Generation",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "flux.1 kontext [dev]",
+        "flux.1 kontext [pro]",
+        "flux.1 kontext [max]",
+        "black forest labs api",
+        "playground"
+      ],
+      "ai_technologies": [
+        "python",
+        "github",
+        "hugging face",
+        "aws",
+        "azure"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "name": "GitHub Copilot",
+    "category": "AI Coding",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "github copilot",
+        "github advanced security",
+        "github copilot free",
+        "github copilot pro",
+        "github codespaces"
+      ],
+      "ai_technologies": [
+        "python",
+        "javascript",
+        "github actions",
+        "azure",
+        "github codespaces"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Google DeepMind",
+    "category": "LLM Providers",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "google ai studio",
+        "gemini",
+        "gemini app",
+        "vertex ai studio",
+        "google workspace"
+      ],
+      "ai_technologies": [
+        "python",
+        "google cloud",
+        "tensorflow",
+        "pytorch",
+        "jax"
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "name": "H2O.ai",
+    "category": "Enterprise AI",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "h2o ai cloud",
+        "h2o document ai",
+        "h2o driverless ai",
+        "h2o-3",
+        "h2o wave"
+      ],
+      "ai_technologies": [
+        "python",
+        "aws",
+        "dell",
+        "kubernetes",
+        "azure"
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "name": "HeyGen",
+    "category": "Video AI",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "AI Platform",
+        "Developer Tools",
+        "Enterprise Solutions"
+      ],
+      "ai_technologies": [
+        "Machine Learning",
+        "Cloud Computing",
+        "APIs",
+        "Data Processing"
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "name": "Hugging Face",
+    "category": "AI Infrastructure",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "hugging face hub",
+        "hugging face models",
+        "hugging face datasets",
+        "hugging face spaces",
+        "hugging face inference endpoints"
+      ],
+      "ai_technologies": [
+        "python",
+        "aws",
+        "azure",
+        "git",
+        "pytorch"
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "name": "Ideogram",
+    "category": "Image Generation",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "AI Platform",
+        "Developer Tools",
+        "Enterprise Solutions"
+      ],
+      "ai_technologies": [
+        "Machine Learning",
+        "Cloud Computing",
+        "APIs",
+        "Data Processing"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "name": "Inflection AI",
+    "category": "LLM Providers",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "pi",
+        "pi classic",
+        "inflection ai",
+        "inflection for enterprise",
+        "inflection-1"
+      ],
+      "ai_technologies": [
+        "inflection ai website",
+        "python",
+        "intel gaudi",
+        "nvidia",
+        "coreweave"
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "name": "Intel",
+    "category": "AI Hardware",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "intel-powered ai pcs",
+        "aurora supercomputer",
+        "intel xeon 6",
+        "ribbonfet transistor",
+        "intel core ultra"
+      ],
+      "ai_technologies": [
+        "python",
+        "hugging face",
+        "intel foundry",
+        "silicon die",
+        "chip packages"
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "name": "LangChain",
+    "category": "AI Infrastructure",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "langsmith",
+        "langchain",
+        "langgraph platform",
+        "langgraph",
+        "langgraph studio"
+      ],
+      "ai_technologies": [
+        "python",
+        "javascript",
+        "typescript",
+        "aws",
+        "gcp"
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "name": "Leonardo AI",
+    "category": "Image Generation",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "ai art generator",
+        "ai video generator",
+        "transparent png generator",
+        "ai marketing tools",
+        "ai graphic design"
+      ],
+      "ai_technologies": [
+        "python",
+        "api",
+        "ai canvas",
+        "3d texture generation"
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "name": "Luma AI",
+    "category": "Video AI",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "dream machine",
+        "photon",
+        "ray2",
+        "genie",
+        "app"
+      ],
+      "ai_technologies": [
+        "ios",
+        "web",
+        "twitter",
+        "instagram",
+        "linkedin"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "name": "Meta AI",
+    "category": "LLM Providers",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "llama",
+        "ai studio",
+        "llama api",
+        "llama stack",
+        "llama 4 maverick"
+      ],
+      "ai_technologies": [
+        "python",
+        "aws",
+        "tensorflow",
+        "pytorch",
+        "jax"
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "name": "Midjourney",
+    "category": "Image Generation",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "midjourney",
+        "basic plan",
+        "standard plan",
+        "pro plan",
+        "mega plan"
+      ],
+      "ai_technologies": [
+        "discord",
+        "web",
+        "python",
+        "aws"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "name": "Mistral AI",
+    "category": "LLM Providers",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "la plateforme",
+        "le chat",
+        "mistral code",
+        "mistral compute",
+        "api"
+      ],
+      "ai_technologies": [
+        "python",
+        "google cloud",
+        "aws",
+        "azure",
+        "mistral cloud"
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "name": "Murf AI",
+    "category": "AI Voice/Audio",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "murf studio",
+        "murf text to speech api",
+        "ai voice generator",
+        "voice changer",
+        "canva add-on"
+      ],
+      "ai_technologies": [
+        "python",
+        "javascript",
+        "html/css",
+        "aws",
+        "azure"
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "name": "Neeva",
+    "category": "AI Search",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "AI Platform",
+        "Developer Tools",
+        "Enterprise Solutions"
+      ],
+      "ai_technologies": [
+        "Machine Learning",
+        "Cloud Computing",
+        "APIs",
+        "Data Processing"
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "name": "NVIDIA",
+    "category": "AI Hardware",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "bionemo",
+        "dgx cloud",
+        "nvidia apis",
+        "omniverse cloud",
+        "private registry"
+      ],
+      "ai_technologies": [
+        "python",
+        "cloud computing",
+        "gpu computing",
+        "ai computing",
+        "deep learning"
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "name": "OpenAI",
+    "category": "LLM Providers",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "chatgpt",
+        "sora",
+        "api platform",
+        "api",
+        "chatgpt plus"
+      ],
+      "ai_technologies": [
+        "python",
+        "tensorflow",
+        "pytorch",
+        "jax",
+        "aws"
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "name": "Palantir",
+    "category": "Enterprise AI",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "aip",
+        "foundry",
+        "gotham",
+        "apollo",
+        "aip now"
+      ],
+      "ai_technologies": [
+        "python",
+        "cloud",
+        "api",
+        "sdk",
+        "workflow builder"
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "name": "Perplexity AI",
+    "category": "AI Search",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "perplexity pro",
+        "perplexity max",
+        "perplexity labs",
+        "perplexity research",
+        "perplexity ai"
+      ],
+      "ai_technologies": [
+        "unlimited file uploads",
+        "unlimited photo uploads",
+        "image generation",
+        "cloudflare",
+        "favicon"
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "name": "Phind",
+    "category": "AI Search",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "AI Platform",
+        "Developer Tools",
+        "Enterprise Solutions"
+      ],
+      "ai_technologies": [
+        "Machine Learning",
+        "Cloud Computing",
+        "APIs",
+        "Data Processing"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "name": "Pieces",
+    "category": "AI Coding",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "pieces",
+        "individual plan",
+        "teams plan",
+        "pieces drive",
+        "pieces copilot"
+      ],
+      "ai_technologies": [
+        "windows",
+        "macos",
+        "linux",
+        "cloud",
+        "mcp"
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "name": "Pika",
+    "category": "Video AI",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "pika",
+        "free plan",
+        "basic plan",
+        "standard plan",
+        "pro plan"
+      ],
+      "ai_technologies": [
+        "python",
+        "javascript",
+        "html/css",
+        "aws",
+        "azure"
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "name": "Redmore Studio",
+    "category": "AI Consulting and Education",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "cookieyes",
+        "redmore studio",
+        "generative ai for the curious businessperson",
+        "illuminaite"
+      ],
+      "ai_technologies": [
+        "wordpress",
+        "cookieyes",
+        "python",
+        "javascript"
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "name": "Replicate",
+    "category": "AI Infrastructure",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "replicate",
+        "replicate api",
+        "cog",
+        "replicate playground",
+        "comfyui"
+      ],
+      "ai_technologies": [
+        "python",
+        "tensorflow",
+        "pytorch",
+        "aws",
+        "nvidia a100 gpu"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "name": "Replit",
+    "category": "AI Coding",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "replit agent",
+        "app builder",
+        "website builder",
+        "game builder",
+        "dashboard builder"
+      ],
+      "ai_technologies": [
+        "python",
+        "javascript",
+        "typescript",
+        "node.js",
+        "nix"
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "name": "Resemble AI",
+    "category": "AI Voice/Audio",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "resemble ai voice cloning",
+        "resemble ai text to speech",
+        "resemble ai speech to speech",
+        "resemble ai voice design",
+        "resemble ai multilingual"
+      ],
+      "ai_technologies": [
+        "python",
+        "api",
+        "sdk",
+        "cloud",
+        "on-prem"
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "name": "Runway",
+    "category": "Video AI",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "runway",
+        "free plan",
+        "standard plan",
+        "pro plan",
+        "unlimited plan"
+      ],
+      "ai_technologies": [
+        "python",
+        "api",
+        "aws",
+        "cloudfront"
+      ]
+    }
+  },
+  {
+    "id": 52,
+    "name": "SambaNova",
+    "category": "AI Hardware",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "sambacloud",
+        "sambastack",
+        "sambamanaged",
+        "sambarack",
+        "rdu"
+      ],
+      "ai_technologies": [
+        "python",
+        "aws",
+        "cloud hosting",
+        "gradio",
+        "linux"
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "name": "Scale AI",
+    "category": "Enterprise AI",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "scale data engine",
+        "scale genai platform",
+        "scale donovan",
+        "scale evaluation",
+        "seal leaderboards"
+      ],
+      "ai_technologies": [
+        "python",
+        "linux",
+        "aws",
+        "azure",
+        "gcp"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "name": "Sourcegraph",
+    "category": "AI Coding",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "amp",
+        "code search",
+        "batch changes",
+        "cody",
+        "amp teams"
+      ],
+      "ai_technologies": [
+        "github",
+        "gitlab",
+        "google",
+        "okta",
+        "saml"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "name": "Stability AI",
+    "category": "LLM Providers",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "stable assistant",
+        "stable audio",
+        "platform api",
+        "stable image",
+        "stable video"
+      ],
+      "ai_technologies": [
+        "python",
+        "cloud platforms",
+        "squarespace",
+        "google drive",
+        "discord"
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "name": "Synthesia",
+    "category": "Video AI",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "synthesia",
+        "synthesia api",
+        "synthesia academy",
+        "ai video editor",
+        "basic plan"
+      ],
+      "ai_technologies": [
+        "python",
+        "javascript",
+        "html/css",
+        "aws",
+        "azure"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "name": "Tabnine",
+    "category": "AI Coding",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "tabnine",
+        "tabnine enterprise",
+        "tabnine dev",
+        "tabnine dev preview",
+        "code review agent"
+      ],
+      "ai_technologies": [
+        "python",
+        "javascript",
+        "java",
+        "aws",
+        "azure"
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "name": "Weights & Biases",
+    "category": "AI Infrastructure",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "weave",
+        "traces",
+        "evaluations",
+        "playground",
+        "agents"
+      ],
+      "ai_technologies": [
+        "python",
+        "aws",
+        "gcp",
+        "docker",
+        "coreweave"
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "name": "WellSaid Labs",
+    "category": "AI Voice/Audio",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "studio",
+        "api",
+        "voices",
+        "security",
+        "integrations"
+      ],
+      "ai_technologies": [
+        "adobe premiere pro",
+        "javascript",
+        "mp3",
+        "wav",
+        "ogg"
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "name": "You.com",
+    "category": "AI Search",
+    "industry": null,
+    "intelligence": {
+      "top_products": [
+        "ari",
+        "you.com api",
+        "enterprise solutions"
+      ],
+      "ai_technologies": [
+        "python",
+        "javascript",
+        "aws",
+        "apis",
+        "sdks"
+      ]
+    }
+  }
+]

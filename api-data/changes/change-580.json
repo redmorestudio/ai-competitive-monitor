@@ -1,0 +1,68 @@
+{
+  "id": 580,
+  "company": "Neeva",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:38:29.451Z",
+  "change_type": "new",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "Initial content addition",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Initial content addition",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Added homepage content",
+      "Included copyright information",
+      "Added links to Privacy Policy and Legal pages"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Establishing an online presence, which is crucial for any modern business, suggesting Neeva is preparing for launch or has recently launched",
+    "market_signals": [
+      "Entry into the market",
+      "Potential for future product or service announcements"
+    ],
+    "competitive_implications": "Neeva's entry into the market may pose a competitive threat to existing companies, depending on the products or services they offer",
+    "strategic_direction": "Preparing for a potential launch or expansion, focusing on establishing a professional online presence"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Neeva has established a basic online presence",
+      "The company is preparing for potential future announcements or product launches"
+    ],
+    "opportunities": [
+      "Monitoring Neeva's future developments for potential partnerships or collaborations",
+      "Analyzing Neeva's products or services for market gaps or competitive advantages"
+    ],
+    "threats": [
+      "Potential competition from Neeva in the market",
+      "Neeva's future products or services could disrupt existing market dynamics"
+    ],
+    "recommended_actions": [
+      "Continuously monitor Neeva's website for updates",
+      "Research Neeva's potential products or services to anticipate market impacts"
+    ]
+  },
+  "key_insights": [
+    "Neeva has established a basic online presence",
+    "The company is preparing for potential future announcements or product launches"
+  ],
+  "business_impact": "Establishing an online presence, which is crucial for any modern business, suggesting Neeva is preparing for launch or has recently launched",
+  "competitive_implications": "Neeva's entry into the market may pose a competitive threat to existing companies, depending on the products or services they offer",
+  "content_hash_before": null,
+  "content_hash_after": "9db41e18882e58ef8b8e7765ec7a68ff7f69b9f03d3980433860e4d99b6dd977",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

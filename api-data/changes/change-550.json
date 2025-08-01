@@ -1,0 +1,99 @@
+{
+  "id": 550,
+  "company": "SambaNova",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:43:26.853Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New website content and structure for SambaNova, including new product announcements, solutions, and partnerships",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New website content and structure for SambaNova, including new product announcements, solutions, and partnerships",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of SambaManaged, a turnkey AI solution for data centers",
+      "Announcement of SambaNova 2.0, a new version of the company's AI platform",
+      "New partnerships and integrations with various companies, including Meta, OpenAI, and DeepSeek",
+      "Updated product offerings, including SambaCloud, SambaStack, and SambaRack",
+      "New solutions for developers, enterprises, government, and public sector"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are likely to have a significant impact on SambaNova's business, as they expand the company's product and solution offerings, and establish new partnerships and integrations",
+    "market_signals": [
+      "Increased competition in the AI market",
+      "Growing demand for efficient and scalable AI solutions"
+    ],
+    "competitive_implications": "The changes suggest that SambaNova is positioning itself as a major player in the AI market, with a focus on providing fast, efficient, and scalable solutions for a range of industries and applications",
+    "strategic_direction": "The changes indicate that SambaNova is focused on expanding its product and solution offerings, establishing new partnerships and integrations, and positioning itself as a leader in the AI market"
+  },
+  "entities": {
+    "products": [
+      "SambaCloud",
+      "SambaStack",
+      "SambaManaged",
+      "SambaRack",
+      "RDU"
+    ],
+    "features": [
+      "Fast inference",
+      "High efficiency",
+      "Low power consumption",
+      "Support for open-source models"
+    ],
+    "partnerships": [
+      "Meta",
+      "OpenAI",
+      "DeepSeek"
+    ],
+    "technologies": [
+      "AI",
+      "Machine learning",
+      "Deep learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Data centers",
+      "Developers",
+      "Enterprises",
+      "Government",
+      "Public sector"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "SambaNova is expanding its product and solution offerings to include new AI solutions for data centers, developers, and enterprises",
+      "The company is establishing new partnerships and integrations with major players in the AI market",
+      "SambaNova is positioning itself as a leader in the AI market, with a focus on providing fast, efficient, and scalable solutions"
+    ],
+    "opportunities": [
+      "Partnership opportunities with SambaNova",
+      "New business opportunities in the AI market",
+      "Increased demand for efficient and scalable AI solutions"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Growing demand for efficient and scalable AI solutions may lead to increased pricing pressure"
+    ],
+    "recommended_actions": [
+      "Monitor SambaNova's progress and announcements",
+      "Consider partnership opportunities with SambaNova",
+      "Assess the potential impact of SambaNova's changes on your own business and strategy"
+    ]
+  },
+  "key_insights": [
+    "SambaNova is expanding its product and solution offerings to include new AI solutions for data centers, developers, and enterprises",
+    "The company is establishing new partnerships and integrations with major players in the AI market",
+    "SambaNova is positioning itself as a leader in the AI market, with a focus on providing fast, efficient, and scalable solutions"
+  ],
+  "business_impact": "The changes are likely to have a significant impact on SambaNova's business, as they expand the company's product and solution offerings, and establish new partnerships and integrations",
+  "competitive_implications": "The changes suggest that SambaNova is positioning itself as a major player in the AI market, with a focus on providing fast, efficient, and scalable solutions for a range of industries and applications",
+  "content_hash_before": null,
+  "content_hash_after": "b14fdcd74e9b2a16d4042b0a09086c99edeed050812c62ea5d34d59e14b3c353",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

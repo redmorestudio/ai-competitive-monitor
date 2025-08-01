@@ -1,0 +1,83 @@
+{
+  "id": 621,
+  "company": "Descript",
+  "page_url": "product",
+  "detected_at": "2025-08-01T22:29:45.409Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New website content and features introduction",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New website content and features introduction",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of new features such as video editing, podcasting, screen recording, rooms, captions, AI avatars, transcription, and AI speech",
+      "Addition of new sections such as For work, Resources, and Pricing",
+      "Introduction of Underlord, an AI assistant to help bring creative vision to life",
+      "Addition of a chatbot logo and a video generator with AI"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are likely to have a significant impact on the company's business, as they expand their product and service offerings and target new markets",
+    "market_signals": [
+      "Expansion into new markets",
+      "Increased focus on AI-powered features"
+    ],
+    "competitive_implications": "The changes are likely to increase competition in the market, as Descript expands its offerings and targets new customers",
+    "strategic_direction": "The company is likely to continue to focus on expanding its product and service offerings, with a focus on AI-powered features"
+  },
+  "entities": {
+    "products": [
+      "Descript",
+      "Underlord"
+    ],
+    "features": [
+      "Video editing",
+      "Podcasting",
+      "Screen recording",
+      "Rooms",
+      "Captions",
+      "AI avatars",
+      "Transcription",
+      "AI speech"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Descript is expanding its product and service offerings, with a focus on AI-powered features",
+      "The company is targeting new markets, including the enterprise market"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the industry",
+      "Expansion into new markets"
+    ],
+    "threats": [
+      "Increased competition in the market",
+      "Potential challenges in integrating new features and technologies"
+    ],
+    "recommended_actions": [
+      "Monitor the company's progress and adjust competitive strategy accordingly",
+      "Consider partnership opportunities with Descript"
+    ]
+  },
+  "key_insights": [
+    "Descript is expanding its product and service offerings, with a focus on AI-powered features",
+    "The company is targeting new markets, including the enterprise market"
+  ],
+  "business_impact": "The changes are likely to have a significant impact on the company's business, as they expand their product and service offerings and target new markets",
+  "competitive_implications": "The changes are likely to increase competition in the market, as Descript expands its offerings and targets new customers",
+  "content_hash_before": null,
+  "content_hash_after": "32c2214c88e8caf2fe88d2135a167d8eb9f6821ec7afb0bdce43afa9de8eeacc",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

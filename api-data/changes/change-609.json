@@ -1,0 +1,91 @@
+{
+  "id": 609,
+  "company": "Hugging Face",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:33:51.383Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "Initial pricing page content",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Initial pricing page content",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of PRO, Team, and Enterprise plans",
+      "Pricing details for each plan",
+      "Features and benefits for each plan",
+      "Information on Spaces Hardware and Persistent Storage",
+      "Details on Inference Endpoints and GPU instances"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of a pricing page with detailed plans and features is likely to attract more customers and increase revenue for Hugging Face.",
+    "market_signals": [
+      "Expansion of offerings to cater to different customer segments",
+      "Increased focus on enterprise customers"
+    ],
+    "competitive_implications": "Hugging Face is positioning itself as a major player in the Machine Learning market, competing with other companies offering similar services.",
+    "strategic_direction": "Hugging Face is focusing on expanding its revenue streams and customer base, while also investing in its technology and features."
+  },
+  "entities": {
+    "products": [
+      "Hugging Face Hub",
+      "PRO Account",
+      "Team Plan",
+      "Enterprise Plan",
+      "Spaces Hardware",
+      "Inference Endpoints"
+    ],
+    "features": [
+      "Private storage capacity",
+      "Inference credits",
+      "ZeroGPU quota",
+      "Spaces Dev Mode",
+      "Dataset Viewer",
+      "Blog Articles"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Machine Learning",
+      "GPU instances"
+    ],
+    "people": [],
+    "pricing": [
+      "$9 per month (PRO)",
+      "$20 per user per month (Team)",
+      "$50 per user per month (Enterprise)"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Hugging Face is introducing a pricing page with detailed plans and features",
+      "The company is focusing on expanding its revenue streams and customer base"
+    ],
+    "opportunities": [
+      "Increased revenue potential for Hugging Face",
+      "Expansion into new customer segments"
+    ],
+    "threats": [
+      "Increased competition in the Machine Learning market",
+      "Potential customer resistance to new pricing plans"
+    ],
+    "recommended_actions": [
+      "Monitor customer feedback and adjust pricing plans accordingly",
+      "Invest in marketing and sales efforts to attract new customers"
+    ]
+  },
+  "key_insights": [
+    "Hugging Face is introducing a pricing page with detailed plans and features",
+    "The company is focusing on expanding its revenue streams and customer base"
+  ],
+  "business_impact": "The introduction of a pricing page with detailed plans and features is likely to attract more customers and increase revenue for Hugging Face.",
+  "competitive_implications": "Hugging Face is positioning itself as a major player in the Machine Learning market, competing with other companies offering similar services.",
+  "content_hash_before": null,
+  "content_hash_after": "313794f3ab73358ea7719303026f9868c81cde7eb75a60974017b6137986310c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

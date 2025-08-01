@@ -1,0 +1,84 @@
+{
+  "id": 631,
+  "company": "Cohere",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:28:37.532Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New homepage content with updated product and feature descriptions, industry solutions, and customer stories",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New homepage content with updated product and feature descriptions, industry solutions, and customer stories",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of new product descriptions for Command, Aya Expanse, Embed, Rerank, North, and Compass",
+      "Updated industry solutions for Technology, Financial Services, Healthcare and Life Sciences, Manufacturing, Energy and Utilities, and Public Sector",
+      "Addition of new customer stories for DraftWise, Fujitsu, BambooHR, Notion, Oracle, Johnson Lambert, Atomicwork, Borderless AI, and BlueDot",
+      "Introduction of new resources such as LLM University, Cookbooks, and Docs"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest that Cohere is expanding its product offerings and industry solutions, which could lead to increased revenue and market share",
+    "market_signals": [
+      "Increased competition in the AI market",
+      "Growing demand for private and secure AI solutions"
+    ],
+    "competitive_implications": "Cohere's updated product offerings and industry solutions may pose a competitive threat to other AI companies, particularly those focused on enterprise solutions",
+    "strategic_direction": "Cohere appears to be focusing on enterprise AI solutions, with a emphasis on private and secure deployments"
+  },
+  "entities": {
+    "products": [
+      "Command",
+      "Aya Expanse",
+      "Embed",
+      "Rerank",
+      "North",
+      "Compass"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Technology",
+      "Financial Services",
+      "Healthcare and Life Sciences",
+      "Manufacturing",
+      "Energy and Utilities",
+      "Public Sector"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Cohere is expanding its product offerings and industry solutions",
+      "The company is focusing on private and secure AI deployments",
+      "Cohere has added new customer stories and resources to its website"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Cohere for companies in the Technology, Financial Services, Healthcare and Life Sciences, Manufacturing, Energy and Utilities, and Public Sector industries"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Cohere's expanded product offerings and industry solutions may pose a competitive threat to other AI companies"
+    ],
+    "recommended_actions": [
+      "Monitor Cohere's product offerings and industry solutions for potential partnership opportunities",
+      "Assess the competitive implications of Cohere's updated product offerings and industry solutions"
+    ]
+  },
+  "key_insights": [
+    "Cohere is expanding its product offerings and industry solutions",
+    "The company is focusing on private and secure AI deployments",
+    "Cohere has added new customer stories and resources to its website"
+  ],
+  "business_impact": "The changes suggest that Cohere is expanding its product offerings and industry solutions, which could lead to increased revenue and market share",
+  "competitive_implications": "Cohere's updated product offerings and industry solutions may pose a competitive threat to other AI companies, particularly those focused on enterprise solutions",
+  "content_hash_before": null,
+  "content_hash_after": "ab5c087e8b1e486529d15594626bc480af46955f51a531b90091de887ceaff2c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

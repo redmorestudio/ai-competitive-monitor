@@ -1,0 +1,85 @@
+{
+  "id": 546,
+  "company": "Sourcegraph",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:43:58.494Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New pricing page with detailed plans for Amp and Code Search",
+  "category": "pricing_update",
+  "change_summary": {
+    "what_changed": "New pricing page with detailed plans for Amp and Code Search",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of Amp pricing plans: Amp, Amp Teams, and Amp Enterprise",
+      "Code Search pricing plans: Enterprise Starter and Enterprise Search",
+      "Detailed features and limitations for each plan",
+      "FAQ section added for clarification on pricing and plans"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The new pricing plans could lead to increased revenue streams for Sourcegraph, as well as improved competitiveness in the market.",
+    "market_signals": [
+      "Sourcegraph is targeting individual developers, small teams, and large enterprises with its pricing plans",
+      "The company is emphasizing the value of its AI coding assistant and codebase search features"
+    ],
+    "competitive_implications": "The introduction of new pricing plans could put pressure on competitors to revisit their own pricing strategies, potentially leading to a market-wide shift in pricing dynamics.",
+    "strategic_direction": "Sourcegraph appears to be focusing on expanding its customer base and increasing revenue through targeted pricing plans and feature development."
+  },
+  "entities": {
+    "products": [
+      "Amp",
+      "Code Search"
+    ],
+    "features": [
+      "AI coding assistant",
+      "Codebase search",
+      "Batch changes",
+      "Code insights",
+      "Code navigation",
+      "Code monitoring"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Amp: $10 free credit trial, at-cost pricing",
+      "Amp Teams: $10 free credit trial per user, at-cost pricing, single sign-on",
+      "Amp Enterprise: 50% more expensive than individual and team usage, single sign-on, zero LLM retention",
+      "Enterprise Starter: $19 per user, monthly, up to 50 devs",
+      "Enterprise Search: $49 per user, monthly, 25+ devs"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Sourcegraph is introducing new pricing plans to target a wider range of customers",
+      "The company is emphasizing the value of its AI coding assistant and codebase search features"
+    ],
+    "opportunities": [
+      "Sourcegraph could potentially increase its revenue streams through the new pricing plans",
+      "The company could expand its customer base and improve its competitiveness in the market"
+    ],
+    "threats": [
+      "Competitors could respond to Sourcegraph's new pricing plans by introducing their own competitive pricing strategies",
+      "The company may face challenges in communicating the value of its features and pricing plans to customers"
+    ],
+    "recommended_actions": [
+      "Monitor Sourcegraph's pricing plans and feature development to anticipate potential market shifts",
+      "Assess the competitiveness of Sourcegraph's pricing plans and features in relation to other market offerings"
+    ]
+  },
+  "key_insights": [
+    "Sourcegraph is introducing new pricing plans to target a wider range of customers",
+    "The company is emphasizing the value of its AI coding assistant and codebase search features"
+  ],
+  "business_impact": "The new pricing plans could lead to increased revenue streams for Sourcegraph, as well as improved competitiveness in the market.",
+  "competitive_implications": "The introduction of new pricing plans could put pressure on competitors to revisit their own pricing strategies, potentially leading to a market-wide shift in pricing dynamics.",
+  "content_hash_before": null,
+  "content_hash_after": "ff399798a54500009ffc8342f8567dc41031cb14f9476c8c43f8a1a0e72b495f",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

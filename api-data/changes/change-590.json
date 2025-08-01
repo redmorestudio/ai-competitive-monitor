@@ -1,0 +1,88 @@
+{
+  "id": 590,
+  "company": "Meta AI",
+  "page_url": "product",
+  "detected_at": "2025-08-01T22:36:34.438Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.95,
+  "summary": "Introduction of Llama 4, a new generation of AI models with native multimodality, advanced reasoning, and industry-leading context windows",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Introduction of Llama 4, a new generation of AI models with native multimodality, advanced reasoning, and industry-leading context windows",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Llama 4 models are designed with native multimodality",
+      "Advanced reasoning capabilities",
+      "Industry-leading context windows",
+      "Introduction of Llama API and Llama Stack",
+      "Partnership with AWS to support startups building with Llama"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of Llama 4 is expected to drive growth and innovation in the AI industry, with potential applications in various sectors such as healthcare, finance, and education",
+    "market_signals": [
+      "Increased competition in the AI market",
+      "Growing demand for AI-powered solutions"
+    ],
+    "competitive_implications": "The introduction of Llama 4 positions Meta as a leader in the AI industry, with potential to gain market share and influence the direction of AI research and development",
+    "strategic_direction": "Meta's strategic direction is focused on advancing AI technology and making it more accessible to developers and businesses"
+  },
+  "entities": {
+    "products": [
+      "Llama 4",
+      "Llama API",
+      "Llama Stack"
+    ],
+    "features": [
+      "Native multimodality",
+      "Advanced reasoning",
+      "Industry-leading context windows"
+    ],
+    "partnerships": [
+      "AWS"
+    ],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [
+      "$0.19-$0.49 per 1M input and output tokens"
+    ],
+    "markets": [
+      "Startups",
+      "Enterprise"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Llama 4 represents a significant advancement in AI technology",
+      "Partnership with AWS is expected to drive adoption and innovation"
+    ],
+    "opportunities": [
+      "Growth and innovation in the AI industry",
+      "Increased adoption of AI-powered solutions"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential regulatory challenges"
+    ],
+    "recommended_actions": [
+      "Monitor the development and adoption of Llama 4",
+      "Explore potential applications and partnerships in the AI industry"
+    ]
+  },
+  "key_insights": [
+    "Llama 4 represents a significant advancement in AI technology",
+    "Partnership with AWS is expected to drive adoption and innovation"
+  ],
+  "business_impact": "The introduction of Llama 4 is expected to drive growth and innovation in the AI industry, with potential applications in various sectors such as healthcare, finance, and education",
+  "competitive_implications": "The introduction of Llama 4 positions Meta as a leader in the AI industry, with potential to gain market share and influence the direction of AI research and development",
+  "content_hash_before": null,
+  "content_hash_after": "743f740fb962ed96beb181fefd8ab25a0c855782d3291f96eb8d19c5ccf865bc",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
