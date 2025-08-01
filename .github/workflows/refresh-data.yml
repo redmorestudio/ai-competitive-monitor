@@ -39,27 +39,18 @@ jobs:
           npm install --omit=dev
       
       - name: Generate static data files
+        env:
+          POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+          NODE_ENV: production
         run: |
           cd github-actions-backend
-          echo "📊 Regenerating static JSON files from database..."
+          echo "📊 Regenerating static JSON files from PostgreSQL database..."
           echo "Reason: ${{ inputs.reason }}"
           
-          # Show current stats before generation
-          echo "Current database stats:"
-          node -e "
-            const Database = require('better-sqlite3');
-            const db = new Database('data/intelligence.db');
-            const companies = db.prepare('SELECT COUNT(*) as count FROM companies').get();
-            const urls = db.prepare('SELECT COUNT(*) as count FROM urls').get();
-            console.log('Companies:', companies.count);
-            console.log('URLs:', urls.count);
-            db.close();
-          "
+          # Generate the static files from PostgreSQL
+          node generate-static-data-three-db-postgres.js
           
-          # Generate the static files
-          node generate-static-data-three-db.js
-          
-          echo "✅ Static data files generated"
+          echo "✅ Static data files generated from PostgreSQL"
       
       - name: Commit changes
         run: |
@@ -96,6 +87,6 @@ jobs:
           echo "**Reason:** ${{ inputs.reason }}" >> $GITHUB_STEP_SUMMARY
           echo "**Time:** $(date -u +%Y-%m-%d\ %H:%M:%S\ UTC)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "The dashboard data has been refreshed and deployed to GitHub Pages." >> $GITHUB_STEP_SUMMARY
+          echo "The dashboard data has been refreshed from PostgreSQL and deployed to GitHub Pages." >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "🔗 [View Dashboard](https://redmorestudio.github.io/ai-competitive-monitor/)" >> $GITHUB_STEP_SUMMARY
