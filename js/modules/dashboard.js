@@ -9,8 +9,7 @@
  * Handles main dashboard UI rendering and interactions
  */
 
-import { escapeHtml, formatTimeAgo, getInterestEmoji } from './utils.js';
-import { controls } from './controls.js';
+import { escapeHtml, getRelativeTime, getInterestEmoji } from './utils.js';
 import { filterHighInterestChanges } from './filters.js';
 import { api } from './api.js';
 
@@ -82,7 +81,7 @@ class Dashboard {
         
         // Get last check time
         const lastCheck = workflowStatus?.last_run || dashboardData?.lastUpdated;
-        const lastCheckText = lastCheck ? formatTimeAgo(new Date(lastCheck)) : 'Never';
+        const lastCheckText = lastCheck ? getRelativeTime(new Date(lastCheck)) : 'Never';
         
         // Update the stats bar
         this.statsBar.innerHTML = `
@@ -165,7 +164,7 @@ class Dashboard {
                 
                 ${lastChange ? `
                 <div class="last-activity">
-                    <small>Last change: ${formatTimeAgo(new Date(lastChange))}</small>
+                    <small>Last change: ${getRelativeTime(new Date(lastChange))}</small>
                 </div>
                 ` : ''}
                 
@@ -230,7 +229,7 @@ class Dashboard {
      */
     renderRecentChange(change, index) {
         const changeDate = new Date(change.detected_at || change.detectedAt);
-        const timeAgo = formatTimeAgo(changeDate);
+        const timeAgo = getRelativeTime(changeDate);
         
         // Parse AI analysis to get summary
         let summary = change.summary || '';
