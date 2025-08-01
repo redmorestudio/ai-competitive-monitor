@@ -279,6 +279,29 @@ class Dashboard {
             container.innerHTML = `<div class="error-message">${escapeHtml(message)}</div>`;
         }
     }
+
+    /**
+     * Main render method - updates all dashboard components
+     */
+    async render() {
+        try {
+            // Get data from the data module
+            const { getDashboardData, getWorkflowStatus, getChangesData } = await import('./data.js');
+            
+            const dashboardData = getDashboardData();
+            const workflowStatus = getWorkflowStatus();
+            const changesData = getChangesData();
+            
+            // Update all components
+            this.updateStatsBar(dashboardData, workflowStatus);
+            this.updateCompaniesDisplay(dashboardData?.companies || []);
+            await this.updateRecentChanges(changesData || dashboardData?.changes || []);
+            
+        } catch (error) {
+            console.error('Error rendering dashboard:', error);
+            this.showError(this.companiesContainer, 'Failed to load dashboard data');
+        }
+    }
 }
 
 // Create and export singleton instance
