@@ -267,6 +267,34 @@ export async function fetchWithRetry(url, options = {}, maxRetries = 3) {
     throw lastError;
 }
 
+// HTML escape function for security
+export function escapeHtml(text) {
+    const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+    };
+    return text.replace(/[&<>"']/g, m => map[m]);
+}
+
+// Get interest level color based on score
+export function getInterestColor(score) {
+    if (score >= 8) return '#ff4444';  // High interest - red
+    if (score >= 6) return '#ff8800';  // Medium-high - orange
+    if (score >= 4) return '#ffcc00';  // Medium - yellow
+    return '#44ff44';  // Low - green
+}
+
+// Get interest level emoji based on score
+export function getInterestEmoji(score) {
+    if (score >= 8) return '🔥';  // High interest
+    if (score >= 6) return '⚡';  // Medium-high
+    if (score >= 4) return '💡';  // Medium
+    return '💚';  // Low
+}
+
 // Export utility functions for testing
 export const utils = {
     formatDate,
