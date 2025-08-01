@@ -72,41 +72,70 @@ export async function showCompanyDetails(companyName) {
     modal.style.display = 'block';
     
     try {
-        // Load company configuration from GitHub
-        const configData = await loadStaticData('config.json');
-        const companyConfig = configData.companies.find(c => c.name === companyName);
+        // Load company details from the correct file
+        const companyDetailsData = await loadStaticData('company-details.json');
+        const companyDetails = companyDetailsData.companies[companyName];
         
-        if (!companyConfig) {
-            throw new Error('Company configuration not found');
+        if (!companyDetails) {
+            throw new Error('Company details not found');
         }
+        
+        // Also load company list data for additional info
+        const companiesData = await loadStaticData('companies.json');
+        const companyInfo = companiesData.find(c => c.name === companyName) || {};
         
         modalContent.innerHTML = `
             <div class="config-section">
-                <h4>📊 Company Configuration</h4>
-                <p><strong>Industry:</strong> ${escapeHtml(companyConfig.industry || 'Technology')}</p>
-                <p><strong>Description:</strong> ${escapeHtml(companyConfig.description || 'AI/ML technology company')}</p>
+                <h4>📊 Company Overview</h4>
+                <p><strong>Category:</strong> ${escapeHtml(companyInfo.category || 'Technology')}</p>
+                <p><strong>Industry:</strong> ${escapeHtml(companyInfo.industry || 'AI/ML Technology')}</p>
                 <p><strong>Monitoring Active:</strong> <span class="status-badge active">Yes</span></p>
             </div>
             
             <div class="config-section">
-                <h4>🌐 Monitored URLs (${companyConfig.urls.length})</h4>
-                <div class="url-list">
-                    ${companyConfig.urls.map(url => `
-                        <div class="url-item">
-                            <a href="${escapeHtml(url)}" target="_blank">${escapeHtml(url)}</a>
-                        </div>
-                    `).join('')}
-                </div>
+                <h4>📈 Activity Statistics</h4>
+                ${companyDetails.stats ? `
+                    <p><strong>Total Changes:</strong> ${companyDetails.stats.total_changes || 0}</p>
+                    <p><strong>Changes (7 days):</strong> ${companyDetails.stats.changes_7d || 0}</p>
+                    <p><strong>Changes (30 days):</strong> ${companyDetails.stats.changes_30d || 0}</p>
+                    <p><strong>Average Interest Level:</strong> ${parseFloat(companyDetails.stats.avg_interest_level || 0).toFixed(1)}/10</p>
+                    <p><strong>Last Change:</strong> ${companyDetails.stats.last_change ? new Date(companyDetails.stats.last_change).toLocaleDateString() : 'No changes yet'}</p>
+                ` : '<p>No statistics available</p>'}
             </div>
             
             <div class="config-section">
-                <h4>🏷️ AI Focus Areas</h4>
-                <div class="tag-list">
-                    ${companyConfig.ai_keywords ? companyConfig.ai_keywords.map(keyword => 
-                        `<span class="tag">${escapeHtml(keyword)}</span>`
-                    ).join('') : '<p>No specific keywords configured</p>'}
+                <h4>🌐 Monitored URLs (${companyDetails.urls ? companyDetails.urls.length : 0})</h4>
+                <div class="url-list">
+                    ${companyDetails.urls ? companyDetails.urls.map(urlObj => `
+                        <div class="url-item">
+                            <a href="${escapeHtml(urlObj.url)}" target="_blank">${escapeHtml(urlObj.url)}</a>
+                            <span style="color: var(--text-secondary); font-size: 0.85rem; margin-left: 10px;">(${escapeHtml(urlObj.category || urlObj.name)})</span>
+                        </div>
+                    `).join('') : '<p>No URLs configured</p>'}
                 </div>
             </div>
+            
+            ${companyInfo.intelligence ? `
+            <div class="config-section">
+                <h4>🏷️ AI Intelligence</h4>
+                ${companyInfo.intelligence.top_products && companyInfo.intelligence.top_products.length > 0 ? `
+                    <p><strong>Products:</strong></p>
+                    <div class="tag-list">
+                        ${companyInfo.intelligence.top_products.map(product => 
+                            `<span class="tag">${escapeHtml(product)}</span>`
+                        ).join('')}
+                    </div>
+                ` : ''}
+                ${companyInfo.intelligence.ai_technologies && companyInfo.intelligence.ai_technologies.length > 0 ? `
+                    <p style="margin-top: 10px;"><strong>Technologies:</strong></p>
+                    <div class="tag-list">
+                        ${companyInfo.intelligence.ai_technologies.map(tech => 
+                            `<span class="tag tech-tag">${escapeHtml(tech)}</span>`
+                        ).join('')}
+                    </div>
+                ` : ''}
+            </div>
+            ` : ''}
             
             <div class="config-section">
                 <h4>📈 Recent Activity</h4>
@@ -135,27 +164,30 @@ export async function showCompanyUrls(companyName) {
     modal.style.display = 'block';
     
     try {
-        const configData = await loadStaticData('config.json');
-        const companyConfig = configData.companies.find(c => c.name === companyName);
+        const companyDetailsData = await loadStaticData('company-details.json');
+        const companyDetails = companyDetailsData.companies[companyName];
         
-        if (!companyConfig) {
-            throw new Error('Company configuration not found');
+        if (!companyDetails || !companyDetails.urls) {
+            throw new Error('Company URLs not found');
         }
         
         modalContent.innerHTML = `
             <div class="config-section">
                 <h4>🌐 All Monitored URLs for ${escapeHtml(companyName)}</h4>
-                <p style="margin-bottom: 20px;">Total URLs monitored: ${companyConfig.urls.length}</p>
+                <p style="margin-bottom: 20px;">Total URLs monitored: ${companyDetails.urls.length}</p>
                 
                 <div style="max-height: 400px; overflow-y: auto;">
-                    ${companyConfig.urls.map((url, index) => `
+                    ${companyDetails.urls.map((urlObj, index) => `
                         <div class="url-item" style="padding: 10px; border-bottom: 1px solid var(--border-color);">
                             <div style="display: flex; justify-content: space-between; align-items: center;">
                                 <div style="flex: 1;">
                                     <strong>#${index + 1}</strong>
-                                    <a href="${escapeHtml(url)}" target="_blank" style="margin-left: 10px; color: var(--primary-color);">
-                                        ${escapeHtml(url)}
+                                    <a href="${escapeHtml(urlObj.url)}" target="_blank" style="margin-left: 10px; color: var(--primary-color);">
+                                        ${escapeHtml(urlObj.url)}
                                     </a>
+                                    <span style="color: var(--text-secondary); font-size: 0.85rem; margin-left: 10px;">
+                                        (${escapeHtml(urlObj.category || urlObj.name)})
+                                    </span>
                                 </div>
                                 <div>
                                     <span class="status-badge active">Active</span>
