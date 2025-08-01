@@ -1,9 +1,9 @@
 {
   "lastRun": {
-    "timestamp": "2025-08-01T20:42:08.455Z",
+    "timestamp": "2025-08-01T21:05:38.671Z",
     "companiesScraped": "6",
-    "urlsScraped": "75"
+    "urlsScraped": "100"
   },
   "systemHealth": "operational",
-  "lastUpdated": "2025-08-01T20:44:43.092Z"
+  "lastUpdated": "2025-08-01T21:06:02.342Z"
 }
