@@ -202,6 +202,9 @@ class Dashboard {
                 .sort((a, b) => new Date(b.detected_at || b.detectedAt) - new Date(a.detected_at || a.detectedAt))
                 .slice(0, 5); // Show top 5
             
+            // Store high interest changes globally for the modal to access
+            window.highInterestChanges = highInterestChanges;
+            
             if (highInterestChanges.length === 0) {
                 this.recentChangesContainer.innerHTML = 
                     '<p style="color: var(--text-secondary);">No high-interest changes detected recently.</p>';

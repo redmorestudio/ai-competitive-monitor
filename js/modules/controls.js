@@ -236,6 +236,15 @@ export async function showChangeDetail(changeId, companyName, event) {
             }
         }
         
+        // Strategy 1.5: Check if it's a high-interest change from the dashboard
+        if (!changeData && changeId.startsWith('high-interest-')) {
+            const parts = changeId.split('-');
+            const index = parseInt(parts[2]);
+            if (!isNaN(index) && window.highInterestChanges && window.highInterestChanges[index]) {
+                changeData = window.highInterestChanges[index];
+            }
+        }
+        
         // Strategy 2: Load from changes.json and find the matching change
         if (!changeData) {
             const changesResponse = await loadStaticData('changes.json');
