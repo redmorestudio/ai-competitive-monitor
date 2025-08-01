@@ -1,6 +1,6 @@
 {
   "type": "companies",
-  "generated_at": "2025-08-01T19:23:21.863Z",
+  "generated_at": "2025-08-01T20:44:43.116Z",
   "entity_count": 6,
   "context_count": 300,
   "contexts": {
@@ -14,8 +14,19 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
+        ]
+      },
+      {
+        "company": "Perplexity AI",
+        "source_url": "https://perplexity.ai/pro",
+        "text": "Unlimited access to Perplexity Labs Unlimited access to Perplexity Research Use advanced AI models like OpenAI o3-pro and Anthropic Claude 4 Opus Priority support For personal use only, and subject to",
+        "position": 880,
+        "co_mentions": [
+          "Anthropic",
+          "Claude",
+          "Perplexity Labs",
+          "Perplexity Research"
         ]
       },
       {
@@ -66,7 +77,6 @@
         "text": "Codex Release May 16, 2025 Introducing study mode in ChatGPT Product Jul 29, 2025 Announcing OpenAI DevDay 2025 Company Jul 23, 2025 Stargate advances with 4.5 GW partnership with Oracle Company",
         "position": 670,
         "co_mentions": [
-          "Oracle",
           "Codex",
           "ChatGPT",
           "ChatGPT Pro"
@@ -96,8 +106,8 @@
         "text": "generation model in the API Product Apr 23, 2025 Introducing GPT-4.5 Release Feb 27, 2025 OpenAI o3-mini Release Jan 31, 2025 Research View all Pioneering an AI clinical copilot with Penda",
         "position": 1358,
         "co_mentions": [
-          "API",
           "CLI",
+          "API",
           "GPT-4",
           "Copilot"
         ]
@@ -110,8 +120,7 @@
         "co_mentions": [
           "IDE",
           "GPT-4",
-          "Sora",
-          "Research Residency"
+          "Sora"
         ]
       },
       {
@@ -122,8 +131,7 @@
         "co_mentions": [
           "IDE",
           "GPT-4",
-          "Sora",
-          "Research Residency"
+          "Sora"
         ]
       },
       {
@@ -421,8 +429,7 @@
         "co_mentions": [
           "IDE",
           "GPT-4",
-          "Sora",
-          "Research Residency"
+          "Sora"
         ]
       },
       {
@@ -433,8 +440,7 @@
         "co_mentions": [
           "IDE",
           "GPT-4",
-          "Sora",
-          "Research Residency"
+          "Sora"
         ]
       },
       {
@@ -453,8 +459,7 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
         ]
       },
       {
@@ -466,8 +471,7 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
         ]
       },
       {
@@ -479,8 +483,7 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
         ]
       },
       {
@@ -492,8 +495,7 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
         ]
       },
       {
@@ -505,8 +507,7 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
         ]
       },
       {
@@ -518,8 +519,7 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
         ]
       },
       {
@@ -531,8 +531,7 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
         ]
       },
       {
@@ -544,8 +543,7 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
         ]
       },
       {
@@ -557,8 +555,7 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
         ]
       },
       {
@@ -570,8 +567,7 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
         ]
       },
       {
@@ -583,8 +579,7 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
         ]
       },
       {
@@ -633,9 +628,8 @@
         "text": "Health Publication Jul 22, 2025 Toward understanding and preventing misalignment generalization Publication Jun 18, 2025 OpenAI for business View all Invideo AI uses OpenAI models to create videos 10x faster API",
         "position": 3279,
         "co_mentions": [
-          "API",
           "IDE",
-          "AI Mode"
+          "API"
         ]
       },
       {
@@ -644,9 +638,8 @@
         "text": "Health Publication Jul 22, 2025 Toward understanding and preventing misalignment generalization Publication Jun 18, 2025 OpenAI for business View all Invideo AI uses OpenAI models to create videos 10x faster API",
         "position": 3324,
         "co_mentions": [
-          "API",
           "IDE",
-          "AI Mode"
+          "API"
         ]
       },
       {
@@ -658,8 +651,7 @@
           "IDE",
           "GPT-4",
           "ChatGPT",
-          "Sora",
-          "Research Residency"
+          "Sora"
         ]
       },
       {
@@ -671,8 +663,7 @@
           "IDE",
           "GPT-4",
           "ChatGPT",
-          "Sora",
-          "Research Residency"
+          "Sora"
         ]
       },
       {
@@ -947,15 +938,6 @@
         "co_mentions": [
           "ChatGPT"
         ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "and Team and annual plans for Team and Enterprise. Is ChatGPT free to use? Does OpenAI offer a ChatGPT plan for educational institutions? Does OpenAI offer a discount for nonprofits? How",
-        "position": 20609,
-        "co_mentions": [
-          "ChatGPT"
-        ]
       }
     ],
     "Anthropic": [
@@ -968,8 +950,7 @@
           "OpenAI",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
         ]
       },
       {
@@ -1027,18 +1008,14 @@
         "source_url": "https://anthropic.com",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 2581,
-        "co_mentions": [
-          "MCP"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Anthropic",
         "source_url": "https://anthropic.com",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 2631,
-        "co_mentions": [
-          "MCP"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Anthropic",
@@ -1061,18 +1038,14 @@
         "source_url": "https://anthropic.com/claude",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 3043,
-        "co_mentions": [
-          "MCP"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Anthropic",
         "source_url": "https://anthropic.com/claude",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 3093,
-        "co_mentions": [
-          "MCP"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Anthropic",
@@ -1239,8 +1212,8 @@
         "text": "with a new bug bounty program May 14, 2025 Product Introducing web search on the Anthropic API May 07, 2025 Announcements Introducing Anthropic's AI for Science Program May 05, 2025 Product",
         "position": 2683,
         "co_mentions": [
-          "Web",
           "API",
+          "Web",
           "Anthropic API"
         ]
       },
@@ -1405,8 +1378,8 @@
         "text": "million riders and over 1 million drivers Feb 6, 2025 Product Introducing Citations on the Anthropic API Jan 23, 2025 Announcements Anthropic achieves ISO 42001 certification for responsible AI Jan 13,",
         "position": 5330,
         "co_mentions": [
-          "API",
           "IDE",
+          "API",
           "Anthropic API"
         ]
       },
@@ -1417,12 +1390,10 @@
         "position": 6754,
         "co_mentions": [
           "API",
-          "Salesforce",
           "Claude",
           "Anthropic API",
           "Claude for Enterprise",
-          "Contextual Retrieval",
-          "Workspaces"
+          "Contextual Retrieval"
         ]
       },
       {
@@ -1432,12 +1403,10 @@
         "position": 6870,
         "co_mentions": [
           "API",
-          "Salesforce",
           "Claude",
           "Anthropic API",
           "Claude for Enterprise",
-          "Contextual Retrieval",
-          "Workspaces"
+          "Contextual Retrieval"
         ]
       },
       {
@@ -1564,18 +1533,14 @@
         "source_url": "https://anthropic.com/news",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 11889,
-        "co_mentions": [
-          "MCP"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Anthropic",
         "source_url": "https://anthropic.com/news",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 11939,
-        "co_mentions": [
-          "MCP"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Anthropic",
@@ -1598,18 +1563,14 @@
         "source_url": "https://anthropic.com/pricing",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 1790,
-        "co_mentions": [
-          "MCP"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Anthropic",
         "source_url": "https://anthropic.com/pricing",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 1840,
-        "co_mentions": [
-          "MCP"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Anthropic",
@@ -1640,7 +1601,6 @@
         "co_mentions": [
           "API",
           "Claude",
-          "MCP",
           "Anthropic API",
           "Claude Code"
         ]
@@ -1652,7 +1612,6 @@
         "position": 546,
         "co_mentions": [
           "API",
-          "SDK",
           "SDKs",
           "Claude",
           "Anthropic Console"
@@ -1665,7 +1624,9 @@
         "position": 1104,
         "co_mentions": [
           "Claude",
-          "Claude Code"
+          "Claude Code",
+          "Anthropic Courses",
+          "Projects"
         ]
       },
       {
@@ -1675,7 +1636,9 @@
         "position": 1131,
         "co_mentions": [
           "Claude",
-          "Claude Code"
+          "Claude Code",
+          "Anthropic Courses",
+          "Projects"
         ]
       },
       {
@@ -1685,7 +1648,9 @@
         "position": 1178,
         "co_mentions": [
           "Claude",
-          "Claude Code"
+          "Claude Code",
+          "Anthropic Courses",
+          "Projects"
         ]
       },
       {
@@ -1695,7 +1660,9 @@
         "position": 1248,
         "co_mentions": [
           "Claude",
-          "Claude Code"
+          "Claude Code",
+          "Anthropic Courses",
+          "Projects"
         ]
       },
       {
@@ -1707,8 +1674,7 @@
           "OpenAI",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research",
-          "AI Mode"
+          "Perplexity Research"
         ]
       },
       {
@@ -1766,18 +1732,14 @@
         "source_url": "https://anthropic.com",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 2581,
-        "co_mentions": [
-          "MCP"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Anthropic",
         "source_url": "https://anthropic.com",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 2631,
-        "co_mentions": [
-          "MCP"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Anthropic",
@@ -1800,18 +1762,14 @@
         "source_url": "https://anthropic.com/claude",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 3043,
-        "co_mentions": [
-          "MCP"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Anthropic",
         "source_url": "https://anthropic.com/claude",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 3093,
-        "co_mentions": [
-          "MCP"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Anthropic",
@@ -1913,9 +1871,7 @@
         "text": "our journey Documentation Make the most of Midjourney Billing Support Get account help here Policies & Guidelines Terms of Service Privacy Policy Data",
         "position": 315,
         "co_mentions": [
-          "IDE",
-          "Documentation",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -1924,8 +1880,7 @@
         "text": "ntation Make the most of Midjourney Billing Support Get account help here Policies & Guidelines Terms of Service Privacy Policy Data",
         "position": 334,
         "co_mentions": [
-          "IDE",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -1933,54 +1888,42 @@
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 17,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 36,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 69,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 80,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 136,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 157,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
@@ -1995,9 +1938,7 @@
         "text": "Help Getting Started? Getting Started Guide Documentation Billing Support Plan Information How to Subscribe Comparing Midjourney Plans GPU Speed (Fast, Relax, Turbo) Subscription Fast Time Expiration Purchasing Extra Fast Time Earning",
         "position": 2343,
         "co_mentions": [
-          "IDE",
-          "Documentation",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2006,8 +1947,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2675,
         "co_mentions": [
-          "Web",
-          "Discord"
+          "Discord",
+          "Web"
         ]
       },
       {
@@ -2016,8 +1957,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2694,
         "co_mentions": [
-          "Web",
-          "Discord"
+          "Discord",
+          "Web"
         ]
       },
       {
@@ -2054,9 +1995,7 @@
         "text": "our journey Documentation Make the most of Midjourney Billing Support Get account help here Policies & Guidelines Terms of Service Privacy Policy Data",
         "position": 315,
         "co_mentions": [
-          "IDE",
-          "Documentation",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2065,8 +2004,7 @@
         "text": "ntation Make the most of Midjourney Billing Support Get account help here Policies & Guidelines Terms of Service Privacy Policy Data",
         "position": 334,
         "co_mentions": [
-          "IDE",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2074,54 +2012,42 @@
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 17,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 36,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 69,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 80,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 136,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 157,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
@@ -2136,9 +2062,7 @@
         "text": "Help Getting Started? Getting Started Guide Documentation Billing Support Plan Information How to Subscribe Comparing Midjourney Plans GPU Speed (Fast, Relax, Turbo) Subscription Fast Time Expiration Purchasing Extra Fast Time Earning",
         "position": 2343,
         "co_mentions": [
-          "IDE",
-          "Documentation",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2147,8 +2071,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2675,
         "co_mentions": [
-          "Web",
-          "Discord"
+          "Discord",
+          "Web"
         ]
       },
       {
@@ -2157,8 +2081,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2694,
         "co_mentions": [
-          "Web",
-          "Discord"
+          "Discord",
+          "Web"
         ]
       },
       {
@@ -2195,9 +2119,7 @@
         "text": "our journey Documentation Make the most of Midjourney Billing Support Get account help here Policies & Guidelines Terms of Service Privacy Policy Data",
         "position": 315,
         "co_mentions": [
-          "IDE",
-          "Documentation",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2206,8 +2128,7 @@
         "text": "ntation Make the most of Midjourney Billing Support Get account help here Policies & Guidelines Terms of Service Privacy Policy Data",
         "position": 334,
         "co_mentions": [
-          "IDE",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2215,54 +2136,42 @@
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 17,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 36,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 69,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 80,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 136,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 157,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
@@ -2277,9 +2186,7 @@
         "text": "Help Getting Started? Getting Started Guide Documentation Billing Support Plan Information How to Subscribe Comparing Midjourney Plans GPU Speed (Fast, Relax, Turbo) Subscription Fast Time Expiration Purchasing Extra Fast Time Earning",
         "position": 2343,
         "co_mentions": [
-          "IDE",
-          "Documentation",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2288,8 +2195,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2675,
         "co_mentions": [
-          "Web",
-          "Discord"
+          "Discord",
+          "Web"
         ]
       },
       {
@@ -2298,8 +2205,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2694,
         "co_mentions": [
-          "Web",
-          "Discord"
+          "Discord",
+          "Web"
         ]
       },
       {
@@ -2336,9 +2243,7 @@
         "text": "our journey Documentation Make the most of Midjourney Billing Support Get account help here Policies & Guidelines Terms of Service Privacy Policy Data",
         "position": 315,
         "co_mentions": [
-          "IDE",
-          "Documentation",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2347,8 +2252,7 @@
         "text": "ntation Make the most of Midjourney Billing Support Get account help here Policies & Guidelines Terms of Service Privacy Policy Data",
         "position": 334,
         "co_mentions": [
-          "IDE",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2356,54 +2260,42 @@
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 17,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 36,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 69,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 80,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 136,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 157,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
@@ -2418,9 +2310,7 @@
         "text": "Help Getting Started? Getting Started Guide Documentation Billing Support Plan Information How to Subscribe Comparing Midjourney Plans GPU Speed (Fast, Relax, Turbo) Subscription Fast Time Expiration Purchasing Extra Fast Time Earning",
         "position": 2343,
         "co_mentions": [
-          "IDE",
-          "Documentation",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2429,8 +2319,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2675,
         "co_mentions": [
-          "Web",
-          "Discord"
+          "Discord",
+          "Web"
         ]
       },
       {
@@ -2439,8 +2329,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2694,
         "co_mentions": [
-          "Web",
-          "Discord"
+          "Discord",
+          "Web"
         ]
       },
       {
@@ -2477,9 +2367,7 @@
         "text": "our journey Documentation Make the most of Midjourney Billing Support Get account help here Policies & Guidelines Terms of Service Privacy Policy Data",
         "position": 315,
         "co_mentions": [
-          "IDE",
-          "Documentation",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2488,8 +2376,7 @@
         "text": "ntation Make the most of Midjourney Billing Support Get account help here Policies & Guidelines Terms of Service Privacy Policy Data",
         "position": 334,
         "co_mentions": [
-          "IDE",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2497,54 +2384,42 @@
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 17,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 36,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 69,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 80,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 136,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 157,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
@@ -2559,9 +2434,7 @@
         "text": "Help Getting Started? Getting Started Guide Documentation Billing Support Plan Information How to Subscribe Comparing Midjourney Plans GPU Speed (Fast, Relax, Turbo) Subscription Fast Time Expiration Purchasing Extra Fast Time Earning",
         "position": 2343,
         "co_mentions": [
-          "IDE",
-          "Documentation",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2570,8 +2443,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2675,
         "co_mentions": [
-          "Web",
-          "Discord"
+          "Discord",
+          "Web"
         ]
       },
       {
@@ -2580,8 +2453,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2694,
         "co_mentions": [
-          "Web",
-          "Discord"
+          "Discord",
+          "Web"
         ]
       },
       {
@@ -2618,9 +2491,7 @@
         "text": "our journey Documentation Make the most of Midjourney Billing Support Get account help here Policies & Guidelines Terms of Service Privacy Policy Data",
         "position": 315,
         "co_mentions": [
-          "IDE",
-          "Documentation",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2629,8 +2500,7 @@
         "text": "ntation Make the most of Midjourney Billing Support Get account help here Policies & Guidelines Terms of Service Privacy Policy Data",
         "position": 334,
         "co_mentions": [
-          "IDE",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2638,54 +2508,42 @@
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 17,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 36,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 69,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 80,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 136,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
         "source_url": "https://docs.midjourney.com/docs/plans",
         "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information Comparing Midjourney",
         "position": 157,
-        "co_mentions": [
-          "Billing Support"
-        ]
+        "co_mentions": []
       },
       {
         "company": "Midjourney",
@@ -2700,9 +2558,7 @@
         "text": "Help Getting Started? Getting Started Guide Documentation Billing Support Plan Information How to Subscribe Comparing Midjourney Plans GPU Speed (Fast, Relax, Turbo) Subscription Fast Time Expiration Purchasing Extra Fast Time Earning",
         "position": 2343,
         "co_mentions": [
-          "IDE",
-          "Documentation",
-          "Billing Support"
+          "IDE"
         ]
       },
       {
@@ -2711,8 +2567,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2675,
         "co_mentions": [
-          "Web",
-          "Discord"
+          "Discord",
+          "Web"
         ]
       },
       {
@@ -2721,8 +2577,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2694,
         "co_mentions": [
-          "Web",
-          "Discord"
+          "Discord",
+          "Web"
         ]
       },
       {
