@@ -49,17 +49,6 @@ export async function init() {
 
 // Set up state change listeners
 function setupStateListeners() {
-    // Listen for company changes
-    subscribeToState('companies', (companies) => {
-        window.updateCompaniesDisplay?.(companies);
-    });
-    
-    // Listen for data loaded event
-    subscribeToState('dataLoaded', ({ dashboard, changes, workflow }) => {
-        window.updateStatusDisplay?.(dashboard, changes);
-        window.loadRecentChanges?.();
-    });
-    
     // Listen for loading state changes
     subscribeToState('loading', ({ component, isLoading }) => {
         updateLoadingState(component, isLoading);
@@ -124,17 +113,13 @@ function updateStatsBar(dashboard, workflow) {
 // Update companies display (placeholder - will be replaced by UI module)
 function updateCompaniesDisplay(companies) {
     // This will be handled by the UI module in future sessions
-    if (window.updateCompaniesDisplay) {
-        window.updateCompaniesDisplay();
-    }
+    console.log('Companies update - to be implemented');
 }
 
 // Update recent changes (placeholder - will be replaced by UI module)
 function updateRecentChanges(changes) {
     // This will be handled by the UI module in future sessions
-    if (window.loadRecentChanges) {
-        window.loadRecentChanges();
-    }
+    console.log('Recent changes update - to be implemented');
 }
 
 // Loading state management
@@ -182,12 +167,4 @@ export const app = {
     api
 };
 
-// Make app available globally for easy migration
-window.AIMonitor = app;
-
-// Auto-initialize on DOM ready
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-} else {
-    init();
-}
+// App will be initialized explicitly when needed
