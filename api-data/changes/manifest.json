@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2025-08-01T21:08:55.625Z",
+  "generated_at": "2025-08-01T22:01:03.162Z",
   "source": "postgresql",
   "total_changes": 65,
   "files": [
@@ -12,7 +12,7 @@
       "detected_at": "2025-08-01T19:20:20.321Z",
       "interest_level": 9,
       "change_type": "modified",
-      "summary": "The website content has been completely overhauled, transitioning from a security verification page ..."
+      "summary": "The website content has been completely overhauled, shifting from a security verification page to a ..."
     },
     {
       "filename": "change-487.json",
@@ -32,7 +32,7 @@
       "detected_at": "2025-08-01T19:20:07.000Z",
       "interest_level": 9,
       "change_type": "modified",
-      "summary": "The content changed from a blocked page to a detailed pricing page for ChatGPT, including various pl..."
+      "summary": "The content changed from a security verification page to a pricing page for ChatGPT by OpenAI, revea..."
     },
     {
       "filename": "change-228.json",
@@ -355,6 +355,16 @@
       "summary": "Change detected"
     },
     {
+      "filename": "change-485.json",
+      "change_id": 485,
+      "api_path": "/api-data/changes/change-485.json",
+      "company": "Anthropic",
+      "detected_at": "2025-08-01T18:38:20.653Z",
+      "interest_level": 7,
+      "change_type": "modified",
+      "summary": "Addition of new news articles and removal of older ones, update of Anthropic's newsroom page"
+    },
+    {
       "filename": "change-452.json",
       "change_id": 452,
       "api_path": "/api-data/changes/change-452.json",
@@ -372,17 +382,7 @@
       "detected_at": "2025-08-01T18:38:57.523Z",
       "interest_level": 6,
       "change_type": "modified",
-      "summary": "Billing section updated to 'organizations and enterprises' from 'billing for organizations' and 'bil..."
-    },
-    {
-      "filename": "change-485.json",
-      "change_id": 485,
-      "api_path": "/api-data/changes/change-485.json",
-      "company": "Anthropic",
-      "detected_at": "2025-08-01T18:38:20.653Z",
-      "interest_level": 6,
-      "change_type": "modified",
-      "summary": "Addition of a new news article titled 'Anthropic Signs CMS Health Tech Ecosystem Pledge to Advance H..."
+      "summary": "Billing section updated to reflect changes in organization and enterprise billing"
     },
     {
       "filename": "change-347.json",
@@ -425,6 +425,16 @@
       "summary": "Addition of a new case study on how Anthropic teams use Claude Code"
     },
     {
+      "filename": "change-484.json",
+      "change_id": 484,
+      "api_path": "/api-data/changes/change-484.json",
+      "company": "Anthropic",
+      "detected_at": "2025-08-01T18:38:27.433Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "The download link for Claude's app has been updated with a new URL"
+    },
+    {
       "filename": "change-440.json",
       "change_id": 440,
       "api_path": "/api-data/changes/change-440.json",
@@ -453,16 +463,6 @@
       "interest_level": 4,
       "change_type": "modified",
       "summary": "Change detected"
-    },
-    {
-      "filename": "change-484.json",
-      "change_id": 484,
-      "api_path": "/api-data/changes/change-484.json",
-      "company": "Anthropic",
-      "detected_at": "2025-08-01T18:38:27.433Z",
-      "interest_level": 3,
-      "change_type": "modified",
-      "summary": "The download link for Claude's app has changed from 'https://claude.ai/redirect/website.v1.d125650c-..."
     },
     {
       "filename": "change-454.json",
@@ -495,6 +495,16 @@
       "summary": "Change detected"
     },
     {
+      "filename": "change-495.json",
+      "change_id": 495,
+      "api_path": "/api-data/changes/change-495.json",
+      "company": "GitHub Copilot",
+      "detected_at": "2025-08-01T20:39:58.043Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "No significant changes were detected in the content structure or links between the two versions."
+    },
+    {
       "filename": "change-481.json",
       "change_id": 481,
       "api_path": "/api-data/changes/change-481.json",
@@ -503,16 +513,6 @@
       "interest_level": 2,
       "change_type": "modified",
       "summary": "No significant changes were detected in the content between the two versions."
-    },
-    {
-      "filename": "change-483.json",
-      "change_id": 483,
-      "api_path": "/api-data/changes/change-483.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-08-01T18:38:51.413Z",
-      "interest_level": 2,
-      "change_type": "modified",
-      "summary": "No significant changes were detected in the content structure or links between the two versions."
     },
     {
       "filename": "change-469.json",
@@ -615,14 +615,14 @@
       "summary": "Change detected"
     },
     {
-      "filename": "change-495.json",
-      "change_id": 495,
-      "api_path": "/api-data/changes/change-495.json",
+      "filename": "change-483.json",
+      "change_id": 483,
+      "api_path": "/api-data/changes/change-483.json",
       "company": "GitHub Copilot",
-      "detected_at": "2025-08-01T20:39:58.043Z",
+      "detected_at": "2025-08-01T18:38:51.413Z",
       "interest_level": 1,
       "change_type": "modified",
-      "summary": "No significant changes were detected in the provided content."
+      "summary": "No significant changes were detected in the content structure or links between the two versions."
     },
     {
       "filename": "change-467.json",
