@@ -1,0 +1,89 @@
+{
+  "id": 556,
+  "company": "Resemble AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:42:27.596Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content added to the homepage of Resemble AI, including AI Voice Generator and Deepfake Detection for Enterprise, product features, case studies, research, and resources.",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content added to the homepage of Resemble AI, including AI Voice Generator and Deepfake Detection for Enterprise, product features, case studies, research, and resources.",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Added AI Voice Generator and Deepfake Detection for Enterprise",
+      "Added product features such as Voice Cloning, Text to Speech, Speech to Speech, Voice Design, Multilingual, Audio Editing, and Chatterbox",
+      "Added case studies such as Personalization with Zomato and TrueFan, Crayola Adventures with Red Games, Fabler Transformed Bedtime for 1000’s of Children, and AI Powered Learning for Kids",
+      "Added research such as DETECT-2, PerTH Watermarker, Resemblyzer, and Deepfake Database",
+      "Added resources such as On Prem, API Docs, Status, Ethics, and Blog"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest a significant expansion of the company's product and service offerings, which could lead to increased revenue and market share.",
+    "market_signals": [
+      "Increased focus on AI-powered voice technology",
+      "Growing demand for deepfake detection and security awareness training"
+    ],
+    "competitive_implications": "The changes could pose a competitive threat to other companies in the AI-powered voice technology and deepfake detection markets.",
+    "strategic_direction": "The company appears to be focusing on developing and marketing AI-powered voice technology and deepfake detection solutions."
+  },
+  "entities": {
+    "products": [
+      "AI Voice Generator",
+      "Deepfake Detection",
+      "Voice Cloning",
+      "Text to Speech",
+      "Speech to Speech",
+      "Voice Design",
+      "Multilingual",
+      "Audio Editing",
+      "Chatterbox"
+    ],
+    "features": [
+      "Realtime Multimodal Deepfake Detector",
+      "AI Watermarker",
+      "Identity",
+      "Audio Intelligence",
+      "Security Awareness Training"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Generative AI",
+      "Deep Learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Resemble AI is expanding its product and service offerings to include AI-powered voice technology and deepfake detection.",
+      "The company is focusing on developing and marketing solutions for enterprise customers."
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the AI-powered voice technology and deepfake detection markets.",
+      "Expansion into new markets and industries."
+    ],
+    "threats": [
+      "Increased competition from other companies in the AI-powered voice technology and deepfake detection markets.",
+      "Regulatory challenges and potential backlash against deepfake technology."
+    ],
+    "recommended_actions": [
+      "Monitor the company's progress and adjust competitive strategy accordingly.",
+      "Consider partnership opportunities with Resemble AI."
+    ]
+  },
+  "key_insights": [
+    "Resemble AI is expanding its product and service offerings to include AI-powered voice technology and deepfake detection.",
+    "The company is focusing on developing and marketing solutions for enterprise customers."
+  ],
+  "business_impact": "The changes suggest a significant expansion of the company's product and service offerings, which could lead to increased revenue and market share.",
+  "competitive_implications": "The changes could pose a competitive threat to other companies in the AI-powered voice technology and deepfake detection markets.",
+  "content_hash_before": null,
+  "content_hash_after": "dbfaefef40e47ec6ed692bbf13936d3ecedcb52ef6e978c3c37f56bfa98553d6",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,82 @@
+{
+  "id": 534,
+  "company": "Tabnine",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:45:45.811Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog content and features were added to the Tabnine website, including a new air-gapped AI software development platform, support for Perforce Helix Core, and various blog posts on AI, software development, and more.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog content and features were added to the Tabnine website, including a new air-gapped AI software development platform, support for Perforce Helix Core, and various blog posts on AI, software development, and more.",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of a new air-gapped AI software development platform",
+      "Support for Perforce Helix Core",
+      "New blog posts on AI, software development, and more",
+      "Updated resources and documentation"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes could strengthen Tabnine's position in the market, particularly in the areas of air-gapped AI software development and support for Perforce Helix Core.",
+    "market_signals": [
+      "Increased focus on security and compliance in software development",
+      "Growing demand for AI-powered software development tools"
+    ],
+    "competitive_implications": "The changes could pose a competitive threat to other companies in the software development and AI markets, particularly those that do not offer similar features and support.",
+    "strategic_direction": "The changes suggest that Tabnine is focusing on expanding its platform and features to meet the evolving needs of software developers and the growing demand for AI-powered tools."
+  },
+  "entities": {
+    "products": [
+      "Tabnine air-gapped AI software development platform"
+    ],
+    "features": [
+      "Support for Perforce Helix Core"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Software development"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Software development",
+      "AI"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Tabnine is expanding its platform and features to meet the evolving needs of software developers",
+      "The company is focusing on security and compliance in software development",
+      "There is growing demand for AI-powered software development tools"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Tabnine to leverage its air-gapped AI software development platform",
+      "Expansion into new markets and industries that require secure and compliant software development"
+    ],
+    "threats": [
+      "Competitive threat from other companies that offer similar features and support",
+      "Regulatory challenges and compliance risks associated with software development and AI"
+    ],
+    "recommended_actions": [
+      "Monitor Tabnine's platform and feature updates",
+      "Assess the potential for partnership opportunities",
+      "Stay informed about regulatory challenges and compliance risks in software development and AI"
+    ]
+  },
+  "key_insights": [
+    "Tabnine is expanding its platform and features to meet the evolving needs of software developers",
+    "The company is focusing on security and compliance in software development",
+    "There is growing demand for AI-powered software development tools"
+  ],
+  "business_impact": "The changes could strengthen Tabnine's position in the market, particularly in the areas of air-gapped AI software development and support for Perforce Helix Core.",
+  "competitive_implications": "The changes could pose a competitive threat to other companies in the software development and AI markets, particularly those that do not offer similar features and support.",
+  "content_hash_before": null,
+  "content_hash_after": "3ffc60ab76f1343641cae55b7d03311fa2f48ab7210a56c52119b3c4b12426d5",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

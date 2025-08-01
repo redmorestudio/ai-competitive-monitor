@@ -1,0 +1,101 @@
+{
+  "id": 554,
+  "company": "Runway",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:42:38.845Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content added to the Runway blog, including news articles, product updates, and company information",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content added to the Runway blog, including news articles, product updates, and company information",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Runway Gen-4",
+      "Partnerships with IMAX, AMC Networks, and Fabula",
+      "Launch of the Runway API for Gen-4 images",
+      "Introduction of the Runway Acceleration Program",
+      "Partnerships with Lionsgate, Tribeca Festival, and Media.Monks",
+      "Updates to the product and initiatives sections, including new tools and use cases"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest that Runway is expanding its product offerings and partnerships, which could lead to increased revenue and market share",
+    "market_signals": [
+      "Increased competition in the AI and machine learning market",
+      "Growing demand for creative and innovative solutions in the film and entertainment industry"
+    ],
+    "competitive_implications": "Runway's strategic moves may pose a threat to competitors in the AI and machine learning market, particularly those focused on creative and entertainment applications",
+    "strategic_direction": "Runway appears to be focused on expanding its product offerings and partnerships, with a emphasis on creative and innovative solutions for the film and entertainment industry"
+  },
+  "entities": {
+    "products": [
+      "Runway Gen-4",
+      "Runway API for Gen-4 images",
+      "Aleph",
+      "Act-Two",
+      "General World Models"
+    ],
+    "features": [
+      "Runway Acceleration Program",
+      "Creative Partners Program",
+      "The Hundred Film Fund"
+    ],
+    "partnerships": [
+      "IMAX",
+      "AMC Networks",
+      "Fabula",
+      "Lionsgate",
+      "Tribeca Festival",
+      "Media.Monks"
+    ],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [
+      "Cristóbal Valenzuela",
+      "Harmony Korine",
+      "Gaspar Noé"
+    ],
+    "pricing": [],
+    "markets": [
+      "Film and entertainment",
+      "Technology and software"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Runway is investing heavily in AI and machine learning research and development",
+      "The company is expanding its partnerships and initiatives in the film and entertainment industry",
+      "Runway's strategic moves may have significant implications for competitors in the AI and machine learning market"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Runway for companies in the film and entertainment industry",
+      "Potential for investment in AI and machine learning research and development"
+    ],
+    "threats": [
+      "Increased competition in the AI and machine learning market",
+      "Potential disruption to traditional business models in the film and entertainment industry"
+    ],
+    "recommended_actions": [
+      "Monitor Runway's strategic moves and partnerships",
+      "Consider partnership opportunities with Runway",
+      "Invest in AI and machine learning research and development to stay competitive"
+    ]
+  },
+  "key_insights": [
+    "Runway is investing heavily in AI and machine learning research and development",
+    "The company is expanding its partnerships and initiatives in the film and entertainment industry",
+    "Runway's strategic moves may have significant implications for competitors in the AI and machine learning market"
+  ],
+  "business_impact": "The changes suggest that Runway is expanding its product offerings and partnerships, which could lead to increased revenue and market share",
+  "competitive_implications": "Runway's strategic moves may pose a threat to competitors in the AI and machine learning market, particularly those focused on creative and entertainment applications",
+  "content_hash_before": null,
+  "content_hash_after": "3d98ee46388b9f1a70d77fda3b3d901fb21f03a4bad78f0c726c5afe10ca4228",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

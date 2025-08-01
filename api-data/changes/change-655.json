@@ -1,0 +1,89 @@
+{
+  "id": 655,
+  "company": "AI21 Labs",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:24:56.140Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New homepage content for AI21 Labs, including product descriptions, deployment options, and company information",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New homepage content for AI21 Labs, including product descriptions, deployment options, and company information",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of AI21 Maestro, Jamba Models, and Custom AI Systems",
+      "Description of flexible deployment options, including SaaS, partners, and private deployment",
+      "Addition of customer testimonials and logos",
+      "Introduction of a trust center and VDP (Vulnerability Disclosure Policy)"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest a significant expansion of AI21 Labs' product offerings and deployment options, which could lead to increased revenue and market share",
+    "market_signals": [
+      "Increased focus on enterprise customers",
+      "Expansion of product offerings and deployment options"
+    ],
+    "competitive_implications": "The changes may pose a competitive threat to other companies in the AI and machine learning space, particularly those focused on enterprise customers",
+    "strategic_direction": "The changes suggest a strategic direction focused on expanding product offerings, deployment options, and security measures to meet the needs of enterprise customers"
+  },
+  "entities": {
+    "products": [
+      "AI21 Maestro",
+      "Jamba Models",
+      "Custom AI Systems"
+    ],
+    "features": [
+      "Flexible deployment options",
+      "Trust center",
+      "VDP (Vulnerability Disclosure Policy)"
+    ],
+    "partnerships": [
+      "Google Cloud",
+      "AWS",
+      "Microsoft",
+      "Snowflake",
+      "Nvidia"
+    ],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Enterprise"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "AI21 Labs is expanding its product offerings and deployment options to meet the needs of enterprise customers",
+      "The company is focusing on security and trust, with the introduction of a trust center and VDP"
+    ],
+    "opportunities": [
+      "Partnership opportunities with AI21 Labs",
+      "Expansion into new markets, such as enterprise customers"
+    ],
+    "threats": [
+      "Increased competition in the AI and machine learning space",
+      "Potential security risks associated with expanded deployment options"
+    ],
+    "recommended_actions": [
+      "Monitor AI21 Labs' product offerings and deployment options",
+      "Consider partnership opportunities with AI21 Labs",
+      "Assess the potential security risks associated with expanded deployment options"
+    ]
+  },
+  "key_insights": [
+    "AI21 Labs is expanding its product offerings and deployment options to meet the needs of enterprise customers",
+    "The company is focusing on security and trust, with the introduction of a trust center and VDP"
+  ],
+  "business_impact": "The changes suggest a significant expansion of AI21 Labs' product offerings and deployment options, which could lead to increased revenue and market share",
+  "competitive_implications": "The changes may pose a competitive threat to other companies in the AI and machine learning space, particularly those focused on enterprise customers",
+  "content_hash_before": null,
+  "content_hash_after": "a2786e6a7a54f471b499c4bcbe0da002384fd87f680732f7c93d52e0028066be",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

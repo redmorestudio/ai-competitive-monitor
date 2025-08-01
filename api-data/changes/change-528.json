@@ -1,0 +1,90 @@
+{
+  "id": 528,
+  "company": "WellSaid Labs",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:46:41.865Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New pricing page with detailed plans and features",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New pricing page with detailed plans and features",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of a free trial plan",
+      "Creative plan priced at $50/mo/user",
+      "Business plan priced at $160/mo/user",
+      "Enterprise plan with custom pricing",
+      "Detailed features for each plan"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The new pricing page and plans may attract more customers and increase revenue for the company",
+    "market_signals": [
+      "Increased competition in the AI voiceover market",
+      "Growing demand for AI-powered content creation tools"
+    ],
+    "competitive_implications": "The company's new pricing strategy may put pressure on competitors to adjust their pricing and plans",
+    "strategic_direction": "The company is focusing on expanding its customer base and increasing revenue through its new pricing strategy"
+  },
+  "entities": {
+    "products": [
+      "Studio",
+      "API",
+      "Voices",
+      "Team",
+      "Security",
+      "Integrations"
+    ],
+    "features": [
+      "MP3 file format",
+      "Standard security",
+      "Email support",
+      "Adobe Express & Premiere Pro Integrations",
+      "Team Workspace",
+      "Caption files",
+      "Live support chat"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Free trial",
+      "Creative plan ($50/mo/user)",
+      "Business plan ($160/mo/user)",
+      "Enterprise plan (custom pricing)"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company has introduced a new pricing page with detailed plans and features",
+      "The pricing strategy is focused on attracting a wide range of customers, from individuals to enterprises"
+    ],
+    "opportunities": [
+      "Increased revenue through the new pricing strategy",
+      "Expanded customer base through the introduction of a free trial plan"
+    ],
+    "threats": [
+      "Increased competition in the AI voiceover market",
+      "Potential backlash from existing customers who may not be happy with the new pricing plans"
+    ],
+    "recommended_actions": [
+      "Monitor the company's pricing strategy and adjust our own pricing strategy accordingly",
+      "Keep an eye on the company's marketing and sales efforts to see how they are promoting their new pricing plans"
+    ]
+  },
+  "key_insights": [
+    "The company has introduced a new pricing page with detailed plans and features",
+    "The pricing strategy is focused on attracting a wide range of customers, from individuals to enterprises"
+  ],
+  "business_impact": "The new pricing page and plans may attract more customers and increase revenue for the company",
+  "competitive_implications": "The company's new pricing strategy may put pressure on competitors to adjust their pricing and plans",
+  "content_hash_before": null,
+  "content_hash_after": "551a6504c7345da7f644aea10980b4da26ed7967fb669c94f8f5ba0f0ffd26b6",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

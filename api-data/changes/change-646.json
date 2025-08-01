@@ -1,0 +1,78 @@
+{
+  "id": 646,
+  "company": "Andi",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:26:17.493Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content added to the homepage",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content added to the homepage",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Added introduction to Andi, an AI search assistant",
+      "Added features and benefits of using Andi",
+      "Added examples of how to use Andi",
+      "Added visual elements such as images and icons",
+      "Added links to social media and other websites"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of Andi AI search assistant can potentially disrupt the search engine market and provide a competitive advantage to the company.",
+    "market_signals": [
+      "increased focus on AI-powered search",
+      "emphasis on privacy and accuracy"
+    ],
+    "competitive_implications": "The company is positioning itself as a leader in AI-powered search, which can impact competitors in the search engine market.",
+    "strategic_direction": "The company is focusing on developing and promoting AI-powered products and services."
+  },
+  "entities": {
+    "products": [
+      "Andi AI search assistant"
+    ],
+    "features": [
+      "accurate and private search results",
+      "AI-powered content creation",
+      "visual search results"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Andi AI search assistant is a major new product offering",
+      "The company is focusing on AI-powered search and content creation"
+    ],
+    "opportunities": [
+      "potential for increased market share",
+      "opportunities for partnerships and collaborations"
+    ],
+    "threats": [
+      "competition from established search engine companies",
+      "potential regulatory challenges"
+    ],
+    "recommended_actions": [
+      "continue to monitor the development and marketing of Andi AI search assistant",
+      "analyze the competitive landscape and identify potential partnerships and collaborations"
+    ]
+  },
+  "key_insights": [
+    "Andi AI search assistant is a major new product offering",
+    "The company is focusing on AI-powered search and content creation"
+  ],
+  "business_impact": "The introduction of Andi AI search assistant can potentially disrupt the search engine market and provide a competitive advantage to the company.",
+  "competitive_implications": "The company is positioning itself as a leader in AI-powered search, which can impact competitors in the search engine market.",
+  "content_hash_before": null,
+  "content_hash_after": "6a021078ceb0e1fd74111b14ae58ed7b87087590ff133920fa160a3cb4195901",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,79 @@
+{
+  "id": 619,
+  "company": "Descript",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:30:01.025Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content added to the Descript homepage, including features, AI tools, and company information",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content added to the Descript homepage, including features, AI tools, and company information",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Added features section with video editing, podcasting, screen recording, and more",
+      "Introduced AI tools such as green screen, eye contact, and automated design",
+      "Included company information, such as teams, enterprise, and customer stories",
+      "Added resources section with blog, community, and additional resources"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes can increase Descript's competitiveness in the video editing and podcasting markets, and attract new customers with its AI-powered features",
+    "market_signals": [
+      "Descript is investing in AI technology to improve its platform",
+      "The company is expanding its feature set to cater to a wider range of customers"
+    ],
+    "competitive_implications": "Descript's competitors may need to respond with similar AI-powered features to remain competitive",
+    "strategic_direction": "Descript is focusing on innovation and customer experience to drive growth"
+  },
+  "entities": {
+    "products": [
+      "Descript"
+    ],
+    "features": [
+      "Video editing",
+      "Podcasting",
+      "Screen recording",
+      "AI avatars",
+      "Transcription",
+      "AI speech"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Descript is leveraging AI to enhance its platform and attract new customers",
+      "The company is expanding its feature set to cater to a wider range of customers"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Descript to leverage its AI technology",
+      "Competitive analysis to identify areas for differentiation"
+    ],
+    "threats": [
+      "Descript's competitors may respond with similar AI-powered features, increasing competition"
+    ],
+    "recommended_actions": [
+      "Monitor Descript's AI technology developments",
+      "Analyze the competitive landscape to identify opportunities for differentiation"
+    ]
+  },
+  "key_insights": [
+    "Descript is leveraging AI to enhance its platform and attract new customers",
+    "The company is expanding its feature set to cater to a wider range of customers"
+  ],
+  "business_impact": "The changes can increase Descript's competitiveness in the video editing and podcasting markets, and attract new customers with its AI-powered features",
+  "competitive_implications": "Descript's competitors may need to respond with similar AI-powered features to remain competitive",
+  "content_hash_before": null,
+  "content_hash_after": "7d31ad143af3b7863184b5cb381eefc080f73ecdb169e64694725f0b29a7f2bd",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

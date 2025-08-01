@@ -1,0 +1,85 @@
+{
+  "id": 658,
+  "company": "AI21 Labs",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:24:30.586Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of a new pricing page with detailed pricing information for AI21 products, including Foundation Models, Pay As You Go, and Custom Plan options",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Introduction of a new pricing page with detailed pricing information for AI21 products, including Foundation Models, Pay As You Go, and Custom Plan options",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Added pricing details for Foundation Models, including Jamba Mini and Jamba Large",
+      "Introduced Pay As You Go and Custom Plan options",
+      "Provided information on usage-based pricing, volume discounts, and premium API rate limits"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of a new pricing page with detailed information on AI21 products is likely to increase customer trust and attract more businesses to the platform",
+    "market_signals": [
+      "Increased transparency in pricing",
+      "Competitive pricing strategy"
+    ],
+    "competitive_implications": "The introduction of a new pricing page with detailed information on AI21 products may put pressure on competitors to also increase transparency in their pricing strategies",
+    "strategic_direction": "The company is likely to continue to focus on increasing transparency and attracting more customers to the platform"
+  },
+  "entities": {
+    "products": [
+      "AI21 Maestro",
+      "Jamba Models",
+      "Custom AI Systems",
+      "Foundation Models"
+    ],
+    "features": [
+      "Usage-based pricing",
+      "Volume discounts",
+      "Premium API rate limits"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [
+      "$0.2 / 1M input tokens",
+      "$0.4 / 1M output tokens",
+      "$2 / 1M input tokens",
+      "$8 / 1M output tokens"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The introduction of a new pricing page with detailed information on AI21 products indicates a significant strategic move by the company",
+      "The company is likely to continue to focus on increasing transparency and attracting more customers to the platform"
+    ],
+    "opportunities": [
+      "Increased customer trust and attraction of more businesses to the platform",
+      "Competitive advantage through transparent pricing strategy"
+    ],
+    "threats": [
+      "Potential pressure on competitors to also increase transparency in their pricing strategies",
+      "Risk of not being able to attract enough customers to the platform"
+    ],
+    "recommended_actions": [
+      "Continue to monitor the company's pricing strategy and its impact on the market",
+      "Consider increasing transparency in pricing strategy to remain competitive"
+    ]
+  },
+  "key_insights": [
+    "The introduction of a new pricing page with detailed information on AI21 products indicates a significant strategic move by the company",
+    "The company is likely to continue to focus on increasing transparency and attracting more customers to the platform"
+  ],
+  "business_impact": "The introduction of a new pricing page with detailed information on AI21 products is likely to increase customer trust and attract more businesses to the platform",
+  "competitive_implications": "The introduction of a new pricing page with detailed information on AI21 products may put pressure on competitors to also increase transparency in their pricing strategies",
+  "content_hash_before": null,
+  "content_hash_after": "a1626023655d1119f2ecc018aa4e65179053c273617090ed72778aa0ad2cb208",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

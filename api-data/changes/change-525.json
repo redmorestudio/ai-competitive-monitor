@@ -1,0 +1,83 @@
+{
+  "id": 525,
+  "company": "You.com",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:47:13.402Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content added to the homepage of You.com, including introduction to AI for workplace productivity, trusted AI agents, and the #1 web search API for LLMs",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content added to the homepage of You.com, including introduction to AI for workplace productivity, trusted AI agents, and the #1 web search API for LLMs",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of ARI, the world's most intelligent deep research agent",
+      "Addition of SOC 2 Compliance Badge",
+      "New calls-to-action for booking demos, signing in, and downloading apps",
+      "List of trusted companies and logos",
+      "Links to various products, solutions, and resources"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest a significant expansion of You.com's product and service offerings, potentially increasing its competitiveness in the AI and workplace productivity markets",
+    "market_signals": [
+      "Growing demand for AI-powered solutions",
+      "Increasing importance of data security and compliance"
+    ],
+    "competitive_implications": "You.com's updated offerings may pose a threat to competitors in the AI and workplace productivity spaces, particularly those without similar deep research capabilities",
+    "strategic_direction": "The company appears to be focusing on establishing itself as a leader in AI-powered workplace productivity solutions, with a strong emphasis on security and compliance"
+  },
+  "entities": {
+    "products": [
+      "ARI",
+      "Trusted AI agents",
+      "Web search API for LLMs"
+    ],
+    "features": [
+      "Deep research capabilities",
+      "SOC 2 Compliance"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "LLMs"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Enterprise",
+      "Workplace productivity"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "You.com is investing heavily in AI research and development",
+      "The company is targeting large enterprises and emphasizing the importance of security and compliance"
+    ],
+    "opportunities": [
+      "Partnership opportunities with You.com for companies looking to integrate AI-powered solutions",
+      "Potential for You.com to expand into new markets, such as education or healthcare"
+    ],
+    "threats": [
+      "Increased competition in the AI and workplace productivity markets",
+      "Potential regulatory challenges related to data security and compliance"
+    ],
+    "recommended_actions": [
+      "Monitor You.com's progress and updates to its product and service offerings",
+      "Consider potential partnership opportunities or investments in AI-powered solutions"
+    ]
+  },
+  "key_insights": [
+    "You.com is investing heavily in AI research and development",
+    "The company is targeting large enterprises and emphasizing the importance of security and compliance"
+  ],
+  "business_impact": "The changes suggest a significant expansion of You.com's product and service offerings, potentially increasing its competitiveness in the AI and workplace productivity markets",
+  "competitive_implications": "You.com's updated offerings may pose a threat to competitors in the AI and workplace productivity spaces, particularly those without similar deep research capabilities",
+  "content_hash_before": null,
+  "content_hash_after": "ad4ad220c8d56dbe5b04117caa97a6db7c678249c5c96c04a63cb721b606db32",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

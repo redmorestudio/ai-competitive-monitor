@@ -1,0 +1,81 @@
+{
+  "id": 545,
+  "company": "Sourcegraph",
+  "page_url": "product",
+  "detected_at": "2025-08-01T22:44:05.824Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of Cody, an AI coding assistant, with updates to pricing plans and exclusive availability for Enterprise plans",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of Cody, an AI coding assistant, with updates to pricing plans and exclusive availability for Enterprise plans",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of Cody, an AI coding assistant",
+      "Changes to Cody Free, Cody Pro, and Enterprise Starter plans",
+      "Cody available exclusively for Enterprise plans"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of Cody and updates to pricing plans are likely to enhance Sourcegraph's competitiveness in the market and attract more enterprise customers",
+    "market_signals": [
+      "Growing demand for AI-powered coding assistants",
+      "Increasing importance of enterprise-grade security and scalability"
+    ],
+    "competitive_implications": "Sourcegraph's move to target enterprise customers with Cody may pose a competitive threat to other companies offering similar solutions",
+    "strategic_direction": "Sourcegraph is likely to continue investing in AI-powered solutions and enhancing its enterprise offerings to maintain its competitive edge"
+  },
+  "entities": {
+    "products": [
+      "Cody"
+    ],
+    "features": [
+      "AI coding assistant"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "LLMs"
+    ],
+    "people": [],
+    "pricing": [
+      "Cody Free",
+      "Cody Pro",
+      "Enterprise Starter plans"
+    ],
+    "markets": [
+      "Enterprise"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Cody is an AI coding assistant that can accelerate development in complex codebases",
+      "Sourcegraph is targeting enterprise customers with Cody and updates to pricing plans"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Sourcegraph to offer Cody to a wider customer base",
+      "Development of similar AI-powered coding assistants to compete with Sourcegraph"
+    ],
+    "threats": [
+      "Increased competition from Sourcegraph in the enterprise market",
+      "Potential disruption to existing coding practices and workflows"
+    ],
+    "recommended_actions": [
+      "Monitor Sourcegraph's progress with Cody and its impact on the market",
+      "Consider partnering with Sourcegraph or developing similar AI-powered solutions"
+    ]
+  },
+  "key_insights": [
+    "Cody is an AI coding assistant that can accelerate development in complex codebases",
+    "Sourcegraph is targeting enterprise customers with Cody and updates to pricing plans"
+  ],
+  "business_impact": "The introduction of Cody and updates to pricing plans are likely to enhance Sourcegraph's competitiveness in the market and attract more enterprise customers",
+  "competitive_implications": "Sourcegraph's move to target enterprise customers with Cody may pose a competitive threat to other companies offering similar solutions",
+  "content_hash_before": null,
+  "content_hash_after": "dfec485c95dc3a2c721c39097f324490e1cf9953fc9ea0550dd38104da57634f",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

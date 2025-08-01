@@ -1,0 +1,87 @@
+{
+  "id": 543,
+  "company": "Sourcegraph",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:44:20.347Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New website content and structure",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New website content and structure",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of AI-powered coding assistant Cody",
+      "Emphasis on industrializing software development with AI agents",
+      "New product features and updates, such as Amp and Code Search",
+      "Redesigned website layout and navigation",
+      "Added resources, including documentation, blog, and community forum"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Sourcegraph is positioning itself as a leader in AI-powered software development, with a focus on industrializing the process",
+    "market_signals": [
+      "Growing demand for AI-powered software development tools",
+      "Increasing competition in the software development market"
+    ],
+    "competitive_implications": "Sourcegraph's new products and features may disrupt the traditional software development market, posing a threat to established players",
+    "strategic_direction": "Sourcegraph is likely to continue investing in AI-powered software development, with a focus on expanding its product offerings and customer base"
+  },
+  "entities": {
+    "products": [
+      "Cody",
+      "Amp",
+      "Code Search"
+    ],
+    "features": [
+      "AI-powered coding assistant",
+      "Deep Search",
+      "Batch changes"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Software development",
+      "AI-powered tools"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Sourcegraph is making significant investments in AI-powered software development",
+      "The company is expanding its product offerings and features",
+      "The software development market is becoming increasingly competitive"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Sourcegraph to leverage its AI-powered software development tools",
+      "Investment opportunities in AI-powered software development startups"
+    ],
+    "threats": [
+      "Disruption of traditional software development market",
+      "Increasing competition in the software development market"
+    ],
+    "recommended_actions": [
+      "Monitor Sourcegraph's product developments and market expansion",
+      "Assess potential partnership opportunities with Sourcegraph",
+      "Invest in AI-powered software development research and development"
+    ]
+  },
+  "key_insights": [
+    "Sourcegraph is making significant investments in AI-powered software development",
+    "The company is expanding its product offerings and features",
+    "The software development market is becoming increasingly competitive"
+  ],
+  "business_impact": "Sourcegraph is positioning itself as a leader in AI-powered software development, with a focus on industrializing the process",
+  "competitive_implications": "Sourcegraph's new products and features may disrupt the traditional software development market, posing a threat to established players",
+  "content_hash_before": null,
+  "content_hash_after": "fef655bbe7f5594fdb6ccb6ecaf26ac01965520eb0a6399077887fded82c1348",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

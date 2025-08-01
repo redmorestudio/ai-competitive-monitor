@@ -1,0 +1,89 @@
+{
+  "id": 629,
+  "company": "Cursor",
+  "page_url": "features",
+  "detected_at": "2025-08-01T22:28:50.514Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content introduction",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content introduction",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of the Cursor AI code editor features page",
+      "Description of various features such as Tab, Multi-Line Edits, Smart Rewrites, Agent, Finds Context, Runs Commands, Loops on Errors, Fast Edits, Proprietary Models, Reference your Code, Use Images, Ask the Web, Use Documentation, Inline Edit, Terminal, Quick Questions"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of the Cursor AI code editor features page indicates a significant expansion of the company's product offerings and a potential shift in its business strategy",
+    "market_signals": [
+      "Increased competition in the AI-powered code editor market",
+      "Growing demand for AI-driven coding tools"
+    ],
+    "competitive_implications": "The company's move into the AI-powered code editor market may pose a competitive threat to existing players in the market",
+    "strategic_direction": "The company appears to be focusing on developing and marketing AI-powered coding tools, indicating a strategic direction towards leveraging AI technology to improve coding efficiency and productivity"
+  },
+  "entities": {
+    "products": [
+      "Cursor AI code editor"
+    ],
+    "features": [
+      "Tab",
+      "Multi-Line Edits",
+      "Smart Rewrites",
+      "Agent",
+      "Finds Context",
+      "Runs Commands",
+      "Loops on Errors",
+      "Fast Edits",
+      "Proprietary Models",
+      "Reference your Code",
+      "Use Images",
+      "Ask the Web",
+      "Use Documentation",
+      "Inline Edit",
+      "Terminal",
+      "Quick Questions"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Proprietary Models"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company has introduced a new AI-powered code editor with a range of features",
+      "The features page provides detailed information about the product's capabilities and functionality"
+    ],
+    "opportunities": [
+      "Potential for increased market share in the AI-powered code editor market",
+      "Opportunities for partnerships and collaborations with other companies in the coding tools industry"
+    ],
+    "threats": [
+      "Increased competition in the AI-powered code editor market",
+      "Potential challenges in differentiating the company's product from existing offerings in the market"
+    ],
+    "recommended_actions": [
+      "Monitor the company's progress and market response to the new product",
+      "Analyze the competitive landscape and identify potential opportunities for partnerships and collaborations"
+    ]
+  },
+  "key_insights": [
+    "The company has introduced a new AI-powered code editor with a range of features",
+    "The features page provides detailed information about the product's capabilities and functionality"
+  ],
+  "business_impact": "The introduction of the Cursor AI code editor features page indicates a significant expansion of the company's product offerings and a potential shift in its business strategy",
+  "competitive_implications": "The company's move into the AI-powered code editor market may pose a competitive threat to existing players in the market",
+  "content_hash_before": null,
+  "content_hash_after": "7439893c7ce7b002f41c4ba18f5e66b81f6b3178f8064d7c5150a37b75cf2952",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

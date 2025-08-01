@@ -1,0 +1,74 @@
+{
+  "id": 566,
+  "company": "Redmore Studio",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:41:07.613Z",
+  "change_type": "new",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "The blog content changed from no content to a 404 error page with a cookie policy and various links to other pages on the website",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "The blog content changed from no content to a 404 error page with a cookie policy and various links to other pages on the website",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Added 404 error page",
+      "Added cookie policy",
+      "Added links to other pages on the website",
+      "Added search functionality"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change indicates that the website is now operational and has a basic structure, which may attract more visitors and potentially lead to increased engagement",
+    "market_signals": [
+      "The website is now operational",
+      "The website has a basic structure"
+    ],
+    "competitive_implications": "The change does not reveal any significant competitive advantages or disadvantages",
+    "strategic_direction": "The website appears to be focused on providing information and resources related to AI and other topics"
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "Cookie policy",
+      "Search functionality"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [
+      "Seth Redmore"
+    ],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The website is now operational",
+      "The website has a basic structure"
+    ],
+    "opportunities": [
+      "Increased engagement and visitor attraction",
+      "Potential for monetization through advertising or sponsored content"
+    ],
+    "threats": [
+      "Competition from other websites and resources",
+      "Potential for decreased engagement if content is not regularly updated"
+    ],
+    "recommended_actions": [
+      "Monitor the website's content and updates",
+      "Analyze the website's traffic and engagement metrics"
+    ]
+  },
+  "key_insights": [
+    "The website is now operational",
+    "The website has a basic structure"
+  ],
+  "business_impact": "The change indicates that the website is now operational and has a basic structure, which may attract more visitors and potentially lead to increased engagement",
+  "competitive_implications": "The change does not reveal any significant competitive advantages or disadvantages",
+  "content_hash_before": null,
+  "content_hash_after": "9232156ce0d72228a68502a320934c4fc159f07456a5e60c85093991900ec52a",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

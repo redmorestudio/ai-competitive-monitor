@@ -1,13 +1,13 @@
 {
-  "generated_at": "2025-07-29T15:55:44.338Z",
+  "generated_at": "2025-08-01T23:03:05.196Z",
   "database": "PostgreSQL",
   "period": "last_7_days",
   "summary": {
-    "total_changes": 31,
-    "high_interest": 14,
+    "total_changes": 157,
+    "high_interest": 141,
     "medium_interest": 3,
-    "low_interest": 14,
-    "average_interest": "5.4"
+    "low_interest": 13,
+    "average_interest": "8.0"
   },
   "top_changes": []
 }

@@ -1,0 +1,85 @@
+{
+  "id": 572,
+  "company": "Pieces",
+  "page_url": "features",
+  "detected_at": "2025-08-01T22:40:25.881Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.95,
+  "summary": "Initial content creation for Pieces features page",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Initial content creation for Pieces features page",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Pieces features",
+      "Description of on-device AI with context awareness and long-term memory",
+      "Mention of Pieces Long-Term Memory, Copilot, Drive, and context switching features",
+      "Pricing information for Free and Pro plans",
+      "FAQ section with questions about cost, data security, language support, and comparison to GitHub Copilot"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Pieces is positioning itself as a major player in the AI-powered productivity tools market, targeting software development teams.",
+    "market_signals": [
+      "Growing demand for AI-powered productivity tools",
+      "Increasing competition in the market"
+    ],
+    "competitive_implications": "Pieces' introduction of its features and pricing may force competitors to reassess their strategies and pricing models.",
+    "strategic_direction": "Pieces is focusing on providing on-device AI solutions with a strong emphasis on privacy and security."
+  },
+  "entities": {
+    "products": [
+      "Pieces"
+    ],
+    "features": [
+      "Pieces Long-Term Memory",
+      "Pieces Copilot",
+      "Pieces Drive",
+      "Context switching"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "On-device AI",
+      "LLM"
+    ],
+    "people": [],
+    "pricing": [
+      "Free plan",
+      "Pro plan ($18.99/month + taxes)"
+    ],
+    "markets": [
+      "Software development teams"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Pieces is targeting software development teams with its AI-powered productivity tools.",
+      "The company is emphasizing the importance of privacy and security in its solutions."
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the software development industry.",
+      "Expansion into new markets, such as enterprise or consumer productivity tools."
+    ],
+    "threats": [
+      "Intense competition in the AI-powered productivity tools market.",
+      "Potential regulatory challenges related to data privacy and security."
+    ],
+    "recommended_actions": [
+      "Monitor Pieces' progress and market reception.",
+      "Assess potential partnership opportunities with Pieces or other companies in the industry."
+    ]
+  },
+  "key_insights": [
+    "Pieces is targeting software development teams with its AI-powered productivity tools.",
+    "The company is emphasizing the importance of privacy and security in its solutions."
+  ],
+  "business_impact": "Pieces is positioning itself as a major player in the AI-powered productivity tools market, targeting software development teams.",
+  "competitive_implications": "Pieces' introduction of its features and pricing may force competitors to reassess their strategies and pricing models.",
+  "content_hash_before": null,
+  "content_hash_after": "2d10c969a581806846ddd8c3bc85e0e882e4055ceb8e7f1ac4044f460c5f02d6",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

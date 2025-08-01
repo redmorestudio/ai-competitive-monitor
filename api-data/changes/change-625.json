@@ -1,0 +1,98 @@
+{
+  "id": 625,
+  "company": "DataRobot",
+  "page_url": "product",
+  "detected_at": "2025-08-01T22:29:18.958Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content added for DataRobot's AI platform, including product descriptions, features, and customer testimonials",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content added for DataRobot's AI platform, including product descriptions, features, and customer testimonials",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Agentic AI, Generative AI, Predictive AI, AI Governance, AI Observability, and AI Foundation",
+      "Addition of customer testimonials from FordDirect and Turo",
+      "New product features and infrastructure options, including on-premise, virtual private cloud, and software as a service",
+      "Updated navigation and resource sections, including product tours, webinars, and analyst reports"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are likely to improve DataRobot's competitive positioning and attract new customers, particularly in the enterprise AI market",
+    "market_signals": [
+      "Increased focus on AI and machine learning",
+      "Growing demand for enterprise AI solutions"
+    ],
+    "competitive_implications": "DataRobot's updated product offerings and marketing strategy may pose a threat to competitors in the AI and machine learning market",
+    "strategic_direction": "DataRobot is likely to continue investing in AI and machine learning research and development, and expanding its product offerings and partnerships"
+  },
+  "entities": {
+    "products": [
+      "Agentic AI",
+      "Generative AI",
+      "Predictive AI",
+      "AI Governance",
+      "AI Observability",
+      "AI Foundation"
+    ],
+    "features": [
+      "On-premise infrastructure",
+      "Virtual private cloud",
+      "Software as a service"
+    ],
+    "partnerships": [
+      "NVIDIA",
+      "SAP"
+    ],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [
+      "Tom Thomas, Vice President of Data Strategy, Analytics & Business Intelligence at FordDirect",
+      "Thibaut Joncquez, Director of Data Science at Turo"
+    ],
+    "pricing": [],
+    "markets": [
+      "Finance",
+      "Supply Chain & Operations",
+      "Energy",
+      "Financial Services",
+      "Government",
+      "Healthcare",
+      "Manufacturing"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "DataRobot's AI platform is designed to streamline workflows and deliver secure AI apps",
+      "The company is focusing on enterprise AI solutions and partnerships with major companies like NVIDIA and SAP"
+    ],
+    "opportunities": [
+      "Partnership opportunities with DataRobot for companies in the AI and machine learning market",
+      "Potential for DataRobot to expand its product offerings and enter new markets"
+    ],
+    "threats": [
+      "Increased competition in the AI and machine learning market",
+      "Potential for DataRobot's updated product offerings to cannibalize existing sales"
+    ],
+    "recommended_actions": [
+      "Monitor DataRobot's product offerings and marketing strategy",
+      "Consider partnership opportunities with DataRobot",
+      "Assess the competitive implications of DataRobot's updated product offerings"
+    ]
+  },
+  "key_insights": [
+    "DataRobot's AI platform is designed to streamline workflows and deliver secure AI apps",
+    "The company is focusing on enterprise AI solutions and partnerships with major companies like NVIDIA and SAP"
+  ],
+  "business_impact": "The changes are likely to improve DataRobot's competitive positioning and attract new customers, particularly in the enterprise AI market",
+  "competitive_implications": "DataRobot's updated product offerings and marketing strategy may pose a threat to competitors in the AI and machine learning market",
+  "content_hash_before": null,
+  "content_hash_after": "32f2936aaf1bcc9a8bfc1d18d309a923532bc3afc1a5e7c7f2c2ad0671983271",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

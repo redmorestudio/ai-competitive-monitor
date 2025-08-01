@@ -1,0 +1,88 @@
+{
+  "id": 527,
+  "company": "WellSaid Labs",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:46:50.466Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog content and features added to the WellSaid Labs website",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog content and features added to the WellSaid Labs website",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of new blog posts and articles",
+      "Addition of features like Caption Files and Word Timing",
+      "Introduction of new AI voice model 'Caruso' and 'AI Director' feature",
+      "Expansion of resources and guides for users"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes can help WellSaid Labs to establish itself as a leader in the AI voiceover market, attract more customers, and increase revenue",
+    "market_signals": [
+      "Growing demand for AI-powered voiceover solutions",
+      "Increasing competition in the AI voiceover market"
+    ],
+    "competitive_implications": "The changes can help WellSaid Labs to differentiate itself from competitors and establish a strong market presence",
+    "strategic_direction": "The company is focusing on expanding its product offerings, improving user experience, and establishing itself as a thought leader in the AI voiceover market"
+  },
+  "entities": {
+    "products": [
+      "WellSaid Studio",
+      "WellSaid API",
+      "Caption Files",
+      "Word Timing",
+      "Caruso AI voice model",
+      "AI Director"
+    ],
+    "features": [
+      "Collaboration tools",
+      "AI voice generation",
+      "Captioning and subtitling"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Marketing",
+      "Advertising",
+      "Corporate training",
+      "Video production"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "The company is investing in new features and technologies to enhance user experience",
+      "The company is expanding its resources and guides to provide more value to customers"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the marketing and advertising industries",
+      "Expansion into new markets and industries"
+    ],
+    "threats": [
+      "Increasing competition in the AI voiceover market",
+      "Regulatory challenges and potential legal risks associated with AI voiceover technology"
+    ],
+    "recommended_actions": [
+      "Monitor the company's progress and adjust competitive strategy accordingly",
+      "Explore potential partnership opportunities with WellSaid Labs"
+    ]
+  },
+  "key_insights": [
+    "The company is investing in new features and technologies to enhance user experience",
+    "The company is expanding its resources and guides to provide more value to customers"
+  ],
+  "business_impact": "The changes can help WellSaid Labs to establish itself as a leader in the AI voiceover market, attract more customers, and increase revenue",
+  "competitive_implications": "The changes can help WellSaid Labs to differentiate itself from competitors and establish a strong market presence",
+  "content_hash_before": null,
+  "content_hash_after": "eff1c6922712cd7a36dc5da60ce7c2fa8a750314a3800f8089365fce16f03f0a",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,79 @@
+{
+  "id": 650,
+  "company": "Amazon CodeWhisperer",
+  "page_url": "docs",
+  "detected_at": "2025-08-01T22:25:30.943Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.95,
+  "summary": "Initial creation of Amazon CodeWhisperer documentation",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Initial creation of Amazon CodeWhisperer documentation",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Amazon CodeWhisperer as a machine learning-powered service",
+      "Description of the service's functionality in improving developer productivity",
+      "Inclusion of user guide and various integration options",
+      "Details on cookie preferences and usage"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Amazon CodeWhisperer has the potential to significantly enhance developer productivity and experience, potentially attracting more developers to the AWS ecosystem.",
+    "market_signals": [
+      "Increased focus on AI-powered developer tools",
+      "Expansion of AWS services into the developer productivity space"
+    ],
+    "competitive_implications": "The introduction of Amazon CodeWhisperer may pose a competitive threat to other developer tool providers, particularly those without AI-powered capabilities.",
+    "strategic_direction": "Amazon's strategic direction indicates a strong emphasis on AI-powered services and developer tools, aiming to solidify its position as a leader in the cloud computing market."
+  },
+  "entities": {
+    "products": [
+      "Amazon CodeWhisperer"
+    ],
+    "features": [
+      "Machine learning-powered code recommendations",
+      "Integration with various IDEs and AWS services"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Developer tools",
+      "AI-powered services"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Amazon CodeWhisperer is a major strategic move by Amazon",
+      "The service has significant potential to enhance developer productivity"
+    ],
+    "opportunities": [
+      "Expansion into new markets",
+      "Increased adoption of AWS services"
+    ],
+    "threats": [
+      "Competitive response from other developer tool providers",
+      "Potential challenges in integrating with existing developer workflows"
+    ],
+    "recommended_actions": [
+      "Monitor the adoption and feedback of Amazon CodeWhisperer",
+      "Assess the potential for integration with existing developer tools and services"
+    ]
+  },
+  "key_insights": [
+    "Amazon CodeWhisperer is a major strategic move by Amazon",
+    "The service has significant potential to enhance developer productivity"
+  ],
+  "business_impact": "Amazon CodeWhisperer has the potential to significantly enhance developer productivity and experience, potentially attracting more developers to the AWS ecosystem.",
+  "competitive_implications": "The introduction of Amazon CodeWhisperer may pose a competitive threat to other developer tool providers, particularly those without AI-powered capabilities.",
+  "content_hash_before": null,
+  "content_hash_after": "3543360fe4fef3b96f2606fc0a6227c033239b1cd33ce436843558df2472533d",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

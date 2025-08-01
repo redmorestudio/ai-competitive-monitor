@@ -1,0 +1,90 @@
+{
+  "id": 602,
+  "company": "Intel",
+  "page_url": "news",
+  "detected_at": "2025-08-01T22:34:42.892Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New content added to Intel Newsroom Home, including recent articles, social news, and a section for artificial intelligence news",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New content added to Intel Newsroom Home, including recent articles, social news, and a section for artificial intelligence news",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Added recent articles section with links to news stories",
+      "Added social news section with tweets from Intel",
+      "Added section for artificial intelligence news with links to relevant articles"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest that Intel is increasing its focus on artificial intelligence and providing more news and information to the public, which could help to improve its reputation and attract new customers",
+    "market_signals": [
+      "Increased competition in the AI market",
+      "Growing demand for AI-powered products and services"
+    ],
+    "competitive_implications": "The changes could help Intel to stay competitive in the AI market and attract new customers, but also increase competition with other companies in the market",
+    "strategic_direction": "The changes suggest that Intel is moving towards a more customer-focused and information-driven approach, with a increased emphasis on artificial intelligence and innovation"
+  },
+  "entities": {
+    "products": [
+      "Intel-powered AI PCs",
+      "Xeon 6 CPUs"
+    ],
+    "features": [
+      "Speculative decoding advance for AI acceleration",
+      "Offline AI capability for Intel Core Ultra-powered AI PCs"
+    ],
+    "partnerships": [
+      "HPE",
+      "DOE",
+      "Lenovo"
+    ],
+    "technologies": [
+      "Artificial intelligence",
+      "Machine learning"
+    ],
+    "people": [
+      "Lip-Bu Tan"
+    ],
+    "pricing": [],
+    "markets": [
+      "Data center",
+      "Client computing",
+      "5G and wireless"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Intel is increasing its focus on artificial intelligence",
+      "The company is providing more news and information to the public",
+      "Intel is partnering with other companies to advance AI technology"
+    ],
+    "opportunities": [
+      "Increased demand for AI-powered products and services",
+      "Growing market for AI-related technologies"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Regulatory challenges related to AI development and use"
+    ],
+    "recommended_actions": [
+      "Monitor Intel's AI-related developments and partnerships",
+      "Assess the competitive implications of Intel's increased focus on AI",
+      "Consider investing in AI-related technologies and companies"
+    ]
+  },
+  "key_insights": [
+    "Intel is increasing its focus on artificial intelligence",
+    "The company is providing more news and information to the public",
+    "Intel is partnering with other companies to advance AI technology"
+  ],
+  "business_impact": "The changes suggest that Intel is increasing its focus on artificial intelligence and providing more news and information to the public, which could help to improve its reputation and attract new customers",
+  "competitive_implications": "The changes could help Intel to stay competitive in the AI market and attract new customers, but also increase competition with other companies in the market",
+  "content_hash_before": null,
+  "content_hash_after": "806b5932307e7f1c02c59111af532806727ea9ec093362297123c32636766a2c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

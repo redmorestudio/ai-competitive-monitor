@@ -1,0 +1,80 @@
+{
+  "id": 536,
+  "company": "Synthesia",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:45:11.192Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New content added to the Synthesia blog, including how-to guides, case studies, and more",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "New content added to the Synthesia blog, including how-to guides, case studies, and more",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Added how-to guides for training videos, sales enablement, and internal communications",
+      "Added case studies for Spirit Airlines, Heineken, Zoom, DuPont, BSH, and Booz Allen Hamilton",
+      "Added resources for video templates, customer reviews, and Synthesia Academy"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updated content suggests a shift in Synthesia's business strategy, focusing on providing more value to customers through educational content and case studies",
+    "market_signals": [
+      "Increased focus on customer education",
+      "Expansion of content offerings"
+    ],
+    "competitive_implications": "Synthesia's updated content may give them a competitive edge in the video creation market, as they are providing more value to customers",
+    "strategic_direction": "Synthesia's strategic direction appears to be focused on establishing themselves as a thought leader in the video creation market"
+  },
+  "entities": {
+    "products": [
+      "Synthesia"
+    ],
+    "features": [
+      "AI video creation",
+      "video templates",
+      "customer reviews"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "video creation",
+      "sales enablement",
+      "internal communications"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Synthesia has added significant new content to their blog",
+      "The content focuses on how-to guides, case studies, and customer education"
+    ],
+    "opportunities": [
+      "Synthesia may be able to attract more customers with their updated content",
+      "The company may be able to establish themselves as a thought leader in the video creation market"
+    ],
+    "threats": [
+      "Competitors may respond to Synthesia's updated content by creating their own similar content",
+      "Synthesia's focus on customer education may not resonate with all customers"
+    ],
+    "recommended_actions": [
+      "Monitor Synthesia's content strategy and adjust our own strategy accordingly",
+      "Consider creating similar content to compete with Synthesia"
+    ]
+  },
+  "key_insights": [
+    "Synthesia has added significant new content to their blog",
+    "The content focuses on how-to guides, case studies, and customer education"
+  ],
+  "business_impact": "The updated content suggests a shift in Synthesia's business strategy, focusing on providing more value to customers through educational content and case studies",
+  "competitive_implications": "Synthesia's updated content may give them a competitive edge in the video creation market, as they are providing more value to customers",
+  "content_hash_before": null,
+  "content_hash_after": "50b5a6b658c59f5dd8b43094fefe04440562bac6c9f798697de51ee0d23a89ff",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

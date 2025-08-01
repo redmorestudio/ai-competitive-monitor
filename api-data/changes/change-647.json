@@ -1,0 +1,86 @@
+{
+  "id": 647,
+  "company": "Amazon CodeWhisperer",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:26:03.770Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "The content changed from no previous version to a comprehensive AWS website page with various sections and links.",
+  "category": "major update",
+  "change_summary": {
+    "what_changed": "The content changed from no previous version to a comprehensive AWS website page with various sections and links.",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of a cookie preference section",
+      "Addition of various AWS product and service links",
+      "Inclusion of a blog section with links to different topics",
+      "Introduction of a Web3 section with Amazon Managed Blockchain information"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update indicates a significant expansion of AWS services and products, potentially increasing its market share and competitiveness.",
+    "market_signals": [
+      "Increased focus on Artificial Intelligence and Machine Learning",
+      "Growing importance of data analytics and management"
+    ],
+    "competitive_implications": "The update may pose a competitive threat to other cloud service providers, as AWS expands its offerings and improves its market position.",
+    "strategic_direction": "The update suggests that AWS is focusing on providing a wide range of services and products to its customers, with a strong emphasis on innovation and competitiveness."
+  },
+  "entities": {
+    "products": [
+      "Amazon Q",
+      "Amazon SageMaker",
+      "Amazon EC2",
+      "Amazon S3",
+      "Amazon Aurora",
+      "Amazon DynamoDB",
+      "Amazon RDS",
+      "AWS Lambda",
+      "Amazon VPC",
+      "Amazon Lightsail"
+    ],
+    "features": [
+      "Cookie preferences",
+      "Cross-context behavioral advertising"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Artificial Intelligence",
+      "Blockchain"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "AWS is expanding its services and products to cater to a broader range of customers",
+      "The company is focusing on Artificial Intelligence, Machine Learning, and data analytics"
+    ],
+    "opportunities": [
+      "Partnership opportunities with AWS to leverage its expanded services and products",
+      "Potential for increased adoption of AWS services and products"
+    ],
+    "threats": [
+      "Increased competition from other cloud service providers",
+      "Potential for AWS to dominate the market, making it challenging for smaller players to compete"
+    ],
+    "recommended_actions": [
+      "Monitor AWS's strategic direction and updates to its services and products",
+      "Consider partnering with AWS to leverage its expanded offerings"
+    ]
+  },
+  "key_insights": [
+    "AWS is expanding its services and products to cater to a broader range of customers",
+    "The company is focusing on Artificial Intelligence, Machine Learning, and data analytics"
+  ],
+  "business_impact": "The update indicates a significant expansion of AWS services and products, potentially increasing its market share and competitiveness.",
+  "competitive_implications": "The update may pose a competitive threat to other cloud service providers, as AWS expands its offerings and improves its market position.",
+  "content_hash_before": null,
+  "content_hash_after": "843bd326b96cd80187ac950f4ea27877edaeb6f9592e41d46189e4a44c3c6301",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,80 @@
+{
+  "id": 654,
+  "company": "Aleph Alpha",
+  "page_url": "docs",
+  "detected_at": "2025-08-01T22:25:02.059Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.95,
+  "summary": "Initial documentation release for Aleph Alpha",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Initial documentation release for Aleph Alpha",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of PhariaAI, a full-stack generative AI suite",
+      "Description of four core components: PhariaAssistant, PhariaStudio, PhariaOS, and PhariaCatch",
+      "Mention of Pharia-1-LLM, a large language model",
+      "Information on partnerships and verticals",
+      "Support and resource links"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Aleph Alpha is positioning itself as a major player in the AI market with a comprehensive suite of products",
+    "market_signals": [
+      "Growing demand for AI solutions",
+      "Increasing competition in the AI market"
+    ],
+    "competitive_implications": "Aleph Alpha is directly competing with other AI solution providers",
+    "strategic_direction": "Expansion into the AI market with a focus on generative AI and full-stack solutions"
+  },
+  "entities": {
+    "products": [
+      "PhariaAI",
+      "PhariaAssistant",
+      "PhariaStudio",
+      "PhariaOS",
+      "PhariaCatch",
+      "Pharia-1-LLM"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "generative AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Aleph Alpha is introducing a major new product suite",
+      "The company is focusing on generative AI and full-stack solutions"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Aleph Alpha",
+      "Potential for growth in the AI market"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential for market saturation"
+    ],
+    "recommended_actions": [
+      "Monitor Aleph Alpha's progress and market reception",
+      "Consider partnership opportunities",
+      "Assess the competitive landscape and adjust strategy accordingly"
+    ]
+  },
+  "key_insights": [
+    "Aleph Alpha is introducing a major new product suite",
+    "The company is focusing on generative AI and full-stack solutions"
+  ],
+  "business_impact": "Aleph Alpha is positioning itself as a major player in the AI market with a comprehensive suite of products",
+  "competitive_implications": "Aleph Alpha is directly competing with other AI solution providers",
+  "content_hash_before": null,
+  "content_hash_after": "f9f5f60dc52c45771fb9bf94269478b9064dfc5e3d848f40454b4e816a2ac168",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

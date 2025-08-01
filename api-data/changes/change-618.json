@@ -1,0 +1,103 @@
+{
+  "id": 618,
+  "company": "ElevenLabs",
+  "page_url": "product",
+  "detected_at": "2025-08-01T22:30:10.878Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Initial content creation",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Initial content creation",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of company and product information",
+      "Creation of navigation menu with various sections",
+      "Addition of social media links and contact information",
+      "Inclusion of product features and solutions"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The creation of the initial content suggests that ElevenLabs is expanding its online presence and product offerings, potentially indicating a growth in their business strategy.",
+    "market_signals": [
+      "Increased focus on AI-powered audio solutions",
+      "Expansion into new markets and industries"
+    ],
+    "competitive_implications": "The introduction of new products and features may pose a competitive threat to existing companies in the AI audio solutions market.",
+    "strategic_direction": "ElevenLabs appears to be focusing on developing and marketing AI-powered audio solutions, indicating a strategic direction towards innovation and expansion in the industry."
+  },
+  "entities": {
+    "products": [
+      "Text to Speech",
+      "Speech to Text",
+      "Voice Changer",
+      "Voice Cloning",
+      "Voice Isolator",
+      "Studio",
+      "Conversational AI",
+      "Dubbing Studio",
+      "Voice Library",
+      "Audio Native",
+      "ElevenStudios",
+      "API",
+      "Voiceover Studio",
+      "ElevenReader",
+      "Mobile App"
+    ],
+    "features": [
+      "AI audio",
+      "Voice generator",
+      "Language support"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Conversational AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Enterprise",
+      "Teams",
+      "Creators",
+      "Developers",
+      "Startups",
+      "Publishing",
+      "Media and Entertainment"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "ElevenLabs is creating a strong online presence with its initial content",
+      "The company is focusing on AI-powered audio solutions",
+      "New products and features may pose a competitive threat to existing companies"
+    ],
+    "opportunities": [
+      "Partnership opportunities with ElevenLabs",
+      "Potential for innovation and growth in the AI audio solutions market"
+    ],
+    "threats": [
+      "Increased competition in the AI audio solutions market",
+      "Potential disruption to existing business models"
+    ],
+    "recommended_actions": [
+      "Monitor ElevenLabs' progress and developments",
+      "Assess potential partnership opportunities",
+      "Analyze the competitive implications of ElevenLabs' growth"
+    ]
+  },
+  "key_insights": [
+    "ElevenLabs is creating a strong online presence with its initial content",
+    "The company is focusing on AI-powered audio solutions",
+    "New products and features may pose a competitive threat to existing companies"
+  ],
+  "business_impact": "The creation of the initial content suggests that ElevenLabs is expanding its online presence and product offerings, potentially indicating a growth in their business strategy.",
+  "competitive_implications": "The introduction of new products and features may pose a competitive threat to existing companies in the AI audio solutions market.",
+  "content_hash_before": null,
+  "content_hash_after": "bf6db06abd1c54d4ee02cc74cf02d1756f49bf78a216d99f3008f949d6a27806",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,86 @@
+{
+  "id": 622,
+  "company": "Descript",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T22:29:38.651Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New pricing plans and features",
+  "category": "significant update",
+  "change_summary": {
+    "what_changed": "New pricing plans and features",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of Hobbyist, Creator, and Business plans",
+      "Addition of new features such as AI-powered video editing, transcription, and speech synthesis",
+      "Changes to pricing and plan details, including transcription hours, export resolution, and AI feature access"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The new pricing plans and features may attract more customers and increase revenue for Descript, while also potentially disrupting the competitive landscape",
+    "market_signals": [
+      "Descript is investing in AI-powered features to enhance its video editing and transcription capabilities",
+      "The company is targeting a wider range of customers, from hobbyists to businesses"
+    ],
+    "competitive_implications": "Descript's updated pricing plans and features may put pressure on competitors to respond with similar offerings, potentially leading to a more competitive market",
+    "strategic_direction": "Descript appears to be focusing on expanding its customer base and enhancing its AI-powered features to maintain a competitive edge"
+  },
+  "entities": {
+    "products": [
+      "Descript"
+    ],
+    "features": [
+      "AI-powered video editing",
+      "Transcription",
+      "Speech synthesis",
+      "AI avatars",
+      "Brand Studio"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [
+      "Hobbyist: $16/month (annual), $24/month (monthly)",
+      "Creator: $24/month (annual), $35/month (monthly)",
+      "Business: $50/month (annual), $65/month (monthly)"
+    ],
+    "markets": [
+      "Video editing",
+      "Podcasting",
+      "Screen recording"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Descript's new pricing plans and features are designed to appeal to a broader range of customers",
+      "The company is investing heavily in AI-powered features to enhance its video editing and transcription capabilities"
+    ],
+    "opportunities": [
+      "Descript's updated pricing plans and features may attract new customers and increase revenue",
+      "The company's focus on AI-powered features may lead to innovative solutions and a competitive edge"
+    ],
+    "threats": [
+      "The updated pricing plans and features may not be competitive enough to attract and retain customers",
+      "Descript's focus on AI-powered features may lead to increased costs and potential technical challenges"
+    ],
+    "recommended_actions": [
+      "Monitor Descript's pricing plans and features to assess their impact on the competitive landscape",
+      "Analyze customer feedback and adoption rates to determine the effectiveness of Descript's updated offerings"
+    ]
+  },
+  "key_insights": [
+    "Descript's new pricing plans and features are designed to appeal to a broader range of customers",
+    "The company is investing heavily in AI-powered features to enhance its video editing and transcription capabilities"
+  ],
+  "business_impact": "The new pricing plans and features may attract more customers and increase revenue for Descript, while also potentially disrupting the competitive landscape",
+  "competitive_implications": "Descript's updated pricing plans and features may put pressure on competitors to respond with similar offerings, potentially leading to a more competitive market",
+  "content_hash_before": null,
+  "content_hash_after": "01af20771eba4d3805ae64658838d595f5876793fa4a386d41da160818b1968e",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

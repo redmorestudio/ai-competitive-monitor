@@ -1,0 +1,93 @@
+{
+  "id": 601,
+  "company": "Intel",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:34:54.805Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New content added to Intel's homepage, focusing on Artificial Intelligence (AI) solutions",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content added to Intel's homepage, focusing on Artificial Intelligence (AI) solutions",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of AI-focused content",
+      "Emphasis on Intel's AI solutions and technologies",
+      "Addition of AI-related links and resources"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Intel's emphasis on AI solutions is likely to increase its competitiveness in the growing AI market, and potentially lead to new business opportunities and revenue streams",
+    "market_signals": [
+      "Growing demand for AI solutions",
+      "Increasing competition in the AI market"
+    ],
+    "competitive_implications": "Intel's move towards AI solutions may put pressure on competitors to follow suit, leading to increased competition in the AI market",
+    "strategic_direction": "Intel's strategic direction is shifting towards emphasizing AI solutions, which is likely to be a key area of focus for the company in the future"
+  },
+  "entities": {
+    "products": [
+      "Intel Core Ultra Processors",
+      "Intel Xeon Processors",
+      "Intel Xeon CPU Max Series",
+      "Intel Atom Processors",
+      "Intel Arc Discrete Graphics",
+      "Intel Wi-Fi Products"
+    ],
+    "features": [
+      "AI Accelerators",
+      "AI Software Solutions",
+      "Intel Data Center GPU Flex Series"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Artificial Intelligence (AI)",
+      "Machine Learning (ML)",
+      "Deep Learning (DL)"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Automotive",
+      "Education",
+      "Energy",
+      "Financial Services",
+      "Government",
+      "Healthcare",
+      "Manufacturing",
+      "Retail",
+      "Telecommunications"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Intel is emphasizing AI solutions on its homepage",
+      "The company is highlighting its AI-related products and technologies"
+    ],
+    "opportunities": [
+      "Increased competitiveness in the AI market",
+      "New business opportunities and revenue streams"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential cannibalization of existing products and services"
+    ],
+    "recommended_actions": [
+      "Monitor Intel's AI strategy and its impact on the market",
+      "Consider partnering with Intel or other AI-focused companies to stay competitive"
+    ]
+  },
+  "key_insights": [
+    "Intel is emphasizing AI solutions on its homepage",
+    "The company is highlighting its AI-related products and technologies"
+  ],
+  "business_impact": "Intel's emphasis on AI solutions is likely to increase its competitiveness in the growing AI market, and potentially lead to new business opportunities and revenue streams",
+  "competitive_implications": "Intel's move towards AI solutions may put pressure on competitors to follow suit, leading to increased competition in the AI market",
+  "content_hash_before": null,
+  "content_hash_after": "2ad5fd442bb1948662010212c3f843722dc5602d8644da33eac0313d8beffe3d",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,89 @@
+{
+  "id": 589,
+  "company": "Meta AI",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:36:44.407Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New content added to the Meta AI blog",
+  "category": "major_update",
+  "change_summary": {
+    "what_changed": "New content added to the Meta AI blog",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of new research and projects",
+      "Addition of new blog posts and articles",
+      "Update of the website's layout and design",
+      "Inclusion of new features and technologies such as Llama and AI Studio"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest a significant investment in AI research and development, which could lead to new business opportunities and revenue streams for Meta.",
+    "market_signals": [
+      "Increased focus on AI research and development",
+      "Growing demand for AI-powered solutions"
+    ],
+    "competitive_implications": "The changes could give Meta a competitive advantage in the AI research and development space, potentially attracting new talent and partners.",
+    "strategic_direction": "The changes suggest a strategic direction towards becoming a leader in AI research and development, with a focus on innovation and experimentation."
+  },
+  "entities": {
+    "products": [
+      "Llama",
+      "AI Studio"
+    ],
+    "features": [
+      "Research",
+      "Infrastructure",
+      "Resources",
+      "Demos"
+    ],
+    "partnerships": [
+      "AWS"
+    ],
+    "technologies": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Natural Language Processing"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "AI research",
+      "Technology"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Meta is investing heavily in AI research and development",
+      "The company is expanding its focus on AI-powered solutions",
+      "The changes could have significant implications for the competitive landscape"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Meta",
+      "Access to new AI-powered solutions and technologies"
+    ],
+    "threats": [
+      "Increased competition in the AI research and development space",
+      "Potential disruption to existing business models"
+    ],
+    "recommended_actions": [
+      "Monitor Meta's AI research and development efforts",
+      "Explore potential partnership opportunities",
+      "Assess the potential impact on existing business models"
+    ]
+  },
+  "key_insights": [
+    "Meta is investing heavily in AI research and development",
+    "The company is expanding its focus on AI-powered solutions",
+    "The changes could have significant implications for the competitive landscape"
+  ],
+  "business_impact": "The changes suggest a significant investment in AI research and development, which could lead to new business opportunities and revenue streams for Meta.",
+  "competitive_implications": "The changes could give Meta a competitive advantage in the AI research and development space, potentially attracting new talent and partners.",
+  "content_hash_before": null,
+  "content_hash_after": "6c56ab3a059679cbaf7f7ca0dbc78a4e5184d8ee2adedea9c4f00ef519c51983",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

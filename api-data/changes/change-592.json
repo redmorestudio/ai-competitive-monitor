@@ -1,0 +1,86 @@
+{
+  "id": 592,
+  "company": "Luma AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-01T22:36:14.509Z",
+  "change_type": "new",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content introduction, including product announcements, features, and company mission",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content introduction, including product announcements, features, and company mission",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Modify Video, Camera Motion Concepts, Ray2, Ray2 Flash, Image to Video for Ray2, and Keyframe, extend and loop for Ray2",
+      "New sections added, including Platform, Research, and Team & Community",
+      "Company mission statement and description of multimodal general intelligence",
+      "Introduction of Luma API and its capabilities"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Luma AI is positioning itself as a leader in multimodal general intelligence, with a focus on creative and immersive products",
+    "market_signals": [
+      "Growing demand for AI-powered video and image generation",
+      "Increasing importance of multimodal general intelligence"
+    ],
+    "competitive_implications": "Luma AI is competing with other AI companies in the video and image generation space, but its focus on multimodal general intelligence sets it apart",
+    "strategic_direction": "Luma AI is focused on building a platform for creatives, with a range of products and features that enable worldbuilding and immersive storytelling"
+  },
+  "entities": {
+    "products": [
+      "Modify Video",
+      "Camera Motion Concepts",
+      "Ray2",
+      "Ray2 Flash",
+      "Image to Video for Ray2",
+      "Keyframe, extend and loop for Ray2",
+      "Luma API"
+    ],
+    "features": [
+      "Multimodal video, audio and reasoning models",
+      "Worldbuilding capabilities",
+      "Creative and immersive products"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Multimodal general intelligence",
+      "Video generation models",
+      "Image generation models"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Media, entertainment, marketing, and advertising industries"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Luma AI is introducing a range of new products and features, including Modify Video, Camera Motion Concepts, and Ray2",
+      "The company is focused on building a platform for creatives, with a range of products and features that enable worldbuilding and immersive storytelling"
+    ],
+    "opportunities": [
+      "Growing demand for AI-powered video and image generation",
+      "Increasing importance of multimodal general intelligence"
+    ],
+    "threats": [
+      "Competition from other AI companies in the video and image generation space"
+    ],
+    "recommended_actions": [
+      "Monitor Luma AI's progress and product announcements",
+      "Consider partnering with Luma AI to leverage its multimodal general intelligence capabilities"
+    ]
+  },
+  "key_insights": [
+    "Luma AI is introducing a range of new products and features, including Modify Video, Camera Motion Concepts, and Ray2",
+    "The company is focused on building a platform for creatives, with a range of products and features that enable worldbuilding and immersive storytelling"
+  ],
+  "business_impact": "Luma AI is positioning itself as a leader in multimodal general intelligence, with a focus on creative and immersive products",
+  "competitive_implications": "Luma AI is competing with other AI companies in the video and image generation space, but its focus on multimodal general intelligence sets it apart",
+  "content_hash_before": null,
+  "content_hash_after": "c32c0cd17dce6bbd9282e31751dd4067e6b33832b2692ddd6f44dc9a6a5da476",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

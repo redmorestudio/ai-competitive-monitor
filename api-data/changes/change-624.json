@@ -1,0 +1,89 @@
+{
+  "id": 624,
+  "company": "DataRobot",
+  "page_url": "blog",
+  "detected_at": "2025-08-01T22:29:24.084Z",
+  "change_type": "new",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog content and updated website structure",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog content and updated website structure",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of new blog posts",
+      "Updated navigation and categorization of content",
+      "Emphasis on Agentic AI, AI for Leaders, and AI for Practitioners",
+      "Partnerships and integrations with NVIDIA and SAP highlighted"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "DataRobot is positioning itself as a leader in Agentic AI, emphasizing its partnerships and integrations to appeal to a wider range of customers, particularly in the enterprise sector",
+    "market_signals": [
+      "Increased focus on AI for Leaders and AI for Practitioners",
+      "Growing importance of Agentic AI in the market"
+    ],
+    "competitive_implications": "DataRobot's strategic shift may challenge competitors in the AI platform market, particularly those without strong Agentic AI offerings",
+    "strategic_direction": "DataRobot is likely to continue investing in Agentic AI, expanding its partnerships, and developing more targeted content for leaders and practitioners"
+  },
+  "entities": {
+    "products": [
+      "Agentic AI Platform",
+      "AI Apps & Agents"
+    ],
+    "features": [
+      "AI Governance",
+      "AI Observability",
+      "AI Foundation"
+    ],
+    "partnerships": [
+      "NVIDIA",
+      "SAP"
+    ],
+    "technologies": [
+      "Agentic AI",
+      "Generative AI",
+      "Predictive AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Finance",
+      "Financial Services",
+      "Healthcare",
+      "Manufacturing",
+      "Government"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "DataRobot's emphasis on Agentic AI and partnerships suggests a strategic shift towards more complex, enterprise-focused AI solutions",
+      "The company's content strategy is becoming more targeted, with a focus on leadership and practitioner audiences"
+    ],
+    "opportunities": [
+      "DataRobot's competitors may struggle to keep pace with its Agentic AI developments, creating opportunities for market share gain",
+      "The company's expanded partnerships could lead to new business opportunities and revenue streams"
+    ],
+    "threats": [
+      "DataRobot's shift towards Agentic AI may alienate some customers who are not yet ready for such complex solutions",
+      "The company's increased focus on enterprise customers may lead to decreased attention to smaller businesses or individual users"
+    ],
+    "recommended_actions": [
+      "Monitor DataRobot's Agentic AI developments and partnerships to anticipate potential market impacts",
+      "Assess the company's content strategy and its potential influence on the wider AI market"
+    ]
+  },
+  "key_insights": [
+    "DataRobot's emphasis on Agentic AI and partnerships suggests a strategic shift towards more complex, enterprise-focused AI solutions",
+    "The company's content strategy is becoming more targeted, with a focus on leadership and practitioner audiences"
+  ],
+  "business_impact": "DataRobot is positioning itself as a leader in Agentic AI, emphasizing its partnerships and integrations to appeal to a wider range of customers, particularly in the enterprise sector",
+  "competitive_implications": "DataRobot's strategic shift may challenge competitors in the AI platform market, particularly those without strong Agentic AI offerings",
+  "content_hash_before": null,
+  "content_hash_after": "c1cfcd130bff4dfaabeebdd6379e53fe80c5404fd9e72031231d8c6881ea8e70",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
