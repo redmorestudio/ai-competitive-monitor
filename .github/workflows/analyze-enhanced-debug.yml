@@ -1,0 +1,363 @@
+name: Analyze Content (SQLite - Enhanced Debug)
+
+on:
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      trigger_source:
+        description: 'What triggered this workflow'
+        required: false
+        type: string
+        default: 'manual'
+      run_id:
+        description: 'Previous workflow run ID'
+        required: false
+        type: string
+      analysis_mode:
+        description: 'Analysis mode'
+        required: false
+        type: choice
+        default: 'all'
+        options:
+          - all           # Analyze everything
+          - only-new      # Only unanalyzed content
+          - force         # Force re-analyze all
+          - changes-only  # Only analyze detected changes
+      use_three_db:
+        description: 'Use three-database architecture'
+        required: false
+        type: string
+        default: 'true'
+      cascade:
+        description: 'Trigger next workflow in chain'
+        required: false
+        type: boolean
+        default: true
+  
+  # Allow being called by other workflows
+  workflow_call:
+    inputs:
+      trigger_source:
+        description: 'What triggered this workflow'
+        required: false
+        type: string
+        default: 'manual'
+      run_id:
+        description: 'Previous workflow run ID'
+        required: false
+        type: string
+      analysis_mode:
+        description: 'Analysis mode'
+        required: false
+        type: string
+        default: 'all'
+      cascade:
+        description: 'Trigger next workflow in chain'
+        required: false
+        type: boolean
+        default: false  # Different default for when called by full-monitor
+    outputs:
+      run_id:
+        description: 'The workflow run ID'
+        value: ${{ jobs.analyze-content.outputs.run_id }}
+
+# Prevent concurrent runs
+concurrency:
+  group: analyze-workflow-enhanced
+  cancel-in-progress: false
+
+env:
+  NODE_ENV: production
+  USE_THREE_DB: ${{ inputs.use_three_db || 'true' }}
+
+jobs:
+  analyze-content:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    
+    outputs:
+      run_id: ${{ github.run_id }}
+    
+    permissions:
+      contents: write
+      actions: read
+    
+    steps:
+      - name: 🔍 ENHANCED DEBUG VERSION
+        run: |
+          echo "=================== 🔍 ENHANCED DEBUG 🔍 ==================="
+          echo "This workflow includes additional debugging for companies.json"
+          echo "========================================================="
+      
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true  # Fetch Git LFS files including raw_content.db
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: |
+          cd github-actions-backend
+          # Use npm install instead of npm ci to handle package-lock.json mismatches
+          npm install --omit=dev
+      
+      # FIXED: Removed artifact downloads - use committed files instead
+      - name: Ensure latest database files
+        run: |
+          cd github-actions-backend
+          echo "✅ Using committed database files from repository"
+          ls -la data/*.db || true
+          
+          # raw_content.db is gitignored due to size, create empty one for analyzer check
+          if [ ! -f data/raw_content.db ]; then
+            echo "📄 Creating empty raw_content.db (gitignored, not needed for analysis)"
+            # Create with proper schema so analyzer doesn't fail
+            node -e "
+              const Database = require('better-sqlite3');
+              const db = new Database('data/raw_content.db');
+              db.exec('CREATE TABLE IF NOT EXISTS raw_content (id INTEGER PRIMARY KEY, url_id INTEGER, content TEXT, scraped_at DATETIME)');
+              db.close();
+            "
+          fi
+      
+      # NEW: Database integrity check
+      - name: 🔍 Database Integrity Check
+        run: |
+          cd github-actions-backend
+          echo "🔍 Checking database integrity..."
+          
+          node -e "
+            const Database = require('better-sqlite3');
+            const db = new Database('data/intelligence.db');
+            
+            // Check companies count
+            const companies = db.prepare('SELECT COUNT(*) as count FROM companies').get();
+            console.log('✅ Companies in database:', companies.count);
+            
+            // List first 10 companies
+            const companyList = db.prepare('SELECT id, name FROM companies ORDER BY name LIMIT 10').all();
+            console.log('📋 First 10 companies:');
+            companyList.forEach(c => console.log('  -', c.name, '(ID:', c.id, ')'));
+            
+            // Check if specific companies exist
+            const checkCompanies = ['OpenAI', 'Anthropic', 'Google DeepMind', 'Cisco Systems', 'Redmore Studio'];
+            console.log('\\n🔍 Checking for specific companies:');
+            checkCompanies.forEach(name => {
+              const exists = db.prepare('SELECT COUNT(*) as count FROM companies WHERE name = ?').get(name);
+              console.log('  -', name, ':', exists.count > 0 ? '✅ Found' : '❌ Not found');
+            });
+            
+            // Check database file size
+            const fs = require('fs');
+            const stats = fs.statSync('data/intelligence.db');
+            console.log('\\n📊 Database file size:', (stats.size / 1024 / 1024).toFixed(2), 'MB');
+            
+            // Check if we have the expected number of companies
+            if (companies.count < 50) {
+              console.error('❌ ERROR: Database only has', companies.count, 'companies!');
+              console.error('Expected at least 50 companies.');
+              process.exit(1);
+            }
+            
+            db.close();
+          "
+      
+      # Fix missing enhanced_analysis table (only for legacy)
+      - name: Fix database schema (legacy)
+        if: ${{ env.USE_THREE_DB != 'true' }}
+        run: |
+          cd github-actions-backend
+          echo "🔧 Ensuring enhanced_analysis table exists..."
+          node scripts/fix-enhanced-analysis-table.js
+      
+      - name: Run baseline AI analysis
+        run: |
+          cd github-actions-backend
+          
+          echo "🚀 Running baseline analysis with Groq Llama 3.3..."
+          echo "   Mode: ${{ inputs.analysis_mode }}"
+          echo "   Architecture: ${{ env.USE_THREE_DB == 'true' && 'Three-Database' || 'Legacy' }}"
+          
+          # Set analysis flags based on mode
+          case "${{ inputs.analysis_mode }}" in
+            "only-new")
+              node ai-analyzer-baseline-wrapper.js --only-new
+              ;;
+            "force")
+              node ai-analyzer-baseline-wrapper.js --force
+              ;;
+            "changes-only")
+              echo "⚠️  Changes-only mode not yet implemented"
+              node ai-analyzer-baseline-wrapper.js --only-new
+              ;;
+            *)
+              node ai-analyzer-baseline-wrapper.js
+              ;;
+          esac
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_ACTIONS: 'true'
+      
+      - name: Run change detection analysis
+        if: ${{ inputs.analysis_mode != 'changes-only' }}
+        run: |
+          cd github-actions-backend
+          
+          echo "🔍 Running change detection and ultra-enhanced analysis with Groq..."
+          node ai-analyzer-ultra-wrapper.js full || echo "Change analysis completed"
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_ACTIONS: 'true'
+      
+      - name: Generate static data files (with debug)
+        run: |
+          cd github-actions-backend
+          echo "📊 Generating static data files with debug logging..."
+          node generate-static-data-wrapper.js
+          
+          echo "📁 Generated files:"
+          ls -la ../api-data/
+          
+          echo "🔍 Checking companies.json content:"
+          if [ -f ../api-data/companies.json ]; then
+            COMPANY_COUNT=$(jq '.companies | length' ../api-data/companies.json)
+            echo "✅ companies.json contains $COMPANY_COUNT companies"
+            echo "📋 Company names:"
+            jq -r '.companies[].company' ../api-data/companies.json | head -20
+            
+            if [ "$COMPANY_COUNT" -lt 50 ]; then
+              echo "❌ ERROR: companies.json only has $COMPANY_COUNT companies!"
+              echo "Full content:"
+              jq . ../api-data/companies.json
+            fi
+          else
+            echo "❌ ERROR: companies.json not found!"
+          fi
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          
+      - name: Generate change detail files
+        run: |
+          cd github-actions-backend
+          echo "📝 Generating change detail files..."
+          node generate-change-details.js
+          
+          echo "📁 Generated change files:"
+          ls -la ../api-data/changes/ | head -20
+      
+      - name: Create analysis summary
+        run: |
+          cd github-actions-backend
+          echo "{
+            \"workflow\": \"analyze-enhanced-debug\",
+            \"run_id\": \"${{ github.run_id }}\",
+            \"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%S.%3NZ)\",
+            \"mode\": \"${{ inputs.analysis_mode }}\",
+            \"trigger_source\": \"${{ inputs.trigger_source }}\",
+            \"architecture\": \"${{ env.USE_THREE_DB == 'true' && 'three-db' || 'legacy' }}\",
+            \"ai_model\": \"groq-llama-3.3-70b\",
+            \"status\": \"enhanced-debug\"
+          }" > ../api-data/last-analysis.json
+      
+      - name: Upload analysis artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: analysis-results-enhanced-${{ github.run_id }}
+          path: |
+            github-actions-backend/data/baseline-intelligence-report.json
+            api-data/
+          retention-days: 7
+      
+      - name: Commit analysis results
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # Function to retry git push with exponential backoff
+          push_with_retry() {
+            local max_attempts=5
+            local attempt=1
+            local wait_time=1
+            
+            while [ $attempt -le $max_attempts ]; do
+              echo "🔄 Attempt $attempt/$max_attempts to push changes..."
+              
+              # Pull latest changes before each attempt
+              git pull origin main --rebase || {
+                echo "❌ Failed to rebase, trying merge strategy..."
+                git rebase --abort 2>/dev/null || true
+                git pull origin main --no-rebase --strategy=ours || {
+                  echo "❌ Merge failed, resetting to origin/main"
+                  git reset --hard origin/main
+                  return 1
+                }
+              }
+              
+              # Try to push
+              if git push origin main; then
+                echo "✅ Successfully pushed changes!"
+                return 0
+              else
+                echo "❌ Push failed"
+                
+                if [ $attempt -lt $max_attempts ]; then
+                  echo "⏳ Waiting ${wait_time}s before retry..."
+                  sleep $wait_time
+                  wait_time=$((wait_time * 2))
+                  attempt=$((attempt + 1))
+                else
+                  echo "❌ All push attempts failed"
+                  return 1
+                fi
+              fi
+            done
+          }
+          
+          # Add all analysis outputs
+          git add api-data/ || true
+          git add github-actions-backend/data/*.json || true
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            echo "📝 Changes to commit:"
+            git diff --staged --name-only
+            
+            git commit -m "🚀 Update AI analysis (Enhanced Debug) - $(date -u +%Y-%m-%d_%H:%M:%S_UTC)"
+            
+            # Push changes with retry logic
+            push_with_retry || {
+              echo "⚠️  Failed to push changes after multiple attempts"
+              echo "⚠️  This is likely due to concurrent workflows"
+              echo "⚠️  Changes will be included in next workflow run"
+              # Don't fail the workflow - changes are committed locally
+              # and will be pushed in the next successful run
+              exit 0
+            }
+          fi
+      
+      - name: Trigger Sync workflow
+        if: inputs.cascade == true
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.AI_COMPETITIVE_MONITOR_TOKEN }}
+          script: |
+            const result = await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'sync.yml',
+              ref: 'main',
+              inputs: {
+                trigger_source: 'analyze-enhanced-cascade',
+                run_id: '${{ github.run_id }}'
+                // Note: Don't pass cascade to sync - it's the last stage
+              }
+            });
+            console.log(`✅ Triggered Sync workflow`);
