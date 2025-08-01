@@ -1,0 +1,63 @@
+{
+  "id": 482,
+  "company": "GitHub Copilot",
+  "page_url": "docs",
+  "detected_at": "2025-08-01T18:38:57.523Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Billing section for organizations and enterprises has been updated",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Billing section for organizations and enterprises has been updated",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated billing section for organizations and enterprises",
+      "Changed 'Billing for individuals' and 'Billing for organizations' to 'Individual plans' and 'Organizations and enterprises'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update to the billing section may affect how organizations and enterprises manage their Copilot plans",
+    "market_signals": [
+      "GitHub is refining its billing process for Copilot"
+    ],
+    "competitive_implications": "The change may impact the competitiveness of Copilot in the market, but it is a minor update",
+    "strategic_direction": "GitHub is continuing to refine and improve its Copilot product"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Organizations and enterprises"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The billing section for organizations and enterprises has been updated"
+    ],
+    "opportunities": [
+      "The update may provide more clarity on billing for organizations and enterprises"
+    ],
+    "threats": [
+      "The change may cause confusion for some users"
+    ],
+    "recommended_actions": [
+      "Monitor the impact of the change on user behavior and feedback"
+    ]
+  },
+  "key_insights": [
+    "The billing section for organizations and enterprises has been updated"
+  ],
+  "business_impact": "The update to the billing section may affect how organizations and enterprises manage their Copilot plans",
+  "competitive_implications": "The change may impact the competitiveness of Copilot in the market, but it is a minor update",
+  "content_hash_before": "0a5dfc42f1d82cf65003d665fa6cdbc42f1a4bbb9e6a7fd74cd0a0a6a5253ea3",
+  "content_hash_after": "53e594b3c533fd32a6a5d4eee6e85a7317a2257f0f4b648ee249bf9b27baa5a7",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
