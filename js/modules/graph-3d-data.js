@@ -1,4 +1,10 @@
 /**
+ * @module graph-3d-data
+ * @description Data management for 3D graph including node/link processing and updates
+ * @since 1.0.0
+ */
+
+/**
  * 3D Graph Data Module
  * Handles data loading, processing, and normalization
  */
@@ -35,8 +41,6 @@ export class Graph3DData {
      */
     async loadData() {
         try {
-            console.log('Loading AI competitive intelligence data...');
-
             // Try to load from multiple sources
             const [companiesData, detailsData, changesData, dashboardData] = await Promise.allSettled([
                 this.fetchJSON('data/companies.json'),
@@ -47,12 +51,10 @@ export class Graph3DData {
 
             // Process SQLite format if available
             if (companiesData.status === 'fulfilled' && detailsData.status === 'fulfilled') {
-                console.log('Processing SQLite format data...');
                 this.rawData = this.processSQLiteFormat(companiesData.value, detailsData.value);
             } 
             // Fall back to PostgreSQL format
             else if (dashboardData.status === 'fulfilled') {
-                console.log('Processing PostgreSQL format data...');
                 this.rawData = this.processPostgreSQLFormat(dashboardData.value);
             } 
             else {
@@ -67,7 +69,6 @@ export class Graph3DData {
             // Process into graph format
             this.processedData = this.processIntoGraphData(this.rawData);
             
-            console.log(`Loaded ${this.processedData.nodes.length} nodes and ${this.processedData.links.length} links`);
             return this.processedData;
 
         } catch (error) {

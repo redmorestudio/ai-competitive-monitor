@@ -1,4 +1,10 @@
 /**
+ * @module config
+ * @description Application configuration including API endpoints, UI settings, and feature flags
+ * @since 1.0.0
+ */
+
+/**
  * Configuration Module
  * Centralizes all application configuration
  */

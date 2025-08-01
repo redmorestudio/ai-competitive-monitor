@@ -1,4 +1,10 @@
 /**
+ * @module graph-3d-ui
+ * @description User interface components and controls for 3D graph interaction
+ * @since 1.0.0
+ */
+
+/**
  * 3D Graph UI Module
  * Handles control panel generation and UI component rendering
  */

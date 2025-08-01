@@ -1,4 +1,10 @@
 /**
+ * @module graph-3d
+ * @description Main 3D force graph coordinator managing all graph sub-modules
+ * @since 1.0.0
+ */
+
+/**
  * 3D Graph Main Coordinator Module
  * Orchestrates all 3D graph modules to create the complete visualization
  */
@@ -32,8 +38,6 @@ class Graph3DCoordinator {
      */
     async init(config = {}) {
         try {
-            console.log('Initializing 3D Force Graph...');
-
             // Get containers
             this.container = document.getElementById(config.graphContainer || 'graph');
             this.controlsContainer = document.getElementById(config.controlsContainer || 'controls');
@@ -51,7 +55,7 @@ class Graph3DCoordinator {
 
             // Load data
             this.rawData = await graph3DData.loadData();
-            console.log('Data loaded:', graph3DData.getStatistics());
+            );
 
             // Initialize core graph
             const graph = graph3DCore.init(this.container, {
@@ -96,9 +100,7 @@ class Graph3DCoordinator {
             window.rawData = this.rawData;
 
             this.initialized = true;
-            console.log('3D Force Graph initialized successfully!');
-
-        } catch (error) {
+            } catch (error) {
             console.error('Error initializing 3D graph:', error);
             this.showError(error.message);
             throw error;

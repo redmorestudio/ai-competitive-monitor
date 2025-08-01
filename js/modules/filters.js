@@ -1,4 +1,10 @@
 /**
+ * @module filters
+ * @description Filtering and search functionality for companies, technologies, and concepts
+ * @since 1.0.0
+ */
+
+/**
  * Filters and Search Module
  * Handles all filtering, searching, and sorting functionality
  */

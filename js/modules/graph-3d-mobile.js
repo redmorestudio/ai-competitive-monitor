@@ -1,4 +1,10 @@
 /**
+ * @module graph-3d-mobile
+ * @description Mobile-specific controls and optimizations for 3D graph
+ * @since 1.0.0
+ */
+
+/**
  * 3D Graph Mobile UI Module
  * Handles mobile-specific UI adaptations and touch interactions
  */

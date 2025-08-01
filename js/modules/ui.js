@@ -1,4 +1,10 @@
 /**
+ * @module ui
+ * @description Core UI utilities for notifications, loading states, and common UI patterns
+ * @since 1.0.0
+ */
+
+/**
  * UI Module
  * Handles general UI rendering helpers and change display
  */
@@ -14,7 +20,6 @@ class UI {
      * Initialize UI module
      */
     init() {
-        console.log('🎨 Initializing UI module');
         this.changesContainer = document.getElementById('changesContent');
     }
 

@@ -1,4 +1,10 @@
 /**
+ * @module graph-3d-filters
+ * @description Filtering system for 3D graph nodes and relationships
+ * @since 1.0.0
+ */
+
+/**
  * 3D Graph Filters Module
  * Handles all filtering logic for nodes and links
  */

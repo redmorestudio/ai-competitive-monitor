@@ -1,4 +1,10 @@
 /**
+ * @module api
+ * @description API client for backend communication with retry logic and error handling
+ * @since 1.0.0
+ */
+
+/**
  * API Module
  * Handles all API interactions and data fetching
  */
@@ -73,7 +79,6 @@ async function fetchJson(endpoint, options = {}) {
     if (!options.noCache && cache.has(cacheKey)) {
         const cached = cache.get(cacheKey);
         if (Date.now() - cached.timestamp < CACHE_DURATION) {
-            console.log(`📦 Using cached data for ${endpoint}`);
             return cached.data;
         }
     }
@@ -90,7 +95,6 @@ async function fetchJson(endpoint, options = {}) {
         timestamp: Date.now()
     });
     
-    console.log(`✅ Fetched fresh data for ${endpoint}`);
     return data;
 }
 
@@ -222,8 +226,7 @@ export const api = {
     // Clear all cached data
     clearCache() {
         cache.clear();
-        console.log('🗑️ API cache cleared');
-    },
+        },
     
     // Get cache statistics (for debugging)
     getCacheStats() {

@@ -1,4 +1,10 @@
 /**
+ * @module dashboard
+ * @description Main dashboard UI component handling company cards, changes feed, and stats display
+ * @since 1.0.0
+ */
+
+/**
  * Dashboard Module
  * Handles main dashboard UI rendering and interactions
  */
@@ -19,8 +25,6 @@ class Dashboard {
      * Initialize the dashboard module
      */
     init() {
-        console.log('📊 Initializing dashboard module');
-        
         // Get DOM references
         this.companiesContainer = document.getElementById('companiesDisplay');
         this.recentChangesContainer = document.getElementById('recentChanges');
@@ -88,8 +92,7 @@ class Dashboard {
             <div class="stat-item">⏰ Last Check: <strong>${lastCheckText}</strong></div>
         `;
         
-        console.log('📊 Stats updated:', { companyCount, urlCount, totalChanges, lastCheck: lastCheckText });
-    }
+        }
 
     /**
      * Update companies display

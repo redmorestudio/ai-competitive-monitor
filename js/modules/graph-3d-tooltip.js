@@ -1,4 +1,10 @@
 /**
+ * @module graph-3d-tooltip
+ * @description Tooltip system for displaying node information on hover
+ * @since 1.0.0
+ */
+
+/**
  * 3D Graph Tooltip Module
  * Handles floating tooltip display and interaction
  */

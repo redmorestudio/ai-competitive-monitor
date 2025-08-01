@@ -1,4 +1,10 @@
 /**
+ * @module graph-3d-context
+ * @description Context menu and right-click interactions for 3D graph
+ * @since 1.0.0
+ */
+
+/**
  * 3D Graph Context Menu Module
  * Handles right-click context menu and keyboard shortcuts
  */

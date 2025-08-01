@@ -1,4 +1,10 @@
 /**
+ * @module data
+ * @description Data management module handling API calls, state management, and data transformations
+ * @since 1.0.0
+ */
+
+/**
  * Data Module
  * Manages all application data and state
  */
@@ -98,7 +104,6 @@ export async function loadStaticData(filename) {
             }
             
             const data = await response.json();
-            console.log(`✅ Loaded ${filename} successfully`);
             return data;
         } catch (error) {
             lastError = error;

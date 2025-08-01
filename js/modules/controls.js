@@ -1,4 +1,10 @@
 /**
+ * @module controls
+ * @description UI controls including modals, tabs, settings panel, and event handling
+ * @since 1.0.0
+ */
+
+/**
  * Controls Module
  * Handles all UI controls, tab switching, modal management, and user interactions
  */

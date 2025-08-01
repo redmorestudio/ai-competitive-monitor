@@ -1,4 +1,10 @@
 /**
+ * @module graph-3d-visuals
+ * @description Visual effects and rendering controls for 3D graph
+ * @since 1.0.0
+ */
+
+/**
  * 3D Graph Visuals Module
  * Handles visual settings including colors, sizes, labels, and effects
  */

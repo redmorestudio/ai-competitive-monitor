@@ -1,3 +1,10 @@
+/**
+ * @module graph-3d-simplified
+ * @description Simplified 3D graph implementation (legacy compatibility)
+ * @deprecated Use graph-3d.js instead
+ * @since 1.0.0
+ */
+
 // 3D Force Graph Module
 // Handles all 3D graph visualization logic
 
@@ -37,7 +44,6 @@ const GRAPH_CONFIG = {
 
 // Debug function
 function debug(message) {
-    console.log(`[Graph3D] ${message}`);
     const debugElement = document.getElementById('debugContent');
     if (debugElement) {
         debugElement.innerHTML += message + '<br/>';

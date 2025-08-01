@@ -1,4 +1,10 @@
 /**
+ * @module graph-3d-core
+ * @description Core 3D graph engine using three.js and force-graph library
+ * @since 1.0.0
+ */
+
+/**
  * Core 3D Force Graph Module
  * Handles graph initialization, rendering, and basic interactions
  */
@@ -203,8 +209,7 @@ export class Graph3DCore {
      */
     handleNodeClick(node, event) {
         // Will be overridden by event handlers
-        console.log('Node clicked:', node);
-    }
+        }
 
     /**
      * Handle node right-click
@@ -213,8 +218,7 @@ export class Graph3DCore {
      */
     handleNodeRightClick(node, event) {
         // Will be overridden by event handlers
-        console.log('Node right-clicked:', node);
-    }
+        }
 
     /**
      * Handle node hover
@@ -223,8 +227,7 @@ export class Graph3DCore {
      */
     handleNodeHover(node, prevNode) {
         // Will be overridden by event handlers
-        console.log('Node hovered:', node);
-    }
+        }
 
     /**
      * Set camera position

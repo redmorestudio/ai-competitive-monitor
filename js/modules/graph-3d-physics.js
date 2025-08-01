@@ -1,4 +1,10 @@
 /**
+ * @module graph-3d-physics
+ * @description Physics simulation controls for 3D force-directed graph
+ * @since 1.0.0
+ */
+
+/**
  * 3D Graph Physics Module
  * Handles force simulation parameters and physics controls
  */

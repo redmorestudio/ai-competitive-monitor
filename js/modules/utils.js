@@ -1,4 +1,10 @@
 /**
+ * @module utils
+ * @description Utility functions for formatting, storage, and common operations
+ * @since 1.0.0
+ */
+
+/**
  * Utilities Module
  * Common utility functions used across the application
  */
