@@ -1,0 +1,85 @@
+name: Update PostgreSQL to 54 Companies
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-companies:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: |
+          cd github-actions-backend
+          npm install
+      
+      - name: Generate companies.json with 54 companies
+        run: |
+          cd github-actions-backend
+          echo "📊 Generating companies.json from SQLite database (54 companies)..."
+          node generate-static-data-three-db.js
+          
+          echo "✅ Checking companies.json:"
+          COMPANY_COUNT=$(jq '.companies | length' ../api-data/companies.json)
+          echo "Found $COMPANY_COUNT companies"
+          
+          if [ "$COMPANY_COUNT" -ne 54 ]; then
+            echo "❌ ERROR: Expected 54 companies but found $COMPANY_COUNT"
+            exit 1
+          fi
+      
+      - name: Update PostgreSQL database
+        env:
+          POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+        run: |
+          cd github-actions-backend
+          
+          echo "🐘 Updating PostgreSQL with all 54 companies..."
+          node update-postgres-companies-from-json.js
+          
+          echo "✅ PostgreSQL update complete!"
+      
+      - name: Verify PostgreSQL update
+        env:
+          POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+        run: |
+          cd github-actions-backend
+          
+          echo "🔍 Verifying PostgreSQL companies..."
+          node -e "
+            const { db, end } = require('./postgres-db');
+            
+            async function verify() {
+              const count = await db.get('SELECT COUNT(*) as count FROM intelligence.companies');
+              console.log('✅ PostgreSQL now has', count.count, 'companies');
+              
+              if (count.count !== 54) {
+                console.error('❌ ERROR: Expected 54 companies but found', count.count);
+                process.exit(1);
+              }
+              
+              await end();
+            }
+            
+            verify().catch(err => {
+              console.error(err);
+              process.exit(1);
+            });
+          "
+      
+      - name: Commit updated companies.json
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          git add api-data/companies.json
+          git commit -m "🏢 Update PostgreSQL to monitor all 54 companies" || echo "No changes to commit"
+          git push || echo "No changes to push"
