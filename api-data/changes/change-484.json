@@ -1,0 +1,60 @@
+{
+  "id": 484,
+  "company": "Anthropic",
+  "page_url": "product",
+  "detected_at": "2025-08-01T18:38:27.433Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The download link for the Claude app has been updated",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The download link for the Claude app has been updated",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated download link for Claude app from https://claude.ai/redirect/website.v1.d125650c-4414-41bc-834b-2158785bb504/download to https://claude.ai/redirect/website.v1.04abeae8-1daf-4c6b-93e5-263ba2b851c7/download"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updated download link may improve the user experience for customers trying to download the Claude app",
+    "market_signals": [
+      "The company is actively maintaining and updating its product"
+    ],
+    "competitive_implications": "The change does not significantly impact the competitive landscape",
+    "strategic_direction": "The company is focused on improving its product and user experience"
+  },
+  "entities": {
+    "products": [
+      "Claude"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The download link for the Claude app has been updated"
+    ],
+    "opportunities": [
+      "Improved user experience for customers"
+    ],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor user feedback and app performance after the update"
+    ]
+  },
+  "key_insights": [
+    "The download link for the Claude app has been updated"
+  ],
+  "business_impact": "The updated download link may improve the user experience for customers trying to download the Claude app",
+  "competitive_implications": "The change does not significantly impact the competitive landscape",
+  "content_hash_before": "0710ed95e48db6209d9c1077963e78126c58958db683831882c32b2ae9ae98cb",
+  "content_hash_after": "f72b6e407a89ca2d2f68521385fd091f4967cdcf849e585c19c3d1287e73fabd",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
