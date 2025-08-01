@@ -1,0 +1,286 @@
+/**
+ * @module dashboard
+ * @description Main dashboard UI component handling company cards, changes feed, and stats display
+ * @since 1.0.0
+ */
+
+/**
+ * Dashboard Module
+ * Handles main dashboard UI rendering and interactions
+ */
+
+import { escapeHtml, formatTimeAgo, getInterestEmoji } from './utils.js';
+import { controls } from './controls.js';
+import { filterHighInterestChanges } from './filters.js';
+import { api } from './api.js';
+
+class Dashboard {
+    constructor() {
+        this.companiesContainer = null;
+        this.recentChangesContainer = null;
+        this.statsBar = null;
+    }
+
+    /**
+     * Initialize the dashboard module
+     */
+    init() {
+        // Get DOM references
+        this.companiesContainer = document.getElementById('companiesDisplay');
+        this.recentChangesContainer = document.getElementById('recentChanges');
+        this.statsBar = document.getElementById('statsBar');
+        
+        // Set up event listeners
+        this.setupEventListeners();
+    }
+
+    /**
+     * Set up event listeners
+     */
+    setupEventListeners() {
+        // Refresh button
+        const refreshBtn = document.querySelector('button[onclick*="refreshStatus"]');
+        if (refreshBtn) {
+            refreshBtn.onclick = (e) => this.handleRefresh(e);
+        }
+    }
+
+    /**
+     * Handle refresh button click
+     */
+    async handleRefresh(event) {
+        if (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        
+        // Trigger refresh through main coordinator
+        if (window.app && window.app.refreshData) {
+            await window.app.refreshData();
+        }
+    }
+
+    /**
+     * Update stats bar with current data
+     */
+    updateStatsBar(dashboardData, workflowStatus) {
+        if (!this.statsBar) return;
+        
+        const companyCount = dashboardData?.companies?.length || 0;
+        const urlCount = dashboardData?.companies?.reduce((sum, company) => 
+            sum + (company.urls?.length || 0), 0) || 0;
+        
+        // Get total changes from various sources
+        let totalChanges = 0;
+        if (dashboardData?.totalChanges !== undefined) {
+            totalChanges = dashboardData.totalChanges;
+        } else if (dashboardData?.changes) {
+            totalChanges = Array.isArray(dashboardData.changes) 
+                ? dashboardData.changes.length 
+                : 0;
+        }
+        
+        // Get last check time
+        const lastCheck = workflowStatus?.last_run || dashboardData?.lastUpdated;
+        const lastCheckText = lastCheck ? formatTimeAgo(new Date(lastCheck)) : 'Never';
+        
+        // Update the stats bar
+        this.statsBar.innerHTML = `
+            <div class="stat-item">🏢 <strong>${companyCount}</strong> Companies</div>
+            <div class="stat-item">🔍 <strong>${urlCount}</strong> URLs Monitored</div>
+            <div class="stat-item">📊 <strong>${totalChanges}</strong> Changes Tracked</div>
+            <div class="stat-item">⏰ Last Check: <strong>${lastCheckText}</strong></div>
+        `;
+        
+        }
+
+    /**
+     * Update companies display
+     */
+    updateCompaniesDisplay(companies) {
+        if (!this.companiesContainer) return;
+        
+        if (!companies || companies.length === 0) {
+            this.companiesContainer.innerHTML = 
+                '<h3>📊 Monitored Companies</h3><div class="error-message">No companies found in configuration.</div>';
+            return;
+        }
+        
+        // Sort companies by recent activity
+        const sortedCompanies = [...companies].sort((a, b) => {
+            const dateA = a.lastChange ? new Date(a.lastChange) : new Date(0);
+            const dateB = b.lastChange ? new Date(b.lastChange) : new Date(0);
+            return dateB - dateA;
+        });
+        
+        let html = '<h3>📊 Monitored Companies</h3><div class="company-grid">';
+        
+        sortedCompanies.forEach(company => {
+            html += this.renderCompanyCard(company);
+        });
+        
+        html += '</div>';
+        this.companiesContainer.innerHTML = html;
+    }
+
+    /**
+     * Render a single company card
+     */
+    renderCompanyCard(company) {
+        const companyName = company.name;
+        const urlCount = company.urls?.length || 0;
+        const changeCount = company.changeCount || 0;
+        const lastChange = company.lastChange;
+        const hasRecentChanges = company.hasRecentActivity || false;
+        
+        // Get recent high-interest changes
+        const recentHighInterest = company.recentChanges?.filter(c => 
+            (c.interest_level || 0) >= 7
+        ).length || 0;
+        
+        return `
+            <div class="company-card ${hasRecentChanges ? 'recent-change' : ''}" 
+                 onclick="window.controls.showCompanyDetails('${escapeHtml(companyName)}')">
+                <div class="company-header">
+                    <h4>${escapeHtml(companyName)}</h4>
+                    ${hasRecentChanges ? '<span class="activity-indicator">🔴 Recent Activity</span>' : ''}
+                </div>
+                
+                <div class="company-stats">
+                    <div class="stat">
+                        <span class="stat-label">URLs Monitored</span>
+                        <span class="stat-value">${urlCount}</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Total Changes</span>
+                        <span class="stat-value">${changeCount}</span>
+                    </div>
+                    ${recentHighInterest > 0 ? `
+                    <div class="stat highlight">
+                        <span class="stat-label">High Interest</span>
+                        <span class="stat-value">🌟 ${recentHighInterest}</span>
+                    </div>
+                    ` : ''}
+                </div>
+                
+                ${lastChange ? `
+                <div class="last-activity">
+                    <small>Last change: ${formatTimeAgo(new Date(lastChange))}</small>
+                </div>
+                ` : ''}
+                
+                <div class="company-actions">
+                    <button type="button" class="button button-primary" 
+                            onclick="event.stopPropagation(); window.controls.showCompanyDetails('${escapeHtml(companyName)}')">
+                        View Details
+                    </button>
+                    <button type="button" class="button button-secondary" 
+                            onclick="event.stopPropagation(); window.controls.showCompanyUrls('${escapeHtml(companyName)}')">
+                        View URLs
+                    </button>
+                </div>
+            </div>
+        `;
+    }
+
+    /**
+     * Update recent changes display
+     */
+    async updateRecentChanges(changesData) {
+        if (!this.recentChangesContainer) return;
+        
+        try {
+            // Handle both array and object structures
+            let changes = [];
+            if (Array.isArray(changesData)) {
+                changes = changesData;
+            } else if (changesData?.changes) {
+                changes = changesData.changes;
+            }
+            
+            // Filter for high-interest changes (7+ interest level)
+            const highInterestChanges = filterHighInterestChanges(changes, 7)
+                .sort((a, b) => new Date(b.detected_at || b.detectedAt) - new Date(a.detected_at || a.detectedAt))
+                .slice(0, 5); // Show top 5
+            
+            if (highInterestChanges.length === 0) {
+                this.recentChangesContainer.innerHTML = 
+                    '<p style="color: var(--text-secondary);">No high-interest changes detected recently.</p>';
+                return;
+            }
+            
+            let html = '<div class="recent-changes-list">';
+            
+            highInterestChanges.forEach((change, index) => {
+                html += this.renderRecentChange(change, index);
+            });
+            
+            html += '</div>';
+            this.recentChangesContainer.innerHTML = html;
+            
+        } catch (error) {
+            console.error('Error updating recent changes:', error);
+            this.recentChangesContainer.innerHTML = 
+                '<p class="error-message">Unable to load recent changes.</p>';
+        }
+    }
+
+    /**
+     * Render a single recent change item
+     */
+    renderRecentChange(change, index) {
+        const changeDate = new Date(change.detected_at || change.detectedAt);
+        const timeAgo = formatTimeAgo(changeDate);
+        
+        // Parse AI analysis to get summary
+        let summary = change.summary || '';
+        if (!summary && change.ai_analysis) {
+            try {
+                const analysis = JSON.parse(change.ai_analysis);
+                summary = analysis.summary || '';
+            } catch (e) {
+                summary = 'Change detected';
+            }
+        }
+        
+        const interestEmoji = getInterestEmoji(change.interest_level);
+        
+        // Generate ID if missing
+        const changeId = change.id || `recent-${index}-${Date.now()}`;
+        
+        return `
+            <div class="recent-change-item" 
+                 onclick="window.controls.showChangeDetail('${changeId}', '${escapeHtml(change.company)}', event)">
+                <div class="change-header">
+                    <span class="company-name">${escapeHtml(change.company)}</span>
+                    <span class="interest-indicator">${interestEmoji} ${change.interest_level}/10</span>
+                </div>
+                <div class="change-summary">
+                    ${escapeHtml(summary.substring(0, 150))}${summary.length > 150 ? '...' : ''}
+                </div>
+                <div class="change-time">${timeAgo}</div>
+            </div>
+        `;
+    }
+
+    /**
+     * Show loading state
+     */
+    showLoading(container) {
+        if (container) {
+            container.innerHTML = '<div class="loading">Loading...</div>';
+        }
+    }
+
+    /**
+     * Show error state
+     */
+    showError(container, message) {
+        if (container) {
+            container.innerHTML = `<div class="error-message">${escapeHtml(message)}</div>`;
+        }
+    }
+}
+
+// Create and export singleton instance
+export const dashboard = new Dashboard();
