@@ -1,0 +1,122 @@
+{
+  "id": 488,
+  "company": "OpenAI",
+  "page_url": "pricing",
+  "detected_at": "2025-08-01T19:20:07.000Z",
+  "change_type": "modified",
+  "interest_level": 9,
+  "ai_confidence": 0.95,
+  "summary": "The content has changed from a blocked page to a detailed pricing page for ChatGPT, including various plans such as Free, Plus, Pro, Team, and Enterprise.",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "The content has changed from a blocked page to a detailed pricing page for ChatGPT, including various plans such as Free, Plus, Pro, Team, and Enterprise.",
+    "change_type": "update",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of a pricing page for ChatGPT",
+      "Details of different plans including Free, Plus, Pro, Team, and Enterprise",
+      "Features and limitations of each plan",
+      "Pricing information for each plan"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of a pricing page for ChatGPT indicates a significant shift towards commercialization, which can lead to increased revenue for OpenAI.",
+    "market_signals": [
+      "OpenAI is moving towards commercialization of ChatGPT",
+      "The pricing page indicates a focus on both individual and enterprise customers"
+    ],
+    "competitive_implications": "The pricing page and plans may influence the competitive landscape, as other companies may need to adjust their pricing strategies in response.",
+    "strategic_direction": "OpenAI is focusing on both individual and enterprise customers, indicating a strategic direction towards becoming a leading provider of AI-powered chatbot solutions."
+  },
+  "entities": {
+    "products": [
+      "ChatGPT"
+    ],
+    "features": [
+      "GPT-4o",
+      "GPT-4.1 mini",
+      "GPT-4.1",
+      "GPT-4.5 research preview",
+      "OpenAI o3",
+      "OpenAI o4-mini",
+      "OpenAI o4-mini-high",
+      "OpenAI o3-pro",
+      "Advanced voice",
+      "Standard voice",
+      "Memory",
+      "Memory with past chats",
+      "Search",
+      "Canvas",
+      "Code edits on macOS",
+      "ChatGPT agent",
+      "Projects",
+      "Tasks",
+      "Data analysis",
+      "Vision"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "GPT-4o",
+      "GPT-4.1 mini",
+      "GPT-4.1",
+      "GPT-4.5",
+      "OpenAI o3",
+      "OpenAI o4-mini",
+      "OpenAI o4-mini-high",
+      "OpenAI o3-pro"
+    ],
+    "people": [],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0/month"
+      },
+      {
+        "plan": "Plus",
+        "price": "$20/month"
+      },
+      {
+        "plan": "Pro",
+        "price": "$200/month"
+      },
+      {
+        "plan": "Team",
+        "price": "$25/user/month (billed annually) or $30/user/month (billed monthly)"
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom pricing"
+      }
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The introduction of a pricing page for ChatGPT is a significant strategic move",
+      "The pricing plans indicate a focus on both individual and enterprise customers"
+    ],
+    "opportunities": [
+      "Increased revenue for OpenAI through commercialization of ChatGPT",
+      "Expansion into new markets and customer segments"
+    ],
+    "threats": [
+      "Competition from other companies offering similar AI-powered chatbot solutions",
+      "Potential backlash from customers who are not willing to pay for ChatGPT"
+    ],
+    "recommended_actions": [
+      "Monitor the competitive landscape and adjust pricing strategies accordingly",
+      "Focus on providing high-quality AI-powered chatbot solutions to maintain a competitive edge"
+    ]
+  },
+  "key_insights": [
+    "The introduction of a pricing page for ChatGPT is a significant strategic move",
+    "The pricing plans indicate a focus on both individual and enterprise customers"
+  ],
+  "business_impact": "The introduction of a pricing page for ChatGPT indicates a significant shift towards commercialization, which can lead to increased revenue for OpenAI.",
+  "competitive_implications": "The pricing page and plans may influence the competitive landscape, as other companies may need to adjust their pricing strategies in response.",
+  "content_hash_before": "6973dddd3ef9cb6a2932702f31777faad9c9bf3124d147a84f31aadb6d139546",
+  "content_hash_after": "0a3f7b501bd687df42a0805572b5576c71405546cbb59f23125d8bff939920e8",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
