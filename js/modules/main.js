@@ -19,11 +19,12 @@ import {
     subscribeToState 
 } from './data.js';
 import { api } from './api.js';
-import { formatDate, getRelativeTime, storage, escapeHtml, formatTimeAgo, getInterestEmoji } from './utils.js';
+import { formatDate, getRelativeTime, storage, escapeHtml, getInterestEmoji } from './utils.js';
 import { initControls } from './controls.js';
 import { initFilters, applyFilters, createFilterUI } from './filters.js';
 import { dashboard } from './dashboard.js';
 import { ui } from './ui.js';
+import { VERSION, displayVersion } from './version.js';
 
 // Global application state
 const appState = {
@@ -70,6 +71,9 @@ export async function init() {
         
         // 7. Subscribe to state changes
         setupStateSubscriptions();
+        
+        // 8. Display version information
+        displayVersionInfo();
         
         appState.initialized = true;
         
@@ -218,7 +222,7 @@ function renderFilteredChanges(changes) {
                 <div class="change-header">
                     <span class="change-type ${change.change_type}">${change.change_type}</span>
                     ${companyBadge}
-                    <span class="change-date">${formatTimeAgo(change.detection_date)}</span>
+                    <span class="change-date">${getRelativeTime(change.detection_date)}</span>
                 </div>
                 <div class="change-content">
                     <strong>${escapeHtml(change.title || change.item || 'Change')}</strong>
@@ -257,6 +261,19 @@ export function clearFilters() {
     if (appState.currentView === 'changes') {
         renderChangesView();
     }
+}
+
+/**
+ * Display version information
+ * @private
+ */
+function displayVersionInfo() {
+    // Try to display version in a dedicated element if it exists
+    displayVersion('versionInfo');
+    
+    // Also log to console for debugging
+    console.log(`🚀 AI Monitor ${VERSION.number} - ${VERSION.name}`);
+    console.log(`Build: ${VERSION.buildNumber} | Released: ${VERSION.releaseDate}`);
 }
 
 /**
