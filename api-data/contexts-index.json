@@ -1,11 +1,11 @@
 {
-  "generated_at": "2025-08-01T18:43:21.483Z",
-  "total_entities": 238,
+  "generated_at": "2025-08-01T19:23:21.863Z",
+  "total_entities": 263,
   "entity_types": {
     "companies": 6,
-    "technologies": 96,
+    "technologies": 102,
     "concepts": 27,
-    "products": 129
+    "products": 150
   },
-  "entities_with_contexts": 45
+  "entities_with_contexts": 54
 }

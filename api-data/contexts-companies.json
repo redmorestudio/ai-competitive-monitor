@@ -1,6 +1,6 @@
 {
   "type": "companies",
-  "generated_at": "2025-08-01T18:43:21.483Z",
+  "generated_at": "2025-08-01T19:23:21.863Z",
   "entity_count": 6,
   "context_count": 300,
   "contexts": {
@@ -14,7 +14,447 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research"
+          "Perplexity Research",
+          "AI Mode"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/blog",
+        "text": "Title: OpenAI News | OpenAI Skip to main content Log in Switch to ChatGPT (opens in a",
+        "position": 7,
+        "co_mentions": [
+          "ChatGPT"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/blog",
+        "text": "Title: OpenAI News | OpenAI Skip to main content Log in Switch to ChatGPT (opens in a",
+        "position": 21,
+        "co_mentions": [
+          "ChatGPT"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/blog",
+        "text": "in a new window) Research Safety For Business ChatGPT Sora API Platform Stories Company News OpenAI News | OpenAI News All Company Research Product Safety Security Global Affairs Filter Sort Switch",
+        "position": 241,
+        "co_mentions": [
+          "API",
+          "ChatGPT",
+          "Sora",
+          "API Platform"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/blog",
+        "text": "in a new window) Research Safety For Business ChatGPT Sora API Platform Stories Company News OpenAI News | OpenAI News All Company Research Product Safety Security Global Affairs Filter Sort Switch",
+        "position": 255,
+        "co_mentions": [
+          "API",
+          "ChatGPT",
+          "Sora",
+          "API Platform"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/blog",
+        "text": "Codex Release May 16, 2025 Introducing study mode in ChatGPT Product Jul 29, 2025 Announcing OpenAI DevDay 2025 Company Jul 23, 2025 Stargate advances with 4.5 GW partnership with Oracle Company",
+        "position": 670,
+        "co_mentions": [
+          "Oracle",
+          "Codex",
+          "ChatGPT",
+          "ChatGPT Pro"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/blog",
+        "text": "Card Publication Jul 17, 2025 Introducing ChatGPT agent Product Jul 17, 2025 Statement from the OpenAI Board of Directors on the Nonprofit Commission Report Global Affairs Jul 17, 2025 AI in",
+        "position": 1050,
+        "co_mentions": [
+          "ChatGPT"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/blog",
+        "text": "ublication Jul 17, 2025 Introducing ChatGPT agent Product Jul 17, 2025 Statement from the OpenAI Board of Directors on the Nonprofit Commission Report Global Affairs Jul 17, 2025 AI in",
+        "position": 1157,
+        "co_mentions": [
+          "ChatGPT"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/blog",
+        "text": "generation model in the API Product Apr 23, 2025 Introducing GPT-4.5 Release Feb 27, 2025 OpenAI o3-mini Release Jan 31, 2025 Research View all Pioneering an AI clinical copilot with Penda",
+        "position": 1358,
+        "co_mentions": [
+          "API",
+          "CLI",
+          "GPT-4",
+          "Copilot"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/blog",
+        "text": "practices Safety Sep 16, 2024 Our Research Research Index Research Overview Research Residency Latest Advancements OpenAI o3 OpenAI o4-mini GPT-4o GPT-4o mini Sora Safety Safety Approach Security & Privacy Trust &",
+        "position": 1946,
+        "co_mentions": [
+          "IDE",
+          "GPT-4",
+          "Sora",
+          "Research Residency"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/blog",
+        "text": "practices Safety Sep 16, 2024 Our Research Research Index Research Overview Research Residency Latest Advancements OpenAI o3 OpenAI o4-mini GPT-4o GPT-4o mini Sora Safety Safety Approach Security & Privacy Trust &",
+        "position": 1956,
+        "co_mentions": [
+          "IDE",
+          "GPT-4",
+          "Sora",
+          "Research Residency"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/blog",
+        "text": "(opens in a new window) (opens in a new window) (opens in a new window) OpenAI © 2015–2025Manage Cookies English United States",
+        "position": 2757,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "Title: ChatGPT Pricing | OpenAI Skip to main content Log in Switch to ChatGPT (opens in a new window) Sora",
+        "position": 25,
+        "co_mentions": [
+          "ChatGPT",
+          "Sora"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "in a new window) Home Explore ChatGPT Team Enterprise Education Pricing Download ChatGPT Pricing | OpenAI ChatGPT Pricing See pricing for our individual, team, and enterprise plans. Free Explore how AI",
+        "position": 251,
+        "co_mentions": [
+          "ChatGPT",
+          "ChatGPT Team",
+          "Enterprise plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "Access to GPT‑4.1 mini Real-time data from the web with search Limited access to GPT‑4o, OpenAI o4-mini, and deep research Limited access to file uploads, data analysis, image generation, and voice",
+        "position": 480,
+        "co_mentions": [
+          "Web",
+          "Image generation"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "advanced voice mode with video and screensharing Access to ChatGPT agent and multiple reasoning models (OpenAI o3, o4-mini, and o4-mini-high) Access to a research preview of GPT‑4.5, our largest model yet,",
+        "position": 1058,
+        "co_mentions": [
+          "IDE",
+          "ChatGPT"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "month Get Plus (opens in a new window) Limits apply Pro Get the best of OpenAI with the highest level of access Everything in Plus Unlimited access to all reasoning models",
+        "position": 1415,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "GPT‑4o Unlimited access to advanced voice, with higher limits for video and screensharing Access to OpenAI o3‑pro, which uses more compute for the best answers to the hardest questions Extended access",
+        "position": 1623,
+        "co_mentions": [
+          "IDE"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "Yes Plan: Team, Feature: GPT-4.5 research preview, Yes Plan: Enterprise, Feature: GPT-4.5 research preview, Yes OpenAI o3 Plan: Free, Feature: OpenAI o3, No Standard Plan: Plus, Feature: OpenAI o3, Standard Unlimited*",
+        "position": 5964,
+        "co_mentions": [
+          "GPT-4",
+          "Standard Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "Yes Plan: Team, Feature: GPT-4.5 research preview, Yes Plan: Enterprise, Feature: GPT-4.5 research preview, Yes OpenAI o3 Plan: Free, Feature: OpenAI o3, No Standard Plan: Plus, Feature: OpenAI o3, Standard Unlimited*",
+        "position": 5995,
+        "co_mentions": [
+          "GPT-4",
+          "Standard Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "Yes Plan: Team, Feature: GPT-4.5 research preview, Yes Plan: Enterprise, Feature: GPT-4.5 research preview, Yes OpenAI o3 Plan: Free, Feature: OpenAI o3, No Standard Plan: Plus, Feature: OpenAI o3, Standard Unlimited*",
+        "position": 6039,
+        "co_mentions": [
+          "GPT-4",
+          "Standard Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "rch preview, Yes Plan: Enterprise, Feature: GPT-4.5 research preview, Yes OpenAI o3 Plan: Free, Feature: OpenAI o3, No Standard Plan: Plus, Feature: OpenAI o3, Standard Unlimited*",
+        "position": 6090,
+        "co_mentions": [
+          "GPT-4",
+          "Standard Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "search preview, Yes OpenAI o3 Plan: Free, Feature: OpenAI o3, No Standard Plan: Plus, Feature: OpenAI o3, Standard Unlimited*",
+        "position": 6144,
+        "co_mentions": [
+          "Standard Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": ", No Standard Plan: Plus, Feature: OpenAI o3, Standard Unlimited* Plan: Pro, Feature: OpenAI o3, Unlimited* Flexible** Plan: Team, Feature: OpenAI o3,",
+        "position": 6204,
+        "co_mentions": [
+          "Standard Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "us, Feature: OpenAI o3, Standard Unlimited* Plan: Pro, Feature: OpenAI o3, Unlimited* Flexible** Plan: Team, Feature: OpenAI o3,",
+        "position": 6226,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "Plan: Pro, Feature: OpenAI o3, Unlimited* Flexible** Plan: Team, Feature: OpenAI o3, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o3,",
+        "position": 6270,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "lan: Team, Feature: OpenAI o3, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o3, Flexible** OpenAI o4-mini Limited Plan: Free, Feature:",
+        "position": 6324,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "n: Enterprise, Feature: OpenAI o3, Flexible** OpenAI o4-mini Limited Plan: Free, Feature: OpenAI o4-mini, Limited Standard Plan: Plus, Feature:",
+        "position": 6380,
+        "co_mentions": [
+          "Standard Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "i Limited Plan: Free, Feature: OpenAI o4-mini, Limited Standard Plan: Plus, Feature: OpenAI o4-mini, Standard Unlimited* Plan: Pro, Feature: OpenAI o4-mini,",
+        "position": 6439,
+        "co_mentions": [
+          "Standard Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "lan: Plus, Feature: OpenAI o4-mini, Standard Unlimited* Plan: Pro, Feature: OpenAI o4-mini, Unlimited* Flexible** Plan: Team, Feature: OpenAI o4-mini,",
+        "position": 6504,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "o4-mini, Standard Unlimited* Plan: Pro, Feature: OpenAI o4-mini, Unlimited* Flexible** Plan: Team, Feature: OpenAI o4-mini, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini,",
+        "position": 6531,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "eature: OpenAI o4-mini, Unlimited* Flexible** Plan: Team, Feature: OpenAI o4-mini, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini,",
+        "position": 6572,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "am, Feature: OpenAI o4-mini, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini, Flexible** OpenAI o4-mini-high Plan: Free, Feature: OpenAI",
+        "position": 6626,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "rprise, Feature: OpenAI o4-mini, Flexible** OpenAI o4-mini-high Plan: Free, Feature: OpenAI o4-mini-high, No Standard Plan: Plus, Feature: OpenAI",
+        "position": 6687,
+        "co_mentions": [
+          "Standard Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "Plan: Free, Feature: OpenAI o4-mini-high, No Standard Plan: Plus, Feature: OpenAI o4-mini-high, Standard Unlimited* Plan: Pro, Feature: OpenAI o4-mini-high,",
+        "position": 6751,
+        "co_mentions": [
+          "Standard Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "ure: OpenAI o4-mini-high, Standard Unlimited* Plan: Pro, Feature: OpenAI o4-mini-high, Unlimited* Flexible** Plan: Team, Feature: OpenAI o4-mini-high,",
+        "position": 6821,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "rd Unlimited* Plan: Pro, Feature: OpenAI o4-mini-high, Unlimited* Flexible** Plan: Team, Feature: OpenAI o4-mini-high, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini-high,",
+        "position": 6853,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "penAI o4-mini-high, Unlimited* Flexible** Plan: Team, Feature: OpenAI o4-mini-high, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini-high, Flexible** OpenAI o3-pro Plan: Free, Feature: OpenAI",
+        "position": 6888,
+        "co_mentions": [
+          "Pro Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "** Plan: Team, Feature: OpenAI o4-mini-high, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini-high, Flexible** OpenAI o3-pro Plan: Free, Feature: OpenAI",
+        "position": 6927,
+        "co_mentions": [
+          "Pro Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "-high, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini-high, Flexible** OpenAI o3-pro Plan: Free, Feature: OpenAI o3-pro, No Plan: Plus, Feature: OpenAI o3-pro,",
+        "position": 6965,
+        "co_mentions": [
+          "Pro Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "ure: OpenAI o4-mini-high, Flexible** OpenAI o3-pro Plan: Free, Feature: OpenAI o3-pro, No Plan: Plus, Feature: OpenAI o3-pro,",
+        "position": 7016,
+        "co_mentions": [
+          "Pro Plan"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "eature: OpenAI o3-pro, No Plan: Plus, Feature: OpenAI o3-pro, No Plan: Pro, Feature: OpenAI o3-pro, Yes Flexible**",
+        "position": 7080,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "or Enterprise offers a more powerful experience through additional features and access to GPT‑4. Does OpenAI offer a ChatGPT plan for educational institutions? Yes, ChatGPT Edu is an affordable plan built",
+        "position": 20894,
+        "co_mentions": [
+          "ChatGPT"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "robust security and data privacy, and administrative controls. Contact our team to learn more. Does OpenAI offer a discount for nonprofits? Yes. Through OpenAI for Nonprofits, nonprofits can now access a",
+        "position": 21236,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "robust security and data privacy, and administrative controls. Contact our team to learn more. Does OpenAI offer a discount for nonprofits? Yes. Through OpenAI for Nonprofits, nonprofits can now access a",
+        "position": 21290,
+        "co_mentions": []
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "used and our Enterprise privacy. Our Research Research Index Research Overview Research Residency Latest Advancements OpenAI o3 OpenAI o4-mini GPT-4o GPT-4o mini Sora Safety Safety Approach Security & Privacy Trust &",
+        "position": 22766,
+        "co_mentions": [
+          "IDE",
+          "GPT-4",
+          "Sora",
+          "Research Residency"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "used and our Enterprise privacy. Our Research Research Index Research Overview Research Residency Latest Advancements OpenAI o3 OpenAI o4-mini GPT-4o GPT-4o mini Sora Safety Safety Approach Security & Privacy Trust &",
+        "position": 22776,
+        "co_mentions": [
+          "IDE",
+          "GPT-4",
+          "Sora",
+          "Research Residency"
+        ]
+      },
+      {
+        "company": "OpenAI",
+        "source_url": "https://openai.com/pricing",
+        "text": "(opens in a new window) (opens in a new window) (opens in a new window) OpenAI © 2015–2025Manage Cookies English United States",
+        "position": 23577,
+        "co_mentions": []
+      },
+      {
+        "company": "Perplexity AI",
+        "source_url": "https://perplexity.ai/pro",
+        "text": "Unlimited access to Perplexity Labs Unlimited access to Perplexity Research Use advanced AI models like OpenAI o3-pro and Anthropic Claude 4 Opus Priority support For personal use only, and subject to",
+        "position": 880,
+        "co_mentions": [
+          "Anthropic",
+          "Claude",
+          "Perplexity Labs",
+          "Perplexity Research",
+          "AI Mode"
         ]
       },
       {
@@ -26,7 +466,8 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research"
+          "Perplexity Research",
+          "AI Mode"
         ]
       },
       {
@@ -38,7 +479,8 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research"
+          "Perplexity Research",
+          "AI Mode"
         ]
       },
       {
@@ -50,7 +492,8 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research"
+          "Perplexity Research",
+          "AI Mode"
         ]
       },
       {
@@ -62,7 +505,8 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research"
+          "Perplexity Research",
+          "AI Mode"
         ]
       },
       {
@@ -74,7 +518,8 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research"
+          "Perplexity Research",
+          "AI Mode"
         ]
       },
       {
@@ -86,7 +531,8 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research"
+          "Perplexity Research",
+          "AI Mode"
         ]
       },
       {
@@ -98,7 +544,8 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research"
+          "Perplexity Research",
+          "AI Mode"
         ]
       },
       {
@@ -110,7 +557,8 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research"
+          "Perplexity Research",
+          "AI Mode"
         ]
       },
       {
@@ -122,7 +570,8 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research"
+          "Perplexity Research",
+          "AI Mode"
         ]
       },
       {
@@ -134,7 +583,8 @@
           "Anthropic",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research"
+          "Perplexity Research",
+          "AI Mode"
         ]
       },
       {
@@ -183,8 +633,9 @@
         "text": "Health Publication Jul 22, 2025 Toward understanding and preventing misalignment generalization Publication Jun 18, 2025 OpenAI for business View all Invideo AI uses OpenAI models to create videos 10x faster API",
         "position": 3279,
         "co_mentions": [
+          "API",
           "IDE",
-          "API"
+          "AI Mode"
         ]
       },
       {
@@ -193,8 +644,9 @@
         "text": "Health Publication Jul 22, 2025 Toward understanding and preventing misalignment generalization Publication Jun 18, 2025 OpenAI for business View all Invideo AI uses OpenAI models to create videos 10x faster API",
         "position": 3324,
         "co_mentions": [
+          "API",
           "IDE",
-          "API"
+          "AI Mode"
         ]
       },
       {
@@ -206,7 +658,8 @@
           "IDE",
           "GPT-4",
           "ChatGPT",
-          "Sora"
+          "Sora",
+          "Research Residency"
         ]
       },
       {
@@ -218,7 +671,8 @@
           "IDE",
           "GPT-4",
           "ChatGPT",
-          "Sora"
+          "Sora",
+          "Research Residency"
         ]
       },
       {
@@ -502,446 +956,6 @@
         "co_mentions": [
           "ChatGPT"
         ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "does ChatGPT use my data? Our Research Research Index Research Overview Research Residency Latest Advancements OpenAI o3 OpenAI o4-mini GPT-4o GPT-4o mini Sora Safety Safety Approach Security & Privacy Trust &",
-        "position": 20872,
-        "co_mentions": [
-          "IDE",
-          "GPT-4",
-          "ChatGPT",
-          "Sora"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "does ChatGPT use my data? Our Research Research Index Research Overview Research Residency Latest Advancements OpenAI o3 OpenAI o4-mini GPT-4o GPT-4o mini Sora Safety Safety Approach Security & Privacy Trust &",
-        "position": 20882,
-        "co_mentions": [
-          "IDE",
-          "GPT-4",
-          "ChatGPT",
-          "Sora"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "(opens in a new window) (opens in a new window) (opens in a new window) OpenAI © 2015–2025Manage Cookies English United States",
-        "position": 21683,
-        "co_mentions": []
-      },
-      {
-        "company": "Perplexity AI",
-        "source_url": "https://perplexity.ai/pro",
-        "text": "Unlimited access to Perplexity Labs Unlimited access to Perplexity Research Use advanced AI models like OpenAI o3-pro and Anthropic Claude 4 Opus Priority support For personal use only, and subject to",
-        "position": 901,
-        "co_mentions": [
-          "Anthropic",
-          "Claude",
-          "Perplexity Labs",
-          "Perplexity Research"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com",
-        "text": "Title: OpenAI Skip to main content Log in Switch to ChatGPT (opens in a new window) Sora",
-        "position": 7,
-        "co_mentions": [
-          "ChatGPT",
-          "Sora"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com",
-        "text": "in a new window) Research Safety For Business ChatGPT Sora API Platform Stories Company News OpenAI AI as the greatest source of empowerment for all Fidji Simo Close What can I",
-        "position": 227,
-        "co_mentions": [
-          "API",
-          "ChatGPT",
-          "Sora",
-          "API Platform"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com",
-        "text": "New York Times’ data demands in order to protect user privacy Security Jun 5, 2025 OpenAI Deutschland Company May 22, 2025 Stories View all Lyndon Barrois & Sora Sora Dec 4,",
-        "position": 2835,
-        "co_mentions": [
-          "Sora"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com",
-        "text": "nail art with ChatGPT ChatGPT Feb 4, 2025 4 min read Economics and reasoning with OpenAI o1 ChatGPT Sep 13, 2024 2 min read Latest research View all Pioneering an AI",
-        "position": 3040,
-        "co_mentions": [
-          "ChatGPT"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com",
-        "text": "Health Publication Jul 22, 2025 Toward understanding and preventing misalignment generalization Publication Jun 18, 2025 OpenAI for business View all Invideo AI uses OpenAI models to create videos 10x faster API",
-        "position": 3279,
-        "co_mentions": [
-          "IDE",
-          "API"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com",
-        "text": "Health Publication Jul 22, 2025 Toward understanding and preventing misalignment generalization Publication Jun 18, 2025 OpenAI for business View all Invideo AI uses OpenAI models to create videos 10x faster API",
-        "position": 3324,
-        "co_mentions": [
-          "IDE",
-          "API"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com",
-        "text": "Get started with ChatGPT Download Our Research Research Index Research Overview Research Residency Latest Advancements OpenAI o3 OpenAI o4-mini GPT-4o GPT-4o mini Sora Safety Safety Approach Security & Privacy Trust &",
-        "position": 3621,
-        "co_mentions": [
-          "IDE",
-          "GPT-4",
-          "ChatGPT",
-          "Sora"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com",
-        "text": "Get started with ChatGPT Download Our Research Research Index Research Overview Research Residency Latest Advancements OpenAI o3 OpenAI o4-mini GPT-4o GPT-4o mini Sora Safety Safety Approach Security & Privacy Trust &",
-        "position": 3631,
-        "co_mentions": [
-          "IDE",
-          "GPT-4",
-          "ChatGPT",
-          "Sora"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com",
-        "text": "(opens in a new window) (opens in a new window) (opens in a new window) OpenAI © 2015–2025Manage Cookies English United States",
-        "position": 4432,
-        "co_mentions": []
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "Title: ChatGPT Pricing | OpenAI Skip to main content Log in Switch to ChatGPT (opens in a new window) Sora",
-        "position": 25,
-        "co_mentions": [
-          "ChatGPT",
-          "Sora"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "in a new window) Home Explore ChatGPT Team Enterprise Education Pricing Download ChatGPT Pricing | OpenAI ChatGPT Pricing See pricing for our individual, team, and enterprise plans. Free Explore how AI",
-        "position": 251,
-        "co_mentions": [
-          "ChatGPT",
-          "ChatGPT Team",
-          "Enterprise plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "Access to GPT‑4.1 mini Real-time data from the web with search Limited access to GPT‑4o, OpenAI o4-mini, and deep research Limited access to file uploads, data analysis, image generation, and voice",
-        "position": 480,
-        "co_mentions": [
-          "Web",
-          "Image generation"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "advanced voice mode with video and screensharing Access to ChatGPT agent and multiple reasoning models (OpenAI o3, o4-mini, and o4-mini-high) Access to a research preview of GPT‑4.5, our largest model yet,",
-        "position": 1058,
-        "co_mentions": [
-          "IDE",
-          "ChatGPT"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "month Get Plus (opens in a new window) Limits apply Pro Get the best of OpenAI with the highest level of access Everything in Plus Unlimited access to all reasoning models",
-        "position": 1415,
-        "co_mentions": []
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "GPT‑4o Unlimited access to advanced voice, with higher limits for video and screensharing Access to OpenAI o3‑pro, which uses more compute for the best answers to the hardest questions Extended access",
-        "position": 1623,
-        "co_mentions": [
-          "IDE"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "Yes Plan: Team, Feature: GPT-4.5 research preview, Yes Plan: Enterprise, Feature: GPT-4.5 research preview, Yes OpenAI o3 Plan: Free, Feature: OpenAI o3, No Standard Plan: Plus, Feature: OpenAI o3, Standard Unlimited*",
-        "position": 5964,
-        "co_mentions": [
-          "GPT-4",
-          "Standard Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "Yes Plan: Team, Feature: GPT-4.5 research preview, Yes Plan: Enterprise, Feature: GPT-4.5 research preview, Yes OpenAI o3 Plan: Free, Feature: OpenAI o3, No Standard Plan: Plus, Feature: OpenAI o3, Standard Unlimited*",
-        "position": 5995,
-        "co_mentions": [
-          "GPT-4",
-          "Standard Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "Yes Plan: Team, Feature: GPT-4.5 research preview, Yes Plan: Enterprise, Feature: GPT-4.5 research preview, Yes OpenAI o3 Plan: Free, Feature: OpenAI o3, No Standard Plan: Plus, Feature: OpenAI o3, Standard Unlimited*",
-        "position": 6039,
-        "co_mentions": [
-          "GPT-4",
-          "Standard Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "rch preview, Yes Plan: Enterprise, Feature: GPT-4.5 research preview, Yes OpenAI o3 Plan: Free, Feature: OpenAI o3, No Standard Plan: Plus, Feature: OpenAI o3, Standard Unlimited*",
-        "position": 6090,
-        "co_mentions": [
-          "GPT-4",
-          "Standard Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "search preview, Yes OpenAI o3 Plan: Free, Feature: OpenAI o3, No Standard Plan: Plus, Feature: OpenAI o3, Standard Unlimited*",
-        "position": 6144,
-        "co_mentions": [
-          "Standard Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": ", No Standard Plan: Plus, Feature: OpenAI o3, Standard Unlimited* Plan: Pro, Feature: OpenAI o3, Unlimited* Flexible** Plan: Team, Feature: OpenAI o3,",
-        "position": 6204,
-        "co_mentions": [
-          "Standard Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "us, Feature: OpenAI o3, Standard Unlimited* Plan: Pro, Feature: OpenAI o3, Unlimited* Flexible** Plan: Team, Feature: OpenAI o3,",
-        "position": 6226,
-        "co_mentions": []
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "Plan: Pro, Feature: OpenAI o3, Unlimited* Flexible** Plan: Team, Feature: OpenAI o3, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o3,",
-        "position": 6270,
-        "co_mentions": []
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "lan: Team, Feature: OpenAI o3, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o3, Flexible** OpenAI o4-mini Limited Plan: Free, Feature:",
-        "position": 6324,
-        "co_mentions": []
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "n: Enterprise, Feature: OpenAI o3, Flexible** OpenAI o4-mini Limited Plan: Free, Feature: OpenAI o4-mini, Limited Standard Plan: Plus, Feature:",
-        "position": 6380,
-        "co_mentions": [
-          "Standard Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "i Limited Plan: Free, Feature: OpenAI o4-mini, Limited Standard Plan: Plus, Feature: OpenAI o4-mini, Standard Unlimited* Plan: Pro, Feature: OpenAI o4-mini,",
-        "position": 6439,
-        "co_mentions": [
-          "Standard Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "lan: Plus, Feature: OpenAI o4-mini, Standard Unlimited* Plan: Pro, Feature: OpenAI o4-mini, Unlimited* Flexible** Plan: Team, Feature: OpenAI o4-mini,",
-        "position": 6504,
-        "co_mentions": []
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "o4-mini, Standard Unlimited* Plan: Pro, Feature: OpenAI o4-mini, Unlimited* Flexible** Plan: Team, Feature: OpenAI o4-mini, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini,",
-        "position": 6531,
-        "co_mentions": []
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "eature: OpenAI o4-mini, Unlimited* Flexible** Plan: Team, Feature: OpenAI o4-mini, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini,",
-        "position": 6572,
-        "co_mentions": []
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "am, Feature: OpenAI o4-mini, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini, Flexible** OpenAI o4-mini-high Plan: Free, Feature: OpenAI",
-        "position": 6626,
-        "co_mentions": []
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "rprise, Feature: OpenAI o4-mini, Flexible** OpenAI o4-mini-high Plan: Free, Feature: OpenAI o4-mini-high, No Standard Plan: Plus, Feature: OpenAI",
-        "position": 6687,
-        "co_mentions": [
-          "Standard Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "Plan: Free, Feature: OpenAI o4-mini-high, No Standard Plan: Plus, Feature: OpenAI o4-mini-high, Standard Unlimited* Plan: Pro, Feature: OpenAI o4-mini-high,",
-        "position": 6751,
-        "co_mentions": [
-          "Standard Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "ure: OpenAI o4-mini-high, Standard Unlimited* Plan: Pro, Feature: OpenAI o4-mini-high, Unlimited* Flexible** Plan: Team, Feature: OpenAI o4-mini-high,",
-        "position": 6821,
-        "co_mentions": []
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "rd Unlimited* Plan: Pro, Feature: OpenAI o4-mini-high, Unlimited* Flexible** Plan: Team, Feature: OpenAI o4-mini-high, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini-high,",
-        "position": 6853,
-        "co_mentions": []
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "penAI o4-mini-high, Unlimited* Flexible** Plan: Team, Feature: OpenAI o4-mini-high, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini-high, Flexible** OpenAI o3-pro Plan: Free, Feature: OpenAI",
-        "position": 6888,
-        "co_mentions": [
-          "Pro Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "** Plan: Team, Feature: OpenAI o4-mini-high, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini-high, Flexible** OpenAI o3-pro Plan: Free, Feature: OpenAI",
-        "position": 6927,
-        "co_mentions": [
-          "Pro Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "-high, Flexible** Flexible** Plan: Enterprise, Feature: OpenAI o4-mini-high, Flexible** OpenAI o3-pro Plan: Free, Feature: OpenAI o3-pro, No Plan: Plus, Feature: OpenAI o3-pro,",
-        "position": 6965,
-        "co_mentions": [
-          "Pro Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "ure: OpenAI o4-mini-high, Flexible** OpenAI o3-pro Plan: Free, Feature: OpenAI o3-pro, No Plan: Plus, Feature: OpenAI o3-pro,",
-        "position": 7016,
-        "co_mentions": [
-          "Pro Plan"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "eature: OpenAI o3-pro, No Plan: Plus, Feature: OpenAI o3-pro, No Plan: Pro, Feature: OpenAI o3-pro, Yes Flexible**",
-        "position": 7080,
-        "co_mentions": []
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "and Team and annual plans for Team and Enterprise. Is ChatGPT free to use? Does OpenAI offer a ChatGPT plan for educational institutions? Does OpenAI offer a discount for nonprofits? How",
-        "position": 20516,
-        "co_mentions": [
-          "ChatGPT"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "and Team and annual plans for Team and Enterprise. Is ChatGPT free to use? Does OpenAI offer a ChatGPT plan for educational institutions? Does OpenAI offer a discount for nonprofits? How",
-        "position": 20579,
-        "co_mentions": [
-          "ChatGPT"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "does ChatGPT use my data? Our Research Research Index Research Overview Research Residency Latest Advancements OpenAI o3 OpenAI o4-mini GPT-4o GPT-4o mini Sora Safety Safety Approach Security & Privacy Trust &",
-        "position": 20842,
-        "co_mentions": [
-          "IDE",
-          "GPT-4",
-          "ChatGPT",
-          "Sora"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "does ChatGPT use my data? Our Research Research Index Research Overview Research Residency Latest Advancements OpenAI o3 OpenAI o4-mini GPT-4o GPT-4o mini Sora Safety Safety Approach Security & Privacy Trust &",
-        "position": 20852,
-        "co_mentions": [
-          "IDE",
-          "GPT-4",
-          "ChatGPT",
-          "Sora"
-        ]
-      },
-      {
-        "company": "OpenAI",
-        "source_url": "https://openai.com/pricing",
-        "text": "(opens in a new window) (opens in a new window) (opens in a new window) OpenAI © 2015–2025Manage Cookies English United States",
-        "position": 21653,
-        "co_mentions": []
       }
     ],
     "Anthropic": [
@@ -954,7 +968,8 @@
           "OpenAI",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research"
+          "Perplexity Research",
+          "AI Mode"
         ]
       },
       {
@@ -1012,14 +1027,18 @@
         "source_url": "https://anthropic.com",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 2581,
-        "co_mentions": []
+        "co_mentions": [
+          "MCP"
+        ]
       },
       {
         "company": "Anthropic",
         "source_url": "https://anthropic.com",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 2631,
-        "co_mentions": []
+        "co_mentions": [
+          "MCP"
+        ]
       },
       {
         "company": "Anthropic",
@@ -1042,14 +1061,18 @@
         "source_url": "https://anthropic.com/claude",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 3043,
-        "co_mentions": []
+        "co_mentions": [
+          "MCP"
+        ]
       },
       {
         "company": "Anthropic",
         "source_url": "https://anthropic.com/claude",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 3093,
-        "co_mentions": []
+        "co_mentions": [
+          "MCP"
+        ]
       },
       {
         "company": "Anthropic",
@@ -1216,8 +1239,8 @@
         "text": "with a new bug bounty program May 14, 2025 Product Introducing web search on the Anthropic API May 07, 2025 Announcements Introducing Anthropic's AI for Science Program May 05, 2025 Product",
         "position": 2683,
         "co_mentions": [
-          "API",
           "Web",
+          "API",
           "Anthropic API"
         ]
       },
@@ -1382,8 +1405,8 @@
         "text": "million riders and over 1 million drivers Feb 6, 2025 Product Introducing Citations on the Anthropic API Jan 23, 2025 Announcements Anthropic achieves ISO 42001 certification for responsible AI Jan 13,",
         "position": 5330,
         "co_mentions": [
-          "IDE",
           "API",
+          "IDE",
           "Anthropic API"
         ]
       },
@@ -1394,6 +1417,7 @@
         "position": 6754,
         "co_mentions": [
           "API",
+          "Salesforce",
           "Claude",
           "Anthropic API",
           "Claude for Enterprise",
@@ -1408,6 +1432,7 @@
         "position": 6870,
         "co_mentions": [
           "API",
+          "Salesforce",
           "Claude",
           "Anthropic API",
           "Claude for Enterprise",
@@ -1422,8 +1447,7 @@
         "position": 7196,
         "co_mentions": [
           "Android",
-          "Claude",
-          "Claude Android app"
+          "Claude"
         ]
       },
       {
@@ -1540,14 +1564,18 @@
         "source_url": "https://anthropic.com/news",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 11889,
-        "co_mentions": []
+        "co_mentions": [
+          "MCP"
+        ]
       },
       {
         "company": "Anthropic",
         "source_url": "https://anthropic.com/news",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 11939,
-        "co_mentions": []
+        "co_mentions": [
+          "MCP"
+        ]
       },
       {
         "company": "Anthropic",
@@ -1570,14 +1598,18 @@
         "source_url": "https://anthropic.com/pricing",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 1790,
-        "co_mentions": []
+        "co_mentions": [
+          "MCP"
+        ]
       },
       {
         "company": "Anthropic",
         "source_url": "https://anthropic.com/pricing",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 1840,
-        "co_mentions": []
+        "co_mentions": [
+          "MCP"
+        ]
       },
       {
         "company": "Anthropic",
@@ -1608,6 +1640,7 @@
         "co_mentions": [
           "API",
           "Claude",
+          "MCP",
           "Anthropic API",
           "Claude Code"
         ]
@@ -1619,6 +1652,7 @@
         "position": 546,
         "co_mentions": [
           "API",
+          "SDK",
           "SDKs",
           "Claude",
           "Anthropic Console"
@@ -1631,8 +1665,7 @@
         "position": 1104,
         "co_mentions": [
           "Claude",
-          "Claude Code",
-          "Projects"
+          "Claude Code"
         ]
       },
       {
@@ -1642,8 +1675,7 @@
         "position": 1131,
         "co_mentions": [
           "Claude",
-          "Claude Code",
-          "Projects"
+          "Claude Code"
         ]
       },
       {
@@ -1653,8 +1685,7 @@
         "position": 1178,
         "co_mentions": [
           "Claude",
-          "Claude Code",
-          "Projects"
+          "Claude Code"
         ]
       },
       {
@@ -1664,8 +1695,7 @@
         "position": 1248,
         "co_mentions": [
           "Claude",
-          "Claude Code",
-          "Projects"
+          "Claude Code"
         ]
       },
       {
@@ -1677,7 +1707,8 @@
           "OpenAI",
           "Claude",
           "Perplexity Labs",
-          "Perplexity Research"
+          "Perplexity Research",
+          "AI Mode"
         ]
       },
       {
@@ -1735,14 +1766,18 @@
         "source_url": "https://anthropic.com",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 2581,
-        "co_mentions": []
+        "co_mentions": [
+          "MCP"
+        ]
       },
       {
         "company": "Anthropic",
         "source_url": "https://anthropic.com",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
         "position": 2631,
-        "co_mentions": []
+        "co_mentions": [
+          "MCP"
+        ]
       },
       {
         "company": "Anthropic",
@@ -1764,21 +1799,25 @@
         "company": "Anthropic",
         "source_url": "https://anthropic.com/claude",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
-        "position": 2983,
-        "co_mentions": []
+        "position": 3043,
+        "co_mentions": [
+          "MCP"
+        ]
       },
       {
         "company": "Anthropic",
         "source_url": "https://anthropic.com/claude",
         "text": "scaling policy Security and compliance Solutions AI agents Coding Customer support Education Financial services Learn Anthropic Academy Customer stories Engineering at Anthropic MCP Integrations Partner Directory Explore About us Careers Events",
-        "position": 3033,
-        "co_mentions": []
+        "position": 3093,
+        "co_mentions": [
+          "MCP"
+        ]
       },
       {
         "company": "Anthropic",
         "source_url": "https://anthropic.com/claude",
         "text": "policy Terms of service - consumer Terms of service - commercial Usage policy © 2025 Anthropic PBC",
-        "position": 3343,
+        "position": 3403,
         "co_mentions": []
       },
       {
@@ -1967,8 +2006,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2675,
         "co_mentions": [
-          "Discord",
-          "Web"
+          "Web",
+          "Discord"
         ]
       },
       {
@@ -1977,8 +2016,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2694,
         "co_mentions": [
-          "Discord",
-          "Web"
+          "Web",
+          "Discord"
         ]
       },
       {
@@ -2108,8 +2147,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2675,
         "co_mentions": [
-          "Discord",
-          "Web"
+          "Web",
+          "Discord"
         ]
       },
       {
@@ -2118,8 +2157,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2694,
         "co_mentions": [
-          "Discord",
-          "Web"
+          "Web",
+          "Discord"
         ]
       },
       {
@@ -2249,8 +2288,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2675,
         "co_mentions": [
-          "Discord",
-          "Web"
+          "Web",
+          "Discord"
         ]
       },
       {
@@ -2259,8 +2298,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2694,
         "co_mentions": [
-          "Discord",
-          "Web"
+          "Web",
+          "Discord"
         ]
       },
       {
@@ -2390,8 +2429,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2675,
         "co_mentions": [
-          "Discord",
-          "Web"
+          "Web",
+          "Discord"
         ]
       },
       {
@@ -2400,8 +2439,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2694,
         "co_mentions": [
-          "Discord",
-          "Web"
+          "Web",
+          "Discord"
         ]
       },
       {
@@ -2531,8 +2570,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2675,
         "co_mentions": [
-          "Discord",
-          "Web"
+          "Web",
+          "Discord"
         ]
       },
       {
@@ -2541,8 +2580,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2694,
         "co_mentions": [
-          "Discord",
-          "Web"
+          "Web",
+          "Discord"
         ]
       },
       {
@@ -2672,8 +2711,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2675,
         "co_mentions": [
-          "Discord",
-          "Web"
+          "Web",
+          "Discord"
         ]
       },
       {
@@ -2682,8 +2721,8 @@
         "text": "Discord Nitro Subscription Account Management Payments Cancellations & Refunds Taxes & VAT Magazines & Books Midjourney Website Midjourney Discord Server Return to top",
         "position": 2694,
         "co_mentions": [
-          "Discord",
-          "Web"
+          "Web",
+          "Discord"
         ]
       },
       {

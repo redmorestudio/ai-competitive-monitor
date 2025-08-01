@@ -2,12 +2,42 @@
   "recent_changes_summary": {
     "last_5_changes": [
       {
+        "change_id": 486,
+        "company": "OpenAI",
+        "url": "blog",
+        "summary": "The website content has been completely overhauled, transitioning from a security verification page to a full-fledged OpenAI blog and news site.",
+        "interest_level": 9,
+        "time_ago": "3 min ago",
+        "detected_at": "2025-08-01T19:20:20.321Z",
+        "change_type": "modified"
+      },
+      {
+        "change_id": 487,
+        "company": "OpenAI",
+        "url": "product",
+        "summary": "The content changed from a security verification page to a ChatGPT interface",
+        "interest_level": 9,
+        "time_ago": "3 min ago",
+        "detected_at": "2025-08-01T19:20:13.064Z",
+        "change_type": "modified"
+      },
+      {
+        "change_id": 488,
+        "company": "OpenAI",
+        "url": "pricing",
+        "summary": "The content has changed from a blocked page to a detailed pricing page for ChatGPT, including various plans such as Free, Plus, Pro, Team, and Enterprise.",
+        "interest_level": 9,
+        "time_ago": "3 min ago",
+        "detected_at": "2025-08-01T19:20:07.000Z",
+        "change_type": "modified"
+      },
+      {
         "change_id": 480,
         "company": "Google DeepMind",
         "url": "blog",
-        "summary": "Addition of new articles and updates to existing ones, including 'Google Earth AI', 'The inside story of building NotebookLM', and 'We’re updating our plans for goo.gl links'",
+        "summary": "New articles and updates were added to the Google Blog, including 'Google Earth AI', 'The inside story of building NotebookLM', and updates to Gemini Code Assist and Gemini CLI.",
         "interest_level": 8,
-        "time_ago": "4 min ago",
+        "time_ago": "44 min ago",
         "detected_at": "2025-08-01T18:39:22.393Z",
         "change_type": "modified"
       },
@@ -15,46 +45,16 @@
         "change_id": 482,
         "company": "GitHub Copilot",
         "url": "docs",
-        "summary": "Billing section for organizations and enterprises has been updated",
-        "interest_level": 4,
-        "time_ago": "4 min ago",
-        "detected_at": "2025-08-01T18:38:57.523Z",
-        "change_type": "modified"
-      },
-      {
-        "change_id": 484,
-        "company": "Anthropic",
-        "url": "product",
-        "summary": "The download link for the Claude app has been updated",
-        "interest_level": 3,
-        "time_ago": "5 min ago",
-        "detected_at": "2025-08-01T18:38:27.433Z",
-        "change_type": "modified"
-      },
-      {
-        "change_id": 485,
-        "company": "Anthropic",
-        "url": "news",
-        "summary": "New article 'Anthropic Signs CMS Health Tech Ecosystem Pledge to Advance Healthcare Interoperability' was added to the news section",
+        "summary": "Billing section updated to reflect changes in billing for organizations and enterprises",
         "interest_level": 6,
-        "time_ago": "5 min ago",
-        "detected_at": "2025-08-01T18:38:20.653Z",
-        "change_type": "modified"
-      },
-      {
-        "change_id": 468,
-        "company": "Google DeepMind",
-        "url": "blog",
-        "summary": "New articles and updates were added to the Google Blog, including Google Earth AI, NotebookLM, and Gemini updates",
-        "interest_level": 8,
-        "time_ago": "2 days ago",
-        "detected_at": "2025-07-30T14:15:22.285Z",
+        "time_ago": "44 min ago",
+        "detected_at": "2025-08-01T18:38:57.523Z",
         "change_type": "modified"
       }
     ],
-    "last_24h_count": 4,
-    "last_7d_count": 11,
-    "high_priority_last_7d": 5
+    "last_24h_count": 7,
+    "last_7d_count": 14,
+    "high_priority_last_7d": 9
   },
   "companies": [
     {
@@ -99,9 +99,9 @@
           "id": 484,
           "url": "product",
           "detectedAt": "2025-08-01T18:38:27.433Z",
-          "relativeTime": "5 min ago",
+          "relativeTime": "45 min ago",
           "interestLevel": 3,
-          "summary": "The download link for the Claude app has been updated",
+          "summary": "The download link for Claude has been updated with a new URL parameter",
           "changeType": "modified",
           "businessImpact": null,
           "competitiveImplications": null
@@ -111,9 +111,9 @@
           "id": 485,
           "url": "news",
           "detectedAt": "2025-08-01T18:38:20.653Z",
-          "relativeTime": "5 min ago",
-          "interestLevel": 6,
-          "summary": "New article 'Anthropic Signs CMS Health Tech Ecosystem Pledge to Advance Healthcare Interoperability' was added to the news section",
+          "relativeTime": "45 min ago",
+          "interestLevel": 8,
+          "summary": "Addition of new news articles and removal of older ones, update of Anthropic's news page with new announcements, partnerships, and product updates",
           "changeType": "modified",
           "businessImpact": null,
           "competitiveImplications": null
@@ -222,20 +222,18 @@
           "Max plan",
           "Team plan",
           "Enterprise plan",
-          "Claude for Enterprise",
           "Claude for Education",
-          "API",
+          "Claude for Enterprise",
           "Anthropic API",
           "Anthropic Console",
           "Artifacts",
           "Message Batches API",
           "Contextual Retrieval",
           "Workspaces",
-          "Projects",
-          "Analysis Tool",
-          "Evaluate Prompts",
           "Prompt Caching",
-          "Claude Android app",
+          "Evaluate Prompts",
+          "Analysis Tool",
+          "API",
           "Education plan"
         ],
         "ai_technologies": [
@@ -246,22 +244,21 @@
           "Pandas",
           "AWS",
           "Amazon Bedrock",
-          "TensorFlow",
-          "PyTorch",
-          "JAX",
-          "GitHub Copilot",
-          "Salesforce Einstein",
-          "Google Cloud",
-          "API",
-          "SDKs",
+          "AWS Trainium2",
           "GitHub",
-          "Google Cloud's Vertex AI"
+          "GitHub Copilot",
+          "Salesforce",
+          "Google Cloud",
+          "Vertex AI",
+          "Google Cloud's Vertex AI",
+          "APIs",
+          "SDKs"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
         "totalChanges": 10,
-        "highInterestChanges": 3,
+        "highInterestChanges": 4,
         "lastActivity": "2025-08-01T18:38:27.433Z"
       }
     },
@@ -301,9 +298,9 @@
           "id": 482,
           "url": "docs",
           "detectedAt": "2025-08-01T18:38:57.523Z",
-          "relativeTime": "4 min ago",
-          "interestLevel": 4,
-          "summary": "Billing section for organizations and enterprises has been updated",
+          "relativeTime": "44 min ago",
+          "interestLevel": 6,
+          "summary": "Billing section updated to reflect changes in billing for organizations and enterprises",
           "changeType": "modified",
           "businessImpact": null,
           "competitiveImplications": null
@@ -313,8 +310,8 @@
           "id": 483,
           "url": "blog",
           "detectedAt": "2025-08-01T18:38:51.413Z",
-          "relativeTime": "4 min ago",
-          "interestLevel": 1,
+          "relativeTime": "44 min ago",
+          "interestLevel": 2,
           "summary": "No significant changes were detected in the content structure or links between the two versions.",
           "changeType": "modified",
           "businessImpact": null,
@@ -422,10 +419,8 @@
           "GitHub Copilot",
           "GitHub Copilot Spaces",
           "GitHub",
-          "GitHub Docs",
           "GitHub Universe",
           "GitHub Models",
-          "GitHub Advanced Security",
           "GitHub Codespaces",
           "GitHub Actions",
           "GitHub Packages",
@@ -434,22 +429,26 @@
           "Copilot Team",
           "Copilot Extension",
           "GitHub Copilot Chat",
-          "Coding Agent",
+          "Coding agent",
+          "MCP",
           "GitHub Copilot Free",
           "GitHub Copilot Pro",
           "GitHub Copilot Pro+",
+          "GitHub Copilot Business",
+          "GitHub Copilot Enterprise",
+          "GitHub Advanced Security",
           "GitHub Spark"
         ],
         "ai_technologies": [
+          "Python",
           "Git",
           "GitHub Actions",
           "Playwright",
-          "Python",
           "GitHub",
           "Microsoft Azure",
           "SAML",
           "SCIM",
-          "GraphQL",
+          "JavaScript",
           "CLI",
           "IDE",
           "Windows Terminal",
@@ -460,8 +459,7 @@
           "JetBrains IDEs",
           "Neovim",
           "Azure Data Studio",
-          "Eclipse",
-          "GitHub CLI"
+          "Eclipse"
         ],
         "ai_ml_concepts": []
       },
@@ -513,9 +511,9 @@
           "id": 480,
           "url": "blog",
           "detectedAt": "2025-08-01T18:39:22.393Z",
-          "relativeTime": "4 min ago",
+          "relativeTime": "44 min ago",
           "interestLevel": 8,
-          "summary": "Addition of new articles and updates to existing ones, including 'Google Earth AI', 'The inside story of building NotebookLM', and 'We’re updating our plans for goo.gl links'",
+          "summary": "New articles and updates were added to the Google Blog, including 'Google Earth AI', 'The inside story of building NotebookLM', and updates to Gemini Code Assist and Gemini CLI.",
           "changeType": "modified",
           "businessImpact": null,
           "competitiveImplications": null
@@ -525,9 +523,9 @@
           "id": 481,
           "url": "homepage",
           "detectedAt": "2025-08-01T18:39:06.003Z",
-          "relativeTime": "4 min ago",
+          "relativeTime": "44 min ago",
           "interestLevel": 2,
-          "summary": "No significant changes were detected in the content structure or major updates to the models, research, or science sections.",
+          "summary": "No significant changes were detected in the content between the two versions.",
           "changeType": "modified",
           "businessImpact": null,
           "competitiveImplications": null
@@ -632,6 +630,14 @@
       "intelligence": {
         "products": [
           "Gemini",
+          "AI Mode",
+          "NotebookLM",
+          "Flow",
+          "Google Workspace",
+          "Chrome",
+          "Google Maps",
+          "YouTube",
+          "Google Photos",
           "Google AI Studio",
           "Vertex AI",
           "Gemini API",
@@ -640,28 +646,37 @@
           "Android Studio",
           "Chrome DevTools",
           "Firebase Studio",
+          "Gemini API Developer Competition",
           "Gemma open models",
           "Google AI Edge",
+          "Gemini Nano on Android",
           "Chrome built-in web APIs",
           "Responsible GenAI Toolkit",
           "Secure AI Framework",
+          "Gemini 2.5 Pro",
+          "Gemini 2.5 Flash",
+          "Gemini 2.5 Flash-Lite",
+          "Gemma 3",
+          "Gemma 3n",
+          "ShieldGemma 2",
+          "Veo",
+          "Imagen",
+          "Lyria",
           "Gemini app",
           "Vertex AI Studio",
-          "Flow",
           "Whisk",
           "MusicFX DJ",
           "Gemini App",
           "Google Earth AI",
           "Google Cloud",
-          "Google Workspace",
           "Google Play",
           "Google Nest",
           "Pixel",
           "Fitbit",
           "Wear OS",
-          "Chrome",
           "Chromebooks",
-          "Android",
+          "Google Search",
+          "Google Translate",
           "Compute Engine",
           "Cloud Storage",
           "BigQuery",
@@ -675,27 +690,29 @@
         "ai_technologies": [
           "Python",
           "Google Cloud",
-          "TensorFlow",
           "Android",
-          "Firebase",
+          "TensorFlow",
+          "PyTorch",
+          "Keras",
+          "JAX",
+          "Android Studio",
           "Colab",
+          "Firebase",
           "JetBrains",
           "VS Code",
+          "Vertex AI",
+          "Cloud Blog",
+          "Google Cloud Blog",
+          "RSS feed",
           "APIs",
           "SDKs",
-          "PyTorch",
-          "JAX",
-          "Google Cloud Platform",
-          "Muons Space",
-          "Earth Fire Alliance",
+          "DevOps",
+          "Deployment tools",
           "Kubernetes",
           "Docker",
           "Apache Spark",
           "Apache Hadoop",
-          "Apache Airflow",
-          "MySQL",
-          "PostgreSQL",
-          "SQL Server"
+          "Apache Airflow"
         ],
         "ai_ml_concepts": []
       },
@@ -763,12 +780,12 @@
           "Basic Plan",
           "Standard Plan",
           "Pro Plan",
-          "Mega Plan"
+          "Mega Plan",
+          "Midjourney Magazine Subscription"
         ],
         "ai_technologies": [
           "Python",
           "Discord",
-          "AWS",
           "Web"
         ],
         "ai_ml_concepts": []
@@ -816,6 +833,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 486,
+          "id": 486,
+          "url": "blog",
+          "detectedAt": "2025-08-01T19:20:20.321Z",
+          "relativeTime": "3 min ago",
+          "interestLevel": 9,
+          "summary": "The website content has been completely overhauled, transitioning from a security verification page to a full-fledged OpenAI blog and news site.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 487,
+          "id": 487,
+          "url": "product",
+          "detectedAt": "2025-08-01T19:20:13.064Z",
+          "relativeTime": "3 min ago",
+          "interestLevel": 9,
+          "summary": "The content changed from a security verification page to a ChatGPT interface",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 488,
+          "id": 488,
+          "url": "pricing",
+          "detectedAt": "2025-08-01T19:20:07.000Z",
+          "relativeTime": "3 min ago",
+          "interestLevel": 9,
+          "summary": "The content has changed from a blocked page to a detailed pricing page for ChatGPT, including various plans such as Free, Plus, Pro, Team, and Enterprise.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 225,
           "id": 225,
@@ -892,34 +945,41 @@
       "intelligence": {
         "products": [
           "ChatGPT",
-          "API",
           "API Platform",
           "Sora",
-          "Codex",
+          "Image generation API",
           "ChatGPT Plus",
           "ChatGPT Pro",
           "ChatGPT Team",
-          "ChatGPT Enterprise"
+          "ChatGPT Enterprise",
+          "API",
+          "Research Residency"
         ],
         "ai_technologies": [
           "Python",
           "TensorFlow",
           "PyTorch",
-          "JAX",
           "AWS",
           "Azure",
           "GCP",
-          "Oracle",
-          "JavaScript",
-          "SCIM",
-          "SAML SSO"
+          "Web",
+          "iOS",
+          "Android",
+          "Google Drive",
+          "SharePoint",
+          "GitHub",
+          "Dropbox",
+          "JAX",
+          "API",
+          "SDK",
+          "Oracle"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 6,
-        "highInterestChanges": 3,
-        "lastActivity": "2025-07-22T19:04:23.608Z"
+        "totalChanges": 9,
+        "highInterestChanges": 6,
+        "lastActivity": "2025-08-01T19:20:20.321Z"
       }
     },
     {
@@ -974,16 +1034,21 @@
       ],
       "intelligence": {
         "products": [
+          "Perplexity AI",
+          "Cloudflare",
           "Perplexity Pro",
           "Perplexity Max",
           "Perplexity Labs",
           "Perplexity Research"
         ],
         "ai_technologies": [
+          "Cloudflare",
+          "Python",
+          "HTML",
+          "Favicon",
           "Unlimited file uploads",
           "Unlimited photo uploads",
-          "Image generation",
-          "Cloudflare"
+          "Image generation"
         ],
         "ai_ml_concepts": []
       },
@@ -994,9 +1059,9 @@
       }
     }
   ],
-  "lastUpdated": "2025-08-01T18:43:32.132Z",
-  "totalChanges": 40,
-  "highInterestChanges": 18,
+  "lastUpdated": "2025-08-01T19:23:35.195Z",
+  "totalChanges": 43,
+  "highInterestChanges": 22,
   "backend": "postgresql",
   "company_activity": [
     {
@@ -1004,21 +1069,28 @@
       "change_count": 8,
       "max_interest_level": 8,
       "last_activity": "2025-08-01T18:39:22.393Z",
-      "relative_time": "4 min ago"
+      "relative_time": "44 min ago"
     },
     {
       "company_name": "Anthropic",
       "change_count": 6,
       "max_interest_level": 8,
       "last_activity": "2025-08-01T18:38:27.433Z",
-      "relative_time": "5 min ago"
+      "relative_time": "45 min ago"
     },
     {
       "company_name": "GitHub Copilot",
       "change_count": 5,
       "max_interest_level": 7,
       "last_activity": "2025-08-01T18:38:57.523Z",
-      "relative_time": "4 min ago"
+      "relative_time": "44 min ago"
+    },
+    {
+      "company_name": "OpenAI",
+      "change_count": 3,
+      "max_interest_level": 9,
+      "last_activity": "2025-08-01T19:20:20.321Z",
+      "relative_time": "3 min ago"
     }
   ]
 }
