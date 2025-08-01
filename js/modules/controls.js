@@ -219,38 +219,136 @@ export async function showChangeDetail(changeId, companyName, event) {
     modal.style.display = 'block';
     
     try {
-        // Load detailed change data
-        const response = await fetch(`./api-data/changes/${changeId}.json`);
-        if (!response.ok) {
+        let changeData = null;
+        
+        // Strategy 1: Check if we have the change in window.allChanges (from changes tab)
+        if (window.allChanges) {
+            // If it's a generated ID, find by index
+            if (changeId.startsWith('recent-') || changeId.startsWith('change-')) {
+                const parts = changeId.split('-');
+                const index = parseInt(parts[1]);
+                if (!isNaN(index) && window.allChanges[index]) {
+                    changeData = window.allChanges[index];
+                }
+            } else {
+                // Try to find by exact ID match
+                changeData = window.allChanges.find(change => change.id === changeId);
+            }
+        }
+        
+        // Strategy 2: Load from changes.json and find the matching change
+        if (!changeData) {
+            const changesResponse = await loadStaticData('changes.json');
+            const changes = Array.isArray(changesResponse) ? changesResponse : changesResponse.changes || [];
+            
+            // For generated IDs, try to match by company and approximate time
+            if (changeId.startsWith('recent-') || changeId.startsWith('change-')) {
+                // Find changes for this company
+                const companyChanges = changes.filter(c => c.company === companyName);
+                
+                // Sort by detected_at descending
+                companyChanges.sort((a, b) => 
+                    new Date(b.detected_at || b.detectedAt) - new Date(a.detected_at || a.detectedAt)
+                );
+                
+                // Extract index from generated ID and use it
+                const parts = changeId.split('-');
+                const index = parseInt(parts[1]);
+                
+                if (!isNaN(index) && companyChanges[index]) {
+                    changeData = companyChanges[index];
+                } else if (companyChanges.length > 0) {
+                    // Fallback to most recent change for this company
+                    changeData = companyChanges[0];
+                }
+            }
+        }
+        
+        // Strategy 3: Try to load from manifest and individual file
+        if (!changeData) {
+            try {
+                const manifestResponse = await fetch('./api-data/changes/manifest.json');
+                if (manifestResponse.ok) {
+                    const manifest = await manifestResponse.json();
+                    
+                    // Find a file for this company
+                    const changeFile = manifest.files.find(f => 
+                        f.company === companyName
+                    );
+                    
+                    if (changeFile) {
+                        const fileResponse = await fetch(`./api-data/changes/${changeFile.filename}`);
+                        if (fileResponse.ok) {
+                            changeData = await fileResponse.json();
+                        }
+                    }
+                }
+            } catch (e) {
+                console.warn('Could not load from manifest:', e);
+            }
+        }
+        
+        if (!changeData) {
             throw new Error('Change details not found');
         }
         
-        const changeData = await response.json();
+        // Parse AI analysis if it's a string
+        let aiAnalysis = {};
+        if (changeData.ai_analysis) {
+            try {
+                aiAnalysis = typeof changeData.ai_analysis === 'string' 
+                    ? JSON.parse(changeData.ai_analysis) 
+                    : changeData.ai_analysis;
+            } catch (e) {
+                console.warn('Failed to parse AI analysis:', e);
+            }
+        }
         
         // Display the change details
         modalContent.innerHTML = `
             <div class="config-section">
                 <h4>📊 Change Summary</h4>
                 <p><strong>Company:</strong> ${escapeHtml(changeData.company || companyName)}</p>
-                <p><strong>URL:</strong> <a href="${escapeHtml(changeData.page_url || changeData.url || '')}" target="_blank">${escapeHtml(changeData.page_url || changeData.url || 'N/A')}</a></p>
-                <p><strong>Detected:</strong> ${new Date(changeData.detected_at).toLocaleString()}</p>
-                <p><strong>Interest Level:</strong> <span class="interest-badge interest-${changeData.interest_level}">${changeData.interest_level}/10</span></p>
+                <p><strong>URL:</strong> <a href="${escapeHtml(changeData.url || '')}" target="_blank">${escapeHtml(changeData.url || 'N/A')}</a></p>
+                <p><strong>Detected:</strong> ${new Date(changeData.detected_at || changeData.detectedAt).toLocaleString()}</p>
+                <p><strong>Change Type:</strong> ${escapeHtml(changeData.change_type || 'Unknown')}</p>
+                <p><strong>Interest Level:</strong> <span class="interest-badge" style="background-color: ${getInterestColor(changeData.interest_level)}">${changeData.interest_level}/10</span></p>
             </div>
             
             <div class="config-section">
                 <h4>🔍 AI Analysis</h4>
-                <p><strong>Summary:</strong> ${escapeHtml(changeData.summary || 'No summary available')}</p>
-                <p><strong>Category:</strong> ${escapeHtml(changeData.category || 'General Update')}</p>
-                ${changeData.business_impact ? `<p><strong>Business Impact:</strong> ${escapeHtml(changeData.business_impact)}</p>` : ''}
-                ${changeData.competitive_implications ? `<p><strong>Competitive Implications:</strong> ${escapeHtml(changeData.competitive_implications)}</p>` : ''}
+                <p><strong>Summary:</strong> ${escapeHtml(aiAnalysis.summary || changeData.summary || 'No summary available')}</p>
+                ${aiAnalysis.category ? `<p><strong>Category:</strong> ${escapeHtml(aiAnalysis.category)}</p>` : ''}
+                ${aiAnalysis.technical_innovation_score !== undefined ? `<p><strong>Technical Innovation Score:</strong> ${aiAnalysis.technical_innovation_score}/10</p>` : ''}
+                ${aiAnalysis.business_impact_score !== undefined ? `<p><strong>Business Impact Score:</strong> ${aiAnalysis.business_impact_score}/10</p>` : ''}
             </div>
             
-            ${changeData.key_insights && changeData.key_insights.length > 0 ? `
+            ${aiAnalysis.interest_drivers && aiAnalysis.interest_drivers.length > 0 ? `
             <div class="config-section">
-                <h4>💡 Key Insights</h4>
+                <h4>🎯 Interest Drivers</h4>
                 <ul>
-                    ${changeData.key_insights.map(insight => `<li>${escapeHtml(insight)}</li>`).join('')}
+                    ${aiAnalysis.interest_drivers.map(driver => `<li>${escapeHtml(driver)}</li>`).join('')}
                 </ul>
+            </div>
+            ` : ''}
+            
+            ${aiAnalysis.impact_areas && aiAnalysis.impact_areas.length > 0 ? `
+            <div class="config-section">
+                <h4>💼 Impact Areas</h4>
+                <div class="tag-list">
+                    ${aiAnalysis.impact_areas.map(area => 
+                        `<span class="tag">${escapeHtml(area)}</span>`
+                    ).join('')}
+                </div>
+            </div>
+            ` : ''}
+            
+            ${changeData.content_snippet ? `
+            <div class="config-section">
+                <h4>📄 Content Preview</h4>
+                <div style="background: var(--card-bg); padding: 15px; border-radius: 8px; font-size: 0.9rem; max-height: 200px; overflow-y: auto;">
+                    ${escapeHtml(changeData.content_snippet).replace(/\n/g, '<br>')}
+                </div>
             </div>
             ` : ''}
         `;
@@ -309,14 +407,12 @@ async function loadCompanyRecentChanges(companyName) {
                 }
             }
             
-            // Generate ID if missing
-            if (!change.id) {
-                change.id = `change-${index}-${Date.now()}`;
-            }
+            // Use a consistent ID based on company and index
+            const changeId = `company-change-${index}`;
             
             html += `
                 <div class="change-item" style="margin-bottom: 10px; padding: 10px; background: var(--card-bg); border-radius: 8px; cursor: pointer;"
-                     onclick="showChangeDetail('${change.id}', '${escapeHtml(companyName)}', event)">
+                     onclick="window.controls.showChangeDetail('${changeId}', '${escapeHtml(companyName)}', event)">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
                         <span class="interest-badge interest-${interestLevel}">Interest: ${interestLevel}/10</span>
                         <span style="color: var(--text-secondary); font-size: 0.85rem;">${changeDate.toLocaleDateString()}</span>
@@ -356,14 +452,7 @@ export async function loadAllChanges() {
         return;
     }
 
-    // Ensure all changes have IDs
-    changes.forEach((change, index) => {
-        if (!change.id) {
-            change.id = `change-${index}-${Date.now()}`;
-        }
-    });
-
-    // Store changes globally for filtering
+    // Store changes globally for filtering and detail viewing
     window.allChanges = changes;
 
     // Create filter UI if not already present
@@ -413,7 +502,7 @@ function renderFilteredChanges() {
     Object.entries(changesByDate).forEach(([date, dateChanges]) => {
         html += `<h4 style="margin: 20px 0 10px 0; color: var(--primary-color);">${date}</h4>`;
         
-        dateChanges.forEach(change => {
+        dateChanges.forEach((change, index) => {
             const changeDate = new Date(change.detected_at || change.detectedAt || change.created_at);
             const timeStr = changeDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
             
@@ -431,8 +520,17 @@ function renderFilteredChanges() {
             const interestLevel = change.interest_level || 1;
             const interestColor = getInterestColor(interestLevel);
             
+            // Find the index of this change in the full array
+            const globalIndex = changes.findIndex(c => 
+                c.company === change.company && 
+                c.detected_at === change.detected_at &&
+                c.url === change.url
+            );
+            
+            const changeId = globalIndex !== -1 ? `change-${globalIndex}` : `change-temp-${index}`;
+            
             html += `
-                <div class="change-item" style="border-left-color: ${interestColor};" onclick="window.controls.showChangeDetail('${change.id}', '${escapeHtml(change.company)}', event)">
+                <div class="change-item" style="border-left-color: ${interestColor};" onclick="window.controls.showChangeDetail('${changeId}', '${escapeHtml(change.company)}', event)">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
                         <div style="display: flex; align-items: center; gap: 10px;">
                             <strong>${escapeHtml(change.company)}</strong>

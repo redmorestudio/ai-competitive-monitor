@@ -244,8 +244,8 @@ class Dashboard {
         
         const interestEmoji = getInterestEmoji(change.interest_level);
         
-        // Generate ID if missing
-        const changeId = change.id || `recent-${index}-${Date.now()}`;
+        // Use the index from the high interest changes array
+        const changeId = `high-interest-${index}`;
         
         return `
             <div class="recent-change-item" 
