@@ -303,14 +303,59 @@ export class Graph3DCore {
      * @param {function} accessor - Label accessor function
      */
     setNodeLabels(visible, accessor = null) {
-        if (this.graph) {
-            if (visible && accessor) {
-                this.graph
-                    .nodeLabel(accessor)
-                    .nodeAutoColorBy(null);
-            } else {
-                this.graph.nodeLabel('');
-            }
+        if (!this.graph) return;
+        
+        if (visible) {
+            // Set the label text for hover
+            this.graph.nodeLabel(accessor || (node => node.name || node.id || ''));
+            
+            // Create text sprites for always-visible labels
+            this.graph.nodeThreeObject(node => {
+                // First create the sphere
+                const group = new THREE.Group();
+                
+                // Add the sphere
+                const color = this.nodeColorMap.get(node.id) || node.color || '#666666';
+                const size = this.nodeSizeMap.get(node.id) || node.size || 4;
+                
+                const geometry = new THREE.SphereGeometry(size, 16, 16);
+                const material = new THREE.MeshPhongMaterial({
+                    color: new THREE.Color(color),
+                    emissive: new THREE.Color(color),
+                    emissiveIntensity: 0.3,
+                    shininess: 100
+                });
+                const sphere = new THREE.Mesh(geometry, material);
+                group.add(sphere);
+                
+                // Add glow for high interest
+                if (node.interestLevel >= 7) {
+                    const glowGeometry = new THREE.SphereGeometry(size * 1.5, 16, 16);
+                    const glowMaterial = new THREE.MeshBasicMaterial({
+                        color: new THREE.Color(color),
+                        transparent: true,
+                        opacity: 0.3
+                    });
+                    const glow = new THREE.Mesh(glowGeometry, glowMaterial);
+                    group.add(glow);
+                }
+                
+                // Add text sprite
+                if (window.SpriteText) {
+                    const sprite = new window.SpriteText(accessor ? accessor(node) : (node.name || node.id || ''));
+                    sprite.material.depthWrite = false;
+                    sprite.color = node.currentColor || this.nodeColorMap.get(node.id) || node.color || '#ffffff';
+                    sprite.textHeight = 8;
+                    sprite.position.y = size + 8;
+                    group.add(sprite);
+                }
+                
+                return group;
+            });
+        } else {
+            // Remove labels, just show spheres
+            this.graph.nodeLabel('');
+            this.graph.nodeThreeObject(node => this.createNodeObject(node));
         }
     }
 

@@ -10,7 +10,7 @@
  */
 
 // Import all modules
-import { graph3DCore } from './graph-3d-core.js?v=20250802';
+import { graph3DCore } from './graph-3d-core.js?v=20250802b';
 import { graph3DPhysics } from './graph-3d-physics.js?v=20250802';
 import { graph3DVisuals } from './graph-3d-visuals.js?v=20250802';
 import { graph3DFilters } from './graph-3d-filters.js?v=20250802';
