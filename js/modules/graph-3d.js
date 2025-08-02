@@ -101,9 +101,17 @@ class Graph3DCoordinator {
             this.setupGraphEvents();
 
             // Apply initial data to graph
-            if (graph && this.rawData) {
+            if (graph3DCore && this.rawData) {
                 console.log('Setting initial graph data...');
-                graph.graphData(this.rawData);
+                graph3DCore.updateData(this.rawData);
+                
+                // Apply initial visuals after data is set
+                console.log('Applying initial visuals...');
+                if (graph3DVisuals) {
+                    graph3DVisuals.applyViewMode('entity-type', this.rawData);
+                    graph3DVisuals.applyNodeSize('uniform', this.rawData);
+                    graph3DVisuals.applyLinkVisuals(this.rawData);
+                }
             }
 
             // Update initial UI state
