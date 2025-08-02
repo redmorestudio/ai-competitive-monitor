@@ -38,6 +38,8 @@ class Graph3DCoordinator {
      */
     async init(config = {}) {
         try {
+            console.log('Starting 3D graph initialization...');
+            
             // Get containers
             this.container = document.getElementById(config.graphContainer || '3d-graph');
             this.controlsContainer = document.getElementById(config.controlsContainer || 'controls');
@@ -51,36 +53,58 @@ class Graph3DCoordinator {
             this.showLoading(true);
 
             // Initialize mobile UI first
-            graph3DMobile.init();
+            if (graph3DMobile && graph3DMobile.init) {
+                graph3DMobile.init();
+            }
 
             // Load data
-            this.rawData = await graph3DData.loadData();
+            console.log('Loading data...');
+            const loadedData = await graph3DData.loadData();
+            console.log('Data loaded:', loadedData);
+            
+            // Process the data into graph format
+            this.rawData = graph3DData.processIntoGraphData(loadedData);
+            this.filteredData = this.rawData;
+            console.log('Processed graph data:', this.rawData);
 
             // Initialize core graph
+            console.log('Initializing core graph...');
             const graph = graph3DCore.init(this.container, {
                 backgroundColor: '#0a0a0f'
             });
 
             // Initialize physics
-            graph3DPhysics.init(graph);
+            if (graph3DPhysics && graph3DPhysics.init) {
+                graph3DPhysics.init(graph);
+            }
 
             // Initialize UI with callbacks
-            if (this.controlsContainer) {
+            if (this.controlsContainer && graph3DUI && graph3DUI.init) {
                 graph3DUI.init(this.controlsContainer, this.createUICallbacks());
                 this.populateFilters();
             }
 
             // Initialize tooltip
-            graph3DTooltip.init();
+            if (graph3DTooltip && graph3DTooltip.init) {
+                graph3DTooltip.init();
+            }
 
             // Initialize context menu
-            graph3DContext.init(this.createContextCallbacks());
+            if (graph3DContext && graph3DContext.init) {
+                graph3DContext.init(this.createContextCallbacks());
+            }
+
+            // Set up global handlers
+            this.setupGlobalHandlers();
 
             // Set up graph event handlers
             this.setupGraphEvents();
 
-            // Apply initial filters and render
-            this.applyFiltersAndRender();
+            // Apply initial data to graph
+            if (graph && this.rawData) {
+                console.log('Setting initial graph data...');
+                graph.graphData(this.rawData);
+            }
 
             // Update initial UI state
             this.updateUIState();
@@ -93,13 +117,21 @@ class Graph3DCoordinator {
                 this.infoContainer.style.display = 'block';
             }
 
+            // Show controls
+            if (this.controlsContainer) {
+                this.controlsContainer.style.display = 'block';
+            }
+
             // Store globally for legacy compatibility
             window.Graph = graph;
             window.graphData = this.rawData;
             window.rawData = this.rawData;
+            window.graph3D = this;
 
             this.initialized = true;
-            } catch (error) {
+            console.log('3D graph initialization complete');
+            
+        } catch (error) {
             console.error('Error initializing 3D graph:', error);
             this.showError(error.message);
             throw error;
@@ -113,18 +145,22 @@ class Graph3DCoordinator {
         return {
             // Draw mode
             onDrawModeChange: (mode) => {
-                graph3DPhysics.applyLayout(mode, this.filteredData);
+                if (graph3DPhysics && graph3DPhysics.applyLayout) {
+                    graph3DPhysics.applyLayout(mode, this.filteredData);
+                }
             },
 
             // View mode
             onViewModeChange: (mode) => {
                 // Handle special view modes that affect filtering
-                if (mode === 'high-interest') {
-                    graph3DFilters.setViewModeFilter('high-interest');
-                } else if (mode === 'recent-activity') {
-                    graph3DFilters.setViewModeFilter('recent-activity');
-                } else {
-                    graph3DFilters.setViewModeFilter(null);
+                if (graph3DFilters) {
+                    if (mode === 'high-interest') {
+                        graph3DFilters.setViewModeFilter('high-interest');
+                    } else if (mode === 'recent-activity') {
+                        graph3DFilters.setViewModeFilter('recent-activity');
+                    } else {
+                        graph3DFilters.setViewModeFilter(null);
+                    }
                 }
 
                 // Handle link-only modes
@@ -133,106 +169,146 @@ class Graph3DCoordinator {
                 else if (mode === 'concept') linkFilter = 'concept';
 
                 // Apply visual mode
-                graph3DVisuals.applyViewMode(mode, this.filteredData);
-                graph3DVisuals.applyLinkVisuals(this.filteredData, linkFilter);
+                if (graph3DVisuals) {
+                    graph3DVisuals.applyViewMode(mode, this.filteredData);
+                    graph3DVisuals.applyLinkVisuals(this.filteredData, linkFilter);
+                }
                 
                 this.applyFiltersAndRender();
             },
 
             // Node size
             onNodeSizeChange: (mode) => {
-                graph3DVisuals.applyNodeSize(mode, this.filteredData);
+                if (graph3DVisuals && graph3DVisuals.applyNodeSize) {
+                    graph3DVisuals.applyNodeSize(mode, this.filteredData);
+                }
             },
 
             // Search
             onSearchChange: (query) => {
-                graph3DFilters.setSearchQuery(query);
-                this.applyFiltersAndRender();
+                if (graph3DFilters && graph3DFilters.setSearchQuery) {
+                    graph3DFilters.setSearchQuery(query);
+                    this.applyFiltersAndRender();
+                }
             },
 
             onSearchDepthChange: (depth) => {
-                graph3DFilters.setSearchDepth(depth);
-                if (graph3DFilters.searchQuery) {
-                    this.applyFiltersAndRender();
+                if (graph3DFilters) {
+                    graph3DFilters.setSearchDepth(depth);
+                    if (graph3DFilters.searchQuery) {
+                        this.applyFiltersAndRender();
+                    }
                 }
             },
 
             // Physics controls
             onForceStrengthChange: (value) => {
-                graph3DPhysics.setForceStrength(value);
+                if (graph3DPhysics && graph3DPhysics.setForceStrength) {
+                    graph3DPhysics.setForceStrength(value);
+                }
             },
 
             onLinkDistanceChange: (value) => {
-                graph3DPhysics.setLinkDistance(value);
+                if (graph3DPhysics && graph3DPhysics.setLinkDistance) {
+                    graph3DPhysics.setLinkDistance(value);
+                }
             },
 
             onCenterGravityChange: (value) => {
-                graph3DPhysics.setCenterGravity(value);
+                if (graph3DPhysics && graph3DPhysics.setCenterGravity) {
+                    graph3DPhysics.setCenterGravity(value);
+                }
             },
 
             // Filter controls
             onLinkThresholdChange: (value) => {
-                graph3DFilters.setLinkThreshold(value);
-                this.applyFiltersAndRender();
+                if (graph3DFilters && graph3DFilters.setLinkThreshold) {
+                    graph3DFilters.setLinkThreshold(value);
+                    this.applyFiltersAndRender();
+                }
             },
 
             onEntityLimitChange: (value) => {
-                graph3DFilters.setEntityLimit(value);
-                this.applyFiltersAndRender();
+                if (graph3DFilters && graph3DFilters.setEntityLimit) {
+                    graph3DFilters.setEntityLimit(value);
+                    this.applyFiltersAndRender();
+                }
             },
 
             // Visual settings
             onShowLinksChange: (checked) => {
-                graph3DVisuals.toggleSetting('links', checked);
-                graph3DVisuals.applyLinkVisuals(this.filteredData);
+                if (graph3DVisuals) {
+                    graph3DVisuals.toggleSetting('links', checked);
+                    graph3DVisuals.applyLinkVisuals(this.filteredData);
+                }
             },
 
             onShowLabelsChange: (checked) => {
-                graph3DVisuals.toggleSetting('labels', checked);
+                if (graph3DVisuals && graph3DVisuals.toggleSetting) {
+                    graph3DVisuals.toggleSetting('labels', checked);
+                }
             },
 
             onShowParticlesChange: (checked) => {
-                graph3DVisuals.toggleSetting('particles', checked);
+                if (graph3DVisuals && graph3DVisuals.toggleSetting) {
+                    graph3DVisuals.toggleSetting('particles', checked);
+                }
             },
 
             onThinLinesChange: (checked) => {
-                graph3DVisuals.toggleSetting('thinLines', checked);
-                graph3DVisuals.applyLinkVisuals(this.filteredData);
+                if (graph3DVisuals) {
+                    graph3DVisuals.toggleSetting('thinLines', checked);
+                    graph3DVisuals.applyLinkVisuals(this.filteredData);
+                }
             },
 
             onFloatingTooltipChange: (checked) => {
-                graph3DTooltip.setEnabled(checked);
+                if (graph3DTooltip && graph3DTooltip.setEnabled) {
+                    graph3DTooltip.setEnabled(checked);
+                }
             },
 
             onMonochromeModeChange: (checked) => {
-                graph3DVisuals.toggleSetting('monochrome', checked);
-                graph3DVisuals.applyViewMode(graph3DVisuals.viewMode, this.filteredData);
-                graph3DVisuals.applyLinkVisuals(this.filteredData);
+                if (graph3DVisuals) {
+                    graph3DVisuals.toggleSetting('monochrome', checked);
+                    graph3DVisuals.applyViewMode(graph3DVisuals.viewMode, this.filteredData);
+                    graph3DVisuals.applyLinkVisuals(this.filteredData);
+                }
                 this.updateUIState();
             },
 
             onShowChangeRingsChange: (checked) => {
-                graph3DVisuals.toggleSetting('changeRings', checked);
+                if (graph3DVisuals && graph3DVisuals.toggleSetting) {
+                    graph3DVisuals.toggleSetting('changeRings', checked);
+                }
             },
 
             onAutoRotateChange: (checked) => {
-                graph3DVisuals.toggleSetting('autoRotate', checked);
+                if (graph3DVisuals && graph3DVisuals.toggleSetting) {
+                    graph3DVisuals.toggleSetting('autoRotate', checked);
+                }
             },
 
             // Node visibility
             onShowTechnologyNodesChange: (checked) => {
-                graph3DFilters.setNodeTypeVisibility('technology', checked);
-                this.applyFiltersAndRender();
+                if (graph3DFilters && graph3DFilters.setNodeTypeVisibility) {
+                    graph3DFilters.setNodeTypeVisibility('technology', checked);
+                    this.applyFiltersAndRender();
+                }
             },
 
             onShowConceptNodesChange: (checked) => {
-                graph3DFilters.setNodeTypeVisibility('concept', checked);
-                this.applyFiltersAndRender();
+                if (graph3DFilters && graph3DFilters.setNodeTypeVisibility) {
+                    graph3DFilters.setNodeTypeVisibility('concept', checked);
+                    this.applyFiltersAndRender();
+                }
             },
 
             onShowCompanyNodesChange: (checked) => {
-                graph3DFilters.setNodeTypeVisibility('company', checked);
-                this.applyFiltersAndRender();
+                if (graph3DFilters && graph3DFilters.setNodeTypeVisibility) {
+                    graph3DFilters.setNodeTypeVisibility('company', checked);
+                    this.applyFiltersAndRender();
+                }
             }
         };
     }
@@ -243,7 +319,11 @@ class Graph3DCoordinator {
     createContextCallbacks() {
         return {
             onReset: () => this.resetAll(),
-            onFitToWindow: () => graph3DCore.fitToView(),
+            onFitToWindow: () => {
+                if (graph3DCore && graph3DCore.fitToView) {
+                    graph3DCore.fitToView();
+                }
+            },
             onToggleParticles: () => {
                 const particles = document.getElementById('show-particles');
                 if (particles) {
@@ -282,41 +362,64 @@ class Graph3DCoordinator {
         const graph = graph3DCore.getGraph();
         if (!graph) return;
 
-        // Override default handlers
-        graph3DCore.handleNodeClick = (node) => {
-            graph3DCore.centerOnNode(node);
-        };
-
-        graph3DCore.handleNodeRightClick = (node, event) => {
-            event.preventDefault();
-            graph3DContext.show(node, event);
-        };
-
-        graph3DCore.handleNodeHover = (node) => {
-            if (node) {
-                graph3DTooltip.show(node);
-                this.updateInfoPanel(node);
-            } else {
-                graph3DTooltip.hide();
-                this.updateInfoPanel(null);
-            }
-        };
+        // Set up node interaction handlers
+        graph
+            .onNodeClick(node => {
+                if (graph3DCore && graph3DCore.centerOnNode) {
+                    graph3DCore.centerOnNode(node);
+                }
+            })
+            .onNodeRightClick((node, event) => {
+                event.preventDefault();
+                if (graph3DContext && graph3DContext.show) {
+                    graph3DContext.show(node, event);
+                }
+            })
+            .onNodeHover(node => {
+                if (node) {
+                    if (graph3DTooltip && graph3DTooltip.show) {
+                        graph3DTooltip.show(node);
+                    }
+                    this.updateInfoPanel(node);
+                } else {
+                    if (graph3DTooltip && graph3DTooltip.hide) {
+                        graph3DTooltip.hide();
+                    }
+                    this.updateInfoPanel(null);
+                }
+            });
     }
 
     /**
      * Apply filters and render
      */
     applyFiltersAndRender() {
+        if (!this.rawData) return;
+        
         // Apply filters
-        this.filteredData = graph3DFilters.applyFilters(this.rawData);
+        if (graph3DFilters && graph3DFilters.applyFilters) {
+            this.filteredData = graph3DFilters.applyFilters(this.rawData);
+        } else {
+            this.filteredData = this.rawData;
+        }
 
         // Apply visuals
-        graph3DVisuals.applyViewMode(graph3DVisuals.viewMode, this.filteredData);
-        graph3DVisuals.applyNodeSize(graph3DVisuals.nodeSize, this.filteredData);
-        graph3DVisuals.applyLinkVisuals(this.filteredData);
+        if (graph3DVisuals) {
+            if (graph3DVisuals.applyViewMode) {
+                graph3DVisuals.applyViewMode(graph3DVisuals.viewMode, this.filteredData);
+            }
+            if (graph3DVisuals.applyNodeSize) {
+                graph3DVisuals.applyNodeSize(graph3DVisuals.nodeSize, this.filteredData);
+            }
+            if (graph3DVisuals.applyLinkVisuals) {
+                graph3DVisuals.applyLinkVisuals(this.filteredData);
+            }
+        }
 
         // Update graph
-        graph3DCore.updateData(this.filteredData);
+        if (graph3DCore && graph3DCore.updateData) {
+            graph3DCore.updateData(this.filteredData);
+        }
 
         // Update UI
         this.updateUIState();
@@ -333,27 +436,38 @@ class Graph3DCoordinator {
             name: type,
             count: this.rawData.nodes.filter(n => n.companyType === type).length
         }));
-        graph3DUI.updateEntityTypeFilters(entityTypes, graph3DFilters.entityTypeFilters);
+        
+        if (graph3DUI && graph3DUI.updateEntityTypeFilters) {
+            graph3DUI.updateEntityTypeFilters(entityTypes, graph3DFilters.entityTypeFilters || new Set());
+        }
 
         // Technologies
         const technologies = this.rawData.nodes
             .filter(n => n.nodeType === 'technology')
             .map(n => ({ name: n.name, count: n.companyCount }))
             .sort((a, b) => b.count - a.count);
-        graph3DUI.updateTechnologyFilters(technologies, graph3DFilters.technologyFilters);
+            
+        if (graph3DUI && graph3DUI.updateTechnologyFilters) {
+            graph3DUI.updateTechnologyFilters(technologies, graph3DFilters.technologyFilters || new Set());
+        }
 
         // Concepts
         const concepts = this.rawData.nodes
             .filter(n => n.nodeType === 'concept')
             .map(n => ({ name: n.name, count: n.companyCount }))
             .sort((a, b) => b.count - a.count);
-        graph3DUI.updateConceptFilters(concepts, graph3DFilters.conceptFilters);
+            
+        if (graph3DUI && graph3DUI.updateConceptFilters) {
+            graph3DUI.updateConceptFilters(concepts, graph3DFilters.conceptFilters || new Set());
+        }
     }
 
     /**
      * Update UI state
      */
     updateUIState() {
+        if (!this.filteredData) return;
+        
         // Update stats
         const stats = {
             companies: this.filteredData.nodes.filter(n => n.nodeType === 'company').length,
@@ -363,11 +477,16 @@ class Graph3DCoordinator {
             nodes: this.filteredData.nodes.length,
             links: this.filteredData.links.length
         };
-        graph3DUI.updateStats(stats);
+        
+        if (graph3DUI && graph3DUI.updateStats) {
+            graph3DUI.updateStats(stats);
+        }
 
         // Update legend
-        const legendData = graph3DVisuals.getLegendData(this.filteredData);
-        graph3DUI.updateLegend(legendData);
+        if (graph3DVisuals && graph3DVisuals.getLegendData && graph3DUI && graph3DUI.updateLegend) {
+            const legendData = graph3DVisuals.getLegendData(this.filteredData);
+            graph3DUI.updateLegend(legendData);
+        }
     }
 
     /**
@@ -378,7 +497,11 @@ class Graph3DCoordinator {
         if (!nodeInfo) return;
 
         if (node) {
-            nodeInfo.innerHTML = graph3DTooltip.generateContent(node);
+            if (graph3DTooltip && graph3DTooltip.generateContent) {
+                nodeInfo.innerHTML = graph3DTooltip.generateContent(node);
+            } else {
+                nodeInfo.innerHTML = `<strong>${node.name}</strong>`;
+            }
         } else {
             nodeInfo.innerHTML = 'Hover over nodes for details';
         }
@@ -401,6 +524,7 @@ class Graph3DCoordinator {
         const loading = document.getElementById('loading');
         if (loading) {
             loading.innerHTML = `<div style="color: #ff4444;">Error: ${message}</div>`;
+            loading.style.display = 'block';
         }
     }
 
@@ -408,8 +532,15 @@ class Graph3DCoordinator {
      * Global function handlers (for onclick attributes)
      */
     setupGlobalHandlers() {
+        // Make functions available globally
+        window.graph3D = this;
+        
         // Mode switching
-        window.setConfigMode = (mode) => graph3DUI.setConfigMode(mode);
+        window.setConfigMode = (mode) => {
+            if (graph3DUI && graph3DUI.setConfigMode) {
+                graph3DUI.setConfigMode(mode);
+            }
+        };
         
         // Filter actions
         window.selectAllTypes = () => {
@@ -419,18 +550,26 @@ class Graph3DCoordinator {
                 cb.checked = true;
                 types.add(cb.value);
             });
-            graph3DFilters.setEntityTypeFilters(types);
+            if (graph3DFilters && graph3DFilters.setEntityTypeFilters) {
+                graph3DFilters.setEntityTypeFilters(types);
+            }
             this.applyFiltersAndRender();
         };
 
         window.selectNoneTypes = () => {
             const checkboxes = document.querySelectorAll('#type-filters input[type="checkbox"]');
             checkboxes.forEach(cb => cb.checked = false);
-            graph3DFilters.setEntityTypeFilters(new Set());
+            if (graph3DFilters && graph3DFilters.setEntityTypeFilters) {
+                graph3DFilters.setEntityTypeFilters(new Set());
+            }
             this.applyFiltersAndRender();
         };
 
-        window.centerView = () => graph3DCore.fitToView();
+        window.centerView = () => {
+            if (graph3DCore && graph3DCore.fitToView) {
+                graph3DCore.fitToView();
+            }
+        };
 
         window.toggleControlsCollapse = () => {
             const controls = document.getElementById('controls');
@@ -442,41 +581,60 @@ class Graph3DCoordinator {
         };
 
         // Context menu actions
-        window.hideContextMenu = () => graph3DContext.hide();
+        window.hideContextMenu = () => {
+            if (graph3DContext && graph3DContext.hide) {
+                graph3DContext.hide();
+            }
+        };
+        
         window.focusOnContextNode = () => {
-            const node = graph3DContext.getContextNode();
-            if (node) {
-                // Show only this node and connected
-                graph3DFilters.setSearchQuery(node.name);
-                graph3DFilters.setSearchDepth(1);
-                this.applyFiltersAndRender();
-                graph3DContext.hide();
+            if (graph3DContext && graph3DContext.getContextNode && graph3DFilters) {
+                const node = graph3DContext.getContextNode();
+                if (node) {
+                    graph3DFilters.setSearchQuery(node.name);
+                    graph3DFilters.setSearchDepth(1);
+                    this.applyFiltersAndRender();
+                    graph3DContext.hide();
+                }
             }
         };
+        
         window.centerOnContextNode = () => {
-            const node = graph3DContext.getContextNode();
-            if (node) {
-                graph3DCore.centerOnNode(node);
-                graph3DContext.hide();
+            if (graph3DContext && graph3DContext.getContextNode && graph3DCore) {
+                const node = graph3DContext.getContextNode();
+                if (node) {
+                    graph3DCore.centerOnNode(node);
+                    graph3DContext.hide();
+                }
             }
         };
+        
         window.showAllNodes = () => this.showAllNodes();
+        
         window.fitToWindow = () => {
-            graph3DCore.fitToView();
-            graph3DContext.hide();
+            if (graph3DCore && graph3DCore.fitToView) {
+                graph3DCore.fitToView();
+            }
+            if (graph3DContext && graph3DContext.hide) {
+                graph3DContext.hide();
+            }
         };
 
         // Tag filtering
         window.filterByTag = (tag) => {
-            graph3DFilters.setCustomTagFilter(tag);
-            graph3DUI.showCustomTagFilter(tag);
-            this.applyFiltersAndRender();
+            if (graph3DFilters && graph3DFilters.setCustomTagFilter && graph3DUI && graph3DUI.showCustomTagFilter) {
+                graph3DFilters.setCustomTagFilter(tag);
+                graph3DUI.showCustomTagFilter(tag);
+                this.applyFiltersAndRender();
+            }
         };
 
         window.clearTagFilter = () => {
-            graph3DFilters.setCustomTagFilter(null);
-            graph3DUI.clearCustomTagFilter();
-            this.applyFiltersAndRender();
+            if (graph3DFilters && graph3DFilters.setCustomTagFilter && graph3DUI && graph3DUI.clearCustomTagFilter) {
+                graph3DFilters.setCustomTagFilter(null);
+                graph3DUI.clearCustomTagFilter();
+                this.applyFiltersAndRender();
+            }
         };
 
         // Filter handlers
@@ -484,7 +642,9 @@ class Graph3DCoordinator {
             const types = new Set();
             document.querySelectorAll('#type-filters input[type="checkbox"]:checked')
                 .forEach(cb => types.add(cb.value));
-            graph3DFilters.setEntityTypeFilters(types);
+            if (graph3DFilters && graph3DFilters.setEntityTypeFilters) {
+                graph3DFilters.setEntityTypeFilters(types);
+            }
             this.applyFiltersAndRender();
         };
 
@@ -492,7 +652,9 @@ class Graph3DCoordinator {
             const techs = new Set();
             document.querySelectorAll('#tech-filters input[type="checkbox"]:checked')
                 .forEach(cb => techs.add(cb.value));
-            graph3DFilters.setTechnologyFilters(techs);
+            if (graph3DFilters && graph3DFilters.setTechnologyFilters) {
+                graph3DFilters.setTechnologyFilters(techs);
+            }
             this.applyFiltersAndRender();
         };
 
@@ -500,7 +662,9 @@ class Graph3DCoordinator {
             const concepts = new Set();
             document.querySelectorAll('#concept-filters input[type="checkbox"]:checked')
                 .forEach(cb => concepts.add(cb.value));
-            graph3DFilters.setConceptFilters(concepts);
+            if (graph3DFilters && graph3DFilters.setConceptFilters) {
+                graph3DFilters.setConceptFilters(concepts);
+            }
             this.applyFiltersAndRender();
         };
 
@@ -508,7 +672,11 @@ class Graph3DCoordinator {
         window.graph3DCallbacks = {
             onPinchZoom: (factor) => this.zoom(1 - factor),
             onOrientationChange: (orientation) => {
-                setTimeout(() => graph3DCore.fitToView(), 500);
+                setTimeout(() => {
+                    if (graph3DCore && graph3DCore.fitToView) {
+                        graph3DCore.fitToView();
+                    }
+                }, 500);
             }
         };
     }
@@ -517,27 +685,44 @@ class Graph3DCoordinator {
      * Helper methods
      */
     resetAll() {
-        graph3DFilters.clearAllFilters();
-        graph3DCore.fitToView();
+        if (graph3DFilters && graph3DFilters.clearAllFilters) {
+            graph3DFilters.clearAllFilters();
+        }
+        if (graph3DCore && graph3DCore.fitToView) {
+            graph3DCore.fitToView();
+        }
         this.applyFiltersAndRender();
     }
 
     showAllNodes() {
-        graph3DFilters.clearAllFilters();
+        if (graph3DFilters && graph3DFilters.clearAllFilters) {
+            graph3DFilters.clearAllFilters();
+        }
         this.applyFiltersAndRender();
     }
 
     clearFilters() {
-        document.getElementById('search-input').value = '';
-        graph3DFilters.setSearchQuery('');
-        graph3DFilters.setCustomTagFilter(null);
-        graph3DUI.clearCustomTagFilter();
+        const searchInput = document.getElementById('search-input');
+        if (searchInput) searchInput.value = '';
+        if (graph3DFilters) {
+            if (graph3DFilters.setSearchQuery) {
+                graph3DFilters.setSearchQuery('');
+            }
+            if (graph3DFilters.setCustomTagFilter) {
+                graph3DFilters.setCustomTagFilter(null);
+            }
+        }
+        if (graph3DUI && graph3DUI.clearCustomTagFilter) {
+            graph3DUI.clearCustomTagFilter();
+        }
         this.applyFiltersAndRender();
     }
 
     togglePause() {
         this.isPaused = !this.isPaused;
-        graph3DCore.setPaused(this.isPaused);
+        if (graph3DCore && graph3DCore.setPaused) {
+            graph3DCore.setPaused(this.isPaused);
+        }
     }
 
     zoom(factor) {

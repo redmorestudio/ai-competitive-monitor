@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Graph Test</title>
+    <style>
+        body { margin: 0; padding: 0; overflow: hidden; background: #0a0a0f; color: #eee; font-family: Arial; }
+        #3d-graph { width: 100vw; height: 100vh; }
+        #loading { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+        #error { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); color: red; background: rgba(0,0,0,0.8); padding: 10px; border-radius: 5px; display: none; }
+    </style>
+    <script src="https://unpkg.com/three@0.152.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
+</head>
+<body>
+    <div id="loading">Loading 3D Graph...</div>
+    <div id="error"></div>
+    <div id="3d-graph"></div>
+
+    <script type="module">
+        // Simple test to check if we can load and display the graph
+        async function initGraph() {
+            try {
+                const loading = document.getElementById('loading');
+                const errorDiv = document.getElementById('error');
+                
+                // Load companies data
+                const response = await fetch('api-data/companies.json');
+                if (!response.ok) throw new Error('Failed to load companies.json');
+                
+                const companies = await response.json();
+                console.log('Loaded companies:', companies);
+                
+                // Process into simple nodes
+                const nodes = (Array.isArray(companies) ? companies : companies.companies || []).map(company => ({
+                    id: company.name.toLowerCase().replace(/\s+/g, '-'),
+                    name: company.name,
+                    group: company.type || company.category || 'Unknown',
+                    val: company.urls_to_monitor || 1
+                }));
+                
+                console.log('Processed nodes:', nodes);
+                
+                // Create simple links between companies of same type
+                const links = [];
+                const typeGroups = {};
+                
+                nodes.forEach(node => {
+                    if (!typeGroups[node.group]) typeGroups[node.group] = [];
+                    typeGroups[node.group].push(node.id);
+                });
+                
+                Object.values(typeGroups).forEach(group => {
+                    if (group.length > 1) {
+                        // Create a few random links within each group
+                        for (let i = 0; i < Math.min(3, group.length - 1); i++) {
+                            const source = group[i];
+                            const target = group[i + 1];
+                            links.push({ source, target, value: 1 });
+                        }
+                    }
+                });
+                
+                console.log('Created links:', links);
+                
+                // Initialize 3D force graph
+                const container = document.getElementById('3d-graph');
+                const graph = ForceGraph3D()(container)
+                    .graphData({ nodes, links })
+                    .nodeLabel('name')
+                    .nodeColor(node => {
+                        const colors = {
+                            'AI Coding': '#ffeb3b',
+                            'AI Hardware': '#4caf50',
+                            'AI Infrastructure': '#9c27b0',
+                            'AI Search': '#f44336',
+                            'AI Voice/Audio': '#ff9800',
+                            'Enterprise AI': '#d32f2f',
+                            'Image Generation': '#e91e63',
+                            'LLM Providers': '#ff5722',
+                            'Video AI': '#3f51b5'
+                        };
+                        return colors[node.group] || '#666666';
+                    })
+                    .nodeOpacity(0.9)
+                    .linkColor(() => 'rgba(150, 150, 150, 0.2)')
+                    .linkWidth(1)
+                    .backgroundColor('#0a0a0f');
+                
+                // Hide loading
+                loading.style.display = 'none';
+                
+                console.log('Graph initialized successfully');
+                
+            } catch (error) {
+                console.error('Error initializing graph:', error);
+                document.getElementById('error').textContent = error.message;
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('loading').style.display = 'none';
+            }
+        }
+        
+        // Initialize when page loads
+        initGraph();
+    </script>
+</body>
+</html>

@@ -37,7 +37,7 @@ export class Graph3DData {
 
     /**
      * Load data from multiple sources
-     * @returns {Promise<Object>} Processed graph data
+     * @returns {Promise<Array>} Raw company data
      */
     async loadData() {
         try {
@@ -66,18 +66,8 @@ export class Graph3DData {
                 this.addChangesData(changesData.value);
             }
 
-            // Process into graph format
-            this.processedData = this.rawData; // For now, use raw data directly
-            
-            return {
-                nodes: this.rawData.map(company => ({
-                    id: company.id || company.name,
-                    name: company.name,
-                    group: company.type,
-                    val: company.urlCount || 1
-                })),
-                links: [] // No links for now, just nodes
-            };
+            // Return raw data for processing
+            return this.rawData;
 
         } catch (error) {
             console.error('Error loading data:', error);
@@ -397,6 +387,9 @@ export class Graph3DData {
         // Add company-to-company links
         companyPairs.forEach(link => links.push(link));
 
+        // Store the processed data
+        this.processedData = { nodes, links };
+
         return { nodes, links };
     }
 
@@ -444,28 +437,41 @@ export class Graph3DData {
             companies: 0,
             technologies: 0,
             concepts: 0,
-            links: this.processedData.links.length,
+            links: 0,
             entityTypes: new Set(),
             avgTechnologies: 0,
             avgConcepts: 0
         };
 
-        this.processedData.nodes.forEach(node => {
-            if (node.nodeType === 'company') {
-                stats.companies++;
-                stats.entityTypes.add(node.companyType);
-                stats.avgTechnologies += node.technologies?.length || 0;
-                stats.avgConcepts += node.concepts?.length || 0;
-            } else if (node.nodeType === 'technology') {
-                stats.technologies++;
-            } else if (node.nodeType === 'concept') {
-                stats.concepts++;
-            }
-        });
+        // Use processed data if available, otherwise raw data
+        if (this.processedData && this.processedData.nodes.length > 0) {
+            stats.links = this.processedData.links.length;
+            
+            this.processedData.nodes.forEach(node => {
+                if (node.nodeType === 'company') {
+                    stats.companies++;
+                    stats.entityTypes.add(node.companyType);
+                    stats.avgTechnologies += node.technologies?.length || 0;
+                    stats.avgConcepts += node.concepts?.length || 0;
+                } else if (node.nodeType === 'technology') {
+                    stats.technologies++;
+                } else if (node.nodeType === 'concept') {
+                    stats.concepts++;
+                }
+            });
 
-        if (stats.companies > 0) {
-            stats.avgTechnologies /= stats.companies;
-            stats.avgConcepts /= stats.companies;
+            if (stats.companies > 0) {
+                stats.avgTechnologies /= stats.companies;
+                stats.avgConcepts /= stats.companies;
+            }
+        } else if (this.rawData) {
+            // Fall back to raw data statistics
+            stats.companies = this.rawData.length;
+            const types = new Set();
+            this.rawData.forEach(company => {
+                if (company.type) types.add(company.type);
+            });
+            stats.entityTypes = types;
         }
 
         stats.entityTypes = Array.from(stats.entityTypes);
