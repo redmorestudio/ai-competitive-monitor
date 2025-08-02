@@ -209,7 +209,7 @@ export class Graph3DCore {
      */
     handleNodeClick(node, event) {
         // Will be overridden by event handlers
-        }
+    }
 
     /**
      * Handle node right-click
@@ -218,7 +218,7 @@ export class Graph3DCore {
      */
     handleNodeRightClick(node, event) {
         // Will be overridden by event handlers
-        }
+    }
 
     /**
      * Handle node hover
@@ -227,7 +227,7 @@ export class Graph3DCore {
      */
     handleNodeHover(node, prevNode) {
         // Will be overridden by event handlers
-        }
+    }
 
     /**
      * Set camera position

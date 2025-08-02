@@ -36,54 +36,57 @@ export class Graph3DUI {
 
         this.container.innerHTML = `
             <button class="collapse-btn" onclick="toggleControlsCollapse()">→</button>
+            <h4>Graph Intelligence ▶</h4>
             
-            <!-- Configuration Mode -->
-            ${this.renderConfigMode()}
-            
-            <!-- Draw By Mode -->
-            ${this.renderDrawByMode()}
-            
-            <!-- Stats Display -->
-            ${this.renderStats()}
-            
-            <!-- Legend -->
-            ${this.renderLegend()}
-            
-            <!-- View Mode -->
-            ${this.renderViewMode()}
-            
-            <!-- Node Size -->
-            ${this.renderNodeSize()}
-            
-            <!-- Visual Settings -->
-            ${this.renderVisualSettings()}
-            
-            <!-- Node Visibility -->
-            ${this.renderNodeVisibility()}
-            
-            <!-- Camera Controls -->
-            ${this.renderCameraControls()}
-            
-            <!-- Physics Controls -->
-            ${this.renderPhysicsControls()}
-            
-            <!-- Link Strength Filter -->
-            ${this.renderLinkStrengthFilter()}
-            
-            <!-- Entity Limit -->
-            ${this.renderEntityLimit()}
-            
-            <!-- Entity Type Filter -->
-            ${this.renderEntityTypeFilter()}
-            
-            <!-- Technology Filter -->
-            ${this.renderTechnologyFilter()}
-            
-            <!-- Concept Filter -->
-            ${this.renderConceptFilter()}
-            
-            <!-- Search -->
-            ${this.renderSearch()}
+            <div class="control-content">
+                <!-- Configuration Mode -->
+                ${this.renderConfigMode()}
+                
+                <!-- Draw By Mode -->
+                ${this.renderDrawByMode()}
+                
+                <!-- Stats Display -->
+                ${this.renderStats()}
+                
+                <!-- Legend -->
+                ${this.renderLegend()}
+                
+                <!-- View Mode -->
+                ${this.renderViewMode()}
+                
+                <!-- Node Size -->
+                ${this.renderNodeSize()}
+                
+                <!-- Visual Settings -->
+                ${this.renderVisualSettings()}
+                
+                <!-- Node Visibility -->
+                ${this.renderNodeVisibility()}
+                
+                <!-- Camera Controls -->
+                ${this.renderCameraControls()}
+                
+                <!-- Physics Controls -->
+                ${this.renderPhysicsControls()}
+                
+                <!-- Link Strength Filter -->
+                ${this.renderLinkStrengthFilter()}
+                
+                <!-- Entity Limit -->
+                ${this.renderEntityLimit()}
+                
+                <!-- Entity Type Filter -->
+                ${this.renderEntityTypeFilter()}
+                
+                <!-- Technology Filter -->
+                ${this.renderTechnologyFilter()}
+                
+                <!-- Concept Filter -->
+                ${this.renderConceptFilter()}
+                
+                <!-- Search -->
+                ${this.renderSearch()}
+            </div>
         `;
 
         // Store element references
