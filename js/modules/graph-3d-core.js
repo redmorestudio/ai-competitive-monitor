@@ -1,18 +1,15 @@
 /**
  * @module graph-3d-core
- * @description Core 3D graph engine using three.js and force-graph library
+ * @description Core 3D graph rendering engine using 3d-force-graph
  * @since 1.0.0
  */
 
-/**
- * Core 3D Force Graph Module
- * Handles graph initialization, rendering, and basic interactions
- */
+import ForceGraph3D from 'https://unpkg.com/3d-force-graph@1.73/dist/3d-force-graph.esm.js';
 
 export class Graph3DCore {
     constructor() {
-        this.graph = null;
         this.container = null;
+        this.graph = null;
         this.graphData = { nodes: [], links: [] };
         this.nodeColorMap = new Map();
         this.nodeSizeMap = new Map();
@@ -21,81 +18,77 @@ export class Graph3DCore {
     }
 
     /**
-     * Enable/disable node visibility
-     * @param {boolean} enabled - Whether to show nodes
-     */
-    setNodesEnabled(enabled) {
-        if (!this.graph) return;
-        
-        // Use nodeVisibility instead of opacity for better control
-        this.graph.nodeVisibility(enabled);
-    }
-
-    /**
-     * Set 2D/3D mode
-     * @param {boolean} flatten - True for 2D mode, false for 3D mode
-     * @param {Function} onComplete - Optional callback after mode change
-     */
-    setFlattenMode(flatten, onComplete) {
-        if (!this.graph) return;
-        
-        // Set number of dimensions (2 for flat, 3 for full 3D)
-        this.graph.numDimensions(flatten ? 2 : 3);
-        
-        // If switching to 3D, ensure nodes have z positions
-        if (!flatten && this.graphData) {
-            this.graphData.nodes.forEach(node => {
-                if (!node.z && node.z !== 0) {
-                    node.z = (Math.random() - 0.5) * 600;
-                }
-            });
-        }
-        
-        // Force a reheat of the simulation
-        this.graph.d3ReheatSimulation();
-        
-        // Call the completion callback to trigger force refresh
-        if (onComplete) {
-            setTimeout(onComplete, 100);
-        }
-    }
-
-    /**
-     * Initialize the 3D force graph
-     * @param {HTMLElement} container - DOM element to render the graph
+     * Initialize the 3D graph
+     * @param {HTMLElement} container - Container element
      * @param {Object} config - Configuration options
      */
-    init(container, config = {}) {
+    initialize(container, config = {}) {
+        console.log('Initializing 3D graph...');
         this.container = container;
-        
-        // Import ForceGraph3D from global scope (loaded via script tag)
-        const ForceGraph3D = window.ForceGraph3D;
-        
+
+        // Create graph instance
         this.graph = ForceGraph3D()(container)
-            .backgroundColor('#0a0a0f')
-            .numDimensions(3) // Explicitly set to 3D mode
-            .nodeLabel(node => this.getNodeLabel(node))
-            .nodeColor(node => this.nodeColorMap.get(node.id) || '#666')
-            .nodeVal(node => this.nodeSizeMap.get(node.id) || 1)
-            .nodeOpacity(0.9)
-            .nodeResolution(16)
-            .linkColor(link => this.linkColorMap.get(`${link.source.id}-${link.target.id}`) || 'rgba(150, 150, 150, 0.5)')
-            .linkWidth(link => this.linkWidthMap.get(`${link.source.id}-${link.target.id}`) || 0.1)
-            .linkOpacity(1) // Set to 1 so we can control opacity via the color alpha channel
-            .linkDirectionalParticles(0)
-            .linkDirectionalParticleSpeed(0.005)
+            .backgroundColor('#000033')
+            .nodeAutoColorBy('entityType')
+            .nodeThreeObject(node => this.createNodeObject(node))
+            .nodeThreeObjectExtend(true)
+            .linkWidth(link => this.linkWidthMap.get(`${link.source.id || link.source}-${link.target.id || link.target}`) || 1)
+            .linkColor(link => this.linkColorMap.get(`${link.source.id || link.source}-${link.target.id || link.target}`) || '#ffffff')
+            .linkOpacity(0.6)
+            .linkDirectionalParticles(2)
             .linkDirectionalParticleWidth(2)
-            .onNodeClick(this.handleNodeClick.bind(this))
-            .onNodeRightClick(this.handleNodeRightClick.bind(this))
-            .onNodeHover(this.handleNodeHover.bind(this));
+            .onNodeClick(config.onNodeClick || (() => {}))
+            .onNodeHover(config.onNodeHover || (() => {}))
+            .onLinkClick(config.onLinkClick || (() => {}))
+            .onLinkHover(config.onLinkHover || (() => {}));
 
-        // Set initial camera position
-        this.graph.cameraPosition({ x: 0, y: 0, z: 500 });
+        // Set up camera
+        if (config.cameraDistance) {
+            this.graph.cameraPosition({ z: config.cameraDistance });
+        }
 
-        // Enable pointer events
-        this.graph.enablePointerInteraction(true);
+        // Configure forces
+        this.graph
+            .d3Force('link', d => d.distance(100))
+            .d3Force('charge', d => d.strength(-120))
+            .d3Force('center', d => d.strength(0.05));
+
+        console.log('3D graph initialized');
+    }
+
+    /**
+     * Create custom node object
+     * @param {Object} node - Node data
+     * @returns {THREE.Object3D} Three.js object
+     */
+    createNodeObject(node) {
+        const color = this.nodeColorMap.get(node.id) || node.color || '#666666';
+        const size = this.nodeSizeMap.get(node.id) || node.size || 4;
+
+        // Create sphere
+        const geometry = new THREE.SphereGeometry(size, 16, 16);
+        const material = new THREE.MeshPhongMaterial({
+            color: new THREE.Color(color),
+            emissive: new THREE.Color(color),
+            emissiveIntensity: 0.3,
+            shininess: 100
+        });
         
-        return this.graph;
+        const sphere = new THREE.Mesh(geometry, material);
+        
+        // Add glow effect for high interest nodes
+        if (node.interestLevel >= 7) {
+            const glowGeometry = new THREE.SphereGeometry(size * 1.5, 16, 16);
+            const glowMaterial = new THREE.MeshBasicMaterial({
+                color: new THREE.Color(color),
+                transparent: true,
+                opacity: 0.3
+            });
+            const glow = new THREE.Mesh(glowGeometry, glowMaterial);
+            sphere.add(glow);
+        }
+
+        return sphere;
     }
 
     /**
@@ -103,18 +96,11 @@ export class Graph3DCore {
      * @param {Object} data - Graph data with nodes and links
      */
     updateData(data) {
+        console.log('Updating graph data:', data.nodes.length, 'nodes,', data.links.length, 'links');
         this.graphData = data;
         if (this.graph) {
             this.graph.graphData(data);
         }
-    }
-
-    /**
-     * Get the graph instance
-     * @returns {Object} The ForceGraph3D instance
-     */
-    getGraph() {
-        return this.graph;
     }
 
     /**
@@ -130,10 +116,23 @@ export class Graph3DCore {
      * @param {Map} colorMap - Map of node ID to color
      */
     updateNodeColors(colorMap) {
+        console.log('Updating node colors for', colorMap.size, 'nodes');
         this.nodeColorMap = colorMap;
-        if (this.graph) {
-            this.graph.nodeColor(this.graph.nodeColor()); // Force update
+        
+        if (!this.graph) {
+            console.warn('Graph not initialized');
+            return;
         }
+        
+        // Update the nodeThreeObject to use new colors
+        this.graph.nodeThreeObject(node => this.createNodeObject(node));
+        
+        // Force update by triggering a data refresh
+        const currentData = this.graph.graphData();
+        this.graph.graphData({
+            nodes: [...currentData.nodes],
+            links: [...currentData.links]
+        });
     }
 
     /**
@@ -141,182 +140,154 @@ export class Graph3DCore {
      * @param {Map} sizeMap - Map of node ID to size
      */
     updateNodeSizes(sizeMap) {
+        console.log('Updating node sizes for', sizeMap.size, 'nodes');
         this.nodeSizeMap = sizeMap;
-        if (this.graph) {
-            this.graph.nodeVal(this.graph.nodeVal()); // Force update
+        
+        if (!this.graph) {
+            console.warn('Graph not initialized');
+            return;
         }
+        
+        // Update the nodeThreeObject to use new sizes
+        this.graph.nodeThreeObject(node => this.createNodeObject(node));
+        
+        // Force update by triggering a data refresh
+        const currentData = this.graph.graphData();
+        this.graph.graphData({
+            nodes: [...currentData.nodes],
+            links: [...currentData.links]
+        });
     }
 
     /**
      * Update link colors
-     * @param {Map} colorMap - Map of link ID to color
+     * @param {Map} colorMap - Map of link key to color
      */
     updateLinkColors(colorMap) {
         this.linkColorMap = colorMap;
         if (this.graph) {
-            this.graph.linkColor(this.graph.linkColor()); // Force update
+            this.graph.linkColor(link => 
+                this.linkColorMap.get(`${link.source.id || link.source}-${link.target.id || link.target}`) || '#ffffff'
+            );
         }
     }
 
     /**
      * Update link widths
-     * @param {Map} widthMap - Map of link ID to width
+     * @param {Map} widthMap - Map of link key to width
      */
     updateLinkWidths(widthMap) {
         this.linkWidthMap = widthMap;
         if (this.graph) {
-            this.graph.linkWidth(this.graph.linkWidth()); // Force update
+            this.graph.linkWidth(link => 
+                this.linkWidthMap.get(`${link.source.id || link.source}-${link.target.id || link.target}`) || 1
+            );
         }
     }
 
     /**
-     * Center camera on a node
-     * @param {Object} node - Node to center on
-     * @param {number} distance - Distance from node
-     */
-    centerOnNode(node, distance = 300) {
-        if (!this.graph || !node) return;
-        
-        const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
-        this.graph.cameraPosition(
-            { 
-                x: node.x * distRatio, 
-                y: node.y * distRatio, 
-                z: node.z * distRatio 
-            },
-            node,
-            3000
-        );
-    }
-
-    /**
-     * Fit all nodes in view
-     */
-    fitToView() {
-        if (!this.graph) return;
-        
-        const nodes = this.graphData.nodes;
-        if (nodes.length === 0) return;
-
-        // Calculate bounding box
-        let minX = Infinity, maxX = -Infinity;
-        let minY = Infinity, maxY = -Infinity;
-        let minZ = Infinity, maxZ = -Infinity;
-
-        nodes.forEach(node => {
-            if (node.x !== undefined) {
-                minX = Math.min(minX, node.x);
-                maxX = Math.max(maxX, node.x);
-                minY = Math.min(minY, node.y);
-                maxY = Math.max(maxY, node.y);
-                minZ = Math.min(minZ, node.z);
-                maxZ = Math.max(maxZ, node.z);
-            }
-        });
-
-        // Calculate center and distance
-        const centerX = (minX + maxX) / 2;
-        const centerY = (minY + maxY) / 2;
-        const centerZ = (minZ + maxZ) / 2;
-
-        const maxDist = Math.max(
-            maxX - minX,
-            maxY - minY,
-            maxZ - minZ
-        );
-
-        // Position camera to see all nodes
-        const distance = maxDist * 1.5;
-        this.graph.cameraPosition(
-            { x: centerX, y: centerY, z: centerZ + distance },
-            { x: centerX, y: centerY, z: centerZ },
-            3000
-        );
-    }
-
-    /**
-     * Get node label for display
-     * @param {Object} node - Node object
-     * @returns {string} Label text
-     */
-    getNodeLabel(node) {
-        return node.name || node.id || '';
-    }
-
-    /**
-     * Handle node click
-     * @param {Object} node - Clicked node
-     * @param {Event} event - Click event
-     */
-    handleNodeClick(node, event) {
-        // Will be overridden by event handlers
-    }
-
-    /**
-     * Handle node right-click
-     * @param {Object} node - Right-clicked node
-     * @param {Event} event - Click event
-     */
-    handleNodeRightClick(node, event) {
-        // Will be overridden by event handlers
-    }
-
-    /**
-     * Handle node hover
-     * @param {Object} node - Hovered node
-     * @param {Object} prevNode - Previously hovered node
-     */
-    handleNodeHover(node, prevNode) {
-        // Will be overridden by event handlers
-    }
-
-    /**
-     * Set camera position
+     * Update camera position
      * @param {Object} position - Camera position {x, y, z}
      * @param {Object} lookAt - Look at position {x, y, z}
      * @param {number} duration - Animation duration in ms
      */
-    setCameraPosition(position, lookAt = {x: 0, y: 0, z: 0}, duration = 1000) {
+    updateCamera(position, lookAt, duration = 1000) {
         if (this.graph) {
             this.graph.cameraPosition(position, lookAt, duration);
         }
     }
 
     /**
-     * Enable/disable node labels
-     * @param {boolean} enabled - Whether to show labels
-     * @param {number} fontSize - Font size for labels
+     * Zoom to fit all nodes
+     * @param {number} duration - Animation duration in ms
+     * @param {number} padding - Padding around nodes
      */
-    setLabelsEnabled(enabled, fontSize = 8) {
-        if (!this.graph) return;
-        
-        if (enabled) {
-            this.graph
-                .nodeLabel(node => this.getNodeLabel(node))
-                .nodeThreeObject(node => {
-                    const sprite = new window.SpriteText(node.name || node.id || '');
-                    sprite.material.depthWrite = false;
-                    // Get the actual color from the node color map
-                    sprite.color = this.nodeColorMap.get(node.id) || '#ffffff';
-                    sprite.textHeight = fontSize;
-                    return sprite;
-                });
-        } else {
-            this.graph
-                .nodeLabel('')
-                .nodeThreeObject(null);
+    zoomToFit(duration = 1000, padding = 20) {
+        if (this.graph) {
+            this.graph.zoomToFit(duration, padding);
         }
     }
 
     /**
-     * Enable/disable link particles
-     * @param {boolean} enabled - Whether to show particles
-     * @param {number} count - Number of particles per link
+     * Focus on a specific node
+     * @param {string} nodeId - Node ID to focus on
+     * @param {number} distance - Distance from node
      */
-    setParticlesEnabled(enabled, count = 2) {
-        if (this.graph) {
-            this.graph.linkDirectionalParticles(enabled ? count : 0);
+    focusOnNode(nodeId, distance = 100) {
+        const node = this.graphData.nodes.find(n => n.id === nodeId);
+        if (node && this.graph) {
+            const distRatio = 1 + distance / Math.hypot(node.x || 0, node.y || 0, node.z || 0);
+            this.graph.cameraPosition(
+                { x: node.x * distRatio, y: node.y * distRatio, z: node.z * distRatio },
+                node,
+                1000
+            );
         }
+    }
+
+    /**
+     * Enable/disable node dragging
+     * @param {boolean} enabled - Whether to enable dragging
+     */
+    setNodeDragging(enabled) {
+        if (this.graph) {
+            this.graph.enableNodeDrag(enabled);
+        }
+    }
+
+    /**
+     * Enable/disable navigation controls
+     * @param {boolean} enabled - Whether to enable controls
+     */
+    setNavigationControls(enabled) {
+        if (this.graph) {
+            this.graph.enableNavigationControls(enabled);
+        }
+    }
+
+    /**
+     * Set link particles visibility
+     * @param {boolean} visible - Whether to show particles
+     */
+    setLinkParticles(visible) {
+        if (this.graph) {
+            this.graph.linkDirectionalParticles(visible ? 2 : 0);
+        }
+    }
+
+    /**
+     * Set node labels
+     * @param {boolean} visible - Whether to show labels
+     * @param {function} accessor - Label accessor function
+     */
+    setNodeLabels(visible, accessor = null) {
+        if (this.graph) {
+            if (visible && accessor) {
+                this.graph
+                    .nodeLabel(accessor)
+                    .nodeAutoColorBy(null);
+            } else {
+                this.graph.nodeLabel('');
+            }
+        }
+    }
+
+    /**
+     * Set background color
+     * @param {string} color - Background color
+     */
+    setBackgroundColor(color) {
+        if (this.graph) {
+            this.graph.backgroundColor(color);
+        }
+    }
+
+    /**
+     * Get graph instance
+     * @returns {Object} Force graph instance
+     */
+    getGraphInstance() {
+        return this.graph;
     }
 
     /**
@@ -339,6 +310,15 @@ export class Graph3DCore {
     reheatSimulation() {
         if (this.graph) {
             this.graph.d3ReheatSimulation();
+        }
+    }
+
+    /**
+     * Force a complete refresh of the graph
+     */
+    refresh() {
+        if (this.graph) {
+            this.graph.refresh();
         }
     }
 

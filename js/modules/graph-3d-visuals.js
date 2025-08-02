@@ -56,6 +56,7 @@ export class Graph3DVisuals {
      * @param {Object} data - Graph data
      */
     applyViewMode(mode, data) {
+        console.log('Applying view mode:', mode);
         this.viewMode = mode;
         const colorMap = new Map();
 
@@ -78,6 +79,12 @@ export class Graph3DVisuals {
                 case 'high-interest':
                     color = node.interestLevel >= 7 ? '#ff0000' : '#333333';
                     break;
+                case 'all':
+                case 'technology':
+                case 'concept':
+                    // These modes don't change colors, just filter links
+                    color = this.getEntityColor(node);
+                    break;
                 default:
                     color = this.getEntityColor(node);
             }
@@ -89,6 +96,7 @@ export class Graph3DVisuals {
             colorMap.set(node.id, color);
         });
 
+        console.log('Color map created with', colorMap.size, 'entries');
         graph3DCore.updateNodeColors(colorMap);
     }
 
@@ -98,6 +106,7 @@ export class Graph3DVisuals {
      * @param {Object} data - Graph data
      */
     applyNodeSize(mode, data) {
+        console.log('Applying node size mode:', mode);
         this.nodeSize = mode;
         const sizeMap = new Map();
 
@@ -132,6 +141,7 @@ export class Graph3DVisuals {
      * @param {string} linkFilter - Link filter mode
      */
     applyLinkVisuals(data, linkFilter = 'all') {
+        console.log('Applying link visuals, filter:', linkFilter);
         const colorMap = new Map();
         const widthMap = new Map();
         const linkWidthMultiplier = parseFloat(document.getElementById('link-width-multiplier')?.value || 12);
@@ -146,59 +156,67 @@ export class Graph3DVisuals {
             if (!this.showLinks) {
                 width = 0;
             } else {
-                // Apply link filter
-                if (linkFilter === 'technology' && link.linkType !== 'technology') return;
-                if (linkFilter === 'concept' && link.linkType !== 'concept') return;
-
-                // Color based on link type
-                if (!this.monochrome) {
-                    switch (link.linkType) {
-                        case 'technology':
-                            color = `rgba(0, 255, 136, ${linkOpacity})`;
-                            break;
-                        case 'concept':
-                            color = `rgba(78, 205, 196, ${linkOpacity})`;
-                            break;
-                        case 'shared-technology':
-                            color = `rgba(255, 215, 0, ${linkOpacity * 0.8})`; // Slightly more transparent
-                            break;
-                        default:
-                            color = `rgba(150, 150, 150, ${linkOpacity})`;
+                // Apply link filter based on view mode
+                let shouldShow = true;
+                if (linkFilter === 'technology' || this.viewMode === 'technology') {
+                    shouldShow = link.linkType !== 'concept';
+                } else if (linkFilter === 'concept' || this.viewMode === 'concept') {
+                    shouldShow = link.linkType === 'concept';
+                }
+                
+                if (!shouldShow) {
+                    width = 0;
+                } else {
+                    // Color based on link type
+                    if (!this.monochrome) {
+                        switch (link.linkType) {
+                            case 'technology':
+                                color = `rgba(0, 255, 136, ${linkOpacity})`;
+                                break;
+                            case 'concept':
+                                color = `rgba(78, 205, 196, ${linkOpacity})`;
+                                break;
+                            case 'shared-technology':
+                                color = `rgba(255, 215, 0, ${linkOpacity * 0.8})`; // Slightly more transparent
+                                break;
+                            default:
+                                color = `rgba(150, 150, 150, ${linkOpacity})`;
+                        }
+                    } else {
+                        color = `rgba(0, 255, 255, ${linkOpacity})`;
                     }
-                } else {
-                    color = `rgba(0, 255, 255, ${linkOpacity})`;
-                }
 
-                // Calculate link width based on connection strength
-                let strength = 0;
-                
-                // Concept links get full multiplier
-                if (link.linkType === 'concept') {
-                    strength = linkWidthMultiplier;
-                }
-                // Technology links get scaled by connection count
-                else if (link.linkType === 'technology') {
-                    const connectionCount = link.connectionCount || link.strength || 1;
-                    strength = linkWidthMultiplier * Math.min(connectionCount / 10, 1);
-                }
-                // Shared technology links scale by number of shared techs
-                else if (link.linkType === 'shared-technology') {
-                    const sharedCount = link.strength || 1;
-                    strength = linkWidthMultiplier * Math.min(sharedCount / 5, 1);
-                }
-                
-                // Apply multiplier to base width
-                if (strength > 0) {
-                    width = 0.1 + (strength * 0.1);
-                }
-                
-                // Apply thin lines setting after strength calculation
-                if (this.thinLines) {
-                    // For thin lines, scale down but maintain relative differences
-                    width = 0.05 + (width * 0.1); // Much thinner but still shows variation
-                } else {
-                    // Cap at reasonable maximum for normal mode
-                    width = Math.min(width, 5.0);
+                    // Calculate link width based on connection strength
+                    let strength = 0;
+                    
+                    // Concept links get full multiplier
+                    if (link.linkType === 'concept') {
+                        strength = linkWidthMultiplier;
+                    }
+                    // Technology links get scaled by connection count
+                    else if (link.linkType === 'technology') {
+                        const connectionCount = link.connectionCount || link.strength || 1;
+                        strength = linkWidthMultiplier * Math.min(connectionCount / 10, 1);
+                    }
+                    // Shared technology links scale by number of shared techs
+                    else if (link.linkType === 'shared-technology') {
+                        const sharedCount = link.strength || 1;
+                        strength = linkWidthMultiplier * Math.min(sharedCount / 5, 1);
+                    }
+                    
+                    // Apply multiplier to base width
+                    if (strength > 0) {
+                        width = 0.1 + (strength * 0.1);
+                    }
+                    
+                    // Apply thin lines setting after strength calculation
+                    if (this.thinLines) {
+                        // For thin lines, scale down but maintain relative differences
+                        width = 0.05 + (width * 0.1); // Much thinner but still shows variation
+                    } else {
+                        // Cap at reasonable maximum for normal mode
+                        width = Math.min(width, 5.0);
+                    }
                 }
             }
 
@@ -299,8 +317,8 @@ export class Graph3DVisuals {
                 // Force re-apply of link visuals
                 if (graph3DCore && graph3DCore.getGraph()) {
                     const data = graph3DCore.getData();
-                    if (data && graph3DVisuals) {
-                        graph3DVisuals.applyLinkVisuals(data);
+                    if (data) {
+                        this.applyLinkVisuals(data);
                     }
                 }
                 break;
