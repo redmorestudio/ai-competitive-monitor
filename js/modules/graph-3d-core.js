@@ -79,6 +79,7 @@ export class Graph3DCore {
 
         this.initialized = true;
         console.log('3D graph initialized');
+        return this.graph;
     }
 
     /**

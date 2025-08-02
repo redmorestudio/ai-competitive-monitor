@@ -417,8 +417,11 @@ class Graph3DCoordinator {
      * Set up graph event handlers
      */
     setupGraphEvents() {
-        const graph = graph3DCore.getGraph();
-        if (!graph) return;
+        const graph = graph3DCore.getGraphInstance();
+        if (!graph) {
+            console.warn('Graph not yet initialized in setupGraphEvents');
+            return;
+        }
 
         // Set up node interaction handlers
         graph
@@ -816,7 +819,7 @@ class Graph3DCoordinator {
     }
 
     zoom(factor) {
-        const graph = graph3DCore.getGraph();
+        const graph = graph3DCore.getGraphInstance();
         if (!graph) return;
         
         const camera = graph.camera();
@@ -830,7 +833,7 @@ class Graph3DCoordinator {
     }
 
     rotate(angle) {
-        const graph = graph3DCore.getGraph();
+        const graph = graph3DCore.getGraphInstance();
         if (!graph) return;
         
         const camera = graph.camera();
