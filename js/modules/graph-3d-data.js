@@ -43,10 +43,10 @@ export class Graph3DData {
         try {
             // Try to load from multiple sources
             const [companiesData, detailsData, changesData, dashboardData] = await Promise.allSettled([
-                this.fetchJSON('data/companies.json'),
-                this.fetchJSON('data/company-details.json'),
-                this.fetchJSON('data/changes.json'),
-                this.fetchJSON('data/dashboard.json')
+                this.fetchJSON('api-data/companies.json'),
+                this.fetchJSON('api-data/company-details.json'),
+                this.fetchJSON('api-data/changes.json'),
+                this.fetchJSON('api-data/dashboard.json')
             ]);
 
             // Process SQLite format if available
