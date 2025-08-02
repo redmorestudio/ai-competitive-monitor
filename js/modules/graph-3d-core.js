@@ -278,6 +278,16 @@ export class Graph3DCore {
     }
 
     /**
+     * Set node visibility
+     * @param {boolean} enabled - Whether to show nodes
+     */
+    setNodeVisibility(enabled) {
+        if (this.graph) {
+            this.graph.nodeVisibility(enabled);
+        }
+    }
+
+    /**
      * Set link particles visibility
      * @param {boolean} visible - Whether to show particles
      */

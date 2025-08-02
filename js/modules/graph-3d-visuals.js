@@ -310,7 +310,7 @@ export class Graph3DVisuals {
         switch (setting) {
             case 'nodes':
                 this.showNodes = value;
-                graph3DCore.setNodesEnabled(value);
+                graph3DCore.setNodeVisibility(value);
                 break;
             case 'links':
                 this.showLinks = value;
@@ -324,11 +324,11 @@ export class Graph3DVisuals {
                 break;
             case 'labels':
                 this.showLabels = value;
-                graph3DCore.setLabelsEnabled(value, this.labelFontSize || 12);
+                graph3DCore.setNodeLabels(value, node => node.name);
                 break;
             case 'particles':
                 this.showParticles = value;
-                graph3DCore.setParticlesEnabled(value, 2);
+                graph3DCore.setLinkParticles(value);
                 break;
             case 'thinLines':
                 this.thinLines = value;
@@ -353,7 +353,7 @@ export class Graph3DVisuals {
     setLabelFontSize(size) {
         this.labelFontSize = size;
         if (this.showLabels) {
-            graph3DCore.setLabelsEnabled(true, size);
+            graph3DCore.setNodeLabels(true, node => node.name);
         }
     }
 
