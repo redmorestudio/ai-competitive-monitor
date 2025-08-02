@@ -202,7 +202,13 @@ class Graph3DCoordinator {
             // Flatten graph (2D/3D toggle)
             onFlattenGraphChange: (flatten) => {
                 if (graph3DCore && graph3DCore.setFlattenMode) {
-                    graph3DCore.setFlattenMode(flatten);
+                    graph3DCore.setFlattenMode(flatten, () => {
+                        // Refresh forces after dimension change to fix compression
+                        if (graph3DPhysics && graph3DPhysics.setForceStrength) {
+                            const currentStrength = graph3DPhysics.forceStrength;
+                            graph3DPhysics.setForceStrength(currentStrength);
+                        }
+                    });
                 }
             },
 

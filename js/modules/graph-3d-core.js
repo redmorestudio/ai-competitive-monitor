@@ -34,8 +34,9 @@ export class Graph3DCore {
     /**
      * Set 2D/3D mode
      * @param {boolean} flatten - True for 2D mode, false for 3D mode
+     * @param {Function} onComplete - Optional callback after mode change
      */
-    setFlattenMode(flatten) {
+    setFlattenMode(flatten, onComplete) {
         if (!this.graph) return;
         
         // Set number of dimensions (2 for flat, 3 for full 3D)
@@ -45,11 +46,17 @@ export class Graph3DCore {
         if (!flatten && this.graphData) {
             this.graphData.nodes.forEach(node => {
                 if (!node.z && node.z !== 0) {
-                    node.z = (Math.random() - 0.5) * 300;
+                    node.z = (Math.random() - 0.5) * 600;
                 }
             });
-            // Reheat to let nodes spread in 3D
-            this.graph.d3ReheatSimulation();
+        }
+        
+        // Force a reheat of the simulation
+        this.graph.d3ReheatSimulation();
+        
+        // Call the completion callback to trigger force refresh
+        if (onComplete) {
+            setTimeout(onComplete, 100);
         }
     }
 
