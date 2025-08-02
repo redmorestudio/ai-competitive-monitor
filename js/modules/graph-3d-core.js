@@ -51,7 +51,7 @@ export class Graph3DCore {
             .nodeResolution(16)
             .linkColor(link => this.linkColorMap.get(`${link.source.id}-${link.target.id}`) || 'rgba(150, 150, 150, 0.5)')
             .linkWidth(link => this.linkWidthMap.get(`${link.source.id}-${link.target.id}`) || 0.1)
-            .linkOpacity(0.6)
+            .linkOpacity(1) // Set to 1 so we can control opacity via the color alpha channel
             .linkDirectionalParticles(0)
             .linkDirectionalParticleSpeed(0.005)
             .linkDirectionalParticleWidth(2)

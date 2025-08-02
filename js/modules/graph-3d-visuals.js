@@ -135,10 +135,11 @@ export class Graph3DVisuals {
         const colorMap = new Map();
         const widthMap = new Map();
         const linkWidthMultiplier = parseFloat(document.getElementById('link-width-multiplier')?.value || 12);
+        const linkOpacity = parseFloat(document.getElementById('link-opacity')?.value || 0.5);
 
         data.links.forEach(link => {
             const linkId = `${link.source.id || link.source}-${link.target.id || link.target}`;
-            let color = 'rgba(150, 150, 150, 0.5)';
+            let color = `rgba(150, 150, 150, ${linkOpacity})`;
             let width = 0.1;
 
             // Skip if links are hidden
@@ -153,19 +154,19 @@ export class Graph3DVisuals {
                 if (!this.monochrome) {
                     switch (link.linkType) {
                         case 'technology':
-                            color = 'rgba(0, 255, 136, 0.6)';
+                            color = `rgba(0, 255, 136, ${linkOpacity})`;
                             break;
                         case 'concept':
-                            color = 'rgba(78, 205, 196, 0.6)';
+                            color = `rgba(78, 205, 196, ${linkOpacity})`;
                             break;
                         case 'shared-technology':
-                            color = 'rgba(255, 215, 0, 0.4)';
+                            color = `rgba(255, 215, 0, ${linkOpacity * 0.8})`; // Slightly more transparent
                             break;
                         default:
-                            color = 'rgba(150, 150, 150, 0.5)';
+                            color = `rgba(150, 150, 150, ${linkOpacity})`;
                     }
                 } else {
-                    color = 'rgba(0, 255, 255, 0.6)';
+                    color = `rgba(0, 255, 255, ${linkOpacity})`;
                 }
 
                 // Calculate link width based on connection strength
@@ -192,11 +193,11 @@ export class Graph3DVisuals {
                 
                 // Apply thin lines setting
                 if (this.thinLines) {
-                    width *= 0.5;
+                    width = 0.1; // Absolute minimum
+                } else {
+                    // Cap at reasonable maximum
+                    width = Math.min(width, 5.0);
                 }
-                
-                // Cap at reasonable maximum
-                width = Math.min(width, 5.0);
             }
 
             colorMap.set(linkId, color);
@@ -293,6 +294,13 @@ export class Graph3DVisuals {
                 break;
             case 'links':
                 this.showLinks = value;
+                // Force re-apply of link visuals
+                if (graph3DCore && graph3DCore.getGraph()) {
+                    const data = graph3DCore.getData();
+                    if (data && graph3DVisuals) {
+                        graph3DVisuals.applyLinkVisuals(data);
+                    }
+                }
                 break;
             case 'labels':
                 this.showLabels = value;

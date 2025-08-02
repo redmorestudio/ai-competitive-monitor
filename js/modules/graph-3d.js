@@ -194,6 +194,7 @@ class Graph3DCoordinator {
             onVisualToggle: (setting, value) => {
                 if (graph3DVisuals && graph3DVisuals.toggleSetting) {
                     graph3DVisuals.toggleSetting(setting, value);
+                    // Always re-render after visual changes
                     this.applyFiltersAndRender();
                 }
             },
@@ -207,6 +208,14 @@ class Graph3DCoordinator {
 
             // Link width change
             onLinkWidthChange: (value) => {
+                // Just trigger a re-render which will pick up the new value
+                if (graph3DVisuals && graph3DVisuals.applyLinkVisuals) {
+                    graph3DVisuals.applyLinkVisuals(this.filteredData);
+                }
+            },
+
+            // Link opacity change
+            onLinkOpacityChange: (value) => {
                 // Just trigger a re-render which will pick up the new value
                 if (graph3DVisuals && graph3DVisuals.applyLinkVisuals) {
                     graph3DVisuals.applyLinkVisuals(this.filteredData);

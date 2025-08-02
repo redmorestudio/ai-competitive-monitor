@@ -515,6 +515,11 @@ export class Graph3DUI {
                 </label>
                 
                 <label style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                    <span>Thin Lines</span>
+                    <input type="checkbox" id="thin-lines" style="width: 20px; height: 20px;">
+                </label>
+                
+                <label style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
                     <span>Monochrome Mode</span>
                     <input type="checkbox" id="monochrome-mode" style="width: 20px; height: 20px;">
                 </label>
@@ -824,6 +829,7 @@ export class Graph3DUI {
             showLabels: document.getElementById('show-labels'),
             showParticles: document.getElementById('show-particles'),
             floatingTooltip: document.getElementById('floating-tooltip'),
+            thinLines: document.getElementById('thin-lines'),
             monochromeMode: document.getElementById('monochrome-mode'),
             showChangeRings: document.getElementById('show-change-rings'),
             flattenGraph: document.getElementById('flatten-graph'),
@@ -957,10 +963,31 @@ export class Graph3DUI {
         this.attachSliderListener('entityLimit', 'entityLimitValue', 'onEntityLimitChange');
 
         // Checkboxes
-        this.attachCheckboxListener('showLinks', 'onShowLinksChange');
-        this.attachCheckboxListener('showLabels', 'onShowLabelsChange');
-        this.attachCheckboxListener('showParticles', 'onShowParticlesChange');
-        this.attachCheckboxListener('floatingTooltip', 'onFloatingTooltipChange');
+        this.attachCheckboxListener('showNodes', (checked) => {
+            if (this.callbacks.onVisualToggle) {
+                this.callbacks.onVisualToggle('nodes', checked);
+            }
+        });
+        this.attachCheckboxListener('showLinks', (checked) => {
+            if (this.callbacks.onVisualToggle) {
+                this.callbacks.onVisualToggle('links', checked);
+            }
+        });
+        this.attachCheckboxListener('showLabels', (checked) => {
+            if (this.callbacks.onVisualToggle) {
+                this.callbacks.onVisualToggle('labels', checked);
+            }
+        });
+        this.attachCheckboxListener('showParticles', (checked) => {
+            if (this.callbacks.onVisualToggle) {
+                this.callbacks.onVisualToggle('particles', checked);
+            }
+        });
+        this.attachCheckboxListener('thinLines', (checked) => {
+            if (this.callbacks.onVisualToggle) {
+                this.callbacks.onVisualToggle('thinLines', checked);
+            }
+        });
         this.attachCheckboxListener('monochromeMode', 'onMonochromeModeChange');
         this.attachCheckboxListener('showChangeRings', 'onShowChangeRingsChange');
         this.attachCheckboxListener('flattenGraph', 'onFlattenGraphChange');
