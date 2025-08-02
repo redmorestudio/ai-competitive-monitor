@@ -69,7 +69,7 @@ class Graph3DCoordinator {
 
             // Initialize core graph
             console.log('Initializing core graph...');
-            const graph = graph3DCore.init(this.container, {
+            const graph = await graph3DCore.initialize(this.container, {
                 backgroundColor: '#0a0a0f'
             });
 

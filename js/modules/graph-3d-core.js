@@ -4,7 +4,8 @@
  * @since 1.0.0
  */
 
-import ForceGraph3D from 'https://unpkg.com/3d-force-graph@1.73/dist/3d-force-graph.esm.js';
+// Use dynamic import to handle CORS issues
+let ForceGraph3D;
 
 export class Graph3DCore {
     constructor() {
@@ -15,6 +16,7 @@ export class Graph3DCore {
         this.nodeSizeMap = new Map();
         this.linkColorMap = new Map();
         this.linkWidthMap = new Map();
+        this.initialized = false;
     }
 
     /**
@@ -22,9 +24,31 @@ export class Graph3DCore {
      * @param {HTMLElement} container - Container element
      * @param {Object} config - Configuration options
      */
-    initialize(container, config = {}) {
+    async initialize(container, config = {}) {
         console.log('Initializing 3D graph...');
         this.container = container;
+
+        // Load ForceGraph3D if not already loaded
+        if (!ForceGraph3D) {
+            if (window.ForceGraph3D) {
+                // Use global if available (from script tag)
+                ForceGraph3D = window.ForceGraph3D;
+            } else {
+                // Try dynamic import as fallback
+                try {
+                    const module = await import('https://unpkg.com/3d-force-graph@1.73/dist/3d-force-graph.esm.js');
+                    ForceGraph3D = module.default;
+                } catch (error) {
+                    console.error('Failed to load 3d-force-graph module:', error);
+                    // Final fallback - assume it's loaded globally
+                    ForceGraph3D = window.ForceGraph3D;
+                }
+            }
+        }
+
+        if (!ForceGraph3D) {
+            throw new Error('ForceGraph3D not available');
+        }
 
         // Create graph instance
         this.graph = ForceGraph3D()(container)
@@ -53,6 +77,7 @@ export class Graph3DCore {
             .d3Force('charge', d => d.strength(-120))
             .d3Force('center', d => d.strength(0.05));
 
+        this.initialized = true;
         console.log('3D graph initialized');
     }
 
@@ -62,6 +87,12 @@ export class Graph3DCore {
      * @returns {THREE.Object3D} Three.js object
      */
     createNodeObject(node) {
+        // Make sure THREE is available
+        if (!window.THREE) {
+            console.error('THREE.js not loaded');
+            return null;
+        }
+
         const color = this.nodeColorMap.get(node.id) || node.color || '#666666';
         const size = this.nodeSizeMap.get(node.id) || node.size || 4;
 
@@ -119,7 +150,7 @@ export class Graph3DCore {
         console.log('Updating node colors for', colorMap.size, 'nodes');
         this.nodeColorMap = colorMap;
         
-        if (!this.graph) {
+        if (!this.graph || !this.initialized) {
             console.warn('Graph not initialized');
             return;
         }
@@ -143,7 +174,7 @@ export class Graph3DCore {
         console.log('Updating node sizes for', sizeMap.size, 'nodes');
         this.nodeSizeMap = sizeMap;
         
-        if (!this.graph) {
+        if (!this.graph || !this.initialized) {
             console.warn('Graph not initialized');
             return;
         }
@@ -335,6 +366,7 @@ export class Graph3DCore {
         this.nodeSizeMap.clear();
         this.linkColorMap.clear();
         this.linkWidthMap.clear();
+        this.initialized = false;
     }
 }
 
