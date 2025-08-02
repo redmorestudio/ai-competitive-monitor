@@ -110,14 +110,15 @@ export class Graph3DData {
         }
 
         // Process companies
-        return companies.companies.map(company => {
+        const companiesArray = Array.isArray(companies) ? companies : (companies.companies || []);
+        return companiesArray.map(company => {
             const detail = detailsMap.get(company.name) || {};
             
             return {
                 id: company.name.toLowerCase().replace(/\s+/g, '-'),
                 name: company.name,
                 website: company.website,
-                type: this.normalizeEntityType(company.type),
+                type: this.normalizeEntityType(company.type || company.category),
                 interestLevel: company.interest_level || 5,
                 urlCount: company.urls_to_monitor || 0,
                 intelligence: {
