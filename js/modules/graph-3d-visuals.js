@@ -16,6 +16,7 @@ export class Graph3DVisuals {
         // Visual settings
         this.viewMode = 'entity-type';
         this.nodeSize = 'uniform';
+        this.showNodes = true;
         this.showLinks = true;
         this.showLabels = true;
         this.showParticles = true;
@@ -23,6 +24,7 @@ export class Graph3DVisuals {
         this.monochrome = false;
         this.showChangeRings = false;
         this.autoRotate = false;
+        this.labelFontSize = 12;
         
         // Color schemes
         this.entityColors = {
@@ -132,6 +134,7 @@ export class Graph3DVisuals {
     applyLinkVisuals(data, linkFilter = 'all') {
         const colorMap = new Map();
         const widthMap = new Map();
+        const linkWidthMultiplier = parseFloat(document.getElementById('link-width-multiplier')?.value || 12);
 
         data.links.forEach(link => {
             const linkId = `${link.source.id || link.source}-${link.target.id || link.target}`;
@@ -155,6 +158,9 @@ export class Graph3DVisuals {
                         case 'concept':
                             color = 'rgba(78, 205, 196, 0.6)';
                             break;
+                        case 'shared-technology':
+                            color = 'rgba(255, 215, 0, 0.4)';
+                            break;
                         default:
                             color = 'rgba(150, 150, 150, 0.5)';
                     }
@@ -162,8 +168,35 @@ export class Graph3DVisuals {
                     color = 'rgba(0, 255, 255, 0.6)';
                 }
 
-                // Width based on strength
-                width = this.thinLines ? 0.05 : (0.1 + (link.strength || 0) * 0.5);
+                // Calculate link width based on connection strength
+                let strength = 0;
+                
+                // Concept links get full multiplier
+                if (link.linkType === 'concept') {
+                    strength = linkWidthMultiplier;
+                }
+                // Technology links get scaled by connection count
+                else if (link.linkType === 'technology') {
+                    const connectionCount = link.strength || 1;
+                    strength = linkWidthMultiplier * Math.min(connectionCount / 10, 1);
+                }
+                // Shared technology links scale by number of shared techs
+                else if (link.linkType === 'shared-technology') {
+                    strength = linkWidthMultiplier * Math.min((link.strength || 1) / 5, 1);
+                }
+                
+                // Apply multiplier
+                if (strength > 0) {
+                    width = 0.1 + (strength * 0.1);
+                }
+                
+                // Apply thin lines setting
+                if (this.thinLines) {
+                    width *= 0.5;
+                }
+                
+                // Cap at reasonable maximum
+                width = Math.min(width, 5.0);
             }
 
             colorMap.set(linkId, color);

@@ -27,8 +27,8 @@ export class Graph3DCore {
     setNodesEnabled(enabled) {
         if (!this.graph) return;
         
-        // Set node opacity based on enabled state
-        this.graph.nodeOpacity(enabled ? 0.9 : 0);
+        // Use nodeVisibility instead of opacity for better control
+        this.graph.nodeVisibility(enabled);
     }
 
     /**

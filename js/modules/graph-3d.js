@@ -111,6 +111,11 @@ class Graph3DCoordinator {
                     graph3DVisuals.applyViewMode('entity-type', this.rawData);
                     graph3DVisuals.applyNodeSize('uniform', this.rawData);
                     graph3DVisuals.applyLinkVisuals(this.rawData);
+                    
+                    // Initialize labels if enabled
+                    if (graph3DVisuals.showLabels) {
+                        graph3DCore.setLabelsEnabled(true, graph3DVisuals.labelFontSize || 12);
+                    }
                 }
             }
 
@@ -197,6 +202,14 @@ class Graph3DCoordinator {
             onLabelFontSizeChange: (size) => {
                 if (graph3DVisuals && graph3DVisuals.setLabelFontSize) {
                     graph3DVisuals.setLabelFontSize(size);
+                }
+            },
+
+            // Link width change
+            onLinkWidthChange: (value) => {
+                // Just trigger a re-render which will pick up the new value
+                if (graph3DVisuals && graph3DVisuals.applyLinkVisuals) {
+                    graph3DVisuals.applyLinkVisuals(this.filteredData);
                 }
             },
 
