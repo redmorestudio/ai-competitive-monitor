@@ -39,7 +39,7 @@ class Graph3DCoordinator {
     async init(config = {}) {
         try {
             // Get containers
-            this.container = document.getElementById(config.graphContainer || 'graph');
+            this.container = document.getElementById(config.graphContainer || '3d-graph');
             this.controlsContainer = document.getElementById(config.controlsContainer || 'controls');
             this.infoContainer = document.getElementById(config.infoContainer || 'info');
 
@@ -55,7 +55,6 @@ class Graph3DCoordinator {
 
             // Load data
             this.rawData = await graph3DData.loadData();
-            );
 
             // Initialize core graph
             const graph = graph3DCore.init(this.container, {
