@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Competitive Monitor - 3D Force Graph</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/graph.css">
+    <script src="https://unpkg.com/three@0.152.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three-spritetext@1.8.0/dist/three-spritetext.min.js"></script>
+    <script src="https://unpkg.com/d3@7.8.5/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/3d-force-graph@1.73.0/dist/3d-force-graph.min.js"></script>
+</head>
+<body>
+    <div id="loading">
+        Loading AI Competitive Intelligence Graph...
+        <div id="graphVersionInfo" style="font-size: 14px; margin-top: 10px; color: #888;"></div>
+    </div>
+    
+    <div id="info" style="display: none;">
+        <div class="collapsible-header" onclick="window.graph3d.ui.toggleInfoPanel()" style="margin: 0; padding: 10px 0; border-bottom: 1px solid #333;">
+            <h3 style="margin: 0;">🧠 AI Competitive Monitor</h3>
+            <span class="collapsible-arrow" id="info-panel-arrow">▶</span>
+        </div>
+        <div class="collapsible-content" id="info-panel-content">
+            <div id="node-info">
+                <strong>Controls:</strong><br>
+                • Left-click + drag = Rotate view<br>
+                • Right-click + drag = Pan view<br>
+                • Middle-click + drag = Zoom<br>
+                • Scroll = Zoom in/out<br>
+                • Click node = Center camera<br>
+                • Right-click node = Show context menu
+            </div>
+            <div id="graph-summary" style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #333;">
+                <div class="collapsible-header" onclick="window.graph3d.ui.toggleGraphSummary()">
+                    <strong>Graph Intelligence</strong>
+                    <span class="collapsible-arrow" id="graph-summary-arrow">▶</span>
+                </div>
+                <div class="collapsible-content" id="graph-summary-content">
+                    <div id="tech-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
+                    <div id="concept-summary" style="font-size: 11px; color: #888; margin-top: 5px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="controls" style="display: none;">
+        <button class="collapse-btn" onclick="window.graph3d.ui.toggleControlsCollapse()">◀</button>
+        <h4>Configuration</h4>
+        
+        <div class="control-content" id="control-content">
+            <!-- Controls will be populated by graph-3d-ui.js -->
+        </div>
+    </div>
+    
+    <button id="toggle-controls">⚙️ Config</button>
+    <div id="3d-graph"></div>
+    
+    <!-- Floating Tooltip -->
+    <div id="entity-tooltip"></div>
+    
+    <!-- Context Menu -->
+    <div id="context-menu">
+        <div class="context-menu-header" id="context-menu-title">Node Name</div>
+        <div class="context-menu-item" onclick="window.graph3d.context.focusOnNode()">Show Only This & Connected</div>
+        <div class="context-menu-item" onclick="window.graph3d.context.showAllNodes()">Show All</div>
+        <div class="context-menu-item" onclick="window.graph3d.context.centerOnNode()">Center Camera Here</div>
+        <div class="context-menu-item" onclick="window.graph3d.context.fitToWindow()">Fit to Window</div>
+        <div class="context-menu-separator"></div>
+        <div class="context-menu-item" onclick="window.graph3d.context.hideMenu()">Cancel</div>
+    </div>
+
+    <!-- Modular Application -->
+    <script type="module">
+        import { graph3D } from './js/modules/graph-3d.js';
+        
+        // Make the graph instance globally accessible
+        window.graph3d = graph3D;
+        
+        // The module auto-initializes when DOM is ready
+        console.log('🚀 3D Force Graph (Modular Edition) loading...');
+        
+        // Make key functions globally accessible for inline event handlers
+        window.selectAllTypes = () => window.graph3d.filters?.selectAllTypes?.();
+        window.selectNoneTypes = () => window.graph3d.filters?.selectNoneTypes?.();
+        window.centerView = () => window.graph3d.centerView?.();
+        window.setConfigMode = (mode) => window.graph3d.ui?.setConfigMode?.(mode);
+        window.filterByTag = (tag) => window.graph3d.filters?.filterByTag?.(tag);
+        window.clearTagFilter = () => window.graph3d.filters?.clearTagFilter?.();
+        window.toggleControlsCollapse = () => window.graph3d.ui?.toggleControlsCollapse?.();
+        window.toggleInfoPanel = () => window.graph3d.ui?.toggleInfoPanel?.();
+        window.toggleGraphSummary = () => window.graph3d.ui?.toggleGraphSummary?.();
+        
+        // Make applyFilters globally accessible - this is critical!
+        window.applyFilters = () => window.graph3d.applyFiltersAndRender?.();
+    </script>
+</body>
+</html>
