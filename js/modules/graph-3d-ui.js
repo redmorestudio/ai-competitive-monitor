@@ -14,6 +14,7 @@ export class Graph3DUI {
         this.container = null;
         this.callbacks = {};
         this.elements = {};
+        this.configMode = 'simple';
     }
 
     /**
@@ -35,8 +36,8 @@ export class Graph3DUI {
         if (!this.container) return;
 
         this.container.innerHTML = `
-            <button class="collapse-btn" onclick="toggleControlsCollapse()">→</button>
-            <h4>Graph Intelligence ▶</h4>
+            <button class="collapse-btn" onclick="toggleControlsCollapse()">◀</button>
+            <h4 style="color: #00ff88; margin-bottom: 20px;">Configuration</h4>
             
             <div class="control-content">
                 <!-- Configuration Mode -->
@@ -44,9 +45,6 @@ export class Graph3DUI {
                 
                 <!-- Draw By Mode -->
                 ${this.renderDrawByMode()}
-                
-                <!-- Stats Display -->
-                ${this.renderStats()}
                 
                 <!-- Legend -->
                 ${this.renderLegend()}
@@ -57,35 +55,38 @@ export class Graph3DUI {
                 <!-- Node Size -->
                 ${this.renderNodeSize()}
                 
-                <!-- Visual Settings -->
-                ${this.renderVisualSettings()}
+                <!-- Advanced sections -->
+                <div class="advanced-sections" style="display: none;">
+                    <!-- Flatten Graph -->
+                    ${this.renderFlattenGraph()}
+                    
+                    <!-- Node Visibility -->
+                    ${this.renderNodeVisibility()}
+                    
+                    <!-- Graph Physics -->
+                    ${this.renderPhysicsControls()}
+                    
+                    <!-- Link Strength Filter -->
+                    ${this.renderLinkStrengthFilter()}
+                    
+                    <!-- Entity Limit -->
+                    ${this.renderEntityLimit()}
+                </div>
                 
-                <!-- Node Visibility -->
-                ${this.renderNodeVisibility()}
-                
-                <!-- Camera Controls -->
-                ${this.renderCameraControls()}
-                
-                <!-- Physics Controls -->
-                ${this.renderPhysicsControls()}
-                
-                <!-- Link Strength Filter -->
-                ${this.renderLinkStrengthFilter()}
-                
-                <!-- Entity Limit -->
-                ${this.renderEntityLimit()}
-                
-                <!-- Entity Type Filter -->
+                <!-- Filter by Type - Always visible -->
                 ${this.renderEntityTypeFilter()}
                 
-                <!-- Technology Filter -->
-                ${this.renderTechnologyFilter()}
-                
-                <!-- Concept Filter -->
-                ${this.renderConceptFilter()}
-                
-                <!-- Search -->
+                <!-- Search - Always visible -->
                 ${this.renderSearch()}
+                
+                <!-- Advanced filters -->
+                <div class="advanced-filters" style="display: none;">
+                    <!-- Technology Filter -->
+                    ${this.renderTechnologyFilter()}
+                    
+                    <!-- Concept Filter -->
+                    ${this.renderConceptFilter()}
+                </div>
             </div>
         `;
 
@@ -98,9 +99,22 @@ export class Graph3DUI {
      */
     renderConfigMode() {
         return `
-            <div class="control-group">
-                <button id="simple-mode-btn" class="mode-btn active" onclick="setConfigMode('simple')">Simple</button>
-                <button id="advanced-mode-btn" class="mode-btn" onclick="setConfigMode('advanced')">Advanced</button>
+            <div class="control-group" style="margin-bottom: 20px;">
+                <div style="display: flex; gap: 0;">
+                    <button id="simple-mode-btn" class="mode-btn active" onclick="setConfigMode('simple')" 
+                            style="flex: 1; padding: 10px; background: rgba(0, 255, 136, 0.2); 
+                                   border: 1px solid #00ff88; color: #00ff88; 
+                                   border-radius: 4px 0 0 4px; cursor: pointer; font-size: 16px;">
+                        Simple
+                    </button>
+                    <button id="advanced-mode-btn" class="mode-btn" onclick="setConfigMode('advanced')" 
+                            style="flex: 1; padding: 10px; background: transparent; 
+                                   border: 1px solid #00ff88; color: #00ff88; 
+                                   border-radius: 0 4px 4px 0; cursor: pointer; font-size: 16px; 
+                                   border-left: none;">
+                        Advanced
+                    </button>
+                </div>
             </div>
         `;
     }
@@ -110,30 +124,23 @@ export class Graph3DUI {
      */
     renderDrawByMode() {
         return `
-            <div class="control-group simple-group">
-                <label>Draw By:</label>
-                <select id="draw-mode">
-                    <option value="normal">Normal</option>
-                    <option value="group">Group by Type</option>
-                    <option value="changes-24h">Changes Past 24 Hours</option>
-                    <option value="changes-48h">Changes Past 48 Hours</option>
-                    <option value="changes-week">Changes Past Week</option>
-                </select>
-            </div>
-        `;
-    }
-
-    /**
-     * Render stats display
-     */
-    renderStats() {
-        return `
-            <div class="control-group advanced-group" style="display: none;">
-                <div id="stats">
-                    <div>Monitoring: <span id="company-count">0</span> companies</div>
-                    <div>URLs: <span id="url-count">0</span></div>
-                    <div>Nodes: <span id="node-count">0</span></div>
-                    <div>Links: <span id="link-count">0</span></div>
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Draw By</h4>
+                <label style="display: block; margin-bottom: 10px;">
+                    <span style="display: block; margin-bottom: 5px;">Layout Mode</span>
+                    <select id="draw-mode" style="width: 100%; padding: 8px; background: rgba(0, 0, 0, 0.5); 
+                            border: 1px solid #333; border-radius: 4px; color: #eee;">
+                        <option value="normal">Normal</option>
+                        <option value="group">Group by Type</option>
+                        <option value="changes-24h">Changes Past 24 Hours</option>
+                        <option value="changes-48h">Changes Past 48 Hours</option>
+                        <option value="changes-week">Changes Past Week</option>
+                    </select>
+                </label>
+                <div class="info-text" style="font-size: 11px; color: #666; line-height: 1.4;">
+                    • Normal: Standard force-directed layout<br>
+                    • Group by Type: Cluster by entity type<br>
+                    • Changes: Highlight companies with recent updates
                 </div>
             </div>
         `;
@@ -144,9 +151,9 @@ export class Graph3DUI {
      */
     renderLegend() {
         return `
-            <div class="control-group simple-group">
-                <label>Legend:</label>
-                <div id="legend-content"></div>
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Legend</h4>
+                <div id="legend-content" style="font-size: 14px;"></div>
             </div>
         `;
     }
@@ -156,18 +163,27 @@ export class Graph3DUI {
      */
     renderViewMode() {
         return `
-            <div class="control-group simple-group">
-                <label>View Mode (Color By):</label>
-                <select id="view-mode">
-                    <option value="entity-type">Entity Type</option>
-                    <option value="interest-level">Interest Level</option>
-                    <option value="connections">Number of Connections</option>
-                    <option value="all">All Connections</option>
-                    <option value="technology">Technology Links Only</option>
-                    <option value="concept">Concept Links Only</option>
-                    <option value="recent-activity">Recent Activity</option>
-                    <option value="high-interest">High Interest Only</option>
-                </select>
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">View Mode</h4>
+                <label style="display: block; margin-bottom: 10px;">
+                    <span style="display: block; margin-bottom: 5px;">Color By</span>
+                    <select id="view-mode" style="width: 100%; padding: 8px; background: rgba(0, 0, 0, 0.5); 
+                            border: 1px solid #333; border-radius: 4px; color: #eee;">
+                        <option value="entity-type">Entity Type</option>
+                        <option value="interest-level">Interest Level</option>
+                        <option value="connections">Number of Connections</option>
+                        <option value="all">All Connections</option>
+                        <option value="technology">Technology Links Only</option>
+                        <option value="concept">Concept Links Only</option>
+                        <option value="recent-activity">Recent Activity</option>
+                        <option value="high-interest">High Interest Only</option>
+                    </select>
+                </label>
+                <div class="info-text" style="font-size: 11px; color: #666; line-height: 1.4;">
+                    • Entity Type: Colors by company type<br>
+                    • Interest Level: Strategic importance (1-10)<br>
+                    • Number of Connections: How many other nodes connected
+                </div>
             </div>
         `;
     }
@@ -177,115 +193,150 @@ export class Graph3DUI {
      */
     renderNodeSize() {
         return `
-            <div class="control-group simple-group">
-                <label>Node Size:</label>
-                <select id="node-size">
-                    <option value="uniform">Uniform</option>
-                    <option value="url-count">By URL Count</option>
-                    <option value="connections">By Connections</option>
-                    <option value="interest-level">By Interest Level</option>
-                </select>
-            </div>
-        `;
-    }
-
-    /**
-     * Render visual settings
-     */
-    renderVisualSettings() {
-        return `
-            <div class="control-group advanced-group" style="display: none;">
-                <label>Visual Settings:</label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" id="show-links" checked> Show Links</label>
-                    <label><input type="checkbox" id="show-labels" checked> Show Labels</label>
-                    <label><input type="checkbox" id="show-particles" checked> Show Particles</label>
-                    <label><input type="checkbox" id="thin-lines"> Thin Lines Mode</label>
-                    <label><input type="checkbox" id="floating-tooltip" checked> Floating Tooltip</label>
-                    <label><input type="checkbox" id="monochrome-mode"> Monochrome Mode</label>
-                    <label><input type="checkbox" id="show-change-rings"> Show Change Rings</label>
-                    <label><input type="checkbox" id="auto-rotate"> Auto-rotate</label>
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Node Size</h4>
+                <label style="display: block; margin-bottom: 10px;">
+                    <span style="display: block; margin-bottom: 5px;">Size By</span>
+                    <select id="node-size" style="width: 100%; padding: 8px; background: rgba(0, 0, 0, 0.5); 
+                            border: 1px solid #333; border-radius: 4px; color: #eee;">
+                        <option value="uniform">Uniform</option>
+                        <option value="url-count">By URL Count</option>
+                        <option value="connections">By Connections</option>
+                        <option value="interest-level">By Interest Level</option>
+                    </select>
+                </label>
+                <div class="info-text" style="font-size: 11px; color: #666;">
+                    Control how node sizes are calculated
                 </div>
             </div>
         `;
     }
 
     /**
-     * Render node visibility toggles
+     * Render flatten graph toggle (Advanced)
+     */
+    renderFlattenGraph() {
+        return `
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">View Mode</h4>
+                <label style="display: flex; align-items: center; justify-content: space-between;">
+                    <span>Flatten Graph (2D-like)</span>
+                    <input type="checkbox" id="flatten-graph" style="width: 20px; height: 20px;">
+                </label>
+                <div class="info-text" style="font-size: 11px; color: #666; margin-top: 5px;">
+                    Toggle between 3D physics and flat 2D layout
+                </div>
+            </div>
+        `;
+    }
+
+    /**
+     * Render node visibility controls (Advanced)
      */
     renderNodeVisibility() {
         return `
-            <div class="control-group simple-group">
-                <label>Show Nodes:</label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" id="show-technology-nodes" checked> Technology Nodes</label>
-                    <label><input type="checkbox" id="show-concept-nodes" checked> Concept Nodes</label>
-                    <label><input type="checkbox" id="show-company-nodes" checked> Company Nodes</label>
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Node Visibility</h4>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <label style="display: flex; align-items: center; justify-content: space-between;">
+                        <span>Show Technology Nodes</span>
+                        <input type="checkbox" id="show-technology-nodes" checked style="width: 20px; height: 20px;">
+                    </label>
+                    <label style="display: flex; align-items: center; justify-content: space-between;">
+                        <span>Show Concept Nodes</span>
+                        <input type="checkbox" id="show-concept-nodes" checked style="width: 20px; height: 20px;">
+                    </label>
+                    <label style="display: flex; align-items: center; justify-content: space-between;">
+                        <span>Show Company Nodes</span>
+                        <input type="checkbox" id="show-company-nodes" checked style="width: 20px; height: 20px;">
+                    </label>
+                </div>
+                <div class="info-text" style="font-size: 11px; color: #666; margin-top: 5px;">
+                    Toggle visibility of different node types
                 </div>
             </div>
         `;
     }
 
     /**
-     * Render camera controls
-     */
-    renderCameraControls() {
-        return `
-            <div class="control-group advanced-group" style="display: none;">
-                <label>Camera:</label>
-                <button id="center-view-btn" onclick="centerView()">Center View</button>
-            </div>
-        `;
-    }
-
-    /**
-     * Render physics controls
+     * Render physics controls (Advanced)
      */
     renderPhysicsControls() {
         return `
-            <div class="control-group simple-group">
-                <label>Graph Physics:</label>
-                <div class="slider-container">
-                    <label>Force Strength: <span id="force-value">-300</span></label>
-                    <input type="range" id="force-strength" min="-1000" max="-50" value="-300" step="10">
-                </div>
-                <div class="slider-container">
-                    <label>Link Distance: <span id="link-distance-value">30</span></label>
-                    <input type="range" id="link-distance" min="10" max="200" value="30" step="5">
-                </div>
-                <div class="slider-container">
-                    <label>Center Gravity: <span id="center-gravity-value">0.3</span></label>
-                    <input type="range" id="center-gravity" min="0" max="1" value="0.3" step="0.05">
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Graph Physics</h4>
+                <label style="display: block; margin-bottom: 15px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Force Strength</span>
+                        <span id="force-value" style="color: #00ff88; font-weight: bold;">-300</span>
+                    </div>
+                    <input type="range" id="force-strength" min="-1000" max="-50" value="-300" 
+                           style="width: 100%;">
+                </label>
+                <label style="display: block; margin-bottom: 15px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Link Distance</span>
+                        <span id="link-distance-value" style="color: #00ff88; font-weight: bold;">30</span>
+                    </div>
+                    <input type="range" id="link-distance" min="10" max="200" value="30" 
+                           style="width: 100%;">
+                </label>
+                <label style="display: block;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Center Gravity</span>
+                        <span id="center-gravity-value" style="color: #00ff88; font-weight: bold;">0.3</span>
+                    </div>
+                    <input type="range" id="center-gravity" min="0" max="1" step="0.1" value="0.3" 
+                           style="width: 100%;">
+                </label>
+                <div class="info-text" style="font-size: 11px; color: #666; margin-top: 10px; line-height: 1.4;">
+                    • Force: How strongly nodes repel each other<br>
+                    • Distance: Preferred length of connections<br>
+                    • Gravity: Pull toward center (0=none, 1=strong)
                 </div>
             </div>
         `;
     }
 
     /**
-     * Render link strength filter
+     * Render link strength filter (Advanced)
      */
     renderLinkStrengthFilter() {
         return `
-            <div class="control-group simple-group">
-                <label>Link Strength Filter:</label>
-                <div class="slider-container">
-                    <label>Connection Threshold: <span id="link-threshold-value">0</span></label>
-                    <input type="range" id="link-threshold" min="0" max="10" value="0" step="0.5">
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Link Strength Filter</h4>
+                <label style="display: block;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Connection Threshold</span>
+                        <span id="link-threshold-value" style="color: #00ff88; font-weight: bold;">0</span>
+                    </div>
+                    <input type="range" id="link-threshold" min="0" max="10" value="0" 
+                           style="width: 100%;">
+                </label>
+                <div class="info-text" style="font-size: 11px; color: #666; margin-top: 5px;">
+                    Hide connections weaker than this value
                 </div>
             </div>
         `;
     }
 
     /**
-     * Render entity limit control
+     * Render entity limit (Advanced)
      */
     renderEntityLimit() {
         return `
-            <div class="control-group simple-group">
-                <label>Number of Entities:</label>
-                <div class="slider-container">
-                    <label>Entity Count Limit: <span id="entity-limit-value">200</span></label>
-                    <input type="range" id="entity-limit" min="10" max="200" value="200" step="10">
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Number of Entities</h4>
+                <label style="display: block;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Entity Count Limit</span>
+                        <span id="entity-limit-value" style="color: #00ff88; font-weight: bold;">200</span>
+                    </div>
+                    <input type="range" id="entity-limit" min="10" max="500" value="200" 
+                           style="width: 100%;">
+                </label>
+                <div class="info-text" style="font-size: 11px; color: #666; margin-top: 5px;">
+                    Limit the number of entities displayed
                 </div>
             </div>
         `;
@@ -296,62 +347,98 @@ export class Graph3DUI {
      */
     renderEntityTypeFilter() {
         return `
-            <div class="control-group simple-group">
-                <label>Filter by Type:</label>
-                <div style="margin-bottom: 8px;">
-                    <button onclick="selectAllTypes()">Select All</button>
-                    <button onclick="selectNoneTypes()">Select None</button>
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Filter by Type</h4>
+                <div class="select-buttons" style="display: flex; gap: 10px; margin-bottom: 10px;">
+                    <button onclick="selectAllTypes()" 
+                            style="flex: 1; padding: 8px; background: transparent; 
+                                   border: 1px solid #00ff88; color: #00ff88; 
+                                   border-radius: 4px; cursor: pointer;">
+                        Select All
+                    </button>
+                    <button onclick="selectNoneTypes()" 
+                            style="flex: 1; padding: 8px; background: transparent; 
+                                   border: 1px solid #00ff88; color: #00ff88; 
+                                   border-radius: 4px; cursor: pointer;">
+                        Select None
+                    </button>
                 </div>
-                <div class="checkbox-group" id="type-filters">
-                    <!-- Populated dynamically -->
-                </div>
-            </div>
-        `;
-    }
-
-    /**
-     * Render technology filter
-     */
-    renderTechnologyFilter() {
-        return `
-            <div class="control-group advanced-group" style="display: none;">
-                <label>Filter by Technology:</label>
-                <input type="text" id="tech-search" placeholder="Search technologies..." style="margin-bottom: 8px;">
-                <div class="checkbox-group" id="tech-filters" style="max-height: 150px;">
-                    <!-- Populated dynamically -->
+                <div id="type-filters" class="checkbox-group" 
+                     style="max-height: 300px; overflow-y: auto; 
+                            background: rgba(0, 0, 0, 0.3); 
+                            border: 1px solid #333; border-radius: 4px; 
+                            padding: 10px;">
                 </div>
             </div>
         `;
     }
 
     /**
-     * Render concept filter
-     */
-    renderConceptFilter() {
-        return `
-            <div class="control-group advanced-group" style="display: none;">
-                <label>Filter by AI Concepts:</label>
-                <input type="text" id="concept-search" placeholder="Search concepts..." style="margin-bottom: 8px;">
-                <div class="checkbox-group" id="concept-filters" style="max-height: 150px;">
-                    <!-- Populated dynamically -->
-                </div>
-            </div>
-        `;
-    }
-
-    /**
-     * Render search controls
+     * Render search
      */
     renderSearch() {
         return `
-            <div class="control-group simple-group">
-                <label>Search:</label>
-                <input type="text" id="search-input" placeholder="Search nodes...">
-                <select id="search-depth" style="margin-top: 5px;">
-                    <option value="0">Match Only</option>
-                    <option value="1" selected>1 Level Out</option>
-                    <option value="2">2 Levels Out</option>
-                </select>
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Search</h4>
+                <input type="text" id="search-input" placeholder="Search nodes..." 
+                       style="width: 100%; padding: 10px; background: rgba(0, 0, 0, 0.5); 
+                              border: 1px solid #333; border-radius: 4px; 
+                              color: #eee; margin-bottom: 10px;">
+                <label style="display: block;">
+                    <span style="display: block; margin-bottom: 5px;">Search Depth</span>
+                    <select id="search-depth" style="width: 100%; padding: 8px; 
+                            background: rgba(0, 0, 0, 0.5); 
+                            border: 1px solid #333; border-radius: 4px; color: #eee;">
+                        <option value="0">Match Only</option>
+                        <option value="1" selected>1 Level Out</option>
+                        <option value="2">2 Levels Out</option>
+                    </select>
+                </label>
+                <div class="info-text" style="font-size: 11px; color: #666; margin-top: 5px;">
+                    Controls how many connections to show from search results
+                </div>
+            </div>
+        `;
+    }
+
+    /**
+     * Render technology filter (Advanced)
+     */
+    renderTechnologyFilter() {
+        return `
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Filter by Technology</h4>
+                <input type="text" id="tech-search" placeholder="Search technologies..." 
+                       style="width: 100%; padding: 8px; margin-bottom: 10px; 
+                              background: rgba(0, 0, 0, 0.5); 
+                              border: 1px solid #333; border-radius: 4px; color: #eee;">
+                <div id="tech-filters" class="checkbox-group" 
+                     style="max-height: 200px; overflow-y: auto; 
+                            background: rgba(0, 0, 0, 0.3); 
+                            border: 1px solid #333; border-radius: 4px; 
+                            padding: 10px;">
+                </div>
+            </div>
+        `;
+    }
+
+    /**
+     * Render concept filter (Advanced)
+     */
+    renderConceptFilter() {
+        return `
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Filter by AI Concepts</h4>
+                <input type="text" id="concept-search" placeholder="Search concepts..." 
+                       style="width: 100%; padding: 8px; margin-bottom: 10px; 
+                              background: rgba(0, 0, 0, 0.5); 
+                              border: 1px solid #333; border-radius: 4px; color: #eee;">
+                <div id="concept-filters" class="checkbox-group" 
+                     style="max-height: 200px; overflow-y: auto; 
+                            background: rgba(0, 0, 0, 0.3); 
+                            border: 1px solid #333; border-radius: 4px; 
+                            padding: 10px;">
+                </div>
             </div>
         `;
     }
@@ -384,23 +471,12 @@ export class Graph3DUI {
             entityLimit: document.getElementById('entity-limit'),
             
             // Checkboxes
-            showLinks: document.getElementById('show-links'),
-            showLabels: document.getElementById('show-labels'),
-            showParticles: document.getElementById('show-particles'),
-            thinLines: document.getElementById('thin-lines'),
-            floatingTooltip: document.getElementById('floating-tooltip'),
-            monochromeMode: document.getElementById('monochrome-mode'),
-            showChangeRings: document.getElementById('show-change-rings'),
-            autoRotate: document.getElementById('auto-rotate'),
+            flattenGraph: document.getElementById('flatten-graph'),
             showTechnologyNodes: document.getElementById('show-technology-nodes'),
             showConceptNodes: document.getElementById('show-concept-nodes'),
             showCompanyNodes: document.getElementById('show-company-nodes'),
             
             // Display elements
-            companyCount: document.getElementById('company-count'),
-            urlCount: document.getElementById('url-count'),
-            nodeCount: document.getElementById('node-count'),
-            linkCount: document.getElementById('link-count'),
             forceValue: document.getElementById('force-value'),
             linkDistanceValue: document.getElementById('link-distance-value'),
             centerGravityValue: document.getElementById('center-gravity-value'),
@@ -467,14 +543,7 @@ export class Graph3DUI {
         this.attachSliderListener('entityLimit', 'entityLimitValue', 'onEntityLimitChange');
 
         // Checkboxes
-        this.attachCheckboxListener('showLinks', 'onShowLinksChange');
-        this.attachCheckboxListener('showLabels', 'onShowLabelsChange');
-        this.attachCheckboxListener('showParticles', 'onShowParticlesChange');
-        this.attachCheckboxListener('thinLines', 'onThinLinesChange');
-        this.attachCheckboxListener('floatingTooltip', 'onFloatingTooltipChange');
-        this.attachCheckboxListener('monochromeMode', 'onMonochromeModeChange');
-        this.attachCheckboxListener('showChangeRings', 'onShowChangeRingsChange');
-        this.attachCheckboxListener('autoRotate', 'onAutoRotateChange');
+        this.attachCheckboxListener('flattenGraph', 'onFlattenGraphChange');
         this.attachCheckboxListener('showTechnologyNodes', 'onShowTechnologyNodesChange');
         this.attachCheckboxListener('showConceptNodes', 'onShowConceptNodesChange');
         this.attachCheckboxListener('showCompanyNodes', 'onShowCompanyNodesChange');
@@ -526,25 +595,16 @@ export class Graph3DUI {
     }
 
     /**
-     * Update stats display
-     */
-    updateStats(stats) {
-        if (this.elements.companyCount) this.elements.companyCount.textContent = stats.companies || 0;
-        if (this.elements.urlCount) this.elements.urlCount.textContent = stats.urls || 0;
-        if (this.elements.nodeCount) this.elements.nodeCount.textContent = stats.nodes || 0;
-        if (this.elements.linkCount) this.elements.linkCount.textContent = stats.links || 0;
-    }
-
-    /**
      * Update legend
      */
     updateLegend(legendData) {
         if (!this.elements.legendContent) return;
         
         this.elements.legendContent.innerHTML = legendData.map(item => `
-            <div class="legend-item">
-                <span class="legend-color" style="background: ${item.color}"></span>
-                <span>${item.type} (${item.count})</span>
+            <div class="legend-item" style="display: flex; align-items: center; margin: 8px 0;">
+                <span class="legend-color" style="display: inline-block; width: 12px; height: 12px; 
+                      border-radius: 50%; background: ${item.color}; margin-right: 10px;"></span>
+                <span style="flex: 1;">${item.type} (${item.count})</span>
             </div>
         `).join('');
     }
@@ -556,11 +616,14 @@ export class Graph3DUI {
         if (!this.elements.typeFilters) return;
         
         this.elements.typeFilters.innerHTML = types.map(type => `
-            <label>
+            <label style="display: flex; align-items: center; padding: 8px 0; 
+                          border-bottom: 1px solid rgba(255,255,255,0.1);">
                 <input type="checkbox" value="${type.name}" 
                        ${selected.has(type.name) ? 'checked' : ''}
-                       onchange="handleEntityTypeChange(this)">
-                ${type.name} (${type.count})
+                       onchange="handleEntityTypeChange(this)"
+                       style="width: 20px; height: 20px; margin-right: 10px; cursor: pointer;">
+                <span style="flex: 1;">${type.name}</span>
+                <span style="color: #666; font-size: 12px;">(${type.count})</span>
             </label>
         `).join('');
     }
@@ -572,11 +635,13 @@ export class Graph3DUI {
         if (!this.elements.techFilters) return;
         
         this.elements.techFilters.innerHTML = technologies.map(tech => `
-            <label>
+            <label style="display: flex; align-items: center; padding: 6px 0;">
                 <input type="checkbox" value="${tech.name}" 
                        ${selected.has(tech.name) ? 'checked' : ''}
-                       onchange="handleTechnologyChange(this)">
-                ${tech.name} (${tech.count})
+                       onchange="handleTechnologyChange(this)"
+                       style="margin-right: 8px;">
+                <span style="flex: 1; font-size: 12px;">${tech.name}</span>
+                <span style="color: #666; font-size: 11px;">(${tech.count})</span>
             </label>
         `).join('');
     }
@@ -588,11 +653,13 @@ export class Graph3DUI {
         if (!this.elements.conceptFilters) return;
         
         this.elements.conceptFilters.innerHTML = concepts.map(concept => `
-            <label>
+            <label style="display: flex; align-items: center; padding: 6px 0;">
                 <input type="checkbox" value="${concept.name}" 
                        ${selected.has(concept.name) ? 'checked' : ''}
-                       onchange="handleConceptChange(this)">
-                ${concept.name} (${concept.count})
+                       onchange="handleConceptChange(this)"
+                       style="margin-right: 8px;">
+                <span style="flex: 1; font-size: 12px;">${concept.name}</span>
+                <span style="color: #666; font-size: 11px;">(${concept.count})</span>
             </label>
         `).join('');
     }
@@ -609,7 +676,7 @@ export class Graph3DUI {
         
         labels.forEach(label => {
             const text = label.textContent.toLowerCase();
-            label.style.display = text.includes(lowerQuery) ? 'block' : 'none';
+            label.style.display = text.includes(lowerQuery) ? 'flex' : 'none';
         });
     }
 
@@ -617,17 +684,20 @@ export class Graph3DUI {
      * Set configuration mode
      */
     setConfigMode(mode) {
-        const simpleGroups = document.querySelectorAll('.simple-group');
-        const advancedGroups = document.querySelectorAll('.advanced-group');
+        this.configMode = mode;
+        const advancedSections = document.querySelector('.advanced-sections');
+        const advancedFilters = document.querySelector('.advanced-filters');
         
         if (mode === 'simple') {
             this.elements.simpleModeBtn?.classList.add('active');
             this.elements.advancedModeBtn?.classList.remove('active');
-            advancedGroups.forEach(g => g.style.display = 'none');
+            if (advancedSections) advancedSections.style.display = 'none';
+            if (advancedFilters) advancedFilters.style.display = 'none';
         } else {
             this.elements.simpleModeBtn?.classList.remove('active');
             this.elements.advancedModeBtn?.classList.add('active');
-            advancedGroups.forEach(g => g.style.display = 'block');
+            if (advancedSections) advancedSections.style.display = 'block';
+            if (advancedFilters) advancedFilters.style.display = 'block';
         }
     }
 
@@ -638,9 +708,13 @@ export class Graph3DUI {
         const infoPanel = document.getElementById('node-info');
         if (infoPanel) {
             infoPanel.innerHTML = `
-                <div style="padding: 10px; background: rgba(0, 255, 136, 0.1); border: 1px solid #00ff88; border-radius: 4px;">
+                <div style="padding: 10px; background: rgba(0, 255, 136, 0.1); 
+                            border: 1px solid #00ff88; border-radius: 4px;">
                     <strong>Filtering by: ${tag}</strong>
-                    <button onclick="clearTagFilter()" style="margin-left: 10px; padding: 2px 8px;">Clear Filter</button>
+                    <button onclick="clearTagFilter()" 
+                            style="margin-left: 10px; padding: 2px 8px;">
+                        Clear Filter
+                    </button>
                 </div>
             `;
         }
@@ -653,6 +727,18 @@ export class Graph3DUI {
         const infoPanel = document.getElementById('node-info');
         if (infoPanel) {
             infoPanel.innerHTML = 'Hover over nodes for details';
+        }
+    }
+
+    /**
+     * Toggle controls collapse
+     */
+    toggleControlsCollapse() {
+        const controls = document.getElementById('controls');
+        const btn = controls?.querySelector('.collapse-btn');
+        if (controls) {
+            controls.classList.toggle('collapsed');
+            if (btn) btn.textContent = controls.classList.contains('collapsed') ? '◀' : '▶';
         }
     }
 }

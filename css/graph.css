@@ -145,8 +145,8 @@ body {
 }
 
 .control-group {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #333;
 }
 
@@ -235,6 +235,31 @@ input[type="range"] {
 
 input[type="checkbox"] {
     cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #666;
+    border-radius: 3px;
+    background: transparent;
+    position: relative;
+    transition: all 0.2s;
+}
+
+input[type="checkbox"]:checked {
+    background: #ffa500;
+    border-color: #ffa500;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 button {
@@ -314,15 +339,21 @@ button:hover {
 /* Mode buttons */
 .mode-btn {
     flex: 1;
-    padding: 6px;
+    padding: 10px;
     background: transparent;
     border: 1px solid #00ff88;
     color: #00ff88;
     cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s;
 }
 
 .mode-btn.active {
     background: rgba(0, 255, 136, 0.2);
+}
+
+.mode-btn:hover {
+    background: rgba(0, 255, 136, 0.1);
 }
 
 #simple-mode-btn {
