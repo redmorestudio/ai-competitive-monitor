@@ -244,15 +244,34 @@ class Dashboard {
         const changeDate = new Date(change.detected_at || change.detectedAt);
         const timeAgo = getRelativeTime(changeDate);
         
-        // Parse AI analysis to get summary
-        let summary = change.summary || '';
-        if (!summary && change.ai_analysis) {
+        // Parse the summary field which contains the actual AI analysis
+        let summaryText = '';
+        if (change.summary) {
             try {
-                const analysis = JSON.parse(change.ai_analysis);
-                summary = analysis.summary || '';
+                // The summary field contains a JSON string with the full AI analysis
+                const analysisData = JSON.parse(change.summary);
+                
+                // Extract the actual summary text from the parsed data
+                if (analysisData.change_summary && analysisData.change_summary.what_changed) {
+                    summaryText = analysisData.change_summary.what_changed;
+                } else if (analysisData.summary) {
+                    // Sometimes it might be nested differently
+                    summaryText = analysisData.summary;
+                } else {
+                    // Fallback to the raw summary if we can't parse it
+                    summaryText = change.summary;
+                }
             } catch (e) {
-                summary = 'Change detected';
+                // If parsing fails, check if it's already plain text
+                if (typeof change.summary === 'string' && !change.summary.startsWith('{')) {
+                    summaryText = change.summary;
+                } else {
+                    console.warn('Failed to parse change summary:', e);
+                    summaryText = 'Change detected';
+                }
             }
+        } else {
+            summaryText = 'Change detected';
         }
         
         const interestEmoji = getInterestEmoji(change.interest_level);
@@ -271,7 +290,7 @@ class Dashboard {
                     <span class="interest-indicator">${interestEmoji} ${change.interest_level}/10</span>
                 </div>
                 <div class="change-summary">
-                    ${escapeHtml(summary.substring(0, 150))}${summary.length > 150 ? '...' : ''}
+                    ${escapeHtml(summaryText.substring(0, 150))}${summaryText.length > 150 ? '...' : ''}
                 </div>
                 <div class="change-time">${timeAgo}</div>
             </div>

@@ -320,16 +320,49 @@ export async function showChangeDetail(changeId, companyName, event) {
             throw new Error('Change details not found');
         }
         
-        // Parse AI analysis if it's a string
+        // Parse AI analysis from the summary field
         let aiAnalysis = {};
-        if (changeData.ai_analysis) {
+        let summaryText = '';
+        
+        // First try to parse the summary field which contains the actual AI analysis
+        if (changeData.summary) {
             try {
-                aiAnalysis = typeof changeData.ai_analysis === 'string' 
+                // The summary field contains a JSON string with the full AI analysis
+                const parsedSummary = JSON.parse(changeData.summary);
+                aiAnalysis = parsedSummary;
+                
+                // Extract the actual summary text
+                if (parsedSummary.change_summary && parsedSummary.change_summary.what_changed) {
+                    summaryText = parsedSummary.change_summary.what_changed;
+                } else if (parsedSummary.summary) {
+                    summaryText = parsedSummary.summary;
+                }
+            } catch (e) {
+                // If parsing fails, check if it's already plain text
+                if (typeof changeData.summary === 'string' && !changeData.summary.startsWith('{')) {
+                    summaryText = changeData.summary;
+                } else {
+                    console.warn('Failed to parse summary field:', e);
+                }
+            }
+        }
+        
+        // Fallback to ai_analysis field if needed (for backwards compatibility)
+        if (!summaryText && changeData.ai_analysis) {
+            try {
+                const parsed = typeof changeData.ai_analysis === 'string' 
                     ? JSON.parse(changeData.ai_analysis) 
                     : changeData.ai_analysis;
+                if (parsed.summary) {
+                    summaryText = parsed.summary;
+                }
             } catch (e) {
                 console.warn('Failed to parse AI analysis:', e);
             }
+        }
+        
+        if (!summaryText) {
+            summaryText = 'No summary available';
         }
         
         // Display the change details
@@ -345,7 +378,7 @@ export async function showChangeDetail(changeId, companyName, event) {
             
             <div class="config-section">
                 <h4>🔍 AI Analysis</h4>
-                <p><strong>Summary:</strong> ${escapeHtml(changeData.summary || aiAnalysis.summary || 'No summary available')}</p>
+                <p><strong>Summary:</strong> ${escapeHtml(summaryText)}</p>
                 ${aiAnalysis.category || changeData.category ? `<p><strong>Category:</strong> ${escapeHtml(changeData.category || aiAnalysis.category)}</p>` : ''}
                 ${aiAnalysis.technical_innovation_score !== undefined ? `<p><strong>Technical Innovation Score:</strong> ${aiAnalysis.technical_innovation_score}/10</p>` : ''}
                 ${aiAnalysis.business_impact_score !== undefined ? `<p><strong>Business Impact Score:</strong> ${aiAnalysis.business_impact_score}/10</p>` : ''}
@@ -489,15 +522,31 @@ async function loadCompanyRecentChanges(companyName) {
             const changeDate = new Date(change.detected_at || change.detectedAt);
             const interestLevel = change.interest_level || 1;
             
-            // Parse AI analysis to get summary
-            let summary = change.summary || '';
-            if (!summary && change.ai_analysis) {
+            // Parse the summary field to get the actual summary text
+            let summaryText = '';
+            if (change.summary) {
                 try {
-                    const analysis = JSON.parse(change.ai_analysis);
-                    summary = analysis.summary || '';
+                    // The summary field contains a JSON string with the full AI analysis
+                    const analysisData = JSON.parse(change.summary);
+                    
+                    // Extract the actual summary text
+                    if (analysisData.change_summary && analysisData.change_summary.what_changed) {
+                        summaryText = analysisData.change_summary.what_changed;
+                    } else if (analysisData.summary) {
+                        summaryText = analysisData.summary;
+                    } else {
+                        summaryText = change.summary;
+                    }
                 } catch (e) {
-                    summary = 'Change detected';
+                    // If parsing fails, check if it's already plain text
+                    if (typeof change.summary === 'string' && !change.summary.startsWith('{')) {
+                        summaryText = change.summary;
+                    } else {
+                        summaryText = 'Change detected';
+                    }
                 }
+            } else {
+                summaryText = 'Change detected';
             }
             
             // Use a consistent ID based on company and index
@@ -510,7 +559,7 @@ async function loadCompanyRecentChanges(companyName) {
                         <span class="interest-badge interest-${interestLevel}">Interest: ${interestLevel}/10</span>
                         <span style="color: var(--text-secondary); font-size: 0.85rem;">${changeDate.toLocaleDateString()}</span>
                     </div>
-                    <p style="margin: 0; font-size: 0.9rem;">${escapeHtml(summary.substring(0, 100))}${summary.length > 100 ? '...' : ''}</p>
+                    <p style="margin: 0; font-size: 0.9rem;">${escapeHtml(summaryText.substring(0, 100))}${summaryText.length > 100 ? '...' : ''}</p>
                 </div>
             `;
         });
