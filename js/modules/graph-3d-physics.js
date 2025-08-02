@@ -248,11 +248,19 @@ export class Graph3DPhysics {
      * @param {Object} data - Graph data
      */
     resetLayout(data) {
-        // Remove fixed positions
+        // Remove fixed positions and give random 3D positions
         data.nodes.forEach(node => {
             delete node.fx;
             delete node.fy;
             delete node.fz;
+            
+            // Give nodes random initial 3D positions if they don't have them
+            // This ensures true 3D distribution
+            if (!node.x || !node.y || !node.z) {
+                node.x = (Math.random() - 0.5) * 300;
+                node.y = (Math.random() - 0.5) * 300;
+                node.z = (Math.random() - 0.5) * 300;
+            }
         });
 
         // Restore normal forces
