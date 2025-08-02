@@ -32,6 +32,28 @@ export class Graph3DCore {
     }
 
     /**
+     * Set 2D/3D mode
+     * @param {boolean} flatten - True for 2D mode, false for 3D mode
+     */
+    setFlattenMode(flatten) {
+        if (!this.graph) return;
+        
+        // Set number of dimensions (2 for flat, 3 for full 3D)
+        this.graph.numDimensions(flatten ? 2 : 3);
+        
+        // If switching to 3D, ensure nodes have z positions
+        if (!flatten && this.graphData) {
+            this.graphData.nodes.forEach(node => {
+                if (!node.z && node.z !== 0) {
+                    node.z = (Math.random() - 0.5) * 300;
+                }
+            });
+            // Reheat to let nodes spread in 3D
+            this.graph.d3ReheatSimulation();
+        }
+    }
+
+    /**
      * Initialize the 3D force graph
      * @param {HTMLElement} container - DOM element to render the graph
      * @param {Object} config - Configuration options
@@ -44,6 +66,7 @@ export class Graph3DCore {
         
         this.graph = ForceGraph3D()(container)
             .backgroundColor('#0a0a0f')
+            .numDimensions(3) // Explicitly set to 3D mode
             .nodeLabel(node => this.getNodeLabel(node))
             .nodeColor(node => this.nodeColorMap.get(node.id) || '#666')
             .nodeVal(node => this.nodeSizeMap.get(node.id) || 1)

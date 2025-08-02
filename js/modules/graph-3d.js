@@ -199,6 +199,13 @@ class Graph3DCoordinator {
                 }
             },
 
+            // Flatten graph (2D/3D toggle)
+            onFlattenGraphChange: (flatten) => {
+                if (graph3DCore && graph3DCore.setFlattenMode) {
+                    graph3DCore.setFlattenMode(flatten);
+                }
+            },
+
             // Label font size
             onLabelFontSizeChange: (size) => {
                 if (graph3DVisuals && graph3DVisuals.setLabelFontSize) {

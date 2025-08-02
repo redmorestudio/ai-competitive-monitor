@@ -384,9 +384,9 @@ export class Graph3DData {
                 lastChanged: company.lastChanged,
                 recentChanges: company.recentChanges,
                 // Initial random 3D positions for true 3D layout
-                x: (Math.random() - 0.5) * 300,
-                y: (Math.random() - 0.5) * 300,
-                z: (Math.random() - 0.5) * 300
+                x: (Math.random() - 0.5) * 600,
+                y: (Math.random() - 0.5) * 600,
+                z: (Math.random() - 0.5) * 600
             });
 
             // Track technology nodes (ensure array exists)
@@ -422,9 +422,9 @@ export class Graph3DData {
                 nodeType: 'technology',
                 companyCount: companies.size,
                 // Initial random 3D positions for true 3D layout
-                x: (Math.random() - 0.5) * 300,
-                y: (Math.random() - 0.5) * 300,
-                z: (Math.random() - 0.5) * 300
+                x: (Math.random() - 0.5) * 600,
+                y: (Math.random() - 0.5) * 600,
+                z: (Math.random() - 0.5) * 600
             });
 
             // Create links from companies to technology
@@ -448,9 +448,9 @@ export class Graph3DData {
                 nodeType: 'concept',
                 companyCount: companies.size,
                 // Initial random 3D positions for true 3D layout
-                x: (Math.random() - 0.5) * 300,
-                y: (Math.random() - 0.5) * 300,
-                z: (Math.random() - 0.5) * 300
+                x: (Math.random() - 0.5) * 600,
+                y: (Math.random() - 0.5) * 600,
+                z: (Math.random() - 0.5) * 600
             });
 
             // Create links from companies to concepts

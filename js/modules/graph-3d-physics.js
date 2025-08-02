@@ -40,6 +40,17 @@ export class Graph3DPhysics {
             .d3VelocityDecay(this.velocityDecay)
             .cooldownTicks(this.cooldownTicks)
             .cooldownTime(this.cooldownTime);
+            
+        // Add a custom z-axis spread force to ensure 3D distribution
+        graph.d3Force('zspread', () => {
+            const nodes = graph.graphData().nodes;
+            nodes.forEach(node => {
+                // Add a small random force in z direction to prevent planar collapse
+                if (node.vz !== undefined) {
+                    node.vz += (Math.random() - 0.5) * 0.5;
+                }
+            });
+        });
     }
 
     /**
@@ -257,9 +268,9 @@ export class Graph3DPhysics {
             // Give nodes random initial 3D positions if they don't have them
             // This ensures true 3D distribution
             if (!node.x || !node.y || !node.z) {
-                node.x = (Math.random() - 0.5) * 300;
-                node.y = (Math.random() - 0.5) * 300;
-                node.z = (Math.random() - 0.5) * 300;
+                node.x = (Math.random() - 0.5) * 600;
+                node.y = (Math.random() - 0.5) * 600;
+                node.z = (Math.random() - 0.5) * 600;
             }
         });
 
