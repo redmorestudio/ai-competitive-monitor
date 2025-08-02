@@ -1,76 +1,35 @@
 #!/usr/bin/env node
 
-if (process.env.NODE_ENV === 'production' || process.env.POSTGRES_CONNECTION_STRING) {
-  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
-}
+const { Pool } = require('pg');
 
-const { db, end } = require('./postgres-db');
+// Direct connection to Heroku PostgreSQL
+const pool = new Pool({
+  connectionString: 'postgres://ufanmu9ia72q5t:p83d9680fde47d0c65c931c0515c404056874c8a20e01f799f4e11db6b65a8333@cee3ebbhveeoab.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d1visgt8nc3hc2',
+  ssl: { rejectUnauthorized: false }
+});
 
 async function checkSchema() {
-    console.log('Checking PostgreSQL schema...\n');
+  try {
+    console.log('🔍 Checking PostgreSQL schema...\n');
     
-    try {
-        // Check intelligence.changes columns
-        const changesColumns = await db.all(`
-            SELECT column_name, data_type, is_nullable
-            FROM information_schema.columns
-            WHERE table_schema = 'intelligence' 
-            AND table_name = 'changes'
-            ORDER BY ordinal_position
-        `);
-        
-        console.log('intelligence.changes columns:');
-        changesColumns.forEach(col => {
-            console.log(`  - ${col.column_name} (${col.data_type}) ${col.is_nullable === 'NO' ? 'NOT NULL' : ''}`);
-        });
-        
-        // Check intelligence.urls columns
-        console.log('\nintelligence.urls columns:');
-        const urlsColumns = await db.all(`
-            SELECT column_name, data_type, is_nullable
-            FROM information_schema.columns
-            WHERE table_schema = 'intelligence' 
-            AND table_name = 'urls'
-            ORDER BY ordinal_position
-        `);
-        
-        urlsColumns.forEach(col => {
-            console.log(`  - ${col.column_name} (${col.data_type}) ${col.is_nullable === 'NO' ? 'NOT NULL' : ''}`);
-        });
-        
-        // Check intelligence.baseline_analysis columns
-        console.log('\nintelligence.baseline_analysis columns:');
-        const baselineColumns = await db.all(`
-            SELECT column_name, data_type, is_nullable
-            FROM information_schema.columns
-            WHERE table_schema = 'intelligence' 
-            AND table_name = 'baseline_analysis'
-            ORDER BY ordinal_position
-        `);
-        
-        baselineColumns.forEach(col => {
-            console.log(`  - ${col.column_name} (${col.data_type}) ${col.is_nullable === 'NO' ? 'NOT NULL' : ''}`);
-        });
-        
-        // Check intelligence.enhanced_analysis columns
-        console.log('\nintelligence.enhanced_analysis columns:');
-        const enhancedColumns = await db.all(`
-            SELECT column_name, data_type, is_nullable
-            FROM information_schema.columns
-            WHERE table_schema = 'intelligence' 
-            AND table_name = 'enhanced_analysis'
-            ORDER BY ordinal_position
-        `);
-        
-        enhancedColumns.forEach(col => {
-            console.log(`  - ${col.column_name} (${col.data_type}) ${col.is_nullable === 'NO' ? 'NOT NULL' : ''}`);
-        });
-        
-    } catch (error) {
-        console.error('Error checking schema:', error);
-    } finally {
-        await end();
-    }
+    // Check companies table structure
+    const result = await pool.query(`
+      SELECT column_name, data_type, is_nullable, column_default
+      FROM information_schema.columns
+      WHERE table_schema = 'intelligence' AND table_name = 'companies'
+      ORDER BY ordinal_position;
+    `);
+    
+    console.log('📊 Companies table structure:');
+    result.rows.forEach(col => {
+      console.log(`   - ${col.column_name}: ${col.data_type} (nullable: ${col.is_nullable}, default: ${col.column_default})`);
+    });
+    
+  } catch (error) {
+    console.error('❌ Error:', error.message);
+  } finally {
+    await pool.end();
+  }
 }
 
 checkSchema();

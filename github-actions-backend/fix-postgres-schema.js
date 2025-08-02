@@ -1,197 +1,81 @@
 #!/usr/bin/env node
 
-/**
- * Fix PostgreSQL Schema Issues
- * 
- * Addresses missing tables and columns for the scraper-three-db-postgres.js
- */
+const { Client } = require('pg');
 
-// Only load dotenv in development (not in GitHub Actions)
-if (!process.env.GITHUB_ACTIONS && !process.env.POSTGRES_CONNECTION_STRING) {
-  try {
-    require('dotenv').config();
-  } catch (e) {
-    // dotenv not available or no .env file - this is fine
-  }
-}
-const { db, end } = require('./postgres-db');
-
-async function fixSchema() {
-  try {
-    console.log('🔧 Fixing PostgreSQL schema...\n');
-    
-    // 1. Create missing scraped_pages table in raw_content schema
-    console.log('📊 Creating/updating scraped_pages table...');
-    await db.run(`
-      CREATE TABLE IF NOT EXISTS raw_content.scraped_pages (
-        id SERIAL PRIMARY KEY,
-        company TEXT NOT NULL,
-        url TEXT NOT NULL,
-        url_name TEXT,
-        content TEXT,
-        html TEXT,
-        title TEXT,
-        content_hash TEXT,
-        scraped_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        change_detected BOOLEAN DEFAULT false,
-        previous_hash TEXT,
-        interest_level INTEGER DEFAULT 5,
-        scrape_status TEXT DEFAULT 'pending',
-        captcha_type TEXT,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-      )
-    `);
-    console.log('✅ scraped_pages table ready\n');
-
-    // 2. Create company_pages_baseline table
-    console.log('📊 Creating/updating company_pages_baseline table...');
-    await db.run(`
-      CREATE TABLE IF NOT EXISTS raw_content.company_pages_baseline (
-        id SERIAL PRIMARY KEY,
-        company TEXT NOT NULL,
-        url TEXT NOT NULL,
-        url_name TEXT,
-        content TEXT,
-        html TEXT,
-        title TEXT,
-        content_hash TEXT,
-        last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        update_count INTEGER DEFAULT 0,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        UNIQUE(company, url)
-      )
-    `);
-    console.log('✅ company_pages_baseline table ready\n');
-
-    // 3. Create change_detection table with correct schema
-    console.log('📊 Creating/updating change_detection table...');
-    await db.run(`
-      CREATE TABLE IF NOT EXISTS processed_content.change_detection (
-        id SERIAL PRIMARY KEY,
-        company TEXT NOT NULL,
-        url TEXT NOT NULL,
-        url_name TEXT,
-        url_id INTEGER,
-        change_type TEXT,
-        old_hash TEXT,
-        new_hash TEXT,
-        detected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        interest_level INTEGER DEFAULT 5,
-        ai_analysis TEXT,
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-      )
-    `);
-    console.log('✅ change_detection table ready\n');
-
-    // 4. Add missing columns to existing tables
-    console.log('📊 Adding missing columns to existing tables...');
-    
-    // Add captchas_encountered column to scraping_runs if missing
-    await db.run(`
-      ALTER TABLE intelligence.scraping_runs 
-      ADD COLUMN IF NOT EXISTS captchas_encountered INTEGER DEFAULT 0
-    `).catch(err => {
-      if (!err.message.includes('already exists')) throw err;
-    });
-    
-    // Add scrape_status column to scraped_pages if missing
-    await db.run(`
-      ALTER TABLE raw_content.scraped_pages 
-      ADD COLUMN IF NOT EXISTS scrape_status VARCHAR(50) DEFAULT 'success'
-    `).catch(err => {
-      if (!err.message.includes('already exists')) throw err;
-    });
-    
-    // Add captcha_type column to scraped_pages if missing
-    await db.run(`
-      ALTER TABLE raw_content.scraped_pages 
-      ADD COLUMN IF NOT EXISTS captcha_type VARCHAR(50)
-    `).catch(err => {
-      if (!err.message.includes('already exists')) throw err;
-    });
-    
-    // Add url column to change_detection if missing
-    await db.run(`
-      ALTER TABLE processed_content.change_detection 
-      ADD COLUMN IF NOT EXISTS url TEXT
-    `).catch(err => {
-      if (!err.message.includes('already exists')) throw err;
-    });
-    
-    console.log('✅ All columns updated\n');
-
-    // 5. Create indexes for new tables
-    console.log('🔍 Creating indexes...');
-    const indexes = [
-      'CREATE INDEX IF NOT EXISTS idx_scraped_pages_company ON raw_content.scraped_pages(company)',
-      'CREATE INDEX IF NOT EXISTS idx_scraped_pages_url ON raw_content.scraped_pages(url)',
-      'CREATE INDEX IF NOT EXISTS idx_scraped_pages_scraped_at ON raw_content.scraped_pages(scraped_at DESC)',
-      'CREATE INDEX IF NOT EXISTS idx_scraped_pages_url_scraped_at ON raw_content.scraped_pages(url, scraped_at DESC)',
-      'CREATE INDEX IF NOT EXISTS idx_company_pages_baseline_company_url ON raw_content.company_pages_baseline(company, url)',
-      'CREATE INDEX IF NOT EXISTS idx_change_detection_company ON processed_content.change_detection(company)',
-      'CREATE INDEX IF NOT EXISTS idx_change_detection_detected_at ON processed_content.change_detection(detected_at DESC)',
-      'CREATE INDEX IF NOT EXISTS idx_change_detection_interest_level ON processed_content.change_detection(interest_level DESC)'
-    ];
-
-    for (const index of indexes) {
-      await db.run(index);
+async function checkAndFixSchema() {
+  const client = new Client({
+    connectionString: 'postgres://ufanmu9ia72q5t:p83d9680fde47d0c65c931c0515c404056874c8a20e01f799f4e11db6b65a8333@cee3ebbhveeoab.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d1visgt8nc3hc2',
+    ssl: {
+      rejectUnauthorized: false
     }
-    console.log('✅ Indexes created\n');
+  });
 
-    // 6. Ensure url_id is nullable in change_detection (for the error we saw)
-    console.log('🔧 Ensuring url_id is nullable in change_detection...');
-    await db.run(`
-      ALTER TABLE processed_content.change_detection 
-      ALTER COLUMN url_id DROP NOT NULL
-    `).catch(() => {
-      // Column might already be nullable or not exist, that's fine
-    });
-    console.log('✅ Column constraints updated\n');
+  try {
+    await client.connect();
+    console.log('✅ Connected to PostgreSQL\n');
 
-    // 7. Verify the schema
-    console.log('🔍 Verifying schema...\n');
-    
-    const scraped_pages_cols = await db.all(`
-      SELECT column_name, data_type 
-      FROM information_schema.columns 
-      WHERE table_schema = 'raw_content' 
-      AND table_name = 'scraped_pages'
+    // Check companies table structure
+    const columns = await client.query(`
+      SELECT column_name, data_type, column_default, is_nullable
+      FROM information_schema.columns
+      WHERE table_schema = 'intelligence' AND table_name = 'companies'
       ORDER BY ordinal_position
     `);
     
-    console.log('scraped_pages columns:');
-    scraped_pages_cols.forEach(col => {
-      console.log(`  - ${col.column_name}: ${col.data_type}`);
-    });
-    
-    const change_detection_cols = await db.all(`
-      SELECT column_name, data_type 
-      FROM information_schema.columns 
-      WHERE table_schema = 'processed_content' 
-      AND table_name = 'change_detection'
-      ORDER BY ordinal_position
-    `);
-    
-    console.log('\nchange_detection columns:');
-    change_detection_cols.forEach(col => {
-      console.log(`  - ${col.column_name}: ${col.data_type}`);
+    console.log('📊 Companies table structure:');
+    columns.rows.forEach(col => {
+      console.log(`   - ${col.column_name}: ${col.data_type} (default: ${col.column_default}, nullable: ${col.is_nullable})`);
     });
 
-    console.log('\n✨ Schema fixes complete!\n');
+    // Check if sequence exists
+    const sequence = await client.query(`
+      SELECT sequence_name 
+      FROM information_schema.sequences 
+      WHERE sequence_schema = 'intelligence' 
+      AND sequence_name LIKE '%companies%'
+    `);
     
+    console.log('\n🔢 Sequences:', sequence.rows);
+
+    // Try to fix the ID column
+    console.log('\n🔧 Fixing companies table...');
+    
+    // Drop and recreate the table with proper SERIAL
+    await client.query('DROP TABLE IF EXISTS intelligence.urls CASCADE');
+    await client.query('DROP TABLE IF EXISTS intelligence.companies CASCADE');
+    
+    await client.query(`
+      CREATE TABLE intelligence.companies (
+        id SERIAL PRIMARY KEY,
+        name TEXT NOT NULL UNIQUE,
+        category TEXT,
+        interest_level INTEGER DEFAULT 5,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      )
+    `);
+    
+    await client.query(`
+      CREATE TABLE intelligence.urls (
+        id SERIAL PRIMARY KEY,
+        company_id INTEGER NOT NULL REFERENCES intelligence.companies(id) ON DELETE CASCADE,
+        url TEXT NOT NULL,
+        url_type TEXT DEFAULT 'homepage',
+        is_primary BOOLEAN DEFAULT false,
+        last_scraped TIMESTAMP,
+        scrape_frequency INTEGER DEFAULT 86400,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      )
+    `);
+    
+    console.log('✅ Tables recreated with proper SERIAL columns');
+
   } catch (error) {
-    console.error('❌ Error fixing schema:', error);
-    process.exit(1);
+    console.error('❌ Error:', error);
   } finally {
-    await end();
+    await client.end();
   }
 }
 
-// Run if called directly
-if (require.main === module) {
-  fixSchema()
-    .then(() => process.exit(0))
-    .catch(() => process.exit(1));
-}
-
-module.exports = { fixSchema };
+checkAndFixSchema();

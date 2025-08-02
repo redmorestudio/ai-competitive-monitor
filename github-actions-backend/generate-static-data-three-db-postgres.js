@@ -411,6 +411,61 @@ async function generateChangelog() {
     }
 }
 
+// Generate changes.json (all changes for the changes tab)
+async function generateAllChanges() {
+    console.log('Generating changes.json...');
+    
+    try {
+        const allChanges = await db.all(`
+            SELECT 
+                ch.id,
+                ch.company,
+                ch.url,
+                ch.detected_at,
+                ch.interest_level,
+                ch.analysis,
+                ch.change_type,
+                ea.business_impact,
+                ea.competitive_implications,
+                ea.risk_assessment
+            FROM intelligence.changes ch
+            LEFT JOIN intelligence.enhanced_analysis ea ON ea.change_id = ch.id
+            WHERE ch.detected_at > NOW() - INTERVAL '30 days'
+            ORDER BY ch.detected_at DESC
+            LIMIT 1000
+        `);
+        
+        const changesData = allChanges.map(change => ({
+            id: change.id,
+            company: change.company,
+            url: change.url,
+            detected_at: change.detected_at,
+            detectedAt: change.detected_at,
+            interest_level: change.interest_level || 0,
+            summary: change.analysis || 'Change detected',
+            change_type: change.change_type,
+            business_impact: change.business_impact,
+            competitive_implications: change.competitive_implications,
+            ai_analysis: JSON.stringify({
+                summary: change.analysis || 'Change detected',
+                category: change.change_type,
+                interest_level: change.interest_level
+            })
+        }));
+        
+        fs.writeFileSync(
+            path.join(OUTPUT_DIR, 'changes.json'),
+            JSON.stringify(changesData, null, 2)
+        );
+        
+        console.log(`✅ Generated changes.json with ${changesData.length} changes`);
+        
+    } catch (error) {
+        console.error('Error generating changes:', error);
+        throw error;
+    }
+}
+
 // Generate workflow status
 async function generateWorkflowStatus() {
     console.log('Generating workflow-status.json...');
@@ -449,6 +504,82 @@ async function generateWorkflowStatus() {
     }
 }
 
+// Generate company-details.json
+async function generateCompanyDetails() {
+    console.log('Generating company-details.json...');
+    
+    try {
+        // Get all companies
+        const companies = await db.all(`
+            SELECT DISTINCT c.id, c.name, c.category
+            FROM intelligence.companies c
+            ORDER BY c.name
+        `);
+        
+        const companyDetails = {
+            companies: {},
+            lastUpdated: new Date().toISOString()
+        };
+        
+        // Process each company
+        for (const company of companies) {
+            // Get company URLs
+            const urls = await db.all(`
+                SELECT u.id, u.url, u.url_type as category
+                FROM intelligence.urls u
+                WHERE u.company_id = $1
+                ORDER BY u.url
+            `, [company.id]);
+            
+            // Get company statistics
+            const stats = await db.get(`
+                SELECT 
+                    COUNT(DISTINCT ch.id) as total_changes,
+                    COUNT(DISTINCT CASE WHEN ch.detected_at > NOW() - INTERVAL '7 days' THEN ch.id END) as changes_7d,
+                    COUNT(DISTINCT CASE WHEN ch.detected_at > NOW() - INTERVAL '30 days' THEN ch.id END) as changes_30d,
+                    AVG(ch.interest_level) as avg_interest_level,
+                    MAX(ch.detected_at) as last_change
+                FROM intelligence.changes ch
+                WHERE ch.company = $1
+            `, [company.name]);
+            
+            // Format URLs for compatibility
+            const formattedUrls = urls.map(u => ({
+                id: u.id,
+                url: u.url,
+                name: u.category || 'Homepage',
+                category: u.category || 'main'
+            }));
+            
+            companyDetails.companies[company.name] = {
+                id: company.id,
+                name: company.name,
+                category: company.category,
+                urls: formattedUrls,
+                stats: {
+                    total_changes: stats.total_changes || 0,
+                    changes_7d: stats.changes_7d || 0,
+                    changes_30d: stats.changes_30d || 0,
+                    avg_interest_level: stats.avg_interest_level || 0,
+                    last_change: stats.last_change
+                }
+            };
+        }
+        
+        // Write the file
+        fs.writeFileSync(
+            path.join(OUTPUT_DIR, 'company-details.json'),
+            JSON.stringify(companyDetails, null, 2)
+        );
+        
+        console.log(`✅ Generated company-details.json with ${Object.keys(companyDetails.companies).length} companies`);
+        
+    } catch (error) {
+        console.error('Error generating company details:', error);
+        throw error;
+    }
+}
+
 // Main function
 async function main() {
     console.log('Starting static data generation with entity fallback...');
@@ -458,7 +589,9 @@ async function main() {
         await generateDashboard();
         await generateCompaniesData();
         await generateChangelog();
+        await generateAllChanges();
         await generateWorkflowStatus();
+        await generateCompanyDetails();
         
         console.log('✅ All static data generated successfully!');
         
