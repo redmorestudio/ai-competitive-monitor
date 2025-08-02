@@ -465,30 +465,10 @@ export class Graph3DData {
             });
         });
 
-        // Create company-to-company links based on shared technologies
-        const companyPairs = new Map();
-        
-        companies.forEach((company1, i) => {
-            companies.slice(i + 1).forEach(company2 => {
-                const sharedTech = company1.intelligence.technologies.filter(t => 
-                    company2.intelligence.technologies.includes(t)
-                );
-                
-                if (sharedTech.length > 0) {
-                    const pairKey = `${company1.id}-${company2.id}`;
-                    companyPairs.set(pairKey, {
-                        source: company1.id,
-                        target: company2.id,
-                        linkType: 'shared-technology',
-                        strength: sharedTech.length,
-                        technologies: sharedTech
-                    });
-                }
-            });
-        });
-
-        // Add company-to-company links
-        companyPairs.forEach(link => links.push(link));
+        // Note: We intentionally do NOT create direct company-to-company links
+        // just because they share technologies. Companies should only be connected
+        // through the technology/concept nodes they both use.
+        // This provides a more accurate representation of relationships.
 
         // Store the processed data
         this.processedData = { nodes, links };
