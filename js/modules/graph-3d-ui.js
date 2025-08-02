@@ -45,7 +45,7 @@ export class Graph3DUI {
                 
                 <!-- SIMPLE MODE SECTIONS -->
                 <div class="simple-sections">
-                    <!-- Draw By Mode -->
+                    <!-- Draw By -->
                     ${this.renderDrawByMode()}
                     
                     <!-- Legend -->
@@ -56,6 +56,21 @@ export class Graph3DUI {
                     
                     <!-- Node Size -->
                     ${this.renderNodeSize()}
+                    
+                    <!-- View Mode 2D Toggle -->
+                    ${this.renderFlattenGraphSimple()}
+                    
+                    <!-- Node Visibility -->
+                    ${this.renderNodeVisibilitySimple()}
+                    
+                    <!-- Graph Physics -->
+                    ${this.renderPhysicsControlsSimple()}
+                    
+                    <!-- Link Strength Filter -->
+                    ${this.renderLinkStrengthFilterSimple()}
+                    
+                    <!-- Number of Entities -->
+                    ${this.renderEntityLimitSimple()}
                     
                     <!-- Filter by Type -->
                     ${this.renderEntityTypeFilter()}
@@ -217,6 +232,121 @@ export class Graph3DUI {
                 </label>
                 <div class="info-text" style="font-size: 11px; color: #666;">
                     Control how node sizes are calculated
+                </div>
+            </div>
+        `;
+    }
+
+    renderFlattenGraphSimple() {
+        return `
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">View Mode</h4>
+                <label style="display: flex; align-items: center; justify-content: space-between;">
+                    <span>Flatten Graph (2D-like)</span>
+                    <input type="checkbox" id="flatten-graph-simple" style="width: 20px; height: 20px;">
+                </label>
+                <div class="info-text" style="font-size: 11px; color: #666; margin-top: 5px;">
+                    Toggle between 3D physics and flat 2D layout
+                </div>
+            </div>
+        `;
+    }
+
+    renderNodeVisibilitySimple() {
+        return `
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Node Visibility</h4>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <label style="display: flex; align-items: center; justify-content: space-between;">
+                        <span>Show Technology Nodes</span>
+                        <input type="checkbox" id="show-technology-nodes-simple" checked style="width: 20px; height: 20px;">
+                    </label>
+                    <label style="display: flex; align-items: center; justify-content: space-between;">
+                        <span>Show Concept Nodes</span>
+                        <input type="checkbox" id="show-concept-nodes-simple" checked style="width: 20px; height: 20px;">
+                    </label>
+                    <label style="display: flex; align-items: center; justify-content: space-between;">
+                        <span>Show Company Nodes</span>
+                        <input type="checkbox" id="show-company-nodes-simple" checked style="width: 20px; height: 20px;">
+                    </label>
+                </div>
+                <div class="info-text" style="font-size: 11px; color: #666; margin-top: 5px;">
+                    Toggle visibility of different node types
+                </div>
+            </div>
+        `;
+    }
+
+    renderPhysicsControlsSimple() {
+        return `
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Graph Physics</h4>
+                <label style="display: block; margin-bottom: 15px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Force Strength</span>
+                        <span id="force-value-simple" style="color: #00ff88; font-weight: bold;">-300</span>
+                    </div>
+                    <input type="range" id="force-strength-simple" min="-1000" max="-50" value="-300" 
+                           style="width: 100%;">
+                </label>
+                <label style="display: block; margin-bottom: 15px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Link Distance</span>
+                        <span id="link-distance-value-simple" style="color: #00ff88; font-weight: bold;">30</span>
+                    </div>
+                    <input type="range" id="link-distance-simple" min="10" max="200" value="30" 
+                           style="width: 100%;">
+                </label>
+                <label style="display: block;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Center Gravity</span>
+                        <span id="center-gravity-value-simple" style="color: #00ff88; font-weight: bold;">0.3</span>
+                    </div>
+                    <input type="range" id="center-gravity-simple" min="0" max="1" step="0.1" value="0.3" 
+                           style="width: 100%;">
+                </label>
+                <div class="info-text" style="font-size: 11px; color: #666; margin-top: 10px; line-height: 1.4;">
+                    • Force: How strongly nodes repel each other<br>
+                    • Distance: Preferred length of connections<br>
+                    • Gravity: Pull toward center (0=none, 1=strong)
+                </div>
+            </div>
+        `;
+    }
+
+    renderLinkStrengthFilterSimple() {
+        return `
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Link Strength Filter</h4>
+                <label style="display: block;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Connection Threshold</span>
+                        <span id="link-threshold-value-simple" style="color: #00ff88; font-weight: bold;">0</span>
+                    </div>
+                    <input type="range" id="link-threshold-simple" min="0" max="10" value="0" 
+                           style="width: 100%;">
+                </label>
+                <div class="info-text" style="font-size: 11px; color: #666; margin-top: 5px;">
+                    Hide connections weaker than this value
+                </div>
+            </div>
+        `;
+    }
+
+    renderEntityLimitSimple() {
+        return `
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Number of Entities</h4>
+                <label style="display: block;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Entity Count Limit</span>
+                        <span id="entity-limit-value-simple" style="color: #00ff88; font-weight: bold;">200</span>
+                    </div>
+                    <input type="range" id="entity-limit-simple" min="10" max="500" value="200" 
+                           style="width: 100%;">
+                </label>
+                <div class="info-text" style="font-size: 11px; color: #666; margin-top: 5px;">
+                    Limit the number of entities displayed
                 </div>
             </div>
         `;
@@ -623,11 +753,19 @@ export class Graph3DUI {
             drawModeSimple: document.getElementById('draw-mode-simple'),
             viewModeSimple: document.getElementById('view-mode-simple'),
             nodeSizeSimple: document.getElementById('node-size-simple'),
+            flattenGraphSimple: document.getElementById('flatten-graph-simple'),
+            showTechnologyNodesSimple: document.getElementById('show-technology-nodes-simple'),
+            showConceptNodesSimple: document.getElementById('show-concept-nodes-simple'),
+            showCompanyNodesSimple: document.getElementById('show-company-nodes-simple'),
+            forceStrengthSimple: document.getElementById('force-strength-simple'),
+            linkDistanceSimple: document.getElementById('link-distance-simple'),
+            centerGravitySimple: document.getElementById('center-gravity-simple'),
+            linkThresholdSimple: document.getElementById('link-threshold-simple'),
+            entityLimitSimple: document.getElementById('entity-limit-simple'),
             searchInputSimple: document.getElementById('search-input-simple'),
             searchDepthSimple: document.getElementById('search-depth-simple'),
             
             // Advanced mode elements
-            drawMode: document.getElementById('draw-mode'),
             viewMode: document.getElementById('view-mode'),
             nodeSize: document.getElementById('node-size'),
             searchDepth: document.getElementById('search-depth'),
@@ -660,6 +798,11 @@ export class Graph3DUI {
             showCompanyNodes: document.getElementById('show-company-nodes'),
             
             // Display elements
+            forceValueSimple: document.getElementById('force-value-simple'),
+            linkDistanceValueSimple: document.getElementById('link-distance-value-simple'),
+            centerGravityValueSimple: document.getElementById('center-gravity-value-simple'),
+            linkThresholdValueSimple: document.getElementById('link-threshold-value-simple'),
+            entityLimitValueSimple: document.getElementById('entity-limit-value-simple'),
             labelSizeValue: document.getElementById('label-size-value'),
             linkWidthValue: document.getElementById('link-width-value'),
             linkOpacityValue: document.getElementById('link-opacity-value'),
@@ -720,6 +863,19 @@ export class Graph3DUI {
                 }
             });
         }
+
+        // Simple mode checkboxes
+        this.attachCheckboxListener('flattenGraphSimple', 'onFlattenGraphChange');
+        this.attachCheckboxListener('showTechnologyNodesSimple', 'onShowTechnologyNodesChange');
+        this.attachCheckboxListener('showConceptNodesSimple', 'onShowConceptNodesChange');
+        this.attachCheckboxListener('showCompanyNodesSimple', 'onShowCompanyNodesChange');
+
+        // Simple mode sliders
+        this.attachSliderListener('forceStrengthSimple', 'forceValueSimple', 'onForceStrengthChange');
+        this.attachSliderListener('linkDistanceSimple', 'linkDistanceValueSimple', 'onLinkDistanceChange');
+        this.attachSliderListener('centerGravitySimple', 'centerGravityValueSimple', 'onCenterGravityChange');
+        this.attachSliderListener('linkThresholdSimple', 'linkThresholdValueSimple', 'onLinkThresholdChange');
+        this.attachSliderListener('entityLimitSimple', 'entityLimitValueSimple', 'onEntityLimitChange');
 
         // Advanced mode listeners
         if (this.elements.viewMode) {
