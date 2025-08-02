@@ -21,13 +21,34 @@ if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });
 }
 
-// Helper function to deduplicate arrays by name property
-function deduplicateByName(arr) {
-    const seen = new Set();
-    return arr.filter(item => {
-        const key = item.name || JSON.stringify(item);
-        if (seen.has(key)) return false;
-        seen.add(key);
+// Helper function to deduplicate arrays by name property (case-insensitive)
+// Companies keep their defined capitalization, everything else goes to lowercase
+function deduplicateByName(arr, entityType = null) {
+    const seen = new Map();
+    
+    return arr.map(item => {
+        // Don't normalize company names - they should match our defined names
+        if (entityType === 'companies' || entityType === 'competitors') {
+            return item;
+        }
+        
+        // Normalize all other entities to lowercase
+        if (item.name) {
+            item.name = item.name.trim().toLowerCase();
+        }
+        if (item.concept) {
+            item.concept = item.concept.trim().toLowerCase();
+        }
+        if (item.partner_name) {
+            item.partner_name = item.partner_name.trim().toLowerCase();
+        }
+        return item;
+    }).filter(item => {
+        const key = (item.name || item.concept || item.partner_name || JSON.stringify(item)).toLowerCase();
+        if (seen.has(key)) {
+            return false;
+        }
+        seen.set(key, true);
         return true;
     });
 }
@@ -58,7 +79,7 @@ function getTopEntities(intelligenceDb, companyId, entityType, limit = 3) {
         }
         
         // Deduplicate and return top N
-        const unique = deduplicateByName(allEntities);
+        const unique = deduplicateByName(allEntities, entityType);
         const stringEntities = unique.map(e => e.name || e.concept || e.partner_name || 'Unknown');
         // Apply case-insensitive deduplication to the string array
         return deduplicatePreservingCase(stringEntities).slice(0, limit);
@@ -562,15 +583,15 @@ function generateCompanyDetailsData(intelligenceDb) {
             }
             
             // De-duplicate all arrays
-            aggregated.products = deduplicateByName(aggregated.products);
-            aggregated.technologies = deduplicateByName(aggregated.technologies);
-            aggregated.integrations = deduplicateByName(aggregated.integrations);
-            aggregated.partnerships = deduplicateByName(aggregated.partnerships);
-            aggregated.people = deduplicateByName(aggregated.people);
-            aggregated.pricing = deduplicateByName(aggregated.pricing);
-            aggregated.markets = deduplicateByName(aggregated.markets);
-            aggregated.competitors = deduplicateByName(aggregated.competitors);
-            aggregated.ai_ml_concepts = deduplicateByName(aggregated.ai_ml_concepts);
+            aggregated.products = deduplicateByName(aggregated.products, 'products');
+            aggregated.technologies = deduplicateByName(aggregated.technologies, 'technologies');
+            aggregated.integrations = deduplicateByName(aggregated.integrations, 'integrations');
+            aggregated.partnerships = deduplicateByName(aggregated.partnerships, 'partnerships');
+            aggregated.people = deduplicateByName(aggregated.people, 'people');
+            aggregated.pricing = deduplicateByName(aggregated.pricing, 'pricing');
+            aggregated.markets = deduplicateByName(aggregated.markets, 'markets');
+            aggregated.competitors = deduplicateByName(aggregated.competitors, 'competitors');
+            aggregated.ai_ml_concepts = deduplicateByName(aggregated.ai_ml_concepts, 'ai_ml_concepts');
             
             // De-duplicate relationships (by combination of from/to/type)
             const relSeen = new Set();
