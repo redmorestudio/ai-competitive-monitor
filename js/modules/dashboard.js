@@ -153,10 +153,6 @@ class Dashboard {
                         <span class="stat-label">URLs Monitored</span>
                         <span class="stat-value">${urlCount}</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-label">Total Changes</span>
-                        <span class="stat-value">${changeCount}</span>
-                    </div>
                     ${recentHighInterest > 0 ? `
                     <div class="stat highlight">
                         <span class="stat-label">High Interest</span>
