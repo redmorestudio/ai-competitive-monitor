@@ -10,15 +10,15 @@
  */
 
 // Import all modules
-import { graph3DCore } from './graph-3d-core.js';
-import { graph3DPhysics } from './graph-3d-physics.js';
-import { graph3DVisuals } from './graph-3d-visuals.js';
-import { graph3DFilters } from './graph-3d-filters.js';
-import { graph3DUI } from './graph-3d-ui.js';
-import { graph3DData } from './graph-3d-data.js';
-import { graph3DContext } from './graph-3d-context.js';
-import { graph3DTooltip } from './graph-3d-tooltip.js';
-import { graph3DMobile } from './graph-3d-mobile.js';
+import { graph3DCore } from './graph-3d-core.js?v=20250802';
+import { graph3DPhysics } from './graph-3d-physics.js?v=20250802';
+import { graph3DVisuals } from './graph-3d-visuals.js?v=20250802';
+import { graph3DFilters } from './graph-3d-filters.js?v=20250802';
+import { graph3DUI } from './graph-3d-ui.js?v=20250802';
+import { graph3DData } from './graph-3d-data.js?v=20250802';
+import { graph3DContext } from './graph-3d-context.js?v=20250802';
+import { graph3DTooltip } from './graph-3d-tooltip.js?v=20250802';
+import { graph3DMobile } from './graph-3d-mobile.js?v=20250802';
 
 // Main coordinator class
 class Graph3DCoordinator {
@@ -114,7 +114,7 @@ class Graph3DCoordinator {
                     
                     // Initialize labels if enabled
                     if (graph3DVisuals.showLabels) {
-                        graph3DCore.setLabelsEnabled(true, graph3DVisuals.labelFontSize || 12);
+                        graph3DCore.setNodeLabels(true, node => node.name);
                     }
                 }
             }
