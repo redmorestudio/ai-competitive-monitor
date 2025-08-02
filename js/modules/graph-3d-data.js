@@ -36,6 +36,33 @@ export class Graph3DData {
     }
 
     /**
+     * Extract interest level from company data
+     * @param {Object} company - Company data
+     * @returns {number} Interest level
+     */
+    extractInterestLevel(company) {
+        // First check if there's an interestLevel directly on the company
+        if (company.interestLevel !== undefined) {
+            return company.interestLevel;
+        }
+        
+        // Then check recent changes for interest levels
+        if (company.recentChanges && company.recentChanges.length > 0) {
+            const recentLevels = company.recentChanges
+                .map(change => change.interestLevel)
+                .filter(level => level !== undefined && level !== null);
+            
+            if (recentLevels.length > 0) {
+                // Return the highest recent interest level
+                return Math.max(...recentLevels);
+            }
+        }
+        
+        // Default to 5
+        return 5;
+    }
+
+    /**
      * Load data from multiple sources
      * @returns {Promise<Array>} Raw company data
      */
@@ -49,8 +76,25 @@ export class Graph3DData {
                 this.fetchJSON('api-data/dashboard.json')
             ]);
 
+            // Prefer companies.json for intelligence data if available
+            if (companiesData.status === 'fulfilled' && dashboardData.status === 'fulfilled') {
+                // Merge intelligence data from companies.json into dashboard data
+                const companiesMap = new Map();
+                companiesData.value.forEach(company => {
+                    companiesMap.set(company.name, company);
+                });
+                
+                dashboardData.value.companies.forEach(company => {
+                    const companyData = companiesMap.get(company.name);
+                    if (companyData && companyData.intelligence) {
+                        company.intelligence = companyData.intelligence;
+                    }
+                });
+                
+                this.rawData = this.processPostgreSQLFormat(dashboardData.value);
+            }
             // Process SQLite format if available
-            if (companiesData.status === 'fulfilled' && detailsData.status === 'fulfilled') {
+            else if (companiesData.status === 'fulfilled' && detailsData.status === 'fulfilled') {
                 this.rawData = this.processSQLiteFormat(companiesData.value, detailsData.value);
             } 
             // Fall back to PostgreSQL format
@@ -140,21 +184,56 @@ export class Graph3DData {
             throw new Error('No companies data in dashboard.json');
         }
 
-        return dashboardData.companies.map(company => ({
-            id: company.name.toLowerCase().replace(/\s+/g, '-'),
-            name: company.name,
-            website: company.website,
-            type: this.normalizeEntityType(company.type),
-            interestLevel: company.interestLevel || 5,
-            urlCount: company.urlsToMonitor || 0,
-            intelligence: {
-                products: company.products || [],
-                technologies: company.technologies || [],
-                concepts: company.aiConcepts || [],
-                analysis: company.analysis || '',
-                lastUpdated: company.lastUpdated
+        return dashboardData.companies.map(company => {
+            // Extract intelligence data if available
+            const intelligence = company.intelligence || {};
+            
+            // Extract products from recent changes if not in intelligence
+            let products = intelligence.top_products || [];
+            let technologies = intelligence.ai_technologies || [];
+            let concepts = [];
+            
+            // Try to extract from recent changes
+            if (company.recentChanges && company.recentChanges.length > 0) {
+                company.recentChanges.forEach(change => {
+                    if (change.summary) {
+                        try {
+                            const summaryData = JSON.parse(change.summary);
+                            if (summaryData.entities) {
+                                if (summaryData.entities.products) {
+                                    products = [...new Set([...products, ...summaryData.entities.products])];
+                                }
+                                if (summaryData.entities.technologies) {
+                                    technologies = [...new Set([...technologies, ...summaryData.entities.technologies])];
+                                }
+                                if (summaryData.entities.features) {
+                                    concepts = [...new Set([...concepts, ...summaryData.entities.features])];
+                                }
+                            }
+                        } catch (e) {
+                            console.warn('Failed to parse change summary:', e);
+                        }
+                    }
+                });
             }
-        }));
+            
+            return {
+                id: company.name.toLowerCase().replace(/\s+/g, '-'),
+                name: company.name,
+                website: company.urls && company.urls.length > 0 ? company.urls[0].url : '',
+                type: this.normalizeEntityType(company.category || company.type),
+                interestLevel: this.extractInterestLevel(company),
+                urlCount: company.urls ? company.urls.length : 0,
+                intelligence: {
+                    products: products,
+                    technologies: technologies,
+                    concepts: concepts,
+                    analysis: '',
+                    lastUpdated: company.recentChanges && company.recentChanges.length > 0 ? 
+                        company.recentChanges[0].detectedAt : null
+                }
+            };
+        });
     }
 
     /**
@@ -286,6 +365,9 @@ export class Graph3DData {
         const techNodes = new Map();
         const conceptNodes = new Map();
 
+        console.log('Processing', companies.length, 'companies into graph data');
+        console.log('Sample company:', companies[0]);
+
         // Create company nodes
         companies.forEach(company => {
             nodes.push({
@@ -296,29 +378,36 @@ export class Graph3DData {
                 interestLevel: company.interestLevel,
                 urlCount: company.urlCount,
                 website: company.website,
-                technologies: company.intelligence.technologies,
-                concepts: company.intelligence.concepts,
-                products: company.intelligence.products,
+                technologies: company.intelligence.technologies || [],
+                concepts: company.intelligence.concepts || [],
+                products: company.intelligence.products || [],
                 lastChanged: company.lastChanged,
                 recentChanges: company.recentChanges
             });
 
-            // Track technology nodes
-            company.intelligence.technologies.forEach(tech => {
-                if (!techNodes.has(tech)) {
-                    techNodes.set(tech, new Set());
-                }
-                techNodes.get(tech).add(company.id);
-            });
+            // Track technology nodes (ensure array exists)
+            if (company.intelligence.technologies && company.intelligence.technologies.length > 0) {
+                company.intelligence.technologies.forEach(tech => {
+                    if (!techNodes.has(tech)) {
+                        techNodes.set(tech, new Set());
+                    }
+                    techNodes.get(tech).add(company.id);
+                });
+            }
 
-            // Track concept nodes
-            company.intelligence.concepts.forEach(concept => {
-                if (!conceptNodes.has(concept)) {
-                    conceptNodes.set(concept, new Set());
-                }
-                conceptNodes.get(concept).add(company.id);
-            });
+            // Track concept nodes (ensure array exists)
+            if (company.intelligence.concepts && company.intelligence.concepts.length > 0) {
+                company.intelligence.concepts.forEach(concept => {
+                    if (!conceptNodes.has(concept)) {
+                        conceptNodes.set(concept, new Set());
+                    }
+                    conceptNodes.get(concept).add(company.id);
+                });
+            }
         });
+
+        console.log('Found', techNodes.size, 'unique technologies');
+        console.log('Found', conceptNodes.size, 'unique concepts');
 
         // Create technology nodes
         techNodes.forEach((companies, tech) => {
