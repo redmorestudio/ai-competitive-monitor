@@ -575,10 +575,8 @@ export const graph3D = new Graph3DCoordinator();
 // Auto-initialize when DOM is ready
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', async () => {
-        graph3D.setupGlobalHandlers();
         await graph3D.init();
     });
 } else {
-    graph3D.setupGlobalHandlers();
     graph3D.init();
 }

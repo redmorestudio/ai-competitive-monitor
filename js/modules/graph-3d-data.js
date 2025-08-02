@@ -67,9 +67,17 @@ export class Graph3DData {
             }
 
             // Process into graph format
-            this.processedData = this.processIntoGraphData(this.rawData);
+            this.processedData = this.rawData; // For now, use raw data directly
             
-            return this.processedData;
+            return {
+                nodes: this.rawData.map(company => ({
+                    id: company.id || company.name,
+                    name: company.name,
+                    group: company.type,
+                    val: company.urlCount || 1
+                })),
+                links: [] // No links for now, just nodes
+            };
 
         } catch (error) {
             console.error('Error loading data:', error);
