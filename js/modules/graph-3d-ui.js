@@ -463,6 +463,11 @@ export class Graph3DUI {
                 <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Visual Settings</h4>
                 
                 <label style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                    <span>Show Nodes</span>
+                    <input type="checkbox" id="show-nodes" checked style="width: 20px; height: 20px;">
+                </label>
+                
+                <label style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
                     <span>Show Links</span>
                     <input type="checkbox" id="show-links" checked style="width: 20px; height: 20px;">
                 </label>
@@ -475,9 +480,9 @@ export class Graph3DUI {
                 <label style="display: block; margin-bottom: 15px;">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                         <span>Label Font Size</span>
-                        <span id="label-size-value" style="color: #00ff88; font-weight: bold;">8</span>
+                        <span id="label-size-value" style="color: #00ff88; font-weight: bold;">12</span>
                     </div>
-                    <input type="range" id="label-font-size" min="4" max="20" value="8" 
+                    <input type="range" id="label-font-size" min="4" max="24" value="12" step="1"
                            style="width: 100%;">
                 </label>
                 
@@ -683,6 +688,20 @@ export class Graph3DUI {
         return `
             <div class="control-group">
                 <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Filter by Technology</h4>
+                <div class="select-buttons" style="display: flex; gap: 10px; margin-bottom: 10px;">
+                    <button onclick="selectAllTechnologies()" 
+                            style="flex: 1; padding: 8px; background: transparent; 
+                                   border: 1px solid #00ff88; color: #00ff88; 
+                                   border-radius: 4px; cursor: pointer;">
+                        Select All
+                    </button>
+                    <button onclick="selectNoneTechnologies()" 
+                            style="flex: 1; padding: 8px; background: transparent; 
+                                   border: 1px solid #00ff88; color: #00ff88; 
+                                   border-radius: 4px; cursor: pointer;">
+                        Select None
+                    </button>
+                </div>
                 <input type="text" id="tech-search" placeholder="Search technologies..." 
                        style="width: 100%; padding: 8px; margin-bottom: 10px; 
                               background: rgba(0, 0, 0, 0.5); 
@@ -701,6 +720,20 @@ export class Graph3DUI {
         return `
             <div class="control-group">
                 <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Filter by AI Concepts</h4>
+                <div class="select-buttons" style="display: flex; gap: 10px; margin-bottom: 10px;">
+                    <button onclick="selectAllConcepts()" 
+                            style="flex: 1; padding: 8px; background: transparent; 
+                                   border: 1px solid #00ff88; color: #00ff88; 
+                                   border-radius: 4px; cursor: pointer;">
+                        Select All
+                    </button>
+                    <button onclick="selectNoneConcepts()" 
+                            style="flex: 1; padding: 8px; background: transparent; 
+                                   border: 1px solid #00ff88; color: #00ff88; 
+                                   border-radius: 4px; cursor: pointer;">
+                        Select None
+                    </button>
+                </div>
                 <input type="text" id="concept-search" placeholder="Search concepts..." 
                        style="width: 100%; padding: 8px; margin-bottom: 10px; 
                               background: rgba(0, 0, 0, 0.5); 
@@ -786,6 +819,7 @@ export class Graph3DUI {
             entityLimit: document.getElementById('entity-limit'),
             
             // Checkboxes
+            showNodes: document.getElementById('show-nodes'),
             showLinks: document.getElementById('show-links'),
             showLabels: document.getElementById('show-labels'),
             showParticles: document.getElementById('show-particles'),

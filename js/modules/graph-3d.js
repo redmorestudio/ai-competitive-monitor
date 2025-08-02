@@ -185,6 +185,21 @@ class Graph3DCoordinator {
                 this.applyFiltersAndRender();
             },
 
+            // Visual toggles
+            onVisualToggle: (setting, value) => {
+                if (graph3DVisuals && graph3DVisuals.toggleSetting) {
+                    graph3DVisuals.toggleSetting(setting, value);
+                    this.applyFiltersAndRender();
+                }
+            },
+
+            // Label font size
+            onLabelFontSizeChange: (size) => {
+                if (graph3DVisuals && graph3DVisuals.setLabelFontSize) {
+                    graph3DVisuals.setLabelFontSize(size);
+                }
+            },
+
             // Node size
             onNodeSizeChange: (mode) => {
                 if (graph3DVisuals && graph3DVisuals.applyNodeSize) {
@@ -571,6 +586,38 @@ class Graph3DCoordinator {
                 graph3DFilters.setEntityTypeFilters(new Set());
             }
             this.applyFiltersAndRender();
+        };
+        
+        window.selectAllTechnologies = () => {
+            document.querySelectorAll('#tech-filters input[type="checkbox"]')
+                .forEach(cb => {
+                    cb.checked = true;
+                    if (window.handleTechnologyChange) window.handleTechnologyChange(cb);
+                });
+        };
+        
+        window.selectNoneTechnologies = () => {
+            document.querySelectorAll('#tech-filters input[type="checkbox"]')
+                .forEach(cb => {
+                    cb.checked = false;
+                    if (window.handleTechnologyChange) window.handleTechnologyChange(cb);
+                });
+        };
+        
+        window.selectAllConcepts = () => {
+            document.querySelectorAll('#concept-filters input[type="checkbox"]')
+                .forEach(cb => {
+                    cb.checked = true;
+                    if (window.handleConceptChange) window.handleConceptChange(cb);
+                });
+        };
+        
+        window.selectNoneConcepts = () => {
+            document.querySelectorAll('#concept-filters input[type="checkbox"]')
+                .forEach(cb => {
+                    cb.checked = false;
+                    if (window.handleConceptChange) window.handleConceptChange(cb);
+                });
         };
 
         window.centerView = () => {

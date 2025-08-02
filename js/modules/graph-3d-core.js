@@ -21,6 +21,17 @@ export class Graph3DCore {
     }
 
     /**
+     * Enable/disable node visibility
+     * @param {boolean} enabled - Whether to show nodes
+     */
+    setNodesEnabled(enabled) {
+        if (!this.graph) return;
+        
+        // Set node opacity based on enabled state
+        this.graph.nodeOpacity(enabled ? 0.9 : 0);
+    }
+
+    /**
      * Initialize the 3D force graph
      * @param {HTMLElement} container - DOM element to render the graph
      * @param {Object} config - Configuration options
@@ -255,7 +266,8 @@ export class Graph3DCore {
                 .nodeThreeObject(node => {
                     const sprite = new window.SpriteText(node.name || node.id || '');
                     sprite.material.depthWrite = false;
-                    sprite.color = node.color || '#ffffff';
+                    // Get the actual color from the node color map
+                    sprite.color = this.nodeColorMap.get(node.id) || '#ffffff';
                     sprite.textHeight = fontSize;
                     return sprite;
                 });

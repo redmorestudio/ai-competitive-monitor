@@ -254,12 +254,16 @@ export class Graph3DVisuals {
      */
     toggleSetting(setting, value) {
         switch (setting) {
+            case 'nodes':
+                this.showNodes = value;
+                graph3DCore.setNodesEnabled(value);
+                break;
             case 'links':
                 this.showLinks = value;
                 break;
             case 'labels':
                 this.showLabels = value;
-                graph3DCore.setLabelsEnabled(value);
+                graph3DCore.setLabelsEnabled(value, this.labelFontSize || 12);
                 break;
             case 'particles':
                 this.showParticles = value;
@@ -278,6 +282,17 @@ export class Graph3DVisuals {
                 this.autoRotate = value;
                 this.setAutoRotate(value);
                 break;
+        }
+    }
+
+    /**
+     * Set label font size
+     * @param {number} size - Font size
+     */
+    setLabelFontSize(size) {
+        this.labelFontSize = size;
+        if (this.showLabels) {
+            graph3DCore.setLabelsEnabled(true, size);
         }
     }
 
