@@ -466,6 +466,15 @@ class Graph3DCoordinator {
             graph3DCore.updateData(this.filteredData);
         }
 
+        // Reapply layout if not in normal mode
+        const currentDrawMode = document.getElementById('draw-mode-simple')?.value || 'normal';
+        if (currentDrawMode !== 'normal' && graph3DPhysics && graph3DPhysics.applyLayout) {
+            // Give the graph a moment to update, then apply layout
+            setTimeout(() => {
+                graph3DPhysics.applyLayout(currentDrawMode, this.filteredData);
+            }, 100);
+        }
+
         // Update UI
         this.updateUIState();
     }

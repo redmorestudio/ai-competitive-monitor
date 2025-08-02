@@ -425,7 +425,8 @@ export class Graph3DData {
                     source: companyId,
                     target: techId,
                     linkType: 'technology',
-                    strength: 1
+                    strength: companies.size, // Use actual company count as strength
+                    connectionCount: companies.size
                 });
             });
         });
@@ -446,7 +447,8 @@ export class Graph3DData {
                     source: companyId,
                     target: conceptId,
                     linkType: 'concept',
-                    strength: 1
+                    strength: companies.size, // Use actual company count as strength
+                    connectionCount: companies.size
                 });
             });
         });

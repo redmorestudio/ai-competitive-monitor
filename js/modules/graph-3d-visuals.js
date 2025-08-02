@@ -178,24 +178,26 @@ export class Graph3DVisuals {
                 }
                 // Technology links get scaled by connection count
                 else if (link.linkType === 'technology') {
-                    const connectionCount = link.strength || 1;
+                    const connectionCount = link.connectionCount || link.strength || 1;
                     strength = linkWidthMultiplier * Math.min(connectionCount / 10, 1);
                 }
                 // Shared technology links scale by number of shared techs
                 else if (link.linkType === 'shared-technology') {
-                    strength = linkWidthMultiplier * Math.min((link.strength || 1) / 5, 1);
+                    const sharedCount = link.strength || 1;
+                    strength = linkWidthMultiplier * Math.min(sharedCount / 5, 1);
                 }
                 
-                // Apply multiplier
+                // Apply multiplier to base width
                 if (strength > 0) {
                     width = 0.1 + (strength * 0.1);
                 }
                 
-                // Apply thin lines setting
+                // Apply thin lines setting after strength calculation
                 if (this.thinLines) {
-                    width = 0.1; // Absolute minimum
+                    // For thin lines, scale down but maintain relative differences
+                    width = 0.05 + (width * 0.1); // Much thinner but still shows variation
                 } else {
-                    // Cap at reasonable maximum
+                    // Cap at reasonable maximum for normal mode
                     width = Math.min(width, 5.0);
                 }
             }
