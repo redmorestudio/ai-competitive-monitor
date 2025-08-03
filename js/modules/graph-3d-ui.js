@@ -491,6 +491,15 @@ export class Graph3DUI {
                     <input type="checkbox" id="show-particles" checked style="width: 20px; height: 20px;">
                 </label>
                 
+                <label style="display: block; margin-bottom: 15px;" id="particle-speed-container">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Particle Speed</span>
+                        <span id="particle-speed-value" style="color: #00ff88; font-weight: bold;">1.0x</span>
+                    </div>
+                    <input type="range" id="particle-speed" min="0.5" max="3" step="0.1" value="1" 
+                           style="width: 100%;">
+                </label>
+                
                 <label style="display: block; margin-bottom: 15px;">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                         <span>Link Width Multiplier</span>
@@ -815,6 +824,7 @@ export class Graph3DUI {
             labelFontSize: document.getElementById('label-font-size'),
             linkWidthMultiplier: document.getElementById('link-width-multiplier'),
             linkOpacity: document.getElementById('link-opacity'),
+            particleSpeed: document.getElementById('particle-speed'),
             
             // Physics sliders
             forceStrength: document.getElementById('force-strength'),
@@ -839,6 +849,7 @@ export class Graph3DUI {
             
             // Display elements
             forceValueSimple: document.getElementById('force-value-simple'),
+            particleSpeedValue: document.getElementById('particle-speed-value'),
             linkDistanceValueSimple: document.getElementById('link-distance-value-simple'),
             centerGravityValueSimple: document.getElementById('center-gravity-value-simple'),
             linkThresholdValueSimple: document.getElementById('link-threshold-value-simple'),
@@ -982,7 +993,25 @@ export class Graph3DUI {
             if (this.callbacks.onVisualToggle) {
                 this.callbacks.onVisualToggle('particles', checked);
             }
+            // Show/hide particle speed slider
+            const speedContainer = document.getElementById('particle-speed-container');
+            if (speedContainer) {
+                speedContainer.style.display = checked ? 'block' : 'none';
+            }
         });
+        
+        // Particle speed slider
+        if (this.elements.particleSpeed) {
+            this.elements.particleSpeed.addEventListener('input', (e) => {
+                const speed = parseFloat(e.target.value);
+                if (this.elements.particleSpeedValue) {
+                    this.elements.particleSpeedValue.textContent = speed.toFixed(1) + 'x';
+                }
+                if (this.callbacks.onParticleSpeedChange) {
+                    this.callbacks.onParticleSpeedChange(speed);
+                }
+            });
+        }
         this.attachCheckboxListener('thinLines', (checked) => {
             if (this.callbacks.onVisualToggle) {
                 this.callbacks.onVisualToggle('thinLines', checked);

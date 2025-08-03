@@ -10,11 +10,11 @@
  */
 
 // Import all modules
-import { graph3DCore } from './graph-3d-core.js?v=20250802b';
+import { graph3DCore } from './graph-3d-core.js?v=20250803';
 import { graph3DPhysics } from './graph-3d-physics.js?v=20250802';
 import { graph3DVisuals } from './graph-3d-visuals.js?v=20250802';
 import { graph3DFilters } from './graph-3d-filters.js?v=20250802';
-import { graph3DUI } from './graph-3d-ui.js?v=20250802';
+import { graph3DUI } from './graph-3d-ui.js?v=20250803';
 import { graph3DData } from './graph-3d-data.js?v=20250802';
 import { graph3DContext } from './graph-3d-context.js?v=20250802';
 import { graph3DTooltip } from './graph-3d-tooltip.js?v=20250802';
@@ -70,7 +70,14 @@ class Graph3DCoordinator {
             // Initialize core graph
             console.log('Initializing core graph...');
             const graph = await graph3DCore.initialize(this.container, {
-                backgroundColor: '#0a0a0f'
+                backgroundColor: '#0a0a0f',
+                onNodeDblClick: (node) => {
+                    // Double-click to zoom and center on node
+                    if (graph3DCore && graph3DCore.focusOnNode) {
+                        console.log('Double-clicked node:', node.name || node.id);
+                        graph3DCore.focusOnNode(node.id, 150);
+                    }
+                }
             });
 
             // Initialize physics
@@ -196,6 +203,13 @@ class Graph3DCoordinator {
                     graph3DVisuals.toggleSetting(setting, value);
                     // Always re-render after visual changes
                     this.applyFiltersAndRender();
+                }
+            },
+
+            // Particle speed control
+            onParticleSpeedChange: (speed) => {
+                if (graph3DCore && graph3DCore.setLinkParticleSpeed) {
+                    graph3DCore.setLinkParticleSpeed(speed);
                 }
             },
 
