@@ -140,6 +140,10 @@ export async function loadDashboardData() {
         // Extract companies from dashboard data
         if (dashboard.companies) {
             setCompanies(dashboard.companies);
+        } else if (dashboard.company_activity) {
+            setCompanies(dashboard.company_activity);
+        } else {
+            setCompanies([]);
         }
         
         notifyStateChange('dataLoaded', { dashboard, changes, workflow });
