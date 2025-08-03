@@ -63,7 +63,7 @@ export class Graph3DCore {
             .linkDirectionalParticleWidth(2)
             .linkDirectionalParticleSpeed(0.01)  // Default speed
             .onNodeClick(config.onNodeClick || (() => {}))
-            .onNodeDblClick(config.onNodeDblClick || (() => {}))  // Add double-click handler
+            .onNodeRightClick(config.onNodeRightClick || (() => {}))
             .onNodeHover(config.onNodeHover || (() => {}))
             .onLinkClick(config.onLinkClick || (() => {}))
             .onLinkHover(config.onLinkHover || (() => {}));
