@@ -69,8 +69,13 @@ class Graph3DCoordinator {
 
             // Initialize core graph
             console.log('Initializing core graph...');
+            
+            // Use configuration for background color
+            const bgColor = window.graph3d?.config?.colors?.background?.main || '#000000';
+            console.log('Using background color from config:', bgColor);
+            
             const graph = await graph3DCore.initialize(this.container, {
-                backgroundColor: '#000000',
+                backgroundColor: bgColor,
                 onNodeClick: (node) => {
                     // Single-click: focus on node
                     console.log('Clicked node:', node.name || node.id);
