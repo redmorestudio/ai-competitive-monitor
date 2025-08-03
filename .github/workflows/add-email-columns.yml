@@ -1,0 +1,40 @@
+name: Add Email Tracking Columns
+
+on:
+  workflow_dispatch:
+
+jobs:
+  add-columns:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: |
+          cd github-actions-backend
+          npm install --omit=dev
+      
+      - name: Add Email Tracking Columns
+        run: |
+          cd github-actions-backend
+          node add-email-tracking-columns.js
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          NODE_ENV: production
+      
+      - name: Summary
+        run: |
+          echo "## ✅ Email Tracking Columns Added" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Added the following columns to processed_content.change_detection:" >> $GITHUB_STEP_SUMMARY
+          echo "- email_sent (BOOLEAN)" >> $GITHUB_STEP_SUMMARY
+          echo "- email_sent_at (TIMESTAMP)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "These columns track which changes have been sent via email alerts." >> $GITHUB_STEP_SUMMARY
