@@ -59,7 +59,7 @@ export class Graph3DPhysics {
      */
     setForceStrength(value) {
         this.forceStrength = value;
-        const graph = graph3DCore.getGraph();
+        const graph = graph3DCore.getGraphInstance();
         if (graph && graph.d3Force('charge')) {
             graph.d3Force('charge').strength(value);
             graph.d3ReheatSimulation();
@@ -72,7 +72,7 @@ export class Graph3DPhysics {
      */
     setLinkDistance(value) {
         this.linkDistance = value;
-        const graph = graph3DCore.getGraph();
+        const graph = graph3DCore.getGraphInstance();
         if (graph && graph.d3Force('link')) {
             graph.d3Force('link').distance(value);
             graph.d3ReheatSimulation();
@@ -85,7 +85,7 @@ export class Graph3DPhysics {
      */
     setCenterGravity(value) {
         this.centerGravity = value;
-        const graph = graph3DCore.getGraph();
+        const graph = graph3DCore.getGraphInstance();
         if (graph && graph.d3Force('center')) {
             graph.d3Force('center').strength(value);
             graph.d3ReheatSimulation();
@@ -98,7 +98,7 @@ export class Graph3DPhysics {
      */
     setCollisionRadius(value) {
         this.collisionRadius = value;
-        const graph = graph3DCore.getGraph();
+        const graph = graph3DCore.getGraphInstance();
         if (graph && graph.d3Force('collision')) {
             graph.d3Force('collision').radius(value);
             graph.d3ReheatSimulation();
@@ -111,7 +111,7 @@ export class Graph3DPhysics {
      */
     setAlphaDecay(value) {
         this.alphaDecay = value;
-        const graph = graph3DCore.getGraph();
+        const graph = graph3DCore.getGraphInstance();
         if (graph) {
             graph.d3AlphaDecay(value);
         }
@@ -123,7 +123,7 @@ export class Graph3DPhysics {
      */
     setVelocityDecay(value) {
         this.velocityDecay = value;
-        const graph = graph3DCore.getGraph();
+        const graph = graph3DCore.getGraphInstance();
         if (graph) {
             graph.d3VelocityDecay(value);
         }
@@ -134,7 +134,7 @@ export class Graph3DPhysics {
      * @param {string} mode - 'performance' or 'quality'
      */
     setPerformanceMode(mode) {
-        const graph = graph3DCore.getGraph();
+        const graph = graph3DCore.getGraphInstance();
         if (!graph) return;
 
         if (mode === 'performance') {

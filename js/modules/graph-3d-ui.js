@@ -905,6 +905,80 @@ export class Graph3DUI {
             });
         }
 
+        // Physics controls - Simple mode
+        if (this.elements.forceStrengthSimple) {
+            this.elements.forceStrengthSimple.addEventListener('input', (e) => {
+                const value = parseFloat(e.target.value);
+                if (this.elements.forceStrengthValueSimple) {
+                    this.elements.forceStrengthValueSimple.textContent = value;
+                }
+                if (this.callbacks.onForceStrengthChange) {
+                    this.callbacks.onForceStrengthChange(value);
+                }
+            });
+        }
+
+        if (this.elements.linkDistanceSimple) {
+            this.elements.linkDistanceSimple.addEventListener('input', (e) => {
+                const value = parseFloat(e.target.value);
+                if (this.elements.linkDistanceValueSimple) {
+                    this.elements.linkDistanceValueSimple.textContent = value;
+                }
+                if (this.callbacks.onLinkDistanceChange) {
+                    this.callbacks.onLinkDistanceChange(value);
+                }
+            });
+        }
+
+        if (this.elements.centerGravitySimple) {
+            this.elements.centerGravitySimple.addEventListener('input', (e) => {
+                const value = parseFloat(e.target.value);
+                if (this.elements.centerGravityValueSimple) {
+                    this.elements.centerGravityValueSimple.textContent = value;
+                }
+                if (this.callbacks.onCenterGravityChange) {
+                    this.callbacks.onCenterGravityChange(value);
+                }
+            });
+        }
+
+        // Physics controls - Advanced mode
+        if (this.elements.forceStrength) {
+            this.elements.forceStrength.addEventListener('input', (e) => {
+                const value = parseFloat(e.target.value);
+                if (this.elements.forceStrengthValue) {
+                    this.elements.forceStrengthValue.textContent = value;
+                }
+                if (this.callbacks.onForceStrengthChange) {
+                    this.callbacks.onForceStrengthChange(value);
+                }
+            });
+        }
+
+        if (this.elements.linkDistance) {
+            this.elements.linkDistance.addEventListener('input', (e) => {
+                const value = parseFloat(e.target.value);
+                if (this.elements.linkDistanceValue) {
+                    this.elements.linkDistanceValue.textContent = value;
+                }
+                if (this.callbacks.onLinkDistanceChange) {
+                    this.callbacks.onLinkDistanceChange(value);
+                }
+            });
+        }
+
+        if (this.elements.centerGravity) {
+            this.elements.centerGravity.addEventListener('input', (e) => {
+                const value = parseFloat(e.target.value);
+                if (this.elements.centerGravityValue) {
+                    this.elements.centerGravityValue.textContent = value;
+                }
+                if (this.callbacks.onCenterGravityChange) {
+                    this.callbacks.onCenterGravityChange(value);
+                }
+            });
+        }
+
         if (this.elements.viewModeSimple) {
             this.elements.viewModeSimple.addEventListener('change', (e) => {
                 if (this.callbacks.onViewModeChange) {
