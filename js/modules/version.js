@@ -11,9 +11,9 @@
 
 // Version information
 export const VERSION = {
-    number: '2.1.0',
-    name: 'KWIC Feature',
-    buildNumber: '173',
+    number: '2.1.1',
+    name: 'KWIC Feature Fixed',
+    buildNumber: '174',
     releaseDate: '2025-08-03',
     features: [
         'Keyword-in-Context (KWIC) feature for entity exploration',
