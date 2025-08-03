@@ -69,6 +69,7 @@ export class Graph3DCore {
             .linkDirectionalParticles(2)  // Default 2 particles
             .linkDirectionalParticleWidth(2)
             .linkDirectionalParticleSpeed(0.002)  // Default speed (0.2x)
+            .numDimensions(3)  // Ensure we start in 3D mode
             .onNodeClick(config.onNodeClick || (() => {}))
             .onNodeRightClick(config.onNodeRightClick || (() => {}))
             .onNodeHover(config.onNodeHover || (() => {}))
@@ -500,6 +501,25 @@ export class Graph3DCore {
     refresh() {
         if (this.graph) {
             this.graph.refresh();
+        }
+    }
+
+    /**
+     * Set flatten mode (2D/3D)
+     * @param {boolean} flatten - Whether to flatten to 2D
+     * @param {Function} callback - Optional callback after change
+     */
+    setFlattenMode(flatten, callback) {
+        if (this.graph) {
+            // Set number of dimensions (2 for flat, 3 for 3D)
+            this.graph.numDimensions(flatten ? 2 : 3);
+            
+            // Optionally reheat the simulation to apply the change
+            this.reheatSimulation();
+            
+            if (callback) {
+                setTimeout(callback, 100);
+            }
         }
     }
 

@@ -31,6 +31,13 @@ class Graph3DCoordinator {
         this.filteredData = null;
         this.isPaused = false;
         this.core = graph3DCore; // Reference to core module
+        this.ui = graph3DUI; // Reference to UI module
+        this.filters = graph3DFilters; // Reference to filters module
+        this.visuals = graph3DVisuals; // Reference to visuals module
+        this.physics = graph3DPhysics; // Reference to physics module
+        this.data = graph3DData; // Reference to data module
+        this.tooltip = graph3DTooltip; // Reference to tooltip module
+        this.context = graph3DContext; // Reference to context module
     }
 
     /**
