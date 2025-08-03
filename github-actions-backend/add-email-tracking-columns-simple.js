@@ -2,27 +2,27 @@
 
 /**
  * Simple version: Add email tracking columns to change_detection table
- * Uses proper connection handling and checks
+ * Uses POSTGRES_CONNECTION_STRING which is what's actually in GitHub Secrets
  */
 
 const { Client } = require('pg');
 
 async function addEmailColumns() {
-  // Ensure we have a database connection string
-  const connectionString = process.env.DATABASE_URL || process.env.POSTGRES_CONNECTION_STRING;
+  // Use POSTGRES_CONNECTION_STRING which is what's in GitHub Secrets
+  const connectionString = process.env.POSTGRES_CONNECTION_STRING || process.env.DATABASE_URL;
   
   if (!connectionString) {
     console.error('❌ No database connection string found!');
-    console.error('Please set DATABASE_URL environment variable in GitHub Secrets');
+    console.error('Please ensure POSTGRES_CONNECTION_STRING is set in GitHub Secrets');
     process.exit(1);
   }
   
   console.log('📧 Adding email tracking columns to change_detection table...');
-  console.log('🔗 Database URL starts with:', connectionString.substring(0, 25) + '...');
+  console.log('🔗 Using POSTGRES_CONNECTION_STRING from GitHub Secrets');
   
   const client = new Client({
     connectionString: connectionString,
-    ssl: { rejectUnauthorized: false } // Required for Heroku/cloud PostgreSQL
+    ssl: { rejectUnauthorized: false } // Required for cloud PostgreSQL
   });
 
   try {
@@ -85,7 +85,7 @@ async function addEmailColumns() {
     console.error('❌ Error adding email columns:', error.message);
     if (error.code === 'ECONNREFUSED') {
       console.error('\n⚠️  Connection refused - please check:');
-      console.error('1. DATABASE_URL is set correctly in GitHub Secrets');
+      console.error('1. POSTGRES_CONNECTION_STRING is set correctly in GitHub Secrets');
       console.error('2. The database server is accessible');
       console.error('3. SSL settings are correct for your database');
     }

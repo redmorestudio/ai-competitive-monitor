@@ -4,17 +4,17 @@ on:
   workflow_dispatch:
 
 jobs:
-  add-columns:
+  add-email-columns:
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
       
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v2
         with:
-          node-version: '20'
+          node-version: '18'
       
       - name: Install dependencies
         run: |
@@ -26,24 +26,53 @@ jobs:
           cd github-actions-backend
           
           echo "📧 Adding email tracking columns to PostgreSQL database"
-          echo "DATABASE_URL is ${DATABASE_URL:+set}${DATABASE_URL:-not set}"
+          echo "Using POSTGRES_CONNECTION_STRING from GitHub Secrets"
           echo ""
           
-          # Use the simple version with proper connection handling
+          # Run the migration script
           node add-email-tracking-columns-simple.js
           
           echo ""
-          echo "✅ Email columns added successfully"
+          echo "✅ Email columns migration completed"
         env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
           NODE_ENV: production
       
-      - name: Summary
+      - name: Verify Installation
+        if: success()
         run: |
-          echo "## ✅ Email Tracking Columns Added" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Added the following columns to processed_content.change_detection:" >> $GITHUB_STEP_SUMMARY
-          echo "- email_sent (BOOLEAN)" >> $GITHUB_STEP_SUMMARY
-          echo "- email_sent_at (TIMESTAMP)" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "These columns track which changes have been sent via email alerts." >> $GITHUB_STEP_SUMMARY
+          cd github-actions-backend
+          echo ""
+          echo "🔍 Verifying email columns were added..."
+          node -e "
+          const { Client } = require('pg');
+          (async () => {
+            const client = new Client({
+              connectionString: process.env.POSTGRES_CONNECTION_STRING,
+              ssl: { rejectUnauthorized: false }
+            });
+            try {
+              await client.connect();
+              const result = await client.query(\`
+                SELECT column_name, data_type 
+                FROM information_schema.columns 
+                WHERE table_schema = 'processed_content' 
+                AND table_name = 'change_detection'
+                AND column_name IN ('email_sent', 'email_sent_at')
+                ORDER BY column_name
+              \`);
+              if (result.rows.length === 2) {
+                console.log('✅ Email tracking columns verified:');
+                result.rows.forEach(r => console.log('  -', r.column_name + ':', r.data_type));
+              } else {
+                console.log('⚠️ Expected 2 columns, found:', result.rows.length);
+              }
+            } catch (e) {
+              console.error('Verification error:', e.message);
+            } finally {
+              await client.end();
+            }
+          })();
+          "
+        env:
+          POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
