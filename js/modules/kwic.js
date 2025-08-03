@@ -125,7 +125,12 @@ class KWICManager {
     async loadContexts(entityType) {
         // Check cache first
         if (this.contextsCache.has(entityType)) {
-            return this.contextsCache.get(entityType);
+            const cached = this.contextsCache.get(entityType);
+            // Still need to check if current entity exists
+            if (this.currentEntity && !cached.contexts[this.currentEntity]) {
+                this.ensureEntityExists(cached, this.currentEntity);
+            }
+            return cached;
         }
 
         // Map entity type to file name
@@ -146,6 +151,11 @@ class KWICManager {
             
             const data = await response.json();
             
+            // Check if entity exists, if not, try to find it
+            if (this.currentEntity && !data.contexts[this.currentEntity]) {
+                this.ensureEntityExists(data, this.currentEntity);
+            }
+            
             // Cache the data
             this.contextsCache.set(entityType, data);
             
@@ -157,13 +167,80 @@ class KWICManager {
     }
 
     /**
+     * Ensure entity exists in contexts, creating synthetic contexts if needed
+     */
+    ensureEntityExists(data, entity) {
+        // Try case-insensitive match first
+        const caseInsensitiveKey = Object.keys(data.contexts).find(
+            key => key.toLowerCase() === entity.toLowerCase()
+        );
+        
+        if (caseInsensitiveKey) {
+            // Found with different casing - use the correct case
+            data.contexts[entity] = data.contexts[caseInsensitiveKey];
+        } else {
+            // Entity not found - create synthetic contexts from co-mentions and text
+            const syntheticContexts = this.findInCoMentions(data.contexts, entity);
+            if (syntheticContexts.length > 0) {
+                data.contexts[entity] = syntheticContexts;
+            }
+        }
+    }
+
+    /**
+     * Find entity in co-mentions or text content
+     */
+    findInCoMentions(allContexts, searchEntity) {
+        const syntheticContexts = [];
+        const searchLower = searchEntity.toLowerCase();
+        const searchWords = searchLower.split(' ');
+        
+        for (const [entity, contexts] of Object.entries(allContexts)) {
+            for (const ctx of contexts) {
+                let added = false;
+                
+                // Check if entity appears in co_mentions
+                if (ctx.co_mentions?.some(cm => cm.toLowerCase() === searchLower)) {
+                    syntheticContexts.push({
+                        ...ctx,
+                        synthetic: true,
+                        found_in: entity,
+                        match_type: 'co_mention'
+                    });
+                    added = true;
+                }
+                
+                // Also check text content for exact phrase or all words
+                if (!added && ctx.text) {
+                    const textLower = ctx.text.toLowerCase();
+                    if (textLower.includes(searchLower) || 
+                        searchWords.every(word => textLower.includes(word))) {
+                        syntheticContexts.push({
+                            ...ctx,
+                            synthetic: true,
+                            found_in: entity,
+                            match_type: 'text_content'
+                        });
+                    }
+                }
+            }
+        }
+        
+        return syntheticContexts;
+    }
+
+    /**
      * Render the KWIC modal content
      */
     renderModal(entity, contexts, entityType) {
+        // Check if these are synthetic contexts
+        const hasSynthetic = contexts.some(ctx => ctx.synthetic);
+        
         // Update title
         document.getElementById('kwicTitle').innerHTML = `
             <span class="kwic-entity-name">${escapeHtml(entity)}</span>
             <span class="kwic-entity-type">${entityType}</span>
+            ${hasSynthetic ? '<span class="kwic-synthetic-badge" style="background: #ff9800; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; margin-left: 10px;">Related Mentions</span>' : ''}
         `;
 
         // Group contexts by company
