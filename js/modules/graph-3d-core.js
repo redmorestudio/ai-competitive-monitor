@@ -134,6 +134,18 @@ export class Graph3DCore {
      */
     updateData(data) {
         console.log('Updating graph data:', data.nodes.length, 'nodes,', data.links.length, 'links');
+        
+        // Apply stored colors to nodes if we have them
+        if (this.nodeColorMap && this.nodeColorMap.size > 0) {
+            data.nodes.forEach(node => {
+                const storedColor = this.nodeColorMap.get(node.id);
+                if (storedColor) {
+                    node.color = storedColor;
+                    node.currentColor = storedColor;
+                }
+            });
+        }
+        
         this.graphData = data;
         if (this.graph) {
             this.graph.graphData(data);
@@ -157,7 +169,14 @@ export class Graph3DCore {
         this.nodeColorMap = colorMap;
         
         if (!this.graph || !this.initialized) {
-            console.warn('Graph not initialized');
+            console.warn('Graph not initialized, storing colors for later');
+            return;
+        }
+        
+        // Get current data - if empty, just store the colors for when data is loaded
+        const currentData = this.graph.graphData();
+        if (!currentData || !currentData.nodes || currentData.nodes.length === 0) {
+            console.log('No data yet, colors will be applied when data is loaded');
             return;
         }
         
@@ -165,7 +184,6 @@ export class Graph3DCore {
         this.graph.nodeThreeObject(node => this.createNodeObject(node));
         
         // Force update by triggering a data refresh
-        const currentData = this.graph.graphData();
         this.graph.graphData({
             nodes: [...currentData.nodes],
             links: [...currentData.links]

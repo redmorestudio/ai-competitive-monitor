@@ -10,7 +10,7 @@
  */
 
 // Import all modules
-import { graph3DCore } from './graph-3d-core.js?v=20250803a';
+import { graph3DCore } from './graph-3d-core.js?v=20250803b';
 import { graph3DPhysics } from './graph-3d-physics.js?v=20250802';
 import { graph3DVisuals } from './graph-3d-visuals.js?v=20250803a';
 import { graph3DFilters } from './graph-3d-filters.js?v=20250802';
@@ -127,20 +127,21 @@ class Graph3DCoordinator {
 
             // Apply initial data to graph
             if (graph3DCore && this.rawData) {
-                console.log('Setting initial graph data...');
-                graph3DCore.updateData(this.rawData);
-                
-                // Apply initial visuals after data is set
+                // First, set up visual properties (colors, sizes)
                 console.log('Applying initial visuals...');
                 if (graph3DVisuals) {
                     graph3DVisuals.applyViewMode('entity-type', this.rawData);
                     graph3DVisuals.applyNodeSize('uniform', this.rawData);
                     graph3DVisuals.applyLinkVisuals(this.rawData);
-                    
-                    // Initialize labels if enabled
-                    if (graph3DVisuals.showLabels) {
-                        graph3DCore.setNodeLabels(true, node => node.name);
-                    }
+                }
+                
+                // Then set the data (which will use the colors we just set up)
+                console.log('Setting initial graph data...');
+                graph3DCore.updateData(this.rawData);
+                
+                // Initialize labels if enabled
+                if (graph3DVisuals && graph3DVisuals.showLabels) {
+                    graph3DCore.setNodeLabels(true, node => node.name);
                 }
             }
 
