@@ -53,7 +53,6 @@ export class Graph3DCore {
         // Create graph instance
         this.graph = ForceGraph3D()(container)
             .backgroundColor('#000033')
-            .nodeAutoColorBy('entityType')
             .nodeThreeObject(node => this.createNodeObject(node))
             .nodeThreeObjectExtend(true)
             .linkWidth(link => this.linkWidthMap.get(`${link.source.id || link.source}-${link.target.id || link.target}`) || 1)
@@ -96,8 +95,12 @@ export class Graph3DCore {
             return null;
         }
 
-        const color = this.nodeColorMap.get(node.id) || node.color || '#666666';
+        // Get color from map, node's currentColor property, or node.color, or default
+        const color = this.nodeColorMap.get(node.id) || node.currentColor || node.color || '#00ff88';
         const size = this.nodeSizeMap.get(node.id) || node.size || 4;
+        
+        // Store the current color on the node for reference
+        node.currentColor = color;
 
         // Create sphere
         const geometry = new THREE.SphereGeometry(size, 16, 16);

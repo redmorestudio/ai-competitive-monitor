@@ -37,6 +37,7 @@ export class Graph3DVisuals {
             'Image Generation': '#e91e63',
             'LLM Providers': '#ff5722',
             'Video AI': '#3f51b5',
+            'AI Consulting and Education': '#808080',  // Gray for consulting
             'technology': '#00ff88',
             'concept': '#00ffff'
         };
@@ -236,7 +237,10 @@ export class Graph3DVisuals {
     getEntityColor(node) {
         if (node.nodeType === 'technology') return this.entityColors.technology;
         if (node.nodeType === 'concept') return this.entityColors.concept;
-        return this.entityColors[node.companyType] || '#666666';
+        if (node.nodeType === 'company') {
+            return this.entityColors[node.companyType] || '#ffffff'; // Default white for unknown types
+        }
+        return '#666666';
     }
 
     /**
