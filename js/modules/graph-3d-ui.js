@@ -494,18 +494,18 @@ export class Graph3DUI {
                 <label style="display: block; margin-bottom: 15px;" id="particle-speed-container">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                         <span>Particle Speed</span>
-                        <span id="particle-speed-value" style="color: #00ff88; font-weight: bold;">0.5x</span>
+                        <span id="particle-speed-value" style="color: #00ff88; font-weight: bold;">0.2x</span>
                     </div>
-                    <input type="range" id="particle-speed" min="0.05" max="1" step="0.05" value="0.5" 
+                    <input type="range" id="particle-speed" min="0.05" max="1" step="0.05" value="0.2" 
                            style="width: 100%;">
                 </label>
                 
                 <label style="display: block; margin-bottom: 15px;" id="particle-count-container">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                         <span>Particle Count</span>
-                        <span id="particle-count-value" style="color: #00ff88; font-weight: bold;">4</span>
+                        <span id="particle-count-value" style="color: #00ff88; font-weight: bold;">2</span>
                     </div>
-                    <input type="range" id="particle-count" min="0" max="10" step="1" value="4" 
+                    <input type="range" id="particle-count" min="0" max="10" step="1" value="2" 
                            style="width: 100%;">
                 </label>
                 

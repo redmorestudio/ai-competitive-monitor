@@ -9,7 +9,7 @@
  * Handles visual settings including colors, sizes, labels, and effects
  */
 
-import { graph3DCore } from './graph-3d-core.js?v=20250803d';
+import { graph3DCore } from './graph-3d-core.js?v=20250803e';
 
 export class Graph3DVisuals {
     constructor() {
@@ -20,7 +20,7 @@ export class Graph3DVisuals {
         this.showLinks = true;
         this.showLabels = true;
         this.showParticles = true;
-        this.particleCount = 4;  // Default particle count
+        this.particleCount = 2;  // Default particle count
         this.thinLines = false;
         this.monochrome = false;
         this.showChangeRings = false;
