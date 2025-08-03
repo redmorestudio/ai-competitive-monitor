@@ -11,12 +11,14 @@
 
 // Version information
 export const VERSION = {
-    number: '2.0.0',
-    name: 'Modular Refactor',
-    buildNumber: '172',
-    releaseDate: '2025-08-01',
+    number: '2.1.0',
+    name: 'KWIC Feature',
+    buildNumber: '173',
+    releaseDate: '2025-08-03',
     features: [
-        'Modular architecture with 22 specialized modules',
+        'Keyword-in-Context (KWIC) feature for entity exploration',
+        'Clickable intelligence pills showing contexts',
+        'Modular architecture with 23 specialized modules',
         'Enhanced 3D visualization with 40+ controls',
         'Improved performance and maintainability',
         'Better error handling and recovery'
