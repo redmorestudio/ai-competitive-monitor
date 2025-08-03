@@ -9,7 +9,7 @@
  * Handles visual settings including colors, sizes, labels, and effects
  */
 
-import { graph3DCore } from './graph-3d-core.js?v=20250803h';
+import { graph3DCore } from './graph-3d-core.js?v=20250803i';
 
 export class Graph3DVisuals {
     constructor() {
@@ -26,6 +26,7 @@ export class Graph3DVisuals {
         this.showChangeRings = false;
         this.autoRotate = false;
         this.labelFontSize = 12;
+        this.companyLabelScale = 1.0;  // Scale multiplier for company labels
         
         // Color schemes
         this.entityColors = {
@@ -50,6 +51,18 @@ export class Graph3DVisuals {
             connections: 0.3,
             interestLevel: 2
         };
+    }
+
+    /**
+     * Set company label scale
+     * @param {number} scale - Scale multiplier for company labels (1.0 to 3.0)
+     */
+    setCompanyLabelScale(scale) {
+        this.companyLabelScale = scale;
+        if (this.showLabels) {
+            // Refresh labels with new scale
+            graph3DCore.setNodeLabels(true, node => node.name, this.labelFontSize, this.companyLabelScale);
+        }
     }
 
     /**
@@ -329,7 +342,7 @@ export class Graph3DVisuals {
                 break;
             case 'labels':
                 this.showLabels = value;
-                graph3DCore.setNodeLabels(value, node => node.name, this.labelFontSize);
+                graph3DCore.setNodeLabels(value, node => node.name, this.labelFontSize, this.companyLabelScale);
                 break;
             case 'particles':
                 this.showParticles = value;
@@ -358,7 +371,7 @@ export class Graph3DVisuals {
     setLabelFontSize(size) {
         this.labelFontSize = size;
         if (this.showLabels) {
-            graph3DCore.setNodeLabels(true, node => node.name, size);
+            graph3DCore.setNodeLabels(true, node => node.name, size, this.companyLabelScale);
         }
     }
 

@@ -486,6 +486,15 @@ export class Graph3DUI {
                            style="width: 100%;">
                 </label>
                 
+                <label style="display: block; margin-bottom: 15px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Company Label Scale</span>
+                        <span id="company-label-scale-value" style="color: #00ff88; font-weight: bold;">1.0x</span>
+                    </div>
+                    <input type="range" id="company-label-scale" min="1.0" max="3.0" value="1.0" step="0.1"
+                           style="width: 100%;">
+                </label>
+                
                 <label style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
                     <span>Show Particles</span>
                     <input type="checkbox" id="show-particles" checked style="width: 20px; height: 20px;">
@@ -831,6 +840,8 @@ export class Graph3DUI {
             
             // Visual settings sliders
             labelFontSize: document.getElementById('label-font-size'),
+            companyLabelScale: document.getElementById('company-label-scale'),
+            companyLabelScaleValue: document.getElementById('company-label-scale-value'),
             linkWidthMultiplier: document.getElementById('link-width-multiplier'),
             linkOpacity: document.getElementById('link-opacity'),
             particleSpeed: document.getElementById('particle-speed'),
@@ -974,6 +985,7 @@ export class Graph3DUI {
 
         // Visual settings sliders
         this.attachSliderListener('labelFontSize', 'labelSizeValue', 'onLabelFontSizeChange');
+        this.attachSliderListener('companyLabelScale', 'companyLabelScaleValue', 'onCompanyLabelScaleChange', val => `${val}x`);
         this.attachSliderListener('linkWidthMultiplier', 'linkWidthValue', 'onLinkWidthChange');
         this.attachSliderListener('linkOpacity', 'linkOpacityValue', 'onLinkOpacityChange');
         

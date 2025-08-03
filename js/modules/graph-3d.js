@@ -10,11 +10,11 @@
  */
 
 // Import all modules
-import { graph3DCore } from './graph-3d-core.js?v=20250803h';
+import { graph3DCore } from './graph-3d-core.js?v=20250803i';
 import { graph3DPhysics } from './graph-3d-physics.js?v=20250802';
-import { graph3DVisuals } from './graph-3d-visuals.js?v=20250803h';
+import { graph3DVisuals } from './graph-3d-visuals.js?v=20250803i';
 import { graph3DFilters } from './graph-3d-filters.js?v=20250802';
-import { graph3DUI } from './graph-3d-ui.js?v=20250803e';
+import { graph3DUI } from './graph-3d-ui.js?v=20250803i';
 import { graph3DData } from './graph-3d-data.js?v=20250802';
 import { graph3DContext } from './graph-3d-context.js?v=20250802';
 import { graph3DTooltip } from './graph-3d-tooltip.js?v=20250802';
@@ -257,6 +257,13 @@ class Graph3DCoordinator {
             onLabelFontSizeChange: (size) => {
                 if (graph3DVisuals && graph3DVisuals.setLabelFontSize) {
                     graph3DVisuals.setLabelFontSize(size);
+                }
+            },
+
+            // Company label scale
+            onCompanyLabelScaleChange: (scale) => {
+                if (graph3DVisuals && graph3DVisuals.setCompanyLabelScale) {
+                    graph3DVisuals.setCompanyLabelScale(parseFloat(scale));
                 }
             },
 
