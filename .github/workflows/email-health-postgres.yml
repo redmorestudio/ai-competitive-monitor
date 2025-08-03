@@ -1,0 +1,93 @@
+name: Email Health Check (PostgreSQL)
+
+on:
+  schedule:
+    # Run at 3 PM UTC (10 AM EST / 9 AM CST) every day
+    - cron: '0 15 * * *'
+  
+  workflow_dispatch:
+    inputs:
+      test_mode:
+        description: 'Save to file instead of sending'
+        type: boolean
+        default: false
+
+env:
+  NODE_ENV: production
+
+jobs:
+  send-health-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    permissions:
+      contents: read
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: |
+          cd github-actions-backend
+          npm install --omit=dev
+      
+      - name: Send Health Check
+        run: |
+          cd github-actions-backend
+          
+          echo "✅ Sending system health check email..."
+          echo ""
+          
+          # Check if email is configured
+          if [ -z "$SMTP_HOST" ]; then
+            echo "📧 Email not configured, skipping health check"
+            exit 0
+          fi
+          
+          # Set test mode if requested
+          if [ "${{ inputs.test_mode }}" = "true" ]; then
+            export EMAIL_TEST_MODE=true
+            echo "🧪 Running in test mode - email will be saved to file"
+          fi
+          
+          # Send health check
+          node email-notifications-postgres.js health
+          
+          echo ""
+          echo "✅ Health check email sent"
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_SECURE: ${{ secrets.SMTP_SECURE }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          NOTIFICATION_EMAIL: ${{ secrets.NOTIFICATION_EMAIL }}
+      
+      - name: Upload test emails (if test mode)
+        if: ${{ inputs.test_mode == true }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: health-check-${{ github.run_id }}
+          path: github-actions-backend/test-emails/
+          retention-days: 7
+      
+      - name: Summary
+        run: |
+          echo "## ✅ Health Check Email" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Time**: $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Test Mode**: ${{ inputs.test_mode || 'false' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Schedule**: Daily at 3 PM UTC (10 AM EST / 9 AM CST)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "The health check includes:" >> $GITHUB_STEP_SUMMARY
+          echo "- System operational status" >> $GITHUB_STEP_SUMMARY
+          echo "- 24-hour activity metrics" >> $GITHUB_STEP_SUMMARY
+          echo "- Success/failure rates" >> $GITHUB_STEP_SUMMARY
+          echo "- Last run timestamps" >> $GITHUB_STEP_SUMMARY

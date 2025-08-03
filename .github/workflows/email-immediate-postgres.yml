@@ -1,0 +1,76 @@
+name: Email Immediate Alerts (PostgreSQL)
+
+on:
+  workflow_dispatch:
+  
+  workflow_call:
+    inputs:
+      check_only:
+        description: 'Only check for alerts without sending'
+        type: boolean
+        default: false
+
+jobs:
+  send-immediate-alerts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: |
+          cd github-actions-backend
+          npm install --omit=dev
+      
+      - name: Check and Send Immediate Alerts
+        id: alerts
+        run: |
+          cd github-actions-backend
+          
+          echo "🚨 Checking for high-priority changes..."
+          echo ""
+          
+          # Check if email is configured
+          if [ -z "$SMTP_HOST" ]; then
+            echo "📧 Email not configured, skipping immediate alerts"
+            echo "alerts_sent=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          
+          # Run immediate alert check
+          if node email-notifications-postgres.js immediate; then
+            echo "alerts_sent=true" >> $GITHUB_OUTPUT
+          else
+            echo "alerts_sent=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_SECURE: ${{ secrets.SMTP_SECURE }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          NOTIFICATION_EMAIL: ${{ secrets.NOTIFICATION_EMAIL }}
+          EMAIL_TEST_MODE: ${{ inputs.check_only }}
+      
+      - name: Summary
+        run: |
+          echo "## 🚨 Immediate Alert Check" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.alerts.outputs.alerts_sent }}" = "true" ]; then
+            echo "✅ High-priority alerts were found and sent" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "📝 No high-priority changes requiring immediate alerts" >> $GITHUB_STEP_SUMMARY
+          fi
+          
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Time**: $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Threshold**: Interest level ≥ 8" >> $GITHUB_STEP_SUMMARY

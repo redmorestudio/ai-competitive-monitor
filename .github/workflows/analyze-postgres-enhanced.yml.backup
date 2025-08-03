@@ -520,32 +520,6 @@ jobs:
             }
           fi
       
-      - name: Check for High-Priority Changes and Send Alerts
-        if: success()
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.AI_COMPETITIVE_MONITOR_TOKEN }}
-          script: |
-            try {
-              console.log('🚨 Checking for high-priority changes to alert on...');
-              
-              // Trigger immediate email alerts workflow
-              const result = await github.rest.actions.createWorkflowDispatch({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                workflow_id: 'email-immediate-postgres.yml',
-                ref: 'main',
-                inputs: {
-                  check_only: 'false'
-                }
-              });
-              
-              console.log('✅ Triggered immediate alert check');
-            } catch (error) {
-              console.log('⚠️  Could not trigger email alerts:', error.message);
-              console.log('   Email alerts may not be configured');
-            }
-      
       - name: Trigger Sync workflow (if configured)
         if: inputs.cascade == true
         uses: actions/github-script@v7
