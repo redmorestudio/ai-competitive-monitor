@@ -826,6 +826,29 @@ class Graph3DCoordinator {
                 }, 500);
             }
         };
+
+        // Add event listener for reverse particle direction
+        setTimeout(() => {
+            const reverseCheckbox = document.getElementById('reverse-particles');
+            if (reverseCheckbox) {
+                reverseCheckbox.addEventListener('change', (e) => {
+                    const shouldReverse = e.target.checked;
+                    console.log('Reversing particle direction:', shouldReverse);
+                    
+                    // Swap source and target in links
+                    if (this.rawData && this.rawData.links) {
+                        this.rawData.links.forEach(link => {
+                            const temp = link.source;
+                            link.source = link.target;
+                            link.target = temp;
+                        });
+                        
+                        // Re-apply filters and update graph
+                        this.applyFiltersAndRender();
+                    }
+                });
+            }
+        }, 1000);
     }
 
     /**

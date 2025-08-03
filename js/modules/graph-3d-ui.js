@@ -518,6 +518,11 @@ export class Graph3DUI {
                            style="width: 100%;">
                 </label>
                 
+                <label style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                    <span>Reverse Particle Direction</span>
+                    <input type="checkbox" id="reverse-particles" style="width: 20px; height: 20px;">
+                </label>
+                
                 <label style="display: block; margin-bottom: 15px;">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                         <span>Link Width Multiplier</span>
@@ -1341,6 +1346,32 @@ export class Graph3DUI {
         if (controls) {
             controls.classList.toggle('collapsed');
             if (btn) btn.textContent = controls.classList.contains('collapsed') ? '◀' : '▶';
+        }
+    }
+
+    /**
+     * Toggle info panel visibility
+     */
+    toggleInfoPanel() {
+        const content = document.getElementById('info-panel-content');
+        const arrow = document.getElementById('info-panel-arrow');
+        if (content && arrow) {
+            const isHidden = content.style.display === 'none';
+            content.style.display = isHidden ? 'block' : 'none';
+            arrow.textContent = isHidden ? '▼' : '▶';
+        }
+    }
+
+    /**
+     * Toggle graph summary section
+     */
+    toggleGraphSummary() {
+        const content = document.getElementById('graph-summary-content');
+        const arrow = document.getElementById('graph-summary-arrow');
+        if (content && arrow) {
+            const isHidden = content.style.display === 'none';
+            content.style.display = isHidden ? 'block' : 'none';
+            arrow.textContent = isHidden ? '▼' : '▶';
         }
     }
 }
