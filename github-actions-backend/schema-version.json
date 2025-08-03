@@ -1,11 +1,11 @@
 {
   "version": "2.0.0",
-  "lastModified": "2025-07-24T08:14:47.159Z",
+  "lastModified": "2025-08-03T23:28:46.094Z",
   "modifiedBy": "update-schema-version.js",
-  "checksum": "9a9892b5d7ddf92e0c5577797a27bda87cf7e1a9b953bd652e7c28b83fdbcc01",
+  "checksum": "f543aa20eff44e1b3cb12e0257e3a2fcd40d53d526c4a4c67d58da52865138cb",
   "changes": "Successfully converted all TEXT columns to JSONB in intelligence.enhanced_analysis. Updated schema tracking to include all schemas (public, intelligence, raw_content, processed_content).",
-  "previousVersion": "1.1.0",
-  "previousChecksum": "c2ef2778b538782a59b61e68b76f8059e63fbf7e348e022d96c1f38d1d25007f",
+  "previousVersion": "2.0.0",
+  "previousChecksum": "9a9892b5d7ddf92e0c5577797a27bda87cf7e1a9b953bd652e7c28b83fdbcc01",
   "details": {
     "schemasTracked": [
       "public",
@@ -20,22 +20,22 @@
         "companies",
         "company_attributes",
         "company_groups",
-        "company_urls",
+        "email_notifications",
         "enhanced_analysis",
         "groups",
+        "insights",
         "scrape_status",
         "scraping_runs",
-        "social_auth",
+        "summaries",
         "thebrain_sync",
-        "urls",
-        "url_scraping_exceptions"
+        "urls"
       ],
       "processed_content": [
-        "article_summaries",
-        "changes",
+        "baseline_analysis",
         "change_detection",
+        "changes",
         "markdown_content",
-        "ultra_analysis"
+        "markdown_pages"
       ],
       "public": [
         "schema_audit_log",
@@ -43,10 +43,10 @@
       ],
       "raw_content": [
         "company_pages_baseline",
-        "raw_content",
         "raw_html",
-        "scraped_content",
-        "scraped_pages"
+        "scrape_runs",
+        "scraped_pages",
+        "scraping_runs"
       ]
     },
     "jsonbConversions": {
@@ -55,10 +55,10 @@
         "key_changes",
         "competitive_implications"
       ],
-      "conversionDate": "2025-07-24T08:14:47.159Z",
+      "conversionDate": "2025-08-03T23:28:46.098Z",
       "status": "completed"
     },
     "totalTables": 26,
-    "totalColumns": 261
+    "totalColumns": 264
   }
 }
