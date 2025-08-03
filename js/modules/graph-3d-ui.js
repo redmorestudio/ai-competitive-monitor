@@ -500,6 +500,15 @@ export class Graph3DUI {
                            style="width: 100%;">
                 </label>
                 
+                <label style="display: block; margin-bottom: 15px;" id="particle-count-container">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+                        <span>Particle Count</span>
+                        <span id="particle-count-value" style="color: #00ff88; font-weight: bold;">4</span>
+                    </div>
+                    <input type="range" id="particle-count" min="0" max="10" step="1" value="4" 
+                           style="width: 100%;">
+                </label>
+                
                 <label style="display: block; margin-bottom: 15px;">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                         <span>Link Width Multiplier</span>
@@ -825,6 +834,7 @@ export class Graph3DUI {
             linkWidthMultiplier: document.getElementById('link-width-multiplier'),
             linkOpacity: document.getElementById('link-opacity'),
             particleSpeed: document.getElementById('particle-speed'),
+            particleCount: document.getElementById('particle-count'),
             
             // Physics sliders
             forceStrength: document.getElementById('force-strength'),
@@ -850,6 +860,7 @@ export class Graph3DUI {
             // Display elements
             forceValueSimple: document.getElementById('force-value-simple'),
             particleSpeedValue: document.getElementById('particle-speed-value'),
+            particleCountValue: document.getElementById('particle-count-value'),
             linkDistanceValueSimple: document.getElementById('link-distance-value-simple'),
             centerGravityValueSimple: document.getElementById('center-gravity-value-simple'),
             linkThresholdValueSimple: document.getElementById('link-threshold-value-simple'),
@@ -993,10 +1004,14 @@ export class Graph3DUI {
             if (this.callbacks.onVisualToggle) {
                 this.callbacks.onVisualToggle('particles', checked);
             }
-            // Show/hide particle speed slider
+            // Show/hide particle speed and count sliders
             const speedContainer = document.getElementById('particle-speed-container');
+            const countContainer = document.getElementById('particle-count-container');
             if (speedContainer) {
                 speedContainer.style.display = checked ? 'block' : 'none';
+            }
+            if (countContainer) {
+                countContainer.style.display = checked ? 'block' : 'none';
             }
         });
         
@@ -1014,6 +1029,19 @@ export class Graph3DUI {
                 }
                 if (this.callbacks.onParticleSpeedChange) {
                     this.callbacks.onParticleSpeedChange(speed);
+                }
+            });
+        }
+        
+        // Particle count slider
+        if (this.elements.particleCount) {
+            this.elements.particleCount.addEventListener('input', (e) => {
+                const count = parseInt(e.target.value);
+                if (this.elements.particleCountValue) {
+                    this.elements.particleCountValue.textContent = count;
+                }
+                if (this.callbacks.onParticleCountChange) {
+                    this.callbacks.onParticleCountChange(count);
                 }
             });
         }
