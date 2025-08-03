@@ -66,9 +66,9 @@ export class Graph3DCore {
             .linkWidth(link => this.linkWidthMap.get(`${link.source.id || link.source}-${link.target.id || link.target}`) || 1)
             .linkColor(link => this.linkColorMap.get(`${link.source.id || link.source}-${link.target.id || link.target}`) || '#ffffff')
             .linkOpacity(0.6)
-            .linkDirectionalParticles(2)  // Default 2 particles
+            .linkDirectionalParticles(4)  // Increased to 4 particles for more frequent appearance
             .linkDirectionalParticleWidth(2)
-            .linkDirectionalParticleSpeed(0.002)  // Default speed (0.2x)
+            .linkDirectionalParticleSpeed(0.005)  // Increased speed for more frequent cycles
             .onNodeClick(config.onNodeClick || (() => {}))
             .onNodeRightClick(config.onNodeRightClick || (() => {}))
             .onNodeHover(config.onNodeHover || (() => {}))
@@ -355,7 +355,7 @@ export class Graph3DCore {
      * @param {boolean} visible - Whether to show particles
      * @param {number} count - Number of particles per link (default: 2)
      */
-    setLinkParticles(visible, count = 2) {
+    setLinkParticles(visible, count = 4) {
         if (this.graph) {
             this.graph.linkDirectionalParticles(visible ? count : 0);
         }
