@@ -9,7 +9,7 @@
  * Handles force simulation parameters and physics controls
  */
 
-import { graph3DCore } from './graph-3d-core.js?v=20250803f';
+import { graph3DCore } from './graph-3d-core.js?v=20250803g';
 
 export class Graph3DPhysics {
     constructor() {

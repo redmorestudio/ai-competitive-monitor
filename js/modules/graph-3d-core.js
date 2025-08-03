@@ -407,8 +407,11 @@ export class Graph3DCore {
                     const sprite = new window.SpriteText(accessor ? accessor(node) : (node.name || node.id || ''));
                     sprite.material.depthWrite = false;
                     sprite.color = node.currentColor || this.nodeColorMap.get(node.id) || node.color || '#ffffff';
-                    sprite.textHeight = 8;
-                    sprite.position.y = size + 8;
+                    // Scale text height based on node size (base size 4 = text height 8)
+                    // Using a scaling factor of 2x the node size for good visibility
+                    sprite.textHeight = Math.max(4, Math.min(20, size * 2));
+                    // Position label above the node, scaled with size
+                    sprite.position.y = size + (size * 2);
                     group.add(sprite);
                 }
                 
