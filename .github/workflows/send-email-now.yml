@@ -1,4 +1,4 @@
-name: Send Email Now
+name: Send Email Now (DEPRECATED - SQLite)
 
 on:
   # Manual trigger only

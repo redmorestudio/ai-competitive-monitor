@@ -1,9 +1,10 @@
-name: Daily Email Digest
+name: Daily Email Digest (DEPRECATED - SQLite)
 
 on:
-  schedule:
-    # Run at 9 AM UTC every day
-    - cron: '0 9 * * *'
+  # DISABLED - Using PostgreSQL version instead (email-daily-postgres.yml)
+  # schedule:
+  #   # Run at 9 AM UTC every day
+  #   - cron: '0 9 * * *'
   
   # Allow manual trigger
   workflow_dispatch:

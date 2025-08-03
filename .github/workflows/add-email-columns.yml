@@ -21,10 +21,19 @@ jobs:
           cd github-actions-backend
           npm install --omit=dev
       
-      - name: Add Email Tracking Columns
+      - name: Add Email Tracking Columns (Safe Version)
         run: |
           cd github-actions-backend
-          node add-email-tracking-columns.js
+          
+          echo "🔒 Using schema-protected version for safety"
+          echo "This follows the same pattern as fix-postgres-schema-complete.js"
+          echo ""
+          
+          # Use the safe version with transaction support
+          node add-email-tracking-columns-safe.js
+          
+          echo ""
+          echo "✅ Schema modification completed safely"
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           NODE_ENV: production
