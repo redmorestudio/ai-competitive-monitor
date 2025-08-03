@@ -83,8 +83,20 @@ async function addEmailColumnsViaFixScript() {
   
   console.log('📧 Adding email tracking columns via fix-postgres-schema pattern...\n');
   
+  // Ensure we have a database connection string
+  const connectionString = process.env.DATABASE_URL || process.env.POSTGRES_CONNECTION_STRING;
+  
+  if (!connectionString) {
+    console.error('❌ No database connection string found!');
+    console.error('Please set DATABASE_URL or POSTGRES_CONNECTION_STRING environment variable');
+    process.exit(1);
+  }
+  
+  console.log('🔗 Connecting to PostgreSQL...');
+  console.log('   Connection string starts with:', connectionString.substring(0, 30) + '...');
+  
   const client = new Client({
-    connectionString: process.env.DATABASE_URL || process.env.POSTGRES_CONNECTION_STRING,
+    connectionString: connectionString,
     ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false
   });
 
