@@ -25,6 +25,7 @@ import { initFilters, applyFilters, createFilterUI } from './filters.js';
 import { dashboard } from './dashboard.js';
 import { ui } from './ui.js';
 import { VERSION, displayVersion } from './version.js';
+import { kwic } from './kwic.js';
 
 // Global application state
 const appState = {
@@ -60,6 +61,9 @@ export async function init() {
         
         // 4. Initialize filters
         initFilters();
+        
+        // 5. Initialize KWIC module
+        kwic.init();
         
         // 5. Load initial data
         await loadInitialData();
