@@ -124,7 +124,6 @@ export async function showCompanyDetails(companyName) {
                         <div class="intel-pills">
                             ${companyInfo.intelligence.top_products.map(product => 
                                 `<span class="intel-pill" 
-                                       onclick="event.stopPropagation(); window.kwic.show('${escapeHtml(product).replace(/'/g, "\\'")}', 'products')"
                                        title="Click to see where this appears">
                                     ${escapeHtml(product)}
                                 </span>`
@@ -138,7 +137,6 @@ export async function showCompanyDetails(companyName) {
                         <div class="intel-pills">
                             ${companyInfo.intelligence.ai_technologies.map(tech => 
                                 `<span class="intel-pill tech-tag" 
-                                       onclick="event.stopPropagation(); window.kwic.show('${escapeHtml(tech).replace(/'/g, "\\'")}', 'technologies')"
                                        title="Click to see where this appears">
                                     ${escapeHtml(tech)}
                                 </span>`
