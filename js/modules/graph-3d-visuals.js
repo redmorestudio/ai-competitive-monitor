@@ -20,7 +20,7 @@ export class Graph3DVisuals {
         this.showLinks = true;
         this.showLabels = true;
         this.showParticles = true;
-        this.particleCount = 4;  // Default particle count (increased for more frequent appearance)
+        this.particleCount = 2;  // Default particle count
         this.thinLines = false;
         this.monochrome = false;
         this.showChangeRings = false;
