@@ -247,29 +247,35 @@ async function collectAllEntities() {
                 try {
                     const entData = analysis.entities;
                     if (entData) {
-                        // Technologies
+                        // Technologies (normalized to lowercase)
                         if (entData.technologies) {
                             const techs = Array.isArray(entData.technologies) ? entData.technologies : [];
                             techs.forEach(t => {
                                 const name = t.name || t;
-                                if (name) entities.technologies.add(name);
+                                if (name && typeof name === 'string') {
+                                    entities.technologies.add(name.toLowerCase());
+                                }
                             });
                         }
                         
-                        // Products
+                        // Products (normalized to lowercase)
                         if (entData.products) {
                             const prods = Array.isArray(entData.products) ? entData.products : [];
                             prods.forEach(p => {
                                 const name = p.name || p;
-                                if (name) entities.products.add(name);
+                                if (name && typeof name === 'string') {
+                                    entities.products.add(name.toLowerCase());
+                                }
                             });
                         }
                         
-                        // AI/ML Concepts
+                        // AI/ML Concepts (normalized to lowercase)
                         if (entData.ai_ml_concepts) {
                             const concepts = Array.isArray(entData.ai_ml_concepts) ? entData.ai_ml_concepts : [];
                             concepts.forEach(c => {
-                                if (c) entities.concepts.add(c);
+                                if (c && typeof c === 'string') {
+                                    entities.concepts.add(c.toLowerCase());
+                                }
                             });
                         }
                     }
@@ -279,11 +285,17 @@ async function collectAllEntities() {
             }
         }
         
-        // Add fallback entities
+        // Add fallback entities (normalized to lowercase)
         for (const [companyName, companyEntities] of Object.entries(COMPANY_SPECIFIC_ENTITIES)) {
-            companyEntities.technologies?.forEach(t => entities.technologies.add(t));
-            companyEntities.products?.forEach(p => entities.products.add(p));
-            companyEntities.ai_ml_concepts?.forEach(c => entities.concepts.add(c));
+            companyEntities.technologies?.forEach(t => {
+                if (t && typeof t === 'string') entities.technologies.add(t.toLowerCase());
+            });
+            companyEntities.products?.forEach(p => {
+                if (p && typeof p === 'string') entities.products.add(p.toLowerCase());
+            });
+            companyEntities.ai_ml_concepts?.forEach(c => {
+                if (c && typeof c === 'string') entities.concepts.add(c.toLowerCase());
+            });
         }
         
     } catch (error) {
