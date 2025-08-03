@@ -17,6 +17,8 @@ export class Graph3DCore {
         this.linkColorMap = new Map();
         this.linkWidthMap = new Map();
         this.initialized = false;
+        this.labelsEnabled = false;
+        this.labelAccessor = null;
     }
 
     /**
@@ -191,8 +193,13 @@ export class Graph3DCore {
             }
         });
         
-        // Update the nodeThreeObject to use new colors
-        this.graph.nodeThreeObject(node => this.createNodeObject(node));
+        // If labels are enabled, preserve them while updating colors
+        if (this.labelsEnabled) {
+            this.setNodeLabels(true, this.labelAccessor);
+        } else {
+            // Update the nodeThreeObject to use new colors
+            this.graph.nodeThreeObject(node => this.createNodeObject(node));
+        }
         
         // Force update by triggering a data refresh
         this.graph.graphData({
@@ -214,8 +221,13 @@ export class Graph3DCore {
             return;
         }
         
-        // Update the nodeThreeObject to use new sizes
-        this.graph.nodeThreeObject(node => this.createNodeObject(node));
+        // If labels are enabled, preserve them while updating sizes
+        if (this.labelsEnabled) {
+            this.setNodeLabels(true, this.labelAccessor);
+        } else {
+            // Update the nodeThreeObject to use new sizes
+            this.graph.nodeThreeObject(node => this.createNodeObject(node));
+        }
         
         // Force update by triggering a data refresh
         const currentData = this.graph.graphData();
@@ -350,6 +362,10 @@ export class Graph3DCore {
      */
     setNodeLabels(visible, accessor = null) {
         if (!this.graph) return;
+        
+        // Track label state
+        this.labelsEnabled = visible;
+        this.labelAccessor = accessor;
         
         if (visible) {
             // Set the label text for hover
