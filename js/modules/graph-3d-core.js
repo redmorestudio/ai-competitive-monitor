@@ -79,7 +79,7 @@ export class Graph3DCore {
             .d3Force('center', d => d.strength(0.05));
 
         this.initialized = true;
-        console.log('3D graph initialized');
+        console.log('3D graph core initialized flag set to true');
         return this.graph;
     }
 
@@ -166,10 +166,12 @@ export class Graph3DCore {
      */
     updateNodeColors(colorMap) {
         console.log('Updating node colors for', colorMap.size, 'nodes');
+        // Always store the color map
         this.nodeColorMap = colorMap;
         
+        // If graph isn't ready, the colors will be applied when data is set
         if (!this.graph || !this.initialized) {
-            console.warn('Graph not initialized, storing colors for later');
+            console.log('Graph not ready yet, colors will be applied when data is loaded');
             return;
         }
         
@@ -179,6 +181,15 @@ export class Graph3DCore {
             console.log('No data yet, colors will be applied when data is loaded');
             return;
         }
+        
+        // Apply colors to nodes
+        currentData.nodes.forEach(node => {
+            const color = this.nodeColorMap.get(node.id);
+            if (color) {
+                node.color = color;
+                node.currentColor = color;
+            }
+        });
         
         // Update the nodeThreeObject to use new colors
         this.graph.nodeThreeObject(node => this.createNodeObject(node));
