@@ -70,7 +70,7 @@ class Graph3DCoordinator {
             // Initialize core graph
             console.log('Initializing core graph...');
             const graph = await graph3DCore.initialize(this.container, {
-                backgroundColor: '#0a0a0f',
+                backgroundColor: '#000000',
                 onNodeClick: (node) => {
                     // Single-click: focus on node
                     console.log('Clicked node:', node.name || node.id);
