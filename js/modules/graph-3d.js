@@ -30,6 +30,7 @@ class Graph3DCoordinator {
         this.rawData = null;
         this.filteredData = null;
         this.isPaused = false;
+        this.core = graph3DCore; // Reference to core module
     }
 
     /**

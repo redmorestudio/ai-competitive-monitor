@@ -54,9 +54,13 @@ export class Graph3DCore {
             throw new Error('ForceGraph3D not available');
         }
 
+        // Get background color from config or use pure black as default
+        const bgColor = window.graph3d?.config?.colors?.background?.main || '#000000';
+        console.log('Setting graph background to:', bgColor);
+        
         // Create graph instance
         this.graph = ForceGraph3D()(container)
-            .backgroundColor('#000033')
+            .backgroundColor(bgColor)
             .nodeThreeObject(node => this.createNodeObject(node))
             .nodeThreeObjectExtend(true)
             .linkWidth(link => this.linkWidthMap.get(`${link.source.id || link.source}-${link.target.id || link.target}`) || 1)
@@ -130,6 +134,17 @@ export class Graph3DCore {
         }
 
         return sphere;
+    }
+
+    /**
+     * Set background color
+     * @param {string} color - Color value
+     */
+    setBackgroundColor(color) {
+        if (this.graph) {
+            this.graph.backgroundColor(color);
+            console.log('Updated graph background to:', color);
+        }
     }
 
     /**
