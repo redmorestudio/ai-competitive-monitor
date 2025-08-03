@@ -19,6 +19,7 @@ export class Graph3DCore {
         this.initialized = false;
         this.labelsEnabled = false;
         this.labelAccessor = null;
+        this.labelFontSize = 12;  // Default font size
     }
 
     /**
@@ -195,7 +196,7 @@ export class Graph3DCore {
         
         // If labels are enabled, preserve them while updating colors
         if (this.labelsEnabled) {
-            this.setNodeLabels(true, this.labelAccessor);
+            this.setNodeLabels(true, this.labelAccessor, this.labelFontSize);
         } else {
             // Update the nodeThreeObject to use new colors
             this.graph.nodeThreeObject(node => this.createNodeObject(node));
@@ -223,7 +224,7 @@ export class Graph3DCore {
         
         // If labels are enabled, preserve them while updating sizes
         if (this.labelsEnabled) {
-            this.setNodeLabels(true, this.labelAccessor);
+            this.setNodeLabels(true, this.labelAccessor, this.labelFontSize);
         } else {
             // Update the nodeThreeObject to use new sizes
             this.graph.nodeThreeObject(node => this.createNodeObject(node));
@@ -359,13 +360,17 @@ export class Graph3DCore {
      * Set node labels
      * @param {boolean} visible - Whether to show labels
      * @param {function} accessor - Label accessor function
+     * @param {number} fontSize - Font size for labels (optional)
      */
-    setNodeLabels(visible, accessor = null) {
+    setNodeLabels(visible, accessor = null, fontSize = null) {
         if (!this.graph) return;
         
         // Track label state
         this.labelsEnabled = visible;
         this.labelAccessor = accessor;
+        if (fontSize !== null) {
+            this.labelFontSize = fontSize;
+        }
         
         if (visible) {
             // Set the label text for hover
@@ -407,9 +412,10 @@ export class Graph3DCore {
                     const sprite = new window.SpriteText(accessor ? accessor(node) : (node.name || node.id || ''));
                     sprite.material.depthWrite = false;
                     sprite.color = node.currentColor || this.nodeColorMap.get(node.id) || node.color || '#ffffff';
-                    // Scale text height based on node size (base size 4 = text height 8)
-                    // Using a scaling factor of 2x the node size for good visibility
-                    sprite.textHeight = Math.max(4, Math.min(20, size * 2));
+                    // Scale text height based on node size and font size slider
+                    // Base formula: size * 2 * (fontSize / 12)
+                    const fontScale = this.labelFontSize / 12;  // 12 is the default/baseline
+                    sprite.textHeight = Math.max(4, Math.min(30, size * 2 * fontScale));
                     // Position label above the node, scaled with size
                     sprite.position.y = size + (size * 2);
                     group.add(sprite);

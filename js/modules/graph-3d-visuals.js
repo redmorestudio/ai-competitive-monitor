@@ -9,7 +9,7 @@
  * Handles visual settings including colors, sizes, labels, and effects
  */
 
-import { graph3DCore } from './graph-3d-core.js?v=20250803g';
+import { graph3DCore } from './graph-3d-core.js?v=20250803h';
 
 export class Graph3DVisuals {
     constructor() {
@@ -329,7 +329,7 @@ export class Graph3DVisuals {
                 break;
             case 'labels':
                 this.showLabels = value;
-                graph3DCore.setNodeLabels(value, node => node.name);
+                graph3DCore.setNodeLabels(value, node => node.name, this.labelFontSize);
                 break;
             case 'particles':
                 this.showParticles = value;
@@ -358,7 +358,7 @@ export class Graph3DVisuals {
     setLabelFontSize(size) {
         this.labelFontSize = size;
         if (this.showLabels) {
-            graph3DCore.setNodeLabels(true, node => node.name);
+            graph3DCore.setNodeLabels(true, node => node.name, size);
         }
     }
 
