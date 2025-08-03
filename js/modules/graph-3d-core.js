@@ -514,8 +514,30 @@ export class Graph3DCore {
             // Set number of dimensions (2 for flat, 3 for 3D)
             this.graph.numDimensions(flatten ? 2 : 3);
             
-            // Optionally reheat the simulation to apply the change
-            this.reheatSimulation();
+            // If switching back to 3D, randomize Z positions to break out of 2D plane
+            if (!flatten) {
+                const graphData = this.graph.graphData();
+                graphData.nodes.forEach(node => {
+                    if (node.z !== undefined) {
+                        // Randomize Z position to force 3D distribution
+                        node.z = (Math.random() - 0.5) * 200;
+                        // Also add some random velocity to help break out of plane
+                        node.vz = (Math.random() - 0.5) * 2;
+                    }
+                });
+            }
+            
+            // Reheat the simulation strongly to apply the change
+            this.graph.d3ReheatSimulation();
+            
+            // For 3D mode, also reset the force simulation to ensure proper distribution
+            if (!flatten && this.graph.d3Force) {
+                // Increase alpha to make simulation more active
+                this.graph.d3Force('charge').strength(-500);
+                setTimeout(() => {
+                    this.graph.d3Force('charge').strength(-300); // Reset to default
+                }, 2000);
+            }
             
             if (callback) {
                 setTimeout(callback, 100);
