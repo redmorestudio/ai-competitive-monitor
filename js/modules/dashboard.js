@@ -99,9 +99,14 @@ class Dashboard {
      * Update companies display
      */
     updateCompaniesDisplay(companies) {
-        if (!this.companiesContainer) return;
+        console.log('📊 updateCompaniesDisplay called with:', companies);
+        if (!this.companiesContainer) {
+            console.error('❌ companiesContainer not found!');
+            return;
+        }
         
         if (!companies || companies.length === 0) {
+            console.warn('⚠️ No companies data provided');
             this.companiesContainer.innerHTML = 
                 '<h3>📊 Monitored Companies</h3><div class="error-message">No companies found in configuration.</div>';
             return;
@@ -315,6 +320,7 @@ class Dashboard {
      * Main render method - updates all dashboard components
      */
     async render() {
+        console.log('🎨 Dashboard render() called');
         try {
             // Get data from the data module
             const { getDashboardData, getWorkflowStatus, getChangesData } = await import('./data.js');
@@ -322,6 +328,10 @@ class Dashboard {
             const dashboardData = getDashboardData();
             const workflowStatus = getWorkflowStatus();
             const changesData = getChangesData();
+            
+            console.log('📈 Dashboard data:', dashboardData);
+            console.log('📈 Has companies?', dashboardData?.companies ? 'YES' : 'NO');
+            console.log('📈 Has company_activity?', dashboardData?.company_activity ? 'YES' : 'NO');
             
             // Update all components
             this.updateStatsBar(dashboardData, workflowStatus);
