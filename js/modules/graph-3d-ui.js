@@ -494,9 +494,9 @@ export class Graph3DUI {
                 <label style="display: block; margin-bottom: 15px;" id="particle-speed-container">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
                         <span>Particle Speed</span>
-                        <span id="particle-speed-value" style="color: #00ff88; font-weight: bold;">1.0x</span>
+                        <span id="particle-speed-value" style="color: #00ff88; font-weight: bold;">0.5x</span>
                     </div>
-                    <input type="range" id="particle-speed" min="0.5" max="3" step="0.1" value="1" 
+                    <input type="range" id="particle-speed" min="0.05" max="1" step="0.05" value="0.5" 
                            style="width: 100%;">
                 </label>
                 
@@ -1005,7 +1005,12 @@ export class Graph3DUI {
             this.elements.particleSpeed.addEventListener('input', (e) => {
                 const speed = parseFloat(e.target.value);
                 if (this.elements.particleSpeedValue) {
-                    this.elements.particleSpeedValue.textContent = speed.toFixed(1) + 'x';
+                    // Format display based on value
+                    if (speed < 0.1) {
+                        this.elements.particleSpeedValue.textContent = speed.toFixed(2) + 'x';
+                    } else {
+                        this.elements.particleSpeedValue.textContent = speed.toFixed(1) + 'x';
+                    }
                 }
                 if (this.callbacks.onParticleSpeedChange) {
                     this.callbacks.onParticleSpeedChange(speed);

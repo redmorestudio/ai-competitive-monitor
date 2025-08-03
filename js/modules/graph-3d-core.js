@@ -60,7 +60,7 @@ export class Graph3DCore {
             .linkOpacity(0.6)
             .linkDirectionalParticles(4)  // Increased for better visibility
             .linkDirectionalParticleWidth(2)
-            .linkDirectionalParticleSpeed(0.01)  // Default speed
+            .linkDirectionalParticleSpeed(0.005)  // Default speed (0.5x)
             .onNodeClick(config.onNodeClick || (() => {}))
             .onNodeRightClick(config.onNodeRightClick || (() => {}))
             .onNodeHover(config.onNodeHover || (() => {}))

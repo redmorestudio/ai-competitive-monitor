@@ -9,7 +9,7 @@
  * Handles visual settings including colors, sizes, labels, and effects
  */
 
-import { graph3DCore } from './graph-3d-core.js?v=20250803b';
+import { graph3DCore } from './graph-3d-core.js?v=20250803c';
 
 export class Graph3DVisuals {
     constructor() {
