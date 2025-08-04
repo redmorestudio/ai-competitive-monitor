@@ -629,6 +629,11 @@ class Graph3DCoordinator {
         
         if (!this.rawData) return;
         
+        // Calculate totals
+        const totalCompanies = this.rawData.nodes.filter(n => n.nodeType === 'company').length;
+        const totalNodes = this.rawData.nodes.length;
+        const totalLinks = this.rawData.links.length;
+        
         // Get technologies and concepts from raw data
         const technologies = this.rawData.nodes
             .filter(n => n.nodeType === 'technology')
@@ -643,6 +648,11 @@ class Graph3DCoordinator {
         // Update technology summary
         if (techSummary) {
             techSummary.innerHTML = `
+                <strong>Graph Statistics:</strong><br>
+                • Total Companies: ${totalCompanies}<br>
+                • Total Nodes: ${totalNodes}<br>
+                • Total Vertices (Links): ${totalLinks}<br>
+                <br>
                 <strong>Top Technologies:</strong><br>
                 ${technologies.map(t => `• ${t.name} (${t.companyCount || 0} companies)`).join('<br>')}
                 <br><br>

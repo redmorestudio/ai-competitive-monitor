@@ -7,7 +7,7 @@ window.graph3d = window.graph3d || {};
 
 window.graph3d.config = {
     // Version Information
-    version: 'Rev 1.0.3',  // Increment this with each change
+    version: 'Rev 1.0.4',  // Increment this with each change
     lastUpdated: '2025-08-04',
     
     // Core Colors
