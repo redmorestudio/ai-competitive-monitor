@@ -233,8 +233,17 @@ export async function showChangeDetail(changeId, companyName, event) {
     try {
         let changeData = null;
         
+        // Strategy 0: Check if it's from company modal recent activity
+        if (!changeData && changeId.startsWith('company-change-')) {
+            const parts = changeId.split('-');
+            const index = parseInt(parts[2]);
+            if (!isNaN(index) && window.companyModalChanges && window.companyModalChanges[index]) {
+                changeData = window.companyModalChanges[index];
+            }
+        }
+        
         // Strategy 1: Check if we have the change in window.allChanges (from changes tab)
-        if (window.allChanges) {
+        if (!changeData && window.allChanges) {
             // If it's a generated ID, find by index
             if (changeId.startsWith('recent-') || changeId.startsWith('change-')) {
                 const parts = changeId.split('-');
@@ -520,6 +529,9 @@ async function loadCompanyRecentChanges(companyName) {
             .sort((a, b) => new Date(b.detected_at || b.detectedAt) - new Date(a.detected_at || a.detectedAt))
             .slice(0, 5); // Show last 5 changes
         
+        // Store company changes globally for the modal to access
+        window.companyModalChanges = companyChanges;
+        
         if (companyChanges.length === 0) {
             activityDiv.innerHTML = '<p>No recent changes detected for this company.</p>';
             return;
@@ -657,7 +669,31 @@ function renderFilteredChanges() {
             const timeStr = changeDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
             
             // Parse AI analysis to get summary
-            let summary = change.summary || '';
+            let summary = '';
+            
+            // First try to parse the summary field if it contains JSON
+            if (change.summary) {
+                try {
+                    // Check if it's a JSON string
+                    if (typeof change.summary === 'string' && change.summary.startsWith('{')) {
+                        const parsedSummary = JSON.parse(change.summary);
+                        // Extract the actual summary text
+                        if (parsedSummary.change_summary && parsedSummary.change_summary.what_changed) {
+                            summary = parsedSummary.change_summary.what_changed;
+                        } else if (parsedSummary.summary) {
+                            summary = parsedSummary.summary;
+                        }
+                    } else {
+                        // It's already plain text
+                        summary = change.summary;
+                    }
+                } catch (e) {
+                    console.warn('Failed to parse summary JSON:', e);
+                    summary = 'Change detected';
+                }
+            }
+            
+            // Fallback to ai_analysis field if no summary found
             if (!summary && change.ai_analysis) {
                 try {
                     const analysis = JSON.parse(change.ai_analysis);
@@ -665,6 +701,10 @@ function renderFilteredChanges() {
                 } catch (e) {
                     summary = 'Change detected';
                 }
+            }
+            
+            if (!summary) {
+                summary = 'Change detected';
             }
             
             const interestLevel = change.interest_level || 1;
