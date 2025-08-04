@@ -5,15 +5,92 @@
   "detected_at": "2025-07-21T03:13:00.463Z",
   "change_type": "new",
   "interest_level": 8,
-  "ai_confidence": 0.9,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "ai_confidence": 0.8,
+  "summary": "New content added to the Google Blog, including AI news and updates, product news, company news, and more",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New content added to the Google Blog, including AI news and updates, product news, company news, and more",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of a new section for AI news and updates",
+      "Addition of product news, company news, and other categories",
+      "Inclusion of links to various Google products and services",
+      "Introduction of a new format for presenting news and updates"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes indicate a significant investment in AI research and development, which is likely to have a major impact on the company's business and competitive position",
+    "market_signals": [
+      "Increased focus on AI news and updates",
+      "Expansion of product offerings and services"
+    ],
+    "competitive_implications": "The changes suggest that Google is increasing its investment in AI, which could lead to increased competition in the market",
+    "strategic_direction": "The company appears to be focusing on AI as a key area of research and development, with a goal of making AI more accessible and useful for everyone"
+  },
+  "entities": {
+    "products": [
+      "Gemini",
+      "Google Workspace",
+      "Google Cloud",
+      "Android",
+      "Chrome",
+      "Chromebooks",
+      "Google Play",
+      "Wear OS",
+      "Fitbit",
+      "Google Nest",
+      "Pixel"
+    ],
+    "features": [
+      "AI",
+      "inference",
+      "Gemini Code Assist",
+      "Gemini CLI"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "machine learning"
+    ],
+    "people": [
+      "Sundar Pichai",
+      "Demis Hassabis",
+      "Kent Walker",
+      "James Manyika",
+      "Ruth Porat"
+    ],
+    "pricing": [],
+    "markets": [
+      "Asia",
+      "Europe",
+      "Latin America"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Google is increasing its investment in AI research and development",
+      "The company is expanding its product offerings and services, with a focus on AI"
+    ],
+    "opportunities": [
+      "Increased access to AI technology and expertise",
+      "New business opportunities in AI-related fields"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential risks and challenges associated with AI development and deployment"
+    ],
+    "recommended_actions": [
+      "Monitor Google's AI developments and investments",
+      "Consider partnering with Google or investing in AI-related technologies"
+    ]
+  },
+  "key_insights": [
+    "Google is increasing its investment in AI research and development",
+    "The company is expanding its product offerings and services, with a focus on AI"
+  ],
+  "business_impact": "The changes indicate a significant investment in AI research and development, which is likely to have a major impact on the company's business and competitive position",
+  "competitive_implications": "The changes suggest that Google is increasing its investment in AI, which could lead to increased competition in the market",
   "content_hash_before": null,
   "content_hash_after": "7a35b93de4620c6cbde77f1af1c14352e8dca1255877f05ac43f742198380f79",
   "ai_model": "groq-llama-3.3-70b",

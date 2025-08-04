@@ -6,14 +6,72 @@
   "change_type": "modified",
   "interest_level": 8,
   "ai_confidence": 0.9,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "summary": "New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inference?', 'Find out the latest Gemini updates with Gemini Drops', 'Check out the first images of wildfires detected by FireSat', and 'Try on styles with AI, jump on great prices and more'",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inference?', 'Find out the latest Gemini updates with Gemini Drops', 'Check out the first images of wildfires detected by FireSat', and 'Try on styles with AI, jump on great prices and more'",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Added new article 'Ask a Techspert: What is inference?'",
+      "Added new article 'Find out the latest Gemini updates with Gemini Drops'",
+      "Added new article 'Check out the first images of wildfires detected by FireSat'",
+      "Added new article 'Try on styles with AI, jump on great prices and more'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates demonstrate Google's continued investment in AI research and development, which could lead to improved user experiences and increased competitiveness in the market",
+    "market_signals": [
+      "Increased focus on AI-powered features",
+      "Expansion of Gemini capabilities"
+    ],
+    "competitive_implications": "Google's advancements in AI could pose a competitive threat to other companies in the tech industry",
+    "strategic_direction": "Google's strategic direction appears to be focused on leveraging AI to improve user experiences and drive innovation"
+  },
+  "entities": {
+    "products": [
+      "Gemini",
+      "Google Search",
+      "Google Shopping"
+    ],
+    "features": [
+      "Inference",
+      "Gemini Code Assist",
+      "AI-powered shopping features"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Google is investing heavily in AI research and development",
+      "Gemini is a key area of focus for Google's AI efforts"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Google on AI-powered projects",
+      "Potential for increased adoption of Google's AI-powered features"
+    ],
+    "threats": [
+      "Competitive threat from Google's AI advancements",
+      "Potential disruption to existing business models"
+    ],
+    "recommended_actions": [
+      "Monitor Google's AI developments and advancements",
+      "Consider partnership opportunities with Google on AI-powered projects"
+    ]
+  },
+  "key_insights": [
+    "Google is investing heavily in AI research and development",
+    "Gemini is a key area of focus for Google's AI efforts"
+  ],
+  "business_impact": "The updates demonstrate Google's continued investment in AI research and development, which could lead to improved user experiences and increased competitiveness in the market",
+  "competitive_implications": "Google's advancements in AI could pose a competitive threat to other companies in the tech industry",
   "content_hash_before": "e202d951381e9abc23997c6e59f05511f0db8f54bc9dd194afe8e2a47dd4dd9b",
   "content_hash_after": "55d503c97626f6625b9a5a6d590341aa43be92aae75585db0f6e55040fff9aa1",
   "ai_model": "groq-llama-3.3-70b",

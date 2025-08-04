@@ -5,15 +5,45 @@
   "detected_at": "2025-07-21T16:18:27.267Z",
   "change_type": "modified",
   "interest_level": 2,
-  "ai_confidence": 0.9,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "ai_confidence": 0.8,
+  "summary": "No significant changes were detected in the provided content, only minor formatting and loading error messages.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "No significant changes were detected in the provided content, only minor formatting and loading error messages.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": []
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact is expected from these minor changes.",
+    "market_signals": [],
+    "competitive_implications": "No competitive implications are expected from these minor changes.",
+    "strategic_direction": "No change in strategic direction is indicated by these minor updates."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "No significant changes were detected."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor for future updates that may indicate significant changes or strategic shifts."
+    ]
+  },
+  "key_insights": [
+    "No significant changes were detected."
+  ],
+  "business_impact": "No significant business impact is expected from these minor changes.",
+  "competitive_implications": "No competitive implications are expected from these minor changes.",
   "content_hash_before": "93dd0403b2b7b48795e5266614348c0592f8fd275bbed1134440f0fcb75490f2",
   "content_hash_after": "6aca057463b882e4cb30673eca85a89c7ef930a7d0ac66f5a0aa49d2e3371243",
   "ai_model": "groq-llama-3.3-70b",

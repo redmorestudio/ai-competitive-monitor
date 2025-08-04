@@ -6,14 +6,71 @@
   "change_type": "modified",
   "interest_level": 4,
   "ai_confidence": 0.8,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "summary": "Rephrased introductory sentence for Perplexity Pro",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Rephrased introductory sentence for Perplexity Pro",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Changed 'Perplexity Pro is the most powerful way to search the internet' to 'Perplexity Pro unlocks more ways to learn and get work done'",
+      "Added 'Upgrade your productivity and learning with unlimited Research' to the Pro description"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The minor changes in wording may slightly improve marketing effectiveness but do not fundamentally alter the business model or offerings.",
+    "market_signals": [
+      "Emphasis on productivity and learning",
+      "No significant changes in pricing or features"
+    ],
+    "competitive_implications": "The changes do not provide a significant competitive advantage or disadvantage.",
+    "strategic_direction": "The company continues to focus on AI-powered productivity and learning tools."
+  },
+  "entities": {
+    "products": [
+      "Perplexity Pro",
+      "Perplexity Max"
+    ],
+    "features": [
+      "Unlimited Research",
+      "Unlimited file uploads",
+      "Pro Perks"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Comet",
+      "OpenAI o3-pro",
+      "Anthropic Claude 4 Opus"
+    ],
+    "people": [],
+    "pricing": [
+      "$20.00/month",
+      "$16.67/month (annually)",
+      "$200.00/month"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Minor rewording of marketing content",
+      "No changes in pricing or major features"
+    ],
+    "opportunities": [
+      "Continued focus on AI-powered tools could attract users seeking advanced productivity and learning solutions"
+    ],
+    "threats": [
+      "Lack of significant updates may not attract new users or retain existing ones"
+    ],
+    "recommended_actions": [
+      "Monitor user engagement and feedback to determine the effectiveness of the reworded marketing content"
+    ]
+  },
+  "key_insights": [
+    "Minor rewording of marketing content",
+    "No changes in pricing or major features"
+  ],
+  "business_impact": "The minor changes in wording may slightly improve marketing effectiveness but do not fundamentally alter the business model or offerings.",
+  "competitive_implications": "The changes do not provide a significant competitive advantage or disadvantage.",
   "content_hash_before": "17d44c7590ececeb9c8f765ee7fe97a0f2ef8e8624695016c55080d63fde3175",
   "content_hash_after": "4fa9e55d8f0374b9d0d0fb68270b48fe5531497527f0370413b5a0a8236e2416",
   "ai_model": "groq-llama-3.3-70b",

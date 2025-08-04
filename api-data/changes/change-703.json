@@ -4,25 +4,21 @@
   "page_url": "product",
   "detected_at": "2025-08-04T00:17:13.579Z",
   "change_type": "modified",
-  "interest_level": 3,
+  "interest_level": 2,
   "ai_confidence": 0.8,
-  "summary": "Minor content updates and image optimizations",
+  "summary": "No significant changes were detected in the content between the two versions.",
   "category": "minor_change",
   "change_summary": {
-    "what_changed": "Minor content updates and image optimizations",
-    "change_type": "update",
+    "what_changed": "No significant changes were detected in the content between the two versions.",
+    "change_type": "no change",
     "change_scale": "minor",
-    "specific_changes": [
-      "Image URLs and quality adjustments",
-      "Minor text changes and formatting",
-      "No significant feature or product announcements"
-    ]
+    "specific_changes": []
   },
   "strategic_analysis": {
-    "business_impact": "No significant business impact expected from these minor changes.",
+    "business_impact": "No significant business impact is expected from these changes.",
     "market_signals": [],
-    "competitive_implications": "No notable competitive implications.",
-    "strategic_direction": "The updates suggest ongoing maintenance and optimization efforts."
+    "competitive_implications": "No competitive implications are expected from these changes.",
+    "strategic_direction": "No change in strategic direction is indicated by these changes."
   },
   "entities": {
     "products": [],
@@ -34,20 +30,14 @@
     "markets": []
   },
   "insights": {
-    "key_findings": [
-      "Luma AI focuses on optimizing user experience through minor updates."
-    ],
+    "key_findings": [],
     "opportunities": [],
     "threats": [],
-    "recommended_actions": [
-      "Continue monitoring Luma AI's product and feature updates for more significant announcements."
-    ]
+    "recommended_actions": []
   },
-  "key_insights": [
-    "Luma AI focuses on optimizing user experience through minor updates."
-  ],
-  "business_impact": "No significant business impact expected from these minor changes.",
-  "competitive_implications": "No notable competitive implications.",
+  "key_insights": [],
+  "business_impact": "No significant business impact is expected from these changes.",
+  "competitive_implications": "No competitive implications are expected from these changes.",
   "content_hash_before": "9154a065e15a103e1e07c77671a852dd0c98971e7c33e6b12cc0f3b4dad35805",
   "content_hash_after": "ba90e26d132f0db86229d95d8fb10df77ce5451e45baf2a8bfe1457ec9a3efe4",
   "ai_model": "groq-llama-3.3-70b",

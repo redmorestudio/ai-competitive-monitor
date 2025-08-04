@@ -6,14 +6,44 @@
   "change_type": "modified",
   "interest_level": 2,
   "ai_confidence": 0.9,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "summary": "No significant changes were detected in the provided content.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "No significant changes were detected in the provided content.",
+    "change_type": "no change",
+    "change_scale": "minor",
+    "specific_changes": []
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact is expected from the lack of changes.",
+    "market_signals": [],
+    "competitive_implications": "No competitive implications are expected from the lack of changes.",
+    "strategic_direction": "No change in strategic direction is indicated."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "No significant changes were detected in the provided content."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor for future updates or changes to the content."
+    ]
+  },
+  "key_insights": [
+    "No significant changes were detected in the provided content."
+  ],
+  "business_impact": "No significant business impact is expected from the lack of changes.",
+  "competitive_implications": "No competitive implications are expected from the lack of changes.",
   "content_hash_before": "f83ccba2e0c517ab0813e8f87fa5b5009ea0b0d7c783dbc289eb911af9ef05d9",
   "content_hash_after": "1b86187e429e7785fab6c6b13eb10b2a7b329f4f16335053b38a6f39cc89ac17",
   "ai_model": "groq-llama-3.3-70b",

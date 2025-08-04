@@ -4,16 +4,88 @@
   "page_url": "news",
   "detected_at": "2025-07-21T03:06:58.430Z",
   "change_type": "new",
-  "interest_level": 8,
-  "ai_confidence": 0.8,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "New content added to the newsroom section of Anthropic's website, including announcements, product updates, and policy discussions.",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content added to the newsroom section of Anthropic's website, including announcements, product updates, and policy discussions.",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Claude 4",
+      "Announcement of Anthropic's Series E funding at $61.5B post-money valuation",
+      "Introduction of the Anthropic Economic Index",
+      "Updates on Claude for Education and Claude for Financial Services",
+      "New partnerships and integrations announced"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest a strong focus on expanding Anthropic's product offerings and partnerships, which could lead to increased revenue and market share.",
+    "market_signals": [
+      "Increased investment in AI and language models",
+      "Growing demand for AI-powered solutions in various industries"
+    ],
+    "competitive_implications": "The changes position Anthropic as a major player in the AI and language model market, potentially threatening competitors and establishing the company as a leader in the industry.",
+    "strategic_direction": "The changes suggest a strategic direction focused on innovation, expansion, and partnership-building, with a strong emphasis on AI and language models."
+  },
+  "entities": {
+    "products": [
+      "Claude",
+      "Claude 4",
+      "Anthropic API"
+    ],
+    "features": [
+      "Web search",
+      "Token-saving updates"
+    ],
+    "partnerships": [
+      "Department of Defense",
+      "Lawrence Livermore National Laboratory"
+    ],
+    "technologies": [
+      "AI",
+      "Language models"
+    ],
+    "people": [
+      "Paul Smith",
+      "Richard Fontaine",
+      "Reed Hastings"
+    ],
+    "pricing": [],
+    "markets": [
+      "Education",
+      "Financial Services",
+      "National Security"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Anthropic is investing heavily in AI and language models",
+      "The company is expanding its product offerings and partnerships",
+      "There is growing demand for AI-powered solutions in various industries"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Anthropic",
+      "Investment opportunities in AI and language models"
+    ],
+    "threats": [
+      "Increased competition in the AI and language model market",
+      "Potential regulatory challenges"
+    ],
+    "recommended_actions": [
+      "Monitor Anthropic's progress and announcements",
+      "Consider partnership or investment opportunities",
+      "Stay informed about regulatory developments in the AI and language model market"
+    ]
+  },
+  "key_insights": [
+    "Anthropic is investing heavily in AI and language models",
+    "The company is expanding its product offerings and partnerships",
+    "There is growing demand for AI-powered solutions in various industries"
+  ],
+  "business_impact": "The changes suggest a strong focus on expanding Anthropic's product offerings and partnerships, which could lead to increased revenue and market share.",
+  "competitive_implications": "The changes position Anthropic as a major player in the AI and language model market, potentially threatening competitors and establishing the company as a leader in the industry.",
   "content_hash_before": null,
   "content_hash_after": "0df5854e95a3055eb194e9001e6b250e47151d1800c94e31320e7815ff53f031",
   "ai_model": "groq-llama-3.3-70b",

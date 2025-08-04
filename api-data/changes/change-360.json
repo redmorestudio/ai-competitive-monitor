@@ -6,14 +6,58 @@
   "change_type": "modified",
   "interest_level": 6,
   "ai_confidence": 0.8,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "summary": "Addition of a new policy announcement: Anthropic to sign the EU Code of Practice",
+  "category": "policy_update",
+  "change_summary": {
+    "what_changed": "Addition of a new policy announcement: Anthropic to sign the EU Code of Practice",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "New policy announcement added to the news section",
+      "No other changes to existing content"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of this policy announcement may indicate Anthropic's increasing focus on regulatory compliance and expansion into European markets.",
+    "market_signals": [
+      "Anthropic's commitment to signing the EU Code of Practice may signal a stronger presence in the European market."
+    ],
+    "competitive_implications": "This change may impact Anthropic's competitive positioning in the EU market, potentially increasing trust and credibility with European customers and regulators.",
+    "strategic_direction": "The company's strategic direction appears to be focused on expansion and compliance, with a growing emphasis on European markets and regulatory adherence."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Anthropic is expanding its presence in the European market",
+      "The company is prioritizing regulatory compliance"
+    ],
+    "opportunities": [
+      "Increased market share in the EU",
+      "Improved credibility with European customers and regulators"
+    ],
+    "threats": [
+      "Potential regulatory hurdles",
+      "Increased competition in the EU market"
+    ],
+    "recommended_actions": [
+      "Monitor Anthropic's progress in the EU market",
+      "Assess the impact of regulatory compliance on the company's competitive positioning"
+    ]
+  },
+  "key_insights": [
+    "Anthropic is expanding its presence in the European market",
+    "The company is prioritizing regulatory compliance"
+  ],
+  "business_impact": "The addition of this policy announcement may indicate Anthropic's increasing focus on regulatory compliance and expansion into European markets.",
+  "competitive_implications": "This change may impact Anthropic's competitive positioning in the EU market, potentially increasing trust and credibility with European customers and regulators.",
   "content_hash_before": "0df5854e95a3055eb194e9001e6b250e47151d1800c94e31320e7815ff53f031",
   "content_hash_after": "715149c11ce9ecfeb58230117d600c56aab66e6ae501de8e5c65f2d8bde958eb",
   "ai_model": "groq-llama-3.3-70b",

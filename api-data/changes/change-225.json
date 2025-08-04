@@ -4,16 +4,46 @@
   "page_url": "pricing",
   "detected_at": "2025-07-22T19:04:23.608Z",
   "change_type": "modified",
-  "interest_level": 8,
-  "ai_confidence": 0.9,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "The 'openaicom-did' parameter in the URLs has changed from '4aa03562-c3c6-4634-98a2-6d29cf24c479' to '99580f75-39b7-4bf3-9a9c-e2a544c14234'.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The 'openaicom-did' parameter in the URLs has changed from '4aa03562-c3c6-4634-98a2-6d29cf24c479' to '99580f75-39b7-4bf3-9a9c-e2a544c14234'.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated 'openaicom-did' parameter in URLs"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change is unlikely to have a significant impact on OpenAI's business operations or revenue.",
+    "market_signals": [],
+    "competitive_implications": "The change does not reveal any significant competitive advantages or disadvantages.",
+    "strategic_direction": "The change does not indicate a shift in OpenAI's strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The 'openaicom-did' parameter is used for tracking or analytics purposes."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [
+    "The 'openaicom-did' parameter is used for tracking or analytics purposes."
+  ],
+  "business_impact": "The change is unlikely to have a significant impact on OpenAI's business operations or revenue.",
+  "competitive_implications": "The change does not reveal any significant competitive advantages or disadvantages.",
   "content_hash_before": "a268cb97c16ead5e6f61dfc1597e8487831e80a7ca4909f6cf610e5f08159ecb",
   "content_hash_after": "2d466fcf0b92c9cc11b5fb80d6410c3161762ae887c22f11184b2e82a49af754",
   "ai_model": "groq-llama-3.3-70b",

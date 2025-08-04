@@ -6,14 +6,80 @@
   "change_type": "new",
   "interest_level": 9,
   "ai_confidence": 0.9,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "summary": "Introduction of Perplexity Pro and Max subscription plans with various features and pricing",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Introduction of Perplexity Pro and Max subscription plans with various features and pricing",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Perplexity Pro with features like unlimited Pro Search, upgraded AI models, and collaborative spaces",
+      "Introduction of Perplexity Max with features like early access to new products, unlimited access to Perplexity Labs and Research, and priority support",
+      "Pricing for Pro and Max plans announced"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of new subscription plans is expected to increase revenue for Perplexity AI and expand its customer base",
+    "market_signals": [
+      "Growing demand for AI-powered search and productivity tools",
+      "Increasing competition in the AI market"
+    ],
+    "competitive_implications": "Perplexity AI is positioning itself as a leader in the AI market with advanced features and pricing plans, potentially threatening competitors",
+    "strategic_direction": "Perplexity AI is focusing on expanding its offerings and revenue streams through subscription-based models"
+  },
+  "entities": {
+    "products": [
+      "Perplexity Pro",
+      "Perplexity Max"
+    ],
+    "features": [
+      "Unlimited Pro Search",
+      "Upgraded AI models",
+      "Unlimited file and photo uploads",
+      "Extended access to Perplexity Research",
+      "Extended access to image generation",
+      "Early access to new products",
+      "Unlimited access to Perplexity Labs",
+      "Priority support"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI models",
+      "Comet, the agentic browser"
+    ],
+    "people": [],
+    "pricing": [
+      "$20.00/month for Pro",
+      "$16.67/month for Pro (annually)",
+      "$200.00/month for Max"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Perplexity AI is introducing new subscription plans with advanced features",
+      "The company is focusing on expanding its offerings and revenue streams"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Perplexity AI for businesses and teams",
+      "Potential for increased adoption of AI-powered search and productivity tools"
+    ],
+    "threats": [
+      "Increasing competition in the AI market",
+      "Potential for pricing pressure from competitors"
+    ],
+    "recommended_actions": [
+      "Monitor Perplexity AI's pricing and feature updates",
+      "Consider partnership opportunities with Perplexity AI",
+      "Assess the competitive implications of Perplexity AI's strategic moves"
+    ]
+  },
+  "key_insights": [
+    "Perplexity AI is introducing new subscription plans with advanced features",
+    "The company is focusing on expanding its offerings and revenue streams"
+  ],
+  "business_impact": "The introduction of new subscription plans is expected to increase revenue for Perplexity AI and expand its customer base",
+  "competitive_implications": "Perplexity AI is positioning itself as a leader in the AI market with advanced features and pricing plans, potentially threatening competitors",
   "content_hash_before": null,
   "content_hash_after": "17d44c7590ececeb9c8f765ee7fe97a0f2ef8e8624695016c55080d63fde3175",
   "ai_model": "groq-llama-3.3-70b",

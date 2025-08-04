@@ -5,20 +5,20 @@
   "detected_at": "2025-08-01T18:39:06.003Z",
   "change_type": "modified",
   "interest_level": 2,
-  "ai_confidence": 0.8,
-  "summary": "No significant changes were detected in the content, only minor formatting and wording tweaks.",
-  "category": "minor_change",
+  "ai_confidence": 0.9,
+  "summary": "No significant changes were detected in the content of the Google DeepMind homepage.",
+  "category": "no change",
   "change_summary": {
-    "what_changed": "No significant changes were detected in the content, only minor formatting and wording tweaks.",
-    "change_type": "update",
+    "what_changed": "No significant changes were detected in the content of the Google DeepMind homepage.",
+    "change_type": "no change",
     "change_scale": "minor",
     "specific_changes": []
   },
   "strategic_analysis": {
-    "business_impact": "No significant business impact is expected from these minor changes.",
+    "business_impact": "No significant business impact is expected from the lack of changes on the Google DeepMind homepage.",
     "market_signals": [],
-    "competitive_implications": "No competitive implications are expected from these minor changes.",
-    "strategic_direction": "No change in strategic direction is indicated by these minor changes."
+    "competitive_implications": "The lack of changes may indicate a period of consolidation or focus on existing projects, rather than expansion into new areas.",
+    "strategic_direction": "No clear strategic direction is indicated by the lack of changes on the homepage."
   },
   "entities": {
     "products": [],
@@ -36,8 +36,8 @@
     "recommended_actions": []
   },
   "key_insights": [],
-  "business_impact": "No significant business impact is expected from these minor changes.",
-  "competitive_implications": "No competitive implications are expected from these minor changes.",
+  "business_impact": "No significant business impact is expected from the lack of changes on the Google DeepMind homepage.",
+  "competitive_implications": "The lack of changes may indicate a period of consolidation or focus on existing projects, rather than expansion into new areas.",
   "content_hash_before": "81285e59f895b6a924f176ed8712887b90402107f450b922353eca0be7bf56ff",
   "content_hash_after": "4088fac1df56b2e6f9e7b281d1122823bfa20fb6ac68ad86d1e6c4c2162251e6",
   "ai_model": "groq-llama-3.3-70b",

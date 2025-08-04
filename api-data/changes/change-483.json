@@ -6,19 +6,19 @@
   "change_type": "modified",
   "interest_level": 1,
   "ai_confidence": 0.99,
-  "summary": "No significant changes were detected in the content structure or links between the two versions.",
-  "category": "no change",
+  "summary": "No significant changes were detected in the provided content.",
+  "category": "minor_change",
   "change_summary": {
-    "what_changed": "No significant changes were detected in the content structure or links between the two versions.",
+    "what_changed": "No significant changes were detected in the provided content.",
     "change_type": "no change",
     "change_scale": "minor",
     "specific_changes": []
   },
   "strategic_analysis": {
-    "business_impact": "No impact, as there were no changes detected.",
+    "business_impact": "No significant business impact is expected from the lack of changes.",
     "market_signals": [],
-    "competitive_implications": "No implications, as the content remains the same.",
-    "strategic_direction": "No new direction indicated."
+    "competitive_implications": "No competitive implications are expected from the lack of changes.",
+    "strategic_direction": "No change in strategic direction is indicated."
   },
   "entities": {
     "products": [],
@@ -33,13 +33,11 @@
     "key_findings": [],
     "opportunities": [],
     "threats": [],
-    "recommended_actions": [
-      "Monitor for future updates or changes in the GitHub Copilot blog content."
-    ]
+    "recommended_actions": []
   },
   "key_insights": [],
-  "business_impact": "No impact, as there were no changes detected.",
-  "competitive_implications": "No implications, as the content remains the same.",
+  "business_impact": "No significant business impact is expected from the lack of changes.",
+  "competitive_implications": "No competitive implications are expected from the lack of changes.",
   "content_hash_before": "7e5052462beb26fbae6b810eea66ad74d82513c10496c390b12058af3cd8d7b5",
   "content_hash_after": "5411fc69ac7079a64db5897551e88fc7ffddd4b371907d39cfdac30b9f7ea962",
   "ai_model": "groq-llama-3.3-70b",
