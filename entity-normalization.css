@@ -1,0 +1,195 @@
+/* Entity Normalization Visual Indicators */
+
+/* Grouped entities - bold with colored background */
+.entity-pill.grouped {
+    font-weight: 600;
+    background: linear-gradient(135deg, #1a3a1a 0%, #2a4a2a 100%);
+    border: 1px solid #4CAF50;
+    position: relative;
+    padding-left: 24px;
+}
+
+/* Primary/canonical entity indicator */
+.entity-pill.grouped.primary::before {
+    content: '⭐';
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+}
+
+/* Group size badge */
+.entity-pill.grouped::after {
+    content: attr(data-group-size);
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #4CAF50;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 10px;
+    min-width: 18px;
+    text-align: center;
+}
+
+/* Ungrouped entities - regular font, dashed border */
+.entity-pill.ungrouped {
+    font-weight: normal;
+    background: #2a2a2a;
+    border: 1px dashed #666;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.entity-pill.ungrouped:hover {
+    border-color: #888;
+    background: #3a3a3a;
+}
+
+/* Add to group button on hover */
+.entity-pill.ungrouped:hover::after {
+    content: '+';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #666;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Group indicator in lists */
+.intelligence-list .entity-item {
+    display: inline-flex;
+    align-items: center;
+    margin: 4px;
+}
+
+.intelligence-list .entity-item.grouped {
+    font-weight: 600;
+}
+
+.intelligence-list .entity-item.grouped .group-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #4CAF50;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+
+/* Tooltip for group info */
+.entity-pill[data-group-name]::before {
+    content: attr(data-group-name);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    margin-bottom: 4px;
+}
+
+.entity-pill[data-group-name]:hover::before {
+    opacity: 1;
+}
+
+/* Group management modal trigger */
+.group-action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: #333;
+    border: 1px solid #555;
+    border-radius: 50%;
+    color: #888;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-left: 8px;
+}
+
+.group-action-button:hover {
+    background: #444;
+    border-color: #4CAF50;
+    color: #4CAF50;
+}
+
+/* In-context grouping UI */
+.inline-group-popup {
+    position: absolute;
+    background: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    z-index: 1000;
+    min-width: 250px;
+}
+
+.inline-group-popup h4 {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.inline-group-popup .group-suggestions {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.inline-group-popup .suggestion-item {
+    padding: 8px;
+    margin: 4px 0;
+    background: #0f0f0f;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.inline-group-popup .suggestion-item:hover {
+    border-color: #4CAF50;
+    background: #1a2a1a;
+}
+
+.inline-group-popup .suggestion-item .group-name {
+    font-weight: 600;
+    color: #4CAF50;
+}
+
+.inline-group-popup .suggestion-item .group-members {
+    font-size: 12px;
+    color: #888;
+    margin-top: 2px;
+}
+
+/* Visual feedback for grouping actions */
+@keyframes groupSuccess {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); background: #4CAF50; }
+    100% { transform: scale(1); }
+}
+
+.entity-pill.group-success {
+    animation: groupSuccess 0.5s ease;
+}
