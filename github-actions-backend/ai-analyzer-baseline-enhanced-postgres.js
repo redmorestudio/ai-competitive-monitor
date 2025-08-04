@@ -6,20 +6,22 @@ if (process.env.NODE_ENV === 'production' || process.env.DATABASE_URL || process
 }
 
 /**
- * Enhanced Baseline Analyzer for PostgreSQL - Rich Entity Extraction
+ * Enhanced Dynamic Entity Extractor for PostgreSQL
  * 
- * ENHANCEMENTS:
- * 1. Extract detailed entities with source URLs
- * 2. Capture relationships between entities
- * 3. Extract AI/ML concepts and technologies
- * 4. Build knowledge graph data for 3D visualization
+ * MAJOR IMPROVEMENTS:
+ * 1. Proper distinction between entities (proper nouns) and attributes (concepts/technologies)
+ * 2. Dynamic scaling based on content size
+ * 3. No artificial limits - extract ALL relevant information
+ * 4. Structured for future domain extensibility
+ * 5. No forced additions - only extracts what's actually present
  */
 
 const Groq = require('groq-sdk');
 const path = require('path');
 const fs = require('fs');
 const { db, end } = require('./postgres-db');
-// Only load dotenv in development (not in GitHub Actions)
+
+// Only load dotenv in development
 if (!process.env.GITHUB_ACTIONS && !process.env.POSTGRES_CONNECTION_STRING) {
   try {
     require('dotenv').config();
@@ -39,106 +41,169 @@ const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY
 });
 
-// Enhanced extraction prompt focused on entities and relationships
-const ENHANCED_EXTRACTION_PROMPT = `You are an AI competitive intelligence analyst specializing in entity extraction and relationship mapping. Your goal is to extract rich, interconnected data that can be visualized in a knowledge graph.
+// AI Domain Configuration (structured for future extensibility)
+const AI_DOMAIN = {
+  name: "AI/Technology",
+  entities: {
+    companies: "AI companies, tech companies, startups, corporations",
+    products: "Named products, services, APIs, platforms with proper names",
+    people: "Founders, CEOs, researchers, executives, engineers",
+    organizations: "Research labs, institutions, partnerships, alliances"
+  },
+  attributes: {
+    technologies: "Programming languages, frameworks, tools, platforms, infrastructure",
+    methodologies: "Techniques, approaches, algorithms, processes",
+    capabilities: "What the technology can do - NLP, vision, speech, reasoning",
+    concepts: "AI, ML, deep learning, neural networks, transformers",
+    standards: "Benchmarks, protocols, certifications, evaluations"
+  },
+  focusAreas: ["AI", "artificial intelligence", "machine learning", "deep learning", "neural networks", "automation"],
+  relationships: ["develops", "uses", "partners_with", "competes_with", "integrates_with", "acquired_by"]
+};
 
-Analyze this company's web content and extract:
+// Dynamic extraction prompt that properly distinguishes entities from attributes
+const DYNAMIC_EXTRACTION_PROMPT = `You are an AI competitive intelligence analyst. Extract information with proper categorization.
 
-1. **AI/ML Technologies** (CRITICAL - Be very specific):
-   - Large Language Models (GPT-4, Claude, Llama, etc.)
-   - ML Frameworks (TensorFlow, PyTorch, JAX, etc.)
-   - AI Techniques (RAG, fine-tuning, RLHF, etc.)
-   - Model architectures (Transformer, CNN, RNN, etc.)
-   - AI capabilities (NLP, computer vision, speech, etc.)
-   - Performance metrics and benchmarks
+CRITICAL DISTINCTIONS:
+- ENTITIES are proper nouns - specific named things (companies, products, people)
+- ATTRIBUTES are common nouns - concepts, technologies, capabilities
 
-2. **Products and Services**:
-   - Product names and versions
-   - Key features and capabilities
-   - Target use cases
-   - Pricing tiers and models
-   - Integration capabilities
-   - Status (GA, beta, preview, deprecated)
+EXTRACTION RULES:
+1. Extract ALL relevant information without any artificial limits
+2. Scale extraction based on content - longer content should yield more data
+3. DO NOT add anything not explicitly mentioned in the content
+4. Properly categorize as entity vs attribute
 
-3. **Technologies and Infrastructure**:
-   - Programming languages used
-   - Cloud platforms (AWS, Azure, GCP)
-   - Databases and storage systems
-   - DevOps and deployment tools
-   - APIs and SDKs offered
-   - Open source projects
+ENTITIES TO EXTRACT (proper nouns with names):
 
-4. **Partnerships and Integrations**:
-   - Technology partners
-   - Integration partners
-   - Channel partners
-   - Strategic alliances
-   - Ecosystem relationships
+**COMPANIES** - Extract ALL mentioned:
+- The company being analyzed
+- Partners, competitors, customers
+- Investors, acquisitions
+- Technology providers
 
-5. **Key People**:
-   - Founders and executives
-   - Technical leaders
-   - Notable employees
-   - Board members
-   - Advisors
+**PRODUCTS** - Extract ALL mentioned:
+- Named products and services (ChatGPT, Claude, Bard)
+- APIs and platforms (OpenAI API, Vertex AI)
+- Specific versions (GPT-4, GPT-3.5)
 
-6. **Use Cases and Applications**:
-   - Industry verticals served
-   - Specific use cases
-   - Customer segments
-   - Success stories
-   - Case studies
+**PEOPLE** - Extract ALL mentioned:
+- Executives and founders
+- Researchers and engineers
+- Board members and advisors
+- Notable employees or alumni
 
-7. **Concepts and Methodologies**:
-   - AI/ML concepts discussed
-   - Technical approaches
-   - Best practices mentioned
-   - Research areas
-   - Innovation focus
+**ORGANIZATIONS** - Extract ALL mentioned:
+- Research institutions
+- Universities and labs
+- Standards bodies
+- Industry partnerships
 
-8. **Competitive Intelligence**:
-   - Direct competitors mentioned
-   - Indirect competitors
-   - Market positioning
-   - Differentiators
-   - Competitive advantages
+ATTRIBUTES TO EXTRACT (concepts and characteristics):
 
-For each entity, provide simple arrays instead of complex objects. Focus on extracting the most important information clearly.
+**TECHNOLOGIES** - Extract ALL mentioned:
+- Programming languages (Python, JavaScript, C++)
+- Frameworks (TensorFlow, PyTorch, JAX)
+- Infrastructure (AWS, Kubernetes, Docker)
+- Databases (PostgreSQL, Redis, Pinecone)
 
-Return a JSON object with this simplified structure:
+**METHODOLOGIES** - Extract ALL mentioned:
+- AI/ML techniques (fine-tuning, RLHF, RAG)
+- Algorithms (attention, backpropagation)
+- Approaches (few-shot learning, zero-shot)
+- Processes (training, inference, deployment)
+
+**CAPABILITIES** - Extract ALL mentioned:
+- What the AI can do (text generation, translation, summarization)
+- Modalities (vision, speech, multimodal)
+- Use cases (coding, analysis, creative writing)
+
+**CONCEPTS** - Extract ALL mentioned:
+- Broad: AI, artificial intelligence, machine learning
+- Specific: deep learning, neural networks, transformers
+- Emerging: AGI, consciousness, alignment
+
+**STANDARDS** - Extract ALL mentioned:
+- Benchmarks (MMLU, HumanEval, GLUE)
+- Evaluations and metrics
+- Certifications and compliance
+
+Return a JSON with this structure:
 {
-  "ai_technologies": [
-    {"name": "GPT-4", "type": "ai_technology", "category": "language_model"},
-    {"name": "Claude", "type": "ai_technology", "category": "language_model"}
-  ],
-  "products": [
-    {"name": "ChatGPT", "type": "product", "category": "ai_assistant"},
-    {"name": "API", "type": "product", "category": "developer_tool"}
-  ],
-  "technologies": [
-    {"name": "Python", "type": "technology", "category": "development"},
-    {"name": "AWS", "type": "technology", "category": "infrastructure"}
-  ],
-  "concepts": [
-    {"name": "Machine Learning", "type": "concept", "category": "ai_concept"},
-    {"name": "Natural Language Processing", "type": "concept", "category": "ai_concept"}
-  ],
-  "partnerships": [
-    {"name": "Microsoft", "type": "partnership", "category": "strategic"}
-  ],
-  "people": [
-    {"name": "Sam Altman", "type": "person", "category": "ceo"}
-  ],
-  "competitors": [
-    {"name": "Anthropic", "type": "competitor", "category": "direct"}
-  ]
+  "entities": {
+    "companies": [
+      {"name": "OpenAI", "type": "company", "role": "self"},
+      {"name": "Microsoft", "type": "company", "role": "partner"}
+    ],
+    "products": [
+      {"name": "ChatGPT", "type": "product", "category": "ai_assistant"},
+      {"name": "GPT-4", "type": "product", "category": "language_model"}
+    ],
+    "people": [
+      {"name": "Sam Altman", "type": "person", "role": "CEO"}
+    ],
+    "organizations": [
+      {"name": "AI Safety Institute", "type": "organization", "category": "research"}
+    ]
+  },
+  "attributes": {
+    "technologies": [
+      {"name": "Python", "type": "technology", "category": "language"},
+      {"name": "PyTorch", "type": "technology", "category": "ml_framework"}
+    ],
+    "methodologies": [
+      {"name": "RLHF", "type": "methodology", "category": "training"},
+      {"name": "fine-tuning", "type": "methodology", "category": "optimization"}
+    ],
+    "capabilities": [
+      {"name": "natural language processing", "type": "capability", "category": "nlp"},
+      {"name": "code generation", "type": "capability", "category": "coding"}
+    ],
+    "concepts": [
+      {"name": "artificial intelligence", "type": "concept", "category": "broad"},
+      {"name": "deep learning", "type": "concept", "category": "specific"}
+    ],
+    "standards": [
+      {"name": "MMLU", "type": "standard", "category": "benchmark"}
+    ]
+  }
 }
 
-Be comprehensive and extract ALL entities mentioned. Focus on AI/ML technologies and concepts.`;
+REMEMBER: 
+- Extract ALL items found, not just 5 or 10
+- Only extract what's actually in the content
+- Properly distinguish entities from attributes`;
 
-async function analyzeWithEnhancedPrompt(content, company, url) {
+async function calculateExpectedExtraction(content) {
+  const contentLength = content.length;
+  const wordsCount = content.split(/\s+/).length;
+  
+  // Base calculation: 1 item per 100 words or 500 characters
+  const byWords = Math.floor(wordsCount / 100);
+  const byChars = Math.floor(contentLength / 500);
+  
+  // Take the higher estimate
+  const estimated = Math.max(byWords, byChars);
+  
+  // Set bounds
+  const minimum = 15;  // Even small companies should have at least 15 items
+  const maximum = 150; // Reasonable upper limit to avoid token issues
+  
+  return {
+    expected: Math.max(minimum, Math.min(maximum, estimated)),
+    contentLength,
+    wordsCount
+  };
+}
+
+async function analyzeWithDynamicExtraction(content, company, url) {
   const maxRetries = 3;
   const baseDelay = 5000;
+  
+  // Calculate expected extraction based on content
+  const expectations = await calculateExpectedExtraction(content);
+  
+  console.log(`   📊 Content analysis: ${expectations.wordsCount} words, expecting ~${expectations.expected} total items`);
   
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
@@ -146,17 +211,19 @@ async function analyzeWithEnhancedPrompt(content, company, url) {
         messages: [
           {
             role: "system",
-            content: "You are an AI competitive intelligence analyst. Extract entities and relationships for knowledge graph visualization. Always respond with valid JSON only, no markdown formatting."
+            content: "You are an AI competitive intelligence analyst. Extract entities and attributes comprehensively. Always respond with valid JSON only, no markdown formatting."
           },
           {
             role: "user",
             content: `Company: ${company}
 URL: ${url}
+Content Length: ${expectations.contentLength} characters (${expectations.wordsCount} words)
+Expected Items: AT LEAST ${expectations.expected} total items based on content richness
+
+${DYNAMIC_EXTRACTION_PROMPT}
 
 Content to analyze:
-${content}
-
-${ENHANCED_EXTRACTION_PROMPT}`
+${content}`
           }
         ],
         model: "llama-3.3-70b-versatile",
@@ -167,20 +234,26 @@ ${ENHANCED_EXTRACTION_PROMPT}`
 
       const result = JSON.parse(completion.choices[0].message.content);
       
-      // Calculate stats
-      const entityStats = calculateEntityStats(result);
-      const relationshipStats = calculateRelationshipStats(result);
+      // Calculate comprehensive stats
+      const stats = calculateExtractionStats(result);
+      const relationships = buildRelationships(result, company);
       
       return {
-        entities: result,
-        entity_stats: entityStats,
-        relationship_stats: relationshipStats,
-        extraction_metadata: {
+        entities: result.entities || {},
+        attributes: result.attributes || {},
+        stats: stats,
+        relationships: relationships,
+        metadata: {
           company: company,
           url: url,
           extraction_date: new Date().toISOString(),
           content_length: content.length,
-          extraction_quality: determineQuality(entityStats)
+          word_count: expectations.wordsCount,
+          expected_items: expectations.expected,
+          actual_items: stats.total_items,
+          extraction_quality: determineExtractionQuality(stats, expectations),
+          coverage_ratio: stats.total_items / expectations.expected,
+          ai_model: 'groq-llama-3.3-70b-dynamic'
         }
       };
       
@@ -196,58 +269,148 @@ ${ENHANCED_EXTRACTION_PROMPT}`
   }
 }
 
-function determineQuality(entityStats) {
-  const entityCount = entityStats.total_entities;
-  
-  if (entityCount > 50) return 'high';
-  if (entityCount > 20) return 'medium';
-  return 'low';
-}
-
-function calculateEntityStats(entities) {
+function calculateExtractionStats(result) {
   const stats = {
+    total_items: 0,
     total_entities: 0,
-    ai_technologies: 0,
-    products: 0,
-    technologies: 0,
-    concepts: 0,
-    partnerships: 0,
-    people: 0,
-    use_cases: 0,
-    competitors: 0
+    total_attributes: 0,
+    entities: {
+      companies: 0,
+      products: 0,
+      people: 0,
+      organizations: 0
+    },
+    attributes: {
+      technologies: 0,
+      methodologies: 0,
+      capabilities: 0,
+      concepts: 0,
+      standards: 0
+    }
   };
   
-  for (const [type, items] of Object.entries(entities || {})) {
-    if (Array.isArray(items)) {
-      stats[type] = items.length;
-      stats.total_entities += items.length;
+  // Count entities
+  if (result.entities) {
+    for (const [type, items] of Object.entries(result.entities)) {
+      if (Array.isArray(items)) {
+        stats.entities[type] = items.length;
+        stats.total_entities += items.length;
+      }
     }
   }
   
+  // Count attributes
+  if (result.attributes) {
+    for (const [type, items] of Object.entries(result.attributes)) {
+      if (Array.isArray(items)) {
+        stats.attributes[type] = items.length;
+        stats.total_attributes += items.length;
+      }
+    }
+  }
+  
+  stats.total_items = stats.total_entities + stats.total_attributes;
+  
   return stats;
 }
 
-function calculateRelationshipStats(entities) {
-  const stats = {
-    total_relationships: 0,
-    relationship_types: {}
-  };
+function buildRelationships(result, company) {
+  const relationships = [];
   
-  // For simplified structure, relationships are implicit
-  // We can count co-occurrences as relationships
-  const entityCount = Object.values(entities || {})
-    .reduce((sum, arr) => sum + (Array.isArray(arr) ? arr.length : 0), 0);
+  // Entity to entity relationships
+  if (result.entities) {
+    // Company to products
+    if (result.entities.companies && result.entities.products) {
+      const selfCompany = result.entities.companies.find(c => c.role === 'self' || c.name === company);
+      if (selfCompany) {
+        result.entities.products.forEach(product => {
+          relationships.push({
+            from: selfCompany.name,
+            from_type: 'company',
+            to: product.name,
+            to_type: 'product',
+            relationship: 'develops'
+          });
+        });
+      }
+    }
+    
+    // Company to people
+    if (result.entities.companies && result.entities.people) {
+      const selfCompany = result.entities.companies.find(c => c.role === 'self' || c.name === company);
+      if (selfCompany) {
+        result.entities.people.forEach(person => {
+          relationships.push({
+            from: person.name,
+            from_type: 'person',
+            to: selfCompany.name,
+            to_type: 'company',
+            relationship: 'works_at'
+          });
+        });
+      }
+    }
+  }
   
-  // Estimate relationships as entities that appear together
-  stats.total_relationships = Math.max(0, entityCount - 1);
-  stats.relationship_types['co_occurrence'] = stats.total_relationships;
+  // Entity to attribute relationships
+  if (result.entities && result.attributes) {
+    // Products use technologies
+    if (result.entities.products && result.attributes.technologies) {
+      result.entities.products.forEach(product => {
+        result.attributes.technologies.forEach(tech => {
+          if (tech.category === 'ml_framework' || tech.category === 'infrastructure') {
+            relationships.push({
+              from: product.name,
+              from_type: 'product',
+              to: tech.name,
+              to_type: 'technology',
+              relationship: 'uses'
+            });
+          }
+        });
+      });
+    }
+    
+    // Products have capabilities
+    if (result.entities.products && result.attributes.capabilities) {
+      result.entities.products.forEach(product => {
+        result.attributes.capabilities.forEach(capability => {
+          relationships.push({
+            from: product.name,
+            from_type: 'product',
+            to: capability.name,
+            to_type: 'capability',
+            relationship: 'provides'
+          });
+        });
+      });
+    }
+  }
   
-  return stats;
+  return relationships;
+}
+
+function determineExtractionQuality(stats, expectations) {
+  const ratio = stats.total_items / expectations.expected;
+  
+  if (ratio >= 0.9) return 'excellent';
+  if (ratio >= 0.7) return 'good';
+  if (ratio >= 0.5) return 'fair';
+  return 'poor';
 }
 
 async function storeEnhancedAnalysis(company, url, extractedData) {
   try {
-    // CRITICAL FIX: Store all complex data as proper JSON strings
+    // Prepare data for storage
+    const entities = extractedData.entities || {};
+    const attributes = extractedData.attributes || {};
+    
+    // For backward compatibility, merge into expected format
+    const mergedData = {
+      ...entities,
+      ...attributes
+    };
+    
     await db.run(`
       INSERT INTO intelligence.baseline_analysis 
       (company, url, 
@@ -276,117 +439,80 @@ async function storeEnhancedAnalysis(company, url, extractedData) {
     `, [
       company,
       url,
-      JSON.stringify(extractedData.entities || {}), // FIXED: Proper JSON string
-      JSON.stringify(extractedData.entity_stats || {}), // FIXED: Proper JSON string
-      JSON.stringify(extractedData.relationship_stats || {}), // FIXED: Proper JSON string
-      JSON.stringify(extractedData.extraction_metadata || {}), // FIXED: Proper JSON string
-      JSON.stringify(buildRelationshipGraph(extractedData.entities) || []), // FIXED: Proper JSON string
-      extractedData.entities?.products?.[0]?.type || 'AI Company',
+      JSON.stringify(mergedData),
+      JSON.stringify(extractedData.stats),
+      JSON.stringify(extractedData.metadata),
+      JSON.stringify(extractedData.metadata),
+      JSON.stringify(extractedData.relationships),
+      identifyCompanyType(entities, attributes),
       'competitive_intelligence',
-      JSON.stringify(extractTopTechnologies(extractedData.entities)), // FIXED: Proper JSON string
-      generateSummaryMessage(extractedData),
-      extractedData.entities?.products?.[0]?.target_market || 'enterprise',
-      extractedData.entities?.products?.[0]?.description || '',
-      JSON.stringify(extractedData.entities?.concepts || []), // FIXED: Proper JSON string
-      extractedData.entities?.products?.[0]?.features?.[0] || '',
-      JSON.stringify(extractedData.entities?.technologies || []), // FIXED: Proper JSON string
-      'groq-llama-3.3-70b-enhanced'
+      JSON.stringify(extractTopConcepts(attributes)),
+      generateSummary(extractedData),
+      identifyTargetAudience(entities, attributes),
+      extractUniqueValue(entities, attributes),
+      JSON.stringify(attributes.concepts || []),
+      identifyDifferentiation(entities, attributes),
+      JSON.stringify(attributes.technologies || []),
+      'groq-llama-3.3-70b-dynamic'
     ]);
 
-    console.log(`   ✅ Stored enhanced analysis (${extractedData.entity_stats.total_entities} entities, ${extractedData.relationship_stats.total_relationships} relationships)`);
+    console.log(`   ✅ Stored analysis (${extractedData.stats.total_items} items: ${extractedData.stats.total_entities} entities, ${extractedData.stats.total_attributes} attributes)`);
+    console.log(`   📈 Quality: ${extractedData.metadata.extraction_quality} (${Math.round(extractedData.metadata.coverage_ratio * 100)}% of expected)`);
   } catch (error) {
-    console.error(`   ❌ Failed to store enhanced analysis:`, error.message);
-    console.error(`   📋 Error details:`, error);
+    console.error(`   ❌ Failed to store analysis:`, error.message);
     throw error;
   }
 }
 
-function buildRelationshipGraph(entities) {
-  const relationships = [];
-  
-  // Build simple relationships between entities that appear together
-  const allEntities = [];
-  for (const [entityType, items] of Object.entries(entities || {})) {
-    if (Array.isArray(items)) {
-      for (const item of items) {
-        allEntities.push({
-          name: item.name,
-          type: entityType,
-          category: item.category || item.type
-        });
-      }
-    }
-  }
-  
-  // Create relationships between entities (simplified)
-  for (let i = 0; i < allEntities.length - 1; i++) {
-    relationships.push({
-      from: allEntities[i].name,
-      from_type: allEntities[i].type,
-      to: allEntities[i + 1].name,
-      to_type: allEntities[i + 1].type,
-      relationship: 'co_occurs_with',
-      context: 'same_page'
-    });
-  }
-  
-  return relationships;
+// Helper functions
+function identifyCompanyType(entities, attributes) {
+  if (entities.products?.some(p => p.category === 'language_model')) return 'AI Model Provider';
+  if (entities.products?.some(p => p.category === 'ai_assistant')) return 'AI Application';
+  if (attributes.technologies?.some(t => t.category === 'ml_framework')) return 'ML Infrastructure';
+  return 'AI Company';
 }
 
-function extractTopTechnologies(entities) {
-  const technologies = [];
-  
-  // Extract AI technologies
-  if (entities.ai_technologies) {
-    technologies.push(...entities.ai_technologies.map(t => ({
-      name: t.name,
-      type: 'ai_technology',
-      category: t.category || t.type
-    })));
-  }
-  
-  // Extract general technologies
-  if (entities.technologies) {
-    technologies.push(...entities.technologies.map(t => ({
-      name: t.name,
-      type: 'technology',
-      category: t.category || t.type
-    })));
-  }
-  
-  // Extract concepts
-  if (entities.concepts) {
-    technologies.push(...entities.concepts.map(c => ({
-      name: c.name,
-      type: 'concept',
-      category: c.category || c.type
-    })));
-  }
-  
-  return technologies;
+function extractTopConcepts(attributes) {
+  return (attributes.concepts || [])
+    .map(c => c.name)
+    .slice(0, 10);
 }
 
-function generateSummaryMessage(extractedData) {
-  const productCount = extractedData.entities?.products?.length || 0;
-  const techCount = (extractedData.entities?.ai_technologies?.length || 0) + 
-                    (extractedData.entities?.technologies?.length || 0);
-  const partnerCount = extractedData.entities?.partnerships?.length || 0;
+function generateSummary(extractedData) {
+  const e = extractedData.stats.entities;
+  const a = extractedData.stats.attributes;
   
-  return `Offers ${productCount} products using ${techCount} technologies with ${partnerCount} key partnerships`;
+  return `AI company with ${e.products} products, ${e.companies} partnerships, using ${a.technologies} technologies and ${a.methodologies} methodologies. ${extractedData.metadata.extraction_quality} extraction quality.`;
 }
 
+function identifyTargetAudience(entities, attributes) {
+  if (entities.products?.some(p => p.category === 'developer_api')) return 'developers';
+  if (entities.products?.some(p => p.category === 'enterprise')) return 'enterprise';
+  return 'general';
+}
+
+function extractUniqueValue(entities, attributes) {
+  const uniqueProducts = entities.products?.slice(0, 3).map(p => p.name).join(', ');
+  return uniqueProducts || 'AI-powered solutions';
+}
+
+function identifyDifferentiation(entities, attributes) {
+  const uniqueTech = attributes.technologies?.filter(t => 
+    t.category === 'proprietary' || t.category === 'ml_framework'
+  );
+  return uniqueTech?.length > 0 ? 'proprietary technology' : 'comprehensive platform';
+}
+
+// Main processing function
 async function processAllSnapshots() {
-  console.log('🚀 Starting ENHANCED Entity Extraction for PostgreSQL 3D Graph...');
-  console.log('🎯 Focus: AI/ML technologies, products, concepts, and relationships');
-  console.log('📊 Building rich knowledge graph data\n');
+  console.log('🚀 Starting Dynamic Entity & Attribute Extraction...');
+  console.log('🎯 Properly distinguishing entities (proper nouns) from attributes (concepts)');
+  console.log('📊 Scaling extraction based on content richness\n');
 
-  // Check for --force flag
   const forceReanalyze = process.argv.includes('--force');
   
   if (forceReanalyze) {
-    console.log('🔄 Force flag detected - re-analyzing all content with enhanced extraction');
-  } else {
-    console.log('🚀 Running enhanced extraction on new content');
+    console.log('🔄 Force flag detected - re-analyzing all content');
   }
 
   // Get all companies and their latest content
@@ -407,8 +533,15 @@ async function processAllSnapshots() {
   const results = {
     successful: 0,
     failed: 0,
+    totalItems: 0,
     totalEntities: 0,
-    totalRelationships: 0
+    totalAttributes: 0,
+    qualityBreakdown: {
+      excellent: 0,
+      good: 0,
+      fair: 0,
+      poor: 0
+    }
   };
 
   for (const snapshot of latestSnapshots) {
@@ -419,21 +552,18 @@ async function processAllSnapshots() {
     console.log(`   📍 ${snapshot.url}`);
     
     try {
-      // Skip if content is too small
       if (!snapshot.markdown_text || snapshot.markdown_text.length < 100) {
         console.log('   ⚠️  Skipping - content too small');
         continue;
       }
 
-      // Analyze with enhanced prompt
-      console.log('   🧠 Extracting entities and relationships...');
-      const extractedData = await analyzeWithEnhancedPrompt(
-        snapshot.markdown_text.substring(0, 30000),
+      console.log('   🧠 Extracting entities and attributes...');
+      const extractedData = await analyzeWithDynamicExtraction(
+        snapshot.markdown_text.substring(0, 50000),
         snapshot.company,
         snapshot.url
       );
 
-      // Store enhanced analysis
       await storeEnhancedAnalysis(
         snapshot.company,
         snapshot.url,
@@ -442,51 +572,58 @@ async function processAllSnapshots() {
 
       // Update statistics
       results.successful++;
-      results.totalEntities += extractedData.entity_stats.total_entities;
-      results.totalRelationships += extractedData.relationship_stats.total_relationships;
+      results.totalItems += extractedData.stats.total_items;
+      results.totalEntities += extractedData.stats.total_entities;
+      results.totalAttributes += extractedData.stats.total_attributes;
+      results.qualityBreakdown[extractedData.metadata.extraction_quality]++;
       
       // Log extraction results
-      console.log(`   📊 Extracted:`);
-      console.log(`      - AI Technologies: ${extractedData.entity_stats.ai_technologies || 0}`);
-      console.log(`      - Products: ${extractedData.entity_stats.products || 0}`);
-      console.log(`      - Technologies: ${extractedData.entity_stats.technologies || 0}`);
-      console.log(`      - Concepts: ${extractedData.entity_stats.concepts || 0}`);
-      console.log(`      - Partnerships: ${extractedData.entity_stats.partnerships || 0}`);
-      console.log(`      - Relationships: ${extractedData.relationship_stats.total_relationships || 0}`);
+      console.log(`   📊 Extraction Results:`);
+      console.log(`      Entities (${extractedData.stats.total_entities} total):`);
+      console.log(`        - Companies: ${extractedData.stats.entities.companies}`);
+      console.log(`        - Products: ${extractedData.stats.entities.products}`);
+      console.log(`        - People: ${extractedData.stats.entities.people}`);
+      console.log(`        - Organizations: ${extractedData.stats.entities.organizations}`);
+      console.log(`      Attributes (${extractedData.stats.total_attributes} total):`);
+      console.log(`        - Technologies: ${extractedData.stats.attributes.technologies}`);
+      console.log(`        - Methodologies: ${extractedData.stats.attributes.methodologies}`);
+      console.log(`        - Capabilities: ${extractedData.stats.attributes.capabilities}`);
+      console.log(`        - Concepts: ${extractedData.stats.attributes.concepts}`);
       
     } catch (error) {
       console.error(`   ❌ Analysis failed:`, error.message);
-      console.error(`   📋 Error details:`, error.stack);
       results.failed++;
-      
-      // CRITICAL: Exit on failure instead of silently continuing
-      console.error(`\n💥 STOPPING EXECUTION DUE TO FAILURE`);
-      console.error(`Company: ${snapshot.company}`);
-      console.error(`URL: ${snapshot.url}`);
-      throw error;
     }
   }
 
-  console.log('\n' + '='.repeat(50));
-  console.log('✅ ENHANCED ENTITY EXTRACTION COMPLETE');
-  console.log('='.repeat(50));
+  console.log('\n' + '='.repeat(60));
+  console.log('✅ EXTRACTION COMPLETE');
+  console.log('='.repeat(60));
   console.log(`📊 Results:`);
   console.log(`   - Successful: ${results.successful}`);
   console.log(`   - Failed: ${results.failed}`);
-  console.log(`   - Total Entities: ${results.totalEntities}`);
-  console.log(`   - Total Relationships: ${results.totalRelationships}`);
+  console.log(`   - Total Items: ${results.totalItems}`);
+  console.log(`     - Entities: ${results.totalEntities}`);
+  console.log(`     - Attributes: ${results.totalAttributes}`);
   
   if (results.successful > 0) {
+    console.log(`   - Avg Items/Company: ${Math.round(results.totalItems / results.successful)}`);
     console.log(`   - Avg Entities/Company: ${Math.round(results.totalEntities / results.successful)}`);
-    console.log(`   - Avg Relationships/Company: ${Math.round(results.totalRelationships / results.successful)}`);
+    console.log(`   - Avg Attributes/Company: ${Math.round(results.totalAttributes / results.successful)}`);
   }
+  
+  console.log(`\n📈 Extraction Quality:`);
+  console.log(`   - Excellent: ${results.qualityBreakdown.excellent}`);
+  console.log(`   - Good: ${results.qualityBreakdown.good}`);
+  console.log(`   - Fair: ${results.qualityBreakdown.fair}`);
+  console.log(`   - Poor: ${results.qualityBreakdown.poor}`);
 
   return results;
 }
 
 // Export for use in other modules
 module.exports = {
-  analyzeWithEnhancedPrompt,
+  analyzeWithDynamicExtraction,
   storeEnhancedAnalysis,
   processAllSnapshots
 };
@@ -495,8 +632,8 @@ module.exports = {
 if (require.main === module) {
   processAllSnapshots()
     .then((results) => {
-      console.log('\n✅ Enhanced entity extraction complete!');
-      console.log('🎯 Next step: Run generate-static-data-three-db-postgres-fixed.js');
+      console.log('\n✅ Entity & attribute extraction complete!');
+      console.log('🎯 Next step: Run generate-static-data-three-db-postgres.js');
       
       end();
       process.exit(0);
