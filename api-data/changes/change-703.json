@@ -1,0 +1,56 @@
+{
+  "id": 703,
+  "company": "Luma AI",
+  "page_url": "product",
+  "detected_at": "2025-08-04T00:17:13.579Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Minor content updates and image optimizations",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Minor content updates and image optimizations",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Image URLs and quality adjustments",
+      "Minor text changes and formatting",
+      "No significant feature or product announcements"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact expected from these minor changes.",
+    "market_signals": [],
+    "competitive_implications": "No notable competitive implications.",
+    "strategic_direction": "The updates suggest ongoing maintenance and optimization efforts."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Luma AI focuses on optimizing user experience through minor updates."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue monitoring Luma AI's product and feature updates for more significant announcements."
+    ]
+  },
+  "key_insights": [
+    "Luma AI focuses on optimizing user experience through minor updates."
+  ],
+  "business_impact": "No significant business impact expected from these minor changes.",
+  "competitive_implications": "No notable competitive implications.",
+  "content_hash_before": "9154a065e15a103e1e07c77671a852dd0c98971e7c33e6b12cc0f3b4dad35805",
+  "content_hash_after": "ba90e26d132f0db86229d95d8fb10df77ce5451e45baf2a8bfe1457ec9a3efe4",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

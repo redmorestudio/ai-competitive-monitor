@@ -1,0 +1,52 @@
+{
+  "id": 696,
+  "company": "Replicate",
+  "page_url": "pricing",
+  "detected_at": "2025-08-04T00:21:20.049Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "The keyboard shortcut for the search function has changed from 'ctrl+k' to 'cmd+k'.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The keyboard shortcut for the search function has changed from 'ctrl+k' to 'cmd+k'.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated keyboard shortcut for search from 'ctrl+k' to 'cmd+k'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change is unlikely to have a significant impact on the company's business, as it is a minor update to the search function's keyboard shortcut.",
+    "market_signals": [],
+    "competitive_implications": "The change does not appear to be a competitive move, as it is a minor update that does not affect the company's overall strategy or market position.",
+    "strategic_direction": "The change does not indicate a shift in the company's strategic direction, as it is a minor update that is unlikely to have a significant impact on the company's overall strategy or goals."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The change is minor and only affects the keyboard shortcut for the search function."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [
+    "The change is minor and only affects the keyboard shortcut for the search function."
+  ],
+  "business_impact": "The change is unlikely to have a significant impact on the company's business, as it is a minor update to the search function's keyboard shortcut.",
+  "competitive_implications": "The change does not appear to be a competitive move, as it is a minor update that does not affect the company's overall strategy or market position.",
+  "content_hash_before": "947787b48a49239b9231c6ec49933049a569b4e34df439fe517dc46b71320909",
+  "content_hash_after": "4b7095f49da3e7a9f0abb9e6293eca47c7036815e7a92f0b92835cfdb7d3fa1c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

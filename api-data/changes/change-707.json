@@ -1,0 +1,84 @@
+{
+  "id": 707,
+  "company": "HeyGen",
+  "page_url": "pricing",
+  "detected_at": "2025-08-04T00:15:51.588Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Introduction of new pricing plans and features for HeyGen's video creation platform",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of new pricing plans and features for HeyGen's video creation platform",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New pricing plans: Free, Creator, Team, and Enterprise",
+      "Introduction of new features such as AI video generator, AI voice over, and custom video avatars",
+      "Changes to video processing speed, export resolution, and duration limits for each plan"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of new pricing plans and features could attract more customers and increase revenue for HeyGen.",
+    "market_signals": [
+      "Increased competition in the video creation market",
+      "Growing demand for AI-powered video creation tools"
+    ],
+    "competitive_implications": "HeyGen's updated platform could pose a threat to competitors in the video creation market, particularly those that do not offer similar AI-powered features.",
+    "strategic_direction": "HeyGen's strategic direction appears to be focused on expanding its platform's capabilities and appealing to a wider range of customers, from individual creators to large enterprises."
+  },
+  "entities": {
+    "products": [
+      "HeyGen's video creation platform"
+    ],
+    "features": [
+      "AI video generator",
+      "AI voice over",
+      "Custom video avatars"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [
+      "Free plan: $0/mo",
+      "Creator plan: $29/mo",
+      "Team plan: $39/seat/mo",
+      "Enterprise plan: custom pricing"
+    ],
+    "markets": [
+      "Video creation",
+      "Marketing"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "HeyGen's new pricing plans and features could disrupt the video creation market",
+      "The platform's AI-powered features could be a key differentiator for HeyGen"
+    ],
+    "opportunities": [
+      "Partnerships with other companies to offer bundled services",
+      "Expansion into new markets, such as education or corporate training"
+    ],
+    "threats": [
+      "Increased competition from other video creation platforms",
+      "Technical issues or limitations with the AI-powered features"
+    ],
+    "recommended_actions": [
+      "Monitor HeyGen's platform and pricing updates",
+      "Assess the potential impact on the competitive landscape and market positioning"
+    ]
+  },
+  "key_insights": [
+    "HeyGen's new pricing plans and features could disrupt the video creation market",
+    "The platform's AI-powered features could be a key differentiator for HeyGen"
+  ],
+  "business_impact": "The introduction of new pricing plans and features could attract more customers and increase revenue for HeyGen.",
+  "competitive_implications": "HeyGen's updated platform could pose a threat to competitors in the video creation market, particularly those that do not offer similar AI-powered features.",
+  "content_hash_before": "68f3c36a7911fd2fe9382ac239f90acd20de245c1ceefe704ea09946d292e8b3",
+  "content_hash_after": "2411d0a926c11f15eacb04d30bc575ac6149b049e4f3222be5b4cda30e5a6ee7",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

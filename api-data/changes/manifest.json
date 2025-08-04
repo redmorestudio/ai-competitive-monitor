@@ -1,9 +1,29 @@
 {
   "version": "1.0",
-  "generated_at": "2025-08-03T23:05:05.213Z",
+  "generated_at": "2025-08-04T01:35:05.652Z",
   "source": "postgresql",
-  "total_changes": 199,
+  "total_changes": 228,
   "files": [
+    {
+      "filename": "change-699.json",
+      "change_id": 699,
+      "api_path": "/api-data/changes/change-699.json",
+      "company": "Neeva",
+      "detected_at": "2025-08-04T00:18:55.450Z",
+      "interest_level": 10,
+      "change_type": "modified",
+      "summary": "The entire content of the webpage changed from Neeva's homepage to AliExpress's homepage"
+    },
+    {
+      "filename": "change-715.json",
+      "change_id": 715,
+      "api_path": "/api-data/changes/change-715.json",
+      "company": "DALL-E",
+      "detected_at": "2025-08-03T22:59:25.831Z",
+      "interest_level": 9,
+      "change_type": "modified",
+      "summary": "The content changed from a blocked page to a pricing page for ChatGPT by OpenAI, revealing various p..."
+    },
     {
       "filename": "change-525.json",
       "change_id": 525,
@@ -985,6 +1005,36 @@
       "summary": "Change detected"
     },
     {
+      "filename": "change-700.json",
+      "change_id": 700,
+      "api_path": "/api-data/changes/change-700.json",
+      "company": "Mistral AI",
+      "detected_at": "2025-08-04T00:18:21.198Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Pricing plans and features have been updated, with changes to the Free, Pro, and Team plans, as well..."
+    },
+    {
+      "filename": "change-707.json",
+      "change_id": 707,
+      "api_path": "/api-data/changes/change-707.json",
+      "company": "HeyGen",
+      "detected_at": "2025-08-04T00:15:51.588Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Introduction of new pricing plans and features for HeyGen's video creation platform"
+    },
+    {
+      "filename": "change-721.json",
+      "change_id": 721,
+      "api_path": "/api-data/changes/change-721.json",
+      "company": "Cerebras",
+      "detected_at": "2025-08-03T22:57:46.318Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New blog posts were added, specifically 'From Zero to Sudoku Hero: An RL Adventure' and 'Introducing..."
+    },
+    {
       "filename": "change-526.json",
       "change_id": 526,
       "api_path": "/api-data/changes/change-526.json",
@@ -1695,6 +1745,36 @@
       "summary": "Reorganization and renaming of certain sections and links within the GitHub Copilot documentation"
     },
     {
+      "filename": "change-697.json",
+      "change_id": 697,
+      "api_path": "/api-data/changes/change-697.json",
+      "company": "NVIDIA",
+      "detected_at": "2025-08-04T00:19:14.830Z",
+      "interest_level": 6,
+      "change_type": "modified",
+      "summary": "New tutorial added: '7 Drop-In Replacements to Instantly Speed Up Your Python Data Science Workflows..."
+    },
+    {
+      "filename": "change-706.json",
+      "change_id": 706,
+      "api_path": "/api-data/changes/change-706.json",
+      "company": "Hugging Face",
+      "detected_at": "2025-08-04T00:16:10.871Z",
+      "interest_level": 6,
+      "change_type": "modified",
+      "summary": "Article updates, new articles added, and minor changes in article views and comments"
+    },
+    {
+      "filename": "change-717.json",
+      "change_id": 717,
+      "api_path": "/api-data/changes/change-717.json",
+      "company": "Codeium",
+      "detected_at": "2025-08-03T22:58:23.079Z",
+      "interest_level": 6,
+      "change_type": "modified",
+      "summary": "Added download options for Windows, updated blog posts, and minor changes to the website's layout an..."
+    },
+    {
       "filename": "change-566.json",
       "change_id": 566,
       "api_path": "/api-data/changes/change-566.json",
@@ -1745,6 +1825,36 @@
       "summary": "Change detected"
     },
     {
+      "filename": "change-713.json",
+      "change_id": 713,
+      "api_path": "/api-data/changes/change-713.json",
+      "company": "Andi",
+      "detected_at": "2025-08-04T00:11:46.863Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "The content on the Andi homepage has been updated with new examples of search queries and minor chan..."
+    },
+    {
+      "filename": "change-716.json",
+      "change_id": 716,
+      "api_path": "/api-data/changes/change-716.json",
+      "company": "Cursor",
+      "detected_at": "2025-08-03T22:59:18.320Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "Download option for Windows added"
+    },
+    {
+      "filename": "change-722.json",
+      "change_id": 722,
+      "api_path": "/api-data/changes/change-722.json",
+      "company": "Andi",
+      "detected_at": "2025-08-03T22:56:39.763Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "The examples of search queries and the text describing the capabilities of Andi have changed."
+    },
+    {
       "filename": "change-456.json",
       "change_id": 456,
       "api_path": "/api-data/changes/change-456.json",
@@ -1753,6 +1863,56 @@
       "interest_level": 5,
       "change_type": "modified",
       "summary": "Addition of a new case study on how Anthropic teams use Claude Code"
+    },
+    {
+      "filename": "change-705.json",
+      "change_id": 705,
+      "api_path": "/api-data/changes/change-705.json",
+      "company": "Hugging Face",
+      "detected_at": "2025-08-04T00:16:13.684Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "Updates to model listings, dataset listings, and minor changes to website text and formatting"
+    },
+    {
+      "filename": "change-711.json",
+      "change_id": 711,
+      "api_path": "/api-data/changes/change-711.json",
+      "company": "Codeium",
+      "detected_at": "2025-08-04T00:12:45.437Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "The download option for the Windsurf Editor changed from Windows to macOS"
+    },
+    {
+      "filename": "change-712.json",
+      "change_id": 712,
+      "api_path": "/api-data/changes/change-712.json",
+      "company": "Anthropic",
+      "detected_at": "2025-08-04T00:12:00.366Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "The download link for Claude has changed from https://claude.ai/redirect/website.v1.04abeae8-1daf-4c..."
+    },
+    {
+      "filename": "change-718.json",
+      "change_id": 718,
+      "api_path": "/api-data/changes/change-718.json",
+      "company": "Codeium",
+      "detected_at": "2025-08-03T22:58:17.732Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "The download option for the Windsurf Editor changed from Windows to macOS"
+    },
+    {
+      "filename": "change-720.json",
+      "change_id": 720,
+      "api_path": "/api-data/changes/change-720.json",
+      "company": "Codeium",
+      "detected_at": "2025-08-03T22:58:05.268Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "Download options for the Windsurf Editor were updated to include a direct link for Linux and removed..."
     },
     {
       "filename": "change-482.json",
@@ -1805,6 +1965,66 @@
       "summary": "Change detected"
     },
     {
+      "filename": "change-695.json",
+      "change_id": 695,
+      "api_path": "/api-data/changes/change-695.json",
+      "company": "Replit",
+      "detected_at": "2025-08-04T00:21:48.717Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "The prompt in the 'Turn your ideas into apps' section changed from 'Make me a data tool for designer..."
+    },
+    {
+      "filename": "change-703.json",
+      "change_id": 703,
+      "api_path": "/api-data/changes/change-703.json",
+      "company": "Luma AI",
+      "detected_at": "2025-08-04T00:17:13.579Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Minor content updates and image optimizations"
+    },
+    {
+      "filename": "change-709.json",
+      "change_id": 709,
+      "api_path": "/api-data/changes/change-709.json",
+      "company": "Cursor",
+      "detected_at": "2025-08-04T00:13:20.559Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Download option for Windows was replaced with Download option for Linux"
+    },
+    {
+      "filename": "change-710.json",
+      "change_id": 710,
+      "api_path": "/api-data/changes/change-710.json",
+      "company": "Cursor",
+      "detected_at": "2025-08-04T00:13:15.080Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "The keyboard shortcut for Agent mode and Terminal has been changed from ⌘ + I to Ctrl + I and ⌘ K to..."
+    },
+    {
+      "filename": "change-714.json",
+      "change_id": 714,
+      "api_path": "/api-data/changes/change-714.json",
+      "company": "Aleph Alpha",
+      "detected_at": "2025-08-04T00:11:06.445Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "The pricing page was not found, indicating a potential removal or update of the pricing information"
+    },
+    {
+      "filename": "change-719.json",
+      "change_id": 719,
+      "api_path": "/api-data/changes/change-719.json",
+      "company": "Codeium",
+      "detected_at": "2025-08-03T22:58:10.592Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "The download option for the Windsurf Editor changed from macOS to Windows"
+    },
+    {
       "filename": "change-454.json",
       "change_id": 454,
       "api_path": "/api-data/changes/change-454.json",
@@ -1833,6 +2053,66 @@
       "interest_level": 3,
       "change_type": "modified",
       "summary": "Change detected"
+    },
+    {
+      "filename": "change-694.json",
+      "change_id": 694,
+      "api_path": "/api-data/changes/change-694.json",
+      "company": "Scale AI",
+      "detected_at": "2025-08-04T00:22:59.262Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "No significant changes were detected in the content structure or major updates to products and servi..."
+    },
+    {
+      "filename": "change-696.json",
+      "change_id": 696,
+      "api_path": "/api-data/changes/change-696.json",
+      "company": "Replicate",
+      "detected_at": "2025-08-04T00:21:20.049Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "The keyboard shortcut for the search function has changed from 'ctrl+k' to 'cmd+k'."
+    },
+    {
+      "filename": "change-698.json",
+      "change_id": 698,
+      "api_path": "/api-data/changes/change-698.json",
+      "company": "NVIDIA",
+      "detected_at": "2025-08-04T00:19:10.136Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "The pixel.gif URL parameter 'cm' changed from '50db334797dde90aeae91754087911' to 'fa3350abc6ddca0f2..."
+    },
+    {
+      "filename": "change-701.json",
+      "change_id": 701,
+      "api_path": "/api-data/changes/change-701.json",
+      "company": "Midjourney",
+      "detected_at": "2025-08-04T00:18:15.684Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "The theming asset ID in the Midjourney Help Center home page image was updated from '01J0C3W092GC3PH..."
+    },
+    {
+      "filename": "change-702.json",
+      "change_id": 702,
+      "api_path": "/api-data/changes/change-702.json",
+      "company": "Midjourney",
+      "detected_at": "2025-08-04T00:18:10.128Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "The change is not explicitly visible in the provided content as the before and after content seems t..."
+    },
+    {
+      "filename": "change-704.json",
+      "change_id": 704,
+      "api_path": "/api-data/changes/change-704.json",
+      "company": "Intel",
+      "detected_at": "2025-08-04T00:16:37.325Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "No significant changes were detected in the overall structure or content of the Intel Newsroom Home ..."
     },
     {
       "filename": "change-481.json",
@@ -1943,6 +2223,16 @@
       "interest_level": 2,
       "change_type": "modified",
       "summary": "Change detected"
+    },
+    {
+      "filename": "change-708.json",
+      "change_id": 708,
+      "api_path": "/api-data/changes/change-708.json",
+      "company": "Descript",
+      "detected_at": "2025-08-04T00:13:39.186Z",
+      "interest_level": 1,
+      "change_type": "modified",
+      "summary": "No significant changes were detected in the provided before and after content."
     },
     {
       "filename": "change-495.json",

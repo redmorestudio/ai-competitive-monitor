@@ -1,0 +1,62 @@
+{
+  "id": 722,
+  "company": "Andi",
+  "page_url": "homepage",
+  "detected_at": "2025-08-03T22:56:39.763Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "The examples of search queries and the text describing the capabilities of Andi have changed.",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "The examples of search queries and the text describing the capabilities of Andi have changed.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "New examples of search queries have been added.",
+      "Some text describing the capabilities of Andi has been modified."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes may improve user engagement and experience by providing more relevant examples and clearer descriptions of Andi's capabilities.",
+    "market_signals": [
+      "Andi is focusing on improving its user interface and experience."
+    ],
+    "competitive_implications": "The changes do not significantly impact Andi's competitive position, but may slightly improve its market standing.",
+    "strategic_direction": "Andi is likely focusing on incremental improvements to its product and user experience."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Andi is updating its examples and descriptions to better reflect its capabilities."
+    ],
+    "opportunities": [
+      "Andi could further improve its user experience by adding more interactive examples and tutorials."
+    ],
+    "threats": [
+      "If Andi's competitors make more significant updates, Andi may fall behind in terms of user experience and market standing."
+    ],
+    "recommended_actions": [
+      "Monitor Andi's competitors and their updates to user experience and capabilities.",
+      "Consider adding more interactive examples and tutorials to Andi's interface."
+    ]
+  },
+  "key_insights": [
+    "Andi is updating its examples and descriptions to better reflect its capabilities."
+  ],
+  "business_impact": "The changes may improve user engagement and experience by providing more relevant examples and clearer descriptions of Andi's capabilities.",
+  "competitive_implications": "The changes do not significantly impact Andi's competitive position, but may slightly improve its market standing.",
+  "content_hash_before": "6a021078ceb0e1fd74111b14ae58ed7b87087590ff133920fa160a3cb4195901",
+  "content_hash_after": "acd2cdc672aaa240577eff41119081382c0c3c3a60273838fbcb493cc89aa153",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,66 @@
+{
+  "id": 713,
+  "company": "Andi",
+  "page_url": "homepage",
+  "detected_at": "2025-08-04T00:11:46.863Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "The content on the Andi homepage has been updated with new examples of search queries and minor changes to the layout and text.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The content on the Andi homepage has been updated with new examples of search queries and minor changes to the layout and text.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "New examples of search queries have been added, such as 'steve jobs pixar story', 'Who is Joan of Arc?', and 'give me a tutorial on how to make the perfect resume'.",
+      "Minor changes to the layout and text, including the addition of new images and icons.",
+      "The text has been updated to include more information about Andi's features and capabilities."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are unlikely to have a significant impact on the business, but may improve the user experience and make the product more appealing to potential customers.",
+    "market_signals": [
+      "The updates suggest that Andi is continuing to develop and improve its product, which may be seen as a positive signal by potential customers and investors."
+    ],
+    "competitive_implications": "The changes do not appear to be a direct response to any competitive moves, but rather a continuation of Andi's development and improvement efforts.",
+    "strategic_direction": "The updates suggest that Andi is focused on improving its product and user experience, and may be looking to expand its capabilities and features in the future."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The changes are minor and do not indicate any major strategic moves or significant updates to the product or service.",
+      "The updates suggest that Andi is continuing to develop and improve its product."
+    ],
+    "opportunities": [
+      "The updates may improve the user experience and make the product more appealing to potential customers.",
+      "Andi may be able to expand its capabilities and features in the future, which could provide new opportunities for growth and development."
+    ],
+    "threats": [
+      "The changes may not be enough to differentiate Andi from its competitors, which could make it difficult for the company to gain traction in the market."
+    ],
+    "recommended_actions": [
+      "Continue to monitor Andi's development and updates to see if the company is making any significant changes to its product or strategy.",
+      "Consider exploring other search engines and AI-powered tools to see how they compare to Andi's capabilities and features."
+    ]
+  },
+  "key_insights": [
+    "The changes are minor and do not indicate any major strategic moves or significant updates to the product or service.",
+    "The updates suggest that Andi is continuing to develop and improve its product."
+  ],
+  "business_impact": "The changes are unlikely to have a significant impact on the business, but may improve the user experience and make the product more appealing to potential customers.",
+  "competitive_implications": "The changes do not appear to be a direct response to any competitive moves, but rather a continuation of Andi's development and improvement efforts.",
+  "content_hash_before": "acd2cdc672aaa240577eff41119081382c0c3c3a60273838fbcb493cc89aa153",
+  "content_hash_after": "342e55d6efc4486dcd209753c3ea76dbc68f817482db1fe8bf6c4af1c95804dc",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

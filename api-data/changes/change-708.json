@@ -1,0 +1,46 @@
+{
+  "id": 708,
+  "company": "Descript",
+  "page_url": "pricing",
+  "detected_at": "2025-08-04T00:13:39.186Z",
+  "change_type": "modified",
+  "interest_level": 1,
+  "ai_confidence": 0.99,
+  "summary": "No significant changes were detected in the provided before and after content.",
+  "category": "no change",
+  "change_summary": {
+    "what_changed": "No significant changes were detected in the provided before and after content.",
+    "change_type": "no change",
+    "change_scale": "minor",
+    "specific_changes": []
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact is expected from the lack of changes.",
+    "market_signals": [],
+    "competitive_implications": "No competitive implications are expected from the lack of changes.",
+    "strategic_direction": "No change in strategic direction is indicated by the lack of changes."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [],
+  "business_impact": "No significant business impact is expected from the lack of changes.",
+  "competitive_implications": "No competitive implications are expected from the lack of changes.",
+  "content_hash_before": "01af20771eba4d3805ae64658838d595f5876793fa4a386d41da160818b1968e",
+  "content_hash_after": "a734d2838391524e321e58205abcce23e5ab4ed0d33bfeb59c1421d90af757fd",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
