@@ -180,6 +180,12 @@ class Graph3DCoordinator {
             window.rawData = this.rawData;
             window.graph3D = this;
 
+            // Display version in title
+            const versionDisplay = document.getElementById('version-display');
+            if (versionDisplay && window.graph3d?.config?.version) {
+                versionDisplay.textContent = window.graph3d.config.version;
+            }
+            
             this.initialized = true;
             console.log('3D graph initialization complete');
             
@@ -609,6 +615,55 @@ class Graph3DCoordinator {
             const legendData = graph3DVisuals.getLegendData(this.filteredData);
             graph3DUI.updateLegend(legendData);
         }
+        
+        // Update graph summary
+        this.updateGraphSummary();
+    }
+    
+    /**
+     * Update graph summary with intelligence data and version
+     */
+    updateGraphSummary() {
+        const techSummary = document.getElementById('tech-summary');
+        const conceptSummary = document.getElementById('concept-summary');
+        
+        if (!this.rawData) return;
+        
+        // Get technologies and concepts from raw data
+        const technologies = this.rawData.nodes
+            .filter(n => n.nodeType === 'technology')
+            .sort((a, b) => (b.companyCount || 0) - (a.companyCount || 0))
+            .slice(0, 5);
+            
+        const concepts = this.rawData.nodes
+            .filter(n => n.nodeType === 'concept')
+            .sort((a, b) => (b.companyCount || 0) - (a.companyCount || 0))
+            .slice(0, 5);
+        
+        // Update technology summary
+        if (techSummary) {
+            techSummary.innerHTML = `
+                <strong>Top Technologies:</strong><br>
+                ${technologies.map(t => `• ${t.name} (${t.companyCount || 0} companies)`).join('<br>')}
+                <br><br>
+                <em>Total: ${this.rawData.nodes.filter(n => n.nodeType === 'technology').length} technologies tracked</em>
+            `;
+        }
+        
+        // Update concept summary
+        if (conceptSummary) {
+            conceptSummary.innerHTML = `
+                <strong>Top AI Concepts:</strong><br>
+                ${concepts.map(c => `• ${c.name} (${c.companyCount || 0} companies)`).join('<br>')}
+                <br><br>
+                <em>Total: ${this.rawData.nodes.filter(n => n.nodeType === 'concept').length} AI concepts mapped</em>
+                <br><br>
+                <div style="border-top: 1px solid #333; padding-top: 10px; margin-top: 10px;">
+                    <strong>Version:</strong> ${window.graph3d?.config?.version || 'Unknown'}<br>
+                    <strong>Updated:</strong> ${window.graph3d?.config?.lastUpdated || 'Unknown'}
+                </div>
+            `;
+        }
     }
 
     /**
@@ -636,6 +691,13 @@ class Graph3DCoordinator {
         const loading = document.getElementById('loading');
         if (loading) {
             loading.style.display = show ? 'block' : 'none';
+            
+            // Display version info
+            const versionInfo = document.getElementById('graphVersionInfo');
+            if (versionInfo && window.graph3d?.config?.version) {
+                versionInfo.textContent = `${window.graph3d.config.version} - ${window.graph3d.config.lastUpdated}`;
+                versionInfo.style.display = 'block';
+            }
         }
     }
 

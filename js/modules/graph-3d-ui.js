@@ -1369,7 +1369,10 @@ export class Graph3DUI {
         const content = document.getElementById('graph-summary-content');
         const arrow = document.getElementById('graph-summary-arrow');
         if (content && arrow) {
-            const isHidden = content.style.display === 'none';
+            // Check if content is visible using computed style or display property
+            const isHidden = content.style.display === 'none' || 
+                           window.getComputedStyle(content).display === 'none' ||
+                           !content.style.display;
             content.style.display = isHidden ? 'block' : 'none';
             arrow.textContent = isHidden ? '▼' : '▶';
         }
