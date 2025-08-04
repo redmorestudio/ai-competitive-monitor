@@ -15,10 +15,10 @@
     "specific_changes": []
   },
   "strategic_analysis": {
-    "business_impact": "No impact, as there are no changes.",
+    "business_impact": "No significant impact is expected due to the lack of changes.",
     "market_signals": [],
-    "competitive_implications": "No implications, as there are no changes.",
-    "strategic_direction": "No direction, as there are no changes."
+    "competitive_implications": "No changes in competitive positioning are anticipated.",
+    "strategic_direction": "No new strategic direction is indicated by the lack of changes."
   },
   "entities": {
     "products": [],
@@ -36,8 +36,8 @@
     "recommended_actions": []
   },
   "key_insights": [],
-  "business_impact": "No impact, as there are no changes.",
-  "competitive_implications": "No implications, as there are no changes.",
+  "business_impact": "No significant impact is expected due to the lack of changes.",
+  "competitive_implications": "No changes in competitive positioning are anticipated.",
   "content_hash_before": "e54c010ff7250924f411aa99083ee8a909b88bb8c1b834fb706ca783f8292807",
   "content_hash_after": "81285e59f895b6a924f176ed8712887b90402107f450b922353eca0be7bf56ff",
   "ai_model": "groq-llama-3.3-70b",

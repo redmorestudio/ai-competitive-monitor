@@ -6,14 +6,80 @@
   "change_type": "new",
   "interest_level": 9,
   "ai_confidence": 0.9,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "summary": "New content added to the homepage of Anthropic, including introduction to Claude, API, solutions, research, commitments, and learn sections",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New content added to the homepage of Anthropic, including introduction to Claude, API, solutions, research, commitments, and learn sections",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Claude Opus 4 and Sonnet 4 models",
+      "Addition of API and developer documentation",
+      "Introduction of solutions for AI agents, coding, customer support, education, and financial services",
+      "Research section with overview, economic index, and model details",
+      "Commitments section with transparency and responsible scaling policy",
+      "Learn section with customer stories, engineering, and Anthropic Academy"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes indicate a significant expansion of Anthropic's products and services, with a focus on responsible AI development and a range of solutions for various industries",
+    "market_signals": [
+      "Increased focus on AI safety and responsible development",
+      "Expansion of products and services to meet growing demand for AI solutions"
+    ],
+    "competitive_implications": "The changes position Anthropic as a leader in the AI industry, with a focus on responsible development and a range of solutions for various industries",
+    "strategic_direction": "The company is likely to continue to expand its products and services, with a focus on responsible AI development and meeting the growing demand for AI solutions"
+  },
+  "entities": {
+    "products": [
+      "Claude",
+      "Claude Opus 4",
+      "Claude Sonnet 4",
+      "Claude Haiku 3.5"
+    ],
+    "features": [
+      "API",
+      "Developer documentation",
+      "Solutions for AI agents, coding, customer support, education, and financial services"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [
+      "Deep Ganguli, Research Lead, Societal Impacts"
+    ],
+    "pricing": [
+      "Max plan",
+      "Team plan",
+      "Enterprise plan"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Anthropic is introducing new AI models, including Claude Opus 4 and Sonnet 4",
+      "The company is focusing on responsible AI development, with a range of solutions for various industries"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Anthropic to develop custom AI solutions",
+      "Investment opportunities in Anthropic or other companies focused on responsible AI development"
+    ],
+    "threats": [
+      "Increased competition in the AI industry, particularly from companies focused on responsible development"
+    ],
+    "recommended_actions": [
+      "Monitor Anthropic's progress and updates to its products and services",
+      "Consider partnership or investment opportunities with Anthropic or other companies focused on responsible AI development"
+    ]
+  },
+  "key_insights": [
+    "Anthropic is introducing new AI models, including Claude Opus 4 and Sonnet 4",
+    "The company is focusing on responsible AI development, with a range of solutions for various industries"
+  ],
+  "business_impact": "The changes indicate a significant expansion of Anthropic's products and services, with a focus on responsible AI development and a range of solutions for various industries",
+  "competitive_implications": "The changes position Anthropic as a leader in the AI industry, with a focus on responsible development and a range of solutions for various industries",
   "content_hash_before": null,
   "content_hash_after": "67bec9f6dc6615bfc90a431b22de1c03c4d6f0dfd44d83e1cd5e1222376b2c61",
   "ai_model": "groq-llama-3.3-70b",

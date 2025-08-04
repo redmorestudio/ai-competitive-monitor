@@ -6,19 +6,19 @@
   "change_type": "modified",
   "interest_level": 1,
   "ai_confidence": 1,
-  "summary": "No changes were detected in the content between the two versions.",
+  "summary": "No changes were detected in the content",
   "category": "no change",
   "change_summary": {
-    "what_changed": "No changes were detected in the content between the two versions.",
+    "what_changed": "No changes were detected in the content",
     "change_type": "no change",
-    "change_scale": "none",
+    "change_scale": "no change",
     "specific_changes": []
   },
   "strategic_analysis": {
-    "business_impact": "No impact, as there are no changes.",
+    "business_impact": "No changes were detected in the content",
     "market_signals": [],
-    "competitive_implications": "No implications, as there are no changes.",
-    "strategic_direction": "No direction, as there are no changes."
+    "competitive_implications": "No changes were detected in the content",
+    "strategic_direction": "No changes were detected in the content"
   },
   "entities": {
     "products": [],
@@ -36,8 +36,8 @@
     "recommended_actions": []
   },
   "key_insights": [],
-  "business_impact": "No impact, as there are no changes.",
-  "competitive_implications": "No implications, as there are no changes.",
+  "business_impact": "No changes were detected in the content",
+  "competitive_implications": "No changes were detected in the content",
   "content_hash_before": "fb68f4f17a176d730b4bbeabcfe54b7e3f5638424726a61ec9d32ab95aecce14",
   "content_hash_after": "2fab4886300158b317a79c4030a611ff3a233c0d6f71cf6915266d4e23cc3dc0",
   "ai_model": "groq-llama-3.3-70b",

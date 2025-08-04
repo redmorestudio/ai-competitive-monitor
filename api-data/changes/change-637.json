@@ -6,27 +6,27 @@
   "change_type": "new",
   "interest_level": 9,
   "ai_confidence": 0.9,
-  "summary": "Introduction of new pricing plans and features for Codeium, now rebranded as Windsurf",
+  "summary": "Introduction of new pricing plans and features for Windsurf",
   "category": "strategic_move",
   "change_summary": {
-    "what_changed": "Introduction of new pricing plans and features for Codeium, now rebranded as Windsurf",
+    "what_changed": "Introduction of new pricing plans and features for Windsurf",
     "change_type": "addition",
     "change_scale": "major",
     "specific_changes": [
-      "New pricing plans: Free, Pro, Teams, and Enterprise",
-      "Introduction of prompt credits and their pricing",
-      "Addition of new features such as Windsurf Reviews, Centralized billing, and Admin dashboard with analytics",
-      "Rebranding from Codeium to Windsurf"
+      "Introduction of Free, Pro, and Teams plans",
+      "Addition of new features such as SWE-1 model, Windsurf Reviews, and Role-Based Access Control (RBAC)",
+      "Changes to prompt credits and pricing for each plan",
+      "Introduction of volume-based annual discounts for Enterprise plans with more than 200 seats"
     ]
   },
   "strategic_analysis": {
-    "business_impact": "The rebranding and introduction of new pricing plans and features is likely to attract more customers and increase revenue",
+    "business_impact": "The introduction of new pricing plans and features is likely to attract new customers and increase revenue for Codeium",
     "market_signals": [
-      "Increased competition in the AI-powered coding tools market",
-      "Growing demand for AI-powered coding tools"
+      "Expansion of offerings to attract new customers",
+      "Increased focus on enterprise customers"
     ],
-    "competitive_implications": "The rebranding and introduction of new pricing plans and features positions Windsurf as a major player in the AI-powered coding tools market",
-    "strategic_direction": "Windsurf is focusing on providing a comprehensive platform for developers, with a range of features and pricing plans to suit different needs"
+    "competitive_implications": "The introduction of new pricing plans and features may put pressure on competitors to respond with similar offerings",
+    "strategic_direction": "Codeium is likely to continue to expand its offerings and focus on enterprise customers"
   },
   "entities": {
     "products": [
@@ -34,46 +34,54 @@
       "Windsurf Reviews"
     ],
     "features": [
-      "Prompt credits",
+      "SWE-1 model",
+      "Role-Based Access Control (RBAC)",
       "Windsurf Reviews",
       "Centralized billing",
-      "Admin dashboard with analytics"
+      "Admin dashboard with analytics",
+      "Priority support"
     ],
     "partnerships": [],
-    "technologies": [],
+    "technologies": [
+      "OpenAI",
+      "Claude",
+      "Gemini",
+      "xAI"
+    ],
     "people": [],
     "pricing": [
-      "Free: $0/month, 25 prompt credits/month",
-      "Pro: $15/month, 500 prompt credits/month",
-      "Teams: $30/user/month, 500 prompt credits/user/month",
-      "Enterprise: starting at $60/user/month, 1,000 prompt credits/user/month"
+      "Free plan: $0/user/month",
+      "Pro plan: $15/user/month",
+      "Teams plan: $30/user/month",
+      "Enterprise plan: starting at $60/user/month"
     ],
     "markets": []
   },
   "insights": {
     "key_findings": [
-      "Windsurf is targeting a wide range of customers, from individual developers to large enterprises",
-      "The introduction of prompt credits and their pricing indicates a focus on providing a flexible and scalable pricing model"
+      "Codeium is introducing new pricing plans and features to attract new customers and increase revenue",
+      "The company is focusing on enterprise customers with the introduction of new features such as RBAC and volume-based annual discounts"
     ],
     "opportunities": [
-      "Partnership opportunities with other companies in the AI-powered coding tools market",
-      "Expansion into new markets, such as education and research"
+      "Partnership opportunities with other companies to expand offerings",
+      "Expansion into new markets"
     ],
     "threats": [
-      "Increased competition from other companies in the AI-powered coding tools market",
-      "Regulatory challenges related to the use of AI-powered coding tools"
+      "Competition from other companies offering similar products and services",
+      "Difficulty in attracting and retaining customers"
     ],
     "recommended_actions": [
-      "Monitor Windsurf's progress and adjust our own strategy accordingly",
-      "Consider partnership opportunities with Windsurf"
+      "Monitor Codeium's pricing and features to stay competitive",
+      "Consider partnering with Codeium to expand offerings",
+      "Focus on attracting and retaining customers"
     ]
   },
   "key_insights": [
-    "Windsurf is targeting a wide range of customers, from individual developers to large enterprises",
-    "The introduction of prompt credits and their pricing indicates a focus on providing a flexible and scalable pricing model"
+    "Codeium is introducing new pricing plans and features to attract new customers and increase revenue",
+    "The company is focusing on enterprise customers with the introduction of new features such as RBAC and volume-based annual discounts"
   ],
-  "business_impact": "The rebranding and introduction of new pricing plans and features is likely to attract more customers and increase revenue",
-  "competitive_implications": "The rebranding and introduction of new pricing plans and features positions Windsurf as a major player in the AI-powered coding tools market",
+  "business_impact": "The introduction of new pricing plans and features is likely to attract new customers and increase revenue for Codeium",
+  "competitive_implications": "The introduction of new pricing plans and features may put pressure on competitors to respond with similar offerings",
   "content_hash_before": null,
   "content_hash_after": "ae86ee1e7670070eca651d68ddc9de9aad71f2f79fe04c738c0df9bb8eafdf3e",
   "ai_model": "groq-llama-3.3-70b",

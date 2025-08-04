@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "generated_at": "2025-08-04T01:39:50.591Z",
+  "generated_at": "2025-08-04T18:16:32.998Z",
   "source": "postgresql",
   "total_changes": 228,
   "files": [
@@ -12,7 +12,7 @@
       "detected_at": "2025-08-04T00:18:55.450Z",
       "interest_level": 10,
       "change_type": "modified",
-      "summary": "The entire content of the webpage changed from Neeva's homepage to AliExpress's homepage"
+      "summary": "The content of the webpage changed from Neeva's homepage to AliExpress's homepage"
     },
     {
       "filename": "change-715.json",
@@ -32,7 +32,7 @@
       "detected_at": "2025-08-01T22:47:13.402Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the homepage of You.com, including introduction to AI for workplace productivit..."
+      "summary": "New homepage content for You.com, including introduction to AI for workplace productivity, enterpris..."
     },
     {
       "filename": "change-528.json",
@@ -52,7 +52,17 @@
       "detected_at": "2025-08-01T22:46:30.385Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the homepage of Weights & Biases"
+      "summary": "New homepage content for Weights & Biases"
+    },
+    {
+      "filename": "change-530.json",
+      "change_id": 530,
+      "api_path": "/api-data/changes/change-530.json",
+      "company": "Weights & Biases",
+      "detected_at": "2025-08-01T22:46:19.872Z",
+      "interest_level": 9,
+      "change_type": "new",
+      "summary": "New blog content and product announcements"
     },
     {
       "filename": "change-532.json",
@@ -72,7 +82,17 @@
       "detected_at": "2025-08-01T22:45:54.097Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the homepage, including features, pricing, and resources"
+      "summary": "New content added to the homepage of Tabnine, including features, pricing, and resources"
+    },
+    {
+      "filename": "change-535.json",
+      "change_id": 535,
+      "api_path": "/api-data/changes/change-535.json",
+      "company": "Tabnine",
+      "detected_at": "2025-08-01T22:45:37.784Z",
+      "interest_level": 9,
+      "change_type": "new",
+      "summary": "New content introduction with detailed plans and pricing information for Tabnine's AI code assistant"
     },
     {
       "filename": "change-539.json",
@@ -92,7 +112,7 @@
       "detected_at": "2025-08-01T22:44:29.148Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Initial content creation"
+      "summary": "New content introduction"
     },
     {
       "filename": "change-543.json",
@@ -102,7 +122,7 @@
       "detected_at": "2025-08-01T22:44:20.347Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New website content and structure"
+      "summary": "New homepage content with updated product information and design"
     },
     {
       "filename": "change-547.json",
@@ -112,7 +132,7 @@
       "detected_at": "2025-08-01T22:43:51.645Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the Scale AI homepage, including product descriptions, customer logos, and rese..."
+      "summary": "New homepage content for Scale AI, including product descriptions, customer logos, and research init..."
     },
     {
       "filename": "change-549.json",
@@ -122,7 +142,7 @@
       "detected_at": "2025-08-01T22:43:35.917Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the Scale AI product page, including products, features, resources, and custome..."
+      "summary": "New content added to the Scale AI product page, including various products, features, resources, and..."
     },
     {
       "filename": "change-550.json",
@@ -132,7 +152,7 @@
       "detected_at": "2025-08-01T22:43:26.853Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New website content and structure for SambaNova, including new product announcements, solutions, and..."
+      "summary": "New homepage content for SambaNova, including product announcements, solutions, and partnerships"
     },
     {
       "filename": "change-553.json",
@@ -142,7 +162,7 @@
       "detected_at": "2025-08-01T22:42:43.591Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New homepage content for Runway, including introduction of Aleph, a new AI research model, and updat..."
+      "summary": "New homepage content with updated product information, research announcements, and company initiativ..."
     },
     {
       "filename": "change-554.json",
@@ -152,7 +172,7 @@
       "detected_at": "2025-08-01T22:42:38.845Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the Runway blog, including news articles, product updates, and company informat..."
+      "summary": "Initial content creation for the Runway blog"
     },
     {
       "filename": "change-555.json",
@@ -172,7 +192,7 @@
       "detected_at": "2025-08-01T22:42:27.596Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the homepage of Resemble AI, including AI Voice Generator and Deepfake Detectio..."
+      "summary": "New content added to the homepage of Resemble AI, including product descriptions, case studies, rese..."
     },
     {
       "filename": "change-557.json",
@@ -182,7 +202,7 @@
       "detected_at": "2025-08-01T22:42:22.023Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the Resemble AI blog, including product features, case studies, research, and r..."
+      "summary": "New content added to the Resemble AI blog"
     },
     {
       "filename": "change-559.json",
@@ -192,7 +212,7 @@
       "detected_at": "2025-08-01T22:42:08.348Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New blog content and features announcement"
+      "summary": "Initial content creation for Replit blog"
     },
     {
       "filename": "change-560.json",
@@ -202,7 +222,7 @@
       "detected_at": "2025-08-01T22:42:01.992Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New homepage content with AI-powered app building features and customer testimonials"
+      "summary": "New content added to the Replit homepage, including features, solutions, customer testimonials, and ..."
     },
     {
       "filename": "change-561.json",
@@ -232,7 +252,7 @@
       "detected_at": "2025-08-01T22:41:25.508Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Initial blog content creation with 50 posts"
+      "summary": "New blog content added"
     },
     {
       "filename": "change-564.json",
@@ -243,26 +263,6 @@
       "interest_level": 9,
       "change_type": "new",
       "summary": "Initial pricing page content"
-    },
-    {
-      "filename": "change-565.json",
-      "change_id": 565,
-      "api_path": "/api-data/changes/change-565.json",
-      "company": "Redmore Studio",
-      "detected_at": "2025-08-01T22:41:13.468Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "Initial content creation"
-    },
-    {
-      "filename": "change-567.json",
-      "change_id": 567,
-      "api_path": "/api-data/changes/change-567.json",
-      "company": "Pika",
-      "detected_at": "2025-08-01T22:40:57.193Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "Initial content creation"
     },
     {
       "filename": "change-568.json",
@@ -312,7 +312,17 @@
       "detected_at": "2025-08-01T22:38:57.925Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the NVIDIA Developer website, including learning pathways, tutorials, news, tra..."
+      "summary": "New content added to the NVIDIA Developer page, including learning pathways, tutorials, news, traini..."
+    },
+    {
+      "filename": "change-578.json",
+      "change_id": 578,
+      "api_path": "/api-data/changes/change-578.json",
+      "company": "NVIDIA",
+      "detected_at": "2025-08-01T22:38:49.958Z",
+      "interest_level": 9,
+      "change_type": "new",
+      "summary": "New content added to NVIDIA homepage"
     },
     {
       "filename": "change-579.json",
@@ -332,7 +342,7 @@
       "detected_at": "2025-08-01T22:38:19.182Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the homepage of Murf AI"
+      "summary": "New content added to the homepage of Murf AI, including product descriptions, features, integrations..."
     },
     {
       "filename": "change-583.json",
@@ -342,7 +352,7 @@
       "detected_at": "2025-08-01T22:37:54.081Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Initial documentation release"
+      "summary": "Initial content creation for Mistral AI documentation"
     },
     {
       "filename": "change-584.json",
@@ -352,7 +362,7 @@
       "detected_at": "2025-08-01T22:37:48.406Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "The entire content of the Mistral AI homepage has been added, including product descriptions, custom..."
+      "summary": "New content added to the homepage of Mistral AI, including product descriptions, customer testimonia..."
     },
     {
       "filename": "change-585.json",
@@ -382,7 +392,17 @@
       "detected_at": "2025-08-01T22:37:33.098Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Introduction of La Plateforme, a comprehensive AI platform for building, customizing, and deploying ..."
+      "summary": "Introduction of La Plateforme, a comprehensive AI platform by Mistral AI, offering AI tooling, model..."
+    },
+    {
+      "filename": "change-589.json",
+      "change_id": 589,
+      "api_path": "/api-data/changes/change-589.json",
+      "company": "Meta AI",
+      "detected_at": "2025-08-01T22:36:44.407Z",
+      "interest_level": 9,
+      "change_type": "new",
+      "summary": "New content added to the Meta AI blog, including research articles, announcements, and updates on Ll..."
     },
     {
       "filename": "change-590.json",
@@ -392,7 +412,7 @@
       "detected_at": "2025-08-01T22:36:34.438Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Introduction of Llama 4, a new generation of AI models with native multimodality, advanced reasoning..."
+      "summary": "Introduction of Llama 4 models with native multimodality, advanced reasoning, and industry-leading c..."
     },
     {
       "filename": "change-591.json",
@@ -422,7 +442,7 @@
       "detected_at": "2025-08-01T22:35:51.312Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Introduction of Luma Dream Machine, a new product for creating stunning images and videos"
+      "summary": "Introduction of Luma Dream Machine, a new product by Luma AI, with features for creating stunning im..."
     },
     {
       "filename": "change-597.json",
@@ -442,7 +462,7 @@
       "detected_at": "2025-08-01T22:35:15.467Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Initial content creation for LangChain documentation"
+      "summary": "Initial content creation"
     },
     {
       "filename": "change-600.json",
@@ -453,6 +473,26 @@
       "interest_level": 9,
       "change_type": "new",
       "summary": "Introduction of LangSmith, a unified observability and evaluation platform for AI applications"
+    },
+    {
+      "filename": "change-601.json",
+      "change_id": 601,
+      "api_path": "/api-data/changes/change-601.json",
+      "company": "Intel",
+      "detected_at": "2025-08-01T22:34:54.805Z",
+      "interest_level": 9,
+      "change_type": "new",
+      "summary": "New content added to Intel's homepage, focusing on Artificial Intelligence (AI) solutions"
+    },
+    {
+      "filename": "change-603.json",
+      "change_id": 603,
+      "api_path": "/api-data/changes/change-603.json",
+      "company": "Inflection AI",
+      "detected_at": "2025-08-01T22:34:35.362Z",
+      "interest_level": 9,
+      "change_type": "new",
+      "summary": "Initial content creation for Inflection AI homepage"
     },
     {
       "filename": "change-604.json",
@@ -482,7 +522,7 @@
       "detected_at": "2025-08-01T22:34:06.271Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New homepage content for Hugging Face, including updated sections for models, datasets, spaces, and ..."
+      "summary": "Initial content creation"
     },
     {
       "filename": "change-608.json",
@@ -512,7 +552,7 @@
       "detected_at": "2025-08-01T22:32:18.618Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New homepage content for H2O.ai, including updated navigation, product descriptions, and calls-to-ac..."
+      "summary": "New homepage content for H2O.ai, including updated product offerings, solutions, and company informa..."
     },
     {
       "filename": "change-612.json",
@@ -542,17 +582,7 @@
       "detected_at": "2025-08-01T22:30:32.940Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Initial content creation"
-    },
-    {
-      "filename": "change-616.json",
-      "change_id": 616,
-      "api_path": "/api-data/changes/change-616.json",
-      "company": "ElevenLabs",
-      "detected_at": "2025-08-01T22:30:25.606Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "New blog content and updates on AI audio research, product deployment, and company updates"
+      "summary": "New content introduction on the ElevenLabs homepage, including product features, customer testimonia..."
     },
     {
       "filename": "change-617.json",
@@ -562,7 +592,7 @@
       "detected_at": "2025-08-01T22:30:17.996Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Introduction of a new pricing page with various plans for creators and businesses"
+      "summary": "Introduction of new pricing plans and features for creators and businesses"
     },
     {
       "filename": "change-619.json",
@@ -572,7 +602,7 @@
       "detected_at": "2025-08-01T22:30:01.025Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the Descript homepage, including features, AI tools, and company information"
+      "summary": "New content added to the Descript homepage, including features, AI tools, and customer testimonials"
     },
     {
       "filename": "change-621.json",
@@ -582,7 +612,7 @@
       "detected_at": "2025-08-01T22:29:45.409Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New website content and features introduction"
+      "summary": "New website content and features"
     },
     {
       "filename": "change-625.json",
@@ -592,7 +622,7 @@
       "detected_at": "2025-08-01T22:29:18.958Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added for DataRobot's AI platform, including product descriptions, features, and custome..."
+      "summary": "New content added for DataRobot's AI platform, including product information, customer testimonials,..."
     },
     {
       "filename": "change-626.json",
@@ -622,7 +652,7 @@
       "detected_at": "2025-08-01T22:28:50.514Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content introduction"
+      "summary": "Initial content creation for the features page of Cursor, the AI code editor"
     },
     {
       "filename": "change-630.json",
@@ -632,7 +662,17 @@
       "detected_at": "2025-08-01T22:28:44.625Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Initial pricing page content creation"
+      "summary": "Initial content creation for Cursor's pricing page"
+    },
+    {
+      "filename": "change-631.json",
+      "change_id": 631,
+      "api_path": "/api-data/changes/change-631.json",
+      "company": "Cohere",
+      "detected_at": "2025-08-01T22:28:37.532Z",
+      "interest_level": 9,
+      "change_type": "new",
+      "summary": "New homepage content with updated product and service information"
     },
     {
       "filename": "change-633.json",
@@ -642,7 +682,7 @@
       "detected_at": "2025-08-01T22:28:16.630Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content introduction with detailed product and service offerings, industry solutions, research i..."
+      "summary": "New content introduction with detailed product and service offerings, company information, and custo..."
     },
     {
       "filename": "change-634.json",
@@ -652,7 +692,7 @@
       "detected_at": "2025-08-01T22:28:10.561Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New documentation and website content for Cohere"
+      "summary": "New documentation content for Cohere, including a new multimodal model announcement, updated API ref..."
     },
     {
       "filename": "change-635.json",
@@ -662,7 +702,7 @@
       "detected_at": "2025-08-01T22:28:03.110Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New homepage content for Codeium, now rebranded as Windsurf, with a focus on AI-powered code editing..."
+      "summary": "New content introduction, including product features, company information, and user testimonials"
     },
     {
       "filename": "change-637.json",
@@ -672,7 +712,7 @@
       "detected_at": "2025-08-01T22:27:52.597Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Introduction of new pricing plans and features for Codeium, now rebranded as Windsurf"
+      "summary": "Introduction of new pricing plans and features for Windsurf"
     },
     {
       "filename": "change-638.json",
@@ -682,7 +722,7 @@
       "detected_at": "2025-08-01T22:27:44.678Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Introduction of the Windsurf Editor, a new AI-powered IDE, with features like Cascade, Tab, and Wind..."
+      "summary": "Initial content creation for Windsurf product page"
     },
     {
       "filename": "change-639.json",
@@ -692,7 +732,7 @@
       "detected_at": "2025-08-01T22:27:37.151Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the Cisco Systems homepage, including product and service descriptions, promoti..."
+      "summary": "New content added to the Cisco Systems homepage, including product and service information, free tri..."
     },
     {
       "filename": "change-640.json",
@@ -702,7 +742,7 @@
       "detected_at": "2025-08-01T22:27:31.276Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the homepage, including product announcements, customer spotlights, and AI mode..."
+      "summary": "Introduction of new content on the Cerebras homepage, including product announcements, customer spot..."
     },
     {
       "filename": "change-642.json",
@@ -712,7 +752,7 @@
       "detected_at": "2025-08-01T22:27:17.168Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content introduction"
+      "summary": "New content added for Cerebras product page"
     },
     {
       "filename": "change-643.json",
@@ -725,16 +765,6 @@
       "summary": "New homepage content for Anyscale, including product information, customer testimonials, and calls t..."
     },
     {
-      "filename": "change-644.json",
-      "change_id": 644,
-      "api_path": "/api-data/changes/change-644.json",
-      "company": "Anyscale",
-      "detected_at": "2025-08-01T22:27:02.150Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "Initial blog content creation"
-    },
-    {
       "filename": "change-645.json",
       "change_id": 645,
       "api_path": "/api-data/changes/change-645.json",
@@ -742,7 +772,7 @@
       "detected_at": "2025-08-01T22:26:54.250Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Initial content creation for Anyscale pricing page"
+      "summary": "Initial content creation"
     },
     {
       "filename": "change-646.json",
@@ -752,7 +782,7 @@
       "detected_at": "2025-08-01T22:26:17.493Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content added to the homepage"
+      "summary": "New homepage content for Andi AI search"
     },
     {
       "filename": "change-648.json",
@@ -782,7 +812,7 @@
       "detected_at": "2025-08-01T22:25:30.943Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Initial creation of Amazon CodeWhisperer documentation"
+      "summary": "Initial content creation for Amazon CodeWhisperer documentation"
     },
     {
       "filename": "change-651.json",
@@ -792,7 +822,7 @@
       "detected_at": "2025-08-01T22:25:23.365Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content introduction"
+      "summary": "New content added to the homepage of Aleph Alpha, including solutions, research, and company informa..."
     },
     {
       "filename": "change-652.json",
@@ -802,7 +832,7 @@
       "detected_at": "2025-08-01T22:25:16.860Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New content introduction with detailed information about Aleph Alpha's AI solutions, research, and c..."
+      "summary": "Initial content creation for Aleph Alpha's product page"
     },
     {
       "filename": "change-654.json",
@@ -822,7 +852,7 @@
       "detected_at": "2025-08-01T22:24:56.140Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "New homepage content for AI21 Labs, including product descriptions, deployment options, and company ..."
+      "summary": "New homepage content for AI21 Labs, including product descriptions, customer testimonials, and calls..."
     },
     {
       "filename": "change-658.json",
@@ -832,7 +862,7 @@
       "detected_at": "2025-08-01T22:24:30.586Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Introduction of a new pricing page with detailed pricing information for AI21 products, including Fo..."
+      "summary": "Introduction of a new pricing page with detailed pricing information for AI21 products, including a ..."
     },
     {
       "filename": "change-486.json",
@@ -842,7 +872,7 @@
       "detected_at": "2025-08-01T19:20:20.321Z",
       "interest_level": 9,
       "change_type": "modified",
-      "summary": "The website content has been completely overhauled, shifting from a security verification page to a ..."
+      "summary": "The website content changed from a security verification page to a full-fledged OpenAI blog with var..."
     },
     {
       "filename": "change-487.json",
@@ -872,7 +902,7 @@
       "detected_at": "2025-07-22T18:18:01.891Z",
       "interest_level": 9,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "The content has changed from a security verification page to the OpenAI homepage, featuring various ..."
     },
     {
       "filename": "change-208.json",
@@ -882,7 +912,7 @@
       "detected_at": "2025-07-22T17:33:40.166Z",
       "interest_level": 9,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "The content has changed from a security verification page to a ChatGPT interface"
     },
     {
       "filename": "change-72.json",
@@ -892,7 +922,7 @@
       "detected_at": "2025-07-21T15:21:10.364Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "Introduction of Perplexity Pro and Max subscription plans with various features and pricing"
     },
     {
       "filename": "change-161.json",
@@ -902,7 +932,7 @@
       "detected_at": "2025-07-21T15:17:43.481Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "Introduction of a new pricing page with detailed plan comparisons and features"
     },
     {
       "filename": "change-361.json",
@@ -912,7 +942,7 @@
       "detected_at": "2025-07-21T03:13:08.841Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "Introduction of the Gemini Developer API and associated models, including Gemini, Imagen, Veo, and G..."
     },
     {
       "filename": "change-363.json",
@@ -922,7 +952,7 @@
       "detected_at": "2025-07-21T03:12:55.045Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "New content added to the Google DeepMind homepage, including models, research, science, and about se..."
     },
     {
       "filename": "change-365.json",
@@ -932,7 +962,7 @@
       "detected_at": "2025-07-21T03:12:34.152Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "Introduction of new AI-powered products and features, including Gemini, AI Mode, NotebookLM, Flow, a..."
     },
     {
       "filename": "change-367.json",
@@ -942,7 +972,7 @@
       "detected_at": "2025-07-21T03:12:22.286Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "Initial documentation release for GitHub Copilot"
     },
     {
       "filename": "change-368.json",
@@ -952,7 +982,7 @@
       "detected_at": "2025-07-21T03:12:15.826Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "Introduction of GitHub Copilot, a new AI-powered developer tool, with various features, pricing plan..."
     },
     {
       "filename": "change-369.json",
@@ -962,7 +992,7 @@
       "detected_at": "2025-07-21T03:12:08.824Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "New pricing page content for GitHub Copilot"
     },
     {
       "filename": "change-370.json",
@@ -972,7 +1002,7 @@
       "detected_at": "2025-07-21T03:07:11.303Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "Initial content creation for Anthropic documentation"
     },
     {
       "filename": "change-371.json",
@@ -982,7 +1012,17 @@
       "detected_at": "2025-07-21T03:07:04.850Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "New content added to the homepage of Anthropic, including introduction to Claude, API, solutions, re..."
+    },
+    {
+      "filename": "change-372.json",
+      "change_id": 372,
+      "api_path": "/api-data/changes/change-372.json",
+      "company": "Anthropic",
+      "detected_at": "2025-07-21T03:06:58.430Z",
+      "interest_level": 9,
+      "change_type": "new",
+      "summary": "New content added to the newsroom section of Anthropic's website, including announcements, product u..."
     },
     {
       "filename": "change-373.json",
@@ -992,7 +1032,7 @@
       "detected_at": "2025-07-21T03:06:50.654Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "Introduction of pricing plans for Anthropic's AI services, including Free, Pro, Max, Team, and Enter..."
     },
     {
       "filename": "change-374.json",
@@ -1002,7 +1042,7 @@
       "detected_at": "2025-07-21T03:06:44.412Z",
       "interest_level": 9,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "Initial content creation for Anthropic's product page"
     },
     {
       "filename": "change-700.json",
@@ -1012,7 +1052,7 @@
       "detected_at": "2025-08-04T00:18:21.198Z",
       "interest_level": 8,
       "change_type": "modified",
-      "summary": "Pricing plans and features have been updated, with changes to the Free, Pro, and Team plans, as well..."
+      "summary": "The pricing page of Mistral AI has undergone significant updates, including changes to the layout, a..."
     },
     {
       "filename": "change-707.json",
@@ -1032,7 +1072,7 @@
       "detected_at": "2025-08-03T22:57:46.318Z",
       "interest_level": 8,
       "change_type": "modified",
-      "summary": "New blog posts were added, specifically 'From Zero to Sudoku Hero: An RL Adventure' and 'Introducing..."
+      "summary": "New blog posts were added, including 'From Zero to Sudoku Hero: An RL Adventure', 'Qwen3 Coder 480B ..."
     },
     {
       "filename": "change-526.json",
@@ -1055,16 +1095,6 @@
       "summary": "New blog content and features added to the WellSaid Labs website"
     },
     {
-      "filename": "change-530.json",
-      "change_id": 530,
-      "api_path": "/api-data/changes/change-530.json",
-      "company": "Weights & Biases",
-      "detected_at": "2025-08-01T22:46:19.872Z",
-      "interest_level": 8,
-      "change_type": "new",
-      "summary": "New blog content and product announcements"
-    },
-    {
       "filename": "change-531.json",
       "change_id": 531,
       "api_path": "/api-data/changes/change-531.json",
@@ -1082,17 +1112,7 @@
       "detected_at": "2025-08-01T22:45:45.811Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "New blog content and features were added to the Tabnine website, including a new air-gapped AI softw..."
-    },
-    {
-      "filename": "change-535.json",
-      "change_id": 535,
-      "api_path": "/api-data/changes/change-535.json",
-      "company": "Tabnine",
-      "detected_at": "2025-08-01T22:45:37.784Z",
-      "interest_level": 8,
-      "change_type": "new",
-      "summary": "New pricing plans and features were introduced, including a free 30-day trial for the Dev plan and a..."
+      "summary": "New blog content and features announced"
     },
     {
       "filename": "change-536.json",
@@ -1112,7 +1132,7 @@
       "detected_at": "2025-08-01T22:45:04.139Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "New features and updates were added to the Synthesia platform, including Personal Avatars, Interacti..."
+      "summary": "Introduction of new features and updates to existing ones, including Personal Avatars, Interactivity..."
     },
     {
       "filename": "change-538.json",
@@ -1142,7 +1162,7 @@
       "detected_at": "2025-08-01T22:44:35.647Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "The content of the pricing page has changed to a 404 error page, indicating that the original conten..."
+      "summary": "The content of the pricing page is now a 404 error page, indicating that the page may have been remo..."
     },
     {
       "filename": "change-544.json",
@@ -1182,7 +1202,7 @@
       "detected_at": "2025-08-01T22:43:43.882Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "New blog content and updated product information"
+      "summary": "New blog content and updates to the Scale AI website"
     },
     {
       "filename": "change-551.json",
@@ -1192,7 +1212,7 @@
       "detected_at": "2025-08-01T22:43:18.018Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "New product page for SambaStack, a full-stack enterprise AI platform, with detailed features, benefi..."
+      "summary": "New product page for SambaStack, a full-stack enterprise AI platform, with detailed information on i..."
     },
     {
       "filename": "change-552.json",
@@ -1202,7 +1222,7 @@
       "detected_at": "2025-08-01T22:43:17.817Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "New blog posts and resources added to the SambaNova website"
+      "summary": "New blog posts and resources added to the SambaNova website, including announcements of new AI infer..."
     },
     {
       "filename": "change-558.json",
@@ -1215,6 +1235,36 @@
       "summary": "New content added for Resemble AI pricing page"
     },
     {
+      "filename": "change-565.json",
+      "change_id": 565,
+      "api_path": "/api-data/changes/change-565.json",
+      "company": "Redmore Studio",
+      "detected_at": "2025-08-01T22:41:13.468Z",
+      "interest_level": 8,
+      "change_type": "new",
+      "summary": "New website content and structure"
+    },
+    {
+      "filename": "change-566.json",
+      "change_id": 566,
+      "api_path": "/api-data/changes/change-566.json",
+      "company": "Redmore Studio",
+      "detected_at": "2025-08-01T22:41:07.613Z",
+      "interest_level": 8,
+      "change_type": "new",
+      "summary": "The blog content was replaced with a 404 page, indicating that the requested page could not be found..."
+    },
+    {
+      "filename": "change-567.json",
+      "change_id": 567,
+      "api_path": "/api-data/changes/change-567.json",
+      "company": "Pika",
+      "detected_at": "2025-08-01T22:40:57.193Z",
+      "interest_level": 8,
+      "change_type": "new",
+      "summary": "Initial content creation"
+    },
+    {
       "filename": "change-569.json",
       "change_id": 569,
       "api_path": "/api-data/changes/change-569.json",
@@ -1222,7 +1272,7 @@
       "detected_at": "2025-08-01T22:40:47.209Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "Introduction of new pricing plans and features for Pika's video creation services"
+      "summary": "Introduction of new pricing plans and features for Pika"
     },
     {
       "filename": "change-571.json",
@@ -1265,16 +1315,6 @@
       "summary": "The NVIDIA blog content changed from no previous version to a fully structured blog with various sec..."
     },
     {
-      "filename": "change-578.json",
-      "change_id": 578,
-      "api_path": "/api-data/changes/change-578.json",
-      "company": "NVIDIA",
-      "detected_at": "2025-08-01T22:38:49.958Z",
-      "interest_level": 8,
-      "change_type": "new",
-      "summary": "New homepage content with updated product and solution offerings"
-    },
-    {
       "filename": "change-582.json",
       "change_id": 582,
       "api_path": "/api-data/changes/change-582.json",
@@ -1295,16 +1335,6 @@
       "summary": "Introduction of the new Meta AI app, updates to Meta AI features, and the announcement of Llama 4"
     },
     {
-      "filename": "change-589.json",
-      "change_id": 589,
-      "api_path": "/api-data/changes/change-589.json",
-      "company": "Meta AI",
-      "detected_at": "2025-08-01T22:36:44.407Z",
-      "interest_level": 8,
-      "change_type": "new",
-      "summary": "New content added to the Meta AI blog"
-    },
-    {
       "filename": "change-594.json",
       "change_id": 594,
       "api_path": "/api-data/changes/change-594.json",
@@ -1322,7 +1352,7 @@
       "detected_at": "2025-08-01T22:35:35.597Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "Introduction of Veo 3, a new AI image and video generation feature, and updates to the website's lay..."
+      "summary": "Introduction of Veo 3, a new AI image and video generation feature, and updates to the homepage layo..."
     },
     {
       "filename": "change-596.json",
@@ -1332,7 +1362,7 @@
       "detected_at": "2025-08-01T22:35:30.210Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "Introduction of new API plans and pricing structure"
+      "summary": "Introduction of new API plans and pricing for Leonardo AI"
     },
     {
       "filename": "change-599.json",
@@ -1342,17 +1372,7 @@
       "detected_at": "2025-08-01T22:35:09.421Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "New content added to the homepage, including product descriptions, customer logos, and calls-to-acti..."
-    },
-    {
-      "filename": "change-601.json",
-      "change_id": 601,
-      "api_path": "/api-data/changes/change-601.json",
-      "company": "Intel",
-      "detected_at": "2025-08-01T22:34:54.805Z",
-      "interest_level": 8,
-      "change_type": "new",
-      "summary": "New content added to Intel's homepage, focusing on Artificial Intelligence (AI) solutions"
+      "summary": "New homepage content with added sections and features"
     },
     {
       "filename": "change-602.json",
@@ -1365,16 +1385,6 @@
       "summary": "New content added to Intel Newsroom Home, including recent articles, social news, and a section for ..."
     },
     {
-      "filename": "change-603.json",
-      "change_id": 603,
-      "api_path": "/api-data/changes/change-603.json",
-      "company": "Inflection AI",
-      "detected_at": "2025-08-01T22:34:35.362Z",
-      "interest_level": 8,
-      "change_type": "new",
-      "summary": "Initial content creation"
-    },
-    {
       "filename": "change-607.json",
       "change_id": 607,
       "api_path": "/api-data/changes/change-607.json",
@@ -1382,7 +1392,7 @@
       "detected_at": "2025-08-01T22:34:01.501Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "New blog posts and articles were added to the Hugging Face blog, including topics such as AI shoppin..."
+      "summary": "New blog posts and articles have been added to the Hugging Face blog, including topics such as AI sh..."
     },
     {
       "filename": "change-611.json",
@@ -1405,6 +1415,16 @@
       "summary": "The content of the product page changed from no content to a 404 error page"
     },
     {
+      "filename": "change-616.json",
+      "change_id": 616,
+      "api_path": "/api-data/changes/change-616.json",
+      "company": "ElevenLabs",
+      "detected_at": "2025-08-01T22:30:25.606Z",
+      "interest_level": 8,
+      "change_type": "new",
+      "summary": "New blog content and updates on AI audio research, product deployment, and company updates"
+    },
+    {
       "filename": "change-618.json",
       "change_id": 618,
       "api_path": "/api-data/changes/change-618.json",
@@ -1422,7 +1442,7 @@
       "detected_at": "2025-08-01T22:29:51.463Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "Introduction of Underlord, an AI-powered editing assistant, and updates to the Descript blog and web..."
+      "summary": "Introduction of Underlord, an AI-powered editing assistant, and various updates to the Descript blog..."
     },
     {
       "filename": "change-622.json",
@@ -1432,7 +1452,7 @@
       "detected_at": "2025-08-01T22:29:38.651Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "New pricing plans and features"
+      "summary": "New pricing page with detailed plans and features"
     },
     {
       "filename": "change-623.json",
@@ -1462,17 +1482,7 @@
       "detected_at": "2025-08-01T22:28:56.151Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "Initial blog content creation with various articles and links"
-    },
-    {
-      "filename": "change-631.json",
-      "change_id": 631,
-      "api_path": "/api-data/changes/change-631.json",
-      "company": "Cohere",
-      "detected_at": "2025-08-01T22:28:37.532Z",
-      "interest_level": 8,
-      "change_type": "new",
-      "summary": "New homepage content with updated product and feature descriptions, industry solutions, and customer..."
+      "summary": "Initial blog content creation with multiple posts and pages"
     },
     {
       "filename": "change-632.json",
@@ -1482,7 +1492,7 @@
       "detected_at": "2025-08-01T22:28:28.227Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "New blog posts and updates to the Cohere website, including the introduction of Command A Vision, a ..."
+      "summary": "New blog posts and updated content on the Cohere blog"
     },
     {
       "filename": "change-636.json",
@@ -1502,17 +1512,17 @@
       "detected_at": "2025-08-01T22:27:24.434Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "New blog content and updates to existing blog posts"
+      "summary": "New blog content and updates to existing pages, including the introduction of Qwen3-32B, Qwen3 Coder..."
     },
     {
-      "filename": "change-647.json",
-      "change_id": 647,
-      "api_path": "/api-data/changes/change-647.json",
-      "company": "Amazon CodeWhisperer",
-      "detected_at": "2025-08-01T22:26:03.770Z",
+      "filename": "change-644.json",
+      "change_id": 644,
+      "api_path": "/api-data/changes/change-644.json",
+      "company": "Anyscale",
+      "detected_at": "2025-08-01T22:27:02.150Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "The content changed from no previous version to a comprehensive AWS website page with various sectio..."
+      "summary": "Initial blog content creation"
     },
     {
       "filename": "change-653.json",
@@ -1542,7 +1552,7 @@
       "detected_at": "2025-08-01T22:24:38.485Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "Introduction of Jamba 1.6, a new open model for enterprise deployment, with improved quality and spe..."
+      "summary": "Introduction of Jamba 1.6, a new open model for enterprise deployment, with enhanced quality, speed,..."
     },
     {
       "filename": "change-480.json",
@@ -1555,16 +1565,6 @@
       "summary": "New articles and updates were added to the Google Blog, including 'Google Earth AI', 'The inside sto..."
     },
     {
-      "filename": "change-485.json",
-      "change_id": 485,
-      "api_path": "/api-data/changes/change-485.json",
-      "company": "Anthropic",
-      "detected_at": "2025-08-01T18:38:20.653Z",
-      "interest_level": 8,
-      "change_type": "modified",
-      "summary": "Addition of a new news article titled 'Anthropic Signs CMS Health Tech Ecosystem Pledge to Advance H..."
-    },
-    {
       "filename": "change-468.json",
       "change_id": 468,
       "api_path": "/api-data/changes/change-468.json",
@@ -1572,7 +1572,7 @@
       "detected_at": "2025-07-30T14:15:22.285Z",
       "interest_level": 8,
       "change_type": "modified",
-      "summary": "New articles and updates were added to the Google Blog, including Google Earth AI, NotebookLM, and G..."
+      "summary": "New articles and updates were added to the Google Blog, including 'Google Earth AI: Our state-of-the..."
     },
     {
       "filename": "change-449.json",
@@ -1585,6 +1585,16 @@
       "summary": "New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inferenc..."
     },
     {
+      "filename": "change-452.json",
+      "change_id": 452,
+      "api_path": "/api-data/changes/change-452.json",
+      "company": "GitHub Copilot",
+      "detected_at": "2025-07-29T14:45:53.478Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Reorganization and simplification of GitHub Copilot documentation"
+    },
+    {
       "filename": "change-457.json",
       "change_id": 457,
       "api_path": "/api-data/changes/change-457.json",
@@ -1592,7 +1602,7 @@
       "detected_at": "2025-07-29T14:45:10.018Z",
       "interest_level": 8,
       "change_type": "modified",
-      "summary": "Changes in pricing plans, specifically in the 'Max' plan where usage is now described as 'per sessio..."
+      "summary": "Changes in pricing plans, usage limits, and features for Claude models"
     },
     {
       "filename": "change-438.json",
@@ -1602,17 +1612,7 @@
       "detected_at": "2025-07-24T15:45:05.834Z",
       "interest_level": 8,
       "change_type": "modified",
-      "summary": "Change detected"
-    },
-    {
-      "filename": "change-439.json",
-      "change_id": 439,
-      "api_path": "/api-data/changes/change-439.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-24T15:44:39.009Z",
-      "interest_level": 8,
-      "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inferenc..."
     },
     {
       "filename": "change-289.json",
@@ -1622,17 +1622,7 @@
       "detected_at": "2025-07-23T19:40:46.363Z",
       "interest_level": 8,
       "change_type": "modified",
-      "summary": "Change detected"
-    },
-    {
-      "filename": "change-295.json",
-      "change_id": 295,
-      "api_path": "/api-data/changes/change-295.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-23T19:39:42.299Z",
-      "interest_level": 8,
-      "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "New articles and updates were added to the Google Blog, specifically in the AI, Gemini, Research, an..."
     },
     {
       "filename": "change-296.json",
@@ -1642,7 +1632,7 @@
       "detected_at": "2025-07-23T19:03:49.432Z",
       "interest_level": 8,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "New articles and updates were added to the Google Blog, including 'Check out the first images of wil..."
     },
     {
       "filename": "change-298.json",
@@ -1652,7 +1642,7 @@
       "detected_at": "2025-07-23T19:03:26.617Z",
       "interest_level": 8,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "Addition of new links and reorganization of existing content, including the addition of a 'Use AI mo..."
     },
     {
       "filename": "change-285.json",
@@ -1662,7 +1652,7 @@
       "detected_at": "2025-07-23T19:03:14.475Z",
       "interest_level": 8,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "GitHub Spark was added as a new feature"
     },
     {
       "filename": "change-286.json",
@@ -1672,17 +1662,7 @@
       "detected_at": "2025-07-23T19:02:49.922Z",
       "interest_level": 8,
       "change_type": "modified",
-      "summary": "Change detected"
-    },
-    {
-      "filename": "change-225.json",
-      "change_id": 225,
-      "api_path": "/api-data/changes/change-225.json",
-      "company": "OpenAI",
-      "detected_at": "2025-07-22T19:04:23.608Z",
-      "interest_level": 8,
-      "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "New news articles and updates were added to the newsroom section of the Anthropic website, including..."
     },
     {
       "filename": "change-160.json",
@@ -1692,7 +1672,7 @@
       "detected_at": "2025-07-21T15:18:22.044Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "Initial content creation"
     },
     {
       "filename": "change-362.json",
@@ -1702,7 +1682,7 @@
       "detected_at": "2025-07-21T03:13:00.463Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "New content added to the Google Blog, including AI news and updates, product news, company news, and..."
     },
     {
       "filename": "change-364.json",
@@ -1712,7 +1692,7 @@
       "detected_at": "2025-07-21T03:12:46.820Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "New content introduction for Google Cloud pricing page"
     },
     {
       "filename": "change-366.json",
@@ -1722,27 +1702,27 @@
       "detected_at": "2025-07-21T03:12:28.715Z",
       "interest_level": 8,
       "change_type": "new",
-      "summary": "Change detected"
+      "summary": "New content added to the GitHub blog, including various categories and subcategories related to AI, ..."
     },
     {
-      "filename": "change-372.json",
-      "change_id": 372,
-      "api_path": "/api-data/changes/change-372.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-21T03:06:58.430Z",
-      "interest_level": 8,
-      "change_type": "new",
-      "summary": "Change detected"
-    },
-    {
-      "filename": "change-452.json",
-      "change_id": 452,
-      "api_path": "/api-data/changes/change-452.json",
+      "filename": "change-439.json",
+      "change_id": 439,
+      "api_path": "/api-data/changes/change-439.json",
       "company": "GitHub Copilot",
-      "detected_at": "2025-07-29T14:45:53.478Z",
+      "detected_at": "2025-07-24T15:44:39.009Z",
       "interest_level": 7,
       "change_type": "modified",
-      "summary": "Reorganization and renaming of certain sections and links within the GitHub Copilot documentation"
+      "summary": "Reorganization and updates of GitHub Copilot documentation"
+    },
+    {
+      "filename": "change-695.json",
+      "change_id": 695,
+      "api_path": "/api-data/changes/change-695.json",
+      "company": "Replit",
+      "detected_at": "2025-08-04T00:21:48.717Z",
+      "interest_level": 6,
+      "change_type": "modified",
+      "summary": "The text prompt for the Replit Agent has been modified to suggest a data tool for developers instead..."
     },
     {
       "filename": "change-697.json",
@@ -1762,27 +1742,7 @@
       "detected_at": "2025-08-04T00:16:10.871Z",
       "interest_level": 6,
       "change_type": "modified",
-      "summary": "Article updates, new articles added, and minor changes in article views and comments"
-    },
-    {
-      "filename": "change-717.json",
-      "change_id": 717,
-      "api_path": "/api-data/changes/change-717.json",
-      "company": "Codeium",
-      "detected_at": "2025-08-03T22:58:23.079Z",
-      "interest_level": 6,
-      "change_type": "modified",
-      "summary": "Added download options for Windows, updated blog posts, and minor changes to the website's layout an..."
-    },
-    {
-      "filename": "change-566.json",
-      "change_id": 566,
-      "api_path": "/api-data/changes/change-566.json",
-      "company": "Redmore Studio",
-      "detected_at": "2025-08-01T22:41:07.613Z",
-      "interest_level": 6,
-      "change_type": "new",
-      "summary": "The blog content changed from no content to a 404 error page with a cookie policy and various links ..."
+      "summary": "Article updates, new articles added, and minor changes in article views and dates"
     },
     {
       "filename": "change-580.json",
@@ -1795,6 +1755,46 @@
       "summary": "Initial content addition"
     },
     {
+      "filename": "change-647.json",
+      "change_id": 647,
+      "api_path": "/api-data/changes/change-647.json",
+      "company": "Amazon CodeWhisperer",
+      "detected_at": "2025-08-01T22:26:03.770Z",
+      "interest_level": 6,
+      "change_type": "new",
+      "summary": "The content changed from no previous version to a 404 Not Found page with cookie preferences and var..."
+    },
+    {
+      "filename": "change-482.json",
+      "change_id": 482,
+      "api_path": "/api-data/changes/change-482.json",
+      "company": "GitHub Copilot",
+      "detected_at": "2025-08-01T18:38:57.523Z",
+      "interest_level": 6,
+      "change_type": "modified",
+      "summary": "Billing section updated to reflect changes in billing for organizations and enterprises"
+    },
+    {
+      "filename": "change-485.json",
+      "change_id": 485,
+      "api_path": "/api-data/changes/change-485.json",
+      "company": "Anthropic",
+      "detected_at": "2025-08-01T18:38:20.653Z",
+      "interest_level": 6,
+      "change_type": "modified",
+      "summary": "New article 'Anthropic Signs CMS Health Tech Ecosystem Pledge to Advance Healthcare Interoperability..."
+    },
+    {
+      "filename": "change-295.json",
+      "change_id": 295,
+      "api_path": "/api-data/changes/change-295.json",
+      "company": "Anthropic",
+      "detected_at": "2025-07-23T19:39:42.299Z",
+      "interest_level": 6,
+      "change_type": "modified",
+      "summary": "New article 'Thoughts on America’s AI Action Plan' was added, and some older articles were removed f..."
+    },
+    {
       "filename": "change-347.json",
       "change_id": 347,
       "api_path": "/api-data/changes/change-347.json",
@@ -1802,7 +1802,7 @@
       "detected_at": "2025-07-22T19:04:16.736Z",
       "interest_level": 6,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "Addition of 'Voice' feature"
     },
     {
       "filename": "change-219.json",
@@ -1812,7 +1812,7 @@
       "detected_at": "2025-07-22T17:13:18.357Z",
       "interest_level": 6,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "New article 'Build AI in America' added to the newsroom"
     },
     {
       "filename": "change-360.json",
@@ -1822,7 +1822,7 @@
       "detected_at": "2025-07-21T14:21:02.651Z",
       "interest_level": 6,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "Addition of a new policy announcement: Anthropic to sign the EU Code of Practice"
     },
     {
       "filename": "change-713.json",
@@ -1832,7 +1832,7 @@
       "detected_at": "2025-08-04T00:11:46.863Z",
       "interest_level": 5,
       "change_type": "modified",
-      "summary": "The content on the Andi homepage has been updated with new examples of search queries and minor chan..."
+      "summary": "The content on the Andi homepage has been updated with new examples of search queries and a slight r..."
     },
     {
       "filename": "change-716.json",
@@ -1845,16 +1845,6 @@
       "summary": "Download option for Windows added"
     },
     {
-      "filename": "change-722.json",
-      "change_id": 722,
-      "api_path": "/api-data/changes/change-722.json",
-      "company": "Andi",
-      "detected_at": "2025-08-03T22:56:39.763Z",
-      "interest_level": 5,
-      "change_type": "modified",
-      "summary": "The examples of search queries and the text describing the capabilities of Andi have changed."
-    },
-    {
       "filename": "change-456.json",
       "change_id": 456,
       "api_path": "/api-data/changes/change-456.json",
@@ -1862,7 +1852,7 @@
       "detected_at": "2025-07-29T14:45:17.004Z",
       "interest_level": 5,
       "change_type": "modified",
-      "summary": "Addition of a new case study on how Anthropic teams use Claude Code"
+      "summary": "Addition of a new case study and removal of several news articles"
     },
     {
       "filename": "change-705.json",
@@ -1872,7 +1862,7 @@
       "detected_at": "2025-08-04T00:16:13.684Z",
       "interest_level": 4,
       "change_type": "modified",
-      "summary": "Updates to model listings, dataset listings, and minor changes to website text and formatting"
+      "summary": "Updates to model listings, dataset listings, and minor changes to text and links"
     },
     {
       "filename": "change-711.json",
@@ -1882,17 +1872,27 @@
       "detected_at": "2025-08-04T00:12:45.437Z",
       "interest_level": 4,
       "change_type": "modified",
-      "summary": "The download option for the Windsurf Editor changed from Windows to macOS"
+      "summary": "The download option for the Windsurf Editor has changed from Windows to macOS, and the 'Let's surf' ..."
     },
     {
-      "filename": "change-712.json",
-      "change_id": 712,
-      "api_path": "/api-data/changes/change-712.json",
-      "company": "Anthropic",
-      "detected_at": "2025-08-04T00:12:00.366Z",
+      "filename": "change-714.json",
+      "change_id": 714,
+      "api_path": "/api-data/changes/change-714.json",
+      "company": "Aleph Alpha",
+      "detected_at": "2025-08-04T00:11:06.445Z",
       "interest_level": 4,
       "change_type": "modified",
-      "summary": "The download link for Claude has changed from https://claude.ai/redirect/website.v1.04abeae8-1daf-4c..."
+      "summary": "The pricing page was not found, indicating a potential removal or update of the pricing information"
+    },
+    {
+      "filename": "change-717.json",
+      "change_id": 717,
+      "api_path": "/api-data/changes/change-717.json",
+      "company": "Codeium",
+      "detected_at": "2025-08-03T22:58:23.079Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "Added download options for Windows, updated blog posts, and minor UI changes"
     },
     {
       "filename": "change-718.json",
@@ -1912,37 +1912,17 @@
       "detected_at": "2025-08-03T22:58:05.268Z",
       "interest_level": 4,
       "change_type": "modified",
-      "summary": "Download options for the Windsurf Editor were updated to include a direct link for Linux and removed..."
+      "summary": "Download options for the Windsurf Editor were updated to include a direct link for Linux and the rem..."
     },
     {
-      "filename": "change-482.json",
-      "change_id": 482,
-      "api_path": "/api-data/changes/change-482.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-08-01T18:38:57.523Z",
-      "interest_level": 4,
-      "change_type": "modified",
-      "summary": "Billing section updated to 'organizations and enterprises' from 'billing for organizations' and 'bil..."
-    },
-    {
-      "filename": "change-484.json",
-      "change_id": 484,
-      "api_path": "/api-data/changes/change-484.json",
+      "filename": "change-455.json",
+      "change_id": 455,
+      "api_path": "/api-data/changes/change-455.json",
       "company": "Anthropic",
-      "detected_at": "2025-08-01T18:38:27.433Z",
+      "detected_at": "2025-07-29T14:45:23.411Z",
       "interest_level": 4,
       "change_type": "modified",
-      "summary": "The download link for Claude has been updated with a new URL parameter"
-    },
-    {
-      "filename": "change-440.json",
-      "change_id": 440,
-      "api_path": "/api-data/changes/change-440.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-24T15:44:05.779Z",
-      "interest_level": 4,
-      "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "The download link for Claude has changed from https://claude.ai/redirect/website.v1.e0360d15-f344-40..."
     },
     {
       "filename": "change-275.json",
@@ -1952,7 +1932,17 @@
       "detected_at": "2025-07-23T00:38:32.210Z",
       "interest_level": 4,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "Rephrased introductory sentence for Perplexity Pro"
+    },
+    {
+      "filename": "change-227.json",
+      "change_id": 227,
+      "api_path": "/api-data/changes/change-227.json",
+      "company": "OpenAI",
+      "detected_at": "2025-07-22T18:46:20.404Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "Removal of Voice feature"
     },
     {
       "filename": "change-210.json",
@@ -1962,27 +1952,27 @@
       "detected_at": "2025-07-22T17:17:58.613Z",
       "interest_level": 4,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "Addition of a new concept 'About GitHub Copilot Chat' and removal of 'Set extension permissions' fro..."
     },
     {
-      "filename": "change-695.json",
-      "change_id": 695,
-      "api_path": "/api-data/changes/change-695.json",
-      "company": "Replit",
-      "detected_at": "2025-08-04T00:21:48.717Z",
+      "filename": "change-694.json",
+      "change_id": 694,
+      "api_path": "/api-data/changes/change-694.json",
+      "company": "Scale AI",
+      "detected_at": "2025-08-04T00:22:59.262Z",
       "interest_level": 3,
       "change_type": "modified",
-      "summary": "The prompt in the 'Turn your ideas into apps' section changed from 'Make me a data tool for designer..."
+      "summary": "Removal of redundant customer logos and minor adjustments in image URLs"
     },
     {
-      "filename": "change-703.json",
-      "change_id": 703,
-      "api_path": "/api-data/changes/change-703.json",
-      "company": "Luma AI",
-      "detected_at": "2025-08-04T00:17:13.579Z",
+      "filename": "change-702.json",
+      "change_id": 702,
+      "api_path": "/api-data/changes/change-702.json",
+      "company": "Midjourney",
+      "detected_at": "2025-08-04T00:18:10.128Z",
       "interest_level": 3,
       "change_type": "modified",
-      "summary": "Minor content updates and image optimizations"
+      "summary": "The 'Relax GPU Time' feature for the Basic Plan was updated from '[heroicons--no-symbol-16-solid.svg..."
     },
     {
       "filename": "change-709.json",
@@ -1992,7 +1982,7 @@
       "detected_at": "2025-08-04T00:13:20.559Z",
       "interest_level": 3,
       "change_type": "modified",
-      "summary": "Download option for Windows was replaced with Download option for Linux"
+      "summary": "Download option changed from Windows to Linux"
     },
     {
       "filename": "change-710.json",
@@ -2002,17 +1992,17 @@
       "detected_at": "2025-08-04T00:13:15.080Z",
       "interest_level": 3,
       "change_type": "modified",
-      "summary": "The keyboard shortcut for Agent mode and Terminal has been changed from ⌘ + I to Ctrl + I and ⌘ K to..."
+      "summary": "Minor content and image URL updates"
     },
     {
-      "filename": "change-714.json",
-      "change_id": 714,
-      "api_path": "/api-data/changes/change-714.json",
-      "company": "Aleph Alpha",
-      "detected_at": "2025-08-04T00:11:06.445Z",
+      "filename": "change-712.json",
+      "change_id": 712,
+      "api_path": "/api-data/changes/change-712.json",
+      "company": "Anthropic",
+      "detected_at": "2025-08-04T00:12:00.366Z",
       "interest_level": 3,
       "change_type": "modified",
-      "summary": "The pricing page was not found, indicating a potential removal or update of the pricing information"
+      "summary": "The URL parameters in the 'Download apps' and 'Claude log in' links have changed."
     },
     {
       "filename": "change-719.json",
@@ -2025,6 +2015,26 @@
       "summary": "The download option for the Windsurf Editor changed from macOS to Windows"
     },
     {
+      "filename": "change-722.json",
+      "change_id": 722,
+      "api_path": "/api-data/changes/change-722.json",
+      "company": "Andi",
+      "detected_at": "2025-08-03T22:56:39.763Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Minor content updates and reorganization"
+    },
+    {
+      "filename": "change-484.json",
+      "change_id": 484,
+      "api_path": "/api-data/changes/change-484.json",
+      "company": "Anthropic",
+      "detected_at": "2025-08-01T18:38:27.433Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "The download and login links for Claude have been updated with a new URL parameter."
+    },
+    {
       "filename": "change-454.json",
       "change_id": 454,
       "api_path": "/api-data/changes/change-454.json",
@@ -2032,37 +2042,17 @@
       "detected_at": "2025-07-29T14:45:29.310Z",
       "interest_level": 3,
       "change_type": "modified",
-      "summary": "Update of download and login links for Claude.ai"
+      "summary": "Update of download and login links for Claude"
     },
     {
-      "filename": "change-455.json",
-      "change_id": 455,
-      "api_path": "/api-data/changes/change-455.json",
+      "filename": "change-440.json",
+      "change_id": 440,
+      "api_path": "/api-data/changes/change-440.json",
       "company": "Anthropic",
-      "detected_at": "2025-07-29T14:45:23.411Z",
+      "detected_at": "2025-07-24T15:44:05.779Z",
       "interest_level": 3,
       "change_type": "modified",
       "summary": "The URL parameters for downloading the Claude app and logging in have changed."
-    },
-    {
-      "filename": "change-227.json",
-      "change_id": 227,
-      "api_path": "/api-data/changes/change-227.json",
-      "company": "OpenAI",
-      "detected_at": "2025-07-22T18:46:20.404Z",
-      "interest_level": 3,
-      "change_type": "modified",
-      "summary": "Change detected"
-    },
-    {
-      "filename": "change-694.json",
-      "change_id": 694,
-      "api_path": "/api-data/changes/change-694.json",
-      "company": "Scale AI",
-      "detected_at": "2025-08-04T00:22:59.262Z",
-      "interest_level": 2,
-      "change_type": "modified",
-      "summary": "No significant changes were detected in the content structure or major updates to products and servi..."
     },
     {
       "filename": "change-696.json",
@@ -2092,17 +2082,17 @@
       "detected_at": "2025-08-04T00:18:15.684Z",
       "interest_level": 2,
       "change_type": "modified",
-      "summary": "The theming asset ID in the Midjourney Help Center home page image was updated from '01J0C3W092GC3PH..."
+      "summary": "The image asset for the Midjourney Help Center home page was updated"
     },
     {
-      "filename": "change-702.json",
-      "change_id": 702,
-      "api_path": "/api-data/changes/change-702.json",
-      "company": "Midjourney",
-      "detected_at": "2025-08-04T00:18:10.128Z",
+      "filename": "change-703.json",
+      "change_id": 703,
+      "api_path": "/api-data/changes/change-703.json",
+      "company": "Luma AI",
+      "detected_at": "2025-08-04T00:17:13.579Z",
       "interest_level": 2,
       "change_type": "modified",
-      "summary": "The change is not explicitly visible in the provided content as the before and after content seems t..."
+      "summary": "No significant changes were detected in the content between the two versions."
     },
     {
       "filename": "change-704.json",
@@ -2122,7 +2112,7 @@
       "detected_at": "2025-08-01T18:39:06.003Z",
       "interest_level": 2,
       "change_type": "modified",
-      "summary": "No significant changes were detected in the content, only minor formatting and wording tweaks."
+      "summary": "No significant changes were detected in the content of the Google DeepMind homepage."
     },
     {
       "filename": "change-469.json",
@@ -2152,7 +2142,7 @@
       "detected_at": "2025-07-29T14:46:11.731Z",
       "interest_level": 2,
       "change_type": "modified",
-      "summary": "No significant content changes were detected between the two versions of the webpage."
+      "summary": "No significant changes were detected in the provided content."
     },
     {
       "filename": "change-451.json",
@@ -2165,6 +2155,16 @@
       "summary": "No significant changes were detected in the content structure or major updates to the models, resear..."
     },
     {
+      "filename": "change-453.json",
+      "change_id": 453,
+      "api_path": "/api-data/changes/change-453.json",
+      "company": "GitHub Copilot",
+      "detected_at": "2025-07-29T14:45:46.743Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "No significant changes were detected in the content structure or links between the two versions."
+    },
+    {
       "filename": "change-310.json",
       "change_id": 310,
       "api_path": "/api-data/changes/change-310.json",
@@ -2172,7 +2172,7 @@
       "detected_at": "2025-07-23T23:36:42.053Z",
       "interest_level": 2,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "No significant changes were detected in the provided content."
     },
     {
       "filename": "change-297.json",
@@ -2182,7 +2182,27 @@
       "detected_at": "2025-07-23T19:03:32.433Z",
       "interest_level": 2,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "No significant changes were detected in the content structure or major updates to the models, resear..."
+    },
+    {
+      "filename": "change-257.json",
+      "change_id": 257,
+      "api_path": "/api-data/changes/change-257.json",
+      "company": "GitHub Copilot",
+      "detected_at": "2025-07-22T22:52:15.696Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "No significant changes were detected in the content structure or links between the two versions."
+    },
+    {
+      "filename": "change-225.json",
+      "change_id": 225,
+      "api_path": "/api-data/changes/change-225.json",
+      "company": "OpenAI",
+      "detected_at": "2025-07-22T19:04:23.608Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "The 'openaicom-did' parameter in the URLs has changed from '4aa03562-c3c6-4634-98a2-6d29cf24c479' to..."
     },
     {
       "filename": "change-226.json",
@@ -2192,7 +2212,7 @@
       "detected_at": "2025-07-22T18:46:27.592Z",
       "interest_level": 2,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "The 'openaicom-did' parameter in the URLs has changed from '99580f75-39b7-4bf3-9a9c-e2a544c14234' to..."
     },
     {
       "filename": "change-209.json",
@@ -2202,7 +2222,7 @@
       "detected_at": "2025-07-22T17:18:26.929Z",
       "interest_level": 2,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "No significant changes were detected in the content between the two versions."
     },
     {
       "filename": "change-10.json",
@@ -2212,7 +2232,7 @@
       "detected_at": "2025-07-21T16:18:27.267Z",
       "interest_level": 2,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "No significant changes were detected in the provided content, only minor formatting and loading erro..."
     },
     {
       "filename": "change-184.json",
@@ -2222,7 +2242,7 @@
       "detected_at": "2025-07-21T15:11:46.979Z",
       "interest_level": 2,
       "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "No significant changes were detected in the content between the two versions."
     },
     {
       "filename": "change-708.json",
@@ -2252,7 +2272,7 @@
       "detected_at": "2025-08-01T18:38:51.413Z",
       "interest_level": 1,
       "change_type": "modified",
-      "summary": "No significant changes were detected in the content structure or links between the two versions."
+      "summary": "No significant changes were detected in the provided content."
     },
     {
       "filename": "change-467.json",
@@ -2262,27 +2282,7 @@
       "detected_at": "2025-07-30T14:15:28.890Z",
       "interest_level": 1,
       "change_type": "modified",
-      "summary": "No changes were detected in the content between the two versions."
-    },
-    {
-      "filename": "change-453.json",
-      "change_id": 453,
-      "api_path": "/api-data/changes/change-453.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-29T14:45:46.743Z",
-      "interest_level": 1,
-      "change_type": "modified",
-      "summary": "No significant changes were detected in the provided content."
-    },
-    {
-      "filename": "change-257.json",
-      "change_id": 257,
-      "api_path": "/api-data/changes/change-257.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-22T22:52:15.696Z",
-      "interest_level": 1,
-      "change_type": "modified",
-      "summary": "Change detected"
+      "summary": "No changes were detected in the content"
     }
   ]
 }

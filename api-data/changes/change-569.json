@@ -5,15 +5,15 @@
   "detected_at": "2025-08-01T22:40:47.209Z",
   "change_type": "new",
   "interest_level": 8,
-  "ai_confidence": 0.9,
-  "summary": "Introduction of new pricing plans and features for Pika's video creation services",
+  "ai_confidence": 0.8,
+  "summary": "Introduction of new pricing plans and features for Pika",
   "category": "product_update",
   "change_summary": {
-    "what_changed": "Introduction of new pricing plans and features for Pika's video creation services",
+    "what_changed": "Introduction of new pricing plans and features for Pika",
     "change_type": "addition",
     "change_scale": "significant",
     "specific_changes": [
-      "Introduction of four pricing plans: Free, Basic, Standard, and Pro",
+      "Introduction of four pricing plans: Free, Basic, Standard, Pro, and Fancy",
       "Specification of monthly video credits for each plan",
       "Details on cost per video for different models and features",
       "Introduction of the 2.2 model with updated pricing",
@@ -26,8 +26,8 @@
       "Pika is expanding its services to cater to a wider range of customers",
       "The company is investing in new technologies and features to stay competitive"
     ],
-    "competitive_implications": "The updated pricing plans and features could give Pika a competitive edge in the market, but may also put pressure on other companies to follow suit.",
-    "strategic_direction": "Pika is focusing on providing a range of pricing options and features to appeal to different customer segments and increase its market share."
+    "competitive_implications": "The updated pricing plans and features could give Pika a competitive edge in the market, but may also lead to increased competition from other companies.",
+    "strategic_direction": "Pika is focusing on providing a range of pricing plans and features to cater to different customer needs and stay competitive in the market."
   },
   "entities": {
     "products": [
@@ -47,10 +47,26 @@
     ],
     "people": [],
     "pricing": [
-      "Free plan: $0",
-      "Basic plan: $8/month (billed yearly)",
-      "Standard plan: $28/month (billed yearly)",
-      "Pro plan: $76/month (billed yearly)"
+      {
+        "plan": "Free",
+        "price": "$0"
+      },
+      {
+        "plan": "Basic",
+        "price": "$8"
+      },
+      {
+        "plan": "Standard",
+        "price": "$28"
+      },
+      {
+        "plan": "Pro",
+        "price": "$76"
+      },
+      {
+        "plan": "Fancy",
+        "price": "Info"
+      }
     ],
     "markets": []
   },
@@ -60,16 +76,16 @@
       "The company is investing in new technologies and features to stay competitive"
     ],
     "opportunities": [
-      "Pika's updated pricing plans and features could attract more customers and increase revenue",
-      "The company's investment in new technologies and features could give it a competitive edge"
+      "Pika can attract more customers with its new pricing plans and features",
+      "The company can increase revenue with its updated services"
     ],
     "threats": [
-      "The updated pricing plans and features may not be competitive enough to attract new customers",
-      "Other companies may respond by introducing similar pricing plans and features"
+      "Increased competition from other companies",
+      "Potential customer dissatisfaction with the new pricing plans and features"
     ],
     "recommended_actions": [
-      "Monitor Pika's pricing plans and features to stay competitive",
-      "Consider introducing similar pricing plans and features to attract new customers"
+      "Monitor customer feedback and adjust pricing plans and features accordingly",
+      "Continuously invest in new technologies and features to stay competitive"
     ]
   },
   "key_insights": [
@@ -77,7 +93,7 @@
     "The company is investing in new technologies and features to stay competitive"
   ],
   "business_impact": "The introduction of new pricing plans and features could attract more customers and increase revenue for Pika.",
-  "competitive_implications": "The updated pricing plans and features could give Pika a competitive edge in the market, but may also put pressure on other companies to follow suit.",
+  "competitive_implications": "The updated pricing plans and features could give Pika a competitive edge in the market, but may also lead to increased competition from other companies.",
   "content_hash_before": null,
   "content_hash_after": "08f1a835502fdd816052874d99065a2817eb316c428eebcc817bf74d4f2486d6",
   "ai_model": "groq-llama-3.3-70b",

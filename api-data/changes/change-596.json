@@ -6,27 +6,27 @@
   "change_type": "new",
   "interest_level": 8,
   "ai_confidence": 0.8,
-  "summary": "Introduction of new API plans and pricing structure",
+  "summary": "Introduction of new API plans and pricing for Leonardo AI",
   "category": "product_update",
   "change_summary": {
-    "what_changed": "Introduction of new API plans and pricing structure",
-    "change_type": "update",
+    "what_changed": "Introduction of new API plans and pricing for Leonardo AI",
+    "change_type": "addition",
     "change_scale": "significant",
     "specific_changes": [
-      "API Basic plan introduced at $9/month",
-      "API Standard plan introduced at $49/month",
-      "API Pro plan introduced at $299/month",
+      "API Basic plan for $9/month with 3,500 API credits",
+      "API Standard plan for $49/month with 25,000 API credits",
+      "API Pro plan for $299/month with 200,000 API credits",
       "API Custom plan for custom API credits amount"
     ]
   },
   "strategic_analysis": {
-    "business_impact": "The new API plans and pricing structure can help Leonardo AI increase revenue and expand its customer base.",
+    "business_impact": "The new API plans and pricing can help Leonardo AI to increase its revenue and customer base",
     "market_signals": [
-      "increased competition in the AI API market",
-      "growing demand for AI-powered solutions"
+      "expansion of AI-powered services",
+      "increased demand for API-based solutions"
     ],
-    "competitive_implications": "Leonardo AI's new API plans and pricing structure can help the company stay competitive in the market.",
-    "strategic_direction": "Leonardo AI is focusing on expanding its offerings and catering to different customer segments."
+    "competitive_implications": "The introduction of new API plans and pricing can help Leonardo AI to stay competitive in the market",
+    "strategic_direction": "Leonardo AI is focusing on expanding its offerings and attracting more customers through its API-based solutions"
   },
   "entities": {
     "products": [
@@ -45,7 +45,10 @@
       "AI",
       "API"
     ],
-    "people": [],
+    "people": [
+      "Quyen Quach",
+      "Gwan Yip"
+    ],
     "pricing": [
       "$9/month",
       "$49/month",
@@ -62,28 +65,28 @@
   },
   "insights": {
     "key_findings": [
-      "Leonardo AI has introduced new API plans and pricing structure",
-      "The company is focusing on expanding its offerings and catering to different customer segments."
+      "Leonardo AI is introducing new API plans and pricing",
+      "The company is focusing on expanding its offerings and attracting more customers"
     ],
     "opportunities": [
-      "increased revenue",
-      "expanded customer base"
+      "increased revenue and customer base",
+      "expansion into new markets"
     ],
     "threats": [
-      "increased competition",
-      "market saturation"
+      "competition from other AI-powered services",
+      "technical issues with the API"
     ],
     "recommended_actions": [
-      "monitor market trends",
-      "adjust pricing strategy as needed"
+      "monitor the market response to the new API plans and pricing",
+      "continue to expand and improve the API-based solutions"
     ]
   },
   "key_insights": [
-    "Leonardo AI has introduced new API plans and pricing structure",
-    "The company is focusing on expanding its offerings and catering to different customer segments."
+    "Leonardo AI is introducing new API plans and pricing",
+    "The company is focusing on expanding its offerings and attracting more customers"
   ],
-  "business_impact": "The new API plans and pricing structure can help Leonardo AI increase revenue and expand its customer base.",
-  "competitive_implications": "Leonardo AI's new API plans and pricing structure can help the company stay competitive in the market.",
+  "business_impact": "The new API plans and pricing can help Leonardo AI to increase its revenue and customer base",
+  "competitive_implications": "The introduction of new API plans and pricing can help Leonardo AI to stay competitive in the market",
   "content_hash_before": null,
   "content_hash_after": "9978575d3f5bdc78c603075d81c2794f8782e4cd0583215a492a0a9d440ea48c",
   "ai_model": "groq-llama-3.3-70b",

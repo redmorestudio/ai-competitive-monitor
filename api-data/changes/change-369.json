@@ -6,14 +6,76 @@
   "change_type": "new",
   "interest_level": 9,
   "ai_confidence": 0.9,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "summary": "New pricing page content for GitHub Copilot",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "New pricing page content for GitHub Copilot",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of a free plan with limited features",
+      "Team plan with advanced collaboration features",
+      "Enterprise plan with security, compliance, and flexible deployment options",
+      "Featured add-ons such as GitHub Copilot Access, GitHub Codespaces Access, GitHub Secret Protection, and GitHub Code Security"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The new pricing page and plans are likely to attract more customers, increase revenue, and enhance GitHub Copilot's competitiveness in the market.",
+    "market_signals": [
+      "Expansion of offerings to cater to different customer segments",
+      "Increased focus on security, compliance, and flexible deployment options"
+    ],
+    "competitive_implications": "The introduction of new plans and add-ons may put pressure on competitors to review and adjust their pricing strategies.",
+    "strategic_direction": "GitHub Copilot is likely to continue investing in its platform, expanding its offerings, and enhancing its security and compliance features to maintain its competitive edge."
+  },
+  "entities": {
+    "products": [
+      "GitHub Copilot",
+      "GitHub Codespaces",
+      "GitHub Advanced Security"
+    ],
+    "features": [
+      "Dependabot security and version updates",
+      "CI/CD minutes",
+      "Packages storage",
+      "Issues & Projects",
+      "Community support"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Free plan: $0 USD per user/month",
+      "Team plan: $4 USD per user/month",
+      "Enterprise plan: $21 USD per user/month"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The new pricing page and plans are designed to attract a wider range of customers, from individuals to large enterprises.",
+      "The featured add-ons provide additional revenue streams and enhance the overall value proposition of GitHub Copilot."
+    ],
+    "opportunities": [
+      "Increased adoption of GitHub Copilot among developers and enterprises",
+      "Expansion of GitHub Copilot's customer base into new markets and industries"
+    ],
+    "threats": [
+      "Intensified competition from other code collaboration and version control platforms",
+      "Potential cannibalization of existing revenue streams due to the introduction of new plans and add-ons"
+    ],
+    "recommended_actions": [
+      "Monitor the market response to the new pricing page and plans",
+      "Continuously evaluate and adjust the pricing strategy to maintain competitiveness",
+      "Invest in marketing and sales efforts to promote the new plans and add-ons"
+    ]
+  },
+  "key_insights": [
+    "The new pricing page and plans are designed to attract a wider range of customers, from individuals to large enterprises.",
+    "The featured add-ons provide additional revenue streams and enhance the overall value proposition of GitHub Copilot."
+  ],
+  "business_impact": "The new pricing page and plans are likely to attract more customers, increase revenue, and enhance GitHub Copilot's competitiveness in the market.",
+  "competitive_implications": "The introduction of new plans and add-ons may put pressure on competitors to review and adjust their pricing strategies.",
   "content_hash_before": null,
   "content_hash_after": "93dd0403b2b7b48795e5266614348c0592f8fd275bbed1134440f0fcb75490f2",
   "ai_model": "groq-llama-3.3-70b",

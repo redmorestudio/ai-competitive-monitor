@@ -5,15 +5,75 @@
   "detected_at": "2025-07-21T03:12:46.820Z",
   "change_type": "new",
   "interest_level": 8,
-  "ai_confidence": 0.8,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "ai_confidence": 0.9,
+  "summary": "New content introduction for Google Cloud pricing page",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New content introduction for Google Cloud pricing page",
+    "change_type": "addition",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of a new pricing page for Vertex AI",
+      "Addition of various solutions and services for different industries and use cases",
+      "Inclusion of links to other Google Cloud pages and resources"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of a new pricing page and the addition of various solutions and services may attract more customers to Google Cloud and increase revenue",
+    "market_signals": [
+      "Increased competition in the cloud computing market",
+      "Growing demand for AI and machine learning solutions"
+    ],
+    "competitive_implications": "Google Cloud's updated pricing page and solutions may give it a competitive edge over other cloud computing providers",
+    "strategic_direction": "Google Cloud is focusing on expanding its offerings and improving its pricing to attract more customers and increase revenue"
+  },
+  "entities": {
+    "products": [
+      "Vertex AI",
+      "Google Cloud"
+    ],
+    "features": [
+      "Pricing page",
+      "Solutions for different industries and use cases"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [
+      "Pricing page for Vertex AI"
+    ],
+    "markets": [
+      "Cloud computing",
+      "Artificial Intelligence"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Google Cloud has introduced a new pricing page for Vertex AI",
+      "The company is expanding its solutions and services for different industries and use cases"
+    ],
+    "opportunities": [
+      "Increased revenue for Google Cloud",
+      "Improved competitiveness in the cloud computing market"
+    ],
+    "threats": [
+      "Increased competition from other cloud computing providers",
+      "Potential pricing pressure from customers"
+    ],
+    "recommended_actions": [
+      "Monitor Google Cloud's pricing and solutions",
+      "Assess the competitiveness of Google Cloud's offerings"
+    ]
+  },
+  "key_insights": [
+    "Google Cloud has introduced a new pricing page for Vertex AI",
+    "The company is expanding its solutions and services for different industries and use cases"
+  ],
+  "business_impact": "The introduction of a new pricing page and the addition of various solutions and services may attract more customers to Google Cloud and increase revenue",
+  "competitive_implications": "Google Cloud's updated pricing page and solutions may give it a competitive edge over other cloud computing providers",
   "content_hash_before": null,
   "content_hash_after": "803b85bcc20c98f30f421abf6d9d6a802f097284e350d47e7117d4ac8bc28b3e",
   "ai_model": "groq-llama-3.3-70b",

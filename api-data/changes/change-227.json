@@ -4,16 +4,56 @@
   "page_url": "product",
   "detected_at": "2025-07-22T18:46:20.404Z",
   "change_type": "modified",
-  "interest_level": 3,
+  "interest_level": 4,
   "ai_confidence": 0.6,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "summary": "Removal of Voice feature",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Removal of Voice feature",
+    "change_type": "removal",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Voice feature button removed from the interface"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The removal of the Voice feature might affect user engagement, but the overall impact on the business is likely to be minimal.",
+    "market_signals": [
+      "Potential shift in focus towards text-based interactions"
+    ],
+    "competitive_implications": "Competitors may see this as an opportunity to fill the gap with their own voice-based features.",
+    "strategic_direction": "OpenAI might be focusing on refining their core chat functionality."
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "Voice"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The Voice feature was removed, potentially indicating a technical issue or a strategic shift"
+    ],
+    "opportunities": [
+      "Competitors can develop voice-based features to attract users"
+    ],
+    "threats": [
+      "User engagement might decrease without the Voice feature"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and engagement metrics to understand the impact of the change"
+    ]
+  },
+  "key_insights": [
+    "The Voice feature was removed, potentially indicating a technical issue or a strategic shift"
+  ],
+  "business_impact": "The removal of the Voice feature might affect user engagement, but the overall impact on the business is likely to be minimal.",
+  "competitive_implications": "Competitors may see this as an opportunity to fill the gap with their own voice-based features.",
   "content_hash_before": "8485ace5f8dc30d7969561191e78d15a6162b7b5019d1e7b2429ea0980d7cc3c",
   "content_hash_after": "e0a488af6668fc00b7a9ab06b8c67135629cb36abec2e26bb065c1b64736c6dc",
   "ai_model": "groq-llama-3.3-70b",

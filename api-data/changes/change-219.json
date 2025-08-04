@@ -5,15 +5,54 @@
   "detected_at": "2025-07-22T17:13:18.357Z",
   "change_type": "modified",
   "interest_level": 6,
-  "ai_confidence": 0.8,
-  "summary": "Change detected",
-  "category": "General Update",
-  "strategic_analysis": {},
-  "entities": {},
-  "insights": {},
-  "key_insights": [],
-  "business_impact": "",
-  "competitive_implications": "",
+  "ai_confidence": 0.7,
+  "summary": "New article 'Build AI in America' added to the newsroom",
+  "category": "policy_update",
+  "change_summary": {
+    "what_changed": "New article 'Build AI in America' added to the newsroom",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Addition of a new policy article titled 'Build AI in America'",
+      "No removals or updates of existing articles observed"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of the 'Build AI in America' article may indicate Anthropic's increased focus on domestic AI development and potential expansion into new markets.",
+    "market_signals": [
+      "Potential increased investment in US-based AI research and development"
+    ],
+    "competitive_implications": "Anthropic may be attempting to differentiate itself from competitors by emphasizing its commitment to domestic AI development.",
+    "strategic_direction": "Anthropic's strategic direction may be shifting towards increased focus on US-based AI development and potential expansion into new markets."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Anthropic has added a new policy article titled 'Build AI in America'"
+    ],
+    "opportunities": [
+      "Potential for increased investment in US-based AI research and development"
+    ],
+    "threats": [
+      "Potential increased competition in the US AI market"
+    ],
+    "recommended_actions": [
+      "Monitor Anthropic's future announcements and policy updates for further insight into their strategic direction"
+    ]
+  },
+  "key_insights": [
+    "Anthropic has added a new policy article titled 'Build AI in America'"
+  ],
+  "business_impact": "The addition of the 'Build AI in America' article may indicate Anthropic's increased focus on domestic AI development and potential expansion into new markets.",
+  "competitive_implications": "Anthropic may be attempting to differentiate itself from competitors by emphasizing its commitment to domestic AI development.",
   "content_hash_before": "715149c11ce9ecfeb58230117d600c56aab66e6ae501de8e5c65f2d8bde958eb",
   "content_hash_after": "3e93d97a981a6c18ec82db5a02466a714245503230014ea45ed7885df13d58cb",
   "ai_model": "groq-llama-3.3-70b",
