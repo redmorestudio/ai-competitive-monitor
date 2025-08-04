@@ -87,8 +87,20 @@ export class Graph3DFilters {
                    (link.strength || 0) >= this.linkThreshold;
         });
 
-        // Step 10: Remove orphaned nodes when entity type filter is active
-        if (this.entityTypeFilters.size > 0) {
+        // Step 10: Remove orphaned nodes
+        // Apply orphan filtering whenever we have filters that could create disconnected nodes
+        const shouldFilterOrphans = this.entityTypeFilters.size > 0 || 
+                                   this.linkThreshold > 0 || 
+                                   this.technologyFilters.size > 0 || 
+                                   this.conceptFilters.size > 0 ||
+                                   this.customTagFilter !== null ||
+                                   this.viewModeFilter !== null ||
+                                   this.searchQuery !== '' ||
+                                   !this.showTechnologyNodes ||
+                                   !this.showConceptNodes ||
+                                   !this.showCompanyNodes;
+        
+        if (shouldFilterOrphans && filteredLinks.length > 0) {
             const connectedNodes = new Set();
             
             // Find all nodes that have at least one connection
