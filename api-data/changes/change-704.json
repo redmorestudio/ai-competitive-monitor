@@ -1,0 +1,52 @@
+{
+  "id": 704,
+  "company": "Intel",
+  "page_url": "news",
+  "detected_at": "2025-08-04T00:16:37.325Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "No significant changes were detected in the overall structure or content of the Intel Newsroom Home page between the two versions.",
+  "category": "minor change",
+  "change_summary": {
+    "what_changed": "No significant changes were detected in the overall structure or content of the Intel Newsroom Home page between the two versions.",
+    "change_type": "no change",
+    "change_scale": "minor",
+    "specific_changes": []
+  },
+  "strategic_analysis": {
+    "business_impact": "No apparent business impact from the changes detected.",
+    "market_signals": [],
+    "competitive_implications": "No significant competitive implications identified.",
+    "strategic_direction": "No change in strategic direction apparent from the analysis."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "No significant changes were detected."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor for future updates that may indicate strategic shifts or new product announcements."
+    ]
+  },
+  "key_insights": [
+    "No significant changes were detected."
+  ],
+  "business_impact": "No apparent business impact from the changes detected.",
+  "competitive_implications": "No significant competitive implications identified.",
+  "content_hash_before": "806b5932307e7f1c02c59111af532806727ea9ec093362297123c32636766a2c",
+  "content_hash_after": "81545ab3a5495903d2254ea6f71aa10236c8806f877f23ce2fd7b96751a113ee",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,67 @@
+{
+  "id": 711,
+  "company": "Codeium",
+  "page_url": "homepage",
+  "detected_at": "2025-08-04T00:12:45.437Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "The download option for the Windsurf Editor changed from Windows to macOS",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The download option for the Windsurf Editor changed from Windows to macOS",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Download option changed from Windows to macOS",
+      "Added download options for Apple Silicon and Intel"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may slightly improve user experience for macOS users, but it is unlikely to have a significant impact on the business",
+    "market_signals": [
+      "Increased support for macOS users"
+    ],
+    "competitive_implications": "The change may slightly improve Windsurf's competitiveness in the market, but it is unlikely to be a major differentiator",
+    "strategic_direction": "The change is consistent with Windsurf's goal of providing a user-friendly experience, but it is not a major strategic shift"
+  },
+  "entities": {
+    "products": [
+      "Windsurf Editor"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "macOS",
+      "Apple Silicon",
+      "Intel"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The change is minor and only affects the download option for the Windsurf Editor"
+    ],
+    "opportunities": [
+      "Improved user experience for macOS users"
+    ],
+    "threats": [
+      "Potential for users to be confused by the change"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and adjust the download option as needed"
+    ]
+  },
+  "key_insights": [
+    "The change is minor and only affects the download option for the Windsurf Editor"
+  ],
+  "business_impact": "The change may slightly improve user experience for macOS users, but it is unlikely to have a significant impact on the business",
+  "competitive_implications": "The change may slightly improve Windsurf's competitiveness in the market, but it is unlikely to be a major differentiator",
+  "content_hash_before": "e41535e2e1faaa556d278100631d031d9e39ca38a6ab869e28e53ae3c21a2556",
+  "content_hash_after": "8c7e85f2a2b71820d6eb279807c86c1aea7524df95b890c899b795affa142dcf",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

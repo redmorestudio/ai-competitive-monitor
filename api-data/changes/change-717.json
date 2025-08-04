@@ -1,0 +1,84 @@
+{
+  "id": 717,
+  "company": "Codeium",
+  "page_url": "homepage",
+  "detected_at": "2025-08-03T22:58:23.079Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "Added download options for Windows, updated blog posts, and minor changes to the website's layout and content",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Added download options for Windows, updated blog posts, and minor changes to the website's layout and content",
+    "change_type": "addition/update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added download options for Windows (x64 and arm64)",
+      "Updated blog posts, including 'Wave 11: Just Keep Shipping', 'Our Commitment to Windsurf', and 'The Next Chapter'",
+      "Minor changes to the website's layout and content, including updated testimonials and features"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are expected to have a minor impact on the business, with potential benefits including increased user engagement and improved customer experience",
+    "market_signals": [
+      "Increased focus on Windows users",
+      "Emphasis on community and customer experience"
+    ],
+    "competitive_implications": "The changes do not significantly impact the company's competitive position, but may help to maintain or improve its market share",
+    "strategic_direction": "The company appears to be focused on continuous improvement and expansion of its product offerings and user experience"
+  },
+  "entities": {
+    "products": [
+      "Windsurf Editor"
+    ],
+    "features": [
+      "Cascade",
+      "Tab"
+    ],
+    "partnerships": [
+      "Cognition"
+    ],
+    "technologies": [
+      "AI",
+      "JetBrains"
+    ],
+    "people": [
+      "Garry Tan"
+    ],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is expanding its download options to include Windows users",
+      "The company is emphasizing its commitment to community and customer experience",
+      "The company is continuously updating and improving its product offerings and features"
+    ],
+    "opportunities": [
+      "Increased market share and user engagement",
+      "Improved customer experience and retention",
+      "Potential for strategic partnerships and collaborations"
+    ],
+    "threats": [
+      "Competition from other AI-powered coding tools and platforms",
+      "Potential for technical issues or bugs in the updated features and download options"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and engagement with the updated features and download options",
+      "Continuously evaluate and improve the product offerings and features",
+      "Explore strategic partnerships and collaborations to expand market share and user base"
+    ]
+  },
+  "key_insights": [
+    "The company is expanding its download options to include Windows users",
+    "The company is emphasizing its commitment to community and customer experience",
+    "The company is continuously updating and improving its product offerings and features"
+  ],
+  "business_impact": "The changes are expected to have a minor impact on the business, with potential benefits including increased user engagement and improved customer experience",
+  "competitive_implications": "The changes do not significantly impact the company's competitive position, but may help to maintain or improve its market share",
+  "content_hash_before": "e874c1daab00c595610c83fc74770adaf92c43004835c914da982e6c2eafffab",
+  "content_hash_after": "e41535e2e1faaa556d278100631d031d9e39ca38a6ab869e28e53ae3c21a2556",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

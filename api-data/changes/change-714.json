@@ -1,0 +1,63 @@
+{
+  "id": 714,
+  "company": "Aleph Alpha",
+  "page_url": "pricing",
+  "detected_at": "2025-08-04T00:11:06.445Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.6,
+  "summary": "The pricing page was not found, indicating a potential removal or update of the pricing information",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The pricing page was not found, indicating a potential removal or update of the pricing information",
+    "change_type": "removal",
+    "change_scale": "minor",
+    "specific_changes": [
+      "The pricing page is no longer accessible",
+      "A 404 error page is displayed instead"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The removal of the pricing page may indicate a change in the company's pricing strategy or a temporary update to the website",
+    "market_signals": [
+      "Potential change in pricing strategy"
+    ],
+    "competitive_implications": "The change may not have a significant impact on the competitive landscape",
+    "strategic_direction": "The company may be refining its pricing strategy or updating its website"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Pricing page removed"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The pricing page is no longer accessible"
+    ],
+    "opportunities": [
+      "Monitor the company's website for updates on pricing"
+    ],
+    "threats": [
+      "Potential change in pricing strategy may affect competitors"
+    ],
+    "recommended_actions": [
+      "Continue to monitor the company's website and pricing strategy"
+    ]
+  },
+  "key_insights": [
+    "The pricing page is no longer accessible"
+  ],
+  "business_impact": "The removal of the pricing page may indicate a change in the company's pricing strategy or a temporary update to the website",
+  "competitive_implications": "The change may not have a significant impact on the competitive landscape",
+  "content_hash_before": "c00241c9aa6538306567ebacdfd473fbf70d25b5e473c13b6586c2aca07ee1fc",
+  "content_hash_after": "52ec5545611e63e60d8675f2c36bbd89f9e7a0f2ce02c0a05ca4a05d6907e93c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

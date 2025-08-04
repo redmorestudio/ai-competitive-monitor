@@ -1,0 +1,93 @@
+{
+  "id": 715,
+  "company": "DALL-E",
+  "page_url": "pricing",
+  "detected_at": "2025-08-03T22:59:25.831Z",
+  "change_type": "modified",
+  "interest_level": 9,
+  "ai_confidence": 0.95,
+  "summary": "The content changed from a blocked page to a pricing page for ChatGPT by OpenAI, revealing various plans and features.",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "The content changed from a blocked page to a pricing page for ChatGPT by OpenAI, revealing various plans and features.",
+    "change_type": "update",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Free, Plus, Pro, Team, and Enterprise plans",
+      "Detailed features and pricing for each plan",
+      "Comparison of features across plans"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of various plans and features indicates a significant expansion of OpenAI's business model, targeting both individual and enterprise customers.",
+    "market_signals": [
+      "Growing demand for AI-powered chatbots",
+      "Increasing competition in the AI market"
+    ],
+    "competitive_implications": "The move positions OpenAI as a major player in the AI market, potentially threatening competitors and establishing a new standard for chatbot pricing and features.",
+    "strategic_direction": "OpenAI is focusing on diversifying its revenue streams and expanding its customer base, while also investing in research and development to improve its AI models."
+  },
+  "entities": {
+    "products": [
+      "ChatGPT",
+      "Sora",
+      "API Platform"
+    ],
+    "features": [
+      "GPT-4o",
+      "GPT-4.1 mini",
+      "GPT-4.1",
+      "GPT-4.5 research preview",
+      "OpenAI o3",
+      "OpenAI o4-mini",
+      "OpenAI o4-mini-high",
+      "OpenAI o3-pro"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [
+      "$0/month (Free)",
+      "$20/month (Plus)",
+      "$200/month (Pro)",
+      "$25/user/month (Team)",
+      "Custom (Enterprise)"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "OpenAI is shifting its focus towards monetizing ChatGPT",
+      "The company is targeting both individual and enterprise customers",
+      "The introduction of various plans and features indicates a significant expansion of OpenAI's business model"
+    ],
+    "opportunities": [
+      "Partnership opportunities with OpenAI",
+      "Integration of ChatGPT with other products and services"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential backlash from customers due to pricing or feature changes"
+    ],
+    "recommended_actions": [
+      "Monitor OpenAI's pricing and feature updates",
+      "Explore partnership opportunities with OpenAI",
+      "Develop strategies to compete with OpenAI's ChatGPT"
+    ]
+  },
+  "key_insights": [
+    "OpenAI is shifting its focus towards monetizing ChatGPT",
+    "The company is targeting both individual and enterprise customers",
+    "The introduction of various plans and features indicates a significant expansion of OpenAI's business model"
+  ],
+  "business_impact": "The introduction of various plans and features indicates a significant expansion of OpenAI's business model, targeting both individual and enterprise customers.",
+  "competitive_implications": "The move positions OpenAI as a major player in the AI market, potentially threatening competitors and establishing a new standard for chatbot pricing and features.",
+  "content_hash_before": "6973dddd3ef9cb6a2932702f31777faad9c9bf3124d147a84f31aadb6d139546",
+  "content_hash_after": "49a301ca628390e740cc7c1e30b2617c4861e906d55094e1d72ce60090993758",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

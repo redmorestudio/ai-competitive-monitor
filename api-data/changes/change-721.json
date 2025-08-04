@@ -1,0 +1,81 @@
+{
+  "id": 721,
+  "company": "Cerebras",
+  "page_url": "blog",
+  "detected_at": "2025-08-03T22:57:46.318Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New blog posts were added, specifically 'From Zero to Sudoku Hero: An RL Adventure' and 'Introducing Cerebras Code'. Additionally, the order and presentation of some blog posts have changed.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog posts were added, specifically 'From Zero to Sudoku Hero: An RL Adventure' and 'Introducing Cerebras Code'. Additionally, the order and presentation of some blog posts have changed.",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of new blog posts",
+      "Changes in blog post ordering and presentation"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates suggest Cerebras is focusing on enhancing its AI and inference capabilities, potentially to stay competitive in the rapidly evolving AI landscape. The introduction of 'Cerebras Code' could indicate a strategic move towards more developer-centric offerings.",
+    "market_signals": [
+      "Increased focus on AI and machine learning",
+      "Expansion into new markets or segments"
+    ],
+    "competitive_implications": "Cerebras' advancements in AI and inference could pose a competitive challenge to other companies in the AI sector, particularly those focused on enterprise solutions.",
+    "strategic_direction": "Cerebras appears to be directing its efforts towards strengthening its position in the AI market, with a focus on real-time reasoning, inference, and potentially expanding its customer base through more accessible developer tools like 'Cerebras Code'."
+  },
+  "entities": {
+    "products": [
+      "Qwen3-32B",
+      "Qwen3 Coder 480B",
+      "Cerebras Code"
+    ],
+    "features": [
+      "Realtime Reasoning",
+      "Inference"
+    ],
+    "partnerships": [
+      "IBM"
+    ],
+    "technologies": [
+      "AI",
+      "LLM"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Enterprise AI"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Cerebras is actively developing new AI-related products and features",
+      "The company is expanding its offerings, potentially to attract more developers and enterprises"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Cerebras for companies looking to leverage advanced AI capabilities",
+      "Potential for Cerebras' technologies to be applied in various industries beyond current markets"
+    ],
+    "threats": [
+      "Increased competition in the AI sector due to Cerebras' advancements",
+      "Potential disruption of traditional business models by Cerebras' real-time reasoning and inference technologies"
+    ],
+    "recommended_actions": [
+      "Monitor Cerebras' future developments and product launches",
+      "Assess potential partnership or integration opportunities with Cerebras"
+    ]
+  },
+  "key_insights": [
+    "Cerebras is actively developing new AI-related products and features",
+    "The company is expanding its offerings, potentially to attract more developers and enterprises"
+  ],
+  "business_impact": "The updates suggest Cerebras is focusing on enhancing its AI and inference capabilities, potentially to stay competitive in the rapidly evolving AI landscape. The introduction of 'Cerebras Code' could indicate a strategic move towards more developer-centric offerings.",
+  "competitive_implications": "Cerebras' advancements in AI and inference could pose a competitive challenge to other companies in the AI sector, particularly those focused on enterprise solutions.",
+  "content_hash_before": "c33cd175eb9a4c929c357cc294b4cf5c1565c9449ce9d04adc4b49c289cc92de",
+  "content_hash_after": "d9bc2a70967657599f20afbfc6d45532f036577f91a01174eb59842d5700e991",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,63 @@
+{
+  "id": 712,
+  "company": "Anthropic",
+  "page_url": "product",
+  "detected_at": "2025-08-04T00:12:00.366Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "The download link for Claude has changed from https://claude.ai/redirect/website.v1.04abeae8-1daf-4c6b-93e5-263ba2b851c7/download to https://claude.ai/redirect/website.v1.0e75158e-1580-4352-be3e-a4339b6230aa/download",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The download link for Claude has changed from https://claude.ai/redirect/website.v1.04abeae8-1daf-4c6b-93e5-263ba2b851c7/download to https://claude.ai/redirect/website.v1.0e75158e-1580-4352-be3e-a4339b6230aa/download",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated download link for Claude",
+      "Changed example of people using Claude from 'build a bedtime story app' to 'debug a wedding website'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updated download link may improve the user experience for customers trying to access Claude, but it is unlikely to have a significant impact on the company's overall business.",
+    "market_signals": [
+      "Minor update to product"
+    ],
+    "competitive_implications": "The change is unlikely to affect the company's competitive position in the market.",
+    "strategic_direction": "The update suggests that the company is continuing to refine and improve its product, but it does not indicate a significant shift in strategy."
+  },
+  "entities": {
+    "products": [
+      "Claude"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Minor update to Claude's download link",
+      "Changed example of people using Claude"
+    ],
+    "opportunities": [
+      "Improved user experience for customers"
+    ],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor the company's product updates and strategy"
+    ]
+  },
+  "key_insights": [
+    "Minor update to Claude's download link",
+    "Changed example of people using Claude"
+  ],
+  "business_impact": "The updated download link may improve the user experience for customers trying to access Claude, but it is unlikely to have a significant impact on the company's overall business.",
+  "competitive_implications": "The change is unlikely to affect the company's competitive position in the market.",
+  "content_hash_before": "f72b6e407a89ca2d2f68521385fd091f4967cdcf849e585c19c3d1287e73fabd",
+  "content_hash_after": "8002b9e6c997dc9fb5bf41826d8d37014caf468d85802a0ae4e0f824b60d6045",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

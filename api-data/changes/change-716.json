@@ -1,0 +1,65 @@
+{
+  "id": 716,
+  "company": "Cursor",
+  "page_url": "homepage",
+  "detected_at": "2025-08-03T22:59:18.320Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "Download option for Windows added",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Download option for Windows added",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Download for Windows option added to the homepage"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of Windows support may attract more users to the platform, potentially increasing revenue.",
+    "market_signals": [
+      "Expansion of platform support"
+    ],
+    "competitive_implications": "Cursor may be attempting to compete with other code editors that already support Windows, such as VSCode.",
+    "strategic_direction": "Platform expansion and increased support for various operating systems."
+  },
+  "entities": {
+    "products": [
+      "Cursor"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Windows"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Cursor is expanding its platform support to include Windows."
+    ],
+    "opportunities": [
+      "Increased user base and revenue potential."
+    ],
+    "threats": [
+      "Increased competition from other code editors that already support Windows."
+    ],
+    "recommended_actions": [
+      "Monitor user adoption and feedback on the Windows platform.",
+      "Consider expanding support to other operating systems."
+    ]
+  },
+  "key_insights": [
+    "Cursor is expanding its platform support to include Windows."
+  ],
+  "business_impact": "The addition of Windows support may attract more users to the platform, potentially increasing revenue.",
+  "competitive_implications": "Cursor may be attempting to compete with other code editors that already support Windows, such as VSCode.",
+  "content_hash_before": "923cd25f7081d6ffcee9186f97b7b1b789b44aa2b12c5fc79936019d7af09ccc",
+  "content_hash_after": "3abf6a3b9e952360edfd85d93741a8dbe1d254f402e047c2408325309724e1df",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

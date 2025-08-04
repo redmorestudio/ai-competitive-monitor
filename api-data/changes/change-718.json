@@ -1,0 +1,66 @@
+{
+  "id": 718,
+  "company": "Codeium",
+  "page_url": "blog",
+  "detected_at": "2025-08-03T22:58:17.732Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "The download option for the Windsurf Editor changed from Windows to macOS",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The download option for the Windsurf Editor changed from Windows to macOS",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Download options for Windsurf Editor were updated to include macOS options",
+      "The download options for Windows were removed from the main page"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may indicate an expansion of Windsurf's platform to support more operating systems",
+    "market_signals": [
+      "Increased support for macOS users"
+    ],
+    "competitive_implications": "The change may give Windsurf a competitive edge in the market by supporting a wider range of operating systems",
+    "strategic_direction": "Expansion of platform support"
+  },
+  "entities": {
+    "products": [
+      "Windsurf Editor"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "macOS",
+      "Windows"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Windsurf is expanding its platform support to include macOS"
+    ],
+    "opportunities": [
+      "Increased market share due to expanded platform support"
+    ],
+    "threats": [
+      "Potential competition from other companies that support multiple operating systems"
+    ],
+    "recommended_actions": [
+      "Monitor Windsurf's platform support and adjust competitive strategy accordingly"
+    ]
+  },
+  "key_insights": [
+    "Windsurf is expanding its platform support to include macOS"
+  ],
+  "business_impact": "The change may indicate an expansion of Windsurf's platform to support more operating systems",
+  "competitive_implications": "The change may give Windsurf a competitive edge in the market by supporting a wider range of operating systems",
+  "content_hash_before": "83e6afe7fdba120f5740cdb30195f7046cea6cd825309aa6e85f95f90824620e",
+  "content_hash_after": "473fa08453daadfc04a139b1bc1e82802cd61bff43c91c3fc0ee9035751fc682",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

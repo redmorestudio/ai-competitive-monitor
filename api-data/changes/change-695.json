@@ -1,0 +1,53 @@
+{
+  "id": 695,
+  "company": "Replit",
+  "page_url": "homepage",
+  "detected_at": "2025-08-04T00:21:48.717Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The prompt in the 'Turn your ideas into apps' section changed from 'Make me a data tool for designers that helps scrape data from websites and social media' to 'Make me a data tool for developers that helps find insights and trends in their data'. Additionally, 'Add a chatbot to chat with their data' was added to the new prompt.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The prompt in the 'Turn your ideas into apps' section changed from 'Make me a data tool for designers that helps scrape data from websites and social media' to 'Make me a data tool for developers that helps find insights and trends in their data'. Additionally, 'Add a chatbot to chat with their data' was added to the new prompt.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated prompt in the 'Turn your ideas into apps' section",
+      "Added 'Add a chatbot to chat with their data' to the new prompt"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change is unlikely to have a significant impact on Replit's business, as it only affects the example prompt in the 'Turn your ideas into apps' section.",
+    "market_signals": [],
+    "competitive_implications": "The change does not indicate any significant competitive implications, as it is a minor update to the example prompt.",
+    "strategic_direction": "The change does not indicate any significant changes to Replit's strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The change is minor and only affects the example prompt in the 'Turn your ideas into apps' section."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [
+    "The change is minor and only affects the example prompt in the 'Turn your ideas into apps' section."
+  ],
+  "business_impact": "The change is unlikely to have a significant impact on Replit's business, as it only affects the example prompt in the 'Turn your ideas into apps' section.",
+  "competitive_implications": "The change does not indicate any significant competitive implications, as it is a minor update to the example prompt.",
+  "content_hash_before": "cf5cd924675740448f8638f02f15334fcfc5ea44b11ba8135bf5941f0b367135",
+  "content_hash_after": "a41ad90cf893267207121063b5e874bcd7e9284f8357499e5e0512e37e5a211e",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

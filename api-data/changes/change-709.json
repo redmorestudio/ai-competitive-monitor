@@ -1,0 +1,63 @@
+{
+  "id": 709,
+  "company": "Cursor",
+  "page_url": "homepage",
+  "detected_at": "2025-08-04T00:13:20.559Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Download option for Windows was replaced with Download option for Linux",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Download option for Windows was replaced with Download option for Linux",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Download for Windows changed to Download for Linux"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may indicate an expansion of Cursor's compatibility to Linux users, potentially increasing its user base.",
+    "market_signals": [
+      "Increased focus on Linux users"
+    ],
+    "competitive_implications": "The change may give Cursor a competitive edge over other code editors that do not support Linux.",
+    "strategic_direction": "Expansion of compatibility to different operating systems"
+  },
+  "entities": {
+    "products": [
+      "Cursor"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Cursor is expanding its compatibility to Linux users"
+    ],
+    "opportunities": [
+      "Increased market share due to expanded compatibility"
+    ],
+    "threats": [
+      "Potential backlash from Windows users if they feel neglected"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback to ensure the change is well-received",
+      "Consider expanding compatibility to other operating systems"
+    ]
+  },
+  "key_insights": [
+    "Cursor is expanding its compatibility to Linux users"
+  ],
+  "business_impact": "The change may indicate an expansion of Cursor's compatibility to Linux users, potentially increasing its user base.",
+  "competitive_implications": "The change may give Cursor a competitive edge over other code editors that do not support Linux.",
+  "content_hash_before": "3abf6a3b9e952360edfd85d93741a8dbe1d254f402e047c2408325309724e1df",
+  "content_hash_after": "9a9abca00fe81263eeab3aacde040fc28d21c724b5f4a7d51506e38009ca4b7d",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

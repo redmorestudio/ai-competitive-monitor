@@ -1,0 +1,56 @@
+{
+  "id": 701,
+  "company": "Midjourney",
+  "page_url": "docs",
+  "detected_at": "2025-08-04T00:18:15.684Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "The theming asset ID in the Midjourney Help Center home page image was updated from '01J0C3W092GC3PH6ZF86C14589' to '01K1K3SHJHG4BTD9YK9VH9G86N'",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The theming asset ID in the Midjourney Help Center home page image was updated from '01J0C3W092GC3PH6ZF86C14589' to '01K1K3SHJHG4BTD9YK9VH9G86N'",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated theming asset ID in the header image"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact is expected from this minor update",
+    "market_signals": [
+      "Maintaining a consistent brand image"
+    ],
+    "competitive_implications": "No direct competitive implications are apparent from this change",
+    "strategic_direction": "Continued focus on user experience and branding"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Midjourney prioritizes maintaining a consistent brand image across its platforms"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor Midjourney's branding and user experience updates for potential insights into their strategic direction"
+    ]
+  },
+  "key_insights": [
+    "Midjourney prioritizes maintaining a consistent brand image across its platforms"
+  ],
+  "business_impact": "No significant business impact is expected from this minor update",
+  "competitive_implications": "No direct competitive implications are apparent from this change",
+  "content_hash_before": "2155c3b7e5514b7240a3fc868ca3af7068938cc0aab51d19b9002f88932391ff",
+  "content_hash_after": "cea431fd73e8d3aed4d2e6c51c889b3727e68356b492be5733bec528fbeaccaa",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

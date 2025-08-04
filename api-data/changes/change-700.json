@@ -1,0 +1,80 @@
+{
+  "id": 700,
+  "company": "Mistral AI",
+  "page_url": "pricing",
+  "detected_at": "2025-08-04T00:18:21.198Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Pricing plans and features have been updated, with changes to the Free, Pro, and Team plans, as well as the addition of new features and tools.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Pricing plans and features have been updated, with changes to the Free, Pro, and Team plans, as well as the addition of new features and tools.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Updated pricing for Free, Pro, and Team plans",
+      "Added new features such as custom connectors, enterprise search, and agent API",
+      "Changes to customer service and team and enterprise features"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes to pricing plans and features may attract more customers and increase revenue, but may also lead to increased competition and market saturation.",
+    "market_signals": [
+      "Increased focus on enterprise solutions and support",
+      "Expansion of features and tools to attract more customers"
+    ],
+    "competitive_implications": "The changes may lead to increased competition in the AI solutions market, and companies may need to adapt their strategies to remain competitive.",
+    "strategic_direction": "The company is focusing on expanding its features and tools to attract more customers and increase revenue, while also emphasizing enterprise solutions and support."
+  },
+  "entities": {
+    "products": [
+      "Le Chat",
+      "Mistral Code",
+      "La Plateforme"
+    ],
+    "features": [
+      "Custom connectors",
+      "Enterprise search",
+      "Agent API"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Free plan: $0/mo",
+      "Pro plan: $14.99/mo",
+      "Team plan: $50/2 users/mo"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is shifting its focus towards enterprise solutions and support",
+      "The changes to pricing plans and features may attract more customers and increase revenue"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the AI solutions market",
+      "Expansion into new markets and industries"
+    ],
+    "threats": [
+      "Increased competition in the AI solutions market",
+      "Market saturation and decreased demand"
+    ],
+    "recommended_actions": [
+      "Monitor the company's progress and adjust strategies accordingly",
+      "Explore partnership opportunities and expansion into new markets"
+    ]
+  },
+  "key_insights": [
+    "The company is shifting its focus towards enterprise solutions and support",
+    "The changes to pricing plans and features may attract more customers and increase revenue"
+  ],
+  "business_impact": "The changes to pricing plans and features may attract more customers and increase revenue, but may also lead to increased competition and market saturation.",
+  "competitive_implications": "The changes may lead to increased competition in the AI solutions market, and companies may need to adapt their strategies to remain competitive.",
+  "content_hash_before": "df04538ece1749f20fec18c6a09d0dd11b1def4f008701fbcfe3f52f7fd029d7",
+  "content_hash_after": "f309fad111f21a03941a385f3e31f169757508733787e6f798a39877fadf5287",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

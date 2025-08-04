@@ -1,0 +1,56 @@
+{
+  "id": 702,
+  "company": "Midjourney",
+  "page_url": "pricing",
+  "detected_at": "2025-08-04T00:18:10.128Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "The change is not explicitly visible in the provided content as the before and after content seems to be nearly identical, with the exception of a few minor adjustments such as the addition of links at the bottom of the page.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The change is not explicitly visible in the provided content as the before and after content seems to be nearly identical, with the exception of a few minor adjustments such as the addition of links at the bottom of the page.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added links to Midjourney Website and Midjourney Discord Server at the bottom of the page."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The minor update does not have a significant business impact.",
+    "market_signals": [
+      "No significant market signals are sent by this minor update."
+    ],
+    "competitive_implications": "There are no notable competitive implications from this minor change.",
+    "strategic_direction": "The update does not indicate a change in Midjourney's strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The update includes minor adjustments and additions to the content."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor Midjourney's updates for more significant changes that could impact the competitive landscape."
+    ]
+  },
+  "key_insights": [
+    "The update includes minor adjustments and additions to the content."
+  ],
+  "business_impact": "The minor update does not have a significant business impact.",
+  "competitive_implications": "There are no notable competitive implications from this minor change.",
+  "content_hash_before": "823666b2cbc29261f2343d1cb1082928176e446331abb0a6db694a32d77b959e",
+  "content_hash_after": "b63eb4b94d1d7f9a43cd64524c8f87ebea471d1934aa8fc156c845454631caa9",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
