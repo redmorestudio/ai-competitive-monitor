@@ -92,7 +92,7 @@ const COMPANY_SPECIFIC_ENTITIES = {
     }
 };
 
-// Helper function to get entities with fallback
+// Helper function to get entities with fallback (UPDATED FOR ENHANCED ANALYZER)
 async function getTopEntitiesWithFallback(companyName, category, entityType, limit = 5) {
     try {
         // First try to get from database
@@ -108,14 +108,56 @@ async function getTopEntitiesWithFallback(companyName, category, entityType, lim
         const allEntities = [];
         for (const analysis of analyses) {
             try {
-                const entities = analysis.entities;
-                if (entities && entities[entityType]) {
-                    const items = Array.isArray(entities[entityType]) ? entities[entityType] : [];
-                    if (entityType === 'technologies' || entityType === 'products') {
-                        allEntities.push(...items.map(e => e.name || e));
-                    } else {
-                        allEntities.push(...items);
+                const data = analysis.entities;
+                
+                // Handle new enhanced analyzer structure
+                if (data) {
+                    // Map entity types to the new structure
+                    let items = [];
+                    
+                    if (entityType === 'technologies') {
+                        // Technologies are now in attributes.technologies
+                        if (data.technologies && Array.isArray(data.technologies)) {
+                            // Old structure compatibility
+                            items = data.technologies;
+                        } else if (data.attributes && data.attributes.technologies) {
+                            // New structure
+                            items = data.attributes.technologies;
+                        } else {
+                            // Check if technologies were merged into top level
+                            items = data.technologies || [];
+                        }
+                    } else if (entityType === 'products') {
+                        // Products are in entities.products
+                        if (data.products && Array.isArray(data.products)) {
+                            items = data.products;
+                        } else if (data.entities && data.entities.products) {
+                            items = data.entities.products;
+                        }
+                    } else if (entityType === 'ai_ml_concepts') {
+                        // Concepts are now in attributes.concepts
+                        if (data.ai_ml_concepts && Array.isArray(data.ai_ml_concepts)) {
+                            // Old structure compatibility
+                            items = data.ai_ml_concepts;
+                        } else if (data.attributes && data.attributes.concepts) {
+                            // New structure
+                            items = data.attributes.concepts;
+                        } else if (data.concepts) {
+                            // Check if concepts were merged into top level
+                            items = data.concepts;
+                        }
                     }
+                    
+                    // Process items based on their structure
+                    items.forEach(item => {
+                        if (item) {
+                            if (typeof item === 'string') {
+                                allEntities.push(item);
+                            } else if (item.name) {
+                                allEntities.push(item.name);
+                            }
+                        }
+                    });
                 }
             } catch (e) {
                 console.error(`Error processing entities for ${companyName}:`, e);
@@ -127,7 +169,7 @@ async function getTopEntitiesWithFallback(companyName, category, entityType, lim
             // Count occurrences and sort by frequency
             const entityCounts = {};
             allEntities.forEach(entity => {
-                const key = (entity || '').toString().toLowerCase();
+                const key = (entity || '').toString().toLowerCase().trim();
                 if (key) {
                     entityCounts[key] = (entityCounts[key] || 0) + 1;
                 }
