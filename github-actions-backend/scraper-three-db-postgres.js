@@ -30,13 +30,13 @@ const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY || process.env.ANTHROPIC_API_KEY
 });
 
-// Configuration - AGGRESSIVE MODE for faster scraping
+// Configuration - MAXIMUM SPEED MODE (zero delays)
 // Allow environment variable overrides for flexibility
-const BATCH_SIZE = parseInt(process.env.SCRAPER_BATCH_SIZE) || 10; // Process 10 URLs concurrently (was 5)
-const PAGE_TIMEOUT = parseInt(process.env.SCRAPER_PAGE_TIMEOUT) || 25000; // 25 seconds per page (was 30)
-const RATE_LIMIT_DELAY = parseInt(process.env.SCRAPER_RATE_LIMIT) || 250; // 250ms between batch starts (was 500)
+const BATCH_SIZE = parseInt(process.env.SCRAPER_BATCH_SIZE) || 15; // Process 15 URLs concurrently (was 10)
+const PAGE_TIMEOUT = parseInt(process.env.SCRAPER_PAGE_TIMEOUT) || 25000; // Keep 25 seconds per page for reliability
+const RATE_LIMIT_DELAY = parseInt(process.env.SCRAPER_RATE_LIMIT) || 0; // ZERO delay between batch starts
 const MAX_RETRIES = parseInt(process.env.SCRAPER_MAX_RETRIES) || 2; // Retry failed URLs
-const DOMAIN_THROTTLE_MS = parseInt(process.env.SCRAPER_DOMAIN_THROTTLE) || 1000; // 1s between same domain (was 2s)
+const DOMAIN_THROTTLE_MS = parseInt(process.env.SCRAPER_DOMAIN_THROTTLE) || 0; // ZERO delay between same domain
 
 // Log current configuration
 console.log('🚄 Scraper Configuration:');
@@ -236,9 +236,9 @@ Focus on AI/ML relevance and competitive intelligence value.`;
         return { success: false, url, error: `Blocked by ${captchaResult.type}` };
       }
       
-      // Wait a bit for dynamic content with human-like delay
-      const waitTime = 2000 + Math.random() * 1000;
-      await new Promise(resolve => setTimeout(resolve, waitTime));
+      // Skip waiting for dynamic content - maximum speed mode
+      // const waitTime = 2000 + Math.random() * 1000;
+      // await new Promise(resolve => setTimeout(resolve, waitTime));
       
       // Add random scroll behavior
       await this.stealthSetup.addScrollBehavior(page);
