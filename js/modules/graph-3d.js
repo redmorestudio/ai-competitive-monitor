@@ -666,7 +666,8 @@ class Graph3DCoordinator {
         
         // Filter actions
         window.selectAllTypes = () => {
-            const checkboxes = document.querySelectorAll('#type-filters input[type="checkbox"]');
+            // Select checkboxes in both simple and advanced mode
+            const checkboxes = document.querySelectorAll('#type-filters input[type="checkbox"], #type-filters-simple input[type="checkbox"]');
             const types = new Set();
             checkboxes.forEach(cb => {
                 cb.checked = true;
@@ -679,7 +680,8 @@ class Graph3DCoordinator {
         };
 
         window.selectNoneTypes = () => {
-            const checkboxes = document.querySelectorAll('#type-filters input[type="checkbox"]');
+            // Clear checkboxes in both simple and advanced mode
+            const checkboxes = document.querySelectorAll('#type-filters input[type="checkbox"], #type-filters-simple input[type="checkbox"]');
             checkboxes.forEach(cb => cb.checked = false);
             if (graph3DFilters && graph3DFilters.setEntityTypeFilters) {
                 graph3DFilters.setEntityTypeFilters(new Set());
@@ -794,7 +796,8 @@ class Graph3DCoordinator {
         // Filter handlers
         window.handleEntityTypeChange = (checkbox) => {
             const types = new Set();
-            document.querySelectorAll('#type-filters input[type="checkbox"]:checked')
+            // Check both simple and advanced mode containers
+            document.querySelectorAll('#type-filters input[type="checkbox"]:checked, #type-filters-simple input[type="checkbox"]:checked')
                 .forEach(cb => types.add(cb.value));
             if (graph3DFilters && graph3DFilters.setEntityTypeFilters) {
                 graph3DFilters.setEntityTypeFilters(types);
