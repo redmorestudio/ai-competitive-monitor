@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start": "node server.js",
+    "start:entity-api": "node entity-api-server.js",
     "dev": "nodemon server.js",
+    "dev:entity-api": "nodemon entity-api-server.js",
     "scrape": "node scraper.js",
     "analyze": "node ai-analyzer.js analyze",
     "brief": "node ai-analyzer.js brief",

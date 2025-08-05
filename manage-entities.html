@@ -33,6 +33,31 @@
             margin-bottom: 30px;
         }
 
+        .notice {
+            background: #1a3a1a;
+            border: 1px solid #4CAF50;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .notice-icon {
+            font-size: 2em;
+        }
+
+        .notice-content h3 {
+            color: #4CAF50;
+            margin-bottom: 5px;
+        }
+
+        .notice-content p {
+            color: #ccc;
+            margin: 0;
+        }
+
         .stats {
             display: flex;
             gap: 20px;
@@ -139,6 +164,15 @@
             font-weight: bold;
         }
 
+        .type-badge {
+            background: #2196F3;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-left: 5px;
+        }
+
         .variations {
             display: flex;
             flex-wrap: wrap;
@@ -179,6 +213,16 @@
         .pill:hover {
             background: #3a3a3a;
             border-color: #666;
+        }
+
+        .pill .remove {
+            margin-left: 8px;
+            color: #888;
+            cursor: pointer;
+        }
+
+        .pill .remove:hover {
+            color: #ff5555;
         }
 
         .add-variation {
@@ -265,6 +309,8 @@
 
         .suggestions {
             margin-top: 20px;
+            max-height: 400px;
+            overflow-y: auto;
         }
 
         .group-option {
@@ -300,6 +346,30 @@
         .close:hover {
             color: #fff;
         }
+
+        .loading {
+            text-align: center;
+            color: #888;
+            padding: 20px;
+        }
+
+        .error {
+            background: #3a1a1a;
+            border: 1px solid #ff5555;
+            color: #ff8888;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .success {
+            background: #1a3a1a;
+            border: 1px solid #4CAF50;
+            color: #88ff88;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -307,21 +377,31 @@
         <h1>Entity Management</h1>
         <p class="subtitle">Group and normalize entities to reduce fragmentation and improve analysis</p>
 
+        <div class="notice">
+            <div class="notice-icon">✅</div>
+            <div class="notice-content">
+                <h3>Backend Available!</h3>
+                <p>The entity grouping backend is now connected to PostgreSQL. This UI can now manage entity groups stored in the database.</p>
+            </div>
+        </div>
+
+        <div id="notifications"></div>
+
         <div class="stats">
             <div class="stat-card">
-                <div class="stat-value" id="totalEntities">3,260</div>
+                <div class="stat-value" id="totalEntities">-</div>
                 <div class="stat-label">Total Entities</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" id="groupedEntities">1,847</div>
+                <div class="stat-value" id="groupedEntities">-</div>
                 <div class="stat-label">Grouped Entities</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" id="ungroupedEntities">1,413</div>
+                <div class="stat-value" id="ungroupedEntities">-</div>
                 <div class="stat-label">Ungrouped Entities</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value" id="totalGroups">234</div>
+                <div class="stat-value" id="totalGroups">-</div>
                 <div class="stat-label">Entity Groups</div>
             </div>
         </div>
@@ -330,10 +410,10 @@
             <div class="groups-section">
                 <div class="section-header">
                     <h2>Entity Groups</h2>
-                    <input type="search" class="search-box" placeholder="Search groups...">
+                    <input type="search" class="search-box" id="groupSearch" placeholder="Search groups...">
                 </div>
                 <div class="groups-grid" id="groupsGrid">
-                    <!-- Groups will be loaded here -->
+                    <div class="loading">Loading entity groups...</div>
                 </div>
             </div>
 
@@ -342,13 +422,13 @@
                     <h3>Ungrouped Entities</h3>
                 </div>
                 <div class="ungrouped-list" id="ungroupedList">
-                    <!-- Ungrouped entities will be loaded here -->
+                    <div class="loading">Loading ungrouped entities...</div>
                 </div>
             </div>
         </div>
 
         <div class="action-buttons">
-            <button class="btn" onclick="saveChanges()">Save Changes</button>
+            <button class="btn btn-secondary" onclick="refreshData()">Refresh</button>
             <button class="btn btn-secondary" onclick="autoGroup()">Auto-Group Similar</button>
             <button class="btn btn-secondary" onclick="exportGroups()">Export Groups</button>
         </div>
@@ -361,7 +441,7 @@
             <div class="modal-header">
                 <h3 id="modalTitle">Group Entity</h3>
             </div>
-            <input type="search" class="search-box" placeholder="Search existing groups..." style="width: 100%;">
+            <input type="search" class="search-box" id="modalSearch" placeholder="Search existing groups..." style="width: 100%;">
             <div class="suggestions" id="suggestions">
                 <!-- Suggestions will be loaded here -->
             </div>
@@ -369,59 +449,85 @@
     </div>
 
     <script>
-        // Sample data for demonstration
-        const sampleGroups = [
-            {
-                id: 1,
-                name: 'Machine Learning',
-                variations: ['machine learning', 'ML', 'machine-learning', 'Machine Learning'],
-                count: 15
-            },
-            {
-                id: 2,
-                name: 'Python Libraries',
-                variations: ['scipy', 'numpy', 'pandas', 'matplotlib', 'scikit-learn'],
-                count: 12
-            },
-            {
-                id: 3,
-                name: 'AI Models',
-                variations: ['GPT-4', 'Claude', 'LLaMA', 'BERT', 'PaLM'],
-                count: 8
-            },
-            {
-                id: 4,
-                name: 'Cloud Platforms',
-                variations: ['AWS', 'Google Cloud', 'Azure', 'GCP', 'Amazon Web Services'],
-                count: 7
-            }
-        ];
-
-        const ungroupedEntities = [
-            'tensorflow', 'pytorch', 'deep learning', 'neural networks',
-            'kubernetes', 'docker', 'natural language processing', 'NLP',
-            'computer vision', 'CV', 'reinforcement learning', 'RL'
-        ];
-
+        const API_BASE = 'http://localhost:3001/api';
+        let allGroups = [];
         let selectedEntity = null;
         let draggedEntity = null;
 
-        function loadGroups() {
+        // Initialize
+        async function init() {
+            await loadStats();
+            await loadGroups();
+            await loadUngrouped();
+            setupEventListeners();
+        }
+
+        function setupEventListeners() {
+            // Group search
+            document.getElementById('groupSearch').addEventListener('input', (e) => {
+                filterGroups(e.target.value);
+            });
+
+            // Modal search
+            document.getElementById('modalSearch').addEventListener('input', (e) => {
+                filterModalGroups(e.target.value);
+            });
+        }
+
+        async function loadStats() {
+            try {
+                const response = await fetch(`${API_BASE}/entities/stats`);
+                const stats = await response.json();
+                
+                document.getElementById('totalEntities').textContent = stats.total_entities || 0;
+                document.getElementById('groupedEntities').textContent = stats.grouped_entities || 0;
+                document.getElementById('ungroupedEntities').textContent = stats.ungrouped_entities || 0;
+                document.getElementById('totalGroups').textContent = stats.total_groups || 0;
+            } catch (error) {
+                console.error('Error loading stats:', error);
+                showNotification('Failed to load statistics', 'error');
+            }
+        }
+
+        async function loadGroups() {
+            try {
+                const response = await fetch(`${API_BASE}/entity-groups`);
+                allGroups = await response.json();
+                renderGroups(allGroups);
+            } catch (error) {
+                console.error('Error loading groups:', error);
+                showNotification('Failed to load entity groups', 'error');
+            }
+        }
+
+        function renderGroups(groups) {
             const grid = document.getElementById('groupsGrid');
-            grid.innerHTML = sampleGroups.map(group => `
+            
+            if (groups.length === 0) {
+                grid.innerHTML = '<div class="loading">No entity groups found</div>';
+                return;
+            }
+            
+            grid.innerHTML = groups.map(group => `
                 <div class="group-card" data-group-id="${group.id}" 
                      ondrop="handleDrop(event)" 
                      ondragover="handleDragOver(event)"
                      ondragleave="handleDragLeave(event)">
                     <div class="group-header">
-                        <span class="group-name">${group.name}</span>
-                        <span class="badge">${group.count} variations</span>
+                        <span class="group-name">
+                            ${group.name}
+                            ${group.is_monitored ? '⭐' : ''}
+                        </span>
+                        <div>
+                            <span class="badge">${group.variation_count || 0} variations</span>
+                            <span class="type-badge">${group.type || 'unknown'}</span>
+                        </div>
                     </div>
                     <div class="variations">
-                        ${group.variations.slice(0, 5).map((v, i) => 
-                            `<span class="pill ${i === 0 ? 'primary' : ''}">${v}</span>`
+                        ${(group.variations || []).slice(0, 5).map((v, i) => 
+                            `<span class="pill ${i === 0 ? 'primary' : ''}" onclick="editVariation('${group.id}', '${v}')">${v}</span>`
                         ).join('')}
-                        ${group.variations.length > 5 ? 
+                        ${(group.variations || []).length > 5 ? 
                             `<span class="pill">+${group.variations.length - 5} more</span>` : ''}
                         <button class="add-variation" onclick="addVariation(${group.id})">+</button>
                     </div>
@@ -429,14 +535,37 @@
             `).join('');
         }
 
-        function loadUngrouped() {
-            const list = document.getElementById('ungroupedList');
-            list.innerHTML = ungroupedEntities.map(entity => 
-                `<span class="pill ungrouped" 
-                       draggable="true" 
-                       ondragstart="handleDragStart(event, '${entity}')"
-                       onclick="showGroupModal('${entity}')">${entity}</span>`
-            ).join('');
+        async function loadUngrouped() {
+            try {
+                const response = await fetch(`${API_BASE}/entities/ungrouped?limit=200`);
+                const entities = await response.json();
+                
+                const list = document.getElementById('ungroupedList');
+                
+                if (entities.length === 0) {
+                    list.innerHTML = '<div class="loading">No ungrouped entities found</div>';
+                    return;
+                }
+                
+                list.innerHTML = entities.map(entity => 
+                    `<span class="pill ungrouped" 
+                           draggable="true" 
+                           ondragstart="handleDragStart(event, '${entity.name}')"
+                           onclick="showGroupModal('${entity.name}')"
+                           title="Mentioned by ${entity.mention_count} sources">${entity.name}</span>`
+                ).join('');
+            } catch (error) {
+                console.error('Error loading ungrouped entities:', error);
+                showNotification('Failed to load ungrouped entities', 'error');
+            }
+        }
+
+        function filterGroups(search) {
+            const filtered = allGroups.filter(group => 
+                group.name.toLowerCase().includes(search.toLowerCase()) ||
+                (group.variations || []).some(v => v.toLowerCase().includes(search.toLowerCase()))
+            );
+            renderGroups(filtered);
         }
 
         function handleDragStart(e, entity) {
@@ -453,25 +582,32 @@
             e.currentTarget.classList.remove('drag-over');
         }
 
-        function handleDrop(e) {
+        async function handleDrop(e) {
             e.preventDefault();
             e.currentTarget.classList.remove('drag-over');
             
             const groupId = e.currentTarget.dataset.groupId;
-            console.log(`Adding "${draggedEntity}" to group ${groupId}`);
-            
-            // Here you would make an API call to add the entity to the group
-            // For demo, just remove from ungrouped list
-            const index = ungroupedEntities.indexOf(draggedEntity);
-            if (index > -1) {
-                ungroupedEntities.splice(index, 1);
-                loadUngrouped();
+            await addEntityToGroup(draggedEntity, groupId);
+        }
+
+        async function addEntityToGroup(entity, groupId) {
+            try {
+                const response = await fetch(`${API_BASE}/entity-groups/${groupId}/members`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ entity_name: entity })
+                });
                 
-                // Update stats
-                document.getElementById('ungroupedEntities').textContent = 
-                    parseInt(document.getElementById('ungroupedEntities').textContent) - 1;
-                document.getElementById('groupedEntities').textContent = 
-                    parseInt(document.getElementById('groupedEntities').textContent) + 1;
+                if (response.ok) {
+                    showNotification(`Added "${entity}" to group`, 'success');
+                    await refreshData();
+                } else {
+                    const error = await response.json();
+                    showNotification(error.error || 'Failed to add entity to group', 'error');
+                }
+            } catch (error) {
+                console.error('Error adding entity to group:', error);
+                showNotification('Failed to add entity to group', 'error');
             }
         }
 
@@ -479,60 +615,125 @@
             selectedEntity = entity;
             document.getElementById('modalTitle').textContent = `Group "${entity}"`;
             document.getElementById('groupModal').style.display = 'block';
-            
-            // Load suggestions
+            renderModalGroups(allGroups);
+        }
+
+        function renderModalGroups(groups) {
             const suggestions = document.getElementById('suggestions');
             suggestions.innerHTML = `
-                ${sampleGroups.map(group => `
-                    <div class="group-option" onclick="addToGroup('${entity}', ${group.id})">
+                ${groups.map(group => `
+                    <div class="group-option" onclick="selectGroup('${selectedEntity}', ${group.id})">
                         <strong>${group.name}</strong>
-                        <div class="members">${group.variations.slice(0, 3).join(', ')}...</div>
+                        <div class="members">${(group.variations || []).slice(0, 3).join(', ')}...</div>
                     </div>
                 `).join('')}
-                <div class="group-option" onclick="createNewGroup('${entity}')">
+                <div class="group-option" onclick="createNewGroup('${selectedEntity}')">
                     <strong>+ Create New Group</strong>
                 </div>
             `;
         }
 
+        function filterModalGroups(search) {
+            const filtered = allGroups.filter(group => 
+                group.name.toLowerCase().includes(search.toLowerCase()) ||
+                (group.variations || []).some(v => v.toLowerCase().includes(search.toLowerCase()))
+            );
+            renderModalGroups(filtered);
+        }
+
+        async function selectGroup(entity, groupId) {
+            closeModal();
+            await addEntityToGroup(entity, groupId);
+        }
+
+        async function createNewGroup(entity) {
+            const name = prompt('Enter group name:', entity);
+            if (!name) return;
+            
+            const type = prompt('Enter group type (company, product, technology, concept, person):', 'unknown');
+            
+            try {
+                const response = await fetch(`${API_BASE}/entity-groups`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name: name,
+                        type: type,
+                        variations: [entity]
+                    })
+                });
+                
+                if (response.ok) {
+                    showNotification(`Created new group "${name}"`, 'success');
+                    closeModal();
+                    await refreshData();
+                } else {
+                    const error = await response.json();
+                    showNotification(error.error || 'Failed to create group', 'error');
+                }
+            } catch (error) {
+                console.error('Error creating group:', error);
+                showNotification('Failed to create group', 'error');
+            }
+        }
+
         function closeModal() {
             document.getElementById('groupModal').style.display = 'none';
+            document.getElementById('modalSearch').value = '';
         }
 
-        function addToGroup(entity, groupId) {
-            console.log(`Adding "${entity}" to group ${groupId}`);
-            closeModal();
-            // Update UI
-            const index = ungroupedEntities.indexOf(entity);
-            if (index > -1) {
-                ungroupedEntities.splice(index, 1);
-                loadUngrouped();
+        async function addVariation(groupId) {
+            const variation = prompt('Enter new variation:');
+            if (!variation) return;
+            
+            await addEntityToGroup(variation, groupId);
+        }
+
+        async function refreshData() {
+            await loadStats();
+            await loadGroups();
+            await loadUngrouped();
+        }
+
+        async function autoGroup() {
+            try {
+                const response = await fetch(`${API_BASE}/entities/auto-group`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ threshold: 0.7 })
+                });
+                
+                const result = await response.json();
+                showNotification(result.message || 'Auto-grouping analysis complete', 'success');
+                
+                // You could show the suggestions in a modal here
+                console.log('Auto-group suggestions:', result.suggestions);
+            } catch (error) {
+                console.error('Error auto-grouping:', error);
+                showNotification('Failed to auto-group entities', 'error');
             }
         }
 
-        function createNewGroup(entity) {
-            const name = prompt('Enter group name:');
-            if (name) {
-                console.log(`Creating new group "${name}" with entity "${entity}"`);
-                closeModal();
+        async function exportGroups() {
+            try {
+                window.location.href = `${API_BASE}/entity-groups/export`;
+            } catch (error) {
+                console.error('Error exporting groups:', error);
+                showNotification('Failed to export groups', 'error');
             }
         }
 
-        function saveChanges() {
-            alert('Changes saved! (Demo only)');
+        function showNotification(message, type = 'info') {
+            const notifications = document.getElementById('notifications');
+            const notification = document.createElement('div');
+            notification.className = type;
+            notification.textContent = message;
+            notifications.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
         }
-
-        function autoGroup() {
-            alert('Auto-grouping would analyze entities for similarities and suggest groupings');
-        }
-
-        function exportGroups() {
-            alert('Export would download entity groups as JSON');
-        }
-
-        // Initialize
-        loadGroups();
-        loadUngrouped();
 
         // Close modal on outside click
         window.onclick = function(event) {
@@ -540,6 +741,9 @@
                 event.target.style.display = 'none';
             }
         }
+
+        // Initialize on load
+        init();
     </script>
 </body>
 </html>

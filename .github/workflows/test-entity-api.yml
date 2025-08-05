@@ -1,0 +1,152 @@
+name: Test Entity API Server
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'github-actions-backend/entity-api-server.js'
+      - '.github/workflows/test-entity-api.yml'
+
+jobs:
+  test-entity-api:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    env:
+      NODE_ENV: test
+      PORT: 3001
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: |
+          cd github-actions-backend
+          npm install
+      
+      - name: Test PostgreSQL connection
+        run: |
+          cd github-actions-backend
+          echo "🔌 Testing PostgreSQL connection..."
+          node -e "
+            const { Pool } = require('pg');
+            const pool = new Pool({
+              connectionString: process.env.DATABASE_URL,
+              ssl: { rejectUnauthorized: false }
+            });
+            pool.query('SELECT NOW()')
+              .then(() => {
+                console.log('✅ PostgreSQL connection successful');
+                process.exit(0);
+              })
+              .catch(err => {
+                console.error('❌ PostgreSQL connection failed:', err.message);
+                process.exit(1);
+              })
+              .finally(() => pool.end());
+          "
+        env:
+          DATABASE_URL: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+      
+      - name: Start API server
+        run: |
+          cd github-actions-backend
+          
+          # Start server in background
+          echo "🚀 Starting entity API server..."
+          node entity-api-server.js > server.log 2>&1 &
+          echo $! > server.pid
+          
+          # Wait for server to be ready
+          echo "⏳ Waiting for server to start..."
+          for i in {1..30}; do
+            if curl -s http://localhost:3001/api/health > /dev/null; then
+              echo "✅ Server is ready!"
+              break
+            fi
+            if [ $i -eq 30 ]; then
+              echo "❌ Server failed to start"
+              cat server.log
+              exit 1
+            fi
+            sleep 1
+          done
+        env:
+          DATABASE_URL: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+      
+      - name: Test API endpoints
+        run: |
+          echo "🧪 Testing API endpoints..."
+          
+          # Test health endpoint
+          echo "Testing /api/health..."
+          curl -f -s http://localhost:3001/api/health | jq .
+          
+          # Test entity stats
+          echo -e "\nTesting /api/entities/stats..."
+          curl -f -s http://localhost:3001/api/entities/stats | jq .
+          
+          # Test entity groups list
+          echo -e "\nTesting /api/entity-groups..."
+          curl -f -s http://localhost:3001/api/entity-groups | jq .
+          
+          # Test ungrouped entities
+          echo -e "\nTesting /api/entities/ungrouped..."
+          curl -f -s "http://localhost:3001/api/entities/ungrouped?limit=5" | jq .
+          
+          echo "✅ All API tests passed!"
+      
+      - name: Test CRUD operations
+        run: |
+          echo "🔧 Testing CRUD operations..."
+          
+          # Create a test group
+          echo "Creating test entity group..."
+          GROUP_RESPONSE=$(curl -s -X POST http://localhost:3001/api/entity-groups \
+            -H "Content-Type: application/json" \
+            -d '{
+              "canonicalName": "Test AI Company",
+              "type": "company",
+              "variations": ["TestAI", "Test AI Inc"],
+              "metadata": {"test": true}
+            }')
+          
+          GROUP_ID=$(echo "$GROUP_RESPONSE" | jq -r '.id')
+          echo "Created group with ID: $GROUP_ID"
+          
+          # Update the group
+          echo -e "\nUpdating test group..."
+          curl -s -X PUT "http://localhost:3001/api/entity-groups/$GROUP_ID" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "canonicalName": "Test AI Company Updated",
+              "variations": ["TestAI", "Test AI Inc", "Test AI Corp"]
+            }' | jq .
+          
+          # Delete the group
+          echo -e "\nDeleting test group..."
+          curl -s -X DELETE "http://localhost:3001/api/entity-groups/$GROUP_ID" | jq .
+          
+          echo "✅ CRUD operations successful!"
+      
+      - name: Stop API server
+        if: always()
+        run: |
+          if [ -f github-actions-backend/server.pid ]; then
+            PID=$(cat github-actions-backend/server.pid)
+            echo "Stopping server (PID: $PID)..."
+            kill $PID || true
+            rm github-actions-backend/server.pid
+          fi
+      
+      - name: Show server logs on failure
+        if: failure()
+        run: |
+          echo "📋 Server logs:"
+          cat github-actions-backend/server.log || echo "No logs found"
