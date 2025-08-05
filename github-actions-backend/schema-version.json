@@ -1,64 +1,9 @@
 {
-  "version": "2.0.0",
-  "lastModified": "2025-08-03T23:28:46.094Z",
-  "modifiedBy": "update-schema-version.js",
-  "checksum": "f543aa20eff44e1b3cb12e0257e3a2fcd40d53d526c4a4c67d58da52865138cb",
-  "changes": "Successfully converted all TEXT columns to JSONB in intelligence.enhanced_analysis. Updated schema tracking to include all schemas (public, intelligence, raw_content, processed_content).",
-  "previousVersion": "2.0.0",
-  "previousChecksum": "9a9892b5d7ddf92e0c5577797a27bda87cf7e1a9b953bd652e7c28b83fdbcc01",
-  "details": {
-    "schemasTracked": [
-      "public",
-      "intelligence",
-      "raw_content",
-      "processed_content"
-    ],
-    "tablesPerSchema": {
-      "intelligence": [
-        "baseline_analysis",
-        "changes",
-        "companies",
-        "company_attributes",
-        "company_groups",
-        "email_notifications",
-        "enhanced_analysis",
-        "groups",
-        "insights",
-        "scrape_status",
-        "scraping_runs",
-        "summaries",
-        "thebrain_sync",
-        "urls"
-      ],
-      "processed_content": [
-        "baseline_analysis",
-        "change_detection",
-        "changes",
-        "markdown_content",
-        "markdown_pages"
-      ],
-      "public": [
-        "schema_audit_log",
-        "schema_lock"
-      ],
-      "raw_content": [
-        "company_pages_baseline",
-        "raw_html",
-        "scrape_runs",
-        "scraped_pages",
-        "scraping_runs"
-      ]
-    },
-    "jsonbConversions": {
-      "table": "intelligence.enhanced_analysis",
-      "columnsConverted": [
-        "key_changes",
-        "competitive_implications"
-      ],
-      "conversionDate": "2025-08-03T23:28:46.098Z",
-      "status": "completed"
-    },
-    "totalTables": 26,
-    "totalColumns": 264
-  }
+  "version": "2.2.1",
+  "lastModified": "2025-08-05T13:49:23.082Z",
+  "modifiedBy": "add-entity-schema-constraints",
+  "checksum": "60c7266b48a19abfab771cc275399c63ad228633fd8bc89eb3c4a2c398b4a8c5",
+  "changes": "Adding missing constraints and indexes to entity grouping tables",
+  "previousVersion": "2.2.0",
+  "previousChecksum": "60c7266b48a19abfab771cc275399c63ad228633fd8bc89eb3c4a2c398b4a8c5"
 }

@@ -1,0 +1,148 @@
+{
+  "timestamp": "2025-08-05T13-28-55-367Z",
+  "tables": [
+    {
+      "schemaname": "intelligence",
+      "tablename": "baseline_analysis",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "changes",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "companies",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "company_attributes",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "company_groups",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "email_notifications",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "enhanced_analysis",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "entity_groups",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "entity_relationships",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "entity_variations",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "groups",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "insights",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "scrape_status",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "scraping_runs",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "summaries",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "thebrain_sync",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "intelligence",
+      "tablename": "urls",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "processed_content",
+      "tablename": "baseline_analysis",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "processed_content",
+      "tablename": "change_detection",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "processed_content",
+      "tablename": "changes",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "processed_content",
+      "tablename": "markdown_content",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "processed_content",
+      "tablename": "markdown_pages",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "raw_content",
+      "tablename": "company_pages_baseline",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "raw_content",
+      "tablename": "raw_html",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "raw_content",
+      "tablename": "scrape_runs",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "raw_content",
+      "tablename": "scraped_pages",
+      "tableowner": "ufanmu9ia72q5t"
+    },
+    {
+      "schemaname": "raw_content",
+      "tablename": "scraping_runs",
+      "tableowner": "ufanmu9ia72q5t"
+    }
+  ],
+  "views": [
+    {
+      "schemaname": "intelligence",
+      "viewname": "company_urls",
+      "viewowner": "ufanmu9ia72q5t"
+    }
+  ],
+  "checksum": "806584703fd9165e3000912fcca1fe849c66f70becdafb1dfd16b2c4376d6a4d"
+}
