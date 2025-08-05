@@ -1,0 +1,78 @@
+{
+  "id": 1021,
+  "company": "Anthropic",
+  "page_url": "product",
+  "detected_at": "2025-08-05T22:55:09.761Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Claude Opus model version updated from 4 to 4.1",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Claude Opus model version updated from 4 to 4.1",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Update of Claude Opus model from version 4 to 4.1",
+      "Change in download and login links due to version update"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update of Claude Opus to version 4.1 could lead to increased user engagement and attract more customers to Anthropic's products and services.",
+    "market_signals": [
+      "Enhanced competitiveness in the AI market",
+      "Potential for increased market share"
+    ],
+    "competitive_implications": "The improvement in Claude's capabilities could pose a competitive challenge to other companies offering similar AI-powered products and services.",
+    "strategic_direction": "Anthropic's focus on continuously improving and expanding the capabilities of its products, such as Claude, indicates a strategic direction towards establishing itself as a leader in the AI market."
+  },
+  "entities": {
+    "products": [
+      "Claude",
+      "Claude Opus 4.1",
+      "Claude Sonnet 4"
+    ],
+    "features": [
+      "Code generation and debugging",
+      "Step-by-step explanations",
+      "Code analysis"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The update of Claude Opus to version 4.1 is a significant improvement",
+      "The change could lead to increased user engagement and competitiveness"
+    ],
+    "opportunities": [
+      "Expansion into new markets",
+      "Increased customer acquisition"
+    ],
+    "threats": [
+      "Potential competitive response from other AI companies",
+      "Dependence on continuous innovation to maintain competitiveness"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and engagement with the updated Claude Opus 4.1",
+      "Continuously invest in research and development to maintain a competitive edge"
+    ]
+  },
+  "key_insights": [
+    "The update of Claude Opus to version 4.1 is a significant improvement",
+    "The change could lead to increased user engagement and competitiveness"
+  ],
+  "business_impact": "The update of Claude Opus to version 4.1 could lead to increased user engagement and attract more customers to Anthropic's products and services.",
+  "competitive_implications": "The improvement in Claude's capabilities could pose a competitive challenge to other companies offering similar AI-powered products and services.",
+  "content_hash_before": "8002b9e6c997dc9fb5bf41826d8d37014caf468d85802a0ae4e0f824b60d6045",
+  "content_hash_after": "ba16843d53d87e441fbb8efc759de14d21dcf209cb2f34bb5aca9c191017c78a",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

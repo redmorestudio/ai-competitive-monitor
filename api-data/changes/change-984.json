@@ -1,0 +1,83 @@
+{
+  "id": 984,
+  "company": "Leonardo AI",
+  "page_url": "pricing",
+  "detected_at": "2025-08-05T23:01:15.273Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "The pricing page of Leonardo AI has been updated with new plans and features, including the introduction of a 'Lucid Origin' AI model and changes to the API plans and pricing.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "The pricing page of Leonardo AI has been updated with new plans and features, including the introduction of a 'Lucid Origin' AI model and changes to the API plans and pricing.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of new AI model: Lucid Origin",
+      "Changes to API plans and pricing",
+      "Updates to features and benefits of each plan",
+      "Introduction of a 'Teams' plan for design teams, studios, agencies, and businesses"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates to the pricing page and introduction of new features and plans could impact the competitive landscape and market positioning of Leonardo AI, potentially attracting new customers and increasing revenue.",
+    "market_signals": [
+      "Increased competition in the AI and machine learning market",
+      "Growing demand for AI-powered solutions"
+    ],
+    "competitive_implications": "The updates to the Leonardo AI platform could pose a competitive threat to other companies in the AI and machine learning market, particularly those offering similar solutions.",
+    "strategic_direction": "The introduction of new features and plans suggests that Leonardo AI is focusing on expanding its offerings and improving its competitive position in the market."
+  },
+  "entities": {
+    "products": [
+      "Leonardo AI",
+      "Lucid Origin AI model"
+    ],
+    "features": [
+      "API plans",
+      "Pricing updates",
+      "New AI model: Lucid Origin"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [
+      "Updated pricing plans"
+    ],
+    "markets": [
+      "AI and machine learning market"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "The updates to the pricing page and introduction of new features and plans indicate a significant update to the Leonardo AI platform.",
+      "The introduction of the 'Lucid Origin' AI model could be a key differentiator for Leonardo AI in the market."
+    ],
+    "opportunities": [
+      "Potential for increased revenue and market share",
+      "Opportunity to expand into new markets and industries"
+    ],
+    "threats": [
+      "Increased competition in the AI and machine learning market",
+      "Potential for customer churn if the updates are not well-received"
+    ],
+    "recommended_actions": [
+      "Monitor the market response to the updates and adjust strategy accordingly",
+      "Consider expanding into new markets and industries to capitalize on the updates"
+    ]
+  },
+  "key_insights": [
+    "The updates to the pricing page and introduction of new features and plans indicate a significant update to the Leonardo AI platform.",
+    "The introduction of the 'Lucid Origin' AI model could be a key differentiator for Leonardo AI in the market."
+  ],
+  "business_impact": "The updates to the pricing page and introduction of new features and plans could impact the competitive landscape and market positioning of Leonardo AI, potentially attracting new customers and increasing revenue.",
+  "competitive_implications": "The updates to the Leonardo AI platform could pose a competitive threat to other companies in the AI and machine learning market, particularly those offering similar solutions.",
+  "content_hash_before": "9978575d3f5bdc78c603075d81c2794f8782e4cd0583215a492a0a9d440ea48c",
+  "content_hash_after": "1343a4961b2a9a904bc50902d970c7195e899fff35b23c80b3bfcc249ff20ab3",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

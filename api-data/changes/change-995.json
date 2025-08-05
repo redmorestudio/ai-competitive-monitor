@@ -1,0 +1,91 @@
+{
+  "id": 995,
+  "company": "GitHub Copilot",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T22:57:52.115Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Update of GitHub Copilot features, pricing, and supported models",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Update of GitHub Copilot features, pricing, and supported models",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of a new free pricing tier with limited functionality",
+      "Update of Pro and Pro+ plans with additional features and model access",
+      "Expansion of supported models, including Claude Opus 4.1 and o3",
+      "Enhancements to code review and next edit suggestions"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates to GitHub Copilot are likely to increase user engagement, attract new users, and provide a competitive advantage in the market.",
+    "market_signals": [
+      "increased investment in AI-powered development tools",
+      "growing demand for automated coding assistance"
+    ],
+    "competitive_implications": "The updates to GitHub Copilot may pressure competitors to invest in similar features and pricing models, potentially leading to a more competitive market.",
+    "strategic_direction": "The updates suggest that GitHub is committed to providing a comprehensive and integrated development platform, with a focus on AI-powered tools and automation."
+  },
+  "entities": {
+    "products": [
+      "GitHub Copilot",
+      "GitHub Spark",
+      "GitHub Models"
+    ],
+    "features": [
+      "code review",
+      "next edit suggestions",
+      "agent mode"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "machine learning"
+    ],
+    "people": [],
+    "pricing": [
+      "Free",
+      "Pro",
+      "Pro+"
+    ],
+    "markets": [
+      "software development",
+      "AI-powered development"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "GitHub Copilot's updates indicate a significant investment in AI-powered development tools",
+      "The new free pricing tier may attract new users and increase user engagement",
+      "The expansion of supported models and features may provide a competitive advantage"
+    ],
+    "opportunities": [
+      "Increased adoption of GitHub Copilot and related tools",
+      "New revenue streams from Pro and Pro+ plans",
+      "Partnership opportunities with other companies in the software development and AI spaces"
+    ],
+    "threats": [
+      "Increased competition from other AI-powered development tools",
+      "Potential backlash from users who prefer traditional development methods"
+    ],
+    "recommended_actions": [
+      "Monitor user engagement and feedback on the updates",
+      "Invest in marketing and outreach efforts to attract new users",
+      "Continuously evaluate and improve the platform's features and pricing models"
+    ]
+  },
+  "key_insights": [
+    "GitHub Copilot's updates indicate a significant investment in AI-powered development tools",
+    "The new free pricing tier may attract new users and increase user engagement",
+    "The expansion of supported models and features may provide a competitive advantage"
+  ],
+  "business_impact": "The updates to GitHub Copilot are likely to increase user engagement, attract new users, and provide a competitive advantage in the market.",
+  "competitive_implications": "The updates to GitHub Copilot may pressure competitors to invest in similar features and pricing models, potentially leading to a more competitive market.",
+  "content_hash_before": "b2a70ef07a84e0f5d879470435215de4a09995b90976ab5ac28058c4b5b46d89",
+  "content_hash_after": "e3a37b1c403769edad8381b65bd69430df60f79c55e5e298b65b43443f6ebd85",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

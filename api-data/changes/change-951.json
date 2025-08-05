@@ -1,0 +1,59 @@
+{
+  "id": 951,
+  "company": "Synthesia",
+  "page_url": "blog",
+  "detected_at": "2025-08-05T23:09:27.501Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The position of '1-Click Translations' and 'AI Video Dubbing' were swapped in the Localization section.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The position of '1-Click Translations' and 'AI Video Dubbing' were swapped in the Localization section.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Swapped '1-Click Translations' and 'AI Video Dubbing' in the Localization section."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may slightly affect user experience, but it does not have any significant business implications.",
+    "market_signals": [
+      "No significant market signals are sent by this change."
+    ],
+    "competitive_implications": "The change does not provide any competitive advantages or disadvantages.",
+    "strategic_direction": "The change does not indicate any shift in the company's strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "1-Click Translations",
+      "AI Video Dubbing"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The change is minor and does not indicate any significant strategic moves or updates."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor the website for any future changes that may indicate significant strategic moves or updates."
+    ]
+  },
+  "key_insights": [
+    "The change is minor and does not indicate any significant strategic moves or updates."
+  ],
+  "business_impact": "The change may slightly affect user experience, but it does not have any significant business implications.",
+  "competitive_implications": "The change does not provide any competitive advantages or disadvantages.",
+  "content_hash_before": "50b5a6b658c59f5dd8b43094fefe04440562bac6c9f798697de51ee0d23a89ff",
+  "content_hash_after": "00f333784fdd59f2ab16af2e9171d7c1d73f3cb997e4efb7caf0d7c19abaa917",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

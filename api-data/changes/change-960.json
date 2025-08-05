@@ -1,0 +1,64 @@
+{
+  "id": 960,
+  "company": "Scale AI",
+  "page_url": "blog",
+  "detected_at": "2025-08-05T23:08:34.667Z",
+  "change_type": "modified",
+  "interest_level": 7,
+  "ai_confidence": 0.8,
+  "summary": "New blog post added: 'The AI Risk Matrix: Evolving AI Safety and Security for Today'",
+  "category": "research_update",
+  "change_summary": {
+    "what_changed": "New blog post added: 'The AI Risk Matrix: Evolving AI Safety and Security for Today'",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added a new research article about the AI Risk Matrix",
+      "Updated the blog post list with the new article"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of the AI Risk Matrix blog post demonstrates Scale AI's commitment to AI safety and security, which can positively impact its reputation and customer trust.",
+    "market_signals": [
+      "increased focus on AI safety and security"
+    ],
+    "competitive_implications": "Scale AI is likely to be perceived as a leader in AI safety and security, potentially giving it a competitive edge.",
+    "strategic_direction": "Scale AI is directionally focused on addressing critical AI challenges, including safety and security."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "AI Risk Matrix"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Scale AI is prioritizing AI safety and security"
+    ],
+    "opportunities": [
+      "Potential for increased customer trust and reputation"
+    ],
+    "threats": [
+      "Potential for increased competition in AI safety and security"
+    ],
+    "recommended_actions": [
+      "Monitor Scale AI's AI safety and security initiatives",
+      "Assess the competitive landscape for AI safety and security"
+    ]
+  },
+  "key_insights": [
+    "Scale AI is prioritizing AI safety and security"
+  ],
+  "business_impact": "The addition of the AI Risk Matrix blog post demonstrates Scale AI's commitment to AI safety and security, which can positively impact its reputation and customer trust.",
+  "competitive_implications": "Scale AI is likely to be perceived as a leader in AI safety and security, potentially giving it a competitive edge.",
+  "content_hash_before": "c5c6257f5c08e6a890d8fed8eb114260d899d82e9e63e83311dc62edd9f9a8a3",
+  "content_hash_after": "ffe82b4e52d28647406ee1cb26f0e87d51269780b555cabf6cac0de5fbe90aff",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,81 @@
+{
+  "id": 1020,
+  "company": "Anthropic",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T22:55:14.055Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Update of Claude model to Opus 4.1, changes in download and login links, and update of featured research and announcements",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Update of Claude model to Opus 4.1, changes in download and login links, and update of featured research and announcements",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Claude Opus 4.1 model update",
+      "Update of download and login links for Claude",
+      "Update of featured research and announcements"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update of the Claude model to Opus 4.1 demonstrates Anthropic's commitment to advancing its AI technology and improving its products.",
+    "market_signals": [
+      "Increased focus on AI safety and responsible development",
+      "Growing importance of AI in various industries"
+    ],
+    "competitive_implications": "The update of the Claude model to Opus 4.1 may give Anthropic a competitive advantage in the AI market, particularly in terms of AI safety and responsible development.",
+    "strategic_direction": "Anthropic's strategic direction is focused on developing and applying AI technology in a responsible and safe manner."
+  },
+  "entities": {
+    "products": [
+      "Claude",
+      "Claude Opus 4.1",
+      "Claude Sonnet 4",
+      "Claude Haiku 3.5"
+    ],
+    "features": [
+      "AI model updates",
+      "Download and login links"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [
+      "Deep Ganguli"
+    ],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Anthropic is committed to advancing its AI technology and improving its products.",
+      "The company is focused on AI safety and responsible development."
+    ],
+    "opportunities": [
+      "Partnership opportunities with Anthropic to develop and apply AI technology in various industries.",
+      "Potential for Anthropic's AI technology to be used in a wide range of applications."
+    ],
+    "threats": [
+      "Competition from other AI companies",
+      "Regulatory challenges related to AI development and deployment."
+    ],
+    "recommended_actions": [
+      "Monitor Anthropic's AI technology developments and updates.",
+      "Consider partnership opportunities with Anthropic to develop and apply AI technology in various industries."
+    ]
+  },
+  "key_insights": [
+    "Anthropic is committed to advancing its AI technology and improving its products.",
+    "The company is focused on AI safety and responsible development."
+  ],
+  "business_impact": "The update of the Claude model to Opus 4.1 demonstrates Anthropic's commitment to advancing its AI technology and improving its products.",
+  "competitive_implications": "The update of the Claude model to Opus 4.1 may give Anthropic a competitive advantage in the AI market, particularly in terms of AI safety and responsible development.",
+  "content_hash_before": "69f54521b515d1981091b5ba7eeee306041dbd9306f1caa5772be7e9f487706a",
+  "content_hash_after": "ad4afd8ef18c3df44214b4263c1bcdfd1c0773995c9b9abe399431154077e201",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

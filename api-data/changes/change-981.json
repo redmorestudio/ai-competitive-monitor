@@ -1,0 +1,67 @@
+{
+  "id": 981,
+  "company": "Midjourney",
+  "page_url": "pricing",
+  "detected_at": "2025-08-05T23:02:25.127Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Addition of new documentation categories and articles, update of existing article links, and minor changes to the pricing table",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Addition of new documentation categories and articles, update of existing article links, and minor changes to the pricing table",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added new categories and articles to the documentation section",
+      "Updated links to existing articles",
+      "Minor formatting changes to the pricing table"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are unlikely to have a significant impact on Midjourney's business, as they are primarily minor updates to the documentation and pricing table",
+    "market_signals": [
+      "Midjourney is continuing to invest in its documentation and support resources"
+    ],
+    "competitive_implications": "The changes do not significantly impact Midjourney's competitive position, as they are primarily minor updates",
+    "strategic_direction": "Midjourney is likely continuing to focus on improving its service and support resources, but the changes do not indicate a significant shift in strategy"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Monthly and annual pricing plans remain unchanged"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Midjourney is investing in its documentation and support resources",
+      "The pricing structure remains unchanged"
+    ],
+    "opportunities": [
+      "Midjourney may be able to improve its customer support and satisfaction through its updated documentation and support resources"
+    ],
+    "threats": [
+      "The minor updates may not be sufficient to keep pace with competitors who are making more significant changes to their services"
+    ],
+    "recommended_actions": [
+      "Continue to monitor Midjourney's updates and changes to its service and pricing structure",
+      "Assess the impact of Midjourney's updated documentation and support resources on its customer satisfaction and retention"
+    ]
+  },
+  "key_insights": [
+    "Midjourney is investing in its documentation and support resources",
+    "The pricing structure remains unchanged"
+  ],
+  "business_impact": "The changes are unlikely to have a significant impact on Midjourney's business, as they are primarily minor updates to the documentation and pricing table",
+  "competitive_implications": "The changes do not significantly impact Midjourney's competitive position, as they are primarily minor updates",
+  "content_hash_before": "b63eb4b94d1d7f9a43cd64524c8f87ebea471d1934aa8fc156c845454631caa9",
+  "content_hash_after": "823666b2cbc29261f2343d1cb1082928176e446331abb0a6db694a32d77b959e",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

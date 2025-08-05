@@ -1,0 +1,64 @@
+{
+  "id": 1010,
+  "company": "Codeium",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T22:56:00.025Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Download options for the Windsurf Editor",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Download options for the Windsurf Editor",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added download option for Windows",
+      "Changed download option for macOS from 'Download for Linux' to 'Select an option to download the Windsurf Editor for macOS'",
+      "Updated download links"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may slightly improve user experience for Windows users, but it is unlikely to have a significant impact on the business.",
+    "market_signals": [
+      "Increased support for Windows users"
+    ],
+    "competitive_implications": "The change does not significantly affect the competitive landscape.",
+    "strategic_direction": "The change is consistent with the company's goal of improving user experience and supporting a wider range of platforms."
+  },
+  "entities": {
+    "products": [
+      "Windsurf Editor"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is expanding its support for Windows users"
+    ],
+    "opportunities": [
+      "Increased market share among Windows users"
+    ],
+    "threats": [
+      "Potential issues with compatibility or performance on Windows"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and performance on Windows"
+    ]
+  },
+  "key_insights": [
+    "The company is expanding its support for Windows users"
+  ],
+  "business_impact": "The change may slightly improve user experience for Windows users, but it is unlikely to have a significant impact on the business.",
+  "competitive_implications": "The change does not significantly affect the competitive landscape.",
+  "content_hash_before": "8c7e85f2a2b71820d6eb279807c86c1aea7524df95b890c899b795affa142dcf",
+  "content_hash_after": "e41535e2e1faaa556d278100631d031d9e39ca38a6ab869e28e53ae3c21a2556",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

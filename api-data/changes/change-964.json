@@ -1,0 +1,60 @@
+{
+  "id": 964,
+  "company": "Runway",
+  "page_url": "pricing",
+  "detected_at": "2025-08-05T23:07:43.110Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Addition of a new link 'Ways to use Runway' in the Product section",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Addition of a new link 'Ways to use Runway' in the Product section",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added a new link 'Ways to use Runway' in the Product section, pointing to the Runway Academy"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change is unlikely to have a significant impact on the business, as it is a minor addition to the website",
+    "market_signals": [
+      "The company is continuing to develop and expand its product and services"
+    ],
+    "competitive_implications": "The change does not appear to be a direct response to a competitor, but rather an internal development",
+    "strategic_direction": "The company is focusing on providing more resources and information to its users, potentially to increase engagement and retention"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is investing in its website and user experience",
+      "The addition of the 'Ways to use Runway' link suggests a focus on user education and support"
+    ],
+    "opportunities": [
+      "The company could further develop its educational resources to attract and retain users"
+    ],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor the company's website and product developments for further insights into its strategy and direction"
+    ]
+  },
+  "key_insights": [
+    "The company is investing in its website and user experience",
+    "The addition of the 'Ways to use Runway' link suggests a focus on user education and support"
+  ],
+  "business_impact": "The change is unlikely to have a significant impact on the business, as it is a minor addition to the website",
+  "competitive_implications": "The change does not appear to be a direct response to a competitor, but rather an internal development",
+  "content_hash_before": "eaf7c3e854aaa0562b41d0c7741b0cba7a80f213486cb03728be58d6686b9879",
+  "content_hash_after": "fbaccc4e9a8192be4fcd7749c65696ebde7ed2ba2f13deda8e69d319b68a0525",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

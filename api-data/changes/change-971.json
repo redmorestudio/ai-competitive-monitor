@@ -1,0 +1,69 @@
+{
+  "id": 971,
+  "company": "Pieces",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T23:06:34.954Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "The title of the homepage has changed from 'Pieces for Developers — Long term memory for your developer workstream' to 'Pieces — Long term memory for your whole workstream'.",
+  "category": "rebranding/expansion",
+  "change_summary": {
+    "what_changed": "The title of the homepage has changed from 'Pieces for Developers — Long term memory for your developer workstream' to 'Pieces — Long term memory for your whole workstream'.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Title change from 'Pieces for Developers' to 'Pieces'",
+      "Broadened scope from 'developer workstream' to 'whole workstream'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may signal an attempt to broaden the appeal of Pieces beyond just developers, potentially increasing its market reach and competitiveness.",
+    "market_signals": [
+      "expansion",
+      "rebranding"
+    ],
+    "competitive_implications": "Competitors may need to reassess their own positioning and marketing strategies in response to Pieces' potential expansion.",
+    "strategic_direction": "Pieces may be moving towards a more inclusive, workflow-focused product rather than solely a developer tool."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "developers",
+      "whole workstream"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Potential expansion of target audience",
+      "Rebranding to broaden appeal"
+    ],
+    "opportunities": [
+      "Increased market reach",
+      "Improved competitiveness"
+    ],
+    "threats": [
+      "Potential cannibalization of existing developer-focused products"
+    ],
+    "recommended_actions": [
+      "Monitor Pieces' marketing and product development",
+      "Assess own competitive strategy in light of Pieces' expansion"
+    ]
+  },
+  "key_insights": [
+    "Potential expansion of target audience",
+    "Rebranding to broaden appeal"
+  ],
+  "business_impact": "The change may signal an attempt to broaden the appeal of Pieces beyond just developers, potentially increasing its market reach and competitiveness.",
+  "competitive_implications": "Competitors may need to reassess their own positioning and marketing strategies in response to Pieces' potential expansion.",
+  "content_hash_before": "c2b18f8c5e485a24679c6697a9af7afbbb6371502f2e775d24f2ef4a194f8615",
+  "content_hash_after": "5175cfa55df861eae80dba11d31883216cf137f71915ec40df62f79d033e0a53",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

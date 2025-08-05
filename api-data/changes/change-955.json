@@ -1,0 +1,66 @@
+{
+  "id": 955,
+  "company": "Stability AI",
+  "page_url": "blog",
+  "detected_at": "2025-08-05T23:09:10.295Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.7,
+  "summary": "Addition of 'Solutions' menu item and removal of direct links to 'Brand Resources' and minor reorganization",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Addition of 'Solutions' menu item and removal of direct links to 'Brand Resources' and minor reorganization",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Solutions' menu item",
+      "Removed direct link to 'Brand Resources'",
+      "Minor reorganization of menu items"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of 'Solutions' may indicate an expansion of Stability AI's services or a rebranding effort, which could impact the company's competitive positioning and market presence.",
+    "market_signals": [
+      "Potential expansion of services",
+      "Rebranding effort"
+    ],
+    "competitive_implications": "The changes may suggest that Stability AI is adapting to market demands or competitor actions, but the impact is likely to be minor.",
+    "strategic_direction": "The update may indicate a focus on providing more comprehensive solutions to customers, rather than just individual products or features."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Stability AI's website has been updated with a new 'Solutions' menu item",
+      "The company may be expanding its services or rebranding"
+    ],
+    "opportunities": [
+      "Potential for Stability AI to gain a competitive advantage through expanded services"
+    ],
+    "threats": [
+      "Potential for competitors to respond to Stability AI's changes and gain an advantage"
+    ],
+    "recommended_actions": [
+      "Monitor Stability AI's website and marketing efforts for further changes",
+      "Assess the potential impact of Stability AI's expanded services on the market and competitors"
+    ]
+  },
+  "key_insights": [
+    "Stability AI's website has been updated with a new 'Solutions' menu item",
+    "The company may be expanding its services or rebranding"
+  ],
+  "business_impact": "The addition of 'Solutions' may indicate an expansion of Stability AI's services or a rebranding effort, which could impact the company's competitive positioning and market presence.",
+  "competitive_implications": "The changes may suggest that Stability AI is adapting to market demands or competitor actions, but the impact is likely to be minor.",
+  "content_hash_before": "c14d2ecb6d1d42f775537aa1a98f6c3e4838bf6d2b79575d5f4a73339cd03378",
+  "content_hash_after": "7b2825a55ecb99c91a77ee07c5c2091a493ab0da9dd975c2d6775c8e4a085d3f",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

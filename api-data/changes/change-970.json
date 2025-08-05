@@ -1,0 +1,67 @@
+{
+  "id": 970,
+  "company": "Redmore Studio",
+  "page_url": "blog",
+  "detected_at": "2025-08-05T23:06:49.307Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Removal of the detailed cookie policy and customization options from the page not found section of the website",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Removal of the detailed cookie policy and customization options from the page not found section of the website",
+    "change_type": "removal",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Removal of cookie customization options",
+      "Removal of detailed cookie policy information"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The removal of detailed cookie policy information may slightly impact user trust or compliance with cookie regulations, but the overall business impact is likely minimal.",
+    "market_signals": [
+      "Potential simplification of user experience",
+      "Possible reduction in transparency regarding cookie usage"
+    ],
+    "competitive_implications": "The change does not significantly alter the competitive landscape, as it is a minor adjustment to a non-core aspect of the website.",
+    "strategic_direction": "The company may be focusing on simplifying user interactions or streamlining legal and compliance information."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The website has removed detailed cookie policy information from the page not found section.",
+      "This change may reflect a strategy to simplify user experience or reduce the complexity of legal and compliance information."
+    ],
+    "opportunities": [
+      "Monitoring user response to the simplified cookie policy presentation",
+      "Assessing the impact on user trust and compliance"
+    ],
+    "threats": [
+      "Potential negative impact on user trust due to reduced transparency",
+      "Compliance risks if the simplified policy does not meet regulatory requirements"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and analytics to assess the impact of the change",
+      "Review regulatory compliance to ensure the simplified policy meets all necessary standards"
+    ]
+  },
+  "key_insights": [
+    "The website has removed detailed cookie policy information from the page not found section.",
+    "This change may reflect a strategy to simplify user experience or reduce the complexity of legal and compliance information."
+  ],
+  "business_impact": "The removal of detailed cookie policy information may slightly impact user trust or compliance with cookie regulations, but the overall business impact is likely minimal.",
+  "competitive_implications": "The change does not significantly alter the competitive landscape, as it is a minor adjustment to a non-core aspect of the website.",
+  "content_hash_before": "9232156ce0d72228a68502a320934c4fc159f07456a5e60c85093991900ec52a",
+  "content_hash_after": "50f342bd68f34f8b57a589757059d92f2b407cb499e1b72e8d778a1a98b79ba9",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,70 @@
+{
+  "id": 972,
+  "company": "Pieces",
+  "page_url": "blog",
+  "detected_at": "2025-08-05T23:06:29.109Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog posts were added, and some existing ones were removed or updated.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog posts were added, and some existing ones were removed or updated.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Added a new blog post titled 'Most people don’t think about tokens, and honestly, should they?'",
+      "Removed or updated some existing blog posts"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates suggest Pieces is focusing on AI and developer-related topics, potentially indicating a strategic direction towards these areas.",
+    "market_signals": [
+      "Increased focus on AI and developer tools"
+    ],
+    "competitive_implications": "Pieces may be attempting to establish itself as a thought leader in the AI and developer tools space, potentially threatening competitors.",
+    "strategic_direction": "Pieces appears to be investing in content creation and thought leadership, which could be part of a larger strategy to expand its market presence."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "LLM"
+    ],
+    "people": [
+      "Tsavo Knott",
+      "Antreas Antoniou",
+      "Judson Bonneville"
+    ],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Pieces is actively creating new content focused on AI and developer topics.",
+      "The company may be shifting its strategic direction towards these areas."
+    ],
+    "opportunities": [
+      "Pieces may be establishing itself as a thought leader in the AI and developer tools space, creating opportunities for partnerships or collaborations."
+    ],
+    "threats": [
+      "Pieces' increased focus on AI and developer tools could pose a threat to competitors in these spaces."
+    ],
+    "recommended_actions": [
+      "Monitor Pieces' content and strategic direction for further insights into their plans and potential market impact."
+    ]
+  },
+  "key_insights": [
+    "Pieces is actively creating new content focused on AI and developer topics.",
+    "The company may be shifting its strategic direction towards these areas."
+  ],
+  "business_impact": "The updates suggest Pieces is focusing on AI and developer-related topics, potentially indicating a strategic direction towards these areas.",
+  "competitive_implications": "Pieces may be attempting to establish itself as a thought leader in the AI and developer tools space, potentially threatening competitors.",
+  "content_hash_before": "22c0d1018502ee8948084a922a9a841534e6aeded531fc8773c6e8f191f3a1fe",
+  "content_hash_after": "dd50e3d1e9bcdfb89a4f16b891caed4db2eee68100ae4ee759cf9ea3cc3f64be",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

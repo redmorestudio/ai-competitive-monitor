@@ -1,0 +1,82 @@
+{
+  "id": 973,
+  "company": "Palantir",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T23:05:46.696Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Addition of new content, removal of old content, and updates to existing content",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Addition of new content, removal of old content, and updates to existing content",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of R1, DevCon 3, AIPCon 7, and Interoperability sections",
+      "Removal of Tariffs and Cybernetic Enterprise sections",
+      "Update to CEO's letter to shareholders from Q1 to Q2 2025"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest a significant shift in Palantir's strategy, with a focus on new products and partnerships, and a decreased emphasis on certain older products and features.",
+    "market_signals": [
+      "Increased focus on healthcare and defense markets",
+      "Expansion of AI capabilities"
+    ],
+    "competitive_implications": "The changes may indicate a competitive advantage for Palantir in the healthcare and defense markets, and may pressure competitors to respond with similar updates and expansions.",
+    "strategic_direction": "The changes suggest a strategic direction for Palantir that prioritizes innovation, expansion, and partnership-building."
+  },
+  "entities": {
+    "products": [
+      "R1",
+      "DevCon 3",
+      "AIPCon 7",
+      "Interoperability"
+    ],
+    "features": [],
+    "partnerships": [
+      "R1 RCM"
+    ],
+    "technologies": [
+      "AI"
+    ],
+    "people": [
+      "Alex Karp"
+    ],
+    "pricing": [],
+    "markets": [
+      "Healthcare",
+      "Defense"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Palantir is expanding its focus on healthcare and defense markets",
+      "The company is prioritizing innovation and expansion through new products and partnerships"
+    ],
+    "opportunities": [
+      "Partnership opportunities with R1 RCM and other healthcare and defense companies",
+      "Expansion into new markets and geographies"
+    ],
+    "threats": [
+      "Increased competition from other companies in the healthcare and defense markets",
+      "Regulatory challenges and risks associated with expansion into new markets"
+    ],
+    "recommended_actions": [
+      "Monitor Palantir's progress and updates in the healthcare and defense markets",
+      "Consider partnership opportunities with Palantir and other companies in these markets"
+    ]
+  },
+  "key_insights": [
+    "Palantir is expanding its focus on healthcare and defense markets",
+    "The company is prioritizing innovation and expansion through new products and partnerships"
+  ],
+  "business_impact": "The changes suggest a significant shift in Palantir's strategy, with a focus on new products and partnerships, and a decreased emphasis on certain older products and features.",
+  "competitive_implications": "The changes may indicate a competitive advantage for Palantir in the healthcare and defense markets, and may pressure competitors to respond with similar updates and expansions.",
+  "content_hash_before": "eb16a5e27432f84c9b4a96a6c4fc7a402512fe692d6274c643f20e5fd7a352f0",
+  "content_hash_after": "c7b25cba4d2a1e518d8c4f3b4f1d3c82ac6f3e9c2acdef7d918d96b06ac3e8e9",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

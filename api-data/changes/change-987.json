@@ -1,0 +1,58 @@
+{
+  "id": 987,
+  "company": "LangChain",
+  "page_url": "product",
+  "detected_at": "2025-08-05T23:00:59.101Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "The provided before and after content appears to be nearly identical, with no significant changes in the main content, features, or announcements.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The provided before and after content appears to be nearly identical, with no significant changes in the main content, features, or announcements.",
+    "change_type": "no significant change",
+    "change_scale": "minor",
+    "specific_changes": [
+      "No major changes were detected in the content."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact is expected from the minor changes detected.",
+    "market_signals": [],
+    "competitive_implications": "The minor changes do not suggest any significant competitive implications or advantages.",
+    "strategic_direction": "The strategic direction of LangChain and its products remains unchanged based on the provided content."
+  },
+  "entities": {
+    "products": [
+      "LangSmith",
+      "LangChain",
+      "LangGraph"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "No significant changes were detected in the content."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue monitoring the website for future updates or changes that may impact the competitive landscape."
+    ]
+  },
+  "key_insights": [
+    "No significant changes were detected in the content."
+  ],
+  "business_impact": "No significant business impact is expected from the minor changes detected.",
+  "competitive_implications": "The minor changes do not suggest any significant competitive implications or advantages.",
+  "content_hash_before": "6260d1bd53059371f223803533c55647e8817e2b15c2d86c6b18f48120fe3580",
+  "content_hash_after": "9be0d18505bdfa0bf9d19d369531c7e360abec297ebda235f9a36125c3e3b343",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

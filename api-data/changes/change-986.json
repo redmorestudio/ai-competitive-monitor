@@ -1,0 +1,59 @@
+{
+  "id": 986,
+  "company": "LangChain",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T23:01:03.489Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The 'ajs_aid' parameter in the URLs for LangGraph and LangChain documentation has been updated from '5b55c6c7-c6ad-4a0f-b6fa-53ecdb5591eb' to 'dfcfd614-53b8-4bf7-8b19-8db0b9a0b6fd'",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The 'ajs_aid' parameter in the URLs for LangGraph and LangChain documentation has been updated from '5b55c6c7-c6ad-4a0f-b6fa-53ecdb5591eb' to 'dfcfd614-53b8-4bf7-8b19-8db0b9a0b6fd'",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated 'ajs_aid' parameter in LangGraph and LangChain documentation URLs"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change is unlikely to have a significant impact on the business, as it only affects the 'ajs_aid' parameter in the URLs for LangGraph and LangChain documentation.",
+    "market_signals": [
+      "The company may be updating its analytics or tracking systems"
+    ],
+    "competitive_implications": "The change does not indicate any significant updates to the products or services, and is unlikely to affect the company's competitive position.",
+    "strategic_direction": "The company's strategic direction remains unchanged, as the update is minor and only affects the 'ajs_aid' parameter in the URLs for LangGraph and LangChain documentation."
+  },
+  "entities": {
+    "products": [
+      "LangGraph",
+      "LangChain"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The 'ajs_aid' parameter in the URLs for LangGraph and LangChain documentation has been updated"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor the company's website and documentation for any further updates or changes"
+    ]
+  },
+  "key_insights": [
+    "The 'ajs_aid' parameter in the URLs for LangGraph and LangChain documentation has been updated"
+  ],
+  "business_impact": "The change is unlikely to have a significant impact on the business, as it only affects the 'ajs_aid' parameter in the URLs for LangGraph and LangChain documentation.",
+  "competitive_implications": "The change does not indicate any significant updates to the products or services, and is unlikely to affect the company's competitive position.",
+  "content_hash_before": "a3260d967b9c5cbc7cee9e03a65b1a86bfde61e9144c3046d71e595e7ef4da0f",
+  "content_hash_after": "d55c913610a63046aedee2cff3486dea968718a505cedb5dbc17d5f2febe10b0",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

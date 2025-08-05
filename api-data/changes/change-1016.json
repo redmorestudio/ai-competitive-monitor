@@ -1,0 +1,79 @@
+{
+  "id": 1016,
+  "company": "Cerebras",
+  "page_url": "blog",
+  "detected_at": "2025-08-05T22:55:39.651Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog posts were added, and some older posts were removed or archived",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog posts were added, and some older posts were removed or archived",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of new blog posts, including 'Cerebras Launches OpenAI’s gpt-oss-120B at a Blistering 3,000 tokens/sec' and 'Router Wars: Which MoE Routing Strategy Actually Works'",
+      "Removal or archiving of older blog posts, such as 'Chatting Your Way Through 4500 NeurIPS papers with Cerebras' and 'Llama 3.1 405B now runs at 969 tokens/s on Cerebras Inference'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest that Cerebras is continuing to invest in its AI and LLM technologies, and is working to establish itself as a leader in the enterprise AI market.",
+    "market_signals": [
+      "Increased focus on AI and LLM technologies",
+      "Expansion into new markets, such as enterprise AI"
+    ],
+    "competitive_implications": "The changes suggest that Cerebras is becoming a more significant player in the AI and LLM markets, and may pose a competitive threat to other companies in these spaces.",
+    "strategic_direction": "The changes suggest that Cerebras is focused on continuing to develop and improve its AI and LLM technologies, and is working to establish itself as a leader in the enterprise AI market."
+  },
+  "entities": {
+    "products": [
+      "Cerebras Inference",
+      "OpenAI's gpt-oss-120B"
+    ],
+    "features": [
+      "MoE Routing Strategy"
+    ],
+    "partnerships": [
+      "IBM"
+    ],
+    "technologies": [
+      "AI",
+      "LLM"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Enterprise AI"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Cerebras is continuing to invest in its AI and LLM technologies",
+      "The company is working to establish itself as a leader in the enterprise AI market"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Cerebras",
+      "Investment opportunities in Cerebras or its competitors"
+    ],
+    "threats": [
+      "Increased competition in the AI and LLM markets",
+      "Potential disruption to existing business models"
+    ],
+    "recommended_actions": [
+      "Monitor Cerebras' progress and developments in the AI and LLM markets",
+      "Consider partnership or investment opportunities with Cerebras or its competitors"
+    ]
+  },
+  "key_insights": [
+    "Cerebras is continuing to invest in its AI and LLM technologies",
+    "The company is working to establish itself as a leader in the enterprise AI market"
+  ],
+  "business_impact": "The changes suggest that Cerebras is continuing to invest in its AI and LLM technologies, and is working to establish itself as a leader in the enterprise AI market.",
+  "competitive_implications": "The changes suggest that Cerebras is becoming a more significant player in the AI and LLM markets, and may pose a competitive threat to other companies in these spaces.",
+  "content_hash_before": "d9bc2a70967657599f20afbfc6d45532f036577f91a01174eb59842d5700e991",
+  "content_hash_after": "40bf4a69323014a577ef3e0c1054b88538814c9bfacd71eace6124f651f44323",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

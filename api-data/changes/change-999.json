@@ -1,0 +1,70 @@
+{
+  "id": 999,
+  "company": "ElevenLabs",
+  "page_url": "pricing",
+  "detected_at": "2025-08-05T22:57:26.706Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "Addition of 'Music use in social media and ads' feature to the Starter plan and introduction of 'AI Music Generator' in the Research section",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Addition of 'Music use in social media and ads' feature to the Starter plan and introduction of 'AI Music Generator' in the Research section",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Starter plan now includes 'Music use in social media and ads'",
+      "Introduction of 'AI Music Generator' in the Research section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of music-related features may help ElevenLabs to expand its customer base and increase revenue, particularly among creators and businesses in the music and entertainment industry.",
+    "market_signals": [
+      "Growing demand for music generation and audio content creation tools"
+    ],
+    "competitive_implications": "The introduction of AI Music Generator may help ElevenLabs to differentiate itself from competitors and establish a strong presence in the music generation market.",
+    "strategic_direction": "ElevenLabs is likely to continue expanding its feature set and services to attract a wider range of customers and increase revenue."
+  },
+  "entities": {
+    "products": [
+      "AI Music Generator"
+    ],
+    "features": [
+      "Music use in social media and ads"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "ElevenLabs is expanding its feature set to include music generation and audio content creation tools",
+      "The company is targeting creators and businesses in the music and entertainment industry"
+    ],
+    "opportunities": [
+      "Partnerships with music streaming platforms or social media companies",
+      "Expansion into new markets, such as podcasting or video production"
+    ],
+    "threats": [
+      "Increased competition from established music generation companies",
+      "Regulatory challenges related to music licensing and copyright"
+    ],
+    "recommended_actions": [
+      "Monitor ElevenLabs' progress in the music generation market",
+      "Assess potential partnership opportunities with music streaming platforms or social media companies"
+    ]
+  },
+  "key_insights": [
+    "ElevenLabs is expanding its feature set to include music generation and audio content creation tools",
+    "The company is targeting creators and businesses in the music and entertainment industry"
+  ],
+  "business_impact": "The addition of music-related features may help ElevenLabs to expand its customer base and increase revenue, particularly among creators and businesses in the music and entertainment industry.",
+  "competitive_implications": "The introduction of AI Music Generator may help ElevenLabs to differentiate itself from competitors and establish a strong presence in the music generation market.",
+  "content_hash_before": "c2c4ba26dbf0f5b9ef3ea644a702c957617dc490041321a05a2fe7080751ba6a",
+  "content_hash_after": "429479bb54ccb4fc7b6807cc024e6d3dd40000fa63bb09f53e8fa479ab1955d2",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

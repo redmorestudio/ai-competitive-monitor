@@ -1,0 +1,69 @@
+{
+  "id": 978,
+  "company": "Neeva",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T23:04:23.750Z",
+  "change_type": "modified",
+  "interest_level": 10,
+  "ai_confidence": 0.99,
+  "summary": "The entire content of the webpage has changed from AliExpress to Neeva",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "The entire content of the webpage has changed from AliExpress to Neeva",
+    "change_type": "major overhaul",
+    "change_scale": "major",
+    "specific_changes": [
+      "Removal of all AliExpress content",
+      "Introduction of Neeva branding",
+      "New copyright information for 2025",
+      "Addition of a Privacy Policy link"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may indicate a shift in the company's business model or a rebranding effort, potentially impacting its market position and customer base",
+    "market_signals": [
+      "Rebranding effort",
+      "Potential change in business model"
+    ],
+    "competitive_implications": "The change may affect the company's competitive position in the market, potentially creating new opportunities or threats",
+    "strategic_direction": "The company may be moving towards a new strategic direction, focusing on different products or services"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Major rebranding effort",
+      "Potential change in business model"
+    ],
+    "opportunities": [
+      "New market opportunities",
+      "Increased brand recognition"
+    ],
+    "threats": [
+      "Loss of existing customer base",
+      "Increased competition"
+    ],
+    "recommended_actions": [
+      "Monitor the company's future developments",
+      "Analyze the impact on the market and competitors"
+    ]
+  },
+  "key_insights": [
+    "Major rebranding effort",
+    "Potential change in business model"
+  ],
+  "business_impact": "The change may indicate a shift in the company's business model or a rebranding effort, potentially impacting its market position and customer base",
+  "competitive_implications": "The change may affect the company's competitive position in the market, potentially creating new opportunities or threats",
+  "content_hash_before": "d6f7bf8b3dadace45d05e10950d636662d459379c9e826435164e933b8b5da37",
+  "content_hash_after": "582c430e8a26549f9d659e1c56bf804311c42a0d4e275f2a2794002b1b8a3a27",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

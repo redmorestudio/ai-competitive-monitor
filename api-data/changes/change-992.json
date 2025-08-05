@@ -1,0 +1,81 @@
+{
+  "id": 992,
+  "company": "Google DeepMind",
+  "page_url": "blog",
+  "detected_at": "2025-08-05T22:58:15.889Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New articles and updates were added to the Google Blog, including 'Create personal illustrated storybooks in the Gemini app', 'How we’re using AI to help track and predict cyclones', and 'Rethinking how we measure AI intelligence'. Additionally, the 'Ask a Techspert: What is inference?' article was still present, and the 'Gemini Drops' and 'Turn your photos into videos in Gemini' articles were updated.",
+  "category": "AI updates",
+  "change_summary": {
+    "what_changed": "New articles and updates were added to the Google Blog, including 'Create personal illustrated storybooks in the Gemini app', 'How we’re using AI to help track and predict cyclones', and 'Rethinking how we measure AI intelligence'. Additionally, the 'Ask a Techspert: What is inference?' article was still present, and the 'Gemini Drops' and 'Turn your photos into videos in Gemini' articles were updated.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Added new article: 'Create personal illustrated storybooks in the Gemini app'",
+      "Added new article: 'How we’re using AI to help track and predict cyclones'",
+      "Added new article: 'Rethinking how we measure AI intelligence'",
+      "Updated 'Gemini Drops' article",
+      "Updated 'Turn your photos into videos in Gemini' article"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates suggest that Google is strengthening its position in the AI market, which could lead to increased competition and innovation in the tech industry.",
+    "market_signals": [
+      "Increased focus on AI research and development",
+      "Growing importance of AI in natural disaster prediction and intelligence measurement"
+    ],
+    "competitive_implications": "Google's investments in AI could pose a competitive threat to other tech companies, particularly those that are not actively investing in AI research and development.",
+    "strategic_direction": "Google's strategic direction appears to be focused on developing and applying AI technologies to drive innovation and growth."
+  },
+  "entities": {
+    "products": [
+      "Gemini",
+      "Google DeepMind"
+    ],
+    "features": [
+      "Illustrated storybooks",
+      "AI-powered cyclone prediction",
+      "AI intelligence measurement"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Google is actively investing in AI research and development",
+      "AI is being applied to a wide range of areas, including natural disaster prediction and intelligence measurement"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Google on AI-related projects",
+      "Potential for innovation and growth in the AI market"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential disruption to traditional industries and business models"
+    ],
+    "recommended_actions": [
+      "Monitor Google's AI developments and investments",
+      "Consider partnership opportunities with Google on AI-related projects",
+      "Invest in AI research and development to remain competitive"
+    ]
+  },
+  "key_insights": [
+    "Google is actively investing in AI research and development",
+    "AI is being applied to a wide range of areas, including natural disaster prediction and intelligence measurement"
+  ],
+  "business_impact": "The updates suggest that Google is strengthening its position in the AI market, which could lead to increased competition and innovation in the tech industry.",
+  "competitive_implications": "Google's investments in AI could pose a competitive threat to other tech companies, particularly those that are not actively investing in AI research and development.",
+  "content_hash_before": "e23c54caab7d53bba60371d64edce8c04c729b809cef7936d851167022dd840b",
+  "content_hash_after": "faf0a1a97a10702a62a942a24736b962bfd49aa212802aecba8cb2fba6d0834e",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

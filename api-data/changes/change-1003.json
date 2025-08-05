@@ -1,0 +1,87 @@
+{
+  "id": 1003,
+  "company": "DataRobot",
+  "page_url": "blog",
+  "detected_at": "2025-08-05T22:56:53.096Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New blog posts were added, and the blog layout was updated",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog posts were added, and the blog layout was updated",
+    "change_type": "addition/update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of new blog posts, including 'Plans change. The SAP Endorsed App from DataRobot keeps up.' and updates to existing posts",
+      "Update to the blog layout, including changes to the filter options and the display of blog posts"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates to the blog and the addition of new posts demonstrate a focus on thought leadership and customer engagement, which can help drive business growth and increase brand awareness",
+    "market_signals": [
+      "Increased investment in content creation and user experience",
+      "Growing focus on AI and machine learning in various industries"
+    ],
+    "competitive_implications": "The updates to the blog and the addition of new posts may help DataRobot differentiate itself from competitors and establish itself as a leader in the AI and machine learning space",
+    "strategic_direction": "The company appears to be focused on expanding its presence in various industries, including finance, financial services, healthcare, and manufacturing, and on developing its AI and machine learning capabilities"
+  },
+  "entities": {
+    "products": [
+      "SAP Endorsed App",
+      "DataRobot AI Platform",
+      "Agentic AI"
+    ],
+    "features": [
+      "AI-driven demand forecasting",
+      "Agentic AI workflows"
+    ],
+    "partnerships": [
+      "SAP",
+      "NVIDIA"
+    ],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Finance",
+      "Financial Services",
+      "Healthcare",
+      "Manufacturing"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "DataRobot is investing heavily in content creation and user experience",
+      "The company is focused on developing its AI and machine learning capabilities",
+      "DataRobot is expanding its presence in various industries"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the AI and machine learning space",
+      "Expansion into new industries and markets"
+    ],
+    "threats": [
+      "Increased competition from other companies in the AI and machine learning space",
+      "Regulatory challenges and risks associated with AI and machine learning"
+    ],
+    "recommended_actions": [
+      "Continue to monitor DataRobot's content creation and user experience efforts",
+      "Assess the company's AI and machine learning capabilities and their potential applications in various industries"
+    ]
+  },
+  "key_insights": [
+    "DataRobot is investing heavily in content creation and user experience",
+    "The company is focused on developing its AI and machine learning capabilities",
+    "DataRobot is expanding its presence in various industries"
+  ],
+  "business_impact": "The updates to the blog and the addition of new posts demonstrate a focus on thought leadership and customer engagement, which can help drive business growth and increase brand awareness",
+  "competitive_implications": "The updates to the blog and the addition of new posts may help DataRobot differentiate itself from competitors and establish itself as a leader in the AI and machine learning space",
+  "content_hash_before": "c1cfcd130bff4dfaabeebdd6379e53fe80c5404fd9e72031231d8c6881ea8e70",
+  "content_hash_after": "63561d81f5e165b3e9881e753f66b03af711ce9d5372376312fc8dad86e61d52",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

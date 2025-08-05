@@ -1,0 +1,64 @@
+{
+  "id": 1024,
+  "company": "Andi",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T22:54:54.406Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "The content on the Andi homepage has been updated with new examples of search queries and minor changes to the layout and text.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The content on the Andi homepage has been updated with new examples of search queries and minor changes to the layout and text.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "New examples of search queries have been added.",
+      "Minor changes to the layout and text have been made."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are likely intended to improve the user experience and provide more examples of the capabilities of the Andi search agent.",
+    "market_signals": [
+      "Andi is continuing to develop and refine its search agent."
+    ],
+    "competitive_implications": "The changes do not appear to be a direct response to a competitor, but rather an ongoing effort to improve the product.",
+    "strategic_direction": "Andi is focused on providing a user-friendly and capable search agent."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Andi is continuing to develop and refine its search agent.",
+      "The changes are minor and do not indicate a major strategic move."
+    ],
+    "opportunities": [
+      "Andi may be able to attract more users by providing a user-friendly and capable search agent."
+    ],
+    "threats": [
+      "Andi may face competition from other search agents or companies that offer similar services."
+    ],
+    "recommended_actions": [
+      "Continue to monitor Andi's development and updates.",
+      "Consider using Andi as a search agent for specific use cases."
+    ]
+  },
+  "key_insights": [
+    "Andi is continuing to develop and refine its search agent.",
+    "The changes are minor and do not indicate a major strategic move."
+  ],
+  "business_impact": "The changes are likely intended to improve the user experience and provide more examples of the capabilities of the Andi search agent.",
+  "competitive_implications": "The changes do not appear to be a direct response to a competitor, but rather an ongoing effort to improve the product.",
+  "content_hash_before": "342e55d6efc4486dcd209753c3ea76dbc68f817482db1fe8bf6c4af1c95804dc",
+  "content_hash_after": "36694ca3c715887ffa327a7fb5586abdc180a126c83ff344a182126792a7ba83",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
