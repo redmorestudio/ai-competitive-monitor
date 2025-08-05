@@ -1,8 +1,8 @@
 {
-  "last_run": "2025-08-05T16:26:50.675Z",
+  "last_run": "2025-08-05T16:40:31.726Z",
   "status": "success",
-  "workflow_run_id": "16755473657",
-  "trigger_source": "entity-grouping-with-fallback",
+  "workflow_run_id": "16755778788",
+  "trigger_source": "manual-fix-entity-groups",
   "backend": "postgresql",
   "database": "postgresql"
 }

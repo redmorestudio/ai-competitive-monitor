@@ -9,15 +9,15 @@
         "ai21 maestro",
         "custom ai systems",
         "jamba models",
-        "foundation models",
-        "jamba mini"
+        "jamba mini",
+        "jamba large"
       ],
       "ai_technologies": [
         "python",
         "genai",
         "rag",
         "language models",
-        "apis"
+        "ai"
       ]
     }
   },
@@ -30,16 +30,16 @@
       "top_products": [
         "phariaai",
         "phariaassistant",
+        "phariacatch",
         "phariastudio",
-        "phariaos",
-        "phariacatch"
+        "phariaos"
       ],
       "ai_technologies": [
         "ai",
+        "machine learning",
+        "natural language processing",
         "transformers",
-        "large language model (llm)",
-        "autoregressive transformers",
-        "ml"
+        "autoregressive models"
       ]
     }
   },
