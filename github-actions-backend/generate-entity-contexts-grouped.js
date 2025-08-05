@@ -110,8 +110,11 @@ async function generateEntityContexts(entityGroup) {
             return null;
         }
         
-        // Build search query for any variation
-        const searchConditions = variationList.map(() => 'sp.content ILIKE ?').join(' OR ');
+        // Build search query for any variation using PostgreSQL numbered placeholders
+        // Start at $1 since we have no other parameters
+        const searchConditions = variationList.map((_, index) => `sp.content ILIKE $${index + 1}`).join(' OR ');
+        
+        // Build parameters array with ILIKE patterns
         const searchParams = variationList.map(v => `%${v}%`);
         
         // Skip if no search conditions (shouldn't happen after the check above, but just in case)
@@ -247,31 +250,38 @@ async function generateAllEntityContexts() {
         
         let processedCount = 0;
         let skippedCount = 0;
+        let errorCount = 0;
         
         for (const entityGroup of entityGroups) {
-            const contextData = await generateEntityContexts(entityGroup);
-            
-            if (contextData && contextData.contexts.length > 0) {
-                const type = entityGroup.group_type || 'other';
-                const typeKey = type === 'company' ? 'companies' : 
-                               type === 'product' ? 'products' :
-                               type === 'technology' ? 'technologies' :
-                               type === 'concept' ? 'concepts' : 'other';
+            try {
+                const contextData = await generateEntityContexts(entityGroup);
                 
-                contextsByType[typeKey].push(contextData);
-                processedCount++;
-            } else {
-                skippedCount++;
+                if (contextData && contextData.contexts.length > 0) {
+                    const type = entityGroup.group_type || 'other';
+                    const typeKey = type === 'company' ? 'companies' : 
+                                   type === 'product' ? 'products' :
+                                   type === 'technology' ? 'technologies' :
+                                   type === 'concept' ? 'concepts' : 'other';
+                    
+                    contextsByType[typeKey].push(contextData);
+                    processedCount++;
+                } else {
+                    skippedCount++;
+                }
+            } catch (error) {
+                console.error(`  Error processing ${entityGroup.canonical_name}: ${error.message}`);
+                errorCount++;
             }
             
             // Progress indicator
-            if ((processedCount + skippedCount) % 50 === 0) {
-                console.log(`  Progress: ${processedCount + skippedCount}/${entityGroups.length} entities processed`);
+            if ((processedCount + skippedCount + errorCount) % 50 === 0) {
+                console.log(`  Progress: ${processedCount + skippedCount + errorCount}/${entityGroups.length} entities processed`);
             }
         }
         
         console.log(`\n✅ Processed: ${processedCount} entities with contexts`);
-        console.log(`⚠️  Skipped: ${skippedCount} entities without contexts\n`);
+        console.log(`⚠️  Skipped: ${skippedCount} entities without contexts`);
+        console.log(`❌ Errors: ${errorCount} entities failed\n`);
         
         // Write context files by type
         for (const [type, contexts] of Object.entries(contextsByType)) {
@@ -298,7 +308,8 @@ async function generateAllEntityContexts() {
             total_entities_with_contexts: Object.values(contextsByType)
                 .reduce((sum, contexts) => sum + contexts.length, 0),
             total_entities_processed: processedCount,
-            total_entities_skipped: skippedCount
+            total_entities_skipped: skippedCount,
+            total_entities_failed: errorCount
         };
         
         fs.writeFileSync(
