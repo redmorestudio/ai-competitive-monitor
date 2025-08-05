@@ -26,6 +26,9 @@
     /* UI Colors */
     --border-color: #3a3a5e;
     --card-bg: #262640;
+    --tag-bg: #3a3a5e;
+    --hover-bg: #3a3a6e;
+    --primary-light: rgba(102, 126, 234, 0.2);
     
     /* Interest Level Colors */
     --high-interest: #FFD700;
@@ -872,6 +875,148 @@ body {
     margin-bottom: 5px;
 }
 
+/* Entity Groups Display */
+.entity-view-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.toggle-btn {
+    padding: 6px 12px;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    color: var(--text-secondary);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+}
+
+.toggle-btn:hover {
+    background: var(--hover-bg);
+}
+
+.toggle-btn.active {
+    background: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.entity-groups-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.entity-type-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+    transition: all 0.2s;
+}
+
+.entity-type-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.entity-type-title {
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.entity-count-badge {
+    background: var(--primary-light);
+    color: var(--primary-color);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
+
+.entity-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.entity-tag {
+    background: var(--tag-bg);
+    color: var(--text-primary);
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+
+.entity-tag:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-color: var(--primary-color);
+}
+
+.entity-tag.monitored {
+    background: var(--primary-light);
+    border-color: var(--primary-color);
+}
+
+.entity-tag.new {
+    position: relative;
+}
+
+.entity-tag.new::after {
+    content: '🆕';
+    font-size: 0.7rem;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+.entity-mention-count {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    background: rgba(0,0,0,0.1);
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+.entity-stats {
+    margin-top: 20px;
+    padding: 15px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.entity-stat {
+    text-align: center;
+}
+
+.entity-stat-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.entity-stat-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
     .kwic-modal-content {
@@ -886,5 +1031,18 @@ body {
     .kwic-stats {
         flex-direction: column;
         gap: 10px;
+    }
+    
+    .entity-groups-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .entity-view-toggle {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .toggle-btn {
+        width: 100%;
     }
 }

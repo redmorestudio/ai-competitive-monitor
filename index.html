@@ -48,6 +48,21 @@
                 <a href="manage-entities.html" class="button button-secondary">🏷️ Manage Entities</a>
             </div>
 
+            <!-- Entity Groups Section -->
+            <div id="entityGroupsSection" style="margin-bottom: 30px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                    <h3 style="margin: 0;">🏷️ Entity Intelligence</h3>
+                    <div class="entity-view-toggle">
+                        <button type="button" class="toggle-btn active" data-view="graph" onclick="window.entityDisplay.toggleView('graph')">🎯 Key Entities</button>
+                        <button type="button" class="toggle-btn" data-view="detail" onclick="window.entityDisplay.toggleView('detail')">📋 All Entities</button>
+                        <span class="entity-count" style="margin-left: 10px; color: var(--text-secondary);">--</span>
+                    </div>
+                </div>
+                <div id="entityGroupsDisplay">
+                    <div class="loading">Loading entity data...</div>
+                </div>
+            </div>
+
             <div id="companiesDisplay">
                 <h3>📊 Monitored Companies</h3>
                 <div class="loading">Loading company data from GitHub Actions...</div>

@@ -25,7 +25,8 @@ export const CONFIG = {
             changes: 'changes.json',
             workflowStatus: 'workflow-status.json',
             companyDetails: 'company-details.json',
-            graphData: 'graph-data.json'
+            graphData: 'graph-data.json',
+            entityGroups: 'entity-groups.json'  // NEW: Entity groups endpoint
         }
     },
     

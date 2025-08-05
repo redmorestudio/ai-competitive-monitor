@@ -320,12 +320,13 @@ class Dashboard {
     async render() {
         try {
             // Get data from the data module
-            const { getDashboardData, getWorkflowStatus, getChangesData, getCompanies } = await import('./data.js');
+            const { getDashboardData, getWorkflowStatus, getChangesData, getCompanies, getEntityGroups } = await import('./data.js');
             
             const dashboardData = getDashboardData();
             const workflowStatus = getWorkflowStatus();
             const changesData = getChangesData();
             const companies = getCompanies();
+            const entityGroups = getEntityGroups();
             
             // Update all components
             this.updateStatsBar(dashboardData, workflowStatus);
@@ -337,6 +338,12 @@ class Dashboard {
             
             this.updateCompaniesDisplay(companiesToDisplay);
             await this.updateRecentChanges(changesData || dashboardData?.changes || []);
+            
+            // Update entity display if available
+            if (entityGroups) {
+                const { entityDisplay } = await import('./entityDisplay.js');
+                await entityDisplay.loadEntityData(entityGroups);
+            }
             
         } catch (error) {
             console.error('Error rendering dashboard:', error);

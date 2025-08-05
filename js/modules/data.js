@@ -17,6 +17,7 @@ const state = {
     dashboardData: null,
     changesData: null,
     workflowStatus: null,
+    entityGroups: null,  // NEW: Entity groups data
     selectedCompany: null,
     filters: {
         search: '',
@@ -26,7 +27,8 @@ const state = {
     loading: {
         dashboard: false,
         changes: false,
-        companies: false
+        companies: false,
+        entities: false  // NEW: Entity loading state
     },
     errors: {}
 };
@@ -46,6 +48,10 @@ export function getChangesData() {
 
 export function getWorkflowStatus() {
     return state.workflowStatus;
+}
+
+export function getEntityGroups() {
+    return state.entityGroups;
 }
 
 export function getSelectedCompany() {
@@ -127,15 +133,17 @@ export async function loadDashboardData() {
     setError('dashboard', null);
     
     try {
-        const [dashboard, changes, workflow] = await Promise.all([
+        const [dashboard, changes, workflow, entityGroups] = await Promise.all([
             loadStaticData('dashboard'),
             loadStaticData('changes'),
-            loadStaticData('workflowStatus')
+            loadStaticData('workflowStatus'),
+            loadStaticData('entityGroups').catch(() => null)  // Graceful fallback
         ]);
         
         state.dashboardData = dashboard;
         state.changesData = changes;
         state.workflowStatus = workflow;
+        state.entityGroups = entityGroups;  // Store entity groups
         
         // Extract companies from dashboard data
         if (dashboard.companies) {

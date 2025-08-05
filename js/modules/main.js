@@ -26,6 +26,7 @@ import { dashboard } from './dashboard.js';
 import { ui } from './ui.js';
 import { VERSION, displayVersion } from './version.js';
 import { kwic } from './kwic.js';
+import { entityDisplay } from './entityDisplay.js';
 
 // Global application state
 const appState = {
@@ -65,7 +66,10 @@ export async function init() {
         // 5. Initialize KWIC module
         kwic.init();
         
-        // 5. Load initial data
+        // 6. Initialize entity display module
+        entityDisplay.init();
+        
+        // 7. Load initial data
         await loadInitialData();
         
         // 6. Set up auto-refresh
