@@ -411,10 +411,26 @@ jobs:
         run: |
           cd github-actions-backend
           
-          echo "📊 Generating static data files from PostgreSQL..."
+          echo "📊 Generating static data files from PostgreSQL with company filtering..."
           
-          # Use context-enabled static data generator for source navigation
-          if [ -f "generate-static-data-three-db-postgres-with-contexts.js" ]; then
+          # Use filtering wrapper to reduce company count
+          if [ -f "generate-static-data-with-filtering.js" ]; then
+            echo "🎯 Using company filtering wrapper (reduces from 378 to ~144 companies)..."
+            if ! node generate-static-data-with-filtering.js; then
+              echo "⚠️  Filtering wrapper failed, trying direct generation..."
+              # Fallback to non-filtered version
+              if [ -f "generate-static-data-three-db-postgres-with-contexts.js" ]; then
+                echo "Using CONTEXT-ENABLED static data generator without filtering..."
+                
+                # Generate grouped entity contexts first
+                if [ -f "generate-entity-contexts-grouped.js" ]; then
+                  echo "📊 Generating contexts for grouped entities..."
+                  node generate-entity-contexts-grouped.js || echo "⚠️  Grouped context generation failed"
+                fi
+                node generate-static-data-three-db-postgres-with-contexts.js
+              fi
+            fi
+          elif [ -f "generate-static-data-three-db-postgres-with-contexts.js" ]; then
             echo "Using CONTEXT-ENABLED static data generator with source navigation..."
             
             # Generate grouped entity contexts first
