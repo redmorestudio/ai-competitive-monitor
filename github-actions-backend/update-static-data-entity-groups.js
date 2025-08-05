@@ -40,6 +40,7 @@ async function updateGenerateStaticData() {
                 eg.id,
                 eg.canonical_name,
                 eg.group_type,
+                eg.is_monitored,
                 COUNT(DISTINCT ev.id) as variation_count,
                 -- Count how many companies mention this entity
                 (
@@ -50,15 +51,18 @@ async function updateGenerateStaticData() {
                     WHERE sp.content ILIKE '%' || eg.canonical_name || '%'
                     LIMIT 10
                 ) as mentioned_by_count,
-                -- Check if this is a monitored company
-                EXISTS (
-                    SELECT 1 FROM intelligence.companies c
-                    WHERE LOWER(c.name) = LOWER(eg.canonical_name)
-                    AND c.is_monitored = true
-                ) as is_monitored_company
+                -- Get company info if this entity is a company
+                CASE 
+                    WHEN eg.group_type = 'company' THEN
+                        EXISTS (
+                            SELECT 1 FROM intelligence.companies c
+                            WHERE LOWER(c.name) = LOWER(eg.canonical_name)
+                        )
+                    ELSE false
+                END as is_company
             FROM intelligence.entity_groups eg
             LEFT JOIN intelligence.entity_variations ev ON eg.id = ev.group_id
-            GROUP BY eg.id, eg.canonical_name, eg.group_type
+            GROUP BY eg.id, eg.canonical_name, eg.group_type, eg.is_monitored
         `);
         
         // Create filtered entity lists for different views
@@ -73,13 +77,13 @@ async function updateGenerateStaticData() {
                 type: e.group_type || 'other',
                 variations: e.variation_count,
                 mentioned_by: e.mentioned_by_count,
-                is_monitored: e.is_monitored_company
+                is_monitored: e.is_monitored
             })),
             
             // Filtered entities for 3D graph
             graph_entities: entities
                 .filter(e => 
-                    e.is_monitored_company || // Monitored companies
+                    e.is_monitored || // Monitored entities
                     e.mentioned_by_count >= 3 || // Mentioned by 3+ sources
                     e.group_type === 'technology' || // Always show tech
                     e.group_type === 'concept' // Always show concepts
@@ -90,7 +94,7 @@ async function updateGenerateStaticData() {
                     type: e.group_type || 'other',
                     variations: e.variation_count,
                     mentioned_by: e.mentioned_by_count,
-                    is_monitored: e.is_monitored_company
+                    is_monitored: e.is_monitored
                 })),
             
             // Group by type for easier access
