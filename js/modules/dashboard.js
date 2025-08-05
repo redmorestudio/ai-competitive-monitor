@@ -65,8 +65,8 @@ class Dashboard {
     updateStatsBar(dashboardData, workflowStatus) {
         if (!this.statsBar) return;
         
-        // Use company_activity since that's where the data is
-        const companies = dashboardData?.company_activity || dashboardData?.companies || [];
+        // Use companies first (has all companies), then fallback to company_activity
+        const companies = dashboardData?.companies || dashboardData?.company_activity || [];
         const companyCount = companies.length;
         const urlCount = companies.reduce((sum, company) => 
             sum + (company.urls?.length || company.url_count || 0), 0) || 0;
