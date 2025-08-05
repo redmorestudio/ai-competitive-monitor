@@ -354,49 +354,39 @@ jobs:
           # Generate entity group data from database with proper monitored status
           if [ -f "fix-entity-groups-monitored.js" ]; then
             echo "🔧 Fixing entity groups with proper monitored status..."
-            node fix-entity-groups-monitored.js || {
+            if node fix-entity-groups-monitored.js; then
+              echo "✅ Entity groups fixed successfully"
+            else
               echo "⚠️  Fix script failed, trying database generator..."
               if [ -f "generate-entity-groups-from-database.js" ]; then
                 echo "📊 Generating entity groups from PostgreSQL database..."
-                node generate-entity-groups-from-database.js || {
-                  echo "⚠️  Database generation failed, trying alternative..."
-                  if [ -f "update-static-data-entity-groups.js" ]; then
-                    echo "📊 Trying update-static-data-entity-groups.js..."
-                    node update-static-data-entity-groups.js || {
-                      echo "⚠️  Update script failed, using fallback..."
-                      if [ -f "generate-entity-groups-fallback.js" ]; then
-                        echo "📊 Using fallback entity groups generation..."
-                        node generate-entity-groups-fallback.js || echo "⚠️  All generation methods failed"
-                      fi
-                    }
-                  fi
-                }
-              }
-            }
+                node generate-entity-groups-from-database.js || echo "⚠️  Database generation failed"
+              fi
+            fi
           elif [ -f "generate-entity-groups-from-database.js" ]; then
             echo "📊 Generating entity groups from PostgreSQL database..."
-            node generate-entity-groups-from-database.js || {
+            if node generate-entity-groups-from-database.js; then
+              echo "✅ Entity groups generated successfully"
+            else
               echo "⚠️  Database generation failed, trying alternative..."
               if [ -f "update-static-data-entity-groups.js" ]; then
                 echo "📊 Trying update-static-data-entity-groups.js..."
-                node update-static-data-entity-groups.js || {
-                  echo "⚠️  Update script failed, using fallback..."
-                  if [ -f "generate-entity-groups-fallback.js" ]; then
-                    echo "📊 Using fallback entity groups generation..."
-                    node generate-entity-groups-fallback.js || echo "⚠️  All generation methods failed"
-                  fi
-                }
+                node update-static-data-entity-groups.js || echo "⚠️  Update script failed"
               fi
-            }
+            fi
           elif [ -f "update-static-data-entity-groups.js" ]; then
             echo "📊 Generating entity group data for dashboard..."
-            node update-static-data-entity-groups.js || {
+            if node update-static-data-entity-groups.js; then
+              echo "✅ Entity data generated successfully"
+            else
               echo "⚠️  Entity data generation failed, trying fallback..."
               if [ -f "generate-entity-groups-fallback.js" ]; then
                 echo "📊 Using fallback entity groups generation..."
                 node generate-entity-groups-fallback.js || echo "⚠️  Fallback generation also failed"
               fi
-            }
+            fi
+          else
+            echo "⚠️  No entity group generation scripts found"
           fi
           
           # Verify entity-groups.json was created
