@@ -100,9 +100,10 @@ async function generateEntityGroupsFallback() {
         // Create filtered data for graph (important entities only)
         const graphEntities = uniqueEntities.filter(e => 
             e.is_monitored || 
-            e.mentioned_by >= 2 || 
+            e.mentioned_by >= 1 || 
             e.type === 'technology' ||
-            e.type === 'concept'
+            e.type === 'concept' ||
+            e.type === 'company' // Include all companies for now
         );
         
         // Generate entity groups data structure
