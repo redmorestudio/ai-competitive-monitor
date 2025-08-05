@@ -2031,7 +2031,7 @@
           "id": 495,
           "url": "docs",
           "detectedAt": "2025-08-01T20:39:58.043Z",
-          "relativeTime": "3 days ago",
+          "relativeTime": "4 days ago",
           "interestLevel": 1,
           "summary": "No significant changes were detected in the provided content.",
           "changeType": "modified",
@@ -6356,7 +6356,7 @@
       }
     }
   ],
-  "lastUpdated": "2025-08-05T19:21:47.313Z",
+  "lastUpdated": "2025-08-05T20:56:28.665Z",
   "totalChanges": 205,
   "highInterestChanges": 156,
   "backend": "postgresql",
