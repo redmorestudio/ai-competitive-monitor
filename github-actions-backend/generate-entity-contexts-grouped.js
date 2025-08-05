@@ -241,7 +241,8 @@ async function generateAllEntityContexts() {
         
         // Process entities by type
         const contextsByType = {
-            companies: [],
+            monitored_companies: [],  // Our 54 tracked companies
+            mentioned_companies: [],  // Other companies found in content
             products: [],
             technologies: [],
             concepts: [],
@@ -257,11 +258,13 @@ async function generateAllEntityContexts() {
                 const contextData = await generateEntityContexts(entityGroup);
                 
                 if (contextData && contextData.contexts.length > 0) {
-                    const type = entityGroup.group_type || 'other';
-                    const typeKey = type === 'company' ? 'companies' : 
-                                   type === 'product' ? 'products' :
-                                   type === 'technology' ? 'technologies' :
-                                   type === 'concept' ? 'concepts' : 'other';
+                const type = entityGroup.group_type || 'other';
+                const typeKey = type === 'monitored_company' ? 'monitored_companies' :
+                type === 'mentioned_company' ? 'mentioned_companies' :
+                type === 'company' ? 'mentioned_companies' :  // Fallback for old data
+                type === 'product' ? 'products' :
+                               type === 'technology' ? 'technologies' :
+                               type === 'concept' ? 'concepts' : 'other';
                     
                     contextsByType[typeKey].push(contextData);
                     processedCount++;

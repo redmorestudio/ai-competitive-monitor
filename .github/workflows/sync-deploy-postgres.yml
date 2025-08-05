@@ -351,6 +351,12 @@ jobs:
             echo "✅ Found $ENTITY_COUNT entity groups already configured"
           fi
           
+          # Fix company entity classification first
+          if [ -f "fix-company-entity-classification.js" ]; then
+            echo "🏢 Fixing company entity classification (monitored vs mentioned)..."
+            node fix-company-entity-classification.js || echo "⚠️  Classification fix failed"
+          fi
+          
           # Generate entity group data from database with proper monitored status
           if [ -f "fix-entity-groups-monitored.js" ]; then
             echo "🔧 Fixing entity groups with proper monitored status..."
