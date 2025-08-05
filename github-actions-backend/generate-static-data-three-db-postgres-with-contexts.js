@@ -217,6 +217,29 @@ async function extractEntityContexts(entityName) {
 async function collectAllEntities() {
     console.log('Collecting all unique entities...');
     
+    // Check if we have filtered companies from the environment
+    let filteredCompanies = null;
+    if (process.env.FILTERED_COMPANIES) {
+        try {
+            filteredCompanies = new Set(JSON.parse(process.env.FILTERED_COMPANIES));
+            console.log(`  Using ${filteredCompanies.size} pre-filtered companies`);
+        } catch (e) {
+            console.error('  Failed to parse FILTERED_COMPANIES:', e);
+        }
+    }
+    
+    // Or check for a filtered companies file
+    const filteredCompaniesFile = path.join(__dirname, 'data', 'filtered-companies.json');
+    if (!filteredCompanies && fs.existsSync(filteredCompaniesFile)) {
+        try {
+            const data = JSON.parse(fs.readFileSync(filteredCompaniesFile, 'utf8'));
+            filteredCompanies = new Set(data.valid_companies);
+            console.log(`  Loaded ${filteredCompanies.size} filtered companies from file`);
+        } catch (e) {
+            console.error('  Failed to load filtered companies file:', e);
+        }
+    }
+    
     const entities = {
         companies: new Set(),
         technologies: new Set(),
@@ -231,6 +254,10 @@ async function collectAllEntities() {
         `);
         
         for (const company of companies) {
+            // Skip if we have a filter and this company isn't in it
+            if (filteredCompanies && !filteredCompanies.has(company.name)) {
+                continue;
+            }
             entities.companies.add(company.name);
             
             // Get entities from baseline analysis

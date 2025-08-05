@@ -76,11 +76,13 @@ EXTRACTION RULES:
 
 ENTITIES TO EXTRACT (proper nouns with names):
 
-**COMPANIES** - Extract ALL mentioned:
-- The company being analyzed
-- Partners, competitors, customers
-- Investors, acquisitions
-- Technology providers
+**COMPANIES** - Extract only the most significant companies:
+- The company being analyzed (primary subject)
+- Major strategic partners (only if partnership is central to content)
+- Direct competitors discussed in detail (not just mentioned in passing)
+- Significant acquisitions or mergers (if they are the main topic)
+- LIMIT: Maximum 15 companies per page
+- DO NOT extract: Companies mentioned only in lists, passing references, or minor mentions
 
 **PRODUCTS** - Extract ALL mentioned:
 - Named products and services (ChatGPT, Claude, Bard)
