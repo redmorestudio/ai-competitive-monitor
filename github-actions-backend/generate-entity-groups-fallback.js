@@ -17,8 +17,7 @@ async function generateEntityGroupsFallback() {
         // Check if entity-groups.json already exists
         const entityGroupsPath = path.join(OUTPUT_DIR, 'entity-groups.json');
         if (fs.existsSync(entityGroupsPath)) {
-            console.log('✅ entity-groups.json already exists');
-            return;
+            console.log('🔄 entity-groups.json exists, regenerating...');
         }
         
         console.log('📊 Generating entity-groups.json from existing data sources...');
@@ -31,51 +30,82 @@ async function generateEntityGroupsFallback() {
         
         // Extract from dashboard.json if it exists
         if (fs.existsSync(dashboardPath)) {
-            const dashboard = JSON.parse(fs.readFileSync(dashboardPath, 'utf8'));
-            console.log('📖 Loading entities from dashboard.json...');
-            
-            // Extract entities from various sections
-            if (dashboard.companies) {
-                entities.push(...dashboard.companies.map(c => ({
-                    name: c.name,
-                    type: 'company',
-                    is_monitored: c.is_monitored || false,
-                    mentioned_by: c.mentioned_by || 0
-                })));
+            try {
+                const dashboard = JSON.parse(fs.readFileSync(dashboardPath, 'utf8'));
+                console.log('📖 Loading entities from dashboard.json...');
+                
+                // Extract entities from various sections
+                if (dashboard.companies && Array.isArray(dashboard.companies)) {
+                    entities.push(...dashboard.companies.map(c => ({
+                        name: c.name || 'Unknown Company',
+                        type: 'company',
+                        is_monitored: c.is_monitored || false,
+                        mentioned_by: c.mentioned_by || 0
+                    })));
+                    console.log(`   Added ${dashboard.companies.length} companies`);
+                }
+                
+                if (dashboard.technologies && Array.isArray(dashboard.technologies)) {
+                    entities.push(...dashboard.technologies.slice(0, 100).map(t => ({
+                        name: typeof t === 'string' ? t : (t.name || 'Unknown Tech'),
+                        type: 'technology',
+                        is_monitored: false,
+                        mentioned_by: 1
+                    })));
+                    console.log(`   Added ${Math.min(dashboard.technologies.length, 100)} technologies`);
+                }
+                
+                if (dashboard.products && Array.isArray(dashboard.products)) {
+                    entities.push(...dashboard.products.slice(0, 100).map(p => ({
+                        name: typeof p === 'string' ? p : (p.name || 'Unknown Product'),
+                        type: 'product', 
+                        is_monitored: false,
+                        mentioned_by: 1
+                    })));
+                    console.log(`   Added ${Math.min(dashboard.products.length, 100)} products`);
+                }
+            } catch (error) {
+                console.log(`⚠️  Error reading dashboard.json: ${error.message}`);
             }
-            
-            if (dashboard.technologies) {
-                entities.push(...dashboard.technologies.slice(0, 100).map(t => ({
-                    name: t,
-                    type: 'technology',
-                    is_monitored: false,
-                    mentioned_by: 1
-                })));
-            }
-            
-            if (dashboard.products) {
-                entities.push(...dashboard.products.slice(0, 100).map(p => ({
-                    name: p,
-                    type: 'product', 
-                    is_monitored: false,
-                    mentioned_by: 1
-                })));
-            }
+        } else {
+            console.log('⚠️  dashboard.json not found, skipping...');
         }
         
         // Extract from companies.json if it exists
         if (fs.existsSync(companiesPath)) {
-            const companies = JSON.parse(fs.readFileSync(companiesPath, 'utf8'));
-            console.log('📖 Loading companies from companies.json...');
-            
-            if (Array.isArray(companies)) {
-                entities.push(...companies.map(c => ({
-                    name: c.name,
-                    type: 'company',
-                    is_monitored: c.is_monitored || false,
-                    mentioned_by: c.mentioned_by || 0
-                })));
+            try {
+                const companies = JSON.parse(fs.readFileSync(companiesPath, 'utf8'));
+                console.log('📖 Loading companies from companies.json...');
+                
+                if (Array.isArray(companies)) {
+                    entities.push(...companies.map(c => ({
+                        name: c.name || 'Unknown Company',
+                        type: 'company',
+                        is_monitored: c.is_monitored || false,
+                        mentioned_by: c.mentioned_by || 0
+                    })));
+                    console.log(`   Added ${companies.length} companies from companies.json`);
+                }
+            } catch (error) {
+                console.log(`⚠️  Error reading companies.json: ${error.message}`);
             }
+        } else {
+            console.log('⚠️  companies.json not found, skipping...');
+        }
+        
+        // If no entities found, create a minimal set
+        if (entities.length === 0) {
+            console.log('⚠️  No entities found from data files, creating minimal fallback...');
+            entities = [
+                { name: 'OpenAI', type: 'company', is_monitored: false, mentioned_by: 1 },
+                { name: 'Anthropic', type: 'company', is_monitored: false, mentioned_by: 1 },
+                { name: 'Google', type: 'company', is_monitored: false, mentioned_by: 1 },
+                { name: 'Microsoft', type: 'company', is_monitored: false, mentioned_by: 1 },
+                { name: 'GPT-4', type: 'product', is_monitored: false, mentioned_by: 1 },
+                { name: 'Claude', type: 'product', is_monitored: false, mentioned_by: 1 },
+                { name: 'Large Language Model', type: 'technology', is_monitored: false, mentioned_by: 1 },
+                { name: 'Machine Learning', type: 'technology', is_monitored: false, mentioned_by: 1 }
+            ];
         }
         
         // Remove duplicates and assign IDs
@@ -83,16 +113,20 @@ async function generateEntityGroupsFallback() {
         const seen = new Set();
         
         entities.forEach((entity, index) => {
+            if (!entity.name || typeof entity.name !== 'string') {
+                return; // Skip invalid entities
+            }
+            
             const key = `${entity.name.toLowerCase()}-${entity.type}`;
             if (!seen.has(key)) {
                 seen.add(key);
                 uniqueEntities.push({
                     id: index + 1,
                     name: entity.name,
-                    type: entity.type,
+                    type: entity.type || 'other',
                     variations: 1,
-                    mentioned_by: entity.mentioned_by,
-                    is_monitored: entity.is_monitored
+                    mentioned_by: entity.mentioned_by || 0,
+                    is_monitored: entity.is_monitored || false
                 });
             }
         });
@@ -141,6 +175,7 @@ async function generateEntityGroupsFallback() {
         console.log(`✅ Generated fallback entity-groups.json with ${uniqueEntities.length} entities`);
         console.log(`   Filtered to ${graphEntities.length} entities for 3D graph`);
         console.log(`   Monitored companies: ${entityGroupsData.metadata.monitored_companies}`);
+        console.log(`   File size: ${(fs.statSync(entityGroupsPath).size / 1024).toFixed(1)} KB`);
         
         return entityGroupsData;
         

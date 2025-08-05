@@ -106,7 +106,7 @@ export class Graph3DCore {
 
         // Get color from map, node's currentColor property, or node.color, or default
         const color = this.nodeColorMap.get(node.id) || node.currentColor || node.color || '#00ff88';
-        const size = this.nodeSizeMap.get(node.id) || node.size || 4;
+        const size = this.nodeSizeMap.get(node.id) || node.size || 8;  // Increased default from 4 to 8
         
         // Store the current color on the node for reference
         node.currentColor = color;
@@ -404,7 +404,7 @@ export class Graph3DCore {
                 
                 // Add the sphere
                 const color = this.nodeColorMap.get(node.id) || node.color || '#666666';
-                const size = this.nodeSizeMap.get(node.id) || node.size || 4;
+                const size = this.nodeSizeMap.get(node.id) || node.size || 8;  // Increased default from 4 to 8
                 
                 const geometry = new THREE.SphereGeometry(size, 16, 16);
                 const material = new THREE.MeshPhongMaterial({

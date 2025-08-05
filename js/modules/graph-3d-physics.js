@@ -158,7 +158,7 @@ export class Graph3DPhysics {
      * @param {Object} data - Graph data
      */
     applyLayout(layoutType, data) {
-        const graph = graph3DCore.getGraph();
+        const graph = graph3DCore.getGraphInstance();
         if (!graph || !data) return;
 
         switch (layoutType) {

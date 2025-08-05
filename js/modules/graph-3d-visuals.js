@@ -130,7 +130,7 @@ export class Graph3DVisuals {
             
             switch (mode) {
                 case 'uniform':
-                    size = 4;
+                    size = 8;  // Increased from 4 to make uniform nodes more visible
                     break;
                 case 'url-count':
                     size = Math.max(2, Math.min(20, (node.urlCount || 1) * this.sizeMultipliers.urlCount));
@@ -333,7 +333,7 @@ export class Graph3DVisuals {
             case 'links':
                 this.showLinks = value;
                 // Force re-apply of link visuals
-                if (graph3DCore && graph3DCore.getGraph()) {
+                if (graph3DCore && graph3DCore.getGraphInstance()) {
                     const data = graph3DCore.getData();
                     if (data) {
                         this.applyLinkVisuals(data);
@@ -380,7 +380,7 @@ export class Graph3DVisuals {
      * @param {boolean} enabled - Whether to auto-rotate
      */
     setAutoRotate(enabled) {
-        const graph = graph3DCore.getGraph();
+        const graph = graph3DCore.getGraphInstance();
         if (!graph) return;
 
         if (enabled) {
