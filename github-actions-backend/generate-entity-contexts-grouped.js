@@ -102,11 +102,23 @@ async function generateEntityContexts(entityGroup) {
             SELECT $2 as variation
         `, [entityGroup.id, entityGroup.canonical_name]);
         
-        const variationList = variations.map(v => v.variation);
+        const variationList = variations.map(v => v.variation).filter(v => v); // Filter out null/empty values
+        
+        // Skip if no variations found
+        if (variationList.length === 0) {
+            console.log(`    No variations found for ${entityGroup.canonical_name}, skipping`);
+            return null;
+        }
         
         // Build search query for any variation
         const searchConditions = variationList.map(() => 'sp.content ILIKE ?').join(' OR ');
         const searchParams = variationList.map(v => `%${v}%`);
+        
+        // Skip if no search conditions (shouldn't happen after the check above, but just in case)
+        if (!searchConditions) {
+            console.log(`    No search conditions for ${entityGroup.canonical_name}, skipping`);
+            return null;
+        }
         
         // Query pages that mention any variation of this entity
         const pages = await db.all(`
@@ -169,7 +181,7 @@ async function generateEntityContexts(entityGroup) {
         };
         
     } catch (error) {
-        console.error(`Error generating contexts for ${entityGroup.canonical_name}:`, error);
+        console.error(`Error generating contexts for ${entityGroup.canonical_name}:`, error.message);
         return null;
     }
 }
@@ -233,6 +245,9 @@ async function generateAllEntityContexts() {
             other: []
         };
         
+        let processedCount = 0;
+        let skippedCount = 0;
+        
         for (const entityGroup of entityGroups) {
             const contextData = await generateEntityContexts(entityGroup);
             
@@ -244,8 +259,19 @@ async function generateAllEntityContexts() {
                                type === 'concept' ? 'concepts' : 'other';
                 
                 contextsByType[typeKey].push(contextData);
+                processedCount++;
+            } else {
+                skippedCount++;
+            }
+            
+            // Progress indicator
+            if ((processedCount + skippedCount) % 50 === 0) {
+                console.log(`  Progress: ${processedCount + skippedCount}/${entityGroups.length} entities processed`);
             }
         }
+        
+        console.log(`\n✅ Processed: ${processedCount} entities with contexts`);
+        console.log(`⚠️  Skipped: ${skippedCount} entities without contexts\n`);
         
         // Write context files by type
         for (const [type, contexts] of Object.entries(contextsByType)) {
@@ -258,7 +284,7 @@ async function generateAllEntityContexts() {
                     entities: contexts
                 }, null, 2));
                 
-                console.log(`\n✅ Wrote ${contexts.length} ${type} contexts to ${outputFile}`);
+                console.log(`✅ Wrote ${contexts.length} ${type} contexts to ${outputFile}`);
             }
         }
         
@@ -270,7 +296,9 @@ async function generateAllEntityContexts() {
                 .filter(type => contextsByType[type].length > 0)
                 .map(type => `${type}-contexts.json`),
             total_entities_with_contexts: Object.values(contextsByType)
-                .reduce((sum, contexts) => sum + contexts.length, 0)
+                .reduce((sum, contexts) => sum + contexts.length, 0),
+            total_entities_processed: processedCount,
+            total_entities_skipped: skippedCount
         };
         
         fs.writeFileSync(
