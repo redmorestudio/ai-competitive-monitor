@@ -303,13 +303,31 @@ jobs:
           echo "🔄 Applying entity groupings to reduce entity count..."
           
           # Check if entity grouping is already applied
-          ENTITY_COUNT=$(node -e "
-            require('dotenv').config();
-            const { db } = require('./postgres-db');
-            db.get('SELECT COUNT(*) as count FROM intelligence.entity_groups')
-              .then(r => { console.log(r.count); process.exit(0); })
-              .catch(() => { console.log('0'); process.exit(0); });
-          " 2>/dev/null || echo "0")
+          # Create a temporary script to avoid stdout pollution
+          cat > check_entity_count.js << 'EOF'
+          const { db, end } = require('./postgres-db');
+          
+          // Suppress connection logs
+          const originalLog = console.log;
+          console.log = () => {};
+          
+          db.get('SELECT COUNT(*) as count FROM intelligence.entity_groups')
+            .then(result => {
+              // Restore console.log and output only the count
+              console.log = originalLog;
+              process.stdout.write(result.count.toString());
+              process.exit(0);
+            })
+            .catch(error => {
+              console.log = originalLog;
+              process.stdout.write('0');
+              process.exit(0);
+            })
+            .finally(() => end());
+          EOF
+          
+          ENTITY_COUNT=$(node check_entity_count.js 2>/dev/null || echo "0")
+          rm -f check_entity_count.js
           
           if [ "$ENTITY_COUNT" -eq "0" ]; then
             echo "📊 No entity groups found, applying groupings..."
