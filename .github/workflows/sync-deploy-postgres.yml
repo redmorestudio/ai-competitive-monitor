@@ -333,8 +333,29 @@ jobs:
             echo "✅ Found $ENTITY_COUNT entity groups already configured"
           fi
           
-          # Generate entity group data from database
-          if [ -f "generate-entity-groups-from-database.js" ]; then
+          # Generate entity group data from database with proper monitored status
+          if [ -f "fix-entity-groups-monitored.js" ]; then
+            echo "🔧 Fixing entity groups with proper monitored status..."
+            node fix-entity-groups-monitored.js || {
+              echo "⚠️  Fix script failed, trying database generator..."
+              if [ -f "generate-entity-groups-from-database.js" ]; then
+                echo "📊 Generating entity groups from PostgreSQL database..."
+                node generate-entity-groups-from-database.js || {
+                  echo "⚠️  Database generation failed, trying alternative..."
+                  if [ -f "update-static-data-entity-groups.js" ]; then
+                    echo "📊 Trying update-static-data-entity-groups.js..."
+                    node update-static-data-entity-groups.js || {
+                      echo "⚠️  Update script failed, using fallback..."
+                      if [ -f "generate-entity-groups-fallback.js" ]; then
+                        echo "📊 Using fallback entity groups generation..."
+                        node generate-entity-groups-fallback.js || echo "⚠️  All generation methods failed"
+                      fi
+                    }
+                  fi
+                }
+              }
+            }
+          elif [ -f "generate-entity-groups-from-database.js" ]; then
             echo "📊 Generating entity groups from PostgreSQL database..."
             node generate-entity-groups-from-database.js || {
               echo "⚠️  Database generation failed, trying alternative..."
