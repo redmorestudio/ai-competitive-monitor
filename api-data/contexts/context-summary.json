@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-05T19:20:03.533Z",
+  "generated_at": "2025-08-05T22:13:24.008Z",
   "statistics": {
     "total_groups": "800",
     "total_variations": "808",
@@ -8,6 +8,12 @@
     "technologies": "0",
     "concepts": "0"
   },
-  "files_generated": [],
-  "total_entities_with_contexts": 0
+  "files_generated": [
+    "mentioned_companies-contexts.json",
+    "other-contexts.json"
+  ],
+  "total_entities_with_contexts": 553,
+  "total_entities_processed": 553,
+  "total_entities_skipped": 247,
+  "total_entities_failed": 0
 }
