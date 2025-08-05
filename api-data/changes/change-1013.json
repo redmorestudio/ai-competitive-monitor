@@ -1,0 +1,63 @@
+{
+  "id": 1013,
+  "company": "Codeium",
+  "page_url": "product",
+  "detected_at": "2025-08-05T22:55:51.019Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "The download option for the Windsurf Editor changed from Linux to macOS, with additional options for Apple Silicon and Intel.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The download option for the Windsurf Editor changed from Linux to macOS, with additional options for Apple Silicon and Intel.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Download option changed from Linux to macOS",
+      "Added download options for Apple Silicon and Intel"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may slightly improve user experience for macOS users, but it is unlikely to have a significant impact on the business.",
+    "market_signals": [
+      "Increased focus on macOS users"
+    ],
+    "competitive_implications": "The change is unlikely to affect the company's competitive position.",
+    "strategic_direction": "The company may be expanding its support for different operating systems."
+  },
+  "entities": {
+    "products": [
+      "Windsurf Editor"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The Windsurf Editor now supports macOS"
+    ],
+    "opportunities": [
+      "Increased adoption among macOS users"
+    ],
+    "threats": [
+      "Potential issues with compatibility or performance on macOS"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and performance on macOS"
+    ]
+  },
+  "key_insights": [
+    "The Windsurf Editor now supports macOS"
+  ],
+  "business_impact": "The change may slightly improve user experience for macOS users, but it is unlikely to have a significant impact on the business.",
+  "competitive_implications": "The change is unlikely to affect the company's competitive position.",
+  "content_hash_before": "bb7f4d980fd5ae97ff49f9f6c62c115bc1aa4ff2d06f810975de1e1cb1f07e70",
+  "content_hash_after": "565955c00b2877c3a85f86de86b143c87fd21d35641756552a76e2a3f85381d7",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

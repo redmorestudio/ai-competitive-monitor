@@ -1,0 +1,66 @@
+{
+  "id": 982,
+  "company": "Luma AI",
+  "page_url": "product",
+  "detected_at": "2025-08-05T23:01:27.902Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Minor content updates and image optimizations",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Minor content updates and image optimizations",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Image URL updates",
+      "Minor text adjustments",
+      "Optimization of image quality and loading"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates are likely aimed at improving user engagement and experience, which could have a positive impact on the business by increasing user retention and attracting new users.",
+    "market_signals": [
+      "Enhanced user experience"
+    ],
+    "competitive_implications": "The minor updates do not significantly alter the competitive landscape but demonstrate ongoing effort to refine the product.",
+    "strategic_direction": "Continued focus on product refinement and user experience enhancement."
+  },
+  "entities": {
+    "products": [
+      "Luma Dream Machine"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "Luma Photon"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Minor updates to enhance user experience"
+    ],
+    "opportunities": [
+      "Improved user engagement and retention"
+    ],
+    "threats": [
+      "Competitors may respond with similar optimizations"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and adjust strategies accordingly"
+    ]
+  },
+  "key_insights": [
+    "Minor updates to enhance user experience"
+  ],
+  "business_impact": "The updates are likely aimed at improving user engagement and experience, which could have a positive impact on the business by increasing user retention and attracting new users.",
+  "competitive_implications": "The minor updates do not significantly alter the competitive landscape but demonstrate ongoing effort to refine the product.",
+  "content_hash_before": "ba90e26d132f0db86229d95d8fb10df77ce5451e45baf2a8bfe1457ec9a3efe4",
+  "content_hash_after": "cc6098dbdebe5ee3d26ad6814cbb0c05b68c89f607921dfb8f783a35a5822b7d",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

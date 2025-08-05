@@ -1,0 +1,63 @@
+{
+  "id": 1006,
+  "company": "Cursor",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T22:56:38.739Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Download option changed from Linux to Windows",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Download option changed from Linux to Windows",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Download for Linux changed to Download for Windows"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may slightly improve user experience for Windows users",
+    "market_signals": [
+      "Increased focus on Windows users"
+    ],
+    "competitive_implications": "The change is unlikely to significantly impact the competitive landscape",
+    "strategic_direction": "The company may be expanding its user base to include more Windows users"
+  },
+  "entities": {
+    "products": [
+      "Cursor"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is making minor updates to its website"
+    ],
+    "opportunities": [
+      "The company may be able to attract more Windows users with this change"
+    ],
+    "threats": [
+      "The change may not be significant enough to impact the competitive landscape"
+    ],
+    "recommended_actions": [
+      "Monitor the company's website for further updates",
+      "Analyze the impact of the change on user experience"
+    ]
+  },
+  "key_insights": [
+    "The company is making minor updates to its website"
+  ],
+  "business_impact": "The change may slightly improve user experience for Windows users",
+  "competitive_implications": "The change is unlikely to significantly impact the competitive landscape",
+  "content_hash_before": "9a9abca00fe81263eeab3aacde040fc28d21c724b5f4a7d51506e38009ca4b7d",
+  "content_hash_after": "3abf6a3b9e952360edfd85d93741a8dbe1d254f402e047c2408325309724e1df",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,67 @@
+{
+  "id": 961,
+  "company": "Scale AI",
+  "page_url": "product",
+  "detected_at": "2025-08-05T23:08:29.066Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Removal of detailed product descriptions and customer logos from the main page, and addition of a 'Book a Demo' button",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Removal of detailed product descriptions and customer logos from the main page, and addition of a 'Book a Demo' button",
+    "change_type": "removal/update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Removal of product images and descriptions",
+      "Addition of 'Book a Demo' button",
+      "Removal of customer logos"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes may improve user experience and increase demo requests, but the impact is likely to be limited",
+    "market_signals": [
+      "Simplified main page may indicate a focus on ease of use",
+      "Addition of 'Book a Demo' button may indicate a focus on converting visitors into leads"
+    ],
+    "competitive_implications": "The changes do not significantly impact Scale AI's competitive position",
+    "strategic_direction": "The changes suggest a focus on simplifying the user experience and increasing conversions"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The main page has been simplified",
+      "A 'Book a Demo' button has been added"
+    ],
+    "opportunities": [
+      "Improved user experience may lead to increased engagement",
+      "Increased demo requests may lead to more sales"
+    ],
+    "threats": [
+      "The changes may not be sufficient to significantly impact the competitive landscape"
+    ],
+    "recommended_actions": [
+      "Monitor the impact of the changes on user engagement and demo requests",
+      "Consider further simplifying the main page and adding more calls-to-action"
+    ]
+  },
+  "key_insights": [
+    "The main page has been simplified",
+    "A 'Book a Demo' button has been added"
+  ],
+  "business_impact": "The changes may improve user experience and increase demo requests, but the impact is likely to be limited",
+  "competitive_implications": "The changes do not significantly impact Scale AI's competitive position",
+  "content_hash_before": "2156b00491b245f4661655cca134fbc03e1d3c9a8f0e1630bb4f50b2b6cfc4c2",
+  "content_hash_after": "6250e07361fce6f1a444d2d862d98c055645226ecf871524f4f93df151fb63c7",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

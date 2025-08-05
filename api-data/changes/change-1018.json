@@ -1,0 +1,60 @@
+{
+  "id": 1018,
+  "company": "Anyscale",
+  "page_url": "blog",
+  "detected_at": "2025-08-05T22:55:24.221Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The menu item 'Tutorials' was replaced with 'Templates'",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The menu item 'Tutorials' was replaced with 'Templates'",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Menu item update from 'Tutorials' to 'Templates'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may indicate a slight shift in the company's focus towards providing more templated solutions for its customers",
+    "market_signals": [
+      "Potential increased focus on ease of use and templated solutions"
+    ],
+    "competitive_implications": "The change is unlikely to have significant competitive implications",
+    "strategic_direction": "The company may be exploring ways to simplify its offerings and make them more accessible to a wider range of customers"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company has updated its menu item from 'Tutorials' to 'Templates'"
+    ],
+    "opportunities": [
+      "The company may be able to attract more customers by providing templated solutions"
+    ],
+    "threats": [
+      "The change may not be significant enough to impact the company's competitive position"
+    ],
+    "recommended_actions": [
+      "Monitor the company's future updates and announcements to see if this change is part of a larger strategy"
+    ]
+  },
+  "key_insights": [
+    "The company has updated its menu item from 'Tutorials' to 'Templates'"
+  ],
+  "business_impact": "The change may indicate a slight shift in the company's focus towards providing more templated solutions for its customers",
+  "competitive_implications": "The change is unlikely to have significant competitive implications",
+  "content_hash_before": "05c3e6b26286765f21aa3a5841f2898c4002965fcf0f5581f2960fa03811189e",
+  "content_hash_after": "b0b5f645d232702978e5ac1ff478658cccaad13564f4b3cfc99874859a281bfb",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

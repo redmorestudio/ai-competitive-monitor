@@ -1,0 +1,89 @@
+{
+  "id": 1002,
+  "company": "DataRobot",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T22:56:55.556Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Homepage content and structure",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Homepage content and structure",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New hero section with a focus on agentic AI",
+      "Introduction of foundational, business, and purpose-built agents",
+      "Emphasis on the agent workforce platform and its capabilities",
+      "Updated customer testimonials and logos",
+      "Refreshed design and layout"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates suggest that DataRobot is expanding its product offerings and targeting a broader market, potentially increasing its competitiveness in the AI and machine learning space.",
+    "market_signals": [
+      "Growing demand for agentic AI and agent workforce platforms",
+      "Increasing importance of partnerships and collaborations in the AI industry"
+    ],
+    "competitive_implications": "DataRobot's updated marketing strategy and product offerings may pose a competitive threat to other companies in the AI and machine learning space, particularly those that do not have a strong focus on agentic AI and agent workforce platforms.",
+    "strategic_direction": "DataRobot's strategic direction appears to be focused on establishing itself as a leader in the agentic AI and agent workforce platform market, with a strong emphasis on partnerships, product innovation, and customer success."
+  },
+  "entities": {
+    "products": [
+      "Agentic AI Platform",
+      "Agent Workforce Platform",
+      "Covalent",
+      "syftr"
+    ],
+    "features": [
+      "Foundational agents",
+      "Business agents",
+      "Purpose-built agents"
+    ],
+    "partnerships": [
+      "NVIDIA",
+      "SAP"
+    ],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [
+      "John Fanelli, Vice President, Enterprise Software at NVIDIA"
+    ],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "DataRobot's updated homepage content and structure suggest a significant shift in their marketing strategy",
+      "The company is placing a strong emphasis on agentic AI and the agent workforce platform",
+      "Partnerships with NVIDIA and SAP are highlighted as key aspects of their strategy"
+    ],
+    "opportunities": [
+      "Potential for DataRobot to establish itself as a leader in the agentic AI and agent workforce platform market",
+      "Opportunities for partnerships and collaborations with other companies in the AI industry"
+    ],
+    "threats": [
+      "Competitive threats from other companies in the AI and machine learning space",
+      "Potential challenges in establishing a strong market presence and differentiating themselves from competitors"
+    ],
+    "recommended_actions": [
+      "Monitor DataRobot's progress and updates to their product offerings and marketing strategy",
+      "Assess the potential impact of their strategic direction on the competitive landscape and market trends"
+    ]
+  },
+  "key_insights": [
+    "DataRobot's updated homepage content and structure suggest a significant shift in their marketing strategy",
+    "The company is placing a strong emphasis on agentic AI and the agent workforce platform",
+    "Partnerships with NVIDIA and SAP are highlighted as key aspects of their strategy"
+  ],
+  "business_impact": "The updates suggest that DataRobot is expanding its product offerings and targeting a broader market, potentially increasing its competitiveness in the AI and machine learning space.",
+  "competitive_implications": "DataRobot's updated marketing strategy and product offerings may pose a competitive threat to other companies in the AI and machine learning space, particularly those that do not have a strong focus on agentic AI and agent workforce platforms.",
+  "content_hash_before": "3e6949a4fd732ed261cfc6cc6b35ab0ddfc677b9297e3fb6b3bcc94de7ca1fd5",
+  "content_hash_after": "4f776b9b9358b28e6f191a524ae7811ac3cdef3e1eb08bbb044d07905d75b733",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

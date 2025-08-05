@@ -1,0 +1,54 @@
+{
+  "id": 980,
+  "company": "Midjourney",
+  "page_url": "docs",
+  "detected_at": "2025-08-05T23:02:31.666Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "Image asset URL updated in the help center home page",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Image asset URL updated in the help center home page",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated image asset URL from /hc/theming_assets/01K1K3SHJHG4BTD9YK9VH9G86N to /hc/theming_assets/01J0C3W092GC3PH6ZF86C14589"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact expected from this minor update",
+    "market_signals": [],
+    "competitive_implications": "No competitive implications as this change is not related to product or service offerings",
+    "strategic_direction": "No indication of a change in strategic direction"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Midjourney's help center home page has been updated with a new image asset"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor Midjourney's website and help center for any future updates or changes"
+    ]
+  },
+  "key_insights": [
+    "Midjourney's help center home page has been updated with a new image asset"
+  ],
+  "business_impact": "No significant business impact expected from this minor update",
+  "competitive_implications": "No competitive implications as this change is not related to product or service offerings",
+  "content_hash_before": "cea431fd73e8d3aed4d2e6c51c889b3727e68356b492be5733bec528fbeaccaa",
+  "content_hash_after": "2155c3b7e5514b7240a3fc868ca3af7068938cc0aab51d19b9002f88932391ff",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

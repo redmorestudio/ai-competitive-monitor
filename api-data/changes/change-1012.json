@@ -1,0 +1,58 @@
+{
+  "id": 1012,
+  "company": "Codeium",
+  "page_url": "pricing",
+  "detected_at": "2025-08-05T22:55:54.016Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The download option for the Windsurf Editor changed from Windows to macOS",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The download option for the Windsurf Editor changed from Windows to macOS",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Download option changed from Windows (x64 and arm64) to macOS (Apple Silicon and Intel)"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may slightly improve user experience for macOS users, but it is unlikely to have a significant impact on the business",
+    "market_signals": [
+      "Windsurf is continuing to support multiple platforms"
+    ],
+    "competitive_implications": "The change is unlikely to affect Windsurf's competitive position",
+    "strategic_direction": "Windsurf is focused on providing a seamless user experience across multiple platforms"
+  },
+  "entities": {
+    "products": [
+      "Windsurf Editor"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Windsurf is committed to supporting multiple platforms"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor Windsurf's platform support and user experience"
+    ]
+  },
+  "key_insights": [
+    "Windsurf is committed to supporting multiple platforms"
+  ],
+  "business_impact": "The change may slightly improve user experience for macOS users, but it is unlikely to have a significant impact on the business",
+  "competitive_implications": "The change is unlikely to affect Windsurf's competitive position",
+  "content_hash_before": "9adb75af8418f2bf215db3f98d0e054cb1d73a2651ecfd1eb6ba7a8c5cad8553",
+  "content_hash_after": "ae86ee1e7670070eca651d68ddc9de9aad71f2f79fe04c738c0df9bb8eafdf3e",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

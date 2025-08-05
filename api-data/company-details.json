@@ -31,11 +31,11 @@
         }
       ],
       "stats": {
-        "total_changes": "4",
-        "changes_7d": "4",
-        "changes_30d": "4",
-        "avg_interest_level": "8.5000000000000000",
-        "last_change": "2025-08-01T22:24:56.140Z"
+        "total_changes": "5",
+        "changes_7d": "5",
+        "changes_30d": "5",
+        "avg_interest_level": "8.0000000000000000",
+        "last_change": "2025-08-05T22:53:59.696Z"
       }
     },
     "Aleph Alpha": {
@@ -153,11 +153,11 @@
         }
       ],
       "stats": {
-        "total_changes": "3",
-        "changes_7d": "3",
-        "changes_30d": "3",
-        "avg_interest_level": "5.6666666666666667",
-        "last_change": "2025-08-04T00:11:46.863Z"
+        "total_changes": "4",
+        "changes_7d": "4",
+        "changes_30d": "4",
+        "avg_interest_level": "5.5000000000000000",
+        "last_change": "2025-08-05T22:54:54.406Z"
       }
     },
     "Anthropic": {
@@ -197,11 +197,11 @@
         }
       ],
       "stats": {
-        "total_changes": "17",
-        "changes_7d": "3",
-        "changes_30d": "17",
-        "avg_interest_level": "6.2352941176470588",
-        "last_change": "2025-08-04T00:12:00.366Z"
+        "total_changes": "21",
+        "changes_7d": "7",
+        "changes_30d": "21",
+        "avg_interest_level": "6.3809523809523810",
+        "last_change": "2025-08-05T22:55:14.055Z"
       }
     },
     "Anyscale": {
@@ -229,11 +229,11 @@
         }
       ],
       "stats": {
-        "total_changes": "3",
-        "changes_7d": "3",
-        "changes_30d": "3",
-        "avg_interest_level": "8.6666666666666667",
-        "last_change": "2025-08-01T22:27:08.982Z"
+        "total_changes": "6",
+        "changes_7d": "6",
+        "changes_30d": "6",
+        "avg_interest_level": "5.8333333333333333",
+        "last_change": "2025-08-05T22:55:28.675Z"
       }
     },
     "Cerebras": {
@@ -261,11 +261,11 @@
         }
       ],
       "stats": {
-        "total_changes": "4",
-        "changes_7d": "4",
-        "changes_30d": "4",
-        "avg_interest_level": "8.5000000000000000",
-        "last_change": "2025-08-03T22:57:46.318Z"
+        "total_changes": "6",
+        "changes_7d": "6",
+        "changes_30d": "6",
+        "avg_interest_level": "8.3333333333333333",
+        "last_change": "2025-08-05T22:55:43.190Z"
       }
     },
     "Cisco Systems": {
@@ -281,11 +281,11 @@
         }
       ],
       "stats": {
-        "total_changes": "1",
-        "changes_7d": "1",
-        "changes_30d": "1",
-        "avg_interest_level": "9.0000000000000000",
-        "last_change": "2025-08-01T22:27:37.151Z"
+        "total_changes": "2",
+        "changes_7d": "2",
+        "changes_30d": "2",
+        "avg_interest_level": "5.0000000000000000",
+        "last_change": "2025-08-05T22:55:47.156Z"
       }
     },
     "Codeium": {
@@ -319,11 +319,11 @@
         }
       ],
       "stats": {
-        "total_changes": "9",
-        "changes_7d": "9",
-        "changes_30d": "9",
-        "avg_interest_level": "6.0000000000000000",
-        "last_change": "2025-08-04T00:12:45.437Z"
+        "total_changes": "13",
+        "changes_7d": "13",
+        "changes_30d": "13",
+        "avg_interest_level": "5.3076923076923077",
+        "last_change": "2025-08-05T22:56:00.025Z"
       }
     },
     "Cohere": {
@@ -363,11 +363,11 @@
         }
       ],
       "stats": {
-        "total_changes": "4",
-        "changes_7d": "4",
-        "changes_30d": "4",
-        "avg_interest_level": "8.7500000000000000",
-        "last_change": "2025-08-01T22:28:37.532Z"
+        "total_changes": "7",
+        "changes_7d": "7",
+        "changes_30d": "7",
+        "avg_interest_level": "6.8571428571428571",
+        "last_change": "2025-08-05T22:56:27.821Z"
       }
     },
     "Cursor": {
@@ -401,11 +401,11 @@
         }
       ],
       "stats": {
-        "total_changes": "7",
-        "changes_7d": "7",
-        "changes_30d": "7",
-        "avg_interest_level": "6.5714285714285714",
-        "last_change": "2025-08-04T00:13:20.559Z"
+        "total_changes": "8",
+        "changes_7d": "8",
+        "changes_30d": "8",
+        "avg_interest_level": "6.1250000000000000",
+        "last_change": "2025-08-05T22:56:38.739Z"
       }
     },
     "DALL-E": {
@@ -427,11 +427,11 @@
         }
       ],
       "stats": {
-        "total_changes": "2",
-        "changes_7d": "2",
-        "changes_30d": "2",
-        "avg_interest_level": "9.0000000000000000",
-        "last_change": "2025-08-03T22:59:25.831Z"
+        "total_changes": "4",
+        "changes_7d": "4",
+        "changes_30d": "4",
+        "avg_interest_level": "8.7500000000000000",
+        "last_change": "2025-08-05T22:56:46.627Z"
       }
     },
     "DataRobot": {
@@ -459,11 +459,11 @@
         }
       ],
       "stats": {
-        "total_changes": "3",
-        "changes_7d": "3",
-        "changes_30d": "3",
-        "avg_interest_level": "8.3333333333333333",
-        "last_change": "2025-08-01T22:29:28.906Z"
+        "total_changes": "5",
+        "changes_7d": "5",
+        "changes_30d": "5",
+        "avg_interest_level": "8.2000000000000000",
+        "last_change": "2025-08-05T22:56:55.556Z"
       }
     },
     "Descript": {
@@ -497,11 +497,11 @@
         }
       ],
       "stats": {
-        "total_changes": "5",
-        "changes_7d": "5",
-        "changes_30d": "5",
-        "avg_interest_level": "7.0000000000000000",
-        "last_change": "2025-08-04T00:13:39.186Z"
+        "total_changes": "6",
+        "changes_7d": "6",
+        "changes_30d": "6",
+        "avg_interest_level": "6.0000000000000000",
+        "last_change": "2025-08-05T22:57:01.512Z"
       }
     },
     "ElevenLabs": {
@@ -535,11 +535,11 @@
         }
       ],
       "stats": {
-        "total_changes": "4",
-        "changes_7d": "4",
-        "changes_30d": "4",
-        "avg_interest_level": "8.5000000000000000",
-        "last_change": "2025-08-01T22:30:32.940Z"
+        "total_changes": "8",
+        "changes_7d": "8",
+        "changes_30d": "8",
+        "avg_interest_level": "7.0000000000000000",
+        "last_change": "2025-08-05T22:57:36.105Z"
       }
     },
     "Flux": {
@@ -599,11 +599,11 @@
         }
       ],
       "stats": {
-        "total_changes": "17",
-        "changes_7d": "4",
-        "changes_30d": "17",
-        "avg_interest_level": "5.1764705882352941",
-        "last_change": "2025-08-01T20:39:58.043Z"
+        "total_changes": "20",
+        "changes_7d": "7",
+        "changes_30d": "20",
+        "avg_interest_level": "5.3000000000000000",
+        "last_change": "2025-08-05T22:57:57.845Z"
       }
     },
     "Google DeepMind": {
@@ -643,11 +643,11 @@
         }
       ],
       "stats": {
-        "total_changes": "19",
-        "changes_7d": "5",
-        "changes_30d": "19",
-        "avg_interest_level": "5.5789473684210526",
-        "last_change": "2025-08-01T18:39:22.393Z"
+        "total_changes": "21",
+        "changes_7d": "7",
+        "changes_30d": "21",
+        "avg_interest_level": "5.5238095238095238",
+        "last_change": "2025-08-05T22:58:15.889Z"
       }
     },
     "H2O.ai": {
@@ -751,11 +751,11 @@
         }
       ],
       "stats": {
-        "total_changes": "6",
-        "changes_7d": "6",
-        "changes_30d": "6",
-        "avg_interest_level": "7.5000000000000000",
-        "last_change": "2025-08-04T00:16:13.684Z"
+        "total_changes": "8",
+        "changes_7d": "8",
+        "changes_30d": "8",
+        "avg_interest_level": "7.3750000000000000",
+        "last_change": "2025-08-05T23:00:26.323Z"
       }
     },
     "Ideogram": {
@@ -835,11 +835,11 @@
         }
       ],
       "stats": {
-        "total_changes": "3",
-        "changes_7d": "3",
-        "changes_30d": "3",
-        "avg_interest_level": "6.3333333333333333",
-        "last_change": "2025-08-04T00:16:37.325Z"
+        "total_changes": "5",
+        "changes_7d": "5",
+        "changes_30d": "5",
+        "avg_interest_level": "5.8000000000000000",
+        "last_change": "2025-08-05T23:00:54.933Z"
       }
     },
     "LangChain": {
@@ -873,11 +873,11 @@
         }
       ],
       "stats": {
-        "total_changes": "4",
-        "changes_7d": "4",
-        "changes_30d": "4",
-        "avg_interest_level": "8.7500000000000000",
-        "last_change": "2025-08-01T22:35:21.545Z"
+        "total_changes": "7",
+        "changes_7d": "7",
+        "changes_30d": "7",
+        "avg_interest_level": "6.2857142857142857",
+        "last_change": "2025-08-05T23:01:07.730Z"
       }
     },
     "Leonardo AI": {
@@ -899,11 +899,11 @@
         }
       ],
       "stats": {
-        "total_changes": "2",
-        "changes_7d": "2",
-        "changes_30d": "2",
-        "avg_interest_level": "8.0000000000000000",
-        "last_change": "2025-08-01T22:35:35.597Z"
+        "total_changes": "4",
+        "changes_7d": "4",
+        "changes_30d": "4",
+        "avg_interest_level": "7.5000000000000000",
+        "last_change": "2025-08-05T23:01:18.647Z"
       }
     },
     "Luma AI": {
@@ -931,11 +931,11 @@
         }
       ],
       "stats": {
-        "total_changes": "4",
-        "changes_7d": "4",
-        "changes_30d": "4",
-        "avg_interest_level": "7.0000000000000000",
-        "last_change": "2025-08-04T00:17:13.579Z"
+        "total_changes": "5",
+        "changes_7d": "5",
+        "changes_30d": "5",
+        "avg_interest_level": "6.2000000000000000",
+        "last_change": "2025-08-05T23:01:27.902Z"
       }
     },
     "Meta AI": {
@@ -1001,11 +1001,11 @@
         }
       ],
       "stats": {
-        "total_changes": "4",
-        "changes_7d": "2",
-        "changes_30d": "4",
-        "avg_interest_level": "5.5000000000000000",
-        "last_change": "2025-08-04T00:18:15.684Z"
+        "total_changes": "6",
+        "changes_7d": "4",
+        "changes_30d": "6",
+        "avg_interest_level": "4.6666666666666667",
+        "last_change": "2025-08-05T23:02:31.666Z"
       }
     },
     "Mistral AI": {
@@ -1045,11 +1045,11 @@
         }
       ],
       "stats": {
-        "total_changes": "6",
-        "changes_7d": "6",
-        "changes_30d": "6",
-        "avg_interest_level": "8.8333333333333333",
-        "last_change": "2025-08-04T00:18:21.198Z"
+        "total_changes": "7",
+        "changes_7d": "7",
+        "changes_30d": "7",
+        "avg_interest_level": "8.1428571428571429",
+        "last_change": "2025-08-05T23:02:46.250Z"
       }
     },
     "Murf AI": {
@@ -1097,11 +1097,11 @@
         }
       ],
       "stats": {
-        "total_changes": "2",
-        "changes_7d": "2",
-        "changes_30d": "2",
-        "avg_interest_level": "8.0000000000000000",
-        "last_change": "2025-08-04T00:18:55.450Z"
+        "total_changes": "3",
+        "changes_7d": "3",
+        "changes_30d": "3",
+        "avg_interest_level": "8.6666666666666667",
+        "last_change": "2025-08-05T23:04:23.750Z"
       }
     },
     "NVIDIA": {
@@ -1135,11 +1135,11 @@
         }
       ],
       "stats": {
-        "total_changes": "6",
-        "changes_7d": "6",
-        "changes_30d": "6",
-        "avg_interest_level": "7.1666666666666667",
-        "last_change": "2025-08-04T00:19:14.830Z"
+        "total_changes": "10",
+        "changes_7d": "10",
+        "changes_30d": "10",
+        "avg_interest_level": "6.3000000000000000",
+        "last_change": "2025-08-05T23:04:45.653Z"
       }
     },
     "OpenAI": {
@@ -1211,11 +1211,11 @@
         }
       ],
       "stats": {
-        "total_changes": "2",
-        "changes_7d": "2",
-        "changes_30d": "2",
-        "avg_interest_level": "8.5000000000000000",
-        "last_change": "2025-08-01T22:39:39.901Z"
+        "total_changes": "3",
+        "changes_7d": "3",
+        "changes_30d": "3",
+        "avg_interest_level": "8.3333333333333333",
+        "last_change": "2025-08-05T23:05:46.696Z"
       }
     },
     "Perplexity AI": {
@@ -1307,11 +1307,11 @@
         }
       ],
       "stats": {
-        "total_changes": "4",
-        "changes_7d": "4",
-        "changes_30d": "4",
-        "avg_interest_level": "8.5000000000000000",
-        "last_change": "2025-08-01T22:40:41.480Z"
+        "total_changes": "6",
+        "changes_7d": "6",
+        "changes_30d": "6",
+        "avg_interest_level": "8.0000000000000000",
+        "last_change": "2025-08-05T23:06:34.954Z"
       }
     },
     "Pika": {
@@ -1365,11 +1365,11 @@
         }
       ],
       "stats": {
-        "total_changes": "2",
-        "changes_7d": "2",
-        "changes_30d": "2",
-        "avg_interest_level": "8.0000000000000000",
-        "last_change": "2025-08-01T22:41:13.468Z"
+        "total_changes": "3",
+        "changes_7d": "3",
+        "changes_30d": "3",
+        "avg_interest_level": "6.3333333333333333",
+        "last_change": "2025-08-05T23:06:49.307Z"
       }
     },
     "Replicate": {
@@ -1397,11 +1397,11 @@
         }
       ],
       "stats": {
-        "total_changes": "4",
-        "changes_7d": "4",
-        "changes_30d": "4",
-        "avg_interest_level": "7.2500000000000000",
-        "last_change": "2025-08-04T00:21:20.049Z"
+        "total_changes": "7",
+        "changes_7d": "7",
+        "changes_30d": "7",
+        "avg_interest_level": "6.1428571428571429",
+        "last_change": "2025-08-05T23:07:10.993Z"
       }
     },
     "Replit": {
@@ -1435,11 +1435,11 @@
         }
       ],
       "stats": {
-        "total_changes": "4",
-        "changes_7d": "4",
-        "changes_30d": "4",
-        "avg_interest_level": "8.2500000000000000",
-        "last_change": "2025-08-04T00:21:48.717Z"
+        "total_changes": "6",
+        "changes_7d": "6",
+        "changes_30d": "6",
+        "avg_interest_level": "7.3333333333333333",
+        "last_change": "2025-08-05T23:07:26.018Z"
       }
     },
     "Resemble AI": {
@@ -1499,11 +1499,11 @@
         }
       ],
       "stats": {
-        "total_changes": "3",
-        "changes_7d": "3",
-        "changes_30d": "3",
-        "avg_interest_level": "9.0000000000000000",
-        "last_change": "2025-08-01T22:42:43.591Z"
+        "total_changes": "6",
+        "changes_7d": "6",
+        "changes_30d": "6",
+        "avg_interest_level": "6.5000000000000000",
+        "last_change": "2025-08-05T23:07:48.007Z"
       }
     },
     "SambaNova": {
@@ -1563,11 +1563,11 @@
         }
       ],
       "stats": {
-        "total_changes": "4",
-        "changes_7d": "4",
-        "changes_30d": "4",
-        "avg_interest_level": "7.2500000000000000",
-        "last_change": "2025-08-04T00:22:59.262Z"
+        "total_changes": "7",
+        "changes_7d": "7",
+        "changes_30d": "7",
+        "avg_interest_level": "6.8571428571428571",
+        "last_change": "2025-08-05T23:08:39.618Z"
       }
     },
     "Sourcegraph": {
@@ -1601,11 +1601,11 @@
         }
       ],
       "stats": {
-        "total_changes": "4",
-        "changes_7d": "4",
-        "changes_30d": "4",
-        "avg_interest_level": "8.2500000000000000",
-        "last_change": "2025-08-01T22:44:20.347Z"
+        "total_changes": "5",
+        "changes_7d": "5",
+        "changes_30d": "5",
+        "avg_interest_level": "8.0000000000000000",
+        "last_change": "2025-08-05T23:08:45.203Z"
       }
     },
     "Stability AI": {
@@ -1639,11 +1639,11 @@
         }
       ],
       "stats": {
-        "total_changes": "4",
-        "changes_7d": "4",
-        "changes_30d": "4",
-        "avg_interest_level": "8.5000000000000000",
-        "last_change": "2025-08-01T22:44:48.398Z"
+        "total_changes": "8",
+        "changes_7d": "8",
+        "changes_30d": "8",
+        "avg_interest_level": "7.2500000000000000",
+        "last_change": "2025-08-05T23:09:14.558Z"
       }
     },
     "Synthesia": {
@@ -1677,11 +1677,11 @@
         }
       ],
       "stats": {
-        "total_changes": "3",
-        "changes_7d": "3",
-        "changes_30d": "3",
-        "avg_interest_level": "8.0000000000000000",
-        "last_change": "2025-08-01T22:45:11.192Z"
+        "total_changes": "6",
+        "changes_7d": "6",
+        "changes_30d": "6",
+        "avg_interest_level": "7.1666666666666667",
+        "last_change": "2025-08-05T23:09:27.501Z"
       }
     },
     "Tabnine": {
@@ -1819,5 +1819,5 @@
       }
     }
   },
-  "lastUpdated": "2025-08-05T16:45:42.190Z"
+  "lastUpdated": "2025-08-05T23:23:37.634Z"
 }

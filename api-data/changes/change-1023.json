@@ -1,0 +1,66 @@
+{
+  "id": 1023,
+  "company": "Anthropic",
+  "page_url": "pricing",
+  "detected_at": "2025-08-05T22:55:01.338Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Claude Opus model version updated from 4 to 4.1",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Claude Opus model version updated from 4 to 4.1",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated Claude Opus model version from 4 to 4.1",
+      "No changes in pricing or features for other models"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update of the Claude Opus model version may improve the competitiveness of Anthropic's AI services, but the impact is likely to be minor.",
+    "market_signals": [
+      "Continued investment in AI model development"
+    ],
+    "competitive_implications": "The update may help Anthropic maintain its position in the AI market, but does not significantly change the competitive landscape.",
+    "strategic_direction": "Anthropic continues to focus on improving its AI models and services."
+  },
+  "entities": {
+    "products": [
+      "Claude Opus 4.1"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "AI models"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Minor update to Claude Opus model version"
+    ],
+    "opportunities": [
+      "Improved competitiveness for Anthropic's AI services"
+    ],
+    "threats": [
+      "Potential for competitors to respond with their own updates"
+    ],
+    "recommended_actions": [
+      "Monitor competitor responses",
+      "Evaluate the impact of the update on Anthropic's market position"
+    ]
+  },
+  "key_insights": [
+    "Minor update to Claude Opus model version"
+  ],
+  "business_impact": "The update of the Claude Opus model version may improve the competitiveness of Anthropic's AI services, but the impact is likely to be minor.",
+  "competitive_implications": "The update may help Anthropic maintain its position in the AI market, but does not significantly change the competitive landscape.",
+  "content_hash_before": "e21e7a1bb42903cbd17fffb11b8c2564169bb1558fde61d1d0eea45b42daa558",
+  "content_hash_after": "6b8f621634840cd4e691a5f212e8f07b839ea406f9d80b11f8a273ad7420c699",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,77 @@
+{
+  "id": 988,
+  "company": "Intel",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T23:00:54.933Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Removal of detailed product and support information, simplification of navigation, and addition of AI-focused content",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "Removal of detailed product and support information, simplification of navigation, and addition of AI-focused content",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Removal of product details such as processors, software, and technologies",
+      "Simplification of navigation menu",
+      "Addition of AI-focused content, including Generative AI (GenAI) webinar series and AI industry use cases"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes indicate a significant shift in Intel's focus towards AI solutions, which can impact their business and revenue streams",
+    "market_signals": [
+      "Increased focus on AI solutions",
+      "Partnership with Hugging Face"
+    ],
+    "competitive_implications": "The changes can impact Intel's competitive positioning in the AI market",
+    "strategic_direction": "Intel's strategic direction is shifting towards AI solutions"
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "Generative AI (GenAI) webinar series",
+      "AI industry use cases"
+    ],
+    "partnerships": [
+      "Hugging Face"
+    ],
+    "technologies": [
+      "Artificial Intelligence (AI)"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "AI market"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Intel is shifting its focus towards AI solutions",
+      "Partnership with Hugging Face is a significant move"
+    ],
+    "opportunities": [
+      "Increased revenue streams from AI solutions",
+      "Improved competitive positioning in the AI market"
+    ],
+    "threats": [
+      "Intense competition in the AI market",
+      "Dependence on partnership with Hugging Face"
+    ],
+    "recommended_actions": [
+      "Monitor Intel's AI solutions and partnerships",
+      "Analyze the impact of Intel's strategic shift on the AI market"
+    ]
+  },
+  "key_insights": [
+    "Intel is shifting its focus towards AI solutions",
+    "Partnership with Hugging Face is a significant move"
+  ],
+  "business_impact": "The changes indicate a significant shift in Intel's focus towards AI solutions, which can impact their business and revenue streams",
+  "competitive_implications": "The changes can impact Intel's competitive positioning in the AI market",
+  "content_hash_before": "2ad5fd442bb1948662010212c3f843722dc5602d8644da33eac0313d8beffe3d",
+  "content_hash_after": "a5a31e0df9f826bf6a7de5d25d4c91c4c18d5398b61ed7e2ef32458bfedb42c9",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

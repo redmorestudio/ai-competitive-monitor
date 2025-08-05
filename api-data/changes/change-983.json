@@ -1,0 +1,71 @@
+{
+  "id": 983,
+  "company": "Leonardo AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T23:01:18.647Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "The latest post section has been updated with a new article titled 'Lucid Origin – Leonardo.AI’s latest Gen AI model.', and a 'Pricing' link has been added to the navigation menu.",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "The latest post section has been updated with a new article titled 'Lucid Origin – Leonardo.AI’s latest Gen AI model.', and a 'Pricing' link has been added to the navigation menu.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated latest post section with new article",
+      "Added 'Pricing' link to navigation menu"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates suggest Leonardo.AI is continuing to innovate and potentially preparing for or responding to market demands, which could impact its competitiveness and customer engagement.",
+    "market_signals": [
+      "Innovation in AI technology",
+      "Potential shift in business model or pricing strategy"
+    ],
+    "competitive_implications": "The introduction of new AI models and clearer pricing could influence how competitors respond, potentially leading to increased competition in the AI image generation market.",
+    "strategic_direction": "Leonardo.AI appears to be focusing on technological advancement and customer clarity, which may indicate a strategic direction towards establishing itself as a leader in AI image generation and related services."
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "Lucid Origin – Leonardo.AI’s latest Gen AI model"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Added 'Pricing' link to navigation menu"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Leonardo.AI is innovating with new AI models",
+      "Clarity on pricing is being introduced"
+    ],
+    "opportunities": [
+      "Potential for increased competitiveness through innovation",
+      "Clearer pricing could attract more customers"
+    ],
+    "threats": [
+      "Increased competition in response to innovation",
+      "Pricing strategy changes could alienate existing customers if not managed carefully"
+    ],
+    "recommended_actions": [
+      "Monitor Leonardo.AI's innovation pipeline for future updates",
+      "Analyze customer response to pricing changes"
+    ]
+  },
+  "key_insights": [
+    "Leonardo.AI is innovating with new AI models",
+    "Clarity on pricing is being introduced"
+  ],
+  "business_impact": "The updates suggest Leonardo.AI is continuing to innovate and potentially preparing for or responding to market demands, which could impact its competitiveness and customer engagement.",
+  "competitive_implications": "The introduction of new AI models and clearer pricing could influence how competitors respond, potentially leading to increased competition in the AI image generation market.",
+  "content_hash_before": "882ae5e2c3dd6e4d485349889c2c53ce2423d5f2f7a7bbd6627e5fdd70110e40",
+  "content_hash_after": "884a89338e6c8a58d2f0ef0beb6f20beacddfc1b428cbfe5a0bd0aff88c16206",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

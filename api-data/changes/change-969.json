@@ -1,0 +1,62 @@
+{
+  "id": 969,
+  "company": "Replicate",
+  "page_url": "pricing",
+  "detected_at": "2025-08-05T23:06:56.906Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "The 'Blog' link in the menu has been replaced with 'Enterprise', and the 'Changelog' link has been moved from the main menu to the footer.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The 'Blog' link in the menu has been replaced with 'Enterprise', and the 'Changelog' link has been moved from the main menu to the footer.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Replacement of 'Blog' with 'Enterprise' in the main menu",
+      "Relocation of 'Changelog' from main menu to footer"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes may attract more enterprise customers, potentially increasing revenue.",
+    "market_signals": [
+      "Increased focus on enterprise customers"
+    ],
+    "competitive_implications": "The changes do not significantly impact the competitive landscape, but may indicate a shift in Replicate's target market.",
+    "strategic_direction": "Replicate may be focusing on expanding its customer base to include more enterprise clients."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Replicate is shifting its focus towards enterprise customers."
+    ],
+    "opportunities": [
+      "Potential for increased revenue from enterprise customers."
+    ],
+    "threats": [
+      "Possible loss of focus on individual customers or smaller businesses."
+    ],
+    "recommended_actions": [
+      "Monitor Replicate's pricing and features to see if they become more tailored to enterprise customers.",
+      "Consider the potential impact on the competitive landscape if Replicate successfully attracts more enterprise customers."
+    ]
+  },
+  "key_insights": [
+    "Replicate is shifting its focus towards enterprise customers."
+  ],
+  "business_impact": "The changes may attract more enterprise customers, potentially increasing revenue.",
+  "competitive_implications": "The changes do not significantly impact the competitive landscape, but may indicate a shift in Replicate's target market.",
+  "content_hash_before": "4b7095f49da3e7a9f0abb9e6293eca47c7036815e7a92f0b92835cfdb7d3fa1c",
+  "content_hash_after": "23ff14ac269e2eeaae8c5ed757bb112c874a72e52d8f4626851e42435aa10667",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

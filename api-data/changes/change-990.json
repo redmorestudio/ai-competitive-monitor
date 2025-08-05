@@ -1,0 +1,68 @@
+{
+  "id": 990,
+  "company": "Hugging Face",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T23:00:26.323Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "Model updates, new models added, and minor text changes",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Model updates, new models added, and minor text changes",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "New models added: openai/gpt-oss-120b, openai/gpt-oss-20b",
+      "Updated models: Qwen/Qwen-Image, zai-org/GLM-4.5, tencent/Hunyuan-1.8B-Instruct",
+      "Minor text changes in various sections"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates demonstrate Hugging Face's ongoing commitment to providing a platform for machine learning model collaboration and development.",
+    "market_signals": [
+      "Continued growth and updates in the machine learning community",
+      "Increasing importance of collaboration and open-source development in AI"
+    ],
+    "competitive_implications": "Hugging Face maintains its position as a leading platform for machine learning collaboration and development.",
+    "strategic_direction": "The updates suggest a continued focus on supporting the machine learning community and providing tools and resources for model development and collaboration."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Hugging Face continues to update and expand its platform",
+      "The machine learning community is actively developing and sharing new models"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Hugging Face or other organizations in the machine learning community",
+      "Development of new models or applications using Hugging Face's platform"
+    ],
+    "threats": [
+      "Competition from other platforms or organizations in the machine learning community",
+      "Rapid changes in the machine learning landscape could impact Hugging Face's position"
+    ],
+    "recommended_actions": [
+      "Monitor Hugging Face's updates and developments",
+      "Explore partnership or collaboration opportunities with Hugging Face or other organizations in the machine learning community"
+    ]
+  },
+  "key_insights": [
+    "Hugging Face continues to update and expand its platform",
+    "The machine learning community is actively developing and sharing new models"
+  ],
+  "business_impact": "The updates demonstrate Hugging Face's ongoing commitment to providing a platform for machine learning model collaboration and development.",
+  "competitive_implications": "Hugging Face maintains its position as a leading platform for machine learning collaboration and development.",
+  "content_hash_before": "e0a74d8f85b91ee57327fcb94fe3cc5ae4aff942a0b846f9a7c0f0d9d48d7266",
+  "content_hash_after": "2b3785d815795dbe258f35aa625430f32bdaf93ae98c7deb871ba672740648bf",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

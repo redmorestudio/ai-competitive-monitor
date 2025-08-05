@@ -1,0 +1,61 @@
+{
+  "id": 979,
+  "company": "Mistral AI",
+  "page_url": "docs",
+  "detected_at": "2025-08-05T23:02:46.250Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.7,
+  "summary": "Addition of 'Cookbooks (beta)' link in the top navigation bar",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Addition of 'Cookbooks (beta)' link in the top navigation bar",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "New link added: 'Cookbooks (beta)'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of 'Cookbooks (beta)' may enhance user experience and provide more resources for developers, potentially leading to increased adoption and engagement with Mistral AI's products and services.",
+    "market_signals": [
+      "Growing focus on community engagement and support"
+    ],
+    "competitive_implications": "Mistral AI's expanded documentation and resources may help the company stay competitive in the AI market, particularly in terms of user experience and support.",
+    "strategic_direction": "The addition of 'Cookbooks (beta)' suggests that Mistral AI is prioritizing community engagement, support, and documentation, which may be a key aspect of its overall strategy."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Mistral AI is expanding its documentation and resources",
+      "The company is prioritizing community engagement and support"
+    ],
+    "opportunities": [
+      "Increased adoption and engagement with Mistral AI's products and services"
+    ],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor Mistral AI's documentation and resource expansion",
+      "Assess the impact of 'Cookbooks (beta)' on user experience and engagement"
+    ]
+  },
+  "key_insights": [
+    "Mistral AI is expanding its documentation and resources",
+    "The company is prioritizing community engagement and support"
+  ],
+  "business_impact": "The addition of 'Cookbooks (beta)' may enhance user experience and provide more resources for developers, potentially leading to increased adoption and engagement with Mistral AI's products and services.",
+  "competitive_implications": "Mistral AI's expanded documentation and resources may help the company stay competitive in the AI market, particularly in terms of user experience and support.",
+  "content_hash_before": "ea5dca90a85938b0203c2d5185069e715d945ce67806d525ee8b88dec932e948",
+  "content_hash_after": "dbad6857a65feab6c79410f50395afa402edf8e8f2114ec31341235e7c0c2734",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

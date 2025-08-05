@@ -1,0 +1,71 @@
+{
+  "id": 1015,
+  "company": "Cerebras",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T22:55:43.190Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Introduction of GPT-OSS-120B model on Cerebras, replacement of Qwen3-480B coder with GPT-OSS-120B, and updated customer spotlights",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of GPT-OSS-120B model on Cerebras, replacement of Qwen3-480B coder with GPT-OSS-120B, and updated customer spotlights",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New model introduction: GPT-OSS-120B",
+      "Replacement of Qwen3-480B coder",
+      "Updated customer spotlights"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of GPT-OSS-120B and the replacement of Qwen3-480B coder could lead to increased competitiveness for Cerebras in the AI market, potentially attracting new customers and increasing revenue.",
+    "market_signals": [
+      "Increased focus on AI models and their applications",
+      "Growing demand for faster and more accurate AI processing"
+    ],
+    "competitive_implications": "Cerebras' updated offerings could pose a threat to competitors in the AI market, particularly those that rely on slower or less accurate models.",
+    "strategic_direction": "Cerebras appears to be focusing on expanding its AI model offerings and improving their performance, which could be a key strategic direction for the company."
+  },
+  "entities": {
+    "products": [
+      "GPT-OSS-120B",
+      "Qwen3-480B coder"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Cerebras is investing in new AI models and technologies",
+      "The company is focused on improving the performance and accuracy of its models"
+    ],
+    "opportunities": [
+      "Potential for increased market share and revenue growth",
+      "Opportunities for partnerships and collaborations with other companies in the AI space"
+    ],
+    "threats": [
+      "Competition from other AI companies",
+      "Potential for technological advancements to render current models obsolete"
+    ],
+    "recommended_actions": [
+      "Monitor Cerebras' future updates and announcements",
+      "Assess the potential impact of GPT-OSS-120B on the AI market and Cerebras' competitive positioning"
+    ]
+  },
+  "key_insights": [
+    "Cerebras is investing in new AI models and technologies",
+    "The company is focused on improving the performance and accuracy of its models"
+  ],
+  "business_impact": "The introduction of GPT-OSS-120B and the replacement of Qwen3-480B coder could lead to increased competitiveness for Cerebras in the AI market, potentially attracting new customers and increasing revenue.",
+  "competitive_implications": "Cerebras' updated offerings could pose a threat to competitors in the AI market, particularly those that rely on slower or less accurate models.",
+  "content_hash_before": "041ab3d4c505748da1a4d8b085c0b374c7fac8f7dcc83998c71f531207dc32a1",
+  "content_hash_after": "d56407c4af2a13e63c07347d86ced8bc471a1e614cdecd923dfeb37964f1ff2b",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

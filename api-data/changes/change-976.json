@@ -1,0 +1,56 @@
+{
+  "id": 976,
+  "company": "NVIDIA",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T23:04:37.090Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "The pixel.gif URL parameter 'cm' changed from 'fa3350abc6ddca0f23c31754266738' to '92600d47c6ee076a99821754435066'",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The pixel.gif URL parameter 'cm' changed from 'fa3350abc6ddca0f23c31754266738' to '92600d47c6ee076a99821754435066'",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated tracking pixel parameter"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact expected from this minor change.",
+    "market_signals": [
+      "NVIDIA may be refining its tracking and analytics capabilities."
+    ],
+    "competitive_implications": "No direct competitive implications from this minor change.",
+    "strategic_direction": "No clear indication of a new strategic direction from NVIDIA based on this update."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Minor update to tracking pixel parameter."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue monitoring NVIDIA's website for more significant updates or changes."
+    ]
+  },
+  "key_insights": [
+    "Minor update to tracking pixel parameter."
+  ],
+  "business_impact": "No significant business impact expected from this minor change.",
+  "competitive_implications": "No direct competitive implications from this minor change.",
+  "content_hash_before": "7a08e90510e4ceda4f8e713898b847544ff7c900220a9d3e5ca63d69a475ca8b",
+  "content_hash_after": "3af794b2497ef9973b3b4ffdb3e6e1df010258d566dc2af33a45ba8b62080b87",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

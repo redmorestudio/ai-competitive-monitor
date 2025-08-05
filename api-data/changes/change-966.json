@@ -1,0 +1,55 @@
+{
+  "id": 966,
+  "company": "Replit",
+  "page_url": "product",
+  "detected_at": "2025-08-05T23:07:21.432Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Minor updates to the website, including the addition of a 'Mobile App' link under 'Handy Links' and updates to Twitter tracking URLs",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Minor updates to the website, including the addition of a 'Mobile App' link under 'Handy Links' and updates to Twitter tracking URLs",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Mobile App' link under 'Handy Links'",
+      "Updated Twitter tracking URLs"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are unlikely to have a significant impact on the company's business or competitive position",
+    "market_signals": [],
+    "competitive_implications": "The changes do not indicate any significant competitive implications",
+    "strategic_direction": "The changes do not indicate any significant changes to the company's strategic direction"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is maintaining its website and updating minor details"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor the company's website and updates for any significant changes or announcements"
+    ]
+  },
+  "key_insights": [
+    "The company is maintaining its website and updating minor details"
+  ],
+  "business_impact": "The changes are unlikely to have a significant impact on the company's business or competitive position",
+  "competitive_implications": "The changes do not indicate any significant competitive implications",
+  "content_hash_before": "d2aa1bb9cdb437c5ff11545c9946d02ea11dac67a181d24e1e15fa400e69a9c4",
+  "content_hash_after": "5228af0b50cf61cf5866b2a5ede20e86a9504f01517fa46d1dca0752f74af302",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

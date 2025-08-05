@@ -1,0 +1,97 @@
+{
+  "id": 1005,
+  "company": "DALL-E",
+  "page_url": "pricing",
+  "detected_at": "2025-08-05T22:56:43.266Z",
+  "change_type": "modified",
+  "interest_level": 9,
+  "ai_confidence": 0.95,
+  "summary": "The content changed from a blocked page to a pricing page for ChatGPT by OpenAI, revealing various plans and features.",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "The content changed from a blocked page to a pricing page for ChatGPT by OpenAI, revealing various plans and features.",
+    "change_type": "update",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of Free, Plus, Pro, Team, and Enterprise plans",
+      "Details on features such as GPT-4o, GPT-4.1 mini, OpenAI o3, and OpenAI o4-mini",
+      "Pricing information for each plan",
+      "Comparison of features across plans"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of various plans and features indicates OpenAI's strategy to cater to a wide range of users, from individuals to enterprises, and to generate revenue through subscription-based models.",
+    "market_signals": [
+      "Increased competition in the AI market",
+      "Growing demand for AI-powered tools and services"
+    ],
+    "competitive_implications": "The update positions OpenAI as a major player in the AI market, potentially threatening competitors who offer similar services.",
+    "strategic_direction": "OpenAI is moving towards becoming a leading provider of AI solutions, focusing on both individual and enterprise customers."
+  },
+  "entities": {
+    "products": [
+      "ChatGPT",
+      "GPT-4o",
+      "GPT-4.1 mini",
+      "OpenAI o3",
+      "OpenAI o4-mini"
+    ],
+    "features": [
+      "Advanced voice",
+      "Standard voice",
+      "Memory",
+      "Memory with past chats",
+      "Search",
+      "Canvas",
+      "Code edits on macOS",
+      "ChatGPT agent",
+      "Projects",
+      "Tasks",
+      "Data analysis",
+      "Vision"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "GPT-4.1",
+      "GPT-4.5 research preview"
+    ],
+    "people": [],
+    "pricing": [
+      "$0/month for Free plan",
+      "$20/month for Plus plan",
+      "$200/month for Pro plan",
+      "$25/user/month for Team plan (billed annually)",
+      "$30/user/month for Team plan (billed monthly)"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "OpenAI is expanding its services to include a range of plans and features",
+      "The company is focusing on both individual and enterprise customers"
+    ],
+    "opportunities": [
+      "Potential for increased revenue through subscription-based models",
+      "Expansion into new markets and customer segments"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential backlash from customers due to pricing or feature changes"
+    ],
+    "recommended_actions": [
+      "Monitor OpenAI's pricing and feature updates",
+      "Analyze the competitive landscape and adjust strategies accordingly"
+    ]
+  },
+  "key_insights": [
+    "OpenAI is expanding its services to include a range of plans and features",
+    "The company is focusing on both individual and enterprise customers"
+  ],
+  "business_impact": "The introduction of various plans and features indicates OpenAI's strategy to cater to a wide range of users, from individuals to enterprises, and to generate revenue through subscription-based models.",
+  "competitive_implications": "The update positions OpenAI as a major player in the AI market, potentially threatening competitors who offer similar services.",
+  "content_hash_before": "6973dddd3ef9cb6a2932702f31777faad9c9bf3124d147a84f31aadb6d139546",
+  "content_hash_after": "0a3f7b501bd687df42a0805572b5576c71405546cbb59f23125d8bff939920e8",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

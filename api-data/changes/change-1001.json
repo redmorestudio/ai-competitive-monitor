@@ -1,0 +1,46 @@
+{
+  "id": 1001,
+  "company": "Descript",
+  "page_url": "pricing",
+  "detected_at": "2025-08-05T22:57:01.512Z",
+  "change_type": "modified",
+  "interest_level": 1,
+  "ai_confidence": 0.99,
+  "summary": "No significant changes were detected in the provided before and after content.",
+  "category": "no change",
+  "change_summary": {
+    "what_changed": "No significant changes were detected in the provided before and after content.",
+    "change_type": "no change",
+    "change_scale": "minor",
+    "specific_changes": []
+  },
+  "strategic_analysis": {
+    "business_impact": "No impact detected.",
+    "market_signals": [],
+    "competitive_implications": "No implications detected.",
+    "strategic_direction": "No direction detected."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [],
+  "business_impact": "No impact detected.",
+  "competitive_implications": "No implications detected.",
+  "content_hash_before": "a734d2838391524e321e58205abcce23e5ab4ed0d33bfeb59c1421d90af757fd",
+  "content_hash_after": "fc215039816aa3299c8e7bb8e6999c8f2e15df7a7e51d433f86c8288682bd72d",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

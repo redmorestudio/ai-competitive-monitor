@@ -1,0 +1,71 @@
+{
+  "id": 1025,
+  "company": "AI21 Labs",
+  "page_url": "blog",
+  "detected_at": "2025-08-05T22:53:59.696Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "New blog posts were added, and the website structure remains largely the same.",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "New blog posts were added, and the website structure remains largely the same.",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Addition of new blog posts, including 'Attention was never enough: Tracing the rise of hybrid LLMs' and '“AI all the work”: Inside Ori Goshen’s RAISE Summit keynote'",
+      "No significant changes to the website's structure or main content sections."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of new blog posts may enhance AI21's reputation as a thought leader in the AI industry and attract potential customers interested in AI solutions.",
+    "market_signals": [
+      "Continued focus on AI research and development",
+      "Potential expansion into new areas of AI technology"
+    ],
+    "competitive_implications": "AI21 maintains its position as an innovator in the AI space, potentially attracting talent and customers looking for cutting-edge AI solutions.",
+    "strategic_direction": "AI21 continues to prioritize research, development, and thought leadership in AI, particularly in areas like hybrid LLMs."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "Hybrid LLMs"
+    ],
+    "people": [
+      "Ori Goshen"
+    ],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "AI21 is actively creating content around new and emerging AI technologies.",
+      "The company is engaging with industry leaders and events, such as the RAISE Summit."
+    ],
+    "opportunities": [
+      "Potential for AI21 to establish itself as a leader in hybrid LLM technology.",
+      "Attracting customers and talent interested in innovative AI solutions."
+    ],
+    "threats": [
+      "Competition from other AI companies also focusing on emerging technologies.",
+      "Rapid evolution of AI technologies may require continuous innovation to stay relevant."
+    ],
+    "recommended_actions": [
+      "Monitor AI21's blog and research output for insights into their strategic direction and technological advancements.",
+      "Assess the potential for partnership or collaboration in areas of mutual interest, such as hybrid LLM development."
+    ]
+  },
+  "key_insights": [
+    "AI21 is actively creating content around new and emerging AI technologies.",
+    "The company is engaging with industry leaders and events, such as the RAISE Summit."
+  ],
+  "business_impact": "The addition of new blog posts may enhance AI21's reputation as a thought leader in the AI industry and attract potential customers interested in AI solutions.",
+  "competitive_implications": "AI21 maintains its position as an innovator in the AI space, potentially attracting talent and customers looking for cutting-edge AI solutions.",
+  "content_hash_before": "54929b2f84f500f108ec28b1906bc615e06e90c7fa6d835e822fc978d8bf5676",
+  "content_hash_after": "efb1582a8ceb91193ad46c3ad7e03008f0f5feb6684ccd7cf49e760cca4f7193",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

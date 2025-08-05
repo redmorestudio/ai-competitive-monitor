@@ -1,0 +1,52 @@
+{
+  "id": 1019,
+  "company": "Anyscale",
+  "page_url": "pricing",
+  "detected_at": "2025-08-05T22:55:19.208Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The menu item 'Tutorials' was changed to 'Templates' and the rest of the content remains the same",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The menu item 'Tutorials' was changed to 'Templates' and the rest of the content remains the same",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated menu item from 'Tutorials' to 'Templates'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact is expected from this minor change",
+    "market_signals": [],
+    "competitive_implications": "No competitive implications are expected from this minor change",
+    "strategic_direction": "The change does not indicate a shift in the company's strategic direction"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is maintaining its existing pricing model and service offerings"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [
+    "The company is maintaining its existing pricing model and service offerings"
+  ],
+  "business_impact": "No significant business impact is expected from this minor change",
+  "competitive_implications": "No competitive implications are expected from this minor change",
+  "content_hash_before": "5161b077bca10157b5dc304d48aa1520d33c52de50e4c186cf232df4b9de31c8",
+  "content_hash_after": "15c8d79bbede15991f36e9805fe7c40c14b98182193b9b73d535702078faee25",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

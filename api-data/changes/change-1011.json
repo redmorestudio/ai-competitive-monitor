@@ -1,0 +1,68 @@
+{
+  "id": 1011,
+  "company": "Codeium",
+  "page_url": "blog",
+  "detected_at": "2025-08-05T22:55:56.899Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Download option for Linux added",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Download option for Linux added",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added download option for Linux",
+      "No changes in blog posts or company information"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of a download option for Linux may increase the company's user base and improve customer satisfaction, but it is unlikely to have a significant impact on the company's overall business strategy.",
+    "market_signals": [
+      "Increased focus on user experience and customer satisfaction"
+    ],
+    "competitive_implications": "The addition of a download option for Linux may give the company a competitive advantage in terms of user experience and customer satisfaction, but it is unlikely to be a major differentiator in the market.",
+    "strategic_direction": "The company may be focusing on expanding its user base and improving customer satisfaction, but this change does not indicate a significant shift in the company's overall strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "Linux"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is focusing on improving user experience and customer satisfaction",
+      "The addition of a download option for Linux may increase the company's user base"
+    ],
+    "opportunities": [
+      "Increased user base and customer satisfaction",
+      "Competitive advantage in terms of user experience"
+    ],
+    "threats": [
+      "The change may not be significant enough to impact the company's overall business strategy",
+      "The company may face competition from other companies that offer similar download options"
+    ],
+    "recommended_actions": [
+      "Monitor the company's user base and customer satisfaction metrics to assess the impact of the change",
+      "Analyze the company's competitors to determine if they offer similar download options"
+    ]
+  },
+  "key_insights": [
+    "The company is focusing on improving user experience and customer satisfaction",
+    "The addition of a download option for Linux may increase the company's user base"
+  ],
+  "business_impact": "The addition of a download option for Linux may increase the company's user base and improve customer satisfaction, but it is unlikely to have a significant impact on the company's overall business strategy.",
+  "competitive_implications": "The addition of a download option for Linux may give the company a competitive advantage in terms of user experience and customer satisfaction, but it is unlikely to be a major differentiator in the market.",
+  "content_hash_before": "473fa08453daadfc04a139b1bc1e82802cd61bff43c91c3fc0ee9035751fc682",
+  "content_hash_after": "f6704fe44e0f27c521819e2243ad1df5b1736614d3e21c233288af90c87e89a9",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

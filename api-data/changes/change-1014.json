@@ -1,0 +1,46 @@
+{
+  "id": 1014,
+  "company": "Cisco Systems",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T22:55:47.156Z",
+  "change_type": "modified",
+  "interest_level": 1,
+  "ai_confidence": 0.99,
+  "summary": "No significant changes were detected in the provided content.",
+  "category": "No change",
+  "change_summary": {
+    "what_changed": "No significant changes were detected in the provided content.",
+    "change_type": "No change",
+    "change_scale": "No change",
+    "specific_changes": []
+  },
+  "strategic_analysis": {
+    "business_impact": "No impact",
+    "market_signals": [],
+    "competitive_implications": "No implications",
+    "strategic_direction": "No change"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [],
+  "business_impact": "No impact",
+  "competitive_implications": "No implications",
+  "content_hash_before": "f6d4f7db7c90f7d4cbf5c073af4d29934c67d5412eb8e079d049a806ce9ad1c5",
+  "content_hash_after": "a4ee80909b05789ca6e29b7348ee9c3750ca8b79f2f7bffb5ba9e17f2b098b35",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

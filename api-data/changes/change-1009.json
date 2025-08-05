@@ -1,0 +1,52 @@
+{
+  "id": 1009,
+  "company": "Cohere",
+  "page_url": "product",
+  "detected_at": "2025-08-05T22:56:12.460Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Background image for the products page",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Background image for the products page",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated background image from https://cdn.sanity.io/images/rjtqmwfu/web3-prod/d502953fe250ea0bbcd76e8c92162742c552ba69-2720x1115.png?fit=max&fm=webp&q=100&w=1360 to https://cdn.sanity.io/images/rjtqmwfu/web3-prod/fe7072024d01cbb1f487d58baab7e04f1d014403-2720x1120.png?fit=max&fm=webp&q=100&w=1360"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact is expected from this minor change.",
+    "market_signals": [],
+    "competitive_implications": "No competitive implications are expected from this minor change.",
+    "strategic_direction": "No change in strategic direction is indicated by this minor update."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is actively maintaining and updating its website."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [
+    "The company is actively maintaining and updating its website."
+  ],
+  "business_impact": "No significant business impact is expected from this minor change.",
+  "competitive_implications": "No competitive implications are expected from this minor change.",
+  "content_hash_before": "59386d2b4381d22ffc1087368d466daf0ffe13f52a7850e56367d0dea25f3ee4",
+  "content_hash_after": "f6d76aeb1a90a023ebc49da98a3ce0dc1016fa6e183e1a9d3174d61f3796e1a9",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

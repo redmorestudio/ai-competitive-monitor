@@ -1,0 +1,65 @@
+{
+  "id": 963,
+  "company": "Runway",
+  "page_url": "blog",
+  "detected_at": "2025-08-05T23:07:45.770Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "Featured news article changed from 'Introducing Runway Gen-4' to 'Introducing Runway Aleph', and a new link 'Ways to use Runway' was added under the Product section",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Featured news article changed from 'Introducing Runway Gen-4' to 'Introducing Runway Aleph', and a new link 'Ways to use Runway' was added under the Product section",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated featured news article",
+      "Added new link 'Ways to use Runway' under Product section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update in featured news article and addition of new link may indicate the company's focus on showcasing its research and product capabilities, potentially attracting new customers or investors",
+    "market_signals": [
+      "Increased focus on research and product development"
+    ],
+    "competitive_implications": "The change may not have significant competitive implications, but it demonstrates the company's ongoing efforts to innovate and improve its offerings",
+    "strategic_direction": "The company appears to be continuing its strategy of showcasing its research and product capabilities to attract new customers and investors"
+  },
+  "entities": {
+    "products": [
+      "Runway Aleph",
+      "Runway Gen-4"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is updating its featured news article to showcase new research and product developments",
+      "The addition of new link 'Ways to use Runway' may indicate an effort to improve user experience and provide more resources for customers"
+    ],
+    "opportunities": [
+      "Potential for increased customer engagement and attraction of new customers and investors"
+    ],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor the company's research and product developments for potential strategic implications",
+      "Assess the effectiveness of the company's efforts to improve user experience and provide more resources for customers"
+    ]
+  },
+  "key_insights": [
+    "The company is updating its featured news article to showcase new research and product developments",
+    "The addition of new link 'Ways to use Runway' may indicate an effort to improve user experience and provide more resources for customers"
+  ],
+  "business_impact": "The update in featured news article and addition of new link may indicate the company's focus on showcasing its research and product capabilities, potentially attracting new customers or investors",
+  "competitive_implications": "The change may not have significant competitive implications, but it demonstrates the company's ongoing efforts to innovate and improve its offerings",
+  "content_hash_before": "3d98ee46388b9f1a70d77fda3b3d901fb21f03a4bad78f0c726c5afe10ca4228",
+  "content_hash_after": "f681a6cf49de1c083c9bb7dfb709fe3670b6ca1f8f1f41755daa1e57f3d2c939",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

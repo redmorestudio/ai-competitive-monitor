@@ -1,0 +1,61 @@
+{
+  "id": 967,
+  "company": "Replicate",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T23:07:10.993Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "The navigation menu has been updated with a new 'Enterprise' option, and the keyboard shortcut for the menu has been changed from 'ctrl+k' to 'cmd+k'.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The navigation menu has been updated with a new 'Enterprise' option, and the keyboard shortcut for the menu has been changed from 'ctrl+k' to 'cmd+k'.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Enterprise' option to the navigation menu",
+      "Changed keyboard shortcut from 'ctrl+k' to 'cmd+k'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of an 'Enterprise' option to the navigation menu may indicate that Replicate is expanding its services to cater to larger businesses, which could lead to increased revenue and growth.",
+    "market_signals": [
+      "Increased focus on enterprise customers"
+    ],
+    "competitive_implications": "The update may be a response to competitors who are already catering to enterprise customers, and Replicate's move to expand its services may help it to remain competitive in the market.",
+    "strategic_direction": "The change suggests that Replicate is looking to expand its customer base and increase its revenue by catering to larger businesses."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Replicate is expanding its services to cater to enterprise customers"
+    ],
+    "opportunities": [
+      "Increased revenue and growth through expansion into the enterprise market"
+    ],
+    "threats": [
+      "Increased competition from established enterprise-focused companies"
+    ],
+    "recommended_actions": [
+      "Monitor Replicate's progress in the enterprise market and adjust competitive strategies accordingly"
+    ]
+  },
+  "key_insights": [
+    "Replicate is expanding its services to cater to enterprise customers"
+  ],
+  "business_impact": "The addition of an 'Enterprise' option to the navigation menu may indicate that Replicate is expanding its services to cater to larger businesses, which could lead to increased revenue and growth.",
+  "competitive_implications": "The update may be a response to competitors who are already catering to enterprise customers, and Replicate's move to expand its services may help it to remain competitive in the market.",
+  "content_hash_before": "28af6f3152295a677f1ebf8ae02fd23961790e45cd756ef0fa28a0afb7eba1a9",
+  "content_hash_after": "c2824874df42b0017e018b91a6983dfa787275751c5f807aaa99843804ae1cda",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,84 @@
+{
+  "id": 954,
+  "company": "Stability AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T23:09:14.558Z",
+  "change_type": "modified",
+  "interest_level": 7,
+  "ai_confidence": 0.8,
+  "summary": "Addition of 'Solutions' section and updates to news articles",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Addition of 'Solutions' section and updates to news articles",
+    "change_type": "addition/update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Added 'Solutions' link to the main menu",
+      "Updated news articles with new publications",
+      "No changes to core product offerings or technologies"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes indicate a focus on expanding enterprise offerings and showcasing expertise, which could lead to increased revenue and market share",
+    "market_signals": [
+      "Growing demand for generative AI solutions in enterprise markets",
+      "Increasing competition in the AI market"
+    ],
+    "competitive_implications": "The updates position Stability AI as a key player in the enterprise generative AI market, potentially threatening competitors",
+    "strategic_direction": "Expansion into enterprise markets and development of specialized solutions"
+  },
+  "entities": {
+    "products": [
+      "Stable Diffusion",
+      "Stable Audio"
+    ],
+    "features": [
+      "Image generation",
+      "Video generation",
+      "Audio generation"
+    ],
+    "partnerships": [
+      "Amazon Bedrock",
+      "NVIDIA"
+    ],
+    "technologies": [
+      "Generative AI",
+      "TensorRT"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Enterprise",
+      "Creative industries"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Stability AI is focusing on enterprise offerings and expertise",
+      "The company is showcasing its capabilities through news articles and updates"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Stability AI",
+      "Adoption of generative AI solutions in enterprise markets"
+    ],
+    "threats": [
+      "Increasing competition in the AI market",
+      "Potential regulatory challenges"
+    ],
+    "recommended_actions": [
+      "Monitor Stability AI's progress and updates",
+      "Consider partnership opportunities or adoption of generative AI solutions"
+    ]
+  },
+  "key_insights": [
+    "Stability AI is focusing on enterprise offerings and expertise",
+    "The company is showcasing its capabilities through news articles and updates"
+  ],
+  "business_impact": "The changes indicate a focus on expanding enterprise offerings and showcasing expertise, which could lead to increased revenue and market share",
+  "competitive_implications": "The updates position Stability AI as a key player in the enterprise generative AI market, potentially threatening competitors",
+  "content_hash_before": "c7e04a414da10c31e037b9115d7ad9d11dda7b6508051d95bad8764f96d30176",
+  "content_hash_after": "8b5c433418e1a7435c2ce82cac52c024b19e57aa623f3a05b7757963db764d04",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

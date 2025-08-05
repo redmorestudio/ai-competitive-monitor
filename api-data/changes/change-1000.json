@@ -1,0 +1,69 @@
+{
+  "id": 1000,
+  "company": "ElevenLabs",
+  "page_url": "product",
+  "detected_at": "2025-08-05T22:57:21.804Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "Addition of AI Music Generator to the Research and Products sections",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Addition of AI Music Generator to the Research and Products sections",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added AI Music Generator link to Research section",
+      "Added AI Music Generator link to Products section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of AI Music Generator may attract new customers and increase revenue for ElevenLabs, particularly in the music and entertainment industries.",
+    "market_signals": [
+      "Expansion into the music generation market",
+      "Increased competition in the AI audio market"
+    ],
+    "competitive_implications": "ElevenLabs is expanding its product offerings to stay competitive in the AI audio market, which may put pressure on other companies to follow suit.",
+    "strategic_direction": "ElevenLabs is focusing on expanding its AI audio capabilities, including music generation, to provide a more comprehensive suite of products to its customers."
+  },
+  "entities": {
+    "products": [
+      "AI Music Generator"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "ElevenLabs is expanding its product offerings to include AI music generation",
+      "The company is focusing on providing a comprehensive suite of AI audio products"
+    ],
+    "opportunities": [
+      "Partnership opportunities with music and entertainment companies",
+      "Increased revenue potential from new customers"
+    ],
+    "threats": [
+      "Increased competition in the AI audio market",
+      "Potential cannibalization of existing products"
+    ],
+    "recommended_actions": [
+      "Monitor ElevenLabs' product offerings and marketing strategies",
+      "Consider partnering with ElevenLabs to leverage their AI audio capabilities"
+    ]
+  },
+  "key_insights": [
+    "ElevenLabs is expanding its product offerings to include AI music generation",
+    "The company is focusing on providing a comprehensive suite of AI audio products"
+  ],
+  "business_impact": "The addition of AI Music Generator may attract new customers and increase revenue for ElevenLabs, particularly in the music and entertainment industries.",
+  "competitive_implications": "ElevenLabs is expanding its product offerings to stay competitive in the AI audio market, which may put pressure on other companies to follow suit.",
+  "content_hash_before": "bf6db06abd1c54d4ee02cc74cf02d1756f49bf78a216d99f3008f949d6a27806",
+  "content_hash_after": "abfd7dacc341a01f50c2c426ac9117bd1c6a5c9a785f62d2db40341988cd2fd2",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

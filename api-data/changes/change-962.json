@@ -1,0 +1,58 @@
+{
+  "id": 962,
+  "company": "Runway",
+  "page_url": "homepage",
+  "detected_at": "2025-08-05T23:07:48.007Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Addition of 'Ways to use Runway' link in the Product section",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Addition of 'Ways to use Runway' link in the Product section",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Ways to use Runway' link in the Product section, redirecting to the Academy page"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of the 'Ways to use Runway' link may improve user engagement and provide easier access to educational resources",
+    "market_signals": [
+      "Increased focus on user education and support"
+    ],
+    "competitive_implications": "The change does not significantly impact the company's competitive position",
+    "strategic_direction": "The company may be shifting its focus towards improving user experience and providing more resources for its customers"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is investing in user education and support"
+    ],
+    "opportunities": [
+      "Improved user engagement and retention"
+    ],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor user engagement and feedback to assess the effectiveness of the added resource"
+    ]
+  },
+  "key_insights": [
+    "The company is investing in user education and support"
+  ],
+  "business_impact": "The addition of the 'Ways to use Runway' link may improve user engagement and provide easier access to educational resources",
+  "competitive_implications": "The change does not significantly impact the company's competitive position",
+  "content_hash_before": "a425f8bd85883b918e8c16b5ce0a0caa11961e17c718b22e1d8ba700ad475c58",
+  "content_hash_after": "dc9ee0958d785007db43a1f60363ce5f11311a44d06f66befde9431a9c347f35",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

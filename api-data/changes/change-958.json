@@ -1,0 +1,83 @@
+{
+  "id": 958,
+  "company": "Sourcegraph",
+  "page_url": "pricing",
+  "detected_at": "2025-08-05T23:08:45.203Z",
+  "change_type": "modified",
+  "interest_level": 7,
+  "ai_confidence": 0.8,
+  "summary": "Amp pricing plan details",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Amp pricing plan details",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Amp plan now includes $10 in free credits for most users",
+      "Amp Teams plan no longer includes $10 free credit trial per user",
+      "Minor wording changes in FAQs and plan descriptions"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Changes to pricing plans may attract more customers or increase revenue",
+    "market_signals": [
+      "Increased competition in the coding tools market",
+      "Growing demand for enterprise-level security and scalability"
+    ],
+    "competitive_implications": "Sourcegraph is positioning itself as a leader in the coding tools market",
+    "strategic_direction": "Sourcegraph is focusing on enterprise customers and expanding its product offerings"
+  },
+  "entities": {
+    "products": [
+      "Amp",
+      "Amp Teams",
+      "Amp Enterprise",
+      "Code Search",
+      "Enterprise Starter",
+      "Enterprise Search"
+    ],
+    "features": [
+      "Single Sign-on",
+      "Team billing",
+      "Zero LLM retention"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "$10 in free credits for most users",
+      "$19 per user, monthly",
+      "$49 per user, monthly"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Amp pricing plans have been updated to include more features and credits",
+      "Enterprise Search plan is now more comprehensive"
+    ],
+    "opportunities": [
+      "Increased revenue from enterprise customers",
+      "Expanded market share in the coding tools market"
+    ],
+    "threats": [
+      "Competition from other coding tools providers",
+      "Potential customer churn due to pricing changes"
+    ],
+    "recommended_actions": [
+      "Monitor customer feedback and adjust pricing plans accordingly",
+      "Continue to expand product offerings and features to stay competitive"
+    ]
+  },
+  "key_insights": [
+    "Amp pricing plans have been updated to include more features and credits",
+    "Enterprise Search plan is now more comprehensive"
+  ],
+  "business_impact": "Changes to pricing plans may attract more customers or increase revenue",
+  "competitive_implications": "Sourcegraph is positioning itself as a leader in the coding tools market",
+  "content_hash_before": "ff399798a54500009ffc8342f8567dc41031cb14f9476c8c43f8a1a0e72b495f",
+  "content_hash_after": "365605cd51bf7d1d6dec8aedf389d6d1384b3a942e2999e773cdcb2d4e24b52e",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

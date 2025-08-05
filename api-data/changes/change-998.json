@@ -1,0 +1,68 @@
+{
+  "id": 998,
+  "company": "ElevenLabs",
+  "page_url": "blog",
+  "detected_at": "2025-08-05T22:57:31.546Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog post 'Eleven Music is Here' was added, and the overall structure and content of the blog page have been updated",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog post 'Eleven Music is Here' was added, and the overall structure and content of the blog page have been updated",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of a new blog post about Eleven Music",
+      "Update to the blog's structure and content",
+      "No removal of existing blog posts or content"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of Eleven Music and the update to the blog's structure and content may attract new customers and increase engagement with existing ones",
+    "market_signals": [
+      "ElevenLabs is expanding its product offerings",
+      "The company is investing in its blog and content marketing efforts"
+    ],
+    "competitive_implications": "ElevenLabs may be gaining a competitive advantage in the AI audio market with its new product and updated content",
+    "strategic_direction": "The company appears to be focusing on developing new products and improving its online presence"
+  },
+  "entities": {
+    "products": [
+      "Eleven Music"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "ElevenLabs has added a new blog post about Eleven Music",
+      "The company has updated its blog's structure and content"
+    ],
+    "opportunities": [
+      "Potential for increased customer engagement and attraction of new customers"
+    ],
+    "threats": [
+      "Competitors may respond to ElevenLabs' new product and updated content by launching their own similar offerings"
+    ],
+    "recommended_actions": [
+      "Monitor ElevenLabs' future developments and updates",
+      "Analyze the impact of Eleven Music on the AI audio market"
+    ]
+  },
+  "key_insights": [
+    "ElevenLabs has added a new blog post about Eleven Music",
+    "The company has updated its blog's structure and content"
+  ],
+  "business_impact": "The addition of Eleven Music and the update to the blog's structure and content may attract new customers and increase engagement with existing ones",
+  "competitive_implications": "ElevenLabs may be gaining a competitive advantage in the AI audio market with its new product and updated content",
+  "content_hash_before": "73a855c210346c8b19c6b35bd54d6ce513717a337803eeffadb64a4646f01b54",
+  "content_hash_after": "d387f1c97a0987782d028b2c06c485d615df77d22026bf26971b31d18e551781",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
