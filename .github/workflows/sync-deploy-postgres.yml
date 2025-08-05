@@ -336,7 +336,23 @@ jobs:
           # Generate entity group data
           if [ -f "update-static-data-entity-groups.js" ]; then
             echo "📊 Generating entity group data for dashboard..."
-            node update-static-data-entity-groups.js || echo "⚠️  Entity data generation failed"
+            node update-static-data-entity-groups.js || {
+              echo "⚠️  Entity data generation failed, trying fallback..."
+              if [ -f "generate-entity-groups-fallback.js" ]; then
+                echo "📊 Using fallback entity groups generation..."
+                node generate-entity-groups-fallback.js || echo "⚠️  Fallback generation also failed"
+              fi
+            }
+          fi
+          
+          # Verify entity-groups.json was created
+          if [ -f "../api-data/entity-groups.json" ]; then
+            echo "✅ entity-groups.json successfully generated"
+            ls -la ../api-data/entity-groups.json
+          else
+            echo "❌ entity-groups.json missing! Dashboard will not work properly."
+            echo "📊 Available API data files:"
+            ls -la ../api-data/*.json | head -10
           fi
         env:
           POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
