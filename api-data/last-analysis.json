@@ -1,10 +1,10 @@
 {
   "workflow": "analyze-postgres",
-  "run_id": "16601110048",
-  "timestamp": "2025-07-29T15:55:50.925Z",
+  "run_id": "16755803255",
+  "timestamp": "2025-08-05T16:45:43.559Z",
   "mode": "recent",
   "enhanced": true,
-  "trigger_source": "manual-fix-test",
+  "trigger_source": "manual",
   "database": "postgresql",
   "ai_model": "groq-llama-3.3-70b",
   "status": "completed"
