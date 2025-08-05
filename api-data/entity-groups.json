@@ -1,942 +1,8746 @@
 {
-  "metadata": {
-    "generated_at": "2025-08-05T16:26:26.258Z",
-    "version": "1.0",
-    "source": "fallback-generation",
-    "total_raw_entities": 108,
-    "total_groups": 54,
-    "filtered_for_graph": 54,
-    "monitored_companies": 0
-  },
+  "generated_at": "2025-08-05T19:18:51.538Z",
+  "total_groups": 800,
   "all_entities": [
     {
       "id": 1,
-      "name": "AI21 Labs",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "artificial general intelligence",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 2,
-      "name": "Aleph Alpha",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "artificial intelligence",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "11",
       "is_monitored": false
     },
     {
       "id": 3,
-      "name": "Amazon CodeWhisperer",
+      "name": "amazon web services",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "variations": "1",
+      "mentioned_by": "3",
       "is_monitored": false
     },
     {
       "id": 4,
-      "name": "AMD",
+      "name": "anthropic",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
+      "variations": "1",
+      "mentioned_by": "8",
+      "is_monitored": true
     },
     {
       "id": 5,
-      "name": "Andi",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "application programming interface",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 6,
-      "name": "Anthropic",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "application",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "28",
       "is_monitored": false
     },
     {
       "id": 7,
-      "name": "Anyscale",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "authentication",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "4",
       "is_monitored": false
     },
     {
       "id": 8,
-      "name": "Cerebras",
+      "name": "microsoft azure",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "variations": "1",
+      "mentioned_by": "5",
       "is_monitored": false
     },
     {
       "id": 9,
-      "name": "Cisco Systems",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "continuous integration/continuous deployment",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 10,
-      "name": "Codeium",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "claude",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "13",
       "is_monitored": false
     },
     {
       "id": 11,
-      "name": "Cohere",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "computer vision",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "4",
       "is_monitored": false
     },
     {
       "id": 12,
-      "name": "Cursor",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "continuous deployment",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 13,
-      "name": "DALL-E",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "continuous integration",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 14,
-      "name": "DataRobot",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "central processing unit",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 15,
-      "name": "Descript",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "database",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "5",
       "is_monitored": false
     },
     {
       "id": 16,
-      "name": "ElevenLabs",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "deep learning",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "6",
       "is_monitored": false
     },
     {
       "id": 17,
-      "name": "Flux",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "deepmind",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "2",
       "is_monitored": false
     },
     {
       "id": 18,
-      "name": "GitHub Copilot",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "docker",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 19,
-      "name": "Google DeepMind",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "google cloud platform",
+      "type": "synonym",
+      "variations": "0",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 20,
-      "name": "H2O.ai",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "gpt-3",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "2",
       "is_monitored": false
     },
     {
       "id": 21,
-      "name": "HeyGen",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "gpt-4",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "10",
       "is_monitored": false
     },
     {
       "id": 22,
-      "name": "Hugging Face",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "graphics processing unit",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 23,
-      "name": "Ideogram",
+      "name": "hugging face",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": true
     },
     {
       "id": 24,
-      "name": "Inflection AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "integrated development environment",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "1",
       "is_monitored": false
     },
     {
       "id": 25,
-      "name": "Intel",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "internet of things",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 26,
-      "name": "LangChain",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "javascript",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "5",
       "is_monitored": false
     },
     {
       "id": 27,
-      "name": "Leonardo AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "kubernetes",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "5",
       "is_monitored": false
     },
     {
       "id": 28,
-      "name": "Luma AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "large language model",
+      "type": "synonym",
+      "variations": "4",
+      "mentioned_by": "12",
       "is_monitored": false
     },
     {
       "id": 29,
-      "name": "Meta AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "llama",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "13",
       "is_monitored": false
     },
     {
       "id": 30,
-      "name": "Midjourney",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "machine learning",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "9",
       "is_monitored": false
     },
     {
       "id": 31,
-      "name": "Mistral AI",
+      "name": "meta",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "variations": "1",
+      "mentioned_by": "9",
       "is_monitored": false
     },
     {
       "id": 32,
-      "name": "Murf AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "natural language generation",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 33,
-      "name": "Neeva",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "natural language processing",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "3",
       "is_monitored": false
     },
     {
       "id": 34,
-      "name": "NVIDIA",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "natural language understanding",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 35,
-      "name": "OpenAI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "neural network",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "3",
       "is_monitored": false
     },
     {
       "id": 36,
-      "name": "Palantir",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "optical character recognition",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 37,
-      "name": "Perplexity AI",
+      "name": "openai",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
+      "variations": "1",
+      "mentioned_by": "16",
+      "is_monitored": true
     },
     {
       "id": 38,
-      "name": "Phind",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "python",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "13",
       "is_monitored": false
     },
     {
       "id": 39,
-      "name": "Pieces",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "reinforcement learning",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "3",
       "is_monitored": false
     },
     {
       "id": 40,
-      "name": "Pika",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "software development kit",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 41,
-      "name": "Redmore Studio",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "software as a service",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "1",
       "is_monitored": false
     },
     {
       "id": 42,
-      "name": "Replicate",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "typescript",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "4",
       "is_monitored": false
     },
     {
       "id": 43,
-      "name": "Replit",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "processing",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "12",
       "is_monitored": false
     },
     {
       "id": 44,
-      "name": "Resemble AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "audio processing",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 45,
-      "name": "Runway",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "batch processing",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 46,
-      "name": "SambaNova",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "inference",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "15",
       "is_monitored": false
     },
     {
       "id": 47,
-      "name": "Scale AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "batch inference",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "2",
       "is_monitored": false
     },
     {
       "id": 48,
-      "name": "Sourcegraph",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "model inference",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "1",
       "is_monitored": false
     },
     {
       "id": 49,
-      "name": "Stability AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "cloud",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "26",
       "is_monitored": false
     },
     {
       "id": 50,
-      "name": "Synthesia",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "cloud computing",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "2",
       "is_monitored": false
     },
     {
       "id": 51,
-      "name": "Tabnine",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "cloud deployment",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "2",
       "is_monitored": false
     },
     {
       "id": 52,
-      "name": "Weights & Biases",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "cloud migration",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 53,
-      "name": "WellSaid Labs",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "cloud native",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
       "is_monitored": false
     },
     {
       "id": 54,
+      "name": "cloud security",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 55,
+      "name": "cloud storage",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 56,
+      "name": "security",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "37",
+      "is_monitored": false
+    },
+    {
+      "id": 57,
+      "name": "cybersecurity",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 58,
+      "name": "data security",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 59,
+      "name": "data",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "45",
+      "is_monitored": false
+    },
+    {
+      "id": 60,
+      "name": "data analysis",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 61,
+      "name": "data augmentation",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 62,
+      "name": "data engineering",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 63,
+      "name": "data labeling",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 64,
+      "name": "data processing",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 65,
+      "name": "data science",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 66,
+      "name": "data storage",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 67,
+      "name": "training",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "31",
+      "is_monitored": false
+    },
+    {
+      "id": 68,
+      "name": "distributed training",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 69,
+      "name": "few-shot learning",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 70,
+      "name": "fine-tuning",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 71,
+      "name": "model training",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 72,
+      "name": "zero-shot learning",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 73,
+      "name": "optimization",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "10",
+      "is_monitored": false
+    },
+    {
+      "id": 74,
+      "name": "hyperparameter optimization",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 75,
+      "name": "performance optimization",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 76,
+      "name": "model",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "43",
+      "is_monitored": false
+    },
+    {
+      "id": 77,
+      "name": "language model",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "17",
+      "is_monitored": false
+    },
+    {
+      "id": 78,
+      "name": "analysis",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "13",
+      "is_monitored": false
+    },
+    {
+      "id": 79,
+      "name": "sentiment analysis",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 80,
+      "name": "text analysis",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 81,
+      "name": "learning",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "26",
+      "is_monitored": false
+    },
+    {
+      "id": 82,
+      "name": "supervised learning",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 83,
+      "name": "transfer learning",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 84,
+      "name": "unsupervised learning",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 85,
+      "name": "development",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "33",
+      "is_monitored": false
+    },
+    {
+      "id": 86,
+      "name": "web development",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 87,
+      "name": "agentic ai",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": false
+    },
+    {
+      "id": 88,
+      "name": "ai safety",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 89,
+      "name": "ai safety institute",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 90,
+      "name": "amazon",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": false
+    },
+    {
+      "id": 91,
+      "name": "apple",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 92,
+      "name": "chatgpt",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": false
+    },
+    {
+      "id": 93,
+      "name": "code completion",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 94,
+      "name": "code generation",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "8",
+      "is_monitored": false
+    },
+    {
+      "id": 95,
+      "name": "conversational ai",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 96,
+      "name": "github copilot",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 97,
+      "name": "discord",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "13",
+      "is_monitored": false
+    },
+    {
+      "id": 98,
+      "name": "facebook",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 99,
+      "name": "general data protection regulation",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 100,
+      "name": "generative ai",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "21",
+      "is_monitored": false
+    },
+    {
+      "id": 101,
+      "name": "github",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "20",
+      "is_monitored": false
+    },
+    {
+      "id": 102,
+      "name": "gitlab",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 103,
+      "name": "general language understanding evaluation",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 104,
+      "name": "google",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "21",
+      "is_monitored": false
+    },
+    {
+      "id": 105,
+      "name": "human evaluation",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 106,
+      "name": "image generation",
+      "type": "synonym",
+      "variations": "3",
+      "mentioned_by": "14",
+      "is_monitored": false
+    },
+    {
+      "id": 107,
+      "name": "image recognition",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 108,
+      "name": "text generation",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 109,
+      "name": "linkedin",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "13",
+      "is_monitored": false
+    },
+    {
+      "id": 110,
+      "name": "microsoft",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 111,
+      "name": "massive multitask language understanding",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 112,
+      "name": "nvidia",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "15",
+      "is_monitored": true
+    },
+    {
+      "id": 113,
+      "name": "pytorch",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 114,
+      "name": "retrieval augmented generation",
+      "type": "synonym",
+      "variations": "3",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 115,
+      "name": "reinforcement learning from human feedback",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 116,
+      "name": "speech recognition",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 117,
+      "name": "voice cloning",
+      "type": "synonym",
+      "variations": "3",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 118,
+      "name": "speech-to-text",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 119,
+      "name": "tensorflow",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 120,
+      "name": "text-to-speech",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 121,
+      "name": "video generation",
+      "type": "synonym",
+      "variations": "3",
+      "mentioned_by": "8",
+      "is_monitored": false
+    },
+    {
+      "id": 122,
+      "name": "transformers",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 123,
+      "name": "twitter",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "12",
+      "is_monitored": false
+    },
+    {
+      "id": 124,
+      "name": "video editing",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 125,
+      "name": "youtube",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "16",
+      "is_monitored": false
+    },
+    {
+      "id": 126,
+      "name": "ai ethics",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 127,
+      "name": "ai governance",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 128,
+      "name": "responsible ai",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 129,
+      "name": "editing",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "12",
+      "is_monitored": false
+    },
+    {
+      "id": 130,
+      "name": "audio editing",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 131,
+      "name": "image editing",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 132,
+      "name": "generation",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "33",
+      "is_monitored": false
+    },
+    {
+      "id": 133,
+      "name": "audio generation",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 134,
+      "name": "music generation",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 135,
+      "name": "speech generation",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 136,
+      "name": "compliance",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "21",
+      "is_monitored": false
+    },
+    {
+      "id": 137,
+      "name": "hipaa",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 138,
+      "name": "01.AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 139,
+      "name": "15 ai",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 140,
+      "name": "1688",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 141,
+      "name": "1X",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 142,
+      "name": "a16z",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 143,
+      "name": "A$AP Rocky",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 144,
+      "name": "AARP",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 145,
+      "name": "Accenture",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 146,
+      "name": "Adept",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 147,
+      "name": "Adobe",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 148,
+      "name": "ADP",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 149,
+      "name": "ADT",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 150,
+      "name": "AES",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 151,
+      "name": "Aetna",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 152,
+      "name": "AgriSphere",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 153,
+      "name": "AHEAD",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "7",
+      "is_monitored": false
+    },
+    {
+      "id": 154,
+      "name": "Ai2",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 155,
+      "name": "AI21",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 156,
+      "name": "AI21 Labs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 157,
+      "name": "AI at Meta",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 158,
+      "name": "AI Labs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 159,
+      "name": "Aion-labs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 160,
+      "name": "Airbus",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 161,
+      "name": "Air Force",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 162,
+      "name": "AIXplan",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 163,
+      "name": "AK Bank",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 164,
+      "name": "Aleph Alpha",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 165,
+      "name": "Aleph Alpha GmbH",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 166,
+      "name": "Alibaba",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 167,
+      "name": "Alibaba Cloud",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 168,
+      "name": "Alibaba Group",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 169,
+      "name": "Alibaba International",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 170,
+      "name": "AliExpress",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 171,
+      "name": "Alimama",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 172,
+      "name": "AliOS",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 173,
+      "name": "Alipay",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 174,
+      "name": "AliTelecom",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 175,
+      "name": "AllFly",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 176,
+      "name": "AlloyDB",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 177,
+      "name": "Ally",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "41",
+      "is_monitored": false
+    },
+    {
+      "id": 178,
+      "name": "Alpha Sense",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 179,
+      "name": "AMC Networks",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 180,
+      "name": "American Airlines",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 181,
+      "name": "Ancileo",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 182,
+      "name": "Andi",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "25",
+      "is_monitored": true
+    },
+    {
+      "id": 183,
+      "name": "Andreessen Horowitz",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 184,
+      "name": "Android",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": false
+    },
+    {
+      "id": 185,
+      "name": "Anduril",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 186,
+      "name": "Anyscale",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 187,
+      "name": "Anysphere",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 188,
+      "name": "ANZ",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 189,
+      "name": "ANZ Bank",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 190,
+      "name": "Apache",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 191,
+      "name": "Apigee",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 192,
+      "name": "AppSheet",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 193,
+      "name": "Archer Aviation",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 194,
+      "name": "Argilla-io",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 195,
+      "name": "Argonne",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 196,
+      "name": "Argonne National Laboratory",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 197,
+      "name": "Arm",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "12",
+      "is_monitored": false
+    },
+    {
+      "id": 198,
+      "name": "Artificial Analysis",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 199,
+      "name": "Ashby",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 200,
+      "name": "Astrazaneca",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 201,
+      "name": "AstraZeneca",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 202,
+      "name": "athenahealth",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 203,
+      "name": "Atlassian",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 204,
+      "name": "Atom Computing",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 205,
+      "name": "Atomicwork",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 206,
+      "name": "AT&T",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 207,
+      "name": "Attentive",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 208,
+      "name": "AWS",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "17",
+      "is_monitored": false
+    },
+    {
+      "id": 209,
+      "name": "Axel Springer",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 210,
+      "name": "Axios",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 211,
+      "name": "Azure",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 212,
+      "name": "BA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "48",
+      "is_monitored": false
+    },
+    {
+      "id": 213,
+      "name": "BambooHR",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 214,
+      "name": "Banco do Brasil",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 215,
+      "name": "Bank of America",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 216,
+      "name": "BatchData",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 217,
+      "name": "Bayer",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 218,
+      "name": "BCG",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 219,
+      "name": "Becker Friedman Institute",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 220,
+      "name": "Bell",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 221,
+      "name": "Benchling",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 222,
+      "name": "Bertelsmann",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 223,
+      "name": "Bestseller",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 224,
+      "name": "Billcom",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 225,
+      "name": "Bing",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "8",
+      "is_monitored": false
+    },
+    {
+      "id": 226,
+      "name": "Bitbucket",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 227,
+      "name": "Blackbox",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 228,
+      "name": "Blackbox.ai",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 229,
+      "name": "Black Forest Labs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 230,
+      "name": "Bloomberg",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 231,
+      "name": "BlueDot",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 232,
+      "name": "Bmw",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 233,
+      "name": "BNP Paribas",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 234,
+      "name": "Booz Allen Hamilton",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 235,
+      "name": "Borderless AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 236,
+      "name": "Börse Stuttgart",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 237,
+      "name": "Bosch",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 238,
+      "name": "Botika",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 239,
+      "name": "BPC",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 240,
+      "name": "Bradesco",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 241,
+      "name": "Brex",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 242,
+      "name": "Bria",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 243,
+      "name": "Bridgewater",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 244,
+      "name": "BSH",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 245,
+      "name": "BSMH",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 246,
+      "name": "BT Group",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 247,
+      "name": "Business Insider",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 248,
+      "name": "Buzzfeed",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 249,
+      "name": "Bytedance",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 250,
+      "name": "Canva",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 251,
+      "name": "Capgemini",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 252,
+      "name": "Captide",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 253,
+      "name": "Carahsoft",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 254,
+      "name": "Cartesia",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 255,
+      "name": "Casetext",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 256,
+      "name": "CAZ Investments",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 257,
+      "name": "CBA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 258,
+      "name": "CBS",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 259,
+      "name": "CDAO",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 260,
+      "name": "Cengage",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 261,
+      "name": "Cerebras",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 262,
+      "name": "Character AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 263,
+      "name": "Charisma AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 264,
+      "name": "Chess.com",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 265,
+      "name": "Chipotle",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 266,
+      "name": "C.H. Robinson",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 267,
+      "name": "Chrome",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 268,
+      "name": "Cintra Ferrovial",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 269,
+      "name": "Cisco",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 270,
+      "name": "Cisco Systems",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 271,
+      "name": "CI&T",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 272,
+      "name": "Citi",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 273,
+      "name": "CLARIVATE",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 274,
+      "name": "Clay",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 275,
+      "name": "Clearwater Analytics",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 276,
+      "name": "Cleveland Clinic",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 277,
+      "name": "Cloudflare",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 278,
+      "name": "CMA CGM",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 279,
+      "name": "CNBC",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 280,
+      "name": "CocaCola",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 281,
+      "name": "Coca-Cola FEMSA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 282,
+      "name": "Codeium",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 283,
+      "name": "Cognition",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "12",
+      "is_monitored": false
+    },
+    {
+      "id": 284,
+      "name": "Cognitive Computations",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 285,
+      "name": "Cohere",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": true
+    },
+    {
+      "id": 286,
+      "name": "CohereLabs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 287,
+      "name": "Coinbase",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 288,
+      "name": "Coke",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 289,
+      "name": "Colab",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 290,
+      "name": "ComfyUI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 291,
+      "name": "Composite Global",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 292,
+      "name": "Concordance",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 293,
+      "name": "Conviction",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 294,
+      "name": "Cookieyes",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 295,
+      "name": "Core3D",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 296,
+      "name": "CoreWeave",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 297,
+      "name": "Coyote Logistics",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 298,
+      "name": "CPKC",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 299,
+      "name": "CrewAI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 300,
+      "name": "Crew.ai",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 301,
+      "name": "Cummins",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 302,
+      "name": "Cursor",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": true
+    },
+    {
+      "id": 303,
+      "name": "CVS",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 304,
+      "name": "Databricks",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 305,
+      "name": "DataCrunch",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 306,
+      "name": "DataRobot",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 307,
+      "name": "Davivienda",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 308,
+      "name": "Decagon",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 309,
+      "name": "Decathlon",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 310,
+      "name": "DeepJudge",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 311,
+      "name": "DeepSeek AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 312,
+      "name": "Defense Innovation Unit",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 313,
+      "name": "Dell",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 314,
+      "name": "Dell Technologies",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 315,
+      "name": "Deloitte",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 316,
+      "name": "Delphi",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 317,
+      "name": "Department of Defense",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 318,
+      "name": "Descript",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": true
+    },
+    {
+      "id": 319,
+      "name": "Deutsche Bank",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 320,
+      "name": "DingTalk",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 321,
+      "name": "Discover",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "24",
+      "is_monitored": false
+    },
+    {
+      "id": 322,
+      "name": "DLA Piper",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 323,
+      "name": "Docusign",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 324,
+      "name": "DOE",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "28",
+      "is_monitored": false
+    },
+    {
+      "id": 325,
+      "name": "Doosan Infracore",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 326,
+      "name": "DORA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 327,
+      "name": "DPA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 328,
+      "name": "DraftWise",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 329,
+      "name": "Dropbox",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 330,
+      "name": "DRW",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 331,
+      "name": "DT",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 332,
+      "name": "DuckDuckGo",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 333,
+      "name": "Duck Duck Go",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 334,
+      "name": "Duo",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 335,
+      "name": "Duolingo",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 336,
+      "name": "Dupont",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 337,
+      "name": "DX",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 338,
+      "name": "Earth Fire Alliance",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 339,
+      "name": "Easyhome",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 340,
+      "name": "Eaton",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 341,
+      "name": "ebay",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 342,
+      "name": "Eclipse",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 343,
+      "name": "EDGLRD",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 344,
+      "name": "EDUCA EDTECH",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 345,
+      "name": "Elai",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 346,
+      "name": "Elastic",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 347,
+      "name": "ElevenLabs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": true
+    },
+    {
+      "id": 348,
+      "name": "Enfuse",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 349,
+      "name": "Ensemble",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 350,
+      "name": "Epsilon",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 351,
+      "name": "Ericsson",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 352,
+      "name": "ESI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "43",
+      "is_monitored": false
+    },
+    {
+      "id": 353,
+      "name": "eSpeak",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 354,
+      "name": "ESTsoft",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 355,
+      "name": "Everest Group",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 356,
+      "name": "Eviden",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 357,
+      "name": "Exa",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "24",
+      "is_monitored": false
+    },
+    {
+      "id": 358,
+      "name": "Exafunction",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 359,
+      "name": "Fabler",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 360,
+      "name": "Fabula",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 361,
+      "name": "FakeYou",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 362,
+      "name": "Fal",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 363,
+      "name": "FedEx",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 364,
+      "name": "Fermat Research",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 365,
+      "name": "Fern",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 366,
+      "name": "Figma",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 367,
+      "name": "Financial Review",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 368,
+      "name": "Firebase",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 369,
+      "name": "Fireworks",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 370,
+      "name": "Fitbit",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 371,
+      "name": "Five9",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 372,
+      "name": "Flexport",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 373,
+      "name": "Fliggy",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 374,
+      "name": "Fliki",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 375,
+      "name": "Flux",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": true
+    },
+    {
+      "id": 376,
+      "name": "Fly.io",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 377,
+      "name": "Forbes",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 378,
+      "name": "Ford",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "11",
+      "is_monitored": false
+    },
+    {
+      "id": 379,
+      "name": "FordDirect",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 380,
+      "name": "Fortnite",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 381,
+      "name": "Fortune",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 382,
+      "name": "Franklin Templeton",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 383,
+      "name": "Freepik",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 384,
+      "name": "French Agency for AI in Defense",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 385,
+      "name": "Fujitsu",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 386,
+      "name": "G2",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 387,
+      "name": "G42",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 388,
+      "name": "GAFG",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 389,
+      "name": "Gartner",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 390,
+      "name": "GCP",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 391,
+      "name": "GeForce",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 392,
+      "name": "General Artificial Intelligence Proficiency Institute (GenAIPI)",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 393,
+      "name": "General Mills",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 394,
+      "name": "General Motors",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 395,
+      "name": "Genspark",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 396,
+      "name": "Getty Images",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 397,
+      "name": "GitBook",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 398,
+      "name": "Glencore",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 399,
+      "name": "GoAnimate",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 400,
+      "name": "Goldman Sachs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 401,
+      "name": "Google Cloud",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 402,
+      "name": "Google DeepMind",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 403,
+      "name": "Google Inc.",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 404,
+      "name": "Google Nest",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 405,
+      "name": "Google Research",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 406,
+      "name": "Gradio",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 407,
+      "name": "Grammarly",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 408,
+      "name": "Greycroft",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 409,
+      "name": "Groq",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 410,
+      "name": "H2O.ai",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 411,
+      "name": "Hackensack Meridian Health",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 412,
+      "name": "Handshake",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 413,
+      "name": "Harvard University",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 414,
+      "name": "Hasura",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 415,
+      "name": "HCA Healthcare",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 416,
+      "name": "HDFC",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 417,
+      "name": "Headshot Pro",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 418,
+      "name": "Heineken",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 419,
+      "name": "Helvia",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 420,
+      "name": "HeyGen",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 421,
+      "name": "Hg Capital",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 422,
+      "name": "HHS & CDC",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 423,
+      "name": "Honeywell",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 424,
+      "name": "Howard-Hughes",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 425,
+      "name": "HPCWire",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 426,
+      "name": "HPE",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 427,
+      "name": "Huawei",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 428,
+      "name": "Hubspot",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 429,
+      "name": "HuggingFace",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 430,
+      "name": "Humana",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 431,
+      "name": "IBM",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 432,
+      "name": "ICONIQ",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 433,
+      "name": "Icons8",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 434,
+      "name": "IDC",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 435,
+      "name": "Ideogram AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 436,
+      "name": "Imaginary Advice",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 437,
+      "name": "IMAX",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 438,
+      "name": "Infineon",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 439,
+      "name": "Infinite Peripherals",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 440,
+      "name": "Inflection AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 441,
+      "name": "Instacart",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 442,
+      "name": "Instagram",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "7",
+      "is_monitored": false
+    },
+    {
+      "id": 443,
+      "name": "Intel",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "31",
+      "is_monitored": true
+    },
+    {
+      "id": 444,
+      "name": "IntelliJ IDEA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 445,
+      "name": "Intenseye",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 446,
+      "name": "Intercom",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 447,
+      "name": "Invideo AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 448,
+      "name": "Itaú",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 449,
+      "name": "Ivona",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 450,
+      "name": "Jacobs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 451,
+      "name": "James River Church",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 452,
+      "name": "Jasper",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 453,
+      "name": "JetBrains",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 454,
+      "name": "JIRA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 455,
+      "name": "Johnson Lambert",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 456,
+      "name": "JPMorganChase",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 457,
+      "name": "Juhuasuan",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 458,
+      "name": "Jules",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 459,
+      "name": "Kaiser Permanente",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 460,
+      "name": "Keras",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 461,
+      "name": "Ketch",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 462,
+      "name": "Kinder Morgan",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 463,
+      "name": "Klarna",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 464,
+      "name": "Komatsu",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 465,
+      "name": "KomBea",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 466,
+      "name": "KPMG",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 467,
+      "name": "KPN",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 468,
+      "name": "Kratos-AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 469,
+      "name": "Krea",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 470,
+      "name": "L3Harris",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 471,
+      "name": "Labelbox",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 472,
+      "name": "Laion AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 473,
+      "name": "LangChain",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 474,
+      "name": "Lawrence Livermore National Laboratory",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 475,
+      "name": "Lennar",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 476,
+      "name": "Lenovo",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 477,
+      "name": "Leonardo AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 478,
+      "name": "LG CNS",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 479,
+      "name": "LG Electronics",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 480,
+      "name": "Liberty Mutual",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 481,
+      "name": "Lightricks",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 482,
+      "name": "Lightspeed",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 483,
+      "name": "Linus Tech Tips",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 484,
+      "name": "Linux Foundation",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 485,
+      "name": "Lionsgate",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 486,
+      "name": "Listnr",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 487,
+      "name": "Longshot",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 488,
+      "name": "Looker",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 489,
+      "name": "Los Alamos",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 490,
+      "name": "Lovable",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 491,
+      "name": "Lovo AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 492,
+      "name": "Lowe's",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 493,
+      "name": "Luma",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 494,
+      "name": "Luma AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 495,
+      "name": "Luma Labs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 496,
+      "name": "Luxembourg Government",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 497,
+      "name": "Lyft",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 498,
+      "name": "Lyrebird",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 499,
+      "name": "Madonna",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 500,
+      "name": "Magnific",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 501,
+      "name": "Maitai",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 502,
+      "name": "Makers Fund",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 503,
+      "name": "Mandiant",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 504,
+      "name": "MarketAxess",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 505,
+      "name": "Mars Science & Diagnostics",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 506,
+      "name": "Maryville",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 507,
+      "name": "Mastercard",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 508,
+      "name": "Materna",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 509,
+      "name": "Mattel",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 510,
+      "name": "Mayo Clinic",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 511,
+      "name": "McKinsey & Company",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 512,
+      "name": "McLaren Racing",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 513,
+      "name": "Media.Monks",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 514,
+      "name": "Menlo Ventures",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 515,
+      "name": "Meraki",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 516,
+      "name": "MercadoLibre",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 517,
+      "name": "Mercado Libre",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 518,
+      "name": "Mercor",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 519,
+      "name": "MESH INTELLIGENT TECHNOLOGIES, Inc.",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 520,
+      "name": "Meta AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 521,
+      "name": "Meta Careers",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 522,
+      "name": "Midjourney",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 523,
+      "name": "Mimecast",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 524,
+      "name": "Mintlify",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 525,
+      "name": "Mistral",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 526,
+      "name": "Mistral AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 527,
+      "name": "Modern Treasury",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 528,
+      "name": "Moody's",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 529,
+      "name": "Moonface",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 530,
+      "name": "Morgan Stanley",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 531,
+      "name": "Muon Space",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 532,
+      "name": "Murf AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 533,
+      "name": "Musixmatch",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 534,
+      "name": "Namecoach",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 535,
+      "name": "Narakeet",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 536,
+      "name": "Natural Readers",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 537,
+      "name": "NEA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "8",
+      "is_monitored": false
+    },
+    {
+      "id": 538,
+      "name": "Neo",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "7",
+      "is_monitored": false
+    },
+    {
+      "id": 539,
+      "name": "Neon",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 540,
+      "name": "NetApp",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 541,
+      "name": "Netdata",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 542,
+      "name": "Netflix",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 543,
+      "name": "New Computer",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 544,
+      "name": "NHS",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 545,
+      "name": "nnamu",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 546,
+      "name": "Nokia",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 547,
+      "name": "Norby",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 548,
+      "name": "North American",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 549,
+      "name": "Northern Health",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 550,
+      "name": "NorthWind Technical Services",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 551,
+      "name": "Notevibes",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 552,
+      "name": "Notion",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 553,
+      "name": "Novacomp",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 554,
+      "name": "NTT docomo",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 555,
+      "name": "NU",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "46",
+      "is_monitored": false
+    },
+    {
+      "id": 556,
+      "name": "Nuance",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 557,
+      "name": "Nubank",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 558,
+      "name": "Nutanix",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 559,
+      "name": "NYT",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 560,
+      "name": "NYU Tisch",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 561,
+      "name": "Oddcast",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 562,
+      "name": "Ogilvy",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 563,
+      "name": "Okta",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 564,
+      "name": "Ollama",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 565,
+      "name": "Omdia",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 566,
+      "name": "Omnicom",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 567,
+      "name": "One Acre Fund",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 568,
+      "name": "One Zero",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 569,
+      "name": "OpenArt",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 570,
+      "name": "OpenCall",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 571,
+      "name": "OpenLM",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 572,
+      "name": "OpenRouter",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 573,
+      "name": "OpenSea",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 574,
+      "name": "OpenTelemetry",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 575,
+      "name": "Oracle",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 576,
+      "name": "Oscar Health",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 577,
+      "name": "Outscale",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 578,
+      "name": "Pacific Gas & Electric",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 579,
+      "name": "Palantir",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 580,
+      "name": "Panasonic Energy North America",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 581,
+      "name": "Paramount",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 582,
+      "name": "Parasail",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 583,
+      "name": "Parexel",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 584,
+      "name": "Parsons School of Design",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 585,
+      "name": "Paylocity",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 586,
+      "name": "Penda Health",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 587,
+      "name": "Pepsico",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 588,
+      "name": "Perforce",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 589,
+      "name": "Perplexity",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 590,
+      "name": "Perplexity AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": true
+    },
+    {
+      "id": 591,
+      "name": "PERSO.ai",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 592,
+      "name": "Pexels",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 593,
+      "name": "Pfizer",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 594,
+      "name": "Photo AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 595,
+      "name": "Pi",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "49",
+      "is_monitored": false
+    },
+    {
+      "id": 596,
+      "name": "Pieces",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 597,
+      "name": "Pika",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 598,
+      "name": "Pi Lab",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 599,
+      "name": "Pixar",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 600,
+      "name": "Playground AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 601,
+      "name": "Play HT",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 602,
+      "name": "Playwright",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 603,
+      "name": "Podcastle",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 604,
+      "name": "Podium",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 605,
+      "name": "PostgresSQL",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 606,
+      "name": "Priceline",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 607,
+      "name": "Prisma",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 608,
+      "name": "Progressive",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 609,
+      "name": "PROVOKE Solutions",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 610,
+      "name": "PTC",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "14",
+      "is_monitored": false
+    },
+    {
+      "id": 611,
+      "name": "PwC",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 612,
+      "name": "Quora",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 613,
+      "name": "Qwen",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "7",
+      "is_monitored": false
+    },
+    {
+      "id": 614,
+      "name": "Rakuten",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 615,
+      "name": "Ramp",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 616,
+      "name": "Ray-Ban",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 617,
+      "name": "Razer",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 618,
+      "name": "Rbc",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 619,
+      "name": "ReadSpeaker",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 620,
+      "name": "Reality Labs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 621,
+      "name": "ReasonLabs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 622,
+      "name": "Recraft AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 623,
+      "name": "Red Games",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 624,
+      "name": "Red Hat",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 625,
+      "name": "Redmore Studio",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 626,
+      "name": "Reflect",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 627,
+      "name": "Replicate",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": true
+    },
+    {
+      "id": 628,
+      "name": "Replit",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 629,
+      "name": "Replit, Inc.",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 630,
+      "name": "Resemble ai",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 631,
+      "name": "Retell AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 632,
+      "name": "Reuters",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 633,
+      "name": "Ringier",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 634,
+      "name": "Rippling",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 635,
+      "name": "Rokt",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 636,
+      "name": "Roland Berger",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 637,
+      "name": "Runware",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 638,
+      "name": "Runway",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 639,
+      "name": "Sada",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 640,
+      "name": "Safe Software",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 641,
+      "name": "Salesforce",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 642,
+      "name": "Salesforce ventures",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 643,
+      "name": "SambaNova",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 644,
+      "name": "SAML",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": false
+    },
+    {
+      "id": 645,
+      "name": "Samsara",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 646,
+      "name": "Samsung",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 647,
+      "name": "Santander",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 648,
+      "name": "SAP",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 649,
+      "name": "Scale",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "38",
+      "is_monitored": false
+    },
+    {
+      "id": 650,
+      "name": "Scale AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": true
+    },
+    {
+      "id": 651,
+      "name": "Schwarz Gruppe",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 652,
+      "name": "Second Front",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 653,
+      "name": "Sei AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 654,
+      "name": "SEQUOIA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 655,
+      "name": "ServiceNow",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 656,
+      "name": "SharePoint",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 657,
+      "name": "Shopify",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 658,
+      "name": "Siemens",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 659,
+      "name": "SiliconANGLE",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 660,
+      "name": "Singapore's Ministry of Defence (MINDEF)",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 661,
+      "name": "Singtel",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 662,
+      "name": "SITA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 663,
+      "name": "SKT",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "8",
+      "is_monitored": false
+    },
+    {
+      "id": 664,
+      "name": "Slack",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 665,
+      "name": "Smart Company",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 666,
+      "name": "SmugMug",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 667,
+      "name": "Snowflake",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 668,
+      "name": "Snwoflag",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 669,
+      "name": "SoftBank Corp.",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 670,
+      "name": "SOMPO",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 671,
+      "name": "Sompo Japan",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 672,
+      "name": "Sonnedix",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 673,
+      "name": "Sopra Steria",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 674,
+      "name": "Soundstripe",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 675,
+      "name": "Sourcegraph",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": true
+    },
+    {
+      "id": 676,
+      "name": "Spark Capital",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 677,
+      "name": "Speechelo",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 678,
+      "name": "Speechify",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 679,
+      "name": "Speechmax",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 680,
+      "name": "Spellbook",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 681,
+      "name": "Spirit Airlines",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 682,
+      "name": "Splunk",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 683,
+      "name": "Spotify",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 684,
+      "name": "Springbok Group",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 685,
+      "name": "Squadcast",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 686,
+      "name": "Square",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 687,
+      "name": "Stability AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 688,
+      "name": "Stability AI Ltd",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 689,
+      "name": "Stable Audio",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 690,
+      "name": "StackIT",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 691,
+      "name": "Stanford",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 692,
+      "name": "State Farm",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 693,
+      "name": "Stellantis",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 694,
+      "name": "Stride Learning",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 695,
+      "name": "Stripe",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 696,
+      "name": "Supermaven",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 697,
+      "name": "Supertab",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 698,
+      "name": "SV Angel",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 699,
+      "name": "Swiss Re",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 700,
+      "name": "Synopsys",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 701,
+      "name": "Synthesia",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 702,
+      "name": "Synthesia IO",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 703,
+      "name": "Synthesis",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 704,
+      "name": "Tabnine",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 705,
+      "name": "TACC",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 706,
+      "name": "Tako",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 707,
+      "name": "Tampa General Hospital",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 708,
+      "name": "Taobao Global",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 709,
+      "name": "Taobao Marketplace",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 710,
+      "name": "Tavus",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 711,
+      "name": "TD Bank",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 712,
+      "name": "TechCrunch",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 713,
+      "name": "Telekom",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 714,
+      "name": "Teleperformance",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 715,
+      "name": "Tencent",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 716,
+      "name": "The Browser Company",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 717,
+      "name": "The Frameworks",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 718,
+      "name": "The Home Depot",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 719,
+      "name": "The New York Times",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 720,
+      "name": "The Ohio State University",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 721,
+      "name": "Thiess PTY",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 722,
+      "name": "ThinkProject",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 723,
+      "name": "Thomson Reuters",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 724,
+      "name": "TikTok",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 725,
+      "name": "Time",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "43",
+      "is_monitored": false
+    },
+    {
+      "id": 726,
+      "name": "Tiny",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 727,
+      "name": "Tipalti",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 728,
+      "name": "Tmall",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 729,
+      "name": "T-Mobile",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 730,
+      "name": "Together",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "13",
+      "is_monitored": false
+    },
+    {
+      "id": 731,
+      "name": "Togetherai",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 732,
+      "name": "Tony Hawk",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 733,
+      "name": "Tool",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "40",
+      "is_monitored": false
+    },
+    {
+      "id": 734,
+      "name": "Toyota",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 735,
+      "name": "Trellix",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 736,
+      "name": "Tribeca Festival",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 737,
+      "name": "Trivago",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 738,
+      "name": "TrueFan",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 739,
+      "name": "TrustArc",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 740,
+      "name": "Trustpilot",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 741,
+      "name": "TTSMP3",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 742,
+      "name": "TTS Reader",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 743,
+      "name": "Turo",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 744,
+      "name": "Twilio",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 745,
+      "name": "Uber",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "7",
+      "is_monitored": false
+    },
+    {
+      "id": 746,
+      "name": "Uberduck",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 747,
+      "name": "UC Berkeley",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 748,
+      "name": "UMB",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "13",
+      "is_monitored": false
+    },
+    {
+      "id": 749,
+      "name": "Umbrella",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 750,
+      "name": "Unify",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 751,
+      "name": "United Airlines",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 752,
+      "name": "University of California, Berkeley",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 753,
+      "name": "University of Chicago",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 754,
+      "name": "Univision",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 755,
+      "name": "Unsplash",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 756,
+      "name": "Upwork",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 757,
+      "name": "Urban Roots",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 758,
+      "name": "U.S. Army",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 759,
+      "name": "US Department of Homeland Security",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 760,
+      "name": "US Foods",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 761,
+      "name": "U.S. National Labs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 762,
+      "name": "Varda",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 763,
+      "name": "Veed IO",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 764,
+      "name": "Veolia",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 765,
+      "name": "Vercel",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 766,
+      "name": "Vertex AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 767,
+      "name": "Vertiv",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 768,
+      "name": "Virgin Pulse",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 769,
+      "name": "Visual Studio",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 770,
+      "name": "Vmware",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 771,
+      "name": "Voicemaker",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 772,
+      "name": "Vox",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 773,
+      "name": "VS Code",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "7",
+      "is_monitored": false
+    },
+    {
+      "id": 774,
+      "name": "Vyond",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 775,
+      "name": "Walgreens",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 776,
+      "name": "Wavel AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 777,
+      "name": "Wavespeed AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 778,
+      "name": "Wayve",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 779,
+      "name": "Weights & Biases",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 780,
+      "name": "Weizmann Institute",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 781,
+      "name": "WellSaid Labs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 782,
+      "name": "Wells Fargo",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 783,
+      "name": "Wendy's Quality Supply Chain Co-op",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 784,
+      "name": "Westcap",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 785,
+      "name": "WiL",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "34",
+      "is_monitored": false
+    },
+    {
+      "id": 786,
+      "name": "Windsurf",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": false
+    },
+    {
+      "id": 787,
+      "name": "WordPress",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 788,
+      "name": "Workday",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 789,
+      "name": "World Food Programme",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 790,
+      "name": "WPP",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 791,
+      "name": "Writer",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 792,
+      "name": "Xerox",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 793,
+      "name": "Y Combinator",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 794,
       "name": "You.com",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 795,
+      "name": "Zai-org",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 796,
+      "name": "Zapier",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": false
+    },
+    {
+      "id": 797,
+      "name": "Zilliz",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 798,
+      "name": "Zinus",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 799,
+      "name": "Zomato",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": false
+    },
+    {
+      "id": 800,
+      "name": "Zoom",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "5",
       "is_monitored": false
     }
   ],
   "graph_entities": [
     {
-      "id": 1,
-      "name": "AI21 Labs",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
       "id": 2,
-      "name": "Aleph Alpha",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "artificial intelligence",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "11",
       "is_monitored": false
     },
     {
       "id": 3,
-      "name": "Amazon CodeWhisperer",
+      "name": "amazon web services",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "variations": "1",
+      "mentioned_by": "3",
       "is_monitored": false
     },
     {
       "id": 4,
-      "name": "AMD",
+      "name": "anthropic",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 5,
-      "name": "Andi",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
+      "variations": "1",
+      "mentioned_by": "8",
+      "is_monitored": true
     },
     {
       "id": 6,
-      "name": "Anthropic",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "application",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "28",
       "is_monitored": false
     },
     {
       "id": 7,
-      "name": "Anyscale",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "authentication",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "4",
       "is_monitored": false
     },
     {
       "id": 8,
-      "name": "Cerebras",
+      "name": "microsoft azure",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 9,
-      "name": "Cisco Systems",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "variations": "1",
+      "mentioned_by": "5",
       "is_monitored": false
     },
     {
       "id": 10,
-      "name": "Codeium",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "claude",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "13",
       "is_monitored": false
     },
     {
       "id": 11,
-      "name": "Cohere",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 12,
-      "name": "Cursor",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 13,
-      "name": "DALL-E",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 14,
-      "name": "DataRobot",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "computer vision",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "4",
       "is_monitored": false
     },
     {
       "id": 15,
-      "name": "Descript",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "database",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "5",
       "is_monitored": false
     },
     {
       "id": 16,
-      "name": "ElevenLabs",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 17,
-      "name": "Flux",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 18,
-      "name": "GitHub Copilot",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 19,
-      "name": "Google DeepMind",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 20,
-      "name": "H2O.ai",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "deep learning",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "6",
       "is_monitored": false
     },
     {
       "id": 21,
-      "name": "HeyGen",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 22,
-      "name": "Hugging Face",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "gpt-4",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "10",
       "is_monitored": false
     },
     {
       "id": 23,
-      "name": "Ideogram",
+      "name": "hugging face",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 24,
-      "name": "Inflection AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 25,
-      "name": "Intel",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": true
     },
     {
       "id": 26,
-      "name": "LangChain",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "javascript",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "5",
       "is_monitored": false
     },
     {
       "id": 27,
-      "name": "Leonardo AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "kubernetes",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "5",
       "is_monitored": false
     },
     {
       "id": 28,
-      "name": "Luma AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "large language model",
+      "type": "synonym",
+      "variations": "4",
+      "mentioned_by": "12",
       "is_monitored": false
     },
     {
       "id": 29,
-      "name": "Meta AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "llama",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "13",
       "is_monitored": false
     },
     {
       "id": 30,
-      "name": "Midjourney",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "machine learning",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "9",
       "is_monitored": false
     },
     {
       "id": 31,
-      "name": "Mistral AI",
+      "name": "meta",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 32,
-      "name": "Murf AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "variations": "1",
+      "mentioned_by": "9",
       "is_monitored": false
     },
     {
       "id": 33,
-      "name": "Neeva",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 34,
-      "name": "NVIDIA",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "natural language processing",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "3",
       "is_monitored": false
     },
     {
       "id": 35,
-      "name": "OpenAI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 36,
-      "name": "Palantir",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "neural network",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "3",
       "is_monitored": false
     },
     {
       "id": 37,
-      "name": "Perplexity AI",
+      "name": "openai",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
+      "variations": "1",
+      "mentioned_by": "16",
+      "is_monitored": true
     },
     {
       "id": 38,
-      "name": "Phind",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "python",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "13",
       "is_monitored": false
     },
     {
       "id": 39,
-      "name": "Pieces",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 40,
-      "name": "Pika",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 41,
-      "name": "Redmore Studio",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "reinforcement learning",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "3",
       "is_monitored": false
     },
     {
       "id": 42,
-      "name": "Replicate",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "typescript",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "4",
       "is_monitored": false
     },
     {
       "id": 43,
-      "name": "Replit",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 44,
-      "name": "Resemble AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 45,
-      "name": "Runway",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "processing",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "12",
       "is_monitored": false
     },
     {
       "id": 46,
-      "name": "SambaNova",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 47,
-      "name": "Scale AI",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
-    },
-    {
-      "id": 48,
-      "name": "Sourcegraph",
-      "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "name": "inference",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "15",
       "is_monitored": false
     },
     {
       "id": 49,
+      "name": "cloud",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "26",
+      "is_monitored": false
+    },
+    {
+      "id": 55,
+      "name": "cloud storage",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 56,
+      "name": "security",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "37",
+      "is_monitored": false
+    },
+    {
+      "id": 57,
+      "name": "cybersecurity",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 58,
+      "name": "data security",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 59,
+      "name": "data",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "45",
+      "is_monitored": false
+    },
+    {
+      "id": 60,
+      "name": "data analysis",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 64,
+      "name": "data processing",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 65,
+      "name": "data science",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 67,
+      "name": "training",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "31",
+      "is_monitored": false
+    },
+    {
+      "id": 70,
+      "name": "fine-tuning",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 71,
+      "name": "model training",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 73,
+      "name": "optimization",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "10",
+      "is_monitored": false
+    },
+    {
+      "id": 76,
+      "name": "model",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "43",
+      "is_monitored": false
+    },
+    {
+      "id": 77,
+      "name": "language model",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "17",
+      "is_monitored": false
+    },
+    {
+      "id": 78,
+      "name": "analysis",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "13",
+      "is_monitored": false
+    },
+    {
+      "id": 81,
+      "name": "learning",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "26",
+      "is_monitored": false
+    },
+    {
+      "id": 85,
+      "name": "development",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "33",
+      "is_monitored": false
+    },
+    {
+      "id": 87,
+      "name": "agentic ai",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": false
+    },
+    {
+      "id": 88,
+      "name": "ai safety",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 90,
+      "name": "amazon",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": false
+    },
+    {
+      "id": 91,
+      "name": "apple",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 92,
+      "name": "chatgpt",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": false
+    },
+    {
+      "id": 93,
+      "name": "code completion",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 94,
+      "name": "code generation",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "8",
+      "is_monitored": false
+    },
+    {
+      "id": 95,
+      "name": "conversational ai",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 96,
+      "name": "github copilot",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 97,
+      "name": "discord",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "13",
+      "is_monitored": false
+    },
+    {
+      "id": 98,
+      "name": "facebook",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 100,
+      "name": "generative ai",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "21",
+      "is_monitored": false
+    },
+    {
+      "id": 101,
+      "name": "github",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "20",
+      "is_monitored": false
+    },
+    {
+      "id": 104,
+      "name": "google",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "21",
+      "is_monitored": false
+    },
+    {
+      "id": 106,
+      "name": "image generation",
+      "type": "synonym",
+      "variations": "3",
+      "mentioned_by": "14",
+      "is_monitored": false
+    },
+    {
+      "id": 108,
+      "name": "text generation",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 109,
+      "name": "linkedin",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "13",
+      "is_monitored": false
+    },
+    {
+      "id": 110,
+      "name": "microsoft",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 112,
+      "name": "nvidia",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "15",
+      "is_monitored": true
+    },
+    {
+      "id": 113,
+      "name": "pytorch",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 117,
+      "name": "voice cloning",
+      "type": "synonym",
+      "variations": "3",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 120,
+      "name": "text-to-speech",
+      "type": "synonym",
+      "variations": "2",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 121,
+      "name": "video generation",
+      "type": "synonym",
+      "variations": "3",
+      "mentioned_by": "8",
+      "is_monitored": false
+    },
+    {
+      "id": 123,
+      "name": "twitter",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "12",
+      "is_monitored": false
+    },
+    {
+      "id": 124,
+      "name": "video editing",
+      "type": "synonym",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 125,
+      "name": "youtube",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "16",
+      "is_monitored": false
+    },
+    {
+      "id": 127,
+      "name": "ai governance",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 128,
+      "name": "responsible ai",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 129,
+      "name": "editing",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "12",
+      "is_monitored": false
+    },
+    {
+      "id": 131,
+      "name": "image editing",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 132,
+      "name": "generation",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "33",
+      "is_monitored": false
+    },
+    {
+      "id": 136,
+      "name": "compliance",
+      "type": "parent-concept",
+      "variations": "0",
+      "mentioned_by": "21",
+      "is_monitored": false
+    },
+    {
+      "id": 137,
+      "name": "hipaa",
+      "type": "child-concept",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 141,
+      "name": "1X",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 147,
+      "name": "Adobe",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 150,
+      "name": "AES",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 153,
+      "name": "AHEAD",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "7",
+      "is_monitored": false
+    },
+    {
+      "id": 156,
+      "name": "AI21 Labs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 164,
+      "name": "Aleph Alpha",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 166,
+      "name": "Alibaba",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 177,
+      "name": "Ally",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "41",
+      "is_monitored": false
+    },
+    {
+      "id": 182,
+      "name": "Andi",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "25",
+      "is_monitored": true
+    },
+    {
+      "id": 184,
+      "name": "Android",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": false
+    },
+    {
+      "id": 186,
+      "name": "Anyscale",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 188,
+      "name": "ANZ",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 197,
+      "name": "Arm",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "12",
+      "is_monitored": false
+    },
+    {
+      "id": 198,
+      "name": "Artificial Analysis",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 208,
+      "name": "AWS",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "17",
+      "is_monitored": false
+    },
+    {
+      "id": 211,
+      "name": "Azure",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 212,
+      "name": "BA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "48",
+      "is_monitored": false
+    },
+    {
+      "id": 225,
+      "name": "Bing",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "8",
+      "is_monitored": false
+    },
+    {
+      "id": 250,
+      "name": "Canva",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 261,
+      "name": "Cerebras",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 267,
+      "name": "Chrome",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 269,
+      "name": "Cisco",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 270,
+      "name": "Cisco Systems",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 272,
+      "name": "Citi",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 282,
+      "name": "Codeium",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 283,
+      "name": "Cognition",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "12",
+      "is_monitored": false
+    },
+    {
+      "id": 285,
+      "name": "Cohere",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": true
+    },
+    {
+      "id": 302,
+      "name": "Cursor",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": true
+    },
+    {
+      "id": 306,
+      "name": "DataRobot",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 318,
+      "name": "Descript",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": true
+    },
+    {
+      "id": 321,
+      "name": "Discover",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "24",
+      "is_monitored": false
+    },
+    {
+      "id": 324,
+      "name": "DOE",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "28",
+      "is_monitored": false
+    },
+    {
+      "id": 326,
+      "name": "DORA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 327,
+      "name": "DPA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 331,
+      "name": "DT",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 337,
+      "name": "DX",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 342,
+      "name": "Eclipse",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 347,
+      "name": "ElevenLabs",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": true
+    },
+    {
+      "id": 349,
+      "name": "Ensemble",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 352,
+      "name": "ESI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "43",
+      "is_monitored": false
+    },
+    {
+      "id": 357,
+      "name": "Exa",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "24",
+      "is_monitored": false
+    },
+    {
+      "id": 362,
+      "name": "Fal",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 375,
+      "name": "Flux",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": true
+    },
+    {
+      "id": 378,
+      "name": "Ford",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "11",
+      "is_monitored": false
+    },
+    {
+      "id": 381,
+      "name": "Fortune",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 386,
+      "name": "G2",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 390,
+      "name": "GCP",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 401,
+      "name": "Google Cloud",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 402,
+      "name": "Google DeepMind",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 410,
+      "name": "H2O.ai",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 420,
+      "name": "HeyGen",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 429,
+      "name": "HuggingFace",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 431,
+      "name": "IBM",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 434,
+      "name": "IDC",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 440,
+      "name": "Inflection AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 442,
+      "name": "Instagram",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "7",
+      "is_monitored": false
+    },
+    {
+      "id": 443,
+      "name": "Intel",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "31",
+      "is_monitored": true
+    },
+    {
+      "id": 453,
+      "name": "JetBrains",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 473,
+      "name": "LangChain",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 477,
+      "name": "Leonardo AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 494,
+      "name": "Luma AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 520,
+      "name": "Meta AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 522,
+      "name": "Midjourney",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 525,
+      "name": "Mistral",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 526,
+      "name": "Mistral AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 532,
+      "name": "Murf AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 537,
+      "name": "NEA",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "8",
+      "is_monitored": false
+    },
+    {
+      "id": 538,
+      "name": "Neo",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "7",
+      "is_monitored": false
+    },
+    {
+      "id": 555,
+      "name": "NU",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "46",
+      "is_monitored": false
+    },
+    {
+      "id": 556,
+      "name": "Nuance",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 559,
+      "name": "NYT",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "9",
+      "is_monitored": false
+    },
+    {
+      "id": 579,
+      "name": "Palantir",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 589,
+      "name": "Perplexity",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 590,
+      "name": "Perplexity AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "0",
+      "is_monitored": true
+    },
+    {
+      "id": 595,
+      "name": "Pi",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "49",
+      "is_monitored": false
+    },
+    {
+      "id": 596,
+      "name": "Pieces",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 597,
+      "name": "Pika",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 610,
+      "name": "PTC",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "14",
+      "is_monitored": false
+    },
+    {
+      "id": 613,
+      "name": "Qwen",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "7",
+      "is_monitored": false
+    },
+    {
+      "id": 615,
+      "name": "Ramp",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 625,
+      "name": "Redmore Studio",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 626,
+      "name": "Reflect",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 627,
+      "name": "Replicate",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": true
+    },
+    {
+      "id": 628,
+      "name": "Replit",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 630,
+      "name": "Resemble ai",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 638,
+      "name": "Runway",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 643,
+      "name": "SambaNova",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 644,
+      "name": "SAML",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "10",
+      "is_monitored": false
+    },
+    {
+      "id": 648,
+      "name": "SAP",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 649,
+      "name": "Scale",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "38",
+      "is_monitored": false
+    },
+    {
+      "id": 650,
+      "name": "Scale AI",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": true
+    },
+    {
+      "id": 656,
+      "name": "SharePoint",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 663,
+      "name": "SKT",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "8",
+      "is_monitored": false
+    },
+    {
+      "id": 664,
+      "name": "Slack",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "6",
+      "is_monitored": false
+    },
+    {
+      "id": 667,
+      "name": "Snowflake",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "4",
+      "is_monitored": false
+    },
+    {
+      "id": 675,
+      "name": "Sourcegraph",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": true
+    },
+    {
+      "id": 687,
       "name": "Stability AI",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 695,
+      "name": "Stripe",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
       "is_monitored": false
     },
     {
-      "id": 50,
+      "id": 701,
       "name": "Synthesia",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
     },
     {
-      "id": 51,
+      "id": 704,
       "name": "Tabnine",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 715,
+      "name": "Tencent",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
       "is_monitored": false
     },
     {
-      "id": 52,
+      "id": 724,
+      "name": "TikTok",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "5",
+      "is_monitored": false
+    },
+    {
+      "id": 725,
+      "name": "Time",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "43",
+      "is_monitored": false
+    },
+    {
+      "id": 730,
+      "name": "Together",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "13",
+      "is_monitored": false
+    },
+    {
+      "id": 733,
+      "name": "Tool",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "40",
+      "is_monitored": false
+    },
+    {
+      "id": 745,
+      "name": "Uber",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "7",
+      "is_monitored": false
+    },
+    {
+      "id": 748,
+      "name": "UMB",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "13",
+      "is_monitored": false
+    },
+    {
+      "id": 769,
+      "name": "Visual Studio",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "3",
+      "is_monitored": false
+    },
+    {
+      "id": 773,
+      "name": "VS Code",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "7",
+      "is_monitored": false
+    },
+    {
+      "id": 779,
       "name": "Weights & Biases",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
-      "is_monitored": false
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
     },
     {
-      "id": 53,
+      "id": 781,
       "name": "WellSaid Labs",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "variations": "1",
+      "mentioned_by": "2",
+      "is_monitored": true
+    },
+    {
+      "id": 785,
+      "name": "WiL",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "34",
       "is_monitored": false
     },
     {
-      "id": 54,
+      "id": 794,
       "name": "You.com",
       "type": "company",
-      "variations": 1,
-      "mentioned_by": 0,
+      "variations": "1",
+      "mentioned_by": "1",
+      "is_monitored": true
+    },
+    {
+      "id": 800,
+      "name": "Zoom",
+      "type": "company",
+      "variations": "1",
+      "mentioned_by": "5",
       "is_monitored": false
     }
   ],
   "by_type": {
     "companies": [
+      "amazon web services",
+      "anthropic",
+      "microsoft azure",
+      "hugging face",
+      "meta",
+      "openai",
+      "ai safety institute",
+      "amazon",
+      "apple",
+      "discord",
+      "facebook",
+      "github",
+      "gitlab",
+      "google",
+      "linkedin",
+      "microsoft",
+      "nvidia",
+      "twitter",
+      "youtube",
+      "01.AI",
+      "15 ai",
+      "1688",
+      "1X",
+      "a16z",
+      "A$AP Rocky",
+      "AARP",
+      "Accenture",
+      "Adept",
+      "Adobe",
+      "ADP",
+      "ADT",
+      "AES",
+      "Aetna",
+      "AgriSphere",
+      "AHEAD",
+      "Ai2",
+      "AI21",
       "AI21 Labs",
+      "AI at Meta",
+      "AI Labs",
+      "Aion-labs",
+      "Airbus",
+      "Air Force",
+      "AIXplan",
+      "AK Bank",
       "Aleph Alpha",
-      "Amazon CodeWhisperer",
-      "AMD",
+      "Aleph Alpha GmbH",
+      "Alibaba",
+      "Alibaba Cloud",
+      "Alibaba Group",
+      "Alibaba International",
+      "AliExpress",
+      "Alimama",
+      "AliOS",
+      "Alipay",
+      "AliTelecom",
+      "AllFly",
+      "AlloyDB",
+      "Ally",
+      "Alpha Sense",
+      "AMC Networks",
+      "American Airlines",
+      "Ancileo",
       "Andi",
-      "Anthropic",
+      "Andreessen Horowitz",
+      "Android",
+      "Anduril",
       "Anyscale",
+      "Anysphere",
+      "ANZ",
+      "ANZ Bank",
+      "Apache",
+      "Apigee",
+      "AppSheet",
+      "Archer Aviation",
+      "Argilla-io",
+      "Argonne",
+      "Argonne National Laboratory",
+      "Arm",
+      "Artificial Analysis",
+      "Ashby",
+      "Astrazaneca",
+      "AstraZeneca",
+      "athenahealth",
+      "Atlassian",
+      "Atom Computing",
+      "Atomicwork",
+      "AT&T",
+      "Attentive",
+      "AWS",
+      "Axel Springer",
+      "Axios",
+      "Azure",
+      "BA",
+      "BambooHR",
+      "Banco do Brasil",
+      "Bank of America",
+      "BatchData",
+      "Bayer",
+      "BCG",
+      "Becker Friedman Institute",
+      "Bell",
+      "Benchling",
+      "Bertelsmann",
+      "Bestseller",
+      "Billcom",
+      "Bing",
+      "Bitbucket",
+      "Blackbox",
+      "Blackbox.ai",
+      "Black Forest Labs",
+      "Bloomberg",
+      "BlueDot",
+      "Bmw",
+      "BNP Paribas",
+      "Booz Allen Hamilton",
+      "Borderless AI",
+      "Börse Stuttgart",
+      "Bosch",
+      "Botika",
+      "BPC",
+      "Bradesco",
+      "Brex",
+      "Bria",
+      "Bridgewater",
+      "BSH",
+      "BSMH",
+      "BT Group",
+      "Business Insider",
+      "Buzzfeed",
+      "Bytedance",
+      "Canva",
+      "Capgemini",
+      "Captide",
+      "Carahsoft",
+      "Cartesia",
+      "Casetext",
+      "CAZ Investments",
+      "CBA",
+      "CBS",
+      "CDAO",
+      "Cengage",
       "Cerebras",
+      "Character AI",
+      "Charisma AI",
+      "Chess.com",
+      "Chipotle",
+      "C.H. Robinson",
+      "Chrome",
+      "Cintra Ferrovial",
+      "Cisco",
       "Cisco Systems",
+      "CI&T",
+      "Citi",
+      "CLARIVATE",
+      "Clay",
+      "Clearwater Analytics",
+      "Cleveland Clinic",
+      "Cloudflare",
+      "CMA CGM",
+      "CNBC",
+      "CocaCola",
+      "Coca-Cola FEMSA",
       "Codeium",
+      "Cognition",
+      "Cognitive Computations",
       "Cohere",
+      "CohereLabs",
+      "Coinbase",
+      "Coke",
+      "Colab",
+      "ComfyUI",
+      "Composite Global",
+      "Concordance",
+      "Conviction",
+      "Cookieyes",
+      "Core3D",
+      "CoreWeave",
+      "Coyote Logistics",
+      "CPKC",
+      "CrewAI",
+      "Crew.ai",
+      "Cummins",
       "Cursor",
-      "DALL-E",
+      "CVS",
+      "Databricks",
+      "DataCrunch",
       "DataRobot",
+      "Davivienda",
+      "Decagon",
+      "Decathlon",
+      "DeepJudge",
+      "DeepSeek AI",
+      "Defense Innovation Unit",
+      "Dell",
+      "Dell Technologies",
+      "Deloitte",
+      "Delphi",
+      "Department of Defense",
       "Descript",
+      "Deutsche Bank",
+      "DingTalk",
+      "Discover",
+      "DLA Piper",
+      "Docusign",
+      "DOE",
+      "Doosan Infracore",
+      "DORA",
+      "DPA",
+      "DraftWise",
+      "Dropbox",
+      "DRW",
+      "DT",
+      "DuckDuckGo",
+      "Duck Duck Go",
+      "Duo",
+      "Duolingo",
+      "Dupont",
+      "DX",
+      "Earth Fire Alliance",
+      "Easyhome",
+      "Eaton",
+      "ebay",
+      "Eclipse",
+      "EDGLRD",
+      "EDUCA EDTECH",
+      "Elai",
+      "Elastic",
       "ElevenLabs",
+      "Enfuse",
+      "Ensemble",
+      "Epsilon",
+      "Ericsson",
+      "ESI",
+      "eSpeak",
+      "ESTsoft",
+      "Everest Group",
+      "Eviden",
+      "Exa",
+      "Exafunction",
+      "Fabler",
+      "Fabula",
+      "FakeYou",
+      "Fal",
+      "FedEx",
+      "Fermat Research",
+      "Fern",
+      "Figma",
+      "Financial Review",
+      "Firebase",
+      "Fireworks",
+      "Fitbit",
+      "Five9",
+      "Flexport",
+      "Fliggy",
+      "Fliki",
       "Flux",
-      "GitHub Copilot",
+      "Fly.io",
+      "Forbes",
+      "Ford",
+      "FordDirect",
+      "Fortnite",
+      "Fortune",
+      "Franklin Templeton",
+      "Freepik",
+      "French Agency for AI in Defense",
+      "Fujitsu",
+      "G2",
+      "G42",
+      "GAFG",
+      "Gartner",
+      "GCP",
+      "GeForce",
+      "General Artificial Intelligence Proficiency Institute (GenAIPI)",
+      "General Mills",
+      "General Motors",
+      "Genspark",
+      "Getty Images",
+      "GitBook",
+      "Glencore",
+      "GoAnimate",
+      "Goldman Sachs",
+      "Google Cloud",
       "Google DeepMind",
+      "Google Inc.",
+      "Google Nest",
+      "Google Research",
+      "Gradio",
+      "Grammarly",
+      "Greycroft",
+      "Groq",
       "H2O.ai",
+      "Hackensack Meridian Health",
+      "Handshake",
+      "Harvard University",
+      "Hasura",
+      "HCA Healthcare",
+      "HDFC",
+      "Headshot Pro",
+      "Heineken",
+      "Helvia",
       "HeyGen",
-      "Hugging Face",
-      "Ideogram",
+      "Hg Capital",
+      "HHS & CDC",
+      "Honeywell",
+      "Howard-Hughes",
+      "HPCWire",
+      "HPE",
+      "Huawei",
+      "Hubspot",
+      "HuggingFace",
+      "Humana",
+      "IBM",
+      "ICONIQ",
+      "Icons8",
+      "IDC",
+      "Ideogram AI",
+      "Imaginary Advice",
+      "IMAX",
+      "Infineon",
+      "Infinite Peripherals",
       "Inflection AI",
+      "Instacart",
+      "Instagram",
       "Intel",
+      "IntelliJ IDEA",
+      "Intenseye",
+      "Intercom",
+      "Invideo AI",
+      "Itaú",
+      "Ivona",
+      "Jacobs",
+      "James River Church",
+      "Jasper",
+      "JetBrains",
+      "JIRA",
+      "Johnson Lambert",
+      "JPMorganChase",
+      "Juhuasuan",
+      "Jules",
+      "Kaiser Permanente",
+      "Keras",
+      "Ketch",
+      "Kinder Morgan",
+      "Klarna",
+      "Komatsu",
+      "KomBea",
+      "KPMG",
+      "KPN",
+      "Kratos-AI",
+      "Krea",
+      "L3Harris",
+      "Labelbox",
+      "Laion AI",
       "LangChain",
+      "Lawrence Livermore National Laboratory",
+      "Lennar",
+      "Lenovo",
       "Leonardo AI",
+      "LG CNS",
+      "LG Electronics",
+      "Liberty Mutual",
+      "Lightricks",
+      "Lightspeed",
+      "Linus Tech Tips",
+      "Linux Foundation",
+      "Lionsgate",
+      "Listnr",
+      "Longshot",
+      "Looker",
+      "Los Alamos",
+      "Lovable",
+      "Lovo AI",
+      "Lowe's",
+      "Luma",
       "Luma AI",
+      "Luma Labs",
+      "Luxembourg Government",
+      "Lyft",
+      "Lyrebird",
+      "Madonna",
+      "Magnific",
+      "Maitai",
+      "Makers Fund",
+      "Mandiant",
+      "MarketAxess",
+      "Mars Science & Diagnostics",
+      "Maryville",
+      "Mastercard",
+      "Materna",
+      "Mattel",
+      "Mayo Clinic",
+      "McKinsey & Company",
+      "McLaren Racing",
+      "Media.Monks",
+      "Menlo Ventures",
+      "Meraki",
+      "MercadoLibre",
+      "Mercado Libre",
+      "Mercor",
+      "MESH INTELLIGENT TECHNOLOGIES, Inc.",
       "Meta AI",
+      "Meta Careers",
       "Midjourney",
+      "Mimecast",
+      "Mintlify",
+      "Mistral",
       "Mistral AI",
+      "Modern Treasury",
+      "Moody's",
+      "Moonface",
+      "Morgan Stanley",
+      "Muon Space",
       "Murf AI",
-      "Neeva",
-      "NVIDIA",
-      "OpenAI",
+      "Musixmatch",
+      "Namecoach",
+      "Narakeet",
+      "Natural Readers",
+      "NEA",
+      "Neo",
+      "Neon",
+      "NetApp",
+      "Netdata",
+      "Netflix",
+      "New Computer",
+      "NHS",
+      "nnamu",
+      "Nokia",
+      "Norby",
+      "North American",
+      "Northern Health",
+      "NorthWind Technical Services",
+      "Notevibes",
+      "Notion",
+      "Novacomp",
+      "NTT docomo",
+      "NU",
+      "Nuance",
+      "Nubank",
+      "Nutanix",
+      "NYT",
+      "NYU Tisch",
+      "Oddcast",
+      "Ogilvy",
+      "Okta",
+      "Ollama",
+      "Omdia",
+      "Omnicom",
+      "One Acre Fund",
+      "One Zero",
+      "OpenArt",
+      "OpenCall",
+      "OpenLM",
+      "OpenRouter",
+      "OpenSea",
+      "OpenTelemetry",
+      "Oracle",
+      "Oscar Health",
+      "Outscale",
+      "Pacific Gas & Electric",
       "Palantir",
+      "Panasonic Energy North America",
+      "Paramount",
+      "Parasail",
+      "Parexel",
+      "Parsons School of Design",
+      "Paylocity",
+      "Penda Health",
+      "Pepsico",
+      "Perforce",
+      "Perplexity",
       "Perplexity AI",
-      "Phind",
+      "PERSO.ai",
+      "Pexels",
+      "Pfizer",
+      "Photo AI",
+      "Pi",
       "Pieces",
       "Pika",
+      "Pi Lab",
+      "Pixar",
+      "Playground AI",
+      "Play HT",
+      "Playwright",
+      "Podcastle",
+      "Podium",
+      "PostgresSQL",
+      "Priceline",
+      "Prisma",
+      "Progressive",
+      "PROVOKE Solutions",
+      "PTC",
+      "PwC",
+      "Quora",
+      "Qwen",
+      "Rakuten",
+      "Ramp",
+      "Ray-Ban",
+      "Razer",
+      "Rbc",
+      "ReadSpeaker",
+      "Reality Labs",
+      "ReasonLabs",
+      "Recraft AI",
+      "Red Games",
+      "Red Hat",
       "Redmore Studio",
+      "Reflect",
       "Replicate",
       "Replit",
-      "Resemble AI",
+      "Replit, Inc.",
+      "Resemble ai",
+      "Retell AI",
+      "Reuters",
+      "Ringier",
+      "Rippling",
+      "Rokt",
+      "Roland Berger",
+      "Runware",
       "Runway",
+      "Sada",
+      "Safe Software",
+      "Salesforce",
+      "Salesforce ventures",
       "SambaNova",
+      "SAML",
+      "Samsara",
+      "Samsung",
+      "Santander",
+      "SAP",
+      "Scale",
       "Scale AI",
+      "Schwarz Gruppe",
+      "Second Front",
+      "Sei AI",
+      "SEQUOIA",
+      "ServiceNow",
+      "SharePoint",
+      "Shopify",
+      "Siemens",
+      "SiliconANGLE",
+      "Singapore's Ministry of Defence (MINDEF)",
+      "Singtel",
+      "SITA",
+      "SKT",
+      "Slack",
+      "Smart Company",
+      "SmugMug",
+      "Snowflake",
+      "Snwoflag",
+      "SoftBank Corp.",
+      "SOMPO",
+      "Sompo Japan",
+      "Sonnedix",
+      "Sopra Steria",
+      "Soundstripe",
       "Sourcegraph",
+      "Spark Capital",
+      "Speechelo",
+      "Speechify",
+      "Speechmax",
+      "Spellbook",
+      "Spirit Airlines",
+      "Splunk",
+      "Spotify",
+      "Springbok Group",
+      "Squadcast",
+      "Square",
       "Stability AI",
+      "Stability AI Ltd",
+      "Stable Audio",
+      "StackIT",
+      "Stanford",
+      "State Farm",
+      "Stellantis",
+      "Stride Learning",
+      "Stripe",
+      "Supermaven",
+      "Supertab",
+      "SV Angel",
+      "Swiss Re",
+      "Synopsys",
       "Synthesia",
+      "Synthesia IO",
+      "Synthesis",
       "Tabnine",
+      "TACC",
+      "Tako",
+      "Tampa General Hospital",
+      "Taobao Global",
+      "Taobao Marketplace",
+      "Tavus",
+      "TD Bank",
+      "TechCrunch",
+      "Telekom",
+      "Teleperformance",
+      "Tencent",
+      "The Browser Company",
+      "The Frameworks",
+      "The Home Depot",
+      "The New York Times",
+      "The Ohio State University",
+      "Thiess PTY",
+      "ThinkProject",
+      "Thomson Reuters",
+      "TikTok",
+      "Time",
+      "Tiny",
+      "Tipalti",
+      "Tmall",
+      "T-Mobile",
+      "Together",
+      "Togetherai",
+      "Tony Hawk",
+      "Tool",
+      "Toyota",
+      "Trellix",
+      "Tribeca Festival",
+      "Trivago",
+      "TrueFan",
+      "TrustArc",
+      "Trustpilot",
+      "TTSMP3",
+      "TTS Reader",
+      "Turo",
+      "Twilio",
+      "Uber",
+      "Uberduck",
+      "UC Berkeley",
+      "UMB",
+      "Umbrella",
+      "Unify",
+      "United Airlines",
+      "University of California, Berkeley",
+      "University of Chicago",
+      "Univision",
+      "Unsplash",
+      "Upwork",
+      "Urban Roots",
+      "U.S. Army",
+      "US Department of Homeland Security",
+      "US Foods",
+      "U.S. National Labs",
+      "Varda",
+      "Veed IO",
+      "Veolia",
+      "Vercel",
+      "Vertex AI",
+      "Vertiv",
+      "Virgin Pulse",
+      "Visual Studio",
+      "Vmware",
+      "Voicemaker",
+      "Vox",
+      "VS Code",
+      "Vyond",
+      "Walgreens",
+      "Wavel AI",
+      "Wavespeed AI",
+      "Wayve",
       "Weights & Biases",
+      "Weizmann Institute",
       "WellSaid Labs",
-      "You.com"
+      "Wells Fargo",
+      "Wendy's Quality Supply Chain Co-op",
+      "Westcap",
+      "WiL",
+      "Windsurf",
+      "WordPress",
+      "Workday",
+      "World Food Programme",
+      "WPP",
+      "Writer",
+      "Xerox",
+      "Y Combinator",
+      "You.com",
+      "Zai-org",
+      "Zapier",
+      "Zilliz",
+      "Zinus",
+      "Zomato",
+      "Zoom"
     ],
     "products": [],
     "technologies": [],
     "concepts": [],
     "people": [],
-    "other": []
+    "other": [
+      "artificial general intelligence",
+      "artificial intelligence",
+      "application programming interface",
+      "application",
+      "authentication",
+      "continuous integration/continuous deployment",
+      "claude",
+      "computer vision",
+      "continuous deployment",
+      "continuous integration",
+      "central processing unit",
+      "database",
+      "deep learning",
+      "deepmind",
+      "docker",
+      "google cloud platform",
+      "gpt-3",
+      "gpt-4",
+      "graphics processing unit",
+      "integrated development environment",
+      "internet of things",
+      "javascript",
+      "kubernetes",
+      "large language model",
+      "llama",
+      "machine learning",
+      "natural language generation",
+      "natural language processing",
+      "natural language understanding",
+      "neural network",
+      "optical character recognition",
+      "python",
+      "reinforcement learning",
+      "software development kit",
+      "software as a service",
+      "typescript",
+      "processing",
+      "audio processing",
+      "batch processing",
+      "inference",
+      "batch inference",
+      "model inference",
+      "cloud",
+      "cloud computing",
+      "cloud deployment",
+      "cloud migration",
+      "cloud native",
+      "cloud security",
+      "cloud storage",
+      "security",
+      "cybersecurity",
+      "data security",
+      "data",
+      "data analysis",
+      "data augmentation",
+      "data engineering",
+      "data labeling",
+      "data processing",
+      "data science",
+      "data storage",
+      "training",
+      "distributed training",
+      "few-shot learning",
+      "fine-tuning",
+      "model training",
+      "zero-shot learning",
+      "optimization",
+      "hyperparameter optimization",
+      "performance optimization",
+      "model",
+      "language model",
+      "analysis",
+      "sentiment analysis",
+      "text analysis",
+      "learning",
+      "supervised learning",
+      "transfer learning",
+      "unsupervised learning",
+      "development",
+      "web development",
+      "agentic ai",
+      "ai safety",
+      "chatgpt",
+      "code completion",
+      "code generation",
+      "conversational ai",
+      "github copilot",
+      "general data protection regulation",
+      "generative ai",
+      "general language understanding evaluation",
+      "human evaluation",
+      "image generation",
+      "image recognition",
+      "text generation",
+      "massive multitask language understanding",
+      "pytorch",
+      "retrieval augmented generation",
+      "reinforcement learning from human feedback",
+      "speech recognition",
+      "voice cloning",
+      "speech-to-text",
+      "tensorflow",
+      "text-to-speech",
+      "video generation",
+      "transformers",
+      "video editing",
+      "ai ethics",
+      "ai governance",
+      "responsible ai",
+      "editing",
+      "audio editing",
+      "image editing",
+      "generation",
+      "audio generation",
+      "music generation",
+      "speech generation",
+      "compliance",
+      "hipaa"
+    ]
   }
 }
