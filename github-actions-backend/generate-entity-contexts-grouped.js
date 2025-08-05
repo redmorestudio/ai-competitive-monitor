@@ -7,6 +7,12 @@
  */
 
 require('dotenv').config();
+
+// SSL Certificate fix for Heroku PostgreSQL
+if (process.env.NODE_ENV === 'production' || process.env.POSTGRES_CONNECTION_STRING) {
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+}
+
 const { db, end } = require('./postgres-db');
 const fs = require('fs');
 const path = require('path');

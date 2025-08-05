@@ -407,6 +407,53 @@ jobs:
         env:
           POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
       
+      - name: Generate entity contexts (CRITICAL for KWIC)
+        run: |
+          cd github-actions-backend
+          
+          echo "📝 Generating entity contexts for Keyword in Context (KWIC) feature..."
+          echo "This step extracts text snippets showing where entities appear in content"
+          
+          # First ensure we have markdown content
+          echo "Step 1: Converting HTML to markdown if needed..."
+          if [ -f "markdown-converter-three-db-postgres.js" ]; then
+            echo "Running markdown converter to ensure content is ready..."
+            node markdown-converter-three-db-postgres.js || echo "⚠️  Markdown conversion had issues"
+          fi
+          
+          # Now generate contexts from the markdown
+          echo "Step 2: Extracting contexts for all entities..."
+          if [ -f "generate-entity-contexts-grouped.js" ]; then
+            echo "Generating contexts for grouped entities (may take 2-3 minutes)..."
+            if node generate-entity-contexts-grouped.js; then
+              echo "✅ Entity contexts generated successfully"
+            else
+              echo "⚠️  Context generation failed, KWIC feature will not work"
+            fi
+          else
+            echo "❌ Context generation script not found!"
+            echo "   KWIC feature will be broken in dashboard"
+          fi
+          
+          # Verify context files were created and have content
+          echo "Step 3: Verifying context files..."
+          if [ -f "../api-data/contexts-companies.json" ]; then
+            CONTEXT_SIZE=$(ls -lh ../api-data/contexts-*.json | awk '{print $5}' | head -1)
+            echo "✅ Context files generated:"
+            ls -lh ../api-data/contexts-*.json
+            
+            # Check if files are reasonably sized (should be > 100KB)
+            if [ $(stat -f%z "../api-data/contexts-companies.json" 2>/dev/null || stat -c%s "../api-data/contexts-companies.json" 2>/dev/null || echo 0) -gt 100000 ]; then
+              echo "✅ Context files have substantial content"
+            else
+              echo "⚠️  Context files seem too small - KWIC may not work properly"
+            fi
+          else
+            echo "❌ No context files found - KWIC feature will be broken!"
+          fi
+        env:
+          POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+      
       - name: Generate static data files (PostgreSQL)
         run: |
           cd github-actions-backend

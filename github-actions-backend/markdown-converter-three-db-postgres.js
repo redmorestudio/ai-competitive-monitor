@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+// Load environment variables
+require('dotenv').config();
+
 // SSL Certificate fix for Heroku PostgreSQL
 if (process.env.NODE_ENV === 'production' || process.env.POSTGRES_CONNECTION_STRING) {
   process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
