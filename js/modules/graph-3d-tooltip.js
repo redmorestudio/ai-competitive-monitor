@@ -1,12 +1,12 @@
 /**
  * @module graph-3d-tooltip
- * @description Tooltip system for displaying node information on hover with clickable filters
+ * @description Tooltip system for displaying node information on hover
  * @since 1.0.0
  */
 
 /**
  * 3D Graph Tooltip Module
- * Handles floating tooltip display and interaction with clickable tag filters
+ * Handles floating tooltip display and interaction
  */
 
 export class Graph3DTooltip {
@@ -15,8 +15,6 @@ export class Graph3DTooltip {
         this.tooltip = null;
         this.currentNode = null;
         this.mousePosition = { x: 0, y: 0 };
-        this.isHoveringTooltip = false;
-        this.hideTimeout = null;
     }
 
     /**
@@ -41,7 +39,7 @@ export class Graph3DTooltip {
             padding: 12px;
             font-size: 12px;
             color: #eee;
-            pointer-events: auto;
+            pointer-events: none;
             opacity: 0;
             transition: opacity 0.2s ease;
             max-width: 300px;
@@ -50,17 +48,6 @@ export class Graph3DTooltip {
             z-index: 1000;
         `;
         document.body.appendChild(this.tooltip);
-
-        // Add tooltip hover listeners to keep it visible when hovering over it
-        this.tooltip.addEventListener('mouseenter', () => {
-            this.isHoveringTooltip = true;
-            clearTimeout(this.hideTimeout);
-        });
-
-        this.tooltip.addEventListener('mouseleave', () => {
-            this.isHoveringTooltip = false;
-            this.scheduleHide();
-        });
     }
 
     /**
@@ -70,9 +57,7 @@ export class Graph3DTooltip {
         document.addEventListener('mousemove', (e) => {
             this.mousePosition.x = e.clientX;
             this.mousePosition.y = e.clientY;
-            if (!this.isHoveringTooltip) {
-                this.updatePosition();
-            }
+            this.updatePosition();
         });
     }
 
@@ -86,7 +71,6 @@ export class Graph3DTooltip {
             return;
         }
 
-        clearTimeout(this.hideTimeout);
         this.currentNode = node;
         this.tooltip.innerHTML = this.generateContent(node);
         this.tooltip.style.opacity = '1';
@@ -94,25 +78,11 @@ export class Graph3DTooltip {
     }
 
     /**
-     * Schedule hiding the tooltip
-     */
-    scheduleHide() {
-        clearTimeout(this.hideTimeout);
-        this.hideTimeout = setTimeout(() => {
-            if (!this.isHoveringTooltip) {
-                this.hide();
-            }
-        }, 200);
-    }
-
-    /**
-     * Hide tooltip immediately
+     * Hide tooltip
      */
     hide() {
-        if (!this.isHoveringTooltip) {
-            this.currentNode = null;
-            this.tooltip.style.opacity = '0';
-        }
+        this.currentNode = null;
+        this.tooltip.style.opacity = '0';
     }
 
     /**
@@ -161,27 +131,21 @@ export class Graph3DTooltip {
             // Add products if available
             if (node.products && node.products.length > 0) {
                 content += `<br/><span style="color: #888;">Products:</span><br/>`;
-                content += '<div style="margin-top: 4px;">';
-                const productsToShow = node.products.slice(0, 5);
-                content += productsToShow.map(p => 
-                    `<span class="tag product-tag" onclick="event.stopPropagation(); window.filterByTag('${this.escapeQuotes(p)}')" style="cursor: pointer; background: rgba(255, 152, 0, 0.2); color: #ff9800; padding: 2px 6px; margin: 2px; border-radius: 3px; display: inline-block; font-size: 11px; border: 1px solid rgba(255, 152, 0, 0.4); transition: all 0.2s;" onmouseover="this.style.background='rgba(255, 152, 0, 0.4)'; this.style.transform='scale(1.05)';" onmouseout="this.style.background='rgba(255, 152, 0, 0.2)'; this.style.transform='scale(1)';">${p}</span>`
-                ).join(' ');
-                if (node.products.length > 5) {
-                    content += ` <span style="color: #666;">+${node.products.length - 5} more</span>`;
+                content += node.products.slice(0, 3).map(p => `• ${p}`).join('<br/>');
+                if (node.products.length > 3) {
+                    content += `<br/>• ... and ${node.products.length - 3} more`;
                 }
-                content += '</div>';
             }
 
             // Add technologies with clickable tags
             if (node.technologies && node.technologies.length > 0) {
-                content += `<br/><span style="color: #888;">Technologies:</span><br/>`;
+                content += `<br/><br/><span style="color: #888;">Technologies:</span><br/>`;
                 content += '<div style="margin-top: 4px;">';
-                const techsToShow = node.technologies.slice(0, 8);
-                content += techsToShow.map(tech => 
-                    `<span class="tag tech-tag" onclick="event.stopPropagation(); window.filterByTag('${this.escapeQuotes(tech)}')" style="cursor: pointer; background: rgba(0, 255, 136, 0.2); color: #00ff88; padding: 2px 6px; margin: 2px; border-radius: 3px; display: inline-block; font-size: 11px; border: 1px solid rgba(0, 255, 136, 0.4); transition: all 0.2s;" onmouseover="this.style.background='rgba(0, 255, 136, 0.4)'; this.style.transform='scale(1.05)';" onmouseout="this.style.background='rgba(0, 255, 136, 0.2)'; this.style.transform='scale(1)';" title="Click to filter by: ${tech}">${tech}</span>`
+                content += node.technologies.slice(0, 5).map(tech => 
+                    `<span class="tag tech-tag" onclick="window.filterByTag('${tech}')" style="cursor: pointer; background: rgba(0, 255, 136, 0.2); color: #00ff88; padding: 2px 6px; margin: 2px; border-radius: 3px; display: inline-block; font-size: 11px;">${tech}</span>`
                 ).join(' ');
-                if (node.technologies.length > 8) {
-                    content += ` <span style="color: #666;">+${node.technologies.length - 8} more</span>`;
+                if (node.technologies.length > 5) {
+                    content += ` <span style="color: #666;">+${node.technologies.length - 5} more</span>`;
                 }
                 content += '</div>';
             }
@@ -190,12 +154,11 @@ export class Graph3DTooltip {
             if (node.concepts && node.concepts.length > 0) {
                 content += `<br/><span style="color: #888;">AI Concepts:</span><br/>`;
                 content += '<div style="margin-top: 4px;">';
-                const conceptsToShow = node.concepts.slice(0, 8);
-                content += conceptsToShow.map(concept => 
-                    `<span class="tag concept-tag" onclick="event.stopPropagation(); window.filterByTag('${this.escapeQuotes(concept)}')" style="cursor: pointer; background: rgba(0, 255, 255, 0.2); color: #00ffff; padding: 2px 6px; margin: 2px; border-radius: 3px; display: inline-block; font-size: 11px; border: 1px solid rgba(0, 255, 255, 0.4); transition: all 0.2s;" onmouseover="this.style.background='rgba(0, 255, 255, 0.4)'; this.style.transform='scale(1.05)';" onmouseout="this.style.background='rgba(0, 255, 255, 0.2)'; this.style.transform='scale(1)';" title="Click to filter by: ${concept}">${concept}</span>`
+                content += node.concepts.slice(0, 5).map(concept => 
+                    `<span class="tag concept-tag" onclick="window.filterByTag('${concept}')" style="cursor: pointer; background: rgba(0, 255, 255, 0.2); color: #00ffff; padding: 2px 6px; margin: 2px; border-radius: 3px; display: inline-block; font-size: 11px;">${concept}</span>`
                 ).join(' ');
-                if (node.concepts.length > 8) {
-                    content += ` <span style="color: #666;">+${node.concepts.length - 8} more</span>`;
+                if (node.concepts.length > 5) {
+                    content += ` <span style="color: #666;">+${node.concepts.length - 5} more</span>`;
                 }
                 content += '</div>';
             }
@@ -208,43 +171,19 @@ export class Graph3DTooltip {
                 content += `<span style="color: #888; font-size: 11px;">${change.change_type}: ${change.summary?.substring(0, 50)}...</span>`;
             }
 
-            // Add helper text at bottom
-            content += `<div style="margin-top: 10px; padding-top: 8px; border-top: 1px solid #333; font-size: 10px; color: #666; text-align: center;">
-                💡 Click any tag above to filter the graph
-            </div>`;
-
         } else if (node.nodeType === 'technology') {
             content += `
                 <span style="color: #00ff88;">Technology Node</span><br/>
-                <span style="color: #888;">Used by:</span> ${node.companyCount || 0} companies<br/>
-                <div style="margin-top: 8px;">
-                    <button onclick="event.stopPropagation(); window.filterByTag('${this.escapeQuotes(node.name)}')" style="cursor: pointer; background: rgba(0, 255, 136, 0.3); color: #00ff88; padding: 4px 8px; border: 1px solid #00ff88; border-radius: 4px; font-size: 11px; width: 100%; transition: all 0.2s;" onmouseover="this.style.background='rgba(0, 255, 136, 0.5)';" onmouseout="this.style.background='rgba(0, 255, 136, 0.3)';">
-                        🔍 Filter by this technology
-                    </button>
-                </div>
+                <span style="color: #888;">Used by:</span> ${node.companyCount || 0} companies
             `;
         } else if (node.nodeType === 'concept') {
             content += `
                 <span style="color: #00ffff;">AI Concept Node</span><br/>
-                <span style="color: #888;">Implemented by:</span> ${node.companyCount || 0} companies<br/>
-                <div style="margin-top: 8px;">
-                    <button onclick="event.stopPropagation(); window.filterByTag('${this.escapeQuotes(node.name)}')" style="cursor: pointer; background: rgba(0, 255, 255, 0.3); color: #00ffff; padding: 4px 8px; border: 1px solid #00ffff; border-radius: 4px; font-size: 11px; width: 100%; transition: all 0.2s;" onmouseover="this.style.background='rgba(0, 255, 255, 0.5)';" onmouseout="this.style.background='rgba(0, 255, 255, 0.3)';">
-                        🔍 Filter by this concept
-                    </button>
-                </div>
+                <span style="color: #888;">Implemented by:</span> ${node.companyCount || 0} companies
             `;
         }
 
         return content;
-    }
-
-    /**
-     * Escape quotes for use in onclick attributes
-     * @param {string} str - String to escape
-     * @returns {string} Escaped string
-     */
-    escapeQuotes(str) {
-        return str.replace(/'/g, "\\'").replace(/"/g, '\\"');
     }
 
     /**
@@ -298,7 +237,6 @@ export class Graph3DTooltip {
      * Destroy tooltip
      */
     destroy() {
-        clearTimeout(this.hideTimeout);
         if (this.tooltip && this.tooltip.parentNode) {
             this.tooltip.parentNode.removeChild(this.tooltip);
         }
