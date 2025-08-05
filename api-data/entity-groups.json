@@ -1,0 +1,942 @@
+{
+  "metadata": {
+    "generated_at": "2025-08-05T16:26:26.258Z",
+    "version": "1.0",
+    "source": "fallback-generation",
+    "total_raw_entities": 108,
+    "total_groups": 54,
+    "filtered_for_graph": 54,
+    "monitored_companies": 0
+  },
+  "all_entities": [
+    {
+      "id": 1,
+      "name": "AI21 Labs",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 2,
+      "name": "Aleph Alpha",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 3,
+      "name": "Amazon CodeWhisperer",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 4,
+      "name": "AMD",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 5,
+      "name": "Andi",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 6,
+      "name": "Anthropic",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 7,
+      "name": "Anyscale",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 8,
+      "name": "Cerebras",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 9,
+      "name": "Cisco Systems",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 10,
+      "name": "Codeium",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 11,
+      "name": "Cohere",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 12,
+      "name": "Cursor",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 13,
+      "name": "DALL-E",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 14,
+      "name": "DataRobot",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 15,
+      "name": "Descript",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 16,
+      "name": "ElevenLabs",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 17,
+      "name": "Flux",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 18,
+      "name": "GitHub Copilot",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 19,
+      "name": "Google DeepMind",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 20,
+      "name": "H2O.ai",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 21,
+      "name": "HeyGen",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 22,
+      "name": "Hugging Face",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 23,
+      "name": "Ideogram",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 24,
+      "name": "Inflection AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 25,
+      "name": "Intel",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 26,
+      "name": "LangChain",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 27,
+      "name": "Leonardo AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 28,
+      "name": "Luma AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 29,
+      "name": "Meta AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 30,
+      "name": "Midjourney",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 31,
+      "name": "Mistral AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 32,
+      "name": "Murf AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 33,
+      "name": "Neeva",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 34,
+      "name": "NVIDIA",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 35,
+      "name": "OpenAI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 36,
+      "name": "Palantir",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 37,
+      "name": "Perplexity AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 38,
+      "name": "Phind",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 39,
+      "name": "Pieces",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 40,
+      "name": "Pika",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 41,
+      "name": "Redmore Studio",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 42,
+      "name": "Replicate",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 43,
+      "name": "Replit",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 44,
+      "name": "Resemble AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 45,
+      "name": "Runway",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 46,
+      "name": "SambaNova",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 47,
+      "name": "Scale AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 48,
+      "name": "Sourcegraph",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 49,
+      "name": "Stability AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 50,
+      "name": "Synthesia",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 51,
+      "name": "Tabnine",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 52,
+      "name": "Weights & Biases",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 53,
+      "name": "WellSaid Labs",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 54,
+      "name": "You.com",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    }
+  ],
+  "graph_entities": [
+    {
+      "id": 1,
+      "name": "AI21 Labs",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 2,
+      "name": "Aleph Alpha",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 3,
+      "name": "Amazon CodeWhisperer",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 4,
+      "name": "AMD",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 5,
+      "name": "Andi",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 6,
+      "name": "Anthropic",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 7,
+      "name": "Anyscale",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 8,
+      "name": "Cerebras",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 9,
+      "name": "Cisco Systems",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 10,
+      "name": "Codeium",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 11,
+      "name": "Cohere",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 12,
+      "name": "Cursor",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 13,
+      "name": "DALL-E",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 14,
+      "name": "DataRobot",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 15,
+      "name": "Descript",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 16,
+      "name": "ElevenLabs",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 17,
+      "name": "Flux",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 18,
+      "name": "GitHub Copilot",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 19,
+      "name": "Google DeepMind",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 20,
+      "name": "H2O.ai",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 21,
+      "name": "HeyGen",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 22,
+      "name": "Hugging Face",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 23,
+      "name": "Ideogram",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 24,
+      "name": "Inflection AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 25,
+      "name": "Intel",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 26,
+      "name": "LangChain",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 27,
+      "name": "Leonardo AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 28,
+      "name": "Luma AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 29,
+      "name": "Meta AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 30,
+      "name": "Midjourney",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 31,
+      "name": "Mistral AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 32,
+      "name": "Murf AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 33,
+      "name": "Neeva",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 34,
+      "name": "NVIDIA",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 35,
+      "name": "OpenAI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 36,
+      "name": "Palantir",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 37,
+      "name": "Perplexity AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 38,
+      "name": "Phind",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 39,
+      "name": "Pieces",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 40,
+      "name": "Pika",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 41,
+      "name": "Redmore Studio",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 42,
+      "name": "Replicate",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 43,
+      "name": "Replit",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 44,
+      "name": "Resemble AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 45,
+      "name": "Runway",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 46,
+      "name": "SambaNova",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 47,
+      "name": "Scale AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 48,
+      "name": "Sourcegraph",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 49,
+      "name": "Stability AI",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 50,
+      "name": "Synthesia",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 51,
+      "name": "Tabnine",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 52,
+      "name": "Weights & Biases",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 53,
+      "name": "WellSaid Labs",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    },
+    {
+      "id": 54,
+      "name": "You.com",
+      "type": "company",
+      "variations": 1,
+      "mentioned_by": 0,
+      "is_monitored": false
+    }
+  ],
+  "by_type": {
+    "companies": [
+      "AI21 Labs",
+      "Aleph Alpha",
+      "Amazon CodeWhisperer",
+      "AMD",
+      "Andi",
+      "Anthropic",
+      "Anyscale",
+      "Cerebras",
+      "Cisco Systems",
+      "Codeium",
+      "Cohere",
+      "Cursor",
+      "DALL-E",
+      "DataRobot",
+      "Descript",
+      "ElevenLabs",
+      "Flux",
+      "GitHub Copilot",
+      "Google DeepMind",
+      "H2O.ai",
+      "HeyGen",
+      "Hugging Face",
+      "Ideogram",
+      "Inflection AI",
+      "Intel",
+      "LangChain",
+      "Leonardo AI",
+      "Luma AI",
+      "Meta AI",
+      "Midjourney",
+      "Mistral AI",
+      "Murf AI",
+      "Neeva",
+      "NVIDIA",
+      "OpenAI",
+      "Palantir",
+      "Perplexity AI",
+      "Phind",
+      "Pieces",
+      "Pika",
+      "Redmore Studio",
+      "Replicate",
+      "Replit",
+      "Resemble AI",
+      "Runway",
+      "SambaNova",
+      "Scale AI",
+      "Sourcegraph",
+      "Stability AI",
+      "Synthesia",
+      "Tabnine",
+      "Weights & Biases",
+      "WellSaid Labs",
+      "You.com"
+    ],
+    "products": [],
+    "technologies": [],
+    "concepts": [],
+    "people": [],
+    "other": []
+  }
+}
