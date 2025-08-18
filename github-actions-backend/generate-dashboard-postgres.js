@@ -331,7 +331,6 @@ async function generateDashboard() {
             GROUP BY c.name
             HAVING COUNT(ch.id) > 0
             ORDER BY change_count DESC
-            LIMIT 10
         `);
 
         dashboardData.company_activity = companyActivity.map(ca => ({
