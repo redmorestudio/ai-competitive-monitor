@@ -296,6 +296,26 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
       
+      - name: Fix entity groups columns (CRITICAL for groupings)
+        run: |
+          cd github-actions-backend
+          echo "🔧 Adding missing columns for entity grouping functionality..."
+          
+          # CRITICAL: This must run BEFORE entity groupings
+          # Adds: is_monitored, is_active, variation_count columns
+          if [ -f "fix-entity-groups-columns.js" ]; then
+            echo "📊 Running entity groups column fix..."
+            if node fix-entity-groups-columns.js; then
+              echo "✅ Entity columns fixed successfully"
+            else
+              echo "⚠️  Column fix failed, entity groupings may fail"
+            fi
+          else
+            echo "⚠️  Entity columns fix script not found"
+          fi
+        env:
+          POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+      
       - name: Apply entity groupings (PostgreSQL)
         run: |
           cd github-actions-backend
