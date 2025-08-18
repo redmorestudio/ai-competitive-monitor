@@ -148,7 +148,7 @@ class Dashboard {
                  onclick="window.controls.showCompanyDetails('${escapeHtml(companyName)}')">
                 <div class="company-header">
                     <h4>${escapeHtml(companyName)}</h4>
-                    ${hasRecentChanges ? '<span class="activity-indicator">🔴 Recent Activity</span>' : ''}
+                    ${hasRecentChanges ? '<span class="activity-indicator">🔴 Activity</span>' : ''}
                 </div>
                 
                 <div class="company-stats">
@@ -216,7 +216,7 @@ class Dashboard {
             
             if (highInterestChanges.length === 0) {
                 this.recentChangesContainer.innerHTML = 
-                    '<p style="color: var(--text-secondary);">No high-interest changes detected recently.</p>';
+                    '<p style="color: var(--text-secondary);">No high-interest changes to display.</p>';
                 return;
             }
             
