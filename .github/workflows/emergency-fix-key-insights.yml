@@ -1,0 +1,49 @@
+name: Emergency Database Fix - key_insights Column
+
+on:
+  workflow_dispatch:
+
+jobs:
+  fix-database:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          cd github-actions-backend
+          npm install
+
+      - name: Run emergency fix
+        env:
+          POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+        run: |
+          cd github-actions-backend
+          node emergency-fix-key-insights-column.js
+
+      - name: Verify fix
+        env:
+          POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+        run: |
+          cd github-actions-backend
+          node -e "
+          const { db, end } = require('./postgres-db');
+          (async () => {
+            const result = await db.get(\`
+              SELECT column_name, data_type, udt_name
+              FROM information_schema.columns
+              WHERE table_schema = 'intelligence'
+              AND table_name = 'enhanced_analysis'
+              AND column_name = 'key_insights'
+            \`);
+            console.log('Column verification:', result);
+            await end();
+          })().catch(console.error);
+          "

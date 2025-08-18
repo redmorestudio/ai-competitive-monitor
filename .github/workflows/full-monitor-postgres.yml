@@ -39,9 +39,9 @@ on:
         type: boolean
         default: true
   
-  # Optionally run on schedule (disabled by default)
-  # schedule:
-  #   - cron: '0 */4 * * *'  # Every 4 hours
+  # Run on schedule - every 4 hours
+  schedule:
+    - cron: '0 */4 * * *'  # Every 4 hours
 
 permissions:
   contents: write
