@@ -1,0 +1,102 @@
+{
+  "id": 1133,
+  "company": "DALL-E",
+  "page_url": "pricing",
+  "detected_at": "2025-08-18T15:57:16.786Z",
+  "change_type": "modified",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "The content changed from a blocked page to a detailed pricing page for ChatGPT, including various plans such as Free, Plus, Pro, Team, and Enterprise, with their respective features and pricing.",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "The content changed from a blocked page to a detailed pricing page for ChatGPT, including various plans such as Free, Plus, Pro, Team, and Enterprise, with their respective features and pricing.",
+    "change_type": "update",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of new pricing plans",
+      "Detailed features for each plan",
+      "Pricing information for each plan",
+      "Comparison of features across plans"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of new pricing plans and detailed features indicates a major shift in OpenAI's business strategy, potentially targeting a wider range of customers and increasing revenue.",
+    "market_signals": [
+      "Increased competition in the AI market",
+      "Growing demand for AI-powered products and services"
+    ],
+    "competitive_implications": "The introduction of new pricing plans and features may put pressure on competitors to respond with similar offerings, potentially leading to increased competition in the AI market.",
+    "strategic_direction": "OpenAI's strategic direction appears to be focused on expanding its customer base and increasing revenue through the introduction of new pricing plans and features."
+  },
+  "entities": {
+    "products": [
+      "ChatGPT",
+      "GPT-5",
+      "GPT-4o",
+      "GPT-4.1",
+      "GPT-4.5",
+      "OpenAI o3",
+      "OpenAI o4-mini"
+    ],
+    "features": [
+      "Advanced voice",
+      "Advanced voice with video",
+      "Standard voice",
+      "Memory",
+      "Memory with past chats",
+      "Search",
+      "Canvas",
+      "Code edits on macOS",
+      "ChatGPT agent",
+      "Projects"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "GPT-5",
+      "GPT-4o",
+      "GPT-4.1",
+      "GPT-4.5",
+      "OpenAI o3",
+      "OpenAI o4-mini"
+    ],
+    "people": [],
+    "pricing": [
+      "$0/month (Free)",
+      "$20/month (Plus)",
+      "$200/month (Pro)",
+      "$25/user/month (Team)",
+      "Custom pricing (Enterprise)"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "OpenAI has introduced new pricing plans and features for ChatGPT",
+      "The new plans and features are targeted at a wide range of customers, from individuals to enterprises"
+    ],
+    "opportunities": [
+      "Increased revenue potential for OpenAI",
+      "Expanded customer base for OpenAI"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential cannibalization of existing revenue streams"
+    ],
+    "recommended_actions": [
+      "Monitor OpenAI's pricing and feature strategy",
+      "Assess the impact of OpenAI's new pricing plans and features on the competitive landscape"
+    ]
+  },
+  "key_insights": [
+    "OpenAI has introduced new pricing plans and features for ChatGPT",
+    "The new plans and features are targeted at a wide range of customers, from individuals to enterprises"
+  ],
+  "business_impact": "The introduction of new pricing plans and detailed features indicates a major shift in OpenAI's business strategy, potentially targeting a wider range of customers and increasing revenue.",
+  "competitive_implications": "The introduction of new pricing plans and features may put pressure on competitors to respond with similar offerings, potentially leading to increased competition in the AI market.",
+  "content_hash_before": "6973dddd3ef9cb6a2932702f31777faad9c9bf3124d147a84f31aadb6d139546",
+  "content_hash_after": "5739f12cd70638b1042d92ed446d8189df942e5d66c13d0a3487418e03f2493c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

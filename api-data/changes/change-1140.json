@@ -1,0 +1,71 @@
+{
+  "id": 1140,
+  "company": "Codeium",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T15:56:28.341Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "New blog post 'Windsurf Wave 12: Devin features in Windsurf' added, and 'Our Brand' blog post removed from the main page",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "New blog post 'Windsurf Wave 12: Devin features in Windsurf' added, and 'Our Brand' blog post removed from the main page",
+    "change_type": "addition and removal",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added new blog post 'Windsurf Wave 12: Devin features in Windsurf'",
+      "Removed 'Our Brand' blog post from the main page",
+      "No changes to pricing, partnerships, or personnel"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update may indicate a shift in the company's focus towards new features and technologies",
+    "market_signals": [
+      "Increased focus on AI and DevOps"
+    ],
+    "competitive_implications": "The company may be trying to stay competitive in the AI and DevOps market by releasing new features and updates",
+    "strategic_direction": "The company is likely to continue focusing on AI and DevOps, with a emphasis on innovation and customer engagement"
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "DeepWiki",
+      "Vibe and Replace",
+      "Dev Containers"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is releasing new features and updates regularly",
+      "The company is focusing on AI and DevOps"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other AI and DevOps companies",
+      "Expansion into new markets"
+    ],
+    "threats": [
+      "Increased competition in the AI and DevOps market",
+      "Difficulty in keeping up with the pace of innovation"
+    ],
+    "recommended_actions": [
+      "Monitor the company's future updates and releases",
+      "Analyze the company's competitors and market trends"
+    ]
+  },
+  "key_insights": [
+    "The company is releasing new features and updates regularly",
+    "The company is focusing on AI and DevOps"
+  ],
+  "business_impact": "The update may indicate a shift in the company's focus towards new features and technologies",
+  "competitive_implications": "The company may be trying to stay competitive in the AI and DevOps market by releasing new features and updates",
+  "content_hash_before": "f6704fe44e0f27c521819e2243ad1df5b1736614d3e21c233288af90c87e89a9",
+  "content_hash_after": "794def7f6dda248d4a2826d405386ea770c2e298ee59b53ba42a642f3392cd82",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

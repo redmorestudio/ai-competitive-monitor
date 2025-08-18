@@ -1,0 +1,84 @@
+{
+  "id": 1134,
+  "company": "Cursor",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T15:57:09.648Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Several blog posts were removed or updated, and new ones were added, including 'Updates to Teams and Auto', 'Cursor Agent CLI', and 'GPT-5 is now available in Cursor'. The featured section now highlights 'Character Prefix Conditioning' and 'Inference Characteristics of Llama'.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Several blog posts were removed or updated, and new ones were added, including 'Updates to Teams and Auto', 'Cursor Agent CLI', and 'GPT-5 is now available in Cursor'. The featured section now highlights 'Character Prefix Conditioning' and 'Inference Characteristics of Llama'.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Removal of old blog posts",
+      "Addition of new blog posts",
+      "Update of featured section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates could lead to increased competitiveness in the AI coding market and attract more customers to their platform.",
+    "market_signals": [
+      "Increased focus on AI research and development",
+      "Expansion of product offerings"
+    ],
+    "competitive_implications": "The company is likely trying to stay ahead of competitors by innovating and expanding their product offerings.",
+    "strategic_direction": "The company is focusing on AI research and development, and expanding their product offerings to stay competitive."
+  },
+  "entities": {
+    "products": [
+      "Cursor Agent",
+      "GPT-5"
+    ],
+    "features": [
+      "Teams and Auto",
+      "CLI"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "GPT-5"
+    ],
+    "people": [
+      "Michael",
+      "Lukas",
+      "Ian",
+      "Balta",
+      "Aman"
+    ],
+    "pricing": [
+      "Updates to Teams and Auto"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is innovating and expanding their product offerings",
+      "There is a focus on AI research and development"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the AI coding market",
+      "Expansion into new markets"
+    ],
+    "threats": [
+      "Increased competition in the AI coding market",
+      "Regulatory challenges"
+    ],
+    "recommended_actions": [
+      "Monitor the company's progress and updates",
+      "Consider partnership opportunities"
+    ]
+  },
+  "key_insights": [
+    "The company is innovating and expanding their product offerings",
+    "There is a focus on AI research and development"
+  ],
+  "business_impact": "The updates could lead to increased competitiveness in the AI coding market and attract more customers to their platform.",
+  "competitive_implications": "The company is likely trying to stay ahead of competitors by innovating and expanding their product offerings.",
+  "content_hash_before": "877242f07aadc997d3ac494536aa35e55573baa5d0bdc1e81363916693b59c5b",
+  "content_hash_after": "7bcca4e37e115baa24dbe6e685af7c02edf3caa6b0d52e5d4773daab4d9e376b",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,67 @@
+{
+  "id": 1126,
+  "company": "ElevenLabs",
+  "page_url": "pricing",
+  "detected_at": "2025-08-18T15:58:01.437Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "Addition of Music to the features list in the Free plan, update of audio quality details in the pricing table, and addition of a CCPA Notice in the Company section",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Addition of Music to the features list in the Free plan, update of audio quality details in the pricing table, and addition of a CCPA Notice in the Company section",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Music added to Free plan features",
+      "Audio quality details updated in pricing table",
+      "CCPA Notice added to Company section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of Music to the Free plan may attract more users to try out the service, potentially leading to more paid conversions. The update of audio quality details provides more transparency and could improve customer satisfaction",
+    "market_signals": [
+      "Increased focus on user experience and feature offerings"
+    ],
+    "competitive_implications": "ElevenLabs is enhancing its service to be more competitive in the AI audio market, particularly with the addition of music features",
+    "strategic_direction": "Expansion of feature set to attract a broader user base and increase competitiveness"
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "Music"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "ElevenLabs is focusing on enhancing user experience and feature set",
+      "The company is expanding its offerings to include music, potentially appealing to a wider audience"
+    ],
+    "opportunities": [
+      "Increased market share through enhanced feature set and user experience"
+    ],
+    "threats": [
+      "Competitors may respond with similar updates, maintaining competitive pressure"
+    ],
+    "recommended_actions": [
+      "Monitor user response to the updated pricing page and new features",
+      "Analyze competitors' reactions and adjust strategy accordingly"
+    ]
+  },
+  "key_insights": [
+    "ElevenLabs is focusing on enhancing user experience and feature set",
+    "The company is expanding its offerings to include music, potentially appealing to a wider audience"
+  ],
+  "business_impact": "The addition of Music to the Free plan may attract more users to try out the service, potentially leading to more paid conversions. The update of audio quality details provides more transparency and could improve customer satisfaction",
+  "competitive_implications": "ElevenLabs is enhancing its service to be more competitive in the AI audio market, particularly with the addition of music features",
+  "content_hash_before": "429479bb54ccb4fc7b6807cc024e6d3dd40000fa63bb09f53e8fa479ab1955d2",
+  "content_hash_after": "4a1895d5c32784b9a4ef111c30218a63be8197f6a09cc90e4c18210378e157f8",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

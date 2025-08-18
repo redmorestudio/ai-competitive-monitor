@@ -1,0 +1,56 @@
+{
+  "id": 1093,
+  "company": "NVIDIA",
+  "page_url": "product",
+  "detected_at": "2025-08-18T16:05:28.691Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "The pixel.gif URL parameter 'cm' changed from '92600d47c6ee076a99821754435066' to 'b09195edf5309c45a8681755533124'",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The pixel.gif URL parameter 'cm' changed from '92600d47c6ee076a99821754435066' to 'b09195edf5309c45a8681755533124'",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated tracking pixel parameter"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact is expected from this minor change.",
+    "market_signals": [
+      "NVIDIA may be updating its tracking or analytics systems."
+    ],
+    "competitive_implications": "No direct competitive implications are apparent from this change.",
+    "strategic_direction": "The change does not indicate a shift in NVIDIA's strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The updated tracking pixel may be used to monitor user behavior or track campaign effectiveness."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor NVIDIA's website for further changes or updates that may indicate a shift in strategy or new product releases."
+    ]
+  },
+  "key_insights": [
+    "The updated tracking pixel may be used to monitor user behavior or track campaign effectiveness."
+  ],
+  "business_impact": "No significant business impact is expected from this minor change.",
+  "competitive_implications": "No direct competitive implications are apparent from this change.",
+  "content_hash_before": "c60ae1fbf9d47e0ce4f4a771578a54c008bcb7aae5275e0d2a1064d1b1e0d86c",
+  "content_hash_after": "d663ea22568e7fc45ea54e5e7f2a4bfa97eb7f594262ad249bc80bba960b759e",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

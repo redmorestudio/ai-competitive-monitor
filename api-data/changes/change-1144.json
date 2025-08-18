@@ -1,0 +1,74 @@
+{
+  "id": 1144,
+  "company": "Cerebras",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T15:56:11.311Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "Image updates and addition of new press releases and blog posts",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Image updates and addition of new press releases and blog posts",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated images in the homepage",
+      "Added new press releases (e.g., NinjaTech AI Unveils World’s Fastest Deep Research, Cerebras Beats NVIDIA Blackwell in Llama 4 Maverick Inference)",
+      "Added new blog posts (e.g., Qwen3 Coder 480B is Live on Cerebras, Cerebras Helps Power OpenAI’s Open Model at World-Record Inference Speeds: gpt-oss-120B Delivers Frontier Reasoning for All)"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates suggest Cerebras is actively promoting its technology and partnerships, potentially to attract more customers and investors.",
+    "market_signals": [
+      "Increased marketing efforts",
+      "Emphasis on performance and partnerships"
+    ],
+    "competitive_implications": "Cerebras is positioning itself as a leader in AI processing, potentially challenging other companies like NVIDIA.",
+    "strategic_direction": "Cerebras is focusing on showcasing its technology and partnerships to drive growth and adoption."
+  },
+  "entities": {
+    "products": [
+      "Cerebras Wafer Scale Engine"
+    ],
+    "features": [
+      "Inference at 20x GPU speed"
+    ],
+    "partnerships": [
+      "OpenAI"
+    ],
+    "technologies": [
+      "AI models"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Cerebras is actively promoting its technology and partnerships",
+      "The company is emphasizing its performance and speed advantages"
+    ],
+    "opportunities": [
+      "Potential for increased adoption and revenue growth"
+    ],
+    "threats": [
+      "Competition from established players like NVIDIA"
+    ],
+    "recommended_actions": [
+      "Monitor Cerebras' marketing and partnership efforts",
+      "Assess the competitive landscape in AI processing"
+    ]
+  },
+  "key_insights": [
+    "Cerebras is actively promoting its technology and partnerships",
+    "The company is emphasizing its performance and speed advantages"
+  ],
+  "business_impact": "The updates suggest Cerebras is actively promoting its technology and partnerships, potentially to attract more customers and investors.",
+  "competitive_implications": "Cerebras is positioning itself as a leader in AI processing, potentially challenging other companies like NVIDIA.",
+  "content_hash_before": "d56407c4af2a13e63c07347d86ced8bc471a1e614cdecd923dfeb37964f1ff2b",
+  "content_hash_after": "d4a8f540c6fbdb31d779927910c6773603aa26584b8d5fa33759ffcb71f86950",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

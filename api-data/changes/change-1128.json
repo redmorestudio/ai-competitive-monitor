@@ -1,0 +1,79 @@
+{
+  "id": 1128,
+  "company": "Descript",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T15:57:50.161Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Addition of a new pricing plan, updates to existing plans, and changes to the features included in each plan",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Addition of a new pricing plan, updates to existing plans, and changes to the features included in each plan",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New pricing plan added: Creator",
+      "Updates to existing pricing plans: Free, Hobbyist",
+      "Changes to features included in each plan, including transcription hours, export quality, and AI actions"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes could impact the company's revenue and customer acquisition, as well as its competitive positioning in the market",
+    "market_signals": [
+      "Increased focus on AI-powered features",
+      "Expansion of pricing options to appeal to a wider range of customers"
+    ],
+    "competitive_implications": "The changes could impact the company's ability to compete with other video editing and AI-powered software companies",
+    "strategic_direction": "The company appears to be focusing on expanding its feature set and pricing options to appeal to a wider range of customers, while also emphasizing its AI-powered capabilities"
+  },
+  "entities": {
+    "products": [
+      "Descript"
+    ],
+    "features": [
+      "Transcription",
+      "AI actions",
+      "Export quality",
+      "Avatars"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [
+      "Free: $0",
+      "Hobbyist: $16",
+      "Creator: $24"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is investing in AI-powered features and expanding its pricing options",
+      "The changes could impact the company's revenue and customer acquisition"
+    ],
+    "opportunities": [
+      "Increased revenue and customer acquisition through expanded pricing options and AI-powered features"
+    ],
+    "threats": [
+      "Increased competition from other video editing and AI-powered software companies"
+    ],
+    "recommended_actions": [
+      "Monitor the company's pricing and feature strategy to understand its impact on the market",
+      "Assess the company's competitive positioning and identify opportunities to differentiate itself"
+    ]
+  },
+  "key_insights": [
+    "The company is investing in AI-powered features and expanding its pricing options",
+    "The changes could impact the company's revenue and customer acquisition"
+  ],
+  "business_impact": "The changes could impact the company's revenue and customer acquisition, as well as its competitive positioning in the market",
+  "competitive_implications": "The changes could impact the company's ability to compete with other video editing and AI-powered software companies",
+  "content_hash_before": "7d31ad143af3b7863184b5cb381eefc080f73ecdb169e64694725f0b29a7f2bd",
+  "content_hash_after": "40da8966a2f5724f4d096b5fa490933cada19db5b95b720d57594b68879ff733",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

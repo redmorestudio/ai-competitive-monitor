@@ -1,0 +1,56 @@
+{
+  "id": 1108,
+  "company": "LangChain",
+  "page_url": "product",
+  "detected_at": "2025-08-18T16:01:27.044Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The 'Resources' section has been updated to replace 'Resources Hub' with 'Guides'.",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "The 'Resources' section has been updated to replace 'Resources Hub' with 'Guides'.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated resource link from 'Resources Hub' to 'Guides'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change is unlikely to have a significant impact on the business.",
+    "market_signals": [
+      "Minor content updates may indicate a focus on refining existing resources."
+    ],
+    "competitive_implications": "The change does not reveal any significant competitive advantages or disadvantages.",
+    "strategic_direction": "The update may suggest a continued focus on providing useful resources to customers."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is refining its resource section to better serve customers."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor the company's resource section for future updates that may indicate strategic shifts."
+    ]
+  },
+  "key_insights": [
+    "The company is refining its resource section to better serve customers."
+  ],
+  "business_impact": "The change is unlikely to have a significant impact on the business.",
+  "competitive_implications": "The change does not reveal any significant competitive advantages or disadvantages.",
+  "content_hash_before": "9be0d18505bdfa0bf9d19d369531c7e360abec297ebda235f9a36125c3e3b343",
+  "content_hash_after": "7a1d1e028f6d5b3068001eed6f65cff0658905febe7715cccf50e8b2d8742b6c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,46 @@
+{
+  "id": 1120,
+  "company": "GitHub Copilot",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T15:58:29.313Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.9,
+  "summary": "No significant changes were detected in the content structure or links between the two versions.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "No significant changes were detected in the content structure or links between the two versions.",
+    "change_type": "no change",
+    "change_scale": "minor",
+    "specific_changes": []
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact is expected from this change, as there is no change.",
+    "market_signals": [],
+    "competitive_implications": "No competitive implications are expected, as there is no change.",
+    "strategic_direction": "No change in strategic direction is indicated."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [],
+  "business_impact": "No significant business impact is expected from this change, as there is no change.",
+  "competitive_implications": "No competitive implications are expected, as there is no change.",
+  "content_hash_before": "5411fc69ac7079a64db5897551e88fc7ffddd4b371907d39cfdac30b9f7ea962",
+  "content_hash_after": "c579a6406a7b4e9bda7e40e25a9d2ced381b13956230704ea45a04d0fc016f6b",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

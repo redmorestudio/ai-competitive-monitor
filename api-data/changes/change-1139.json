@@ -1,0 +1,80 @@
+{
+  "id": 1139,
+  "company": "Codeium",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T15:56:32.729Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "The announcement of Claude Sonnet 4 has been replaced with the announcement of GPT-5, and the download option for the Windsurf Editor has been updated from Windows to macOS.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "The announcement of Claude Sonnet 4 has been replaced with the announcement of GPT-5, and the download option for the Windsurf Editor has been updated from Windows to macOS.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Replacement of Claude Sonnet 4 announcement with GPT-5 announcement",
+      "Update of download option from Windows to macOS"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update could lead to increased adoption and usage of the Windsurf AI Code Editor, particularly among developers and enterprises.",
+    "market_signals": [
+      "Increased competition in the AI coding assistant market",
+      "Growing demand for AI-powered development tools"
+    ],
+    "competitive_implications": "The update could give Windsurf a competitive advantage over other AI coding assistants, such as Cursor.",
+    "strategic_direction": "The update suggests that Windsurf is focusing on improving its AI capabilities and expanding its user base."
+  },
+  "entities": {
+    "products": [
+      "Windsurf AI Code Editor"
+    ],
+    "features": [
+      "GPT-5",
+      "Cascade",
+      "Tab"
+    ],
+    "partnerships": [
+      "Cognition"
+    ],
+    "technologies": [
+      "AI",
+      "JetBrains"
+    ],
+    "people": [
+      "Garry Tan"
+    ],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The update indicates a significant development in the Windsurf AI Code Editor",
+      "The download option has been updated from Windows to macOS"
+    ],
+    "opportunities": [
+      "Increased adoption and usage of the Windsurf AI Code Editor",
+      "Expansion into new markets and industries"
+    ],
+    "threats": [
+      "Increased competition in the AI coding assistant market",
+      "Potential technical issues with the updated download option"
+    ],
+    "recommended_actions": [
+      "Monitor the update's impact on the market and user base",
+      "Consider expanding marketing and sales efforts to capitalize on the update"
+    ]
+  },
+  "key_insights": [
+    "The update indicates a significant development in the Windsurf AI Code Editor",
+    "The download option has been updated from Windows to macOS"
+  ],
+  "business_impact": "The update could lead to increased adoption and usage of the Windsurf AI Code Editor, particularly among developers and enterprises.",
+  "competitive_implications": "The update could give Windsurf a competitive advantage over other AI coding assistants, such as Cursor.",
+  "content_hash_before": "e41535e2e1faaa556d278100631d031d9e39ca38a6ab869e28e53ae3c21a2556",
+  "content_hash_after": "061779b0e282362b7299c8cb27a37940500fd7be83b8e46412c31ca5efd850eb",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

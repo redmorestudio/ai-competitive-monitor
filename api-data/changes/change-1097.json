@@ -1,0 +1,76 @@
+{
+  "id": 1097,
+  "company": "Meta AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:02:48.241Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Introduction of DINOv3, a self-supervised learning model for vision, and updates to the Meta AI app",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of DINOv3, a self-supervised learning model for vision, and updates to the Meta AI app",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of DINOv3",
+      "Update to Meta AI app",
+      "Changes to research section, including new blog posts"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of DINOv3 and updates to the Meta AI app could enhance Meta's position in the AI market and attract new customers",
+    "market_signals": [
+      "Increased investment in AI research and development",
+      "Growing demand for AI-powered products and services"
+    ],
+    "competitive_implications": "Meta's advancements in AI could pose a competitive threat to other companies in the industry",
+    "strategic_direction": "Meta is likely to continue investing in AI research and development to maintain its competitive edge"
+  },
+  "entities": {
+    "products": [
+      "Meta AI app",
+      "DINOv3"
+    ],
+    "features": [
+      "Self-supervised learning for vision"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Meta's introduction of DINOv3 demonstrates its commitment to advancing AI capabilities",
+      "The updates to the Meta AI app indicate a focus on user experience and accessibility"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Meta to leverage its AI capabilities",
+      "Potential for Meta's AI technology to be applied to various industries"
+    ],
+    "threats": [
+      "Competitive threat from Meta's advancements in AI",
+      "Potential disruption to existing business models"
+    ],
+    "recommended_actions": [
+      "Monitor Meta's AI developments and assess potential implications",
+      "Consider partnership opportunities with Meta to leverage its AI capabilities"
+    ]
+  },
+  "key_insights": [
+    "Meta's introduction of DINOv3 demonstrates its commitment to advancing AI capabilities",
+    "The updates to the Meta AI app indicate a focus on user experience and accessibility"
+  ],
+  "business_impact": "The introduction of DINOv3 and updates to the Meta AI app could enhance Meta's position in the AI market and attract new customers",
+  "competitive_implications": "Meta's advancements in AI could pose a competitive threat to other companies in the industry",
+  "content_hash_before": "4e2a63f234f10752d2641172c3923650164a94646de080828880a4034948d345",
+  "content_hash_after": "8475a78e87d042383327562cadb70a463792b2f94e1881d2d11729727b0b4f95",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

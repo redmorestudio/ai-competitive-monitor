@@ -1,0 +1,78 @@
+{
+  "id": 1079,
+  "company": "Replicate",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:08:42.855Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Multiple changes including new model additions, updates to existing models, and changes to the website's layout and content",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Multiple changes including new model additions, updates to existing models, and changes to the website's layout and content",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New models added such as openai/gpt-5, runwayml/gen4-image-turbo, and bytedance/dreamina-3.1",
+      "Updates to existing models like ideogram-ai/ideogram-v2a and luma/photon",
+      "Changes to the website's layout, including a new 'Explore the new PlaygroundBeta' section",
+      "Addition of new features like 'Use LLMs' and 'Videos from images'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates could attract new users and increase engagement, potentially leading to revenue growth",
+    "market_signals": [
+      "Increased competition in the AI model market",
+      "Growing demand for AI-powered tools and features"
+    ],
+    "competitive_implications": "The updates could give Replicate a competitive edge in the market, but also increase competition from other platforms",
+    "strategic_direction": "The changes suggest a focus on expanding the platform's capabilities and user base"
+  },
+  "entities": {
+    "products": [
+      "Replicate API",
+      "PlaygroundBeta"
+    ],
+    "features": [
+      "Use LLMs",
+      "Videos from images"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Replicate is actively updating and expanding its platform",
+      "New models and features are being added to attract new users and increase engagement"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other AI companies",
+      "Expansion into new markets and industries"
+    ],
+    "threats": [
+      "Increased competition from other AI platforms",
+      "Potential technical issues with new models and features"
+    ],
+    "recommended_actions": [
+      "Monitor Replicate's updates and announcements",
+      "Consider partnering with Replicate or using their platform for AI-powered tools and features"
+    ]
+  },
+  "key_insights": [
+    "Replicate is actively updating and expanding its platform",
+    "New models and features are being added to attract new users and increase engagement"
+  ],
+  "business_impact": "The updates could attract new users and increase engagement, potentially leading to revenue growth",
+  "competitive_implications": "The updates could give Replicate a competitive edge in the market, but also increase competition from other platforms",
+  "content_hash_before": "c2824874df42b0017e018b91a6983dfa787275751c5f807aaa99843804ae1cda",
+  "content_hash_after": "4ce25374b272d282cf7211ffc5faca30b4977a6a80140c0e5102f8daf88f6c47",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,58 @@
+{
+  "id": 1060,
+  "company": "Tabnine",
+  "page_url": "docs",
+  "detected_at": "2025-08-18T16:11:44.320Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Minor updates to the documentation, including rewording and addition of new links",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Minor updates to the documentation, including rewording and addition of new links",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Atlassian Jira Integration' link",
+      "Updated 'Getting the Most from Tabnine Code Completions' section",
+      "Minor rewording in 'How to use Tabnine' section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact",
+    "market_signals": [
+      "Tabnine is continuing to refine its documentation"
+    ],
+    "competitive_implications": "No significant competitive implications",
+    "strategic_direction": "Tabnine is focused on improving its product and user experience"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Tabnine is investing in its documentation and user experience"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor Tabnine's documentation and product updates"
+    ]
+  },
+  "key_insights": [
+    "Tabnine is investing in its documentation and user experience"
+  ],
+  "business_impact": "No significant business impact",
+  "competitive_implications": "No significant competitive implications",
+  "content_hash_before": "350440132dd950fbf8272f0c3cd070122ed95b50b109f5c14acfe977dca9a5a9",
+  "content_hash_after": "d9172b0e0480727c2a1faf917716fa3391eb8e9b89038395ca21c5ab90b762a4",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

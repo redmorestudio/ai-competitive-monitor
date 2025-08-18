@@ -1,0 +1,88 @@
+{
+  "id": 1143,
+  "company": "Cisco Systems",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T15:56:14.960Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Removal of 'Threat intelligence (Talos)' and addition of 'Universal ZTNA' under Security, changes in Services (CX) with 'AI-powered support' and removal of 'Lifecycle Services', 'Solution support', 'Hardware support', 'Software support', and 'Packaged services'.",
+  "category": "security_update",
+  "change_summary": {
+    "what_changed": "Removal of 'Threat intelligence (Talos)' and addition of 'Universal ZTNA' under Security, changes in Services (CX) with 'AI-powered support' and removal of 'Lifecycle Services', 'Solution support', 'Hardware support', 'Software support', and 'Packaged services'.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Removal of 'Threat intelligence (Talos)' from Security",
+      "Addition of 'Universal ZTNA' under Security",
+      "Changes in Services (CX) with new 'AI-powered support' and removal of other services"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes indicate Cisco's focus on enhancing security offerings and leveraging AI for improved services, which could strengthen their position in the market.",
+    "market_signals": [
+      "Increased focus on security and AI",
+      "Expansion of services portfolio"
+    ],
+    "competitive_implications": "The updates could pose a competitive challenge to other players in the security and services market, as Cisco enhances its offerings and leverages AI for differentiation.",
+    "strategic_direction": "Cisco is likely focusing on strategic growth areas such as security, AI, and cloud, aiming to provide comprehensive solutions to its customers."
+  },
+  "entities": {
+    "products": [
+      "Universal ZTNA",
+      "AI Defense",
+      "Cisco Duo",
+      "Email Threat Defense",
+      "Firewall",
+      "Hypershield",
+      "Identity Services Engine (ISE)",
+      "Secure Access (SSE)",
+      "Secure Endpoint",
+      "Umbrella",
+      "XDR"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Networking",
+      "Security",
+      "Cloud"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Enterprise",
+      "Small and Medium Business"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Cisco is enhancing its security portfolio with new offerings like Universal ZTNA",
+      "The company is leveraging AI across its services and products for improved customer experience and differentiation"
+    ],
+    "opportunities": [
+      "Partnerships or collaborations with Cisco for enhanced security and AI-powered services",
+      "Expansion into new markets with Cisco's comprehensive solutions"
+    ],
+    "threats": [
+      "Increased competition from Cisco in the security and services market",
+      "Potential disruption in the market due to Cisco's strategic moves"
+    ],
+    "recommended_actions": [
+      "Monitor Cisco's strategic moves and updates in security and services",
+      "Consider partnerships or collaborations for mutual growth"
+    ]
+  },
+  "key_insights": [
+    "Cisco is enhancing its security portfolio with new offerings like Universal ZTNA",
+    "The company is leveraging AI across its services and products for improved customer experience and differentiation"
+  ],
+  "business_impact": "The changes indicate Cisco's focus on enhancing security offerings and leveraging AI for improved services, which could strengthen their position in the market.",
+  "competitive_implications": "The updates could pose a competitive challenge to other players in the security and services market, as Cisco enhances its offerings and leverages AI for differentiation.",
+  "content_hash_before": "a4ee80909b05789ca6e29b7348ee9c3750ca8b79f2f7bffb5ba9e17f2b098b35",
+  "content_hash_after": "47303f634b904ca6b7d878ad42d438f798186fef6bef42f3854c16f28defc68a",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

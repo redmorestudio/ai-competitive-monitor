@@ -1,0 +1,67 @@
+{
+  "id": 1153,
+  "company": "Andi",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T15:55:20.080Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "The search queries and examples provided on the Andi homepage have changed.",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "The search queries and examples provided on the Andi homepage have changed.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "New search queries have been added, such as 'AI career ideas', 'Who is Joan of Arc?', and 'Weather in San Francisco'.",
+      "New examples of using the 'go' command have been added, such as 'go youtube cute pandas', 'go chase', and 'go aws console'."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes may improve user engagement and provide more relevant examples for users, potentially increasing the adoption and usage of the Andi search agent.",
+    "market_signals": [
+      "Andi is focusing on providing more relevant and useful examples for its users.",
+      "Andi is attempting to improve its user interface and experience."
+    ],
+    "competitive_implications": "The changes may help Andi to better compete with other search agents and AI-powered tools by providing more relevant and useful examples for its users.",
+    "strategic_direction": "Andi is likely focusing on improving its user interface and experience, and providing more relevant and useful examples for its users."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Andi has updated its search queries and examples to provide more relevant and useful information for its users.",
+      "Andi is attempting to improve its user interface and experience."
+    ],
+    "opportunities": [
+      "Andi can continue to improve its user interface and experience by providing more relevant and useful examples for its users.",
+      "Andi can expand its capabilities to provide more advanced features and functionalities for its users."
+    ],
+    "threats": [
+      "Andi may face competition from other search agents and AI-powered tools that provide similar or more advanced features and functionalities.",
+      "Andi may struggle to maintain its user base if it does not continue to improve its user interface and experience."
+    ],
+    "recommended_actions": [
+      "Continue to monitor Andi's updates and changes to its search queries and examples.",
+      "Analyze Andi's user interface and experience to identify areas for improvement."
+    ]
+  },
+  "key_insights": [
+    "Andi has updated its search queries and examples to provide more relevant and useful information for its users.",
+    "Andi is attempting to improve its user interface and experience."
+  ],
+  "business_impact": "The changes may improve user engagement and provide more relevant examples for users, potentially increasing the adoption and usage of the Andi search agent.",
+  "competitive_implications": "The changes may help Andi to better compete with other search agents and AI-powered tools by providing more relevant and useful examples for its users.",
+  "content_hash_before": "36694ca3c715887ffa327a7fb5586abdc180a126c83ff344a182126792a7ba83",
+  "content_hash_after": "987a7e71d565831e578b2f357cb63f1f1199b440593b3d1c19b7ef30981f38ef",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

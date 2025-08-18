@@ -1,0 +1,67 @@
+{
+  "id": 1080,
+  "company": "Replicate",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T16:08:28.485Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "The blog post list has been updated with a new post, 'Announcing Replicate's remote MCP server', and the rest of the posts have been shifted down.",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "The blog post list has been updated with a new post, 'Announcing Replicate's remote MCP server', and the rest of the posts have been shifted down.",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added a new blog post at the top of the list",
+      "Shifted the rest of the posts down by one position"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update indicates Replicate's continued focus on innovation and customer engagement, potentially attracting more users and developers to their platform.",
+    "market_signals": [
+      "Increased focus on remote work and collaboration"
+    ],
+    "competitive_implications": "The addition of a remote MCP server may give Replicate a competitive edge in terms of convenience and accessibility for users.",
+    "strategic_direction": "The update suggests Replicate is investing in its platform and user experience, potentially leading to increased adoption and market share."
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "remote MCP server"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Replicate is actively updating its blog with new content",
+      "The company is focusing on innovative features like remote MCP servers"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Replicate for developers and businesses",
+      "Increased adoption of Replicate's platform due to its focus on innovation and user experience"
+    ],
+    "threats": [
+      "Competition from other companies offering similar features and services"
+    ],
+    "recommended_actions": [
+      "Monitor Replicate's blog and updates for further insights into their strategic direction",
+      "Consider partnering with Replicate for access to their innovative features and user base"
+    ]
+  },
+  "key_insights": [
+    "Replicate is actively updating its blog with new content",
+    "The company is focusing on innovative features like remote MCP servers"
+  ],
+  "business_impact": "The update indicates Replicate's continued focus on innovation and customer engagement, potentially attracting more users and developers to their platform.",
+  "competitive_implications": "The addition of a remote MCP server may give Replicate a competitive edge in terms of convenience and accessibility for users.",
+  "content_hash_before": "10dcf53d50118f8e2de38f0e716aca858c9861c6011f6338745f8f94ffd50b2f",
+  "content_hash_after": "53b88693d964b42599f27cda87be8c46ea34fd0dc11b0ece31d640076a36551b",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

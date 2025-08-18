@@ -1,0 +1,79 @@
+{
+  "id": 1155,
+  "company": "Aleph Alpha",
+  "page_url": "product",
+  "detected_at": "2025-08-18T15:54:35.269Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of PhariaFiles, a new product, and updates to the website's content structure",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of PhariaFiles, a new product, and updates to the website's content structure",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New product announcement: PhariaFiles",
+      "Changes in website content structure, including new images and links",
+      "Update to the 'Product' section with PhariaFiles information"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of PhariaFiles and updates to the website's content structure may indicate Aleph Alpha's efforts to expand its product offerings and strengthen its position in the AI market",
+    "market_signals": [
+      "Increased competition in the AI market",
+      "Growing demand for AI-powered solutions"
+    ],
+    "competitive_implications": "Aleph Alpha's new product and website updates may pose a competitive threat to other AI companies, particularly those operating in the European market",
+    "strategic_direction": "Aleph Alpha's strategic direction appears to be focused on developing and marketing AI-powered solutions, with an emphasis on digital sovereignty and technological innovation"
+  },
+  "entities": {
+    "products": [
+      "PhariaFiles",
+      "Luminous"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Luminous-World"
+    ],
+    "people": [
+      "Jonas Andrulis"
+    ],
+    "pricing": [],
+    "markets": [
+      "Europe",
+      "Germany"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Aleph Alpha has introduced a new product, PhariaFiles",
+      "The company is updating its website content structure to reflect its growing product offerings"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Aleph Alpha",
+      "Potential for increased adoption of AI-powered solutions in the European market"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential regulatory challenges for AI companies operating in the European market"
+    ],
+    "recommended_actions": [
+      "Monitor Aleph Alpha's product developments and strategic direction",
+      "Assess potential partnership opportunities with the company"
+    ]
+  },
+  "key_insights": [
+    "Aleph Alpha has introduced a new product, PhariaFiles",
+    "The company is updating its website content structure to reflect its growing product offerings"
+  ],
+  "business_impact": "The introduction of PhariaFiles and updates to the website's content structure may indicate Aleph Alpha's efforts to expand its product offerings and strengthen its position in the AI market",
+  "competitive_implications": "Aleph Alpha's new product and website updates may pose a competitive threat to other AI companies, particularly those operating in the European market",
+  "content_hash_before": "12778944eb8daaeae920aedbd577c3ec9598229b607d26b6d5052971c5759b34",
+  "content_hash_after": "1770e4232fabb56c201fbbf07c36133b2854607da0981bc5d9400f4b7e7be2ef",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

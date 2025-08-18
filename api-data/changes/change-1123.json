@@ -1,0 +1,75 @@
+{
+  "id": 1123,
+  "company": "Flux",
+  "page_url": "product",
+  "detected_at": "2025-08-18T15:58:15.446Z",
+  "change_type": "modified",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "The content of the page has completely changed from a 404 error page to a fully functional website with various sections and links",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "The content of the page has completely changed from a 404 error page to a fully functional website with various sections and links",
+    "change_type": "update",
+    "change_scale": "major",
+    "specific_changes": [
+      "Added navigation menu with links to Models, API, Open Weights, Resources, and Company",
+      "Added Sign In link",
+      "Added page content with links to different models, API documentation, pricing, and more",
+      "Added footer with links to legal pages, social media, and copyright information"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change indicates a significant expansion of the company's online presence and potentially its product or service offerings",
+    "market_signals": [
+      "Increased investment in digital presence",
+      "Potential expansion into new markets or customer segments"
+    ],
+    "competitive_implications": "The change may indicate a competitive advantage in terms of digital presence and customer engagement",
+    "strategic_direction": "The company appears to be focusing on expanding its online presence and potentially its product or service offerings"
+  },
+  "entities": {
+    "products": [
+      "FLUX.1 Kontext",
+      "FLUX 1.1 Pro Ultra",
+      "FLUX 1.1 Pro"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Pricing link added"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company has launched a new website with a range of features and links",
+      "The website indicates a significant expansion of the company's online presence and potentially its product or service offerings"
+    ],
+    "opportunities": [
+      "Potential for increased customer engagement and conversion",
+      "Opportunity to expand into new markets or customer segments"
+    ],
+    "threats": [
+      "Potential increased competition in the market",
+      "Risk of not meeting customer expectations with the new website and features"
+    ],
+    "recommended_actions": [
+      "Monitor the company's website and social media for further updates and announcements",
+      "Analyze the company's product or service offerings and pricing strategy"
+    ]
+  },
+  "key_insights": [
+    "The company has launched a new website with a range of features and links",
+    "The website indicates a significant expansion of the company's online presence and potentially its product or service offerings"
+  ],
+  "business_impact": "The change indicates a significant expansion of the company's online presence and potentially its product or service offerings",
+  "competitive_implications": "The change may indicate a competitive advantage in terms of digital presence and customer engagement",
+  "content_hash_before": "6f59c3475028f4f792bd077c18d1ed46b90a099f74b8ff7fa6d1b0ce96b6443a",
+  "content_hash_after": "838ceb950f12b56a0c4c158875c6447238a246c41ba9d61d1936f7375acd6aec",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

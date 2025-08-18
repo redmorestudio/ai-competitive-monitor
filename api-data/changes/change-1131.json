@@ -1,0 +1,94 @@
+{
+  "id": 1131,
+  "company": "DataRobot",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T15:57:26.123Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog posts were added, and the layout of the blog section was updated",
+  "category": "product_update/partnership",
+  "change_summary": {
+    "what_changed": "New blog posts were added, and the layout of the blog section was updated",
+    "change_type": "addition/update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of new blog posts, including 'Balancing accuracy, cost, and real‑world performance with NVIDIA Nemotron models' and 'Are your AI agents still stuck in PoC? Let’s fix that.'",
+      "Update to the blog layout, including changes to the filtering options and the display of blog posts"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest that DataRobot is expanding its offerings and expertise in the AI space, which could lead to increased revenue and market share. The partnership with NVIDIA also suggests a growing focus on AI for practitioners and leaders.",
+    "market_signals": [
+      "Increased focus on AI for practitioners and leaders",
+      "Growing partnership with NVIDIA",
+      "Expansion of AI offerings and expertise"
+    ],
+    "competitive_implications": "The changes suggest that DataRobot is becoming a more significant player in the AI space, which could pose a competitive threat to other companies in the industry. The partnership with NVIDIA also suggests a growing focus on AI for practitioners and leaders, which could be a key differentiator for DataRobot.",
+    "strategic_direction": "The changes suggest that DataRobot is focused on expanding its AI offerings and expertise, particularly in the areas of agentic AI, generative AI, and predictive AI. The company is also prioritizing partnerships with key players in the industry, such as NVIDIA."
+  },
+  "entities": {
+    "products": [
+      "NVIDIA Nemotron models",
+      "syftr",
+      "DataRobot AI Apps & Agents",
+      "Agentic AI Platform"
+    ],
+    "features": [
+      "AI gateway",
+      "Pareto-optimal GenAI workflows",
+      "secure on-prem AI"
+    ],
+    "partnerships": [
+      "NVIDIA",
+      "SAP"
+    ],
+    "technologies": [
+      "Agentic AI",
+      "Generative AI",
+      "Predictive AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Finance",
+      "Financial Services",
+      "Healthcare",
+      "Manufacturing"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "DataRobot is expanding its AI offerings and expertise",
+      "The company is prioritizing partnerships with key players in the industry",
+      "There is a growing focus on AI for practitioners and leaders"
+    ],
+    "opportunities": [
+      "Partnership opportunities with DataRobot",
+      "Expansion into new markets and industries",
+      "Development of new AI offerings and expertise"
+    ],
+    "threats": [
+      "Increased competition from DataRobot",
+      "Potential disruption to existing business models",
+      "Growing dependence on partnerships with key players in the industry"
+    ],
+    "recommended_actions": [
+      "Monitor DataRobot's AI offerings and expertise",
+      "Explore partnership opportunities with DataRobot",
+      "Develop new AI offerings and expertise to stay competitive"
+    ]
+  },
+  "key_insights": [
+    "DataRobot is expanding its AI offerings and expertise",
+    "The company is prioritizing partnerships with key players in the industry",
+    "There is a growing focus on AI for practitioners and leaders"
+  ],
+  "business_impact": "The changes suggest that DataRobot is expanding its offerings and expertise in the AI space, which could lead to increased revenue and market share. The partnership with NVIDIA also suggests a growing focus on AI for practitioners and leaders.",
+  "competitive_implications": "The changes suggest that DataRobot is becoming a more significant player in the AI space, which could pose a competitive threat to other companies in the industry. The partnership with NVIDIA also suggests a growing focus on AI for practitioners and leaders, which could be a key differentiator for DataRobot.",
+  "content_hash_before": "63561d81f5e165b3e9881e753f66b03af711ce9d5372376312fc8dad86e61d52",
+  "content_hash_after": "70b21055dec72e8fa14c41fc9648e40c2621454d1201502ce1c7e1443575e374",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

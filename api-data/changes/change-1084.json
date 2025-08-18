@@ -1,0 +1,58 @@
+{
+  "id": 1084,
+  "company": "Pika",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T16:08:03.400Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Removal of 'About Us' link from the top navigation bar and the 'Company' section",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Removal of 'About Us' link from the top navigation bar and the 'Company' section",
+    "change_type": "removal",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Removed 'About Us' link from top navigation",
+      "Removed 'About Us' link from 'Company' section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The removal of the 'About Us' link may slightly affect user experience, but it is unlikely to have a significant impact on the business",
+    "market_signals": [
+      "Pika may be streamlining its website navigation"
+    ],
+    "competitive_implications": "The change does not provide any significant competitive advantages or disadvantages",
+    "strategic_direction": "Pika's strategic direction remains focused on video creation and community building"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Pika's website navigation has been simplified"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor Pika's website for further changes",
+      "Assess the impact of the simplified navigation on user experience"
+    ]
+  },
+  "key_insights": [
+    "Pika's website navigation has been simplified"
+  ],
+  "business_impact": "The removal of the 'About Us' link may slightly affect user experience, but it is unlikely to have a significant impact on the business",
+  "competitive_implications": "The change does not provide any significant competitive advantages or disadvantages",
+  "content_hash_before": "910c31622aca3ce73c78b58cc862a8c14b6ca7b283279688157be7ee89883342",
+  "content_hash_after": "a350e4e8026ec6ea18fd00d73b841f0b94122e11839dfc5dc6441533fb5cd333",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

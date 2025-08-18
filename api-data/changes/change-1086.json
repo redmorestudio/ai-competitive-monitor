@@ -1,0 +1,76 @@
+{
+  "id": 1086,
+  "company": "Pieces",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T16:07:50.851Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog posts and updates to the Pieces blog, including a new investment from Flat Capital and various articles on AI, local-first AI, and industry trends",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog posts and updates to the Pieces blog, including a new investment from Flat Capital and various articles on AI, local-first AI, and industry trends",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Added new blog posts, including 'Visionary AI investor Flat Capital Invests in Pieces to Accelerate Artificial Memory For Individuals and the Enterprise', 'Seed Diffusion: racing LLMs into a parallel future', and 'Beyond the cloud: SLMs, local AI, agentic constellations, biology and a high value direction for AI progress'",
+      "Updated the 'Editor's picks' section with new articles",
+      "Added new articles to the 'All posts' section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The investment from Flat Capital and the focus on local-first AI could give Pieces a competitive advantage in the industry",
+    "market_signals": [
+      "growing demand for local-first AI",
+      "increased investment in AI startups"
+    ],
+    "competitive_implications": "Pieces may be positioning itself as a leader in the local-first AI space, which could challenge other companies in the industry",
+    "strategic_direction": "Pieces appears to be focusing on developing and promoting local-first AI solutions, which could be a key area of growth for the company"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [
+      "Flat Capital"
+    ],
+    "technologies": [
+      "local-first AI",
+      "LLMs"
+    ],
+    "people": [
+      "Tsavo Knott",
+      "Antreas Antoniou"
+    ],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Pieces has received a significant investment from Flat Capital",
+      "The company is focusing on local-first AI and its applications"
+    ],
+    "opportunities": [
+      "growth in the local-first AI market",
+      "increased adoption of Pieces' solutions"
+    ],
+    "threats": [
+      "competition from other AI startups",
+      "regulatory challenges in the AI industry"
+    ],
+    "recommended_actions": [
+      "monitor Pieces' progress in the local-first AI space",
+      "assess the potential for partnership or investment opportunities"
+    ]
+  },
+  "key_insights": [
+    "Pieces has received a significant investment from Flat Capital",
+    "The company is focusing on local-first AI and its applications"
+  ],
+  "business_impact": "The investment from Flat Capital and the focus on local-first AI could give Pieces a competitive advantage in the industry",
+  "competitive_implications": "Pieces may be positioning itself as a leader in the local-first AI space, which could challenge other companies in the industry",
+  "content_hash_before": "dd50e3d1e9bcdfb89a4f16b891caed4db2eee68100ae4ee759cf9ea3cc3f64be",
+  "content_hash_after": "5e1cad15068fba80d29b3edce88455bb3c790c87ef50c2dea2d49fc16a0e9aae",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

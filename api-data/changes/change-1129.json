@@ -1,0 +1,78 @@
+{
+  "id": 1129,
+  "company": "Descript",
+  "page_url": "product",
+  "detected_at": "2025-08-18T15:57:38.978Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "The Descript website has been updated to focus on AI-powered audio repair, with a new landing page highlighting the Regenerate feature.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "The Descript website has been updated to focus on AI-powered audio repair, with a new landing page highlighting the Regenerate feature.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New landing page with Regenerate feature",
+      "Updated navigation and menu",
+      "New trust badges with company logos",
+      "New call-to-action (CTA) buttons",
+      "Updated footer with social media links"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update is likely to attract new customers interested in AI-powered audio repair, potentially increasing Descript's market share.",
+    "market_signals": [
+      "Increased focus on AI-powered audio repair",
+      "Growing demand for audio editing tools"
+    ],
+    "competitive_implications": "Descript's competitors may need to respond with similar AI-powered features to remain competitive.",
+    "strategic_direction": "Descript is likely to continue investing in AI-powered features to maintain its competitive edge."
+  },
+  "entities": {
+    "products": [
+      "Descript",
+      "Regenerate"
+    ],
+    "features": [
+      "AI-powered audio repair",
+      "Regenerate"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Descript is shifting its focus to AI-powered audio repair",
+      "The Regenerate feature is a key selling point"
+    ],
+    "opportunities": [
+      "Increased demand for AI-powered audio repair",
+      "Potential partnerships with audio editing companies"
+    ],
+    "threats": [
+      "Competition from established audio editing companies",
+      "Technical challenges in developing AI-powered features"
+    ],
+    "recommended_actions": [
+      "Monitor Descript's competitors",
+      "Analyze customer feedback on the Regenerate feature"
+    ]
+  },
+  "key_insights": [
+    "Descript is shifting its focus to AI-powered audio repair",
+    "The Regenerate feature is a key selling point"
+  ],
+  "business_impact": "The update is likely to attract new customers interested in AI-powered audio repair, potentially increasing Descript's market share.",
+  "competitive_implications": "Descript's competitors may need to respond with similar AI-powered features to remain competitive.",
+  "content_hash_before": "32c2214c88e8caf2fe88d2135a167d8eb9f6821ec7afb0bdce43afa9de8eeacc",
+  "content_hash_after": "9ff9768ada92eb7dc0e5d8c7b408e3779e2fe504fc3d6ba42b624a409947a1ed",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

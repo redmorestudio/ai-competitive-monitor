@@ -1,0 +1,93 @@
+{
+  "id": 1115,
+  "company": "H2O.ai",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T15:59:09.240Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "The website's navigation menu and content structure have been reorganized, with a focus on solutions, platform, and company information.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "The website's navigation menu and content structure have been reorganized, with a focus on solutions, platform, and company information.",
+    "change_type": "restructure",
+    "change_scale": "major",
+    "specific_changes": [
+      "New navigation menu with separate sections for solutions, platform, and company",
+      "Reorganization of content to focus on industry-specific solutions and use cases",
+      "Addition of new pages and sections, such as 'SOLUTIONS' and 'PLATFORM'",
+      "Removal of old pages and sections, such as 'Solutions' and 'Use Cases' under the old 'Solutions' section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest a major update to the company's product offerings and go-to-market approach, which could have a significant impact on the company's revenue and market position.",
+    "market_signals": [
+      "Increased focus on industry-specific solutions",
+      "Expansion of platform capabilities",
+      "Growing importance of GenAI and LLM technologies"
+    ],
+    "competitive_implications": "The changes could indicate a shift in the competitive landscape, with H2O.ai positioning itself as a leader in the GenAI and LLM markets.",
+    "strategic_direction": "The company appears to be focusing on showcasing its solutions and platform capabilities, with a emphasis on industry-specific use cases and partnerships."
+  },
+  "entities": {
+    "products": [
+      "H2O.ai GenAI",
+      "H2O LLM Studio",
+      "H2O Driverless AI",
+      "H2O Hydrogen Torch"
+    ],
+    "features": [
+      "Multi-model support",
+      "Cost controls",
+      "App integrations",
+      "No-code fine-tuning"
+    ],
+    "partnerships": [
+      "Dell Technologies",
+      "Nvidia"
+    ],
+    "technologies": [
+      "GenAI",
+      "LLM",
+      "AutoML"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Financial Services",
+      "Telecommunications",
+      "Healthcare"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Major update to the company's product offerings and go-to-market approach",
+      "Increased focus on industry-specific solutions and use cases",
+      "Growing importance of GenAI and LLM technologies"
+    ],
+    "opportunities": [
+      "Partnership opportunities with H2O.ai",
+      "Increased demand for GenAI and LLM technologies"
+    ],
+    "threats": [
+      "Increased competition in the GenAI and LLM markets",
+      "Potential disruption to existing business models"
+    ],
+    "recommended_actions": [
+      "Monitor H2O.ai's product offerings and go-to-market approach",
+      "Assess the potential impact of GenAI and LLM technologies on existing business models"
+    ]
+  },
+  "key_insights": [
+    "Major update to the company's product offerings and go-to-market approach",
+    "Increased focus on industry-specific solutions and use cases",
+    "Growing importance of GenAI and LLM technologies"
+  ],
+  "business_impact": "The changes suggest a major update to the company's product offerings and go-to-market approach, which could have a significant impact on the company's revenue and market position.",
+  "competitive_implications": "The changes could indicate a shift in the competitive landscape, with H2O.ai positioning itself as a leader in the GenAI and LLM markets.",
+  "content_hash_before": "5bdc3fb06466afb34fc75c0e8a36549a9ac2a9be1f828bd55e269994b34fd480",
+  "content_hash_after": "5c4974e10eb42b007c1cbb9607f9560928a938100c38afa051f84699c2af04f5",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

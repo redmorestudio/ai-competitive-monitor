@@ -1,0 +1,54 @@
+{
+  "id": 1135,
+  "company": "Cursor",
+  "page_url": "features",
+  "detected_at": "2025-08-18T15:57:06.624Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The keyboard shortcut for instructing a change in Agent mode was changed from Ctrl + I to ⌘ + I",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The keyboard shortcut for instructing a change in Agent mode was changed from Ctrl + I to ⌘ + I",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated keyboard shortcut for Agent mode from Ctrl + I to ⌘ + I"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change is unlikely to have a significant impact on the business",
+    "market_signals": [
+      "The company is refining its product to improve user experience"
+    ],
+    "competitive_implications": "The change does not provide a significant competitive advantage",
+    "strategic_direction": "The company is focused on improving its product's usability"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is refining its product to improve user experience"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [
+    "The company is refining its product to improve user experience"
+  ],
+  "business_impact": "The change is unlikely to have a significant impact on the business",
+  "competitive_implications": "The change does not provide a significant competitive advantage",
+  "content_hash_before": "84f771f23f4ea0d374a9dce30e0802dd56b118fab8643c27625defad3da0d6f9",
+  "content_hash_after": "7439893c7ce7b002f41c4ba18f5e66b81f6b3178f8064d7c5150a37b75cf2952",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,69 @@
+{
+  "id": 1149,
+  "company": "Anthropic",
+  "page_url": "product",
+  "detected_at": "2025-08-18T15:55:36.558Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "Addition of 'Government' to solutions, update of download and login links, and changes in SVG images",
+  "category": "minor_update",
+  "change_summary": {
+    "what_changed": "Addition of 'Government' to solutions, update of download and login links, and changes in SVG images",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Government' to solutions",
+      "Updated download and login links",
+      "Changed SVG images"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of 'Government' to solutions may indicate an expansion into the public sector, potentially opening up new revenue streams",
+    "market_signals": [
+      "Expansion into public sector"
+    ],
+    "competitive_implications": "The update may indicate Anthropic's increasing focus on serving diverse industries, including government, which could impact competitors in the AI solutions space",
+    "strategic_direction": "Expansion into new markets and industries"
+  },
+  "entities": {
+    "products": [
+      "Claude"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Government"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Anthropic is expanding its solutions to include the government sector",
+      "The company is updating its download and login links, potentially for security or user experience reasons"
+    ],
+    "opportunities": [
+      "Potential for increased revenue through expansion into the public sector"
+    ],
+    "threats": [
+      "Increased competition in the AI solutions space as Anthropic expands into new markets"
+    ],
+    "recommended_actions": [
+      "Monitor Anthropic's expansion into the government sector for potential partnership or collaboration opportunities",
+      "Assess the updated download and login links for any security or user experience implications"
+    ]
+  },
+  "key_insights": [
+    "Anthropic is expanding its solutions to include the government sector",
+    "The company is updating its download and login links, potentially for security or user experience reasons"
+  ],
+  "business_impact": "The addition of 'Government' to solutions may indicate an expansion into the public sector, potentially opening up new revenue streams",
+  "competitive_implications": "The update may indicate Anthropic's increasing focus on serving diverse industries, including government, which could impact competitors in the AI solutions space",
+  "content_hash_before": "ba16843d53d87e441fbb8efc759de14d21dcf209cb2f34bb5aca9c191017c78a",
+  "content_hash_after": "aebb867c8d8423482645040256e09c575426ff4ffa564c3dbc38c29bfc419d24",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

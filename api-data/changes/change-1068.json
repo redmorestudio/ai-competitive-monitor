@@ -1,0 +1,72 @@
+{
+  "id": 1068,
+  "company": "Scale AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:10:20.534Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "Removal of redundant customer logos and addition of new customer logos such as Mayo Clinic",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Removal of redundant customer logos and addition of new customer logos such as Mayo Clinic",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Removal of redundant customer logos",
+      "Addition of new customer logos such as Mayo Clinic"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes do not have a significant impact on the company's business strategy or operations",
+    "market_signals": [
+      "Partnerships with Meta and Anthropic indicate a focus on generative AI"
+    ],
+    "competitive_implications": "The company is maintaining its position in the market with minor updates to its content",
+    "strategic_direction": "The company is continuing to focus on generative AI and partnerships with leading companies in the field"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [
+      "Meta",
+      "Anthropic"
+    ],
+    "technologies": [],
+    "people": [
+      "Mark Zuckerberg",
+      "Demis Hassabis",
+      "Andrej Karpathy",
+      "Nat Friedman"
+    ],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is maintaining its position in the market with minor updates to its content",
+      "Partnerships with Meta and Anthropic indicate a focus on generative AI"
+    ],
+    "opportunities": [
+      "The company could leverage its partnerships to expand its offerings in generative AI"
+    ],
+    "threats": [
+      "The company faces competition from other companies in the generative AI space"
+    ],
+    "recommended_actions": [
+      "Monitor the company's partnerships and offerings in generative AI",
+      "Assess the company's competitive position in the market"
+    ]
+  },
+  "key_insights": [
+    "The company is maintaining its position in the market with minor updates to its content",
+    "Partnerships with Meta and Anthropic indicate a focus on generative AI"
+  ],
+  "business_impact": "The changes do not have a significant impact on the company's business strategy or operations",
+  "competitive_implications": "The company is maintaining its position in the market with minor updates to its content",
+  "content_hash_before": "844bb7af06c1dcd19588ae4cb6c5586dc7450ac1e8fa484d6a9443c46ff6e5b8",
+  "content_hash_after": "dbaed62f32bea05cdb0b327ce915f514b2a8ba3c72289b4b80823a61a7283119",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
