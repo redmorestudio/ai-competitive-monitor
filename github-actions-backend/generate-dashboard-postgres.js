@@ -318,20 +318,17 @@ async function generateDashboard() {
             dashboardData.highInterestChanges += companyData.stats.highInterestChanges;
         }
 
-        // Get company activity summary with URL counts
+        // Get company activity summary
         const companyActivity = await db.all(`
             SELECT 
                 c.name,
-                c.id,
-                COUNT(DISTINCT ch.id) as change_count,
-                COUNT(DISTINCT u.id) as url_count,
+                COUNT(ch.id) as change_count,
                 MAX(ch.interest_level) as max_interest,
                 MAX(ch.detected_at) as last_change
             FROM intelligence.companies c
-            LEFT JOIN intelligence.changes ch ON ch.company = c.name AND ch.detected_at > NOW() - INTERVAL '7 days'
-            LEFT JOIN intelligence.urls u ON u.company_id = c.id
-            WHERE ch.id IS NOT NULL
-            GROUP BY c.name, c.id
+            LEFT JOIN intelligence.changes ch ON ch.company = c.name
+            WHERE ch.detected_at > NOW() - INTERVAL '7 days'
+            GROUP BY c.name
             HAVING COUNT(ch.id) > 0
             ORDER BY change_count DESC
             LIMIT 10
@@ -340,7 +337,6 @@ async function generateDashboard() {
         dashboardData.company_activity = companyActivity.map(ca => ({
             company_name: ca.name,
             change_count: parseInt(ca.change_count),
-            url_count: parseInt(ca.url_count) || 0,
             max_interest_level: parseInt(ca.max_interest) || 0, // Ensure this is parsed correctly
             last_activity: ca.last_change,
             relative_time: getRelativeTime(ca.last_change)

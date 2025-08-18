@@ -1,802 +1,802 @@
 [
   {
-    "company": "Weights & Biases",
-    "url": "https://wandb.ai",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:12:08.313Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"AI Developer Platform\",\"impact_areas\":[],\"summary\":\"No significant changes detected in the content snippet. The updates appear to be minor and do not indicate any breakthrough technical innovations or substantial business impact.\"}"
-  },
-  {
-    "company": "Weights & Biases",
-    "url": "https://wandb.ai/fully-connected",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:11:59.310Z",
-    "interest_level": 7,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Integration of OpenAI GPT OSS models on W&B Inference\",\"New tutorials and evaluations for GPT-5\",\"Defending against MCP prompt injection attacks\",\"Sunsetting of Humanloop and migration to Weights & Biases\"],\"category\":\"AI/ML\",\"impact_areas\":[\"Generative AI\",\"Reinforcement Learning\",\"LLM\",\"Agents\",\"Evaluations\"],\"summary\":\"The updated content snippet highlights new AI cloud software products and capabilities from CoreWeave and Weights & Biases, with a focus on generative AI, reinforcement learning, and LLM. The addition of OpenAI GPT OSS models on W&B Inference and new tutorials for GPT-5 demonstrate significant technical advances, while the sunsetting of Humanloop and migration to Weights & Biases indicates notable business updates.\"}"
-  },
-  {
-    "company": "Weights & Biases",
-    "url": "https://wandb.ai/pricing",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:11:52.325Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":1,\"interest_level\":2,\"interest_drivers\":[\"No significant technical updates or innovations\",\"Minor changes to the pricing page\"],\"category\":\"AI/ML Platform\",\"impact_areas\":[\"Pricing Strategy\",\"Competitive Landscape\"],\"summary\":\"The updated content snippet shows no significant technical innovations or business impact, with only minor changes to the pricing page, suggesting a routine update with little competitive intelligence value.\"}"
-  },
-  {
-    "company": "Tabnine",
-    "url": "https://docs.tabnine.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:11:44.320Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the content, indicating no technical innovation or business impact.\"}"
-  },
-  {
-    "company": "Tabnine",
-    "url": "https://tabnine.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:11:38.745Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"AI Code Assistant\",\"impact_areas\":[],\"summary\":\"No significant changes detected in the content, indicating no major technical innovations or business impact.\"}"
-  },
-  {
-    "company": "Tabnine",
-    "url": "https://tabnine.com/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:11:33.361Z",
-    "interest_level": 5,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":5,\"interest_level\":5,\"interest_drivers\":[\"air-gapped AI software development platform\",\"NVIDIA Nemotron Models integration\"],\"category\":\"AI/ML Development Platforms\",\"impact_areas\":[\"Enterprise AI adoption\",\"Secure AI deployments\"],\"summary\":\"Tabnine has updated its blog with a new article about adding support for NVIDIA Nemotron Models, indicating a continued focus on integrating with leading AI technologies and enhancing its air-gapped AI software development platform.\"}"
-  },
-  {
-    "company": "Tabnine",
-    "url": "https://tabnine.com/pricing",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:11:28.160Z",
-    "interest_level": 5,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":5,\"interest_level\":5,\"interest_drivers\":[\"Integration with Atlassian Jira Cloud\",\"Basic personalization through Local IDE context awareness\",\"Enterprise-grade security, safety, and privacy\"],\"category\":\"AI-powered software development\",\"impact_areas\":[\"Software development efficiency\",\"AI-powered coding assistance\",\"DevSecOps\"],\"summary\":\"The updated content snippet highlights new features and integrations, such as Atlassian Jira Cloud and basic personalization, which demonstrate incremental improvements in AI-powered software development. However, there are no breakthrough AI models or significant technical advances, and the business impact is limited to product updates and new features.\"}"
-  },
-  {
-    "company": "Synthesia",
-    "url": "https://synthesia.io/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:11:11.629Z",
-    "interest_level": 3,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":4,\"interest_level\":3,\"interest_drivers\":[\"New how-to guides related to PowerPoint and video creation\",\"Minor updates to the blog content\"],\"category\":\"Content Update\",\"impact_areas\":[\"Marketing Strategy\",\"Content Creation\"],\"summary\":\"The update to the Synthesia blog includes new how-to guides and minor changes to the existing content, but does not introduce significant technical innovations or major business impacts.\"}"
-  },
-  {
-    "company": "Synthesia",
-    "url": "https://synthesia.io/pricing",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:11:03.143Z",
-    "interest_level": 4,
-    "ai_analysis": "{\"technical_innovation_score\":3,\"business_impact_score\":5,\"interest_level\":4,\"interest_drivers\":[\"Pricing update\",\"New credits system\"],\"category\":\"AI video software\",\"impact_areas\":[\"Video production\",\"Content creation\"],\"summary\":\"Synthesia updated its pricing plan, introducing a new credits system and adjusting the minutes of video available per year. While this change does not represent a significant technical innovation, it may impact the business by making the platform more attractive to customers.\"}"
-  },
-  {
-    "company": "Stability AI",
-    "url": "https://stability.ai",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:10:57.087Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the content, indicating no notable technical innovation or business impact.\"}"
-  },
-  {
-    "company": "Sourcegraph",
-    "url": "https://sourcegraph.com/pricing",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:10:26.827Z",
-    "interest_level": 3,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":4,\"interest_level\":3,\"interest_drivers\":[\"Pricing model adjustments\",\"Enterprise plan changes\"],\"category\":\"DevOps and Code Search\",\"impact_areas\":[\"Pricing strategy\",\"Sales approach\"],\"summary\":\"The update reflects a change in the sales approach for the Amp Enterprise plan, now requiring potential customers to 'Talk to Sales' rather than sign up directly. This indicates a potential shift in pricing strategy or a more personalized sales approach for large dev teams, but lacks significant technical innovation or major business impact.\"}"
-  },
-  {
     "company": "Scale AI",
     "url": "https://scale.com",
     "change_type": "modified",
-    "detected_at": "2025-08-18T16:10:20.534Z",
+    "detected_at": "2025-08-04T00:22:59.262Z",
     "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"AI Solutions\",\"impact_areas\":[],\"summary\":\"No significant changes detected in the content, indicating no major technical innovations or business impact.\"}"
-  },
-  {
-    "company": "Scale AI",
-    "url": "https://scale.com/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:10:15.699Z",
-    "interest_level": 7,
-    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Reinforcement learning research\",\"Enterprise-focused AI agents\",\"Foundational research publication\"],\"category\":\"AI Research and Development\",\"impact_areas\":[\"Enterprise AI adoption\",\"Reinforcement learning advancements\",\"AI safety and security\"],\"summary\":\"Scale AI's recent research publication on reinforcement learning and training enterprise agents demonstrates significant technical innovation, with potential business impact through improved enterprise AI adoption and specialized performance.\"}"
-  },
-  {
-    "company": "SambaNova",
-    "url": "https://sambanova.ai",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:10:05.537Z",
-    "interest_level": 3,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":4,\"interest_level\":3,\"interest_drivers\":[\"Addition of Customer Spotlight section\"],\"category\":\"AI Inference Platform\",\"impact_areas\":[\"Marketing\",\"Customer Engagement\"],\"summary\":\"The update appears to be a minor change with the addition of a Customer Spotlight section, indicating a focus on showcasing customer success stories, but lacks significant technical innovation or major business impact.\"}"
-  },
-  {
-    "company": "SambaNova",
-    "url": "https://sambanova.ai/products",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:09:58.777Z",
-    "interest_level": 3,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":4,\"interest_level\":3,\"interest_drivers\":[\"Addition of 'Customer Spotlight' section\",\"Minor updates to website structure\"],\"category\":\"AI/ML Infrastructure\",\"impact_areas\":[\"Data Centers\",\"Enterprise AI Adoption\"],\"summary\":\"The update appears to be a minor revision with the addition of a 'Customer Spotlight' section, indicating a potential increase in customer engagement and success stories. However, there are no significant technical innovations or major business impact changes observed in this update.\"}"
-  },
-  {
-    "company": "SambaNova",
-    "url": "https://sambanova.ai/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:09:58.671Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"New AI Inference Solution\",\"SambaManaged: A Turnkey Path to AI for Data Centers\",\"SambaNova 2.0: Build with Relentless Intelligence\"],\"category\":\"AI/ML Solutions\",\"impact_areas\":[\"Data Centers\",\"AI Inference\",\"Cloud Solutions\"],\"summary\":\"The updated content introduces a new section 'Customer Spotlight' and maintains focus on AI inference solutions, SambaManaged, and SambaNova 2.0, indicating incremental improvements and product updates.\"}"
-  },
-  {
-    "company": "Resemble AI",
-    "url": "https://resemble.ai",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:09:20.524Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the content, indicating no technical innovation or business impact.\"}"
-  },
-  {
-    "company": "Resemble AI",
-    "url": "https://resemble.ai/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:09:17.058Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"AI Voice Technology\",\"impact_areas\":[],\"summary\":\"No significant changes or updates were found in the provided content snippets, indicating no notable technical innovation or business impact.\"}"
-  },
-  {
-    "company": "Resemble AI",
-    "url": "https://resemble.ai/pricing",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:09:10.783Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the content, indicating no technical innovation or business impact.\"}"
-  },
-  {
-    "company": "Replit",
-    "url": "https://blog.replit.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:09:03.630Z",
-    "interest_level": 7,
-    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Introduction of Image Generation for Replit Agent\",\"Partnership with Anthropic's Claude 3.7\",\"Expansion of Replit Agent capabilities\"],\"category\":\"AI/ML and Product Development\",\"impact_areas\":[\"AI-powered image generation\",\"App development and storage\",\"Collaboration and security\"],\"summary\":\"Replit has introduced significant updates to its Replit Agent, including image generation capabilities and app storage features, demonstrating its commitment to AI/ML innovation and product development.\"}"
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"AI/ML Solutions\",\"impact_areas\":[],\"summary\":\"No significant changes detected in the content, indicating no major technical innovations or business impact.\"}"
   },
   {
     "company": "Replit",
     "url": "https://replit.com",
     "change_type": "modified",
-    "detected_at": "2025-08-18T16:08:58.710Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":1,\"interest_level\":2,\"interest_drivers\":[\"Minor update to the website's example prompt\",\"No significant technical or business changes\"],\"category\":\"AI-powered app development\",\"impact_areas\":[\"Low-level marketing updates\"],\"summary\":\"The update to Replit's website is minor, with a change in the example prompt from 'Make me a website' to 'Make me a game'. There are no significant technical innovations or business impact changes, indicating a low level of competitive intelligence value.\"}"
-  },
-  {
-    "company": "Replit",
-    "url": "https://replit.com/ai",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:08:53.865Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"No-code app development\",\"Natural language processing\",\"AI-powered software engineering\"],\"category\":\"AI-powered Development Tools\",\"impact_areas\":[\"Software development\",\"Artificial intelligence\",\"No-code development\"],\"summary\":\"Replit AI's Replit Agent introduces a no-code approach to building apps and websites using natural language prompts, indicating incremental innovation in AI-powered development tools, with moderate business impact due to its potential for expanding the developer base and increasing productivity.\"}"
-  },
-  {
-    "company": "Replicate",
-    "url": "https://replicate.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:08:42.855Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"New model releases (ideogram-ai/ideogram-v2a, ideogram-ai/ideogram-v2a-turbo)\",\"Expanded capabilities (Videos from images, Use Kontext fine-tunes)\",\"Performance improvements (faster and cheaper models)\"],\"category\":\"AI Model Deployment and Development\",\"impact_areas\":[\"Computer Vision\",\"Natural Language Processing\",\"AI Model Optimization\"],\"summary\":\"Replicate's updates focus on expanding their model offerings, improving performance, and adding new capabilities, indicating a steady progression in their AI model deployment and development platform.\"}"
-  },
-  {
-    "company": "Replicate",
-    "url": "https://replicate.com/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:08:28.485Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"Introduction of Replicate's remote MCP server\",\"Partnership with Bria for commercial-grade image generation and editing models\",\"Optimization of FLUX.1 Kontext using Taylor Seer technique\"],\"category\":\"AI/ML Model Development and Deployment\",\"impact_areas\":[\"AI Model Optimization\",\"Visual AI for Enterprises\",\"AI-Powered Video Generation\"],\"summary\":\"Replicate has introduced a remote MCP server, partnered with Bria for commercial-grade image models, and optimized FLUX.1 Kontext, showcasing notable technical advancements and business growth in the AI/ML space.\"}"
+    "detected_at": "2025-08-04T00:21:48.717Z",
+    "interest_level": 4,
+    "ai_analysis": "{\"technical_innovation_score\":4,\"business_impact_score\":3,\"interest_level\":4,\"interest_drivers\":[\"AI-powered app building\",\"Data tool for developers\",\"Chatbot integration\"],\"category\":\"AI-powered Development Platforms\",\"impact_areas\":[\"Developer Productivity\",\"AI Adoption\"],\"summary\":\"The update reflects a minor shift in focus towards developers and data insights, with the introduction of a chatbot feature. While it demonstrates Replit's ongoing efforts to enhance its AI-powered development platform, the changes are incremental and do not represent a significant breakthrough in technical innovation or business impact.\"}"
   },
   {
     "company": "Replicate",
     "url": "https://replicate.com/pricing",
     "change_type": "modified",
-    "detected_at": "2025-08-18T16:08:24.673Z",
+    "detected_at": "2025-08-04T00:21:20.049Z",
     "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"Pricing Update\",\"impact_areas\":[],\"summary\":\"No significant technical or business updates found in the content change, appears to be a routine update with no new models, features, or pricing changes introduced.\"}"
-  },
-  {
-    "company": "Redmore Studio",
-    "url": "https://redmore.studio/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:08:16.270Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[\"cookie policy update\",\"compliance with privacy regulations\"],\"category\":\"privacy and compliance\",\"impact_areas\":[\"user experience\",\"regulatory compliance\"],\"summary\":\"The updated content snippet introduces a cookie policy notification, which is a routine update to comply with privacy regulations. There is no significant technical innovation or business impact related to AI/ML.\"}"
-  },
-  {
-    "company": "Pika",
-    "url": "https://pika.art",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:08:06.176Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"Social Media/Entertainment\",\"impact_areas\":[],\"summary\":\"The change in content is minimal, with the removal of the 'About us' link and no significant updates to the functionality or features of the Pikapocalypse effects. There is no apparent technical innovation or business impact.\"}"
-  },
-  {
-    "company": "Pika",
-    "url": "https://pika.art/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:08:03.400Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":7,\"interest_level\":6,\"interest_drivers\":[\"video foundation model\",\"AI-powered video creation\",\"funding for AI development\"],\"category\":\"AI-powered video creation\",\"impact_areas\":[\"video content creation\",\"AI model development\",\"funding and investments\"],\"summary\":\"Pika's $80M series B funding for AI-powered video creation has moderate technical innovation and significant business impact, indicating a growing interest in AI-driven video content creation and potential for market expansion.\"}"
-  },
-  {
-    "company": "Pika",
-    "url": "https://pika.art/pricing",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:08:00.490Z",
-    "interest_level": 3,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":4,\"interest_level\":3,\"interest_drivers\":[\"No significant changes in AI/ML capabilities\",\"Minor updates to subscription plans\"],\"category\":\"Video Editing and Generation\",\"impact_areas\":[\"Content Creation\",\"Video Editing\"],\"summary\":\"The update shows no significant technical innovations in AI/ML, and the business impact is minor, with no major launches, funding, or market-reshaping moves. The changes are mostly related to the removal of the 'About Us' link and some minor rephrasing, which do not affect the AI/ML capabilities of the platform.\"}"
-  },
-  {
-    "company": "Pieces",
-    "url": "https://pieces.app/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:07:50.851Z",
-    "interest_level": 8,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":8,\"interest_level\":8,\"interest_drivers\":[\"Investment from Flat Capital\",\"Artificial Memory development\",\"Local-first AI\"],\"category\":\"AI/ML\",\"impact_areas\":[\"AI Research\",\"Investments\",\"Local-first AI\"],\"summary\":\"The investment from Flat Capital in Pieces indicates a significant development in local-first AI and artificial memory, showcasing a notable technical advance and substantial business impact.\"}"
-  },
-  {
-    "company": "Perplexity AI",
-    "url": "https://perplexity.ai/pro",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:06:41.574Z",
-    "interest_level": 5,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":5,\"interest_level\":5,\"interest_drivers\":[\"Update to AI models (GPT-5, Claude Sonnet 4)\",\"Introduction of video generation\",\"Enhancements to existing features\"],\"category\":\"AI/ML Product Updates\",\"impact_areas\":[\"AI Model Advancements\",\"Product Feature Enhancements\",\"Competitive Landscape\"],\"summary\":\"Perplexity has updated its Pro and Max plans with new AI models, including GPT-5 and Claude Sonnet 4, and introduced limited access to video generation, indicating incremental improvements in its product offerings.\"}"
-  },
-  {
-    "company": "Palantir",
-    "url": "https://palantir.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:06:30.983Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the content, indicating no technical innovation or business impact.\"}"
-  },
-  {
-    "company": "Palantir",
-    "url": "https://palantir.com/platforms/aip",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:06:10.582Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the content, indicating no new technical innovations or business impact.\"}"
-  },
-  {
-    "company": "NVIDIA",
-    "url": "https://blogs.nvidia.com/ai",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:05:45.873Z",
-    "interest_level": 7,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"NVIDIA's release of open dataset and models for multilingual speech AI\",\"Expansion of GeForce NOW's library with new game titles\",\"Collaboration between NVIDIA and National Science Foundation for AI model development\"],\"category\":\"AI/ML\",\"impact_areas\":[\"Natural Language Processing\",\"Cloud Gaming\",\"AI Research and Development\"],\"summary\":\"NVIDIA has released new open dataset and models for multilingual speech AI, expanded its cloud gaming platform GeForce NOW, and collaborated with the National Science Foundation for AI model development, showcasing significant technical advances and notable business impact in the AI/ML space.\"}"
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[\"No significant changes in pricing or models\",\"Minor update with no apparent technical or business impact\"],\"category\":\"AI/ML Pricing\",\"impact_areas\":[\"Machine Learning Model Pricing\",\"Cloud Computing Costs\"],\"summary\":\"No substantial changes or updates in the pricing model or AI/ML offerings, indicating minimal technical innovation or business impact.\"}"
   },
   {
     "company": "NVIDIA",
     "url": "https://developer.nvidia.com",
     "change_type": "modified",
-    "detected_at": "2025-08-18T16:05:41.405Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"New Learning Path for digital twin applications\",\"Scaling LLM Reinforcement Learning with ProRL v2\",\"CUDA Toolkit 13.0 release\",\"Dynamo 0.4 with 4x faster performance\"],\"category\":\"AI/ML Development and Tools\",\"impact_areas\":[\"Digital Twin Applications\",\"Reinforcement Learning\",\"Robot Simulations\",\"AI Performance Optimization\"],\"summary\":\"The updated content highlights new developments in AI/ML tools and technologies, including a learning path for digital twin applications, advancements in reinforcement learning, and releases of updated toolkits and software. These updates demonstrate NVIDIA's continued focus on AI/ML innovation and its potential to drive business growth through improved performance and capabilities.\"}"
+    "detected_at": "2025-08-04T00:19:14.830Z",
+    "interest_level": 5,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":4,\"interest_level\":5,\"interest_drivers\":[\"New learning pathway for deploying accelerated AI models\",\"Optimizing LLMs for performance and accuracy\",\"Securing Agentic AI\"],\"category\":\"AI/ML\",\"impact_areas\":[\"AI model optimization\",\"AI security\",\"Data science workflows\"],\"summary\":\"The updated content introduces a new learning pathway for deploying accelerated AI models and highlights recent articles on optimizing LLMs and securing Agentic AI, indicating a focus on AI/ML innovation and knowledge sharing.\"}"
   },
   {
     "company": "NVIDIA",
     "url": "https://nvidia.com/ai",
     "change_type": "modified",
-    "detected_at": "2025-08-18T16:05:36.091Z",
+    "detected_at": "2025-08-04T00:19:10.136Z",
     "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the content, indicating no major technical innovation or business impact.\"}"
-  },
-  {
-    "company": "NVIDIA",
-    "url": "https://nvidia.com/en-us/data-center/products",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:05:28.691Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[\"No significant technical updates\",\"No major business announcements\"],\"category\":\"Data Center Products\",\"impact_areas\":[\"Artificial Intelligence\",\"Machine Learning\"],\"summary\":\"The update appears to be a minor change, with no significant technical innovations or major business impact. The content remains focused on NVIDIA's data center products and AI/ML capabilities, but there are no notable advancements or announcements.\"}"
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected between the previous and current content snippets, indicating no notable technical innovation or business impact.\"}"
   },
   {
     "company": "Neeva",
     "url": "https://neeva.com",
     "change_type": "modified",
-    "detected_at": "2025-08-18T16:05:21.839Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"Website Update\",\"impact_areas\":[],\"summary\":\"The update is a minor change in the website's footer, with no significant technical or business impact.\"}"
+    "detected_at": "2025-08-04T00:18:55.450Z",
+    "interest_level": 5,
+    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":8,\"interest_level\":5,\"interest_drivers\":[\"Expansion of e-commerce platform\",\"Multilingual support\",\"Integration with other Alibaba services\"],\"category\":\"E-commerce\",\"impact_areas\":[\"Global market expansion\",\"Competitive positioning\",\"Digital transformation\"],\"summary\":\"The change from neeva.com to AliExpress indicates a significant shift in business strategy, potentially impacting the e-commerce market. However, there is no apparent technical innovation related to AI/ML.\"}"
   },
   {
     "company": "Mistral AI",
-    "url": "https://docs.mistral.ai",
+    "url": "https://mistral.ai/pricing",
     "change_type": "modified",
-    "detected_at": "2025-08-18T16:03:40.360Z",
+    "detected_at": "2025-08-04T00:18:21.198Z",
     "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[\"Minor updates to documentation\",\"No significant technical advancements\"],\"category\":\"AI/ML Documentation Update\",\"impact_areas\":[\"Developer Resources\",\"Open Source Models\"],\"summary\":\"The update to Mistral AI documentation shows minor changes, including reorganization of some sections and renaming of 'Model customization' to 'SDK Clients' and 'Function Calling' to 'Agents Function Calling' and 'Handoffs'. However, there are no significant technical innovations or business impact.\"}"
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"Pricing Update\",\"impact_areas\":[],\"summary\":\"No significant changes in pricing or features, minor updates with no technical relevance or business impact.\"}"
+  },
+  {
+    "company": "Midjourney",
+    "url": "https://docs.midjourney.com",
+    "change_type": "modified",
+    "detected_at": "2025-08-04T00:18:15.684Z",
+    "interest_level": 1,
+    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the content, indicating no technical innovation or business impact.\"}"
   },
   {
     "company": "Midjourney",
     "url": "https://docs.midjourney.com/docs/plans",
     "change_type": "modified",
-    "detected_at": "2025-08-18T16:03:18.774Z",
+    "detected_at": "2025-08-04T00:18:10.128Z",
     "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes or updates were found in the provided content snippets, indicating no technical innovation or business impact.\"}"
-  },
-  {
-    "company": "Meta AI",
-    "url": "https://ai.meta.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:02:48.241Z",
-    "interest_level": 5,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":5,\"interest_level\":5,\"interest_drivers\":[\"latest models with mixture-of-experts architecture\",\"native multimodal capabilities\",\"near limitless context window\"],\"category\":\"AI/ML Model Updates\",\"impact_areas\":[\"Computer Vision\",\"Natural Language Processing\",\"Personalized AI Experience\"],\"summary\":\"The update highlights Meta AI's new app and latest models, including Llama 4, with a focus on personal AI experience, advanced capabilities, and seamless access across various platforms. While the update showcases notable technical advancements and useful tools, it does not indicate a breakthrough innovation or a major business impact.\"}"
-  },
-  {
-    "company": "Meta AI",
-    "url": "https://ai.meta.com/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:02:40.750Z",
-    "interest_level": 8,
-    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Introduction of DINOv3, a self-supervised learning model for vision\",\"State-of-the-art performance across diverse domains\",\"Partnerships with NASA Jet Propulsion Laboratory and World Resources Institute\"],\"category\":\"Computer Vision, AI Research\",\"impact_areas\":[\"Robotics\",\"Environmental Conservation\",\"Healthcare\"],\"summary\":\"Meta AI introduces DINOv3, a self-supervised learning model for vision, achieving state-of-the-art performance. Partnerships with NASA and World Resources Institute demonstrate its potential in robotics, environmental conservation, and healthcare.\"}"
-  },
-  {
-    "company": "Meta AI",
-    "url": "https://ai.meta.com/llama",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:02:33.076Z",
-    "interest_level": 4,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":3,\"interest_level\":4,\"interest_drivers\":[\"natively multimodal model\",\"mixture-of-experts models\",\"advanced reasoning\",\"industry-leading context windows\",\"single H100 GPU efficiency\"],\"category\":\"AI/ML Model Updates\",\"impact_areas\":[\"Natural Language Processing\",\"Computer Vision\"],\"summary\":\"The update removes the 'by Meta' from the title and adds a specific detail about Llama 4 Scout's 10M context window, but does not introduce significant technical innovations or business impact.\"}"
-  },
-  {
-    "company": "Meta AI",
-    "url": "https://llama.meta.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:02:26.515Z",
-    "interest_level": 4,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":3,\"interest_level\":4,\"interest_drivers\":[\"natively multimodal model\",\"mixture-of-experts models\",\"advanced reasoning\",\"industry-leading context windows\",\"10M context window\"],\"category\":\"AI/ML Model Updates\",\"impact_areas\":[\"Natural Language Processing\",\"Computer Vision\"],\"summary\":\"The update removes 'by Meta' from the title and adds a specific detail about Llama 4 Scout's capabilities, including a 10M context window and single H100 GPU efficiency. This suggests incremental improvements and optimizations to the existing model, but does not indicate a major breakthrough or significant business impact.\"}"
-  },
-  {
-    "company": "Luma AI",
-    "url": "https://lumalabs.ai",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:02:17.723Z",
-    "interest_level": 4,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":3,\"interest_level\":4,\"interest_drivers\":[\"AI video generation\",\"Ray2 and Dream Machine integration\",\"Camera Motion Concepts\"],\"category\":\"AI/ML video generation\",\"impact_areas\":[\"video editing\",\"content creation\",\"AI-powered video tools\"],\"summary\":\"The updated content snippet from Luma AI introduces Modify Video and Camera Motion Concepts, showcasing advancements in AI video generation. While the technical innovation is notable, the business impact appears to be routine updates rather than major launches or significant partnerships.\"}"
+    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the content snippet, indicating no technical innovation or business impact.\"}"
   },
   {
     "company": "Luma AI",
     "url": "https://lumalabs.ai/dream-machine",
     "change_type": "modified",
-    "detected_at": "2025-08-18T16:01:56.909Z",
+    "detected_at": "2025-08-04T00:17:13.579Z",
     "interest_level": 5,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":5,\"interest_level\":5,\"interest_drivers\":[\"AI-powered image and video generation\",\"User-friendly interface for creative exploration\"],\"category\":\"AI/ML-powered creative tools\",\"impact_areas\":[\"Content creation\",\"Digital art\",\"Social media\"],\"summary\":\"The Luma Dream Machine utilizes AI models for image and video creation, offering a user-friendly interface for exploring creative ideas. While the technology is notable, the current update does not indicate significant technical breakthroughs or major business impacts.\"}"
-  },
-  {
-    "company": "Leonardo AI",
-    "url": "https://leonardo.ai",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:01:47.373Z",
-    "interest_level": 5,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":4,\"interest_level\":5,\"interest_drivers\":[\"Introduction of a new model, Lucid Origin\",\"Potential improvements in generative AI capabilities\"],\"category\":\"AI Image Generation\",\"impact_areas\":[\"Content Creation\",\"Creative Industries\"],\"summary\":\"The introduction of Lucid Origin, a new model, suggests incremental improvements in Leonardo AI's generative AI capabilities, but lacks specific details on technical innovations or significant business impact.\"}"
-  },
-  {
-    "company": "Leonardo AI",
-    "url": "https://leonardo.ai/pricing",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:01:43.674Z",
-    "interest_level": 3,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":4,\"interest_level\":3,\"interest_drivers\":[\"New model introduction: Lucid Origin\",\"Pricing plan updates\"],\"category\":\"AI Art Generation\",\"impact_areas\":[\"AI Model Development\",\"Pricing Strategy\"],\"summary\":\"The update introduces a new AI model, Lucid Origin, and maintains the existing pricing plans, indicating minor technical and business updates with no significant breakthroughs or market-reshaping moves.\"}"
-  },
-  {
-    "company": "LangChain",
-    "url": "https://blog.langchain.dev",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:01:39.839Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"Introduction of Open SWE, an open-source asynchronous coding agent\",\"Evolution of AI in software engineering\",\"LangGraph Platform's general availability\"],\"category\":\"AI/ML\",\"impact_areas\":[\"Software engineering\",\"AI-powered coding agents\",\"LLM application evaluation\"],\"summary\":\"The introduction of Open SWE and the general availability of LangGraph Platform demonstrate significant technical advances and notable business updates in the AI/ML space, particularly in software engineering and coding agents.\"}"
-  },
-  {
-    "company": "LangChain",
-    "url": "https://docs.langchain.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:01:36.124Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Introduction of LangChain Academy Course\",\"Emphasis on building reliable agents and workflows\",\"Low-level orchestration framework for long-running, stateful agents\"],\"category\":\"AI/ML Frameworks and Platforms\",\"impact_areas\":[\"Agent-based systems\",\"Large Language Models (LLMs)\",\"Orchestration and deployment\"],\"summary\":\"The updated content introduces a new course on Deep Research with LangGraph and highlights the capabilities of the LangGraph framework for building reliable agents and workflows, indicating incremental improvements in the AI/ML space.\"}"
-  },
-  {
-    "company": "LangChain",
-    "url": "https://langchain.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:01:31.433Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"Privacy Policy Update\",\"impact_areas\":[],\"summary\":\"No significant changes or updates related to AI/ML or competitive intelligence were found in the provided content snippets. The content appears to be a standard privacy policy and cookie usage notice with no technical innovation or business impact.\"}"
-  },
-  {
-    "company": "LangChain",
-    "url": "https://langchain.com/langsmith",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:01:27.044Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"Privacy Policy Update\",\"impact_areas\":[],\"summary\":\"No significant changes or updates related to AI/ML or competitive intelligence were found in the provided content snippets.\"}"
-  },
-  {
-    "company": "Intel",
-    "url": "https://intel.com/content/www/us/en/artificial-intelligence",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:01:22.830Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[\"minor updates to website structure\",\"no significant technical advancements\"],\"category\":\"AI/ML Solutions\",\"impact_areas\":[\"website organization\",\"user experience\"],\"summary\":\"The updated content snippet shows minor changes to the website structure and organization, with no significant technical innovations or business impact.\"}"
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":5,\"interest_level\":5,\"interest_drivers\":[\"AI-powered image and video generation\",\"User-friendly interface for creative exploration\",\"Cross-platform availability (iOS and Web)\"],\"category\":\"AI-powered Creative Tools\",\"impact_areas\":[\"Content Creation\",\"Artistic Expression\",\"AI-driven Design\"],\"summary\":\"The Luma Dream Machine update showcases a user-friendly AI-powered creative tool for generating stunning images and videos. While the technical innovation is notable, the update seems more focused on user experience and accessibility rather than introducing groundbreaking AI/ML advancements.\"}"
   },
   {
     "company": "Intel",
     "url": "https://intel.com/content/www/us/en/newsroom",
     "change_type": "modified",
-    "detected_at": "2025-08-18T16:01:19.056Z",
-    "interest_level": 5,
-    "ai_analysis": "{\"technical_innovation_score\":4,\"business_impact_score\":5,\"interest_level\":5,\"interest_drivers\":[\"Aurora supercomputer launch\",\"AI data center development\",\"Immersion cooling technology\"],\"category\":\"Artificial Intelligence\",\"impact_areas\":[\"Data Center Infrastructure\",\"AI Computing\",\"Sustainable Technology\"],\"summary\":\"The update mentions the launch of the Aurora supercomputer and highlights Intel's commitment to advancing AI technologies, but does not introduce significant new technical innovations or major business developments.\"}"
-  },
-  {
-    "company": "Inflection AI",
-    "url": "https://pi.ai",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T16:01:04.238Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Introduction of a 'Create with Pi' section\",\"Potential for new AI/ML-powered features\"],\"category\":\"AI/ML-powered Product Development\",\"impact_areas\":[\"Emotional Intelligence\",\"Personal AI\"],\"summary\":\"The updated content snippet suggests a shift from a 'coming soon' page to a more interactive and feature-rich platform, indicating potential technical and business developments in the AI/ML space.\"}"
+    "detected_at": "2025-08-04T00:16:37.325Z",
+    "interest_level": 2,
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes detected in the content, no new technical innovations or business impact\"}"
   },
   {
     "company": "Hugging Face",
     "url": "https://huggingface.co",
     "change_type": "modified",
-    "detected_at": "2025-08-18T16:00:50.482Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":6,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"New model updates (zai-org/GLM-4.5V, google/gemma-3-270m, tencent/Hunyuan-GameCraft-1.0)\",\"Introduction of new Spaces (Wan2.2 14B Fast, GPT-OSS-120B on AMD MI300X, Ovis2.5 9B)\"],\"category\":\"AI/ML Model Updates and New Spaces\",\"impact_areas\":[\"Model development\",\"AI application generation\",\"Infrastructure optimization\"],\"summary\":\"The updates on Hugging Face's platform include new model versions, updated Spaces, and the introduction of new models and applications, indicating incremental improvements in the AI/ML ecosystem.\"}"
+    "detected_at": "2025-08-04T00:16:13.684Z",
+    "interest_level": 5,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":4,\"interest_level\":5,\"interest_drivers\":[\"Model updates\",\"Increased model usage metrics\",\"New model variants\"],\"category\":\"AI/ML Community Platform\",\"impact_areas\":[\"Model development\",\"Community engagement\",\"AI application development\"],\"summary\":\"The updates on Hugging Face's platform indicate incremental improvements in model development and community engagement, with increased usage metrics for various models. While there are no breakthrough innovations, the platform's ongoing activity and model updates contribute to its position in the AI/ML community.\"}"
   },
   {
     "company": "Hugging Face",
     "url": "https://huggingface.co/blog",
     "change_type": "modified",
-    "detected_at": "2025-08-18T16:00:47.491Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"Introduction of AI Sheets for working with datasets using open AI models\",\"Guide to Efficient Multi-GPU Training\",\"Research on Vision Language Model Alignment\",\"Evaluation of LLMs in text-based video games and Filipino language understanding\"],\"category\":\"AI/ML Research and Development\",\"impact_areas\":[\"Natural Language Processing\",\"Computer Vision\",\"Multi-GPU Training\",\"Language Model Evaluation\"],\"summary\":\"The updated content features new research and tools in AI/ML, including AI Sheets, multi-GPU training guides, and evaluations of language models in various tasks, indicating a moderate level of technical innovation and business impact.\"}"
+    "detected_at": "2025-08-04T00:16:10.871Z",
+    "interest_level": 5,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":4,\"interest_level\":5,\"interest_drivers\":[\"Introduction of Trackio, a lightweight experiment tracking library\",\"Improvements to the Hugging Face CLI\",\"Research articles on various AI/ML topics\"],\"categorytoa\":\"AI/ML Research and Development\",\"impact_areas\":[\"Experiment tracking and management\",\"Command-line interface improvements\",\"Multimodal modeling and video processing\"],\"summary\":\"The updated content snippet features new research articles and introductions to tools like Trackio and an improved Hugging Face CLI, indicating ongoing innovation and development in the AI/ML space, but without breakthrough achievements or major business impact.\"}"
   },
   {
-    "company": "H2O.ai",
-    "url": "https://h2o.ai",
+    "company": "HeyGen",
+    "url": "https://heygen.com/pricing",
     "change_type": "modified",
-    "detected_at": "2025-08-18T15:59:14.420Z",
+    "detected_at": "2025-08-04T00:15:51.588Z",
     "interest_level": 8,
-    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Convergence of predictive and generative AI\",\"Secure, enterprise platform for SLMs and LLMs\",\"No-code fine-tuning framework for custom LLMs\",\"Significant customer success story (70% fraud reduction)\"],\"category\":\"AI/ML Platform\",\"impact_areas\":[\"Enterprise AI adoption\",\"Secure data analysis\",\"Autonomous decision-making\"],\"summary\":\"H2O.ai has made significant updates to its platform, including the introduction of a secure, enterprise platform for converging generative and predictive AI, and a no-code fine-tuning framework for custom LLMs. The company has also highlighted a major customer success story, with Australia's largest bank reducing fraud by 70% using H2O Enterprise AI.\"}"
-  },
-  {
-    "company": "H2O.ai",
-    "url": "https://h2o.ai/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:59:09.240Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[\"Minor updates to the blog category filter\",\"No significant changes to AI/ML offerings\"],\"category\":\"AI/ML Blog Updates\",\"impact_areas\":[\"H2O.ai blog organization\",\"User experience\"],\"summary\":\"The updates to the H2O.ai blog appear to be minor, with no significant technical innovations or business impact. The changes are primarily related to the organization and filtering of blog categories, which may improve user experience but do not provide substantial competitive intelligence value.\"}"
-  },
-  {
-    "company": "H2O.ai",
-    "url": "https://h2o.ai/platform",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:59:02.635Z",
-    "interest_level": 3,
-    "ai_analysis": "{\"technical_innovation_score\":4,\"business_impact_score\":2,\"interest_level\":3,\"interest_drivers\":[\"SOC2 Type 2 + HIPAA/HITECH compliance\",\"AutoML and no-code deep learning engines\"],\"category\":\"Cloud-based AI/ML Platform\",\"impact_areas\":[\"Data Security\",\"Customer Trust\",\"Scalability\"],\"summary\":\"Minor updates to the H2O AI Cloud website, with no significant technical innovations or business impact. The addition of Google GCP GKS to the list of supported Kubernetes flavors is a minor update.\"}"
-  },
-  {
-    "company": "Google DeepMind",
-    "url": "https://blog.google/technology/ai",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:58:50.971Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Gemini app updates\",\"new personalization features\",\"Temporary Chats\",\"AI/ML tools for education\"],\"category\":\"AI/ML Product Updates\",\"impact_areas\":[\"Education\",\"Personalization\",\"AI-powered tools\"],\"summary\":\"The update highlights new features in the Gemini app, including Temporary Chats and personalization features, as well as AI/ML tools to aid students in learning and studying. While the updates are notable, they do not represent a significant breakthrough in AI/ML technology or a major business impact.\"}"
-  },
-  {
-    "company": "Google DeepMind",
-    "url": "https://deepmind.google",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:58:38.735Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes detected in the content, indicating no major technical innovations or business impact.\"}"
-  },
-  {
-    "company": "GitHub Copilot",
-    "url": "https://docs.github.com/en/copilot",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:58:32.924Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the provided content snippets, indicating no notable technical innovation or business impact.\"}"
-  },
-  {
-    "company": "GitHub Copilot",
-    "url": "https://github.blog/tag/github-copilot",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:58:29.313Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Practical applications of GitHub Copilot for code reviews and pull requests\",\"Insights on the evolving role of junior developers in the age of AI\",\"Configuration and optimization of GitHub Copilot coding agent\"],\"category\":\"AI/ML\",\"impact_areas\":[\"Developer productivity\",\"Code quality\",\"Junior developer career development\"],\"summary\":\"The updated content provides useful tips and insights on utilizing GitHub Copilot for streamlining code reviews and daily engineering tasks, as well as navigating the evolving role of junior developers in the age of AI. While there are no breakthrough technical innovations, the content offers notable optimizations and practical advice for developers.\"}"
-  },
-  {
-    "company": "GitHub Copilot",
-    "url": "https://github.com/features/copilot",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:58:25.821Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"no change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the content, indicating no notable technical innovation or business impact.\"}"
-  },
-  {
-    "company": "Flux",
-    "url": "https://blackforestlabs.ai",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:58:18.813Z",
-    "interest_level": 8,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":8,\"interest_level\":8,\"interest_drivers\":[\"Release of FLUX.1 Kontext, a suite of generative flow matching models\",\"Partnership with Burda for comic creation\",\"Launch of FLUX models on Azure AI Foundry for enterprise\"],\"category\":\"AI/ML Research and Development\",\"impact_areas\":[\"Computer Vision\",\"Generative Models\",\"Enterprise AI Adoption\"],\"summary\":\"Black Forest Labs has released FLUX.1 Kontext, a suite of generative flow matching models, and has partnered with Burda for comic creation. The company has also launched its FLUX models on Azure AI Foundry for enterprise, demonstrating significant technical advances and business impact in the AI/ML space.\"}"
-  },
-  {
-    "company": "Flux",
-    "url": "https://blackforestlabs.ai/our-models",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:58:15.446Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"AI/ML model offerings\",\"API and open weights availability\",\"Company information and career opportunities\"],\"category\":\"AI/ML Company Website\",\"impact_areas\":[\"Natural Language Processing\",\"Computer Vision\",\"Machine Learning\"],\"summary\":\"The updated content reveals a company website with AI/ML model offerings, API, and open weights, indicating a notable presence in the AI/ML space, but lacking breakthrough technical innovation or major business impact.\"}"
-  },
-  {
-    "company": "ElevenLabs",
-    "url": "https://elevenlabs.io",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:58:11.696Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Introduction of Eleven Music\",\"Expansion of AI voice models and products\"],\"category\":\"AI Voice Generation\",\"impact_areas\":[\"Music Generation\",\"Text-to-Speech\",\"Conversational AI\"],\"summary\":\"ElevenLabs has introduced Eleven Music, a new feature that allows users to create the perfect song for any moment, showcasing the company's continued expansion into new areas of AI voice generation and music creation.\"}"
-  },
-  {
-    "company": "ElevenLabs",
-    "url": "https://elevenlabs.io/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:58:06.674Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":6,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"Introduction of Eleven Music for studio-grade music generation\",\"Partnerships with notable figures like Graydon Carter and Deepak Chopra\",\"Expansion of AI capabilities into audio content creation\"],\"category\":\"AI Audio Generation\",\"impact_areas\":[\"Content Creation\",\"Audio Technology\",\"Partnerships and Collaborations\"],\"summary\":\"ElevenLabs has introduced Eleven Music, a platform for generating studio-grade music using natural language prompts. The company has also announced partnerships with notable figures and is expanding its AI capabilities into audio content creation, indicating notable but incremental advancements in AI audio technology and business growth.\"}"
-  },
-  {
-    "company": "ElevenLabs",
-    "url": "https://elevenlabs.io/pricing",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:58:01.437Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Introduction of music generation capability\",\"Expansion of AI audio features\"],\"category\":\"AI Audio and Music Generation\",\"impact_areas\":[\"Content creation\",\"Music industry\",\"AI-powered audio solutions\"],\"summary\":\"ElevenLabs has introduced a new music generation feature, 'Eleven Music', and expanded its AI audio capabilities, indicating a notable optimization in its platform. While not a breakthrough innovation, this update demonstrates the company's commitment to enhancing its offerings and staying competitive in the AI audio market.\"}"
-  },
-  {
-    "company": "ElevenLabs",
-    "url": "https://elevenlabs.io/voice-generator",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:57:56.158Z",
-    "interest_level": 7,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Introduction of Eleven Music\",\"Expansion of AI audio capabilities\",\"Potential disruption in music creation industry\"],\"category\":\"AI Music Generation\",\"impact_areas\":[\"Music Creation\",\"Audio Production\",\"Entertainment Industry\"],\"summary\":\"ElevenLabs has introduced Eleven Music, a new AI-powered music generation tool, indicating significant technical advancements and potential business impact in the music creation industry.\"}"
-  },
-  {
-    "company": "Descript",
-    "url": "https://descript.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:57:50.161Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Introduction of pricing plans\",\"Text-based editing feature\",\"AI-powered editing tools\"],\"category\":\"AI Video Editing\",\"impact_areas\":[\"Content Creation\",\"Video Editing\",\"AI-powered Tools\"],\"summary\":\"Descript has introduced new pricing plans, including a free tier with limited features, and emphasized its AI-powered editing tools, making it more competitive in the video editing market.\"}"
-  },
-  {
-    "company": "Descript",
-    "url": "https://descript.com/overdub",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:57:38.978Z",
-    "interest_level": 7,
-    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"AI-powered audio repair\",\"Regeneration of audio to match surrounding tone\",\"Instant repair of audio and regeneration of voices\"],\"category\":\"AI-powered Audio Editing\",\"impact_areas\":[\"Media and Entertainment\",\"Audio Editing Software\"],\"summary\":\"The introduction of AI-powered audio repair and regeneration capabilities marks a significant technical advancement in the field of audio editing, with potential business impact through increased efficiency and quality for media and entertainment companies.\"}"
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":8,\"interest_level\":8,\"interest_drivers\":[\"AI-powered video creation\",\"Scalable video content platform\",\"Recognition as G2’s #1 Fastest Growing Product of 2025\"],\"category\":\"AI-powered video creation and marketing\",\"impact_areas\":[\"Content creation\",\"Marketing\",\"AI/ML innovation\"],\"summary\":\"HeyGen's AI-powered video creation platform offers flexible pricing plans, empowering creators and marketers to produce high-quality video content without extensive resources. The platform's recognition as G2's fastest-growing product and its user base of over 85,000 businesses underscore its competitive significance in the AI-driven content creation market.\"}"
   },
   {
     "company": "Descript",
     "url": "https://descript.com/pricing",
     "change_type": "modified",
-    "detected_at": "2025-08-18T15:57:34.239Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Enhanced AI-powered features\",\"Increased transcription hours\",\"Unlimited Basic and Advanced AI Actions suite\",\"Expanded language support for dubbing\"],\"category\":\"AI-powered audio editing and creation\",\"impact_areas\":[\"Media production\",\"Content creation\",\"AI-driven audio processing\"],\"summary\":\"Descript has updated its pricing plans, focusing on enhanced AI-powered features, increased transcription hours, and expanded language support, indicating a notable optimization in its services.\"}"
-  },
-  {
-    "company": "DataRobot",
-    "url": "https://datarobot.com/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:57:26.123Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"NVIDIA Nemotron models\",\"Production-ready AI evaluation\",\"AI agent deployment and governance\"],\"category\":\"AI/ML\",\"impact_areas\":[\"AI model optimization\",\"AI deployment and scaling\",\"Industry partnerships\"],\"summary\":\"The updated content highlights new blog posts focused on AI/ML innovation, including the use of NVIDIA Nemotron models for efficient AI evaluation and a step-by-step guide for deploying production-ready AI agents. While the technical innovation is notable, the business impact appears to be more incremental, with no major announcements or partnerships revealed.\"}"
-  },
-  {
-    "company": "DataRobot",
-    "url": "https://datarobot.com/platform",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:57:23.244Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"AI Platform\",\"impact_areas\":[],\"summary\":\"No significant changes were detected between the previous and current content snippets, indicating no major technical innovations or business impact.\"}"
-  },
-  {
-    "company": "DALL-E",
-    "url": "https://openai.com/pricing",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:57:16.786Z",
-    "interest_level": 7,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":8,\"interest_level\":7,\"interest_drivers\":[\"Pricing model for ChatGPT\",\"Access to flagship model GPT-5\",\"Expanded access for Plus plan\",\"Competitive intelligence on OpenAI's business strategy\"],\"category\":\"AI Pricing and Business Model\",\"impact_areas\":[\"AI Adoption\",\"Conversational AI\",\"Language Models\"],\"summary\":\"OpenAI's ChatGPT pricing model reveals a free plan with limited access to GPT-5 and a Plus plan with expanded access, indicating a strategic move to increase adoption and revenue.\"}"
+    "detected_at": "2025-08-04T00:13:39.186Z",
+    "interest_level": 4,
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":6,\"interest_level\":4,\"interest_drivers\":[\"Introduction of a free plan\",\"Expansion of pricing options\"],\"category\":\"AI-powered audio editing and creation\",\"impact_areas\":[\"Pricing strategy\",\"Market competition\",\"Customer acquisition\"],\"summary\":\"The introduction of a free plan with limited AI features and watermarked exports indicates a strategic move to attract new customers and expand the user base, while the existing Hobbyist and Creator plans remain unchanged, suggesting a focus on upselling and cross-selling within the existing customer base.\"}"
   },
   {
     "company": "Cursor",
-    "url": "https://cursor.com/blog",
+    "url": "https://cursor.com",
     "change_type": "modified",
-    "detected_at": "2025-08-18T15:57:09.648Z",
-    "interest_level": 7,
-    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"GPT-5 integration\",\"Cursor Agent CLI\",\"Character Prefix Conditioning algorithm\"],\"category\":\"AI-powered coding assistants\",\"impact_areas\":[\"Code completion\",\"Code review\",\"AI model integration\"],\"summary\":\"The updates to Cursor, an AI code editor, include the integration of GPT-5, a powerful AI model, and the introduction of a CLI for the Cursor Agent. These changes demonstrate significant technical advances and notable business impact through expanded capabilities and potential market expansion.\"}"
+    "detected_at": "2025-08-04T00:13:20.559Z",
+    "interest_level": 4,
+    "ai_analysis": "{\"technical_innovation_score\":3,\"business_impact_score\":5,\"interest_level\":4,\"interest_drivers\":[\"expanded platform support\"],\"category\":\"AI-powered code editors\",\"impact_areas\":[\"developer productivity\",\"AI adoption in software development\"],\"summary\":\"The update adds support for Linux downloads, expanding the platform's reach, but does not introduce significant technical innovations or major business impact.\"}"
   },
   {
     "company": "Cursor",
     "url": "https://cursor.com/features",
     "change_type": "modified",
-    "detected_at": "2025-08-18T15:57:06.624Z",
+    "detected_at": "2025-08-04T00:13:15.080Z",
     "interest_level": 4,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":3,\"interest_level\":4,\"interest_drivers\":[\"AI-powered code editor features\",\"custom retrieval models for codebase understanding\"],\"category\":\"AI-powered development tools\",\"impact_areas\":[\"software development productivity\",\"code editing efficiency\"],\"summary\":\"The update appears to be a minor revision with no significant technical innovations or business impact. The change from 'Ctrl + I' to '⌘ + I' suggests a minor update for Mac compatibility, but overall, the features and functionality remain largely the same.\"}"
-  },
-  {
-    "company": "Cohere",
-    "url": "https://cohere.ai",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:57:00.495Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"cookie policy update\",\"impact_areas\":[],\"summary\":\"No significant changes or updates related to AI/ML technology or business impact were found in the provided content snippets.\"}"
-  },
-  {
-    "company": "Cohere",
-    "url": "https://cohere.ai/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:56:55.436Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"cookie policy update\",\"impact_areas\":[],\"summary\":\"No significant changes or updates related to AI/ML were found in the provided content snippets. The content appears to be a standard cookie policy update with no technical innovation or business impact.\"}"
-  },
-  {
-    "company": "Cohere",
-    "url": "https://cohere.ai/products",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:56:45.227Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"cookie policy update\",\"impact_areas\":[],\"summary\":\"No significant changes or updates related to AI/ML technology or business impact were found in the provided content snippets.\"}"
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":3,\"interest_level\":4,\"interest_drivers\":[\"AI-powered code editing features\",\"Custom retrieval models for codebase understanding\"],\"category\":\"AI-powered development tools\",\"impact_areas\":[\"Software development productivity\",\"AI-assisted coding\"],\"summary\":\"The update appears to be a minor revision, with the only noticeable change being the keyboard shortcut for agent mode changed from ⌘ + I to Ctrl + I, suggesting a focus on expanding compatibility or user experience rather than introducing groundbreaking technical innovations or significant business impacts.\"}"
   },
   {
     "company": "Codeium",
     "url": "https://codeium.com",
     "change_type": "modified",
-    "detected_at": "2025-08-18T15:56:32.729Z",
-    "interest_level": 8,
-    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Integration of GPT-5\",\"Advanced codebase understanding\",\"Real-time awareness and collaborative flow\"],\"category\":\"AI-powered Code Editors\",\"impact_areas\":[\"Software Development\",\"Artificial Intelligence\",\"Machine Learning\"],\"summary\":\"The update introduces GPT-5, enhancing the Windsurf Editor's capabilities, and demonstrates significant technical advancement in AI-powered code editing, with potential business impact through improved developer productivity and market expansion.\"}"
-  },
-  {
-    "company": "Codeium",
-    "url": "https://codeium.com/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:56:28.341Z",
+    "detected_at": "2025-08-04T00:12:45.437Z",
     "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"New product features (Wave 12: Devin features in Windsurf)\",\"Strategic partnership (Windsurf and AHEAD Form Strategic AI DevOps Partnership)\",\"Acquisition by Cognition\"],\"category\":\"AI/ML Product Development\",\"impact_areas\":[\"AI DevOps\",\"Product Updates\",\"Partnerships and Acquisitions\"],\"summary\":\"Windsurf has released new product features (Wave 12) and formed a strategic partnership with AHEAD, while being acquired by Cognition, indicating notable technical advances and business updates in the AI/ML space.\"}"
-  },
-  {
-    "company": "Codeium",
-    "url": "https://codeium.com/pricing",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:56:24.120Z",
-    "interest_level": 6,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"GPT-5 model availability\",\"Promotional offers\",\"Partnership with Cognition\"],\"category\":\"AI/ML Service Pricing\",\"impact_areas\":[\"Competitive Pricing\",\"AI Model Availability\",\"Partnerships and Collaborations\"],\"summary\":\"Windsurf has updated its pricing page to include the availability of GPT-5 for free for a limited time, indicating a strategic move to attract users and stay competitive in the AI/ML service market.\"}"
-  },
-  {
-    "company": "Codeium",
-    "url": "https://codeium.com/windsurf",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:56:19.542Z",
-    "interest_level": 4,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":3,\"interest_level\":4,\"interest_drivers\":[\"Expansion of Windsurf Editor to Windows\",\"Potential increased adoption due to broader platform support\"],\"category\":\"AI-powered Development Tools\",\"impact_areas\":[\"Developer Productivity\",\"AI-assisted Coding\"],\"summary\":\"The update indicates Windsurf Editor is now available for Windows, expanding its reach. While this is a notable development, it doesn't introduce groundbreaking technical innovations or significant business impact, suggesting incremental growth rather than a major breakthrough.\"}"
-  },
-  {
-    "company": "Cisco Systems",
-    "url": "https://www.cisco.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:56:14.960Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes detected in the content, suggesting no major technical innovations or business impact.\"}"
-  },
-  {
-    "company": "Cerebras",
-    "url": "https://cerebras.net",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:56:11.311Z",
-    "interest_level": 8,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":8,\"interest_level\":8,\"interest_drivers\":[\"GPT-OSS-120B model availability\",\"Partnership with OpenAI\",\"API key accessibility\"],\"category\":\"AI/ML Model Deployment\",\"impact_areas\":[\"Natural Language Processing\",\"Artificial Intelligence\",\"Machine Learning\"],\"summary\":\"The update indicates the deployment of the GPT-OSS-120B model and a partnership with OpenAI, showcasing significant technical advancements and potential business impact in the AI/ML space.\"}"
-  },
-  {
-    "company": "Cerebras",
-    "url": "https://cerebras.net/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:56:06.444Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"routine update\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the provided content snippets. The update from August 05, 2025, to August 06, 2025, does not introduce any notable technical innovations or business impact.\"}"
-  },
-  {
-    "company": "Anyscale",
-    "url": "https://anyscale.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:55:55.095Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"AI/ML Platform\",\"impact_areas\":[],\"summary\":\"No significant changes detected in the content, indicating no major technical innovations or business impact.\"}"
-  },
-  {
-    "company": "Anyscale",
-    "url": "https://anyscale.com/blog",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:55:50.514Z",
-    "interest_level": 7,
-    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Introduction of an open-source stack for AI compute\",\"Integration with Kubernetes, Ray, PyTorch, and vLLM\",\"Collaboration with Google GKE team for Deploy DeepSeek-R1\"],\"category\":\"AI/ML Infrastructure\",\"impact_areas\":[\"AI Compute\",\"Distributed Computing\",\"Kubernetes Integration\"],\"summary\":\"Anyscale's introduction of an open-source stack for AI compute, featuring Kubernetes, Ray, PyTorch, and vLLM, demonstrates significant technical innovation. The collaboration with Google GKE team for Deploy DeepSeek-R1 also highlights the company's growing influence in the AI/ML infrastructure space.\"}"
-  },
-  {
-    "company": "Anthropic",
-    "url": "https://anthropic.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:55:40.522Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the content, indicating no notable technical innovation or business impact.\"}"
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":7,\"interest_level\":6,\"interest_drivers\":[\"AI-powered code editor\",\"Partnership with Cognition\",\"Advanced tools and features\"],\"category\":\"AI-powered Development Tools\",\"impact_areas\":[\"Software Development\",\"Artificial Intelligence\",\"Machine Learning\"],\"summary\":\"The updated content snippet shows no significant technical innovations, but the partnership with Cognition and the emphasis on AI-powered coding tools suggest a notable business impact, particularly in the areas of software development and AI/ML.\"}"
   },
   {
     "company": "Anthropic",
     "url": "https://anthropic.com/claude",
     "change_type": "modified",
-    "detected_at": "2025-08-18T15:55:36.558Z",
+    "detected_at": "2025-08-04T00:12:00.366Z",
     "interest_level": 5,
-    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":5,\"interest_level\":5,\"interest_drivers\":[\"AI-powered thinking partner\",\"Contextual understanding\",\"Creative suggestions and prototypes\"],\"category\":\"AI/ML-powered productivity tools\",\"impact_areas\":[\"Productivity\",\"Creativity\",\"Conversational AI\"],\"summary\":\"The updated content snippet showcases Claude, an AI-powered thinking partner, with capabilities such as contextual understanding, creative suggestions, and functional prototypes. While the technical innovation is notable, the update does not appear to introduce breakthrough AI models or significant technical advances, warranting a moderate technical innovation score. Similarly, the business impact is moderate, as the update does not announce major launches, funding, or acquisitions, but rather highlights the tool's features and capabilities.\"}"
-  },
-  {
-    "company": "Anthropic",
-    "url": "https://anthropic.com/news",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:55:32.622Z",
-    "interest_level": 8,
-    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":8,\"interest_level\":8,\"interest_drivers\":[\"Claude Opus 4.1 model update\",\"Expanded Claude access across U.S. government branches\",\"Claude Sonnet 4 supporting 1M tokens of context\",\"Building safeguards for Claude\"],\"category\":\"AI/ML Model Updates and Government Partnerships\",\"impact_areas\":[\"AI model development\",\"Government partnerships\",\"Financial services\",\"Healthcare interoperability\"],\"summary\":\"Anthropic has introduced several updates, including the Claude Opus 4.1 model, expanded government access, and new features like Claude Sonnet 4's increased context support. These updates demonstrate significant technical advances and notable business impact through government partnerships and product updates.\"}"
-  },
-  {
-    "company": "Anthropic",
-    "url": "https://anthropic.com/pricing",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:55:27.675Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"Pricing Update\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the pricing page of Anthropic, indicating no major technical innovation or business impact.\"}"
-  },
-  {
-    "company": "Anthropic",
-    "url": "https://docs.anthropic.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:55:24.076Z",
-    "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[\"Minor update to navigation with addition of Discord link\"],\"category\":\"AI/ML Platform\",\"impact_areas\":[\"Developer Support\",\"Community Engagement\"],\"summary\":\"The update to the Anthropic home page includes a new link to Discord, potentially indicating an increased focus on community engagement and developer support. However, there are no significant technical innovations or major business impact changes.\"}"
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":5,\"interest_level\":5,\"interest_drivers\":[\"Contextual understanding\",\"Code building capabilities\",\"Creative suggestions\"],\"category\":\"AI-powered productivity tool\",\"impact_areas\":[\"Productivity\",\"Creativity\",\"Problem-solving\"],\"summary\":\"The update showcases Claude's capabilities in debugging and creative tasks, but lacks significant technical innovation or business impact, representing incremental improvements to an existing AI-powered productivity tool.\"}"
   },
   {
     "company": "Andi",
     "url": "https://andisearch.com",
     "change_type": "modified",
-    "detected_at": "2025-08-18T15:55:20.080Z",
-    "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"AI Search\",\"impact_areas\":[],\"summary\":\"No significant changes detected in the content, suggesting no major technical innovations or business impact.\"}"
-  },
-  {
-    "company": "Aleph Alpha",
-    "url": "https://aleph-alpha.com",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:54:39.602Z",
+    "detected_at": "2025-08-04T00:11:46.863Z",
     "interest_level": 2,
-    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected between the previous and current content snippets, indicating no notable technical innovations or business impact.\"}"
-  },
-  {
-    "company": "Aleph Alpha",
-    "url": "https://aleph-alpha.com/luminous",
-    "change_type": "modified",
-    "detected_at": "2025-08-18T15:54:35.269Z",
-    "interest_level": 7,
-    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Efficient AI language model\",\"Competitive performance with leading models\",\"European AI innovation\"],\"category\":\"AI/ML Research and Development\",\"impact_areas\":[\"Natural Language Processing\",\"AI Efficiency\",\"European AI Landscape\"],\"summary\":\"Aleph Alpha's Luminous AI language model demonstrates competitive performance with leading models like GPT-3 and ChatGPT, while being more efficient with half the parameters, marking a significant innovation in European AI research and development.\"}"
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"AI Search\",\"impact_areas\":[],\"summary\":\"No significant changes detected in the content, indicating no major technical innovations or business impact.\"}"
   },
   {
     "company": "Aleph Alpha",
     "url": "https://aleph-alpha.com/pricing",
     "change_type": "modified",
-    "detected_at": "2025-08-18T15:54:30.471Z",
+    "detected_at": "2025-08-04T00:11:06.445Z",
     "interest_level": 1,
-    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"Website Update\",\"impact_areas\":[],\"summary\":\"The update from 'Join and be part of the AI revolution today' to 'Join our newsletter' is a minor change with no significant technical or business impact.\"}"
+    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"No Change\",\"impact_areas\":[],\"summary\":\"No significant changes were detected in the content, indicating no technical innovation or business impact.\"}"
+  },
+  {
+    "company": "DALL-E",
+    "url": "https://openai.com/pricing",
+    "change_type": "modified",
+    "detected_at": "2025-08-03T22:59:25.831Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":8,\"interest_level\":7,\"interest_drivers\":[\"Pricing model for ChatGPT\",\"Access to GPT-4.1 mini and other AI models\",\"Expanded limits on messaging, file uploads, data analysis, and image generation\"],\"category\":\"AI Pricing and Plans\",\"impact_areas\":[\"AI Adoption\",\"Competitive Pricing\",\"Market Expansion\"],\"summary\":\"OpenAI has introduced a pricing model for ChatGPT, offering various plans with different levels of access to AI models, features, and capabilities, which could impact the competitive landscape of the AI market.\"}"
+  },
+  {
+    "company": "Cursor",
+    "url": "https://cursor.com",
+    "change_type": "modified",
+    "detected_at": "2025-08-03T22:59:18.320Z",
+    "interest_level": 4,
+    "ai_analysis": "{\"technical_innovation_score\":3,\"business_impact_score\":5,\"interest_level\":4,\"interest_drivers\":[\"Expansion to new platforms\",\"Increased accessibility\"],\"category\":\"AI-powered code editors\",\"impact_areas\":[\"Developer productivity\",\"AI adoption in software development\"],\"summary\":\"The update from macOS to Windows download availability indicates expansion to new platforms, increasing the tool's accessibility. However, there's no significant technical innovation or major business impact.\"}"
+  },
+  {
+    "company": "Codeium",
+    "url": "https://codeium.com",
+    "change_type": "modified",
+    "detected_at": "2025-08-03T22:58:23.079Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":7,\"interest_level\":6,\"interest_drivers\":[\"AI-powered code editor\",\"Collaboration with Cognition\",\"Advanced tools for coding\"],\"category\":\"AI-powered Development Tools\",\"impact_areas\":[\"Software Development\",\"Artificial Intelligence\",\"Collaborative Coding\"],\"summary\":\"The updated content snippet shows no significant technical innovation, but the collaboration with Cognition and the emphasis on AI-powered coding tools suggest a notable business impact, potentially expanding Windsurf's market presence and capabilities.\"}"
+  },
+  {
+    "company": "Codeium",
+    "url": "https://codeium.com/blog",
+    "change_type": "modified",
+    "detected_at": "2025-08-03T22:58:17.732Z",
+    "interest_level": 5,
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":8,\"interest_level\":5,\"interest_drivers\":[\"Acquisition by Cognition\",\"Strategic AI DevOps Partnership with AHEAD\"],\"category\":\"Mergers and Acquisitions, AI DevOps\",\"impact_areas\":[\"AI Development\",\"DevOps\",\"Market Expansion\"],\"summary\":\"The recent acquisition of Windsurf by Cognition and the strategic partnership with AHEAD for AI DevOps services indicate significant business moves, but the technical innovation score is low as there are no breakthrough AI models or novel architectures mentioned.\"}"
+  },
+  {
+    "company": "Codeium",
+    "url": "https://codeium.com/pricing",
+    "change_type": "modified",
+    "detected_at": "2025-08-03T22:58:10.592Z",
+    "interest_level": 2,
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":1,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"Pricing Update\",\"impact_areas\":[],\"summary\":\"No significant technical or business updates were found in the provided content snippets, as the pricing and features remain unchanged.\"}"
+  },
+  {
+    "company": "Codeium",
+    "url": "https://codeium.com/windsurf",
+    "change_type": "modified",
+    "detected_at": "2025-08-03T22:58:05.268Z",
+    "interest_level": 4,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":3,\"interest_level\":4,\"interest_drivers\":[\"Expansion of Windsurf Editor to Linux platform\",\"Potential increase in user base\"],\"category\":\"AI-powered IDE\",\"impact_areas\":[\"Developer Tools\",\"AI-assisted Coding\"],\"summary\":\"The update introduces the Windsurf Editor for Linux, expanding the platform's reach, but does not introduce significant technical innovations or major business impact.\"}"
+  },
+  {
+    "company": "Cerebras",
+    "url": "https://cerebras.net/blog",
+    "change_type": "modified",
+    "detected_at": "2025-08-03T22:57:46.318Z",
+    "interest_level": 1,
+    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":1,\"interest_level\":1,\"interest_drivers\":[],\"category\":\"privacy policy update\",\"impact_areas\":[],\"summary\":\"No significant changes or updates related to AI/ML or competitive intelligence were found in the provided content snippets.\"}"
+  },
+  {
+    "company": "Andi",
+    "url": "https://andisearch.com",
+    "change_type": "modified",
+    "detected_at": "2025-08-03T22:56:39.763Z",
+    "interest_level": 2,
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"AI Search\",\"impact_areas\":[],\"summary\":\"No significant changes or updates were found in the content snippet, indicating no major technical innovations or business impact.\"}"
+  },
+  {
+    "company": "You.com",
+    "url": "https://you.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:47:13.402Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Introduction of ARI, a deep research agent\",\"Comparison with OpenAI Deep Research, claiming 76% superiority\",\"Enterprise AI platform with various solutions and APIs\"],\"category\":\"AI/ML Product Launch\",\"impact_areas\":[\"Workplace productivity\",\"Enterprise AI solutions\",\"Deep research and information retrieval\"],\"summary\":\"You.com introduces an enterprise AI platform with a deep research agent, ARI, that claims to outperform OpenAI Deep Research 76% of the time, indicating significant technical innovation and potential business impact in the AI/ML space.\"}"
+  },
+  {
+    "company": "WellSaid Labs",
+    "url": "https://wellsaidlabs.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:46:58.981Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"New AI voice model release\",\"Closed AI models trained on exclusive voice data\",\"Claimed 80% voiceover cost savings\"],\"category\":\"AI Voice Technology\",\"impact_areas\":[\"Content creation\",\"Audio production\",\"Data security\",\"Ethical AI\"],\"summary\":\"WellSaid Home has released a new AI voice model, Caruso, with a focus on effortless audio creation and data security. The platform boasts hundreds of AI voices, trusted by major brands, and claims significant cost savings and unlimited retakes.\"}"
+  },
+  {
+    "company": "WellSaid Labs",
+    "url": "https://wellsaidlabs.com/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:46:50.466Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"Upgraded API with premium-quality AI voice\",\"50% lower costs\",\"New Partner Program\",\"Focus on legal risk and compliance in AI voice tools\"],\"category\":\"AI Voice Technology\",\"impact_areas\":[\"AI/ML Innovation\",\"Competitive Landscape\",\"Market Trends\"],\"summary\":\"WellSaid's upgraded API and new Partner Program demonstrate significant technical advances and notable business updates, showcasing the company's efforts to improve AI voice technology and expand its market presence.\"}"
+  },
+  {
+    "company": "WellSaid Labs",
+    "url": "https://wellsaidlabs.com/pricing",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:46:41.865Z",
+    "interest_level": 4,
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":6,\"interest_level\":4,\"interest_drivers\":[\"Introduction of a pricing page\",\"Tiered pricing plans with varying features\",\"Indication of AI-powered voice solutions\"],\"category\":\"AI-powered voice solutions\",\"impact_areas\":[\"Content creation\",\"Team collaboration\",\"Enterprise solutions\"],\"summary\":\"The introduction of a pricing page for AI-powered voice solutions indicates a shift towards commercialization, with tiered plans catering to different user segments. While the technical innovation is minimal, the business impact is notable due to the potential for revenue growth and market expansion.\"}"
+  },
+  {
+    "company": "Weights & Biases",
+    "url": "https://wandb.ai",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:46:30.385Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Introduction of W&B Weave for building agentic AI applications\",\"Introduction of W&B Models for building AI models\",\"Weights & Biases' expansion of its AI developer platform\"],\"category\":\"AI Developer Platform\",\"impact_areas\":[\"AI Model Development\",\"AI Application Development\",\"Cloud Software\"],\"summary\":\"Weights & Biases has announced new AI cloud software products and capabilities, including W&B Weave and W&B Models, expanding its AI developer platform and providing tools for building AI agents, applications, and models.\"}"
+  },
+  {
+    "company": "Weights & Biases",
+    "url": "https://wandb.ai/fully-connected",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:46:19.872Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"Introduction of new AI cloud software products\",\"Integration of Weights & Biases with CoreWeave\",\"Emergence of RLHF for AI alignment\",\"Development of semantic-based coloring for W&B Models\"],\"category\":\"AI/ML Cloud Software\",\"impact_areas\":[\"Generative AI\",\"Reinforcement Learning\",\"AI Alignment\",\"Cloud Computing\"],\"summary\":\"The introduction of new AI cloud software products and capabilities by CoreWeave and Weights & Biases indicates significant technical advances and notable business updates, particularly in the areas of generative AI, reinforcement learning, and AI alignment.\"}"
+  },
+  {
+    "company": "Weights & Biases",
+    "url": "https://wandb.ai/pricing",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:46:11.653Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Introduction of W&B Inference\",\"Pricing model updates\",\"Expansion of features for AI developers\"],\"category\":\"AI Development Platform\",\"impact_areas\":[\"AI Model Development\",\"MLOps\",\"AI Collaboration Tools\"],\"summary\":\"Weights & Biases has introduced a new pricing model with updated features for AI developers, including the introduction of W&B Inference, which allows users to explore and run open-source models with included credits.\"}"
+  },
+  {
+    "company": "Tabnine",
+    "url": "https://docs.tabnine.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:46:02.007Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"AI-powered code assistant\",\"Private, secure, and compliant code handling\",\"Plugin installation for ease of use\"],\"category\":\"AI-powered software development tools\",\"impact_areas\":[\"Software development efficiency\",\"Code security and compliance\",\"AI adoption in development workflows\"],\"summary\":\"Tabnine's AI code assistant simplifies software development while maintaining code privacy, security, and compliance, indicating notable technical optimization and potential business impact through improved development efficiency and security.\"}"
+  },
+  {
+    "company": "Tabnine",
+    "url": "https://tabnine.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:45:54.097Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"AI-powered code assistant\",\"Contextually aware AI software development platform\",\"Air-gapped deployments support\",\"Personalized and protected code development\"],\"category\":\"AI-powered Software Development\",\"impact_areas\":[\"Software Development\",\"Artificial Intelligence\",\"Cybersecurity\"],\"summary\":\"Tabnine's AI code assistant platform offers a unique combination of technical innovation and business value, with its contextually aware AI capabilities, support for air-gapped deployments, and personalized and protected code development features, making it a notable player in the AI-powered software development space.\"}"
+  },
+  {
+    "company": "Tabnine",
+    "url": "https://tabnine.com/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:45:45.811Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":8,\"interest_level\":8,\"interest_drivers\":[\"Air-gapped AI software development platform\",\"Integration with NVIDIA Universal LLM NIM Microservices\",\"Secure and scalable deployments\"],\"category\":\"AI/ML Development Platforms\",\"impact_areas\":[\"Enterprise AI adoption\",\"Secure AI deployments\",\"Developer tools\"],\"summary\":\"Tabnine's air-gapped AI software development platform and integration with NVIDIA's technology demonstrate significant technical innovation and business impact, particularly in the enterprise AI space.\"}"
+  },
+  {
+    "company": "Tabnine",
+    "url": "https://tabnine.com/pricing",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:45:37.784Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"AI code assistant\",\"air-gapped deployments\",\"autonomous code generation\",\"best-in-class AI models\"],\"category\":\"AI-powered software development\",\"impact_areas\":[\"software development efficiency\",\"AI adoption in coding\",\"competitive landscape of AI code assistants\"],\"summary\":\"Tabnine's AI code assistant offers notable technical advancements with its air-gapped deployments and autonomous code generation capabilities, indicating a moderate level of technical innovation. The business impact is moderate, driven by the potential for streamlining software development, but lacks major launches or significant funding announcements.\"}"
+  },
+  {
+    "company": "Synthesia",
+    "url": "https://synthesia.io/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:45:11.192Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"AI video creation\",\"Text-to-video capabilities\",\"AI-powered training video creation\"],\"category\":\"AI-powered video creation\",\"impact_areas\":[\"Content creation\",\"Corporate training\",\"Sales enablement\",\"Internal communications\"],\"summary\":\"The Synthesia blog discusses AI-powered video creation, providing how-to guides and case studies on utilizing AI for training video creation, sales enablement, and internal communications. While the technical innovation is notable, the business impact is moderate, indicating a growing presence in the AI video creation market.\"}"
+  },
+  {
+    "company": "Synthesia",
+    "url": "https://synthesia.io/features",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:45:04.139Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Introduction of Personal Avatars\",\"Multilingual Player\",\"Interactivity features\",\"Expressive Avatars\",\"AI Screen Recorder\"],\"category\":\"AI Video Platform\",\"impact_areas\":[\"Content Creation\",\"Video Marketing\",\"Corporate Communications\"],\"summary\":\"Synthesia's new release introduces several innovative features, including Personal Avatars, Interactivity, and Expressive Avatars, showcasing significant technical advancements in AI video creation and editing. The business impact is notable, with potential for market expansion and increased customer engagement.\"}"
+  },
+  {
+    "company": "Synthesia",
+    "url": "https://synthesia.io/pricing",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:44:57.088Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":7,\"interest_level\":6,\"interest_drivers\":[\"Price reduction\",\"AI video software\",\"Scalability\"],\"category\":\"AI Video Production\",\"impact_areas\":[\"Content Creation\",\"Marketing\",\"Sales\"],\"summary\":\"Synthesia, a leading AI video software, has reduced its pricing plans, now starting from $18/month, a 38% decrease. This move can increase adoption and competitiveness in the market, making it an important development for businesses and individuals involved in video production.\"}"
+  },
+  {
+    "company": "Stability AI",
+    "url": "https://stability.ai",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:44:48.398Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Multimodal media generation and editing tools\",\"Enterprise-ready creative partner\",\"Image, video, audio, and 3D model capabilities\"],\"category\":\"AI-powered Creative Solutions\",\"impact_areas\":[\"Marketing\",\"Entertainment\",\"Gaming\"],\"summary\":\"Stability AI offers a range of AI-powered creative tools for various industries, including marketing, entertainment, and gaming, with a focus on multimodal media generation and editing, positioning itself as an enterprise-ready creative partner.\"}"
+  },
+  {
+    "company": "Stability AI",
+    "url": "https://stability.ai/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:44:41.467Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Open-source generative AI\",\"World-class models\",\"Accessibility and adaptability for creators and enterprises\"],\"category\":\"AI/ML Company Website\",\"impact_areas\":[\"Generative AI\",\"AI for Creativity\",\"Open-Source AI\"],\"summary\":\"Stability AI's website reveals their focus on open-source generative AI, offering various models and deployment options, indicating a notable presence in the AI landscape with potential for significant business impact.\"}"
+  },
+  {
+    "company": "Stability AI",
+    "url": "https://stability.ai/pricing",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:44:35.647Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Open-source generative AI\",\"World-class models\",\"Accessible and adaptable AI solutions\"],\"category\":\"AI/ML Company Website\",\"impact_areas\":[\"Generative AI\",\"AI for Creativity\",\"Open-Source AI Solutions\"],\"summary\":\"Stability AI's website introduction highlights their focus on open-source generative AI, empowering creators and developers. While the content is more introductory and doesn't reveal specific technical innovations or major business moves, it indicates a notable presence in the AI landscape with potential for significant impact.\"}"
+  },
+  {
+    "company": "Stability AI",
+    "url": "https://stability.ai/stable-diffusion",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:44:29.148Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Stable Diffusion 3.5 model release\",\"Market-leading prompt adherence\",\"Diverse output capabilities\"],\"category\":\"AI/ML Model Release\",\"impact_areas\":[\"Computer Vision\",\"Image Generation\",\"AI-powered Content Creation\"],\"summary\":\"Stability AI releases Stable Diffusion 3.5, a powerful image model with superior quality, prompt adherence, and diverse output capabilities, targeting professional use cases.\"}"
+  },
+  {
+    "company": "Sourcegraph",
+    "url": "https://sourcegraph.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:44:20.347Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"AI-powered software development\",\"Autonomous reasoning\",\"Comprehensive code editing\",\"Complex task execution\",\"Deep Search tool\"],\"category\":\"AI-powered software development\",\"impact_areas\":[\"Software development\",\"Artificial intelligence\",\"Machine learning\"],\"summary\":\"Sourcegraph introduces an AI SDLC platform with Amp, featuring autonomous reasoning, comprehensive code editing, and complex task execution, along with a new agentic search tool called Deep Search, indicating significant technical advances and notable business impact in the software development industry.\"}"
+  },
+  {
+    "company": "Sourcegraph",
+    "url": "https://sourcegraph.com/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:44:12.809Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"Deep Search feature\",\"Code Search updates\",\"Cody plan changes\"],\"category\":\"AI-powered code search and understanding\",\"impact_areas\":[\"code search\",\"natural language processing\",\"developer tools\"],\"summary\":\"Sourcegraph introduces Deep Search, a new feature for exploring code with natural-language questions, and announces changes to Cody plans, indicating incremental improvements in code search and understanding capabilities.\"}"
+  },
+  {
+    "company": "Sourcegraph",
+    "url": "https://sourcegraph.com/cody",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:44:05.824Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"AI coding assistant\",\"Automation of tasks\",\"Improved development speed and quality\"],\"category\":\"AI-powered coding tools\",\"impact_areas\":[\"Software development\",\"Productivity\",\"Artificial intelligence\"],\"summary\":\"Cody, an AI coding assistant from Sourcegraph, offers automation of tasks, improved development speed, and quality, with reported time savings of 5-6 hours per week for engineers.\"}"
+  },
+  {
+    "company": "Sourcegraph",
+    "url": "https://sourcegraph.com/pricing",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:43:58.494Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Introduction of pricing plans for Amp, a product related to AI/ML\",\"Mention of at-cost pricing and limited support\",\"Optional opt-in training on data for individual plan\"],\"category\":\"AI/ML Pricing and Plans\",\"impact_areas\":[\"AI/ML Development\",\"DevOps\",\"Cloud Computing\"],\"summary\":\"Sourcegraph has introduced pricing plans for Amp, its AI/ML-related product, with varying features and support levels across individual, team, and enterprise plans.\"}"
+  },
+  {
+    "company": "Scale AI",
+    "url": "https://scale.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:43:51.645Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Full-Stack AI Solutions\",\"Fine-Tuning and RLHF for foundation models\",\"Integration with leading AI models\"],\"category\":\"AI Solutions\",\"impact_areas\":[\"Enterprise AI Adoption\",\"AI Model Development\",\"Data Integration\"],\"summary\":\"Scale AI offers a full-stack AI solution with a focus on fine-tuning foundation models and integrating enterprise data, indicating significant technical advances and notable business impact in the AI solutions space.\"}"
+  },
+  {
+    "company": "Scale AI",
+    "url": "https://scale.com/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:43:43.882Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"Predictions for the next 6 months in enterprise AI\",\"Development of autoraters for expert-level reasoning data\",\"Investment in frontier research on quality control with LLM agents\"],\"category\":\"AI/ML Research and Development\",\"impact_areas\":[\"Enterprise AI\",\"Foundation Model Training Data\",\"Quality Control\"],\"summary\":\"Scale AI's blog posts discuss predictions for the next 6 months in enterprise AI and the development of autoraters for expert-level reasoning data, indicating a focus on advancing AI research and development.\"}"
+  },
+  {
+    "company": "Scale AI",
+    "url": "https://scale.com/enterprise",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:43:35.917Z",
+    "interest_level": 4,
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":6,\"interest_level\":4,\"interest_drivers\":[\"Scale AI product offerings\",\"AI/ML guides and resources\"],\"category\":\"AI/ML Company Website\",\"impact_areas\":[\"AI/ML solutions\",\"Data labeling and annotation\",\"Computer vision applications\"],\"summary\":\"Scale AI's website provides an overview of their products, including the Scale Data Engine and Scale GenAI Platform, as well as various guides and resources for AI/ML applications. While there is no groundbreaking technical innovation, the website showcases Scale AI's capabilities and offerings in the AI/ML space, making it relevant for competitive intelligence.\"}"
+  },
+  {
+    "company": "SambaNova",
+    "url": "https://sambanova.ai",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:43:26.853Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"AI inference platform\",\"Hardware solutions for data centers\",\"Turnkey AI deployment\",\"High-efficiency, low-power computing\"],\"category\":\"AI/ML Hardware and Platforms\",\"impact_areas\":[\"Data Center Optimization\",\"AI/ML Deployment\",\"Edge Computing\"],\"summary\":\"SambaNova's new AI inference platform and hardware solutions offer significant technical advancements and business impact, particularly in the areas of data center optimization and AI/ML deployment.\"}"
+  },
+  {
+    "company": "SambaNova",
+    "url": "https://sambanova.ai/products",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:43:18.018Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Full-stack enterprise AI platform\",\"AI inference solution for data centers\",\"Turnkey path to AI for data centers\",\"Relentless intelligence\"],\"category\":\"AI/ML Platform\",\"impact_areas\":[\"Data Centers\",\"Developers & Enterprises\",\"Government & Public Sector\"],\"summary\":\"SambaStack is a full-stack enterprise AI platform offering a new AI inference solution for data centers, deployable in 90 days, with a turnkey path to AI for data centers, indicating significant technical advances and notable business impact.\"}"
+  },
+  {
+    "company": "SambaNova",
+    "url": "https://sambanova.ai/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:43:17.817Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":8,\"interest_level\":8,\"interest_drivers\":[\"New AI Inference Solution\",\"Turnkey Path to AI for Data Centers\",\"SambaNova 2.0\",\"90-day deployment\"],\"category\":\"AI/ML Solutions\",\"impact_areas\":[\"Data Centers\",\"AI Inference\",\"Cloud Computing\"],\"summary\":\"SambaNova introduces a new AI inference solution deployable in 90 days, offering a turnkey path to AI for data centers with SambaManaged and SambaNova 2.0, indicating significant technical advances and important business partnerships or market expansion.\"}"
+  },
+  {
+    "company": "Runway",
+    "url": "https://runwayml.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:42:43.591Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Foundational AI research models\",\"Multimodal simulators\",\"Aleph and Gen-4 technologies\",\"Partnerships with major companies like Lionsgate\"],\"category\":\"AI/ML Research and Development\",\"impact_areas\":[\"Film and video production\",\"Advertising and marketing\",\"Interior design and architecture\"],\"summary\":\"Runway's introduction of Aleph and Gen-4 technologies, along with its partnerships and research initiatives, demonstrates significant technical innovation and business impact in the AI/ML space, particularly in creative industries.\"}"
+  },
+  {
+    "company": "Runway",
+    "url": "https://runwayml.com/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:42:38.845Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Introduction of Runway Gen-4\",\"Partnership with IMAX for AI Film Festival\",\"Development of new course by Parsons School of Design powered by Runway\",\"Partnership with AMC Networks for marketing and TV development\"],\"category\":\"AI/ML Research and Development\",\"impact_areas\":[\"AI-generated content\",\"Media and entertainment\",\"Education and research\"],\"summary\":\"Runway's recent updates indicate significant advancements in AI/ML research and development, particularly with the introduction of Gen-4 and partnerships with major industry players, showcasing potential for substantial business impact and technical innovation.\"}"
+  },
+  {
+    "company": "Runway",
+    "url": "https://runwayml.com/pricing",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:42:33.790Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"Introduction of Gen-4 Turbo and Gen-3 Alpha Turbo models\",\"Availability of AI tools for content creation\",\"Competitive pricing strategy\"],\"category\":\"AI-powered content creation\",\"impact_areas\":[\"Generative video and image models\",\"AI-assisted video editing\",\"Cloud-based collaboration\"],\"summary\":\"Runway's pricing page reveals a range of AI-powered tools and features, including generative video and image models, with competitive pricing plans targeting individuals and small teams.\"}"
+  },
+  {
+    "company": "Resemble AI",
+    "url": "https://resemble.ai",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:42:27.596Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"AI Voice Generator\",\"Deepfake Detection\",\"Voice Cloning\",\"Text to Speech\",\"Speech to Speech\",\"Multilingual Support\"],\"category\":\"AI/ML\",\"impact_areas\":[\"Enterprise\",\"Education\",\"Entertainment\"],\"summary\":\"Resemble AI offers a range of AI-powered voice generation and deepfake detection tools, including voice cloning, text-to-speech, and speech-to-speech conversion, with applications in enterprise, education, and entertainment.\"}"
+  },
+  {
+    "company": "Resemble AI",
+    "url": "https://resemble.ai/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:42:22.023Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"AI voice technology\",\"Generative AI\",\"Voice cloning\",\"Text-to-speech\",\"Speech-to-speech\",\"Deepfake detection\"],\"category\":\"AI/ML\",\"impact_areas\":[\"Voice technology\",\"Education\",\"Gaming\",\"Media\"],\"summary\":\"Resemble AI's blog showcases their AI voice technology, including voice cloning, text-to-speech, and speech-to-speech capabilities, as well as deepfake detection. The company has notable case studies with prominent partners, indicating significant business impact.\"}"
+  },
+  {
+    "company": "Resemble AI",
+    "url": "https://resemble.ai/pricing",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:42:15.824Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"AI voice generator\",\"Voice cloning\",\"Text-to-speech\",\"Speech-to-speech\",\"Multilingual support\",\"Open-source voice cloning AI model\"],\"category\":\"AI/ML\",\"impact_areas\":[\"Natural Language Processing\",\"Speech Recognition\",\"Generative AI\"],\"summary\":\"Resemble AI offers a range of AI-powered voice generation and editing tools, including voice cloning, text-to-speech, and speech-to-speech capabilities, with a focus on multilingual support and open-source models, indicating notable technical advancements and potential business impact in the AI/ML space.\"}"
+  },
+  {
+    "company": "Replit",
+    "url": "https://blog.replit.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:42:08.348Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"Replit Agent v2\",\"Partnership with Anthropic\",\"Integration with Claude 3.7 Sonnet\",\"Queue capability for Replit Agent\",\"Replit Databases for safer Vibe Code\"],\"category\":\"AI/ML Development Platforms\",\"impact_areas\":[\"AI-powered development tools\",\"Collaborative coding\",\"Cloud-based development platforms\"],\"summary\":\"Replit's updates demonstrate significant technical advances in AI-powered development tools, particularly with the introduction of Replit Agent v2 and its partnership with Anthropic, enhancing the platform's capabilities and competitiveness in the AI/ML development space.\"}"
+  },
+  {
+    "company": "Replit",
+    "url": "https://replit.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:42:01.992Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":8,\"interest_level\":8,\"interest_drivers\":[\"AI-powered app building\",\"Collaboration features\",\"Integration with data tools\",\"Productivity gains\",\"Revenue growth\"],\"category\":\"AI-powered Development Platforms\",\"impact_areas\":[\"Software Development\",\"Artificial Intelligence\",\"Machine Learning\",\"Productivity\",\"Revenue Growth\"],\"summary\":\"Replit's AI-powered platform enables users to build apps and sites with ease, offering features like collaboration, deployments, and integration with data tools, resulting in significant productivity gains and revenue growth.\"}"
+  },
+  {
+    "company": "Replit",
+    "url": "https://replit.com/ai",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:41:49.664Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"No-code app and website development\",\"Natural language processing for development automation\",\"Replit Agent's potential to democratize software development\"],\"category\":\"AI-powered Development Tools\",\"impact_areas\":[\"Software Development\",\"No-code Movement\",\"Artificial Intelligence\",\"Natural Language Processing\"],\"summary\":\"Replit AI introduces Replit Agent, a tool that enables no-code development of apps and websites using natural language prompts, potentially disrupting traditional software development workflows and increasing accessibility for non-technical creators.\"}"
+  },
+  {
+    "company": "Replicate",
+    "url": "https://replicate.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:41:35.694Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"API for running and fine-tuning AI models\",\"Support for custom models and deployment at scale\",\"Integration with popular programming languages (Node, Python, HTTP)\",\"Access to pre-trained models from notable organizations (ByteDance, Black Forest Labs)\"],\"category\":\"AI/ML Platform\",\"impact_areas\":[\"Computer Vision\",\"Natural Language Processing\",\"Speech Generation\",\"Music Generation\"],\"summary\":\"Replicate offers a platform for running and fine-tuning AI models via an API, with support for custom models, deployment at scale, and integration with popular programming languages. The platform provides access to pre-trained models from notable organizations and has potential applications in various areas, including computer vision, NLP, speech generation, and music generation.\"}"
+  },
+  {
+    "company": "Replicate",
+    "url": "https://replicate.com/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:41:25.508Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Open-source video model updates\",\"Partnership with Bria for commercial-grade image generation\",\"Optimization techniques for AI models\"],\"category\":\"AI/ML\",\"impact_areas\":[\"Computer Vision\",\"AI Video Generation\",\"Image Generation\"],\"summary\":\"Replicate's blog updates showcase significant technical advances in AI video and image generation, with notable partnerships and optimizations. The open-source video model updates and partnership with Bria demonstrate a moderate business impact, while the technical innovations, such as the Taylor Seer optimization technique, contribute to a higher technical innovation score.\"}"
+  },
+  {
+    "company": "Replicate",
+    "url": "https://replicate.com/pricing",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:41:20.456Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Pricing model for AI/ML models\",\"Public and proprietary model offerings\",\"Pay-per-use pricing\"],\"category\":\"AI/ML Platform\",\"impact_areas\":[\"Machine Learning\",\"AI Model Deployment\",\"Cloud Computing\"],\"summary\":\"Replicate's pricing model offers a pay-per-use approach for AI/ML models, with costs varying by hardware, time, input, and output. The platform hosts thousands of open-source and proprietary models, with estimates for model costs available on each model's page.\"}"
+  },
+  {
+    "company": "Redmore Studio",
+    "url": "https://redmore.studio",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:41:13.468Z",
+    "interest_level": 2,
+    "ai_analysis": "{\"technical_innovation_score\":1,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[\"cookie policy\",\"user consent\"],\"category\":\"web development\",\"impact_areas\":[\"user experience\",\"privacy\"],\"summary\":\"The updated content snippet is related to a cookie policy and user consent on a website, with no apparent relevance to AI/ML technical innovation or significant business impact.\"}"
+  },
+  {
+    "company": "Redmore Studio",
+    "url": "https://redmore.studio/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:41:07.613Z",
+    "interest_level": 2,
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[\"Cookie consent management\",\"Basic website functionality\"],\"category\":\"Web Development\",\"impact_areas\":[\"User Experience\",\"Privacy\"],\"summary\":\"The current content snippet is a standard cookie consent page with no significant technical innovation or business impact related to AI/ML. It appears to be a basic website functionality implementation with a humorous tone.\"}"
+  },
+  {
+    "company": "Pika",
+    "url": "https://pika.art",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:40:57.193Z",
+    "interest_level": 3,
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":4,\"interest_level\":3,\"interest_drivers\":[\"Novel marketing approach\",\"Potential for immersive experience\"],\"category\":\"Immersive Technology\",\"impact_areas\":[\"Social Media\",\"Gaming\"],\"summary\":\"Pika appears to be a platform offering immersive experiences with a unique marketing approach, but lacks clear technical innovation or significant business impact based on the provided content snippet.\"}"
+  },
+  {
+    "company": "Pika",
+    "url": "https://pika.art/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:40:51.919Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":8,\"interest_level\":8,\"interest_drivers\":[\"Video foundation model development\",\"Series B funding of $80M\",\"Growth in team size and product capabilities\"],\"category\":\"AI-powered video creation\",\"impact_areas\":[\"Content creation\",\"Video production\",\"AI/ML model development\"],\"summary\":\"Pika's $80M series B funding and progress in building a video foundation model demonstrate significant technical advances and business impact, particularly in the AI-powered video creation space.\"}"
+  },
+  {
+    "company": "Pika",
+    "url": "https://pika.art/pricing",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:40:47.209Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"AI-powered video editing features\",\"Subscription-based model with varying tiers\",\"Commercial use cases\"],\"category\":\"AI-powered video editing and generation\",\"impact_areas\":[\"Content creation\",\"Video editing\",\"AI-powered media generation\"],\"summary\":\"Pika offers an AI-powered video editing and generation platform with a subscription-based model, targeting creative professionals and businesses. While the technical details are not extensively disclosed, the presence of various AI-driven features and a tiered pricing structure suggests a notable but not groundbreaking innovation.\"}"
+  },
+  {
+    "company": "Pieces",
+    "url": "https://pieces.app",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:40:41.480Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Automated memory capture\",\"Contextual search\",\"Cross-app functionality\",\"AI/ML applications\"],\"category\":\"Productivity Tools\",\"impact_areas\":[\"Developer Workflow\",\"AI-powered Search\",\"Cloud Services\"],\"summary\":\"Pieces offers an innovative approach to capturing and retrieving developer workflow memories, with potential applications in AI/ML-driven search and productivity enhancements.\"}"
+  },
+  {
+    "company": "Pieces",
+    "url": "https://pieces.app/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:40:33.047Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":6,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"on-device AI\",\"data ownership\",\"AI innovation\",\"enterprise AI adoption\"],\"category\":\"AI/ML\",\"impact_areas\":[\"privacy\",\"user control\",\"research\",\"trust\"],\"summary\":\"The blog posts discuss the rise of on-device AI, the limitations of scaling in AI innovation, and the importance of trust in enterprise AI adoption, providing insights into the current state and future directions of AI and ML.\"}"
+  },
+  {
+    "company": "Pieces",
+    "url": "https://pieces.app/features",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:40:25.881Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"On-device AI\",\"Context awareness\",\"Long-term memory\",\"AI copilot\",\"Cross-platform compatibility\"],\"category\":\"AI-powered productivity tools\",\"impact_areas\":[\"Software development teams\",\"Productivity\",\"AI adoption\"],\"summary\":\"Pieces introduces a range of features leveraging on-device AI, context awareness, and long-term memory to enhance productivity for software development teams, showcasing notable technical innovation and potential business impact.\"}"
+  },
+  {
+    "company": "Pieces",
+    "url": "https://pieces.app/pricing",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:40:17.920Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Long-Term Memory technology\",\"Integration with multiple LLMs (OpenAI, Anthropic, Ollama)\",\"Local data processing for security\"],\"category\":\"AI-powered Development Tools\",\"impact_areas\":[\"Developer Productivity\",\"AI-assisted Coding\",\"Collaboration Tools\"],\"summary\":\"Pieces for Developers introduces a novel Long-Term Memory technology, enhancing development workflow with anticipation and focus. The platform offers individual and team plans, integrating with various code editors and collaboration tools, while emphasizing data security through local processing.\"}"
+  },
+  {
+    "company": "Palantir",
+    "url": "https://palantir.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:39:39.901Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":8,\"interest_level\":8,\"interest_drivers\":[\"Palantir's AI-fueled TITAN trucks\",\"Alex Karp's book The Technological Republic\",\"State-of-the-art trucks for the U.S. Army\"],\"category\":\"Artificial Intelligence, Machine Learning, Defense Technology\",\"impact_areas\":[\"U.S. Army\",\"Western tech institutions\",\"Public, private, and non-profit sectors\"],\"summary\":\"Palantir's website update highlights its AI-fueled TITAN trucks, now in use by the U.S. Army, and CEO Alex Karp's new book, The Technological Republic, discussing Western tech institutions and the state of software dominance.\"}"
+  },
+  {
+    "company": "Palantir",
+    "url": "https://palantir.com/platforms/aip",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:39:33.236Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":8,\"interest_level\":8,\"interest_drivers\":[\"AI-fueled TITAN trucks\",\"Palantir's AI Platform\",\"Alex Karp's insights on Western tech institutions\"],\"category\":\"Artificial Intelligence\",\"impact_areas\":[\"US Army\",\"Software dominance\",\"Technological advancements\"],\"summary\":\"Palantir's AI platform and its applications, such as the TITAN trucks, demonstrate significant technical advancements and business impact, particularly in the public sector.\"}"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://blogs.nvidia.com/ai",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:39:03.901Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Generative AI advancements\",\"NVIDIA RTX PCs for local AI agent creation\",\"GeForce NOW cloud gaming updates\"],\"category\":\"AI/ML and Gaming\",\"impact_areas\":[\"AI model capabilities\",\"Cloud gaming\",\"NVIDIA RTX technology\"],\"summary\":\"The NVIDIA blog features updates on generative AI, GeForce NOW cloud gaming, and the use of NVIDIA RTX PCs for local AI agent creation, indicating a focus on AI/ML advancements and their applications in gaming and other areas.\"}"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://developer.nvidia.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:38:57.925Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"New Learning Pathway: Deploy Accelerated AI Models\",\"Post-Training Quantization for LLMs\",\"NVIDIA HPC SDK v25.7 release\",\"NVIDIA cuPQC v0.4 release\"],\"category\":\"AI/ML Development and Tools\",\"impact_areas\":[\"AI Model Optimization\",\"AI Security\",\"CI/CD for AI\",\"AI/ML Tooling and Frameworks\"],\"summary\":\"NVIDIA Developer website update highlights new learning pathways, technical advancements in AI model optimization and security, and recent releases of development tools and frameworks, indicating a strong focus on AI/ML innovation and community engagement.\"}"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.com/ai",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:38:49.958Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":8,\"interest_level\":8,\"interest_drivers\":[\"Full-stack AI innovation\",\"Accelerated infrastructure\",\"Enterprise-grade software\",\"AI models\"],\"category\":\"AI Solutions for Enterprises\",\"impact_areas\":[\"Enterprise IT\",\"Artificial Intelligence\",\"Accelerated Computing\"],\"summary\":\"NVIDIA's AI solutions for enterprises offer a full-stack innovation approach, accelerating AI workflows and providing higher accuracy, efficiency, and performance at a lower cost, indicating significant technical advances and important business impact.\"}"
+  },
+  {
+    "company": "NVIDIA",
+    "url": "https://nvidia.com/en-us/data-center/products",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:38:39.478Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"NVIDIA accelerated computing platform\",\"Deep learning and machine learning capabilities\",\"NVIDIA DGX platform for enterprise AI\"],\"category\":\"AI/ML Computing Infrastructure\",\"impact_areas\":[\"Data Center Infrastructure\",\"Artificial Intelligence\",\"Machine Learning\"],\"summary\":\"NVIDIA's data center products, including the DGX platform and accelerated computing platform, demonstrate significant technical advances in AI/ML computing infrastructure, with notable business impact through enterprise AI solutions.\"}"
+  },
+  {
+    "company": "Neeva",
+    "url": "https://neeva.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:38:29.451Z",
+    "interest_level": 2,
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[\"new website\",\"AI/ML focus\"],\"category\":\"AI/ML company\",\"impact_areas\":[\"search\",\"AI-powered services\"],\"summary\":\"A new website, neeva.com, has been launched with a focus on AI/ML, but no significant technical or business impact is evident from the provided content snippet.\"}"
+  },
+  {
+    "company": "Murf AI",
+    "url": "https://murf.ai",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:38:19.182Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"AI voice generator\",\"Text to speech software\",\"2nd generation text to speech models\"],\"category\":\"AI/ML\",\"impact_areas\":[\"Content creation\",\"Marketing\",\"Voice technology\"],\"summary\":\"Murf AI offers a free AI voice generator and text to speech software, leveraging 2nd generation text to speech models to create human-like voiceovers. This innovation can accelerate content creation and deployment of AI voice agents and apps, but its business impact is currently limited to product updates and new features.\"}"
+  },
+  {
+    "company": "Murf AI",
+    "url": "https://murf.ai/resources/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:38:02.664Z",
+    "interest_level": 2,
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[\"AI-powered products\",\"Text-to-speech capabilities in multiple languages\"],\"category\":\"AI/ML-powered content creation\",\"impact_areas\":[\"Content creation\",\"Language support\"],\"summary\":\"The current content snippet appears to be a 404 error page for Murf Blog, but it reveals the company's product offerings, including AI-powered voice generation, text-to-speech, and voice cloning. While there is no significant technical innovation or business impact, the page provides insight into Murf's AI/ML capabilities and language support.\"}"
+  },
+  {
+    "company": "Mistral AI",
+    "url": "https://docs.mistral.ai",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:37:54.081Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":5,\"interest_level\":6,\"interest_drivers\":[\"Open-source AI models\",\"La Plateforme for developer and enterprise product development\",\"Range of capabilities including text, vision, audio, and reasoning\"],\"category\":\"AI/ML Research and Development\",\"impact_areas\":[\"Natural Language Processing\",\"Computer Vision\",\"Audio Processing\",\"Machine Reasoning\"],\"summary\":\"Mistral AI's documentation reveals a comprehensive platform for building AI-powered products, with a focus on open-source models and a wide range of capabilities, indicating significant technical advances and notable business potential.\"}"
+  },
+  {
+    "company": "Mistral AI",
+    "url": "https://mistral.ai",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:37:48.406Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Configurable AI for all builders\",\"Train, distill, fine-tune, and build with the world’s best open source models\",\"Enterprise-grade, agent-ready AI\",\"Privacy-first, deployable on-premises, cloud, edge, devices, and more\",\"Unified AI for all your work, multilingual, multimodal AI assistant\"],\"category\":\"AI/ML Platform\",\"impact_areas\":[\"AI Model Customization\",\"AI Deployment\",\"AI Assistant\",\"Data Privacy\"],\"summary\":\"Mistral AI introduces Frontier AI, a configurable AI platform for builders, with a focus on privacy, customization, and enterprise-grade deployment, indicating significant technical innovation and business impact in the AI/ML space.\"}"
+  },
+  {
+    "company": "Mistral AI",
+    "url": "https://mistral.ai/news",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:37:43.351Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Introduction of Deep Research (Preview)\",\"Release of Codestral 25.08 and the Complete Mistral Coding Stack for Enterprise\",\"Development of open source speech understanding models (Voxtral)\"],\"category\":\"AI/ML Research and Development\",\"impact_areas\":[\"Natural Language Processing\",\"Computer Vision\",\"Speech Understanding\"],\"summary\":\"Mistral AI has introduced several significant updates, including Deep Research (Preview), Codestral 25.08, and open source speech understanding models, demonstrating notable technical advancements and potential business impact through expanded product offerings and research contributions.\"}"
+  },
+  {
+    "company": "Mistral AI",
+    "url": "https://mistral.ai/pricing",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:37:38.486Z",
+    "interest_level": 6,
+    "ai_analysis": "{\"technical_innovation_score\":5,\"business_impact_score\":6,\"interest_level\":6,\"interest_drivers\":[\"Introduction of tiered pricing model\",\"Mention of custom models and UI for enterprise deployments\",\"Availability of various features such as voice mode, flash answers, and deep research\"],\"category\":\"AI Pricing and Plans\",\"impact_areas\":[\"AI-powered productivity\",\"Collaborative AI workspaces\",\"Custom AI model deployments\"],\"summary\":\"Mistral AI has introduced a pricing page with various plans, including free, pro, team, and enterprise options, each with distinct features and capabilities, indicating a notable optimization in their business strategy and a useful tool for customers.\"}"
+  },
+  {
+    "company": "Mistral AI",
+    "url": "https://mistral.ai/technology",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:37:33.098Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Frontier LLMs\",\"Customizable AI solutions\",\"Enterprise-grade security\",\"Comprehensive AI tooling\"],\"category\":\"AI Platform\",\"impact_areas\":[\"Natural Language Processing\",\"AI Deployment\",\"Enterprise Software\"],\"summary\":\"La Plateforme offers a comprehensive AI platform with frontier LLMs, customizable solutions, and enterprise-grade security, indicating significant technical innovation and business impact in the AI industry.\"}"
+  },
+  {
+    "company": "Meta AI",
+    "url": "https://ai.meta.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:36:50.361Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Introduction of the new Meta AI app\",\"Latest models with mixture-of-experts architecture and native multimodal capabilities\",\"Personalized AI experience\",\"Advanced capabilities for image and video creation\"],\"category\":\"AI/ML\",\"impact_areas\":[\"Conversational AI\",\"Computer Vision\",\"Personalized Recommendations\"],\"summary\":\"Meta introduces a new AI app with personal conversational experience, advanced capabilities for image and video creation, and seamless access across multiple platforms, showcasing significant technical advances and notable business impact.\"}"
+  },
+  {
+    "company": "Meta AI",
+    "url": "https://ai.meta.com/blog",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:36:44.407Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Introduction of V-JEPA 2 world model\",\"New benchmarks for physical reasoning\",\"Partnerships with AWS and Upwork\",\"Llama's applications in various industries\"],\"category\":\"AI/ML Research and Development\",\"impact_areas\":[\"Natural Language Processing\",\"Computer Vision\",\"Robotics\",\"Startup Ecosystem\"],\"summary\":\"Meta AI's latest updates showcase significant technical advancements, including the introduction of V-JEPA 2, a world model trained on video, and new partnerships with AWS and Upwork, demonstrating the growing importance of Llama in various industries.\"}"
+  },
+  {
+    "company": "Meta AI",
+    "url": "https://ai.meta.com/llama",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:36:34.438Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Open-source AI models\",\"Multimodal, mixture-of-experts models\",\"Advanced reasoning capabilities\",\"Industry-leading context windows\",\"Seamless deployment and integration with major cloud providers\"],\"category\":\"AI/ML Innovation\",\"impact_areas\":[\"Natural Language Processing\",\"Computer Vision\",\"AI-powered App Development\"],\"summary\":\"Meta's Llama 4 release represents a significant technical advancement in AI, offering improved speed, efficiency, and scalability. The open-source nature and seamless integration with major cloud providers like AWS make it an attractive option for developers, potentially driving business growth and market expansion.\"}"
+  },
+  {
+    "company": "Meta AI",
+    "url": "https://llama.meta.com",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:36:24.378Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Open-source AI models\",\"Multimodal, mixture-of-experts models\",\"Advanced reasoning capabilities\",\"Industry-leading context windows\",\"Seamless deployment with Llama API and Llama Stack\"],\"category\":\"AI/ML Innovation\",\"impact_areas\":[\"AI model development\",\"Cloud deployment\",\"AI-powered application development\"],\"summary\":\"Meta's Llama 4 release introduces significant technical advancements in AI models, including multimodal and mixture-of-experts models, with a focus on ease of deployment, cost efficiency, and scalability. The business impact is substantial, with potential for widespread adoption and integration with major cloud providers like AWS.\"}"
+  },
+  {
+    "company": "Luma AI",
+    "url": "https://lumalabs.ai",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:36:14.509Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"AI video generation\",\"Ray2 and Dream Machine integration\",\"Modify Video feature\",\"Camera Motion Concepts\"],\"category\":\"AI/ML Video Generation\",\"impact_areas\":[\"Media and Entertainment\",\"Advertising and Marketing\"],\"summary\":\"Luma AI introduces innovative AI video generation features, including Modify Video and Camera Motion Concepts, leveraging Ray2 and Dream Machine technologies, indicating significant technical advances and notable business impact in the AI/ML video generation space.\"}"
+  },
+  {
+    "company": "Luma AI",
+    "url": "https://lumalabs.ai/dream-machine",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:35:51.312Z",
+    "interest_level": 8,
+    "ai_analysis": "{\"technical_innovation_score\":8,\"business_impact_score\":7,\"interest_level\":8,\"interest_drivers\":[\"Advanced image and video AI models\",\"User-friendly interface for ideation and creation\",\"Cross-platform availability (iOS and Web)\"],\"category\":\"AI-powered Creative Tools\",\"impact_areas\":[\"Content Creation\",\"AI-assisted Design\",\"Creative Industries\"],\"summary\":\"Luma AI's Dream Machine introduces a novel, user-friendly platform for creating stunning images and videos using advanced AI models, marking a significant technical advance and potential business impact in the creative industries.\"}"
+  },
+  {
+    "company": "Luma AI",
+    "url": "https://lumalabs.ai/pricing",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:35:43.468Z",
+    "interest_level": 2,
+    "ai_analysis": "{\"technical_innovation_score\":2,\"business_impact_score\":2,\"interest_level\":2,\"interest_drivers\":[],\"category\":\"Company Website\",\"impact_areas\":[],\"summary\":\"The provided content snippet appears to be a basic website footer with no substantial technical or business information, offering little to no competitive intelligence value.\"}"
+  },
+  {
+    "company": "Leonardo AI",
+    "url": "https://leonardo.ai",
+    "change_type": "new",
+    "detected_at": "2025-08-01T22:35:35.597Z",
+    "interest_level": 7,
+    "ai_analysis": "{\"technical_innovation_score\":7,\"business_impact_score\":6,\"interest_level\":7,\"interest_drivers\":[\"Generative AI\",\"AI-first creative suite\",\"Developer API\",\"Scalability\"],\"category\":\"AI Image Generation\",\"impact_areas\":[\"Content Creation\",\"Collaboration\",\"Marketing\",\"Advertising\"],\"summary\":\"Leonardo AI introduces an AI image generator with a suite of tools for creators, teams, and developers, offering production-quality visual assets, scalability, and style-consistency, indicating significant technical advances and notable business impact in the AI image generation space.\"}"
   }
 ]

@@ -1,20 +1,26 @@
 {
   "type": "concepts",
-  "generated_at": "2025-08-06T01:30:43.549Z",
+  "generated_at": "2025-08-18T16:45:27.438Z",
   "entity_count": 27,
-  "context_count": 99,
+  "context_count": 108,
   "contexts": {
     "rlhf": [
       {
         "company": "Weights & Biases",
         "source_url": "https://wandb.ai/fully-connected",
-        "text": "generative AI assessment Justin Tenuto Aug 01 Articles, GenAI, Framework / Integration, Evaluations What is RLHF? Reinforcement learning from human feedback for AI alignment Brett Young Jul 28 Articles, Reinforcement Learning,",
-        "position": 382,
+        "text": "Bedrock AgentCore observability guide Dave Davies Jul 28 Articles, LLM, GenAI, Agents, Evaluations What is RLHF? Reinforcement learning from human feedback for AI alignment Brett Young Jul 28 Articles, Reinforcement Learning,",
+        "position": 1422,
         "co_mentions": [
           "ai",
-          "generative ai",
+          "r",
+          "llm",
+          "bedrock agentcore",
+          "reinforcement learning",
           "genai",
-          "evaluations"
+          "bedrock",
+          "evaluations",
+          "agents",
+          "hf"
         ]
       },
       {
@@ -24,10 +30,12 @@
         "position": 564,
         "co_mentions": [
           "ai",
+          "r",
           "fine-tuning",
           "foundation models",
           "agents",
-          "models"
+          "models",
+          "hf"
         ]
       },
       {
@@ -37,34 +45,38 @@
         "position": 2160,
         "co_mentions": [
           "ai",
+          "r",
           "llm",
           "llms",
-          "models"
+          "models",
+          "hf"
         ]
       },
       {
         "company": "Scale AI",
         "source_url": "https://scale.com",
-        "text": "r CUSTOMERS We have changed the game of AI data—hear it from our customers. From RLHF to data labeling to model evaluation to enterprise apps, learn from experts why Scale is",
-        "position": 2398,
+        "text": "accurat CUSTOMERS We have changed the game of AI data—hear it from our customers. From RLHF to data labeling to model evaluation to enterprise apps, learn from experts why Scale is",
+        "position": 2391,
         "co_mentions": [
           "ai",
-          "app"
+          "r",
+          "app",
+          "hf"
         ]
       },
       {
         "company": "Hugging Face",
         "source_url": "https://huggingface.co/blog",
-        "text": "Community Guide Open Source Collab Partnerships Research NLP Audio CV RL Ethics Diffusion Game Development RLHF Leaderboard Case Studies LeRobot Inference Providers Welcome GPT OSS, the new open-source model family from",
+        "text": "Community Guide Open Source Collab Partnerships Research NLP Audio CV RL Ethics Diffusion Game Development RLHF Leaderboard Case Studies LeRobot Inference Providers MCP for Research: How to Connect AI to Research",
         "position": 275,
         "co_mentions": [
+          "ai",
+          "r",
           "inference",
-          "gpt",
-          "open-source",
           "fusion",
-          "search",
+          "inference providers",
           "lerobot",
-          "gpt oss",
+          "hf",
           "pro"
         ]
       },
@@ -75,9 +87,13 @@
         "position": 382,
         "co_mentions": [
           "ai",
+          "r",
           "generative ai",
+          "reinforcement learning",
           "genai",
-          "evaluations"
+          "ram",
+          "evaluations",
+          "hf"
         ]
       },
       {
@@ -87,10 +103,12 @@
         "position": 564,
         "co_mentions": [
           "ai",
+          "r",
           "fine-tuning",
           "foundation models",
           "agents",
-          "models"
+          "models",
+          "hf"
         ]
       },
       {
@@ -100,9 +118,86 @@
         "position": 2160,
         "co_mentions": [
           "ai",
+          "r",
           "llm",
           "llms",
-          "models"
+          "models",
+          "hf"
+        ]
+      },
+      {
+        "company": "Scale AI",
+        "source_url": "https://scale.com",
+        "text": "r CUSTOMERS We have changed the game of AI data—hear it from our customers. From RLHF to data labeling to model evaluation to enterprise apps, learn from experts why Scale is",
+        "position": 2398,
+        "co_mentions": [
+          "ai",
+          "r",
+          "app",
+          "hf"
+        ]
+      },
+      {
+        "company": "Hugging Face",
+        "source_url": "https://huggingface.co/blog",
+        "text": "Community Guide Open Source Collab Partnerships Research NLP Audio CV RL Ethics Diffusion Game Development RLHF Leaderboard Case Studies LeRobot Inference Providers Welcome GPT OSS, the new open-source model family from",
+        "position": 275,
+        "co_mentions": [
+          "r",
+          "inference",
+          "gpt",
+          "open-source",
+          "fusion",
+          "gpt oss",
+          "inference providers",
+          "lerobot",
+          "hf",
+          "pro"
+        ]
+      },
+      {
+        "company": "Weights & Biases",
+        "source_url": "https://wandb.ai/fully-connected",
+        "text": "generative AI assessment Justin Tenuto Aug 01 Articles, GenAI, Framework / Integration, Evaluations What is RLHF? Reinforcement learning from human feedback for AI alignment Brett Young Jul 28 Articles, Reinforcement Learning,",
+        "position": 382,
+        "co_mentions": [
+          "ai",
+          "r",
+          "generative ai",
+          "reinforcement learning",
+          "genai",
+          "ram",
+          "evaluations",
+          "hf"
+        ]
+      },
+      {
+        "company": "Scale AI",
+        "source_url": "https://scale.com",
+        "text": "Outcomes delivered with world-class data, models, agents, and deployment. Book a Demo → Fine-Tuning and RLHF Adapt best-in-class foundation models to your business and your specific data to build sustainable, successful",
+        "position": 564,
+        "co_mentions": [
+          "ai",
+          "r",
+          "fine-tuning",
+          "foundation models",
+          "agents",
+          "models",
+          "hf"
+        ]
+      },
+      {
+        "company": "Scale AI",
+        "source_url": "https://scale.com",
+        "text": "powers many of the most advanced LLMs and generative models in the world through world-class RLHF, data generation, model evaluation, safety, and alignment. Book a Demo → Build AI→ AI Text",
+        "position": 2160,
+        "co_mentions": [
+          "ai",
+          "r",
+          "llm",
+          "llms",
+          "models",
+          "hf"
         ]
       },
       {
@@ -112,7 +207,9 @@
         "position": 2399,
         "co_mentions": [
           "ai",
-          "app"
+          "r",
+          "app",
+          "hf"
         ]
       },
       {
@@ -122,12 +219,13 @@
         "position": 275,
         "co_mentions": [
           "ai",
+          "r",
           "inference",
           "gradio",
           "fusion",
-          "search",
-          "shopping",
+          "inference providers",
           "lerobot",
+          "hf",
           "pi",
           "pro"
         ]
@@ -139,9 +237,13 @@
         "position": 382,
         "co_mentions": [
           "ai",
+          "r",
           "generative ai",
+          "reinforcement learning",
           "genai",
-          "evaluations"
+          "ram",
+          "evaluations",
+          "hf"
         ]
       },
       {
@@ -151,10 +253,12 @@
         "position": 564,
         "co_mentions": [
           "ai",
+          "r",
           "fine-tuning",
           "foundation models",
           "agents",
-          "models"
+          "models",
+          "hf"
         ]
       },
       {
@@ -164,9 +268,11 @@
         "position": 2160,
         "co_mentions": [
           "ai",
+          "r",
           "llm",
           "llms",
-          "models"
+          "models",
+          "hf"
         ]
       },
       {
@@ -176,7 +282,9 @@
         "position": 2410,
         "co_mentions": [
           "ai",
-          "app"
+          "r",
+          "app",
+          "hf"
         ]
       },
       {
@@ -186,12 +294,13 @@
         "position": 275,
         "co_mentions": [
           "ai",
+          "r",
           "inference",
           "gradio",
           "fusion",
-          "search",
-          "shopping",
+          "inference providers",
           "lerobot",
+          "hf",
           "pi",
           "pro"
         ]
@@ -202,14 +311,72 @@
         "company": "H2O.ai",
         "source_url": "https://h2o.ai/blog",
         "text": "LATAM LLM Chains LLM Evaluation LLM Limitations LLM Robustness LLM Safety Machine Learning Machine Learning Interpretability Make with H2O.ai Makers Manufacturing MLOps ModelOps Neural Networks NLP Open Source Partners Press Release",
+        "position": 1185,
+        "co_mentions": [
+          "H2O.ai",
+          "ai",
+          "machine learning",
+          "r",
+          "llm",
+          "ml",
+          "mlops",
+          "neural networks"
+        ]
+      },
+      {
+        "company": "Anthropic",
+        "source_url": "https://anthropic.com",
+        "text": "Introducing Claude 4 Announcements May 22, 2025 Tracing the thoughts of a large language model Interpretability Mar 27, 2025 Anthropic Economic Index Societal impacts Mar 27, 2025 Want to help us",
+        "position": 1908,
+        "co_mentions": [
+          "Anthropic",
+          "r",
+          "claude",
+          "claude 4",
+          "pi"
+        ]
+      },
+      {
+        "company": "Anthropic",
+        "source_url": "https://anthropic.com/news",
+        "text": "Apr 02, 2025 Announcements Anthropic Economic Index: Insights from Claude 3.7 Sonnet Mar 27, 2025 Interpretability Tracing the thoughts of a large language model Mar 27, 2025 Product Claude can now",
+        "position": 4860,
+        "co_mentions": [
+          "Anthropic",
+          "r",
+          "claude",
+          "claude 3.7 sonnet",
+          "pi",
+          "pro"
+        ]
+      },
+      {
+        "company": "Anthropic",
+        "source_url": "https://anthropic.com/news",
+        "text": "May 23, 2024 Announcements Krishna Rao joins Anthropic as Chief Financial Officer May 21, 2024 Interpretability Mapping the Mind of a Large Language Model May 21, 2024 Product Generate better prompts",
+        "position": 9107,
+        "co_mentions": [
+          "Anthropic",
+          "r",
+          "app",
+          "pi",
+          "pro"
+        ]
+      },
+      {
+        "company": "H2O.ai",
+        "source_url": "https://h2o.ai/blog",
+        "text": "LATAM LLM Chains LLM Evaluation LLM Limitations LLM Robustness LLM Safety Machine Learning Machine Learning Interpretability Make with H2O.ai Makers Manufacturing MLOps ModelOps Neural Networks NLP Open Source Partners Press Release",
         "position": 1213,
         "co_mentions": [
           "H2O.ai",
           "ai",
           "machine learning",
+          "r",
+          "llm",
           "ml",
-          "neural networks",
-          "llm"
+          "mlops",
+          "neural networks"
         ]
       },
       {
@@ -219,6 +386,7 @@
         "position": 1855,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -231,9 +399,9 @@
         "position": 4156,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -245,6 +413,7 @@
         "position": 8403,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -259,9 +428,11 @@
           "H2O.ai",
           "ai",
           "machine learning",
+          "r",
+          "llm",
           "ml",
-          "neural networks",
-          "llm"
+          "mlops",
+          "neural networks"
         ]
       },
       {
@@ -271,6 +442,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -283,9 +455,9 @@
         "position": 3900,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -297,6 +469,7 @@
         "position": 8147,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -309,6 +482,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -321,9 +495,9 @@
         "position": 3900,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -335,6 +509,7 @@
         "position": 8147,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -349,9 +524,11 @@
           "H2O.ai",
           "ai",
           "machine learning",
+          "r",
+          "llm",
           "ml",
-          "neural networks",
-          "llm"
+          "mlops",
+          "neural networks"
         ]
       },
       {
@@ -361,6 +538,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -373,9 +551,9 @@
         "position": 3900,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -387,6 +565,7 @@
         "position": 8147,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -399,6 +578,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -411,9 +591,9 @@
         "position": 3900,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -425,6 +605,7 @@
         "position": 8147,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -437,6 +618,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -449,9 +631,9 @@
         "position": 3900,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -463,6 +645,7 @@
         "position": 8147,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -475,6 +658,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -487,9 +671,9 @@
         "position": 3900,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -501,6 +685,7 @@
         "position": 8147,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -513,6 +698,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -525,9 +711,9 @@
         "position": 3900,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -539,6 +725,7 @@
         "position": 8147,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -551,6 +738,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -563,9 +751,9 @@
         "position": 3789,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -577,6 +765,7 @@
         "position": 8036,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -589,6 +778,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -601,9 +791,9 @@
         "position": 3789,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -615,6 +805,7 @@
         "position": 8036,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -627,6 +818,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -639,9 +831,9 @@
         "position": 3726,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -653,6 +845,7 @@
         "position": 7973,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -665,6 +858,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -677,9 +871,9 @@
         "position": 3726,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -691,6 +885,7 @@
         "position": 7973,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -703,6 +898,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -715,9 +911,9 @@
         "position": 3726,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -729,6 +925,7 @@
         "position": 7973,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -741,6 +938,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -753,9 +951,9 @@
         "position": 3726,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -767,6 +965,7 @@
         "position": 7973,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -779,6 +978,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -791,9 +991,9 @@
         "position": 3666,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -805,6 +1005,7 @@
         "position": 7913,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -817,6 +1018,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -829,9 +1031,9 @@
         "position": 3516,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -843,6 +1045,7 @@
         "position": 7756,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -855,6 +1058,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -867,9 +1071,9 @@
         "position": 3516,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -881,6 +1085,7 @@
         "position": 7756,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -893,6 +1098,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -905,9 +1111,9 @@
         "position": 3516,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -919,6 +1125,7 @@
         "position": 7756,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -931,6 +1138,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -943,9 +1151,9 @@
         "position": 3516,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -957,6 +1165,7 @@
         "position": 7756,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -969,6 +1178,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -981,9 +1191,9 @@
         "position": 3516,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -995,6 +1205,7 @@
         "position": 7756,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -1007,6 +1218,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -1019,9 +1231,9 @@
         "position": 3516,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -1033,6 +1245,7 @@
         "position": 7756,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -1045,6 +1258,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -1057,9 +1271,9 @@
         "position": 3516,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -1071,6 +1285,7 @@
         "position": 7756,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -1083,6 +1298,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -1095,9 +1311,9 @@
         "position": 3516,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -1109,6 +1325,7 @@
         "position": 7756,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -1121,6 +1338,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -1133,9 +1351,9 @@
         "position": 3476,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -1147,6 +1365,7 @@
         "position": 7716,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -1159,6 +1378,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -1171,9 +1391,9 @@
         "position": 3476,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -1185,6 +1405,7 @@
         "position": 7716,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -1197,6 +1418,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -1209,9 +1431,9 @@
         "position": 3476,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -1223,6 +1445,7 @@
         "position": 7716,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
@@ -1235,6 +1458,7 @@
         "position": 1804,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 4",
           "pi"
@@ -1247,9 +1471,9 @@
         "position": 3414,
         "co_mentions": [
           "Anthropic",
+          "r",
           "claude",
           "claude 3.7 sonnet",
-          "nsight",
           "pi",
           "pro"
         ]
@@ -1261,6 +1485,7 @@
         "position": 7654,
         "co_mentions": [
           "Anthropic",
+          "r",
           "app",
           "pi",
           "pro"
