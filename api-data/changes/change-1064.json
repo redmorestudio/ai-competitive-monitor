@@ -1,0 +1,69 @@
+{
+  "id": 1064,
+  "company": "Synthesia",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T16:11:11.629Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog posts and case studies were added, and some existing content was updated or removed.",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "New blog posts and case studies were added, and some existing content was updated or removed.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of new how-to guides, such as 'How to Narrate a PowerPoint Presentation' and 'How to Convert PowerPoint to Google Slides'.",
+      "Removal of some old blog posts and case studies.",
+      "Update of existing case studies, such as Spirit Airlines and Heineken.",
+      "Addition of new case studies, such as Booz Allen Hamilton."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest that the company is investing in content marketing and thought leadership, which could lead to increased brand awareness and customer engagement.",
+    "market_signals": [
+      "The company is expanding its content offerings to appeal to a wider audience.",
+      "The company is updating its marketing strategy to focus on thought leadership and customer engagement."
+    ],
+    "competitive_implications": "The changes could give the company a competitive advantage in terms of content marketing and thought leadership.",
+    "strategic_direction": "The company appears to be focusing on content marketing and thought leadership as a key part of its marketing strategy."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is investing in content marketing and thought leadership.",
+      "The company is expanding its content offerings to appeal to a wider audience."
+    ],
+    "opportunities": [
+      "The company could leverage its content marketing efforts to drive lead generation and customer engagement.",
+      "The company could use its thought leadership position to establish itself as a trusted authority in its industry."
+    ],
+    "threats": [
+      "The company's competitors could respond to its content marketing efforts by increasing their own marketing spend.",
+      "The company's content marketing efforts could be negatively impacted by changes in search engine algorithms or social media platforms."
+    ],
+    "recommended_actions": [
+      "Monitor the company's content marketing efforts and adjust the strategy as needed.",
+      "Consider investing in additional content marketing channels, such as video or podcasting."
+    ]
+  },
+  "key_insights": [
+    "The company is investing in content marketing and thought leadership.",
+    "The company is expanding its content offerings to appeal to a wider audience."
+  ],
+  "business_impact": "The changes suggest that the company is investing in content marketing and thought leadership, which could lead to increased brand awareness and customer engagement.",
+  "competitive_implications": "The changes could give the company a competitive advantage in terms of content marketing and thought leadership.",
+  "content_hash_before": "00f333784fdd59f2ab16af2e9171d7c1d73f3cb997e4efb7caf0d7c19abaa917",
+  "content_hash_after": "8946ac430d20174df507aa966225980770d78131f9956774417709f4b574a5d6",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

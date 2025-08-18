@@ -1,0 +1,95 @@
+{
+  "id": 1114,
+  "company": "H2O.ai",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T15:59:14.420Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "The website's navigation menu and content structure have been significantly updated, with changes to product and solution categorization, and the addition of new sections such as 'SOLUTIONS' and 'PLATFORM'.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "The website's navigation menu and content structure have been significantly updated, with changes to product and solution categorization, and the addition of new sections such as 'SOLUTIONS' and 'PLATFORM'.",
+    "change_type": "update",
+    "change_scale": "major",
+    "specific_changes": [
+      "New navigation menu with updated categories",
+      "Addition of 'SOLUTIONS' and 'PLATFORM' sections",
+      "Changes to product and solution descriptions",
+      "Updated customer stories and case studies",
+      "New partner logos and descriptions"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest that H2O.ai is expanding its product and solution offerings to better compete in the AI and machine learning market. This could lead to increased revenue and market share for the company.",
+    "market_signals": [
+      "Increased competition in the AI and machine learning market",
+      "Growing demand for GenAI and predictive AI solutions"
+    ],
+    "competitive_implications": "The changes suggest that H2O.ai is actively working to improve its competitive position in the market. This could lead to increased competition for other companies in the space.",
+    "strategic_direction": "The changes suggest that H2O.ai is focused on expanding its product and solution offerings to better compete in the AI and machine learning market."
+  },
+  "entities": {
+    "products": [
+      "H2O Driverless AI",
+      "H2O-3",
+      "H2O Hydrogen Torch",
+      "H2O Wave",
+      "H2O LLM Studio"
+    ],
+    "features": [
+      "GenAI",
+      "Predictive AI",
+      "AutoML",
+      "No-code fine-tuning"
+    ],
+    "partnerships": [
+      "Dell",
+      "Nvidia",
+      "Snowflake"
+    ],
+    "technologies": [
+      "AI",
+      "Machine Learning",
+      "Deep Learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Financial Services",
+      "Telecommunications",
+      "Healthcare"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "H2O.ai is expanding its product and solution offerings",
+      "The company is focused on GenAI and predictive AI solutions",
+      "There is growing demand for AI and machine learning solutions in the market"
+    ],
+    "opportunities": [
+      "Increased revenue and market share for H2O.ai",
+      "Growing demand for AI and machine learning solutions"
+    ],
+    "threats": [
+      "Increased competition in the AI and machine learning market"
+    ],
+    "recommended_actions": [
+      "Monitor H2O.ai's product and solution offerings",
+      "Assess the company's competitive position in the market",
+      "Evaluate the growing demand for AI and machine learning solutions"
+    ]
+  },
+  "key_insights": [
+    "H2O.ai is expanding its product and solution offerings",
+    "The company is focused on GenAI and predictive AI solutions",
+    "There is growing demand for AI and machine learning solutions in the market"
+  ],
+  "business_impact": "The changes suggest that H2O.ai is expanding its product and solution offerings to better compete in the AI and machine learning market. This could lead to increased revenue and market share for the company.",
+  "competitive_implications": "The changes suggest that H2O.ai is actively working to improve its competitive position in the market. This could lead to increased competition for other companies in the space.",
+  "content_hash_before": "e4b205d8db7c528a0f255937d1c001d0d11cbb0d3d4f257351b8d84ed3a55517",
+  "content_hash_after": "05ef8ef562ec0f88315c74e8a9cca6a857b1eabb6239d8922ddcdc6553d5e827",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

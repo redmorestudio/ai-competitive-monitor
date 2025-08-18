@@ -1,0 +1,69 @@
+{
+  "id": 1130,
+  "company": "Descript",
+  "page_url": "pricing",
+  "detected_at": "2025-08-18T15:57:34.239Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "Addition of a 'Generate video' feature under AI Features and an updated list of companies using Descript",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Addition of a 'Generate video' feature under AI Features and an updated list of companies using Descript",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Generate video' feature under AI Features",
+      "Updated the list of companies using Descript, including Amazon, Canva, Salesforce, and more"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of the 'Generate video' feature may attract more users to Descript, particularly those interested in AI-powered video creation",
+    "market_signals": [
+      "Descript is investing in AI-powered features",
+      "Descript is expanding its user base to include more large companies"
+    ],
+    "competitive_implications": "Descript is positioning itself as a leader in AI-powered video creation, which may put pressure on competitors to develop similar features",
+    "strategic_direction": "Descript is focusing on expanding its feature set and user base, particularly in the enterprise market"
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "Generate video"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Descript is investing in AI-powered features",
+      "Descript is expanding its user base to include more large companies"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Descript to leverage its AI-powered features",
+      "Competitive analysis to identify areas where Descript's competitors can improve"
+    ],
+    "threats": [
+      "Descript's expansion into the enterprise market may pose a threat to competitors",
+      "Descript's AI-powered features may become a standard expectation in the video creation industry"
+    ],
+    "recommended_actions": [
+      "Monitor Descript's feature development and user base expansion",
+      "Analyze the competitive landscape to identify areas for improvement"
+    ]
+  },
+  "key_insights": [
+    "Descript is investing in AI-powered features",
+    "Descript is expanding its user base to include more large companies"
+  ],
+  "business_impact": "The addition of the 'Generate video' feature may attract more users to Descript, particularly those interested in AI-powered video creation",
+  "competitive_implications": "Descript is positioning itself as a leader in AI-powered video creation, which may put pressure on competitors to develop similar features",
+  "content_hash_before": "fc215039816aa3299c8e7bb8e6999c8f2e15df7a7e51d433f86c8288682bd72d",
+  "content_hash_after": "5c127f8225cab39709e4444b35d51d8f3215bc5d61e79027892f528cce7441e5",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

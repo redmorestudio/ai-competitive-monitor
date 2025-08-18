@@ -1,0 +1,102 @@
+{
+  "id": 1109,
+  "company": "Intel",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:01:22.830Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "The Intel homepage has undergone a significant redesign, with changes to the navigation menu, product categorization, and the addition of new sections such as 'Solutions' and 'Developers'",
+  "category": "major update",
+  "change_summary": {
+    "what_changed": "The Intel homepage has undergone a significant redesign, with changes to the navigation menu, product categorization, and the addition of new sections such as 'Solutions' and 'Developers'",
+    "change_type": "major overhaul",
+    "change_scale": "major",
+    "specific_changes": [
+      "New navigation menu with separate sections for products, support, solutions, developers, and partners",
+      "Redesigned product pages with clearer categorization and filtering options",
+      "Addition of new sections such as 'Solutions' and 'Developers' to provide more targeted information and resources",
+      "Updated search functionality with advanced filtering options and quick links to popular searches"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes to the Intel homepage suggest a significant shift in the company's strategy and priorities, with a greater emphasis on solutions, developers, and partnerships. This could lead to increased competitiveness and revenue growth for Intel, as well as improved customer engagement and satisfaction.",
+    "market_signals": [
+      "Increased focus on AI and edge computing",
+      "Growing importance of software development and partnerships",
+      "Expanding into new markets and industries"
+    ],
+    "competitive_implications": "The changes to the Intel homepage suggest that the company is adapting to changing market trends and customer needs, and is investing in new areas such as AI, edge computing, and software development. This could lead to increased competition for other companies in the industry, particularly those that are not investing in these areas.",
+    "strategic_direction": "The changes to the Intel homepage suggest that the company is moving towards a more solutions-focused and partner-centric approach, with a greater emphasis on AI, edge computing, and software development. This could lead to increased competitiveness and revenue growth for Intel, as well as improved customer engagement and satisfaction."
+  },
+  "entities": {
+    "products": [
+      "Intel Core Ultra Processors",
+      "Intel Xeon Processors",
+      "Intel Xeon CPU Max Series",
+      "Intel Atom Processors",
+      "Intel AI Accelerators"
+    ],
+    "features": [
+      "AI software solutions",
+      "Edge computing",
+      "Software development tools"
+    ],
+    "partnerships": [
+      "Hugging Face",
+      "Intel Partner Alliance"
+    ],
+    "technologies": [
+      "AI",
+      "Edge computing",
+      "Software development"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Automotive",
+      "Education",
+      "Energy",
+      "Financial Services",
+      "Government",
+      "Healthcare",
+      "Manufacturing",
+      "Retail",
+      "Telecommunications"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Intel is shifting its focus towards solutions, developers, and partnerships",
+      "The company is investing in new areas such as AI, edge computing, and software development",
+      "The changes to the homepage suggest a more customer-centric approach, with clearer product categorization and filtering options"
+    ],
+    "opportunities": [
+      "Increased competitiveness and revenue growth for Intel",
+      "Improved customer engagement and satisfaction",
+      "New business opportunities in emerging markets and industries"
+    ],
+    "threats": [
+      "Increased competition from other companies in the industry",
+      "Potential disruption to existing business models and revenue streams",
+      "Challenges in adapting to changing market trends and customer needs"
+    ],
+    "recommended_actions": [
+      "Monitor Intel's progress and adjust competitive strategies accordingly",
+      "Invest in emerging areas such as AI, edge computing, and software development",
+      "Develop partnerships and collaborations to stay competitive and innovative"
+    ]
+  },
+  "key_insights": [
+    "Intel is shifting its focus towards solutions, developers, and partnerships",
+    "The company is investing in new areas such as AI, edge computing, and software development",
+    "The changes to the homepage suggest a more customer-centric approach, with clearer product categorization and filtering options"
+  ],
+  "business_impact": "The changes to the Intel homepage suggest a significant shift in the company's strategy and priorities, with a greater emphasis on solutions, developers, and partnerships. This could lead to increased competitiveness and revenue growth for Intel, as well as improved customer engagement and satisfaction.",
+  "competitive_implications": "The changes to the Intel homepage suggest that the company is adapting to changing market trends and customer needs, and is investing in new areas such as AI, edge computing, and software development. This could lead to increased competition for other companies in the industry, particularly those that are not investing in these areas.",
+  "content_hash_before": "a5a31e0df9f826bf6a7de5d25d4c91c4c18d5398b61ed7e2ef32458bfedb42c9",
+  "content_hash_after": "2ad5fd442bb1948662010212c3f843722dc5602d8644da33eac0313d8beffe3d",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

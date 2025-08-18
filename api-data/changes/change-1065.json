@@ -1,0 +1,77 @@
+{
+  "id": 1065,
+  "company": "Synthesia",
+  "page_url": "pricing",
+  "detected_at": "2025-08-18T16:11:03.143Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Pricing plans and features",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Pricing plans and features",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of credits as a shared currency for usage-based features",
+      "Changes in the number of credits included in each plan",
+      "Updates to the features included in each plan, such as AI Dubbing and Personal Avatars"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes to the pricing plans and features may attract more customers to Synthesia, especially those who value the new features and credits system.",
+    "market_signals": [
+      "Increased competition in the AI video software market"
+    ],
+    "competitive_implications": "Synthesia's updated pricing plans and features may give it a competitive edge in the market.",
+    "strategic_direction": "Synthesia is focusing on providing more value to its customers through its updated pricing plans and features."
+  },
+  "entities": {
+    "products": [
+      "Synthesia"
+    ],
+    "features": [
+      "AI Dubbing",
+      "Personal Avatars",
+      "Credits"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [
+      "$29/mo",
+      "$89/mo",
+      "Custom pricing"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Synthesia has updated its pricing plans and features to include credits as a shared currency for usage-based features.",
+      "The changes may attract more customers to Synthesia, especially those who value the new features and credits system."
+    ],
+    "opportunities": [
+      "Synthesia can capitalize on the updated pricing plans and features to attract more customers and increase revenue."
+    ],
+    "threats": [
+      "The changes to the pricing plans and features may not be well-received by existing customers, potentially leading to a loss of business."
+    ],
+    "recommended_actions": [
+      "Monitor customer feedback and adjust the pricing plans and features as needed.",
+      "Continue to innovate and add value to the product to stay competitive in the market."
+    ]
+  },
+  "key_insights": [
+    "Synthesia has updated its pricing plans and features to include credits as a shared currency for usage-based features.",
+    "The changes may attract more customers to Synthesia, especially those who value the new features and credits system."
+  ],
+  "business_impact": "The changes to the pricing plans and features may attract more customers to Synthesia, especially those who value the new features and credits system.",
+  "competitive_implications": "Synthesia's updated pricing plans and features may give it a competitive edge in the market.",
+  "content_hash_before": "af555d86ee8b1870cf4eee4983fb7eae9f6becefcabc1547a88ed4002fa9aea1",
+  "content_hash_after": "ac903fd81708e7a2ac2eaf991e1ff2d224c3d4edd3ad760cbdc872d3b433f37d",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

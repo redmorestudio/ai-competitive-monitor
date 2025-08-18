@@ -1,0 +1,80 @@
+{
+  "id": 1156,
+  "company": "Aleph Alpha",
+  "page_url": "pricing",
+  "detected_at": "2025-08-18T15:54:30.471Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Introduction of PhariaFiles and update of the page structure",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of PhariaFiles and update of the page structure",
+    "change_type": "addition/update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of PhariaFiles",
+      "Update of the page structure to include PhariaFiles",
+      "Removal of the 'A Signature and a Stance: Why We Signed the EU’s General-Purpose AI Code of Practice' section",
+      "Update of the research section to include 'T-Free: Hierarchical Autoregressive Transformers for Language Fairness and Sovereignty'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of PhariaFiles and the update of the page structure may indicate a shift in Aleph Alpha's business strategy towards more product-focused offerings.",
+    "market_signals": [
+      "Increased focus on product development",
+      "Expansion into new markets"
+    ],
+    "competitive_implications": "The introduction of PhariaFiles may give Aleph Alpha a competitive advantage in the market, particularly in the public sector and industrials.",
+    "strategic_direction": "Aleph Alpha's strategic direction appears to be focused on developing and marketing new products, such as PhariaFiles, and expanding its research capabilities."
+  },
+  "entities": {
+    "products": [
+      "PhariaFiles"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "T-Free: Hierarchical Autoregressive Transformers"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Public Sector",
+      "Industrials",
+      "Financial Services"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Introduction of PhariaFiles",
+      "Update of the page structure",
+      "Removal of the 'A Signature and a Stance: Why We Signed the EU’s General-Purpose AI Code of Practice' section"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Aleph Alpha",
+      "Potential for PhariaFiles to disrupt the market"
+    ],
+    "threats": [
+      "Increased competition from Aleph Alpha",
+      "Potential for PhariaFiles to cannibalize existing products"
+    ],
+    "recommended_actions": [
+      "Monitor Aleph Alpha's product development",
+      "Assess the potential impact of PhariaFiles on the market"
+    ]
+  },
+  "key_insights": [
+    "Introduction of PhariaFiles",
+    "Update of the page structure",
+    "Removal of the 'A Signature and a Stance: Why We Signed the EU’s General-Purpose AI Code of Practice' section"
+  ],
+  "business_impact": "The introduction of PhariaFiles and the update of the page structure may indicate a shift in Aleph Alpha's business strategy towards more product-focused offerings.",
+  "competitive_implications": "The introduction of PhariaFiles may give Aleph Alpha a competitive advantage in the market, particularly in the public sector and industrials.",
+  "content_hash_before": "52ec5545611e63e60d8675f2c36bbd89f9e7a0f2ce02c0a05ca4a05d6907e93c",
+  "content_hash_after": "d366665669349a2826353e0f44e7103a9f3b934cb16a63caaf8b6f60667f9363",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

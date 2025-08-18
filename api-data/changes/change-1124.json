@@ -1,0 +1,96 @@
+{
+  "id": 1124,
+  "company": "ElevenLabs",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T15:58:11.696Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of Eleven Music, a new AI music generator, and updates to the homepage layout and content",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of Eleven Music, a new AI music generator, and updates to the homepage layout and content",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Added a new section for Eleven Music",
+      "Updated the navigation menu",
+      "Changed the layout of the homepage",
+      "Added new customer testimonials and logos"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of Eleven Music and updates to the homepage are likely to attract new customers and increase revenue for ElevenLabs",
+    "market_signals": [
+      "Increased competition in the AI music generation market",
+      "Growing demand for conversational AI solutions"
+    ],
+    "competitive_implications": "ElevenLabs is expanding its product offerings and improving its user experience, which may give it a competitive advantage in the market",
+    "strategic_direction": "ElevenLabs is focusing on expanding its product offerings and improving its user experience to attract new customers and increase revenue"
+  },
+  "entities": {
+    "products": [
+      "Eleven Music",
+      "Text to Speech",
+      "Conversational AI",
+      "Speech to Text",
+      "Voice Changer"
+    ],
+    "features": [
+      "AI music generation",
+      "Low-latency conversational AI",
+      "Ultra-realistic interactions"
+    ],
+    "partnerships": [
+      "Cisco",
+      "Epic Games",
+      "Twilio",
+      "Synthesia",
+      "Time"
+    ],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [
+      "Andrew Huberman",
+      "Arianna Huffington",
+      "Drew Binsky"
+    ],
+    "pricing": [],
+    "markets": [
+      "Media and Entertainment",
+      "Education",
+      "Customer Service"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "ElevenLabs is expanding its product offerings to include AI music generation",
+      "The company is updating its homepage to improve user experience"
+    ],
+    "opportunities": [
+      "Partnership opportunities with music industry companies",
+      "Expansion into new markets such as education and customer service"
+    ],
+    "threats": [
+      "Increased competition in the AI music generation market",
+      "Technical challenges in integrating new products and features"
+    ],
+    "recommended_actions": [
+      "Monitor the market for new developments and competitor activity",
+      "Continuously evaluate and improve the user experience"
+    ]
+  },
+  "key_insights": [
+    "ElevenLabs is expanding its product offerings to include AI music generation",
+    "The company is updating its homepage to improve user experience"
+  ],
+  "business_impact": "The introduction of Eleven Music and updates to the homepage are likely to attract new customers and increase revenue for ElevenLabs",
+  "competitive_implications": "ElevenLabs is expanding its product offerings and improving its user experience, which may give it a competitive advantage in the market",
+  "content_hash_before": "5f8ee81a23963e3ac8b7acfcbc7bd9920a859e5528564bf225c183982f09b7ab",
+  "content_hash_after": "e19db5d71f8e894dbbbea520e86b9a3d814b1c0a781d593ddfa95ce674260beb",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,61 @@
+{
+  "id": 1152,
+  "company": "Anthropic",
+  "page_url": "docs",
+  "detected_at": "2025-08-18T15:55:24.076Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Addition of a Discord link in the navigation menu",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Addition of a Discord link in the navigation menu",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added a Discord link (https://www.anthropic.com/discord) to the navigation menu"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Enhanced community engagement and support through Discord",
+    "market_signals": [
+      "Increased focus on community building and user support"
+    ],
+    "competitive_implications": "May indicate a strategic move to strengthen user relationships and gather feedback",
+    "strategic_direction": "Community-focused growth and support"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Anthropic is investing in community engagement and support"
+    ],
+    "opportunities": [
+      "Potential for increased user retention and feedback through Discord community"
+    ],
+    "threats": [
+      "Dependence on Discord for community engagement may pose risks if the platform experiences downtime or changes its policies"
+    ],
+    "recommended_actions": [
+      "Monitor Anthropic's Discord community for user feedback and sentiment",
+      "Assess the impact of the Discord link on user engagement and retention"
+    ]
+  },
+  "key_insights": [
+    "Anthropic is investing in community engagement and support"
+  ],
+  "business_impact": "Enhanced community engagement and support through Discord",
+  "competitive_implications": "May indicate a strategic move to strengthen user relationships and gather feedback",
+  "content_hash_before": "0db4d14b9badf390e1904c3db5f56192b8873a033edaa97e0f1e9e8416604eba",
+  "content_hash_after": "013aff456b6751b7e01ecdc6a99ae2a1354c4077855a33f1142b00af70783073",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

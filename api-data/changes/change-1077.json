@@ -1,0 +1,53 @@
+{
+  "id": 1077,
+  "company": "Replit",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:08:58.710Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The prompt in the 'Turn your ideas into apps' section changed from 'Make me a website for community members that helps subscribe to exclusive content with flexible payment options' to 'Make me a game for families with young children that helps manage resources and build communities with sustainable practices'. Additionally, the 'Add beautiful stock imagery and illustrations' instruction changed to 'Add achievements to track their progress'.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The prompt in the 'Turn your ideas into apps' section changed from 'Make me a website for community members that helps subscribe to exclusive content with flexible payment options' to 'Make me a game for families with young children that helps manage resources and build communities with sustainable practices'. Additionally, the 'Add beautiful stock imagery and illustrations' instruction changed to 'Add achievements to track their progress'.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated prompt in the 'Turn your ideas into apps' section",
+      "Changed the instruction from 'Add beautiful stock imagery and illustrations' to 'Add achievements to track their progress'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes do not have any significant impact on the company's business or strategy.",
+    "market_signals": [],
+    "competitive_implications": "The changes do not provide any competitive advantages or disadvantages.",
+    "strategic_direction": "The changes do not indicate any changes in the company's strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is continuously updating and refining its content to better engage with its users."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [
+    "The company is continuously updating and refining its content to better engage with its users."
+  ],
+  "business_impact": "The changes do not have any significant impact on the company's business or strategy.",
+  "competitive_implications": "The changes do not provide any competitive advantages or disadvantages.",
+  "content_hash_before": "497533db525773ad63bbc2b55b05a38c0396d6037b82655122a363d083172860",
+  "content_hash_after": "0c3b8b5ec781c9f446d6d7cada81e8481ef215cd0db39e013865b75e0e6fba29",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

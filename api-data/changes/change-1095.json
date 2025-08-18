@@ -1,0 +1,55 @@
+{
+  "id": 1095,
+  "company": "Mistral AI",
+  "page_url": "docs",
+  "detected_at": "2025-08-18T16:03:40.360Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Renaming of 'Clients' to 'SDK Clients' and 'Document AI' section URL change",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Renaming of 'Clients' to 'SDK Clients' and 'Document AI' section URL change",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Renamed 'Clients' to 'SDK Clients' in the 'Getting Started' section",
+      "Updated the URL of 'Document AI' section from '/capabilities/OCR/document_ai_overview/' to '/capabilities/document_ai/document_ai_overview/'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes do not have any significant impact on the company's business or operations.",
+    "market_signals": [],
+    "competitive_implications": "The changes do not provide any significant competitive advantages or disadvantages.",
+    "strategic_direction": "The changes do not indicate any changes in the company's strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is maintaining and updating its documentation to reflect changes in its products and services."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor the company's documentation and website for any significant changes or updates."
+    ]
+  },
+  "key_insights": [
+    "The company is maintaining and updating its documentation to reflect changes in its products and services."
+  ],
+  "business_impact": "The changes do not have any significant impact on the company's business or operations.",
+  "competitive_implications": "The changes do not provide any significant competitive advantages or disadvantages.",
+  "content_hash_before": "dbad6857a65feab6c79410f50395afa402edf8e8f2114ec31341235e7c0c2734",
+  "content_hash_after": "819fa2c61c49a2eb5166653d274d3c9b78800537ff9865e9efb6960f18d3d7d1",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

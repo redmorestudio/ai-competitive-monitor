@@ -1,0 +1,63 @@
+{
+  "id": 1142,
+  "company": "Codeium",
+  "page_url": "product",
+  "detected_at": "2025-08-18T15:56:19.542Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "Download options for the Windsurf Editor have been updated to include Windows download options",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Download options for the Windsurf Editor have been updated to include Windows download options",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added download options for Windows (x64 and arm64)",
+      "Updated download page to reflect new options"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update may increase user adoption by providing more download options, but the overall business impact is likely to be minor",
+    "market_signals": [
+      "Increased focus on user experience and accessibility"
+    ],
+    "competitive_implications": "The update does not significantly impact the competitive landscape, but it may slightly improve Windsurf's position",
+    "strategic_direction": "The update is consistent with Windsurf's focus on providing a user-friendly and accessible product"
+  },
+  "entities": {
+    "products": [
+      "Windsurf Editor"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The update reflects Windsurf's commitment to user experience and accessibility"
+    ],
+    "opportunities": [
+      "Increased user adoption and retention"
+    ],
+    "threats": [
+      "Competitors may respond with similar updates, minimizing the competitive advantage"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and adoption rates to assess the update's impact"
+    ]
+  },
+  "key_insights": [
+    "The update reflects Windsurf's commitment to user experience and accessibility"
+  ],
+  "business_impact": "The update may increase user adoption by providing more download options, but the overall business impact is likely to be minor",
+  "competitive_implications": "The update does not significantly impact the competitive landscape, but it may slightly improve Windsurf's position",
+  "content_hash_before": "565955c00b2877c3a85f86de86b143c87fd21d35641756552a76e2a3f85381d7",
+  "content_hash_after": "33f06bf4aba1a856506778dc47303e637d7c28b0a09546a432ba6cd443d35b28",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

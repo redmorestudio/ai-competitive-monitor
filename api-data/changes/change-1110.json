@@ -1,0 +1,86 @@
+{
+  "id": 1110,
+  "company": "Intel",
+  "page_url": "news",
+  "detected_at": "2025-08-18T16:01:19.056Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New articles and updates on Intel's artificial intelligence, corporate, and data center initiatives",
+  "category": "significant updates",
+  "change_summary": {
+    "what_changed": "New articles and updates on Intel's artificial intelligence, corporate, and data center initiatives",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of new articles on artificial intelligence, including the celebration of the Aurora exascale computer and the AI PC global report",
+      "Update on Intel's corporate initiatives, including a message from the CEO and financial results",
+      "Removal of older articles and updates"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates demonstrate Intel's commitment to advancing artificial intelligence, data center infrastructure, and corporate initiatives, which can impact its competitive positioning and market share",
+    "market_signals": [
+      "Increasing focus on artificial intelligence and data center infrastructure",
+      "Growing partnerships and collaborations"
+    ],
+    "competitive_implications": "The updates may indicate Intel's efforts to stay competitive in the rapidly evolving technology landscape, particularly in areas like artificial intelligence and data center infrastructure",
+    "strategic_direction": "Intel's strategic direction appears to be focused on advancing artificial intelligence, data center infrastructure, and corporate initiatives, with a growing emphasis on partnerships and collaborations"
+  },
+  "entities": {
+    "products": [
+      "Aurora exascale computer",
+      "Intel Core Ultra-powered AI PCs"
+    ],
+    "features": [
+      "Artificial intelligence",
+      "Speculative decoding advance"
+    ],
+    "partnerships": [
+      "HPE",
+      "DOE",
+      "Weizmann Institute"
+    ],
+    "technologies": [
+      "AI acceleration algorithms",
+      "Immersion cooling"
+    ],
+    "people": [
+      "Lip-Bu Tan"
+    ],
+    "pricing": [],
+    "markets": [
+      "Data center",
+      "Artificial intelligence"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Intel is committed to advancing artificial intelligence and data center infrastructure",
+      "The company is growing its partnerships and collaborations in these areas"
+    ],
+    "opportunities": [
+      "Potential for Intel to gain a competitive advantage in artificial intelligence and data center infrastructure",
+      "Growing demand for artificial intelligence and data center infrastructure solutions"
+    ],
+    "threats": [
+      "Intense competition in the technology landscape",
+      "Rapidly evolving market trends and technologies"
+    ],
+    "recommended_actions": [
+      "Monitor Intel's progress in artificial intelligence and data center infrastructure",
+      "Assess the company's competitive positioning and market share"
+    ]
+  },
+  "key_insights": [
+    "Intel is committed to advancing artificial intelligence and data center infrastructure",
+    "The company is growing its partnerships and collaborations in these areas"
+  ],
+  "business_impact": "The updates demonstrate Intel's commitment to advancing artificial intelligence, data center infrastructure, and corporate initiatives, which can impact its competitive positioning and market share",
+  "competitive_implications": "The updates may indicate Intel's efforts to stay competitive in the rapidly evolving technology landscape, particularly in areas like artificial intelligence and data center infrastructure",
+  "content_hash_before": "e273cca90ae4f3a9d5e302fcb39996f70d2a8c1b4594236b0cf10c237318aba8",
+  "content_hash_after": "533765016d7f2a42b960f1233212febc8fc70c64a86b23498e5b52bf92b1b898",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

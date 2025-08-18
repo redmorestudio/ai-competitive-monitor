@@ -1,0 +1,46 @@
+{
+  "id": 1061,
+  "company": "Tabnine",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:11:38.745Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.9,
+  "summary": "No significant changes were detected in the provided before and after content. The content appears to be nearly identical, with no major additions, removals, or updates.",
+  "category": "minor change",
+  "change_summary": {
+    "what_changed": "No significant changes were detected in the provided before and after content. The content appears to be nearly identical, with no major additions, removals, or updates.",
+    "change_type": "no change",
+    "change_scale": "minor",
+    "specific_changes": []
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact is expected from the lack of changes in the content.",
+    "market_signals": [],
+    "competitive_implications": "The lack of changes may suggest that the company is not actively updating its content or announcing new developments, which could impact its competitive position.",
+    "strategic_direction": "No clear strategic direction can be inferred from the lack of changes in the content."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [],
+  "business_impact": "No significant business impact is expected from the lack of changes in the content.",
+  "competitive_implications": "The lack of changes may suggest that the company is not actively updating its content or announcing new developments, which could impact its competitive position.",
+  "content_hash_before": "31c81fe00ab63f1c1ff4c9a367b0b0c63552cfc55dff7f45faa6d5a82f0607ba",
+  "content_hash_after": "445e7c3565f36fc4daa78070fdce069bccd250d6584e84c674898f830b3d9e7e",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

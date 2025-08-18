@@ -1,0 +1,69 @@
+{
+  "id": 1141,
+  "company": "Codeium",
+  "page_url": "pricing",
+  "detected_at": "2025-08-18T15:56:24.120Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "The announcement of Qwen3-Coder availability at 0.5x credit per prompt was replaced with the announcement of GPT-5 availability for free for a limited time.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "The announcement of Qwen3-Coder availability at 0.5x credit per prompt was replaced with the announcement of GPT-5 availability for free for a limited time.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Replacement of Qwen3-Coder announcement with GPT-5 announcement",
+      "Addition of download option for Linux"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update could lead to increased user acquisition and retention, ultimately driving revenue growth.",
+    "market_signals": [
+      "Increased competition in the AI model market",
+      "Growing demand for free or low-cost AI models"
+    ],
+    "competitive_implications": "The move could put pressure on competitors to offer similar free or low-cost models, changing the competitive landscape.",
+    "strategic_direction": "The update suggests a strategic direction towards increasing user base and market share through attractive offerings."
+  },
+  "entities": {
+    "products": [
+      "GPT-5"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "GPT-5 is now available for free for a limited time",
+      "Download option for Linux added"
+    ],
+    "opportunities": [
+      "Increased user acquisition and retention",
+      "Potential for revenue growth"
+    ],
+    "threats": [
+      "Increased competition",
+      "Pressure to maintain or reduce pricing"
+    ],
+    "recommended_actions": [
+      "Monitor user response to GPT-5 offering",
+      "Analyze competitor reactions and adjust strategy accordingly"
+    ]
+  },
+  "key_insights": [
+    "GPT-5 is now available for free for a limited time",
+    "Download option for Linux added"
+  ],
+  "business_impact": "The update could lead to increased user acquisition and retention, ultimately driving revenue growth.",
+  "competitive_implications": "The move could put pressure on competitors to offer similar free or low-cost models, changing the competitive landscape.",
+  "content_hash_before": "ae86ee1e7670070eca651d68ddc9de9aad71f2f79fe04c738c0df9bb8eafdf3e",
+  "content_hash_after": "92ffea11c933892dab356c4cca021e04de001403b08037cbfa263613e3093278",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

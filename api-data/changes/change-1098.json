@@ -1,0 +1,85 @@
+{
+  "id": 1098,
+  "company": "Meta AI",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T16:02:40.750Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New blog posts and updates on AI research and applications",
+  "category": "research_update",
+  "change_summary": {
+    "what_changed": "New blog posts and updates on AI research and applications",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New blog post on DINOv3: Self-supervised learning for vision at unprecedented scale",
+      "New blog post on NASA Jet Propulsion Laboratory's DINOv2-enabled robot rovers",
+      "New blog post on World Resources Institute's use of DINOv3 for forest and farm restoration",
+      "New blog post on Llama helping Biofy Technologies fight antibiotic resistance",
+      "Updated links and formatting"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates demonstrate Meta AI's commitment to advancing AI research and its applications, potentially leading to new business opportunities and partnerships.",
+    "market_signals": [
+      "Growing interest in AI research and applications",
+      "Increasing importance of self-supervised learning and vision technologies"
+    ],
+    "competitive_implications": "The updates may indicate Meta AI's competitive advantage in AI research and applications, potentially threatening other companies in the industry.",
+    "strategic_direction": "The changes suggest that Meta AI is focusing on advancing AI research and its applications, particularly in the areas of self-supervised learning and vision technologies."
+  },
+  "entities": {
+    "products": [
+      "DINOv3",
+      "Llama"
+    ],
+    "features": [
+      "Self-supervised learning",
+      "Vision at unprecedented scale"
+    ],
+    "partnerships": [
+      "NASA Jet Propulsion Laboratory",
+      "World Resources Institute",
+      "Biofy Technologies"
+    ],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Research",
+      "Technology"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Meta AI is actively advancing AI research and its applications",
+      "The company is focusing on self-supervised learning and vision technologies"
+    ],
+    "opportunities": [
+      "Potential partnerships and collaborations with Meta AI",
+      "New business opportunities in AI research and applications"
+    ],
+    "threats": [
+      "Potential competitive disadvantage for other companies in the industry"
+    ],
+    "recommended_actions": [
+      "Monitor Meta AI's research and applications",
+      "Consider potential partnerships and collaborations"
+    ]
+  },
+  "key_insights": [
+    "Meta AI is actively advancing AI research and its applications",
+    "The company is focusing on self-supervised learning and vision technologies"
+  ],
+  "business_impact": "The updates demonstrate Meta AI's commitment to advancing AI research and its applications, potentially leading to new business opportunities and partnerships.",
+  "competitive_implications": "The updates may indicate Meta AI's competitive advantage in AI research and applications, potentially threatening other companies in the industry.",
+  "content_hash_before": "6c56ab3a059679cbaf7f7ca0dbc78a4e5184d8ee2adedea9c4f00ef519c51983",
+  "content_hash_after": "75e1419cbf35c9606044c38d4def5a15e7a7fa092b3dea8dbb561f4ff4e1fd3b",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,62 @@
+{
+  "id": 1089,
+  "company": "Palantir",
+  "page_url": "product",
+  "detected_at": "2025-08-18T16:06:10.582Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "Addition of 'American Tech Fellowship' to the list of offerings, updates to video descriptions for AI Workflow Builder, AI evaluation and shipping tools, and Ontology SDK, and minor changes to the website's structure and content",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Addition of 'American Tech Fellowship' to the list of offerings, updates to video descriptions for AI Workflow Builder, AI evaluation and shipping tools, and Ontology SDK, and minor changes to the website's structure and content",
+    "change_type": "addition/update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'American Tech Fellowship' to the list of offerings",
+      "Updated video descriptions for AI Workflow Builder, AI evaluation and shipping tools, and Ontology SDK",
+      "Minor changes to the website's structure and content"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are unlikely to have a significant impact on the company's business",
+    "market_signals": [
+      "The company is continuing to invest in its AI offerings"
+    ],
+    "competitive_implications": "The changes do not appear to be a response to competitive pressure",
+    "strategic_direction": "The company is continuing to focus on its AI offerings"
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "AI Workflow Builder",
+      "AI evaluation and shipping tools",
+      "Ontology SDK"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is continuing to invest in its AI offerings",
+      "The changes are minor and do not indicate a significant shift in the company's strategy"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [
+    "The company is continuing to invest in its AI offerings",
+    "The changes are minor and do not indicate a significant shift in the company's strategy"
+  ],
+  "business_impact": "The changes are unlikely to have a significant impact on the company's business",
+  "competitive_implications": "The changes do not appear to be a response to competitive pressure",
+  "content_hash_before": "f19bb8ed850b7e3c59509c43b66994ab21e6bf53476f3bbfd9cd3730383c7813",
+  "content_hash_after": "e2e7ee150188287c1f638521386d0d89d16b1bf207f8bc8c6754fd42f245261b",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

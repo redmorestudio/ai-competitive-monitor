@@ -1,0 +1,93 @@
+{
+  "id": 1138,
+  "company": "Cohere",
+  "page_url": "product",
+  "detected_at": "2025-08-18T15:56:45.227Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of North, an enterprise-ready AI platform, and updates to the product page",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of North, an enterprise-ready AI platform, and updates to the product page",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of North to the Workplace Systems section",
+      "Update to the product page with a new introduction and call-to-action",
+      "Changes to the trusted partners and industry leaders section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of North and updates to the product page demonstrate Cohere's commitment to innovation and expansion of its AI offerings, potentially increasing its competitiveness in the market",
+    "market_signals": [
+      "Increased focus on enterprise-ready AI solutions",
+      "Expansion of partnerships with industry leaders"
+    ],
+    "competitive_implications": "Cohere's updated product offerings and partnerships may pose a competitive threat to other AI solution providers",
+    "strategic_direction": "Cohere's strategic direction appears to be focused on developing and marketing innovative AI solutions for enterprise customers"
+  },
+  "entities": {
+    "products": [
+      "North",
+      "Command",
+      "Aya Expanse",
+      "Embed",
+      "Rerank"
+    ],
+    "features": [],
+    "partnerships": [
+      "Oracle",
+      "Dell Technologies",
+      "RBC",
+      "LG CNS",
+      "Fujitsu",
+      "Bell",
+      "SAP",
+      "Salesforce",
+      "Notion",
+      "TD Bank",
+      "Johnson Lambert",
+      "Ensemble",
+      "Second Front",
+      "McKinsey & Company",
+      "Accenture",
+      "Borderless AI",
+      "BambooHR",
+      "Longshot",
+      "Casetext"
+    ],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Cohere has introduced a new AI platform, North, targeting enterprise customers",
+      "The company has updated its product page to reflect its expanded offerings"
+    ],
+    "opportunities": [
+      "Potential for increased market share and revenue growth through the introduction of North and expanded partnerships"
+    ],
+    "threats": [
+      "Increased competition from other AI solution providers",
+      "Potential challenges in integrating North with existing products and services"
+    ],
+    "recommended_actions": [
+      "Monitor Cohere's progress with North and its impact on the market",
+      "Assess the potential for partnerships or collaborations with Cohere"
+    ]
+  },
+  "key_insights": [
+    "Cohere has introduced a new AI platform, North, targeting enterprise customers",
+    "The company has updated its product page to reflect its expanded offerings"
+  ],
+  "business_impact": "The introduction of North and updates to the product page demonstrate Cohere's commitment to innovation and expansion of its AI offerings, potentially increasing its competitiveness in the market",
+  "competitive_implications": "Cohere's updated product offerings and partnerships may pose a competitive threat to other AI solution providers",
+  "content_hash_before": "f6d76aeb1a90a023ebc49da98a3ce0dc1016fa6e183e1a9d3174d61f3796e1a9",
+  "content_hash_after": "c5273ab97377be027963b70f0de5b6a19845a7691e3817b2f56d56d727b1c491",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,84 @@
+{
+  "id": 1121,
+  "company": "GitHub Copilot",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T15:58:25.821Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Updates to GitHub Copilot's features, pricing, and supported models",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Updates to GitHub Copilot's features, pricing, and supported models",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New free pricing tier with limited functionality",
+      "Updates to supported models, including OpenAI GPT-5 and Anthropic Claude Opus 4.1",
+      "Changes to plan features, including unlimited agent mode and chats with GPT-5 mini",
+      "Addition of coding agent (preview) to Pro plan"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates to GitHub Copilot position the company as a leader in AI-powered development tools, potentially attracting more users and driving revenue growth.",
+    "market_signals": [
+      "increased investment in AI-powered development tools",
+      "growing demand for automated coding assistance"
+    ],
+    "competitive_implications": "The updates to GitHub Copilot may pressure competitors to invest in similar AI-powered development tools, potentially leading to increased competition in the market.",
+    "strategic_direction": "The updates suggest a strategic direction towards AI-powered development tools, with a focus on automation, efficiency, and innovation."
+  },
+  "entities": {
+    "products": [
+      "GitHub Copilot"
+    ],
+    "features": [
+      "agent mode",
+      "coding agent",
+      "code review"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "machine learning"
+    ],
+    "people": [],
+    "pricing": [
+      "free pricing tier",
+      "Pro plan",
+      "Pro+ plan"
+    ],
+    "markets": [
+      "software development"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "GitHub Copilot is a significant player in the AI-powered development tools market",
+      "The company is investing heavily in AI-powered features and pricing updates"
+    ],
+    "opportunities": [
+      "increased adoption of AI-powered development tools",
+      "potential partnerships with other companies in the software development industry"
+    ],
+    "threats": [
+      "increased competition in the market",
+      "potential backlash from developers who prefer traditional coding methods"
+    ],
+    "recommended_actions": [
+      "monitor the market for similar AI-powered development tools",
+      "consider partnerships with GitHub Copilot to leverage their expertise and user base"
+    ]
+  },
+  "key_insights": [
+    "GitHub Copilot is a significant player in the AI-powered development tools market",
+    "The company is investing heavily in AI-powered features and pricing updates"
+  ],
+  "business_impact": "The updates to GitHub Copilot position the company as a leader in AI-powered development tools, potentially attracting more users and driving revenue growth.",
+  "competitive_implications": "The updates to GitHub Copilot may pressure competitors to invest in similar AI-powered development tools, potentially leading to increased competition in the market.",
+  "content_hash_before": "e3a37b1c403769edad8381b65bd69430df60f79c55e5e298b65b43443f6ebd85",
+  "content_hash_after": "7388ce69f7bc1e3b55adfb7a901e549fdcd677a3472b3fec5b281cbe23459c26",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

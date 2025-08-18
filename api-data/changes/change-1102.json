@@ -1,0 +1,61 @@
+{
+  "id": 1102,
+  "company": "Luma AI",
+  "page_url": "product",
+  "detected_at": "2025-08-18T16:01:56.909Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "No significant changes were detected in the content structure or main features of the Luma Dream Machine product page.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "No significant changes were detected in the content structure or main features of the Luma Dream Machine product page.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Minor adjustments in image URLs and formatting",
+      "No changes in product features, pricing, or availability"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The minor changes do not have a significant impact on Luma AI's business strategy or competitive positioning.",
+    "market_signals": [],
+    "competitive_implications": "No significant implications for competitors, as the changes are minor and do not alter the product's value proposition.",
+    "strategic_direction": "The company continues to focus on its AI-powered creative tools, but the changes do not reveal new strategic directions."
+  },
+  "entities": {
+    "products": [
+      "Luma Dream Machine"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "Luma Photon"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Luma AI maintains its focus on creative AI tools",
+      "No significant changes in product features or pricing"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue monitoring Luma AI's product developments and marketing strategies for potential future changes."
+    ]
+  },
+  "key_insights": [
+    "Luma AI maintains its focus on creative AI tools",
+    "No significant changes in product features or pricing"
+  ],
+  "business_impact": "The minor changes do not have a significant impact on Luma AI's business strategy or competitive positioning.",
+  "competitive_implications": "No significant implications for competitors, as the changes are minor and do not alter the product's value proposition.",
+  "content_hash_before": "cc6098dbdebe5ee3d26ad6814cbb0c05b68c89f607921dfb8f783a35a5822b7d",
+  "content_hash_after": "c64ea1bcbba80a2187f717ad1edf5b8f590b2d0925fff8ae261a6b8035acad82",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,86 @@
+{
+  "id": 1099,
+  "company": "Meta AI",
+  "page_url": "product",
+  "detected_at": "2025-08-18T16:02:33.076Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "Removal of redundant content, addition of new resources and updates to existing ones, and minor reorganization of the page structure",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Removal of redundant content, addition of new resources and updates to existing ones, and minor reorganization of the page structure",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Removal of redundant sections and paragraphs",
+      "Addition of new case studies and resources",
+      "Updates to documentation and community support sections",
+      "Minor reorganization of the page structure for better navigation"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates and additions to the content may improve user engagement and provide more value to developers and startups building with Llama, potentially leading to increased adoption and partnership opportunities.",
+    "market_signals": [
+      "Increased focus on developer support and resources",
+      "Expansion of partnerships and collaborations"
+    ],
+    "competitive_implications": "The changes may help Meta AI maintain its competitive position in the AI market by demonstrating its commitment to supporting developers and startups.",
+    "strategic_direction": "The updates suggest a strategic direction towards empowering developers and startups to innovate and build generative AI applications with Llama."
+  },
+  "entities": {
+    "products": [
+      "Llama 4",
+      "Llama API",
+      "Llama Stack"
+    ],
+    "features": [
+      "Natively Multimodal",
+      "Unparalleled Long Context",
+      "Expert Image Grounding",
+      "Multilingual Writing"
+    ],
+    "partnerships": [
+      "AWS"
+    ],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "U.S.",
+      "Australia"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "The importance of developer support and resources in AI adoption",
+      "The potential for partnerships and collaborations to drive innovation"
+    ],
+    "opportunities": [
+      "Increased adoption of Llama among developers and startups",
+      "New partnership opportunities with AWS and other companies"
+    ],
+    "threats": [
+      "Competition from other AI providers",
+      "Potential challenges in maintaining the quality and relevance of the content and resources"
+    ],
+    "recommended_actions": [
+      "Continuously monitor and update the content and resources to ensure they remain relevant and valuable to developers and startups",
+      "Explore new partnership opportunities to drive innovation and adoption"
+    ]
+  },
+  "key_insights": [
+    "The importance of developer support and resources in AI adoption",
+    "The potential for partnerships and collaborations to drive innovation"
+  ],
+  "business_impact": "The updates and additions to the content may improve user engagement and provide more value to developers and startups building with Llama, potentially leading to increased adoption and partnership opportunities.",
+  "competitive_implications": "The changes may help Meta AI maintain its competitive position in the AI market by demonstrating its commitment to supporting developers and startups.",
+  "content_hash_before": "743f740fb962ed96beb181fefd8ab25a0c855782d3291f96eb8d19c5ccf865bc",
+  "content_hash_after": "f32109c40c95d7c137cd8f427cde3dd6913023911ddb92880d10bc6e80075821",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

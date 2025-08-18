@@ -1,0 +1,78 @@
+{
+  "id": 1151,
+  "company": "Anthropic",
+  "page_url": "pricing",
+  "detected_at": "2025-08-18T15:55:27.675Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Pricing model updates for Claude Sonnet 4, addition of Government solution, and updates to Trust center link",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Pricing model updates for Claude Sonnet 4, addition of Government solution, and updates to Trust center link",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Claude Sonnet 4 pricing updated to include tiered pricing based on token count",
+      "Addition of Government solution under Solutions section",
+      "Update to Trust center link to point to http://trust.anthropic.com/"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The pricing update for Claude Sonnet 4 could impact revenue and customer adoption, while the addition of a Government solution expands the company's market reach.",
+    "market_signals": [
+      "Expansion into new markets",
+      "Pricing strategy adjustment"
+    ],
+    "competitive_implications": "The updates could influence how competitors price their similar offerings and expand into new markets.",
+    "strategic_direction": "The changes suggest a strategic direction towards expanding market reach and adjusting pricing to better compete in the market."
+  },
+  "entities": {
+    "products": [
+      "Claude",
+      "Claude Sonnet 4"
+    ],
+    "features": [
+      "Tiered pricing",
+      "Government solution"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Claude Sonnet 4 pricing update"
+    ],
+    "markets": [
+      "Government"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Pricing strategy update for Claude Sonnet 4",
+      "Expansion into Government sector"
+    ],
+    "opportunities": [
+      "Increased revenue through expanded market reach",
+      "Competitive advantage through pricing strategy"
+    ],
+    "threats": [
+      "Potential backlash from customers due to pricing changes",
+      "Increased competition in the Government sector"
+    ],
+    "recommended_actions": [
+      "Monitor customer feedback on pricing changes",
+      "Develop targeted marketing strategies for the Government sector"
+    ]
+  },
+  "key_insights": [
+    "Pricing strategy update for Claude Sonnet 4",
+    "Expansion into Government sector"
+  ],
+  "business_impact": "The pricing update for Claude Sonnet 4 could impact revenue and customer adoption, while the addition of a Government solution expands the company's market reach.",
+  "competitive_implications": "The updates could influence how competitors price their similar offerings and expand into new markets.",
+  "content_hash_before": "6b8f621634840cd4e691a5f212e8f07b839ea406f9d80b11f8a273ad7420c699",
+  "content_hash_after": "d5eadd8304e4c9d1b0d0db26744c341f3070e790482db07b89f7e47a0e4ad7cf",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

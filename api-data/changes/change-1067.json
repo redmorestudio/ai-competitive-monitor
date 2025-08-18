@@ -1,0 +1,88 @@
+{
+  "id": 1067,
+  "company": "Sourcegraph",
+  "page_url": "pricing",
+  "detected_at": "2025-08-18T16:10:26.827Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "The 'Sign up' button for Amp Enterprise has been replaced with 'Talk to Sales', indicating a change in the sales process for enterprise customers.",
+  "category": "sales_strategy",
+  "change_summary": {
+    "what_changed": "The 'Sign up' button for Amp Enterprise has been replaced with 'Talk to Sales', indicating a change in the sales process for enterprise customers.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Amp Enterprise sign-up process now requires talking to sales",
+      "Potential shift in sales strategy for enterprise customers"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change could lead to more personalized sales approaches for enterprise customers, potentially increasing revenue but also increasing the sales cycle time.",
+    "market_signals": [
+      "Increased focus on enterprise sales",
+      "Potential for more customized solutions for large clients"
+    ],
+    "competitive_implications": "Sourcegraph may be trying to differentiate itself through more personalized sales and support for enterprise customers, which could impact competitors' strategies.",
+    "strategic_direction": "Sourcegraph is likely focusing on expanding its enterprise customer base and increasing revenue through more tailored sales approaches."
+  },
+  "entities": {
+    "products": [
+      "Amp",
+      "Amp Teams",
+      "Amp Enterprise",
+      "Code Search",
+      "Batch Changes"
+    ],
+    "features": [
+      "Single Sign-on",
+      "No training on data",
+      "Team billing",
+      "Zero LLM retention"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "LLM",
+      "Web Search"
+    ],
+    "people": [],
+    "pricing": [
+      "$10 in free credits for most users",
+      "At-cost pricing",
+      "50% more expensive for Enterprise"
+    ],
+    "markets": [
+      "Software Development",
+      "DevOps"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Shift in sales strategy for enterprise customers",
+      "Potential for more customized solutions"
+    ],
+    "opportunities": [
+      "Increased revenue through personalized sales",
+      "Differentiation in the market through tailored solutions"
+    ],
+    "threats": [
+      "Increased sales cycle time",
+      "Potential for decreased sales efficiency"
+    ],
+    "recommended_actions": [
+      "Monitor the impact of the sales strategy change on revenue and sales cycle time",
+      "Assess the competitiveness of the new sales approach"
+    ]
+  },
+  "key_insights": [
+    "Shift in sales strategy for enterprise customers",
+    "Potential for more customized solutions"
+  ],
+  "business_impact": "The change could lead to more personalized sales approaches for enterprise customers, potentially increasing revenue but also increasing the sales cycle time.",
+  "competitive_implications": "Sourcegraph may be trying to differentiate itself through more personalized sales and support for enterprise customers, which could impact competitors' strategies.",
+  "content_hash_before": "365605cd51bf7d1d6dec8aedf389d6d1384b3a942e2999e773cdcb2d4e24b52e",
+  "content_hash_after": "514e25d574f1eedae3a1b706dd374e5df813b8b3679c9cb962d162f49b67abd4",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,55 @@
+{
+  "id": 1081,
+  "company": "Replicate",
+  "page_url": "pricing",
+  "detected_at": "2025-08-18T16:08:24.673Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The 'Enterprise & volume discounts' section has been updated with a new link to visit the enterprise page, and the keyboard shortcut for the menu has been changed from 'cmd+k' to 'ctrl+k'.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The 'Enterprise & volume discounts' section has been updated with a new link to visit the enterprise page, and the keyboard shortcut for the menu has been changed from 'cmd+k' to 'ctrl+k'.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated 'Enterprise & volume discounts' section with a new link",
+      "Changed keyboard shortcut for menu from 'cmd+k' to 'ctrl+k'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are unlikely to have a significant impact on the business, as they are minor and do not affect the overall functionality or pricing of the service.",
+    "market_signals": [],
+    "competitive_implications": "The changes do not provide any significant competitive advantages or disadvantages.",
+    "strategic_direction": "The changes do not indicate any significant shift in the company's strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is making minor updates to their website and documentation.",
+      "The company is not making any significant changes to their pricing or functionality."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [
+    "The company is making minor updates to their website and documentation.",
+    "The company is not making any significant changes to their pricing or functionality."
+  ],
+  "business_impact": "The changes are unlikely to have a significant impact on the business, as they are minor and do not affect the overall functionality or pricing of the service.",
+  "competitive_implications": "The changes do not provide any significant competitive advantages or disadvantages.",
+  "content_hash_before": "23ff14ac269e2eeaae8c5ed757bb112c874a72e52d8f4626851e42435aa10667",
+  "content_hash_after": "daec92c3b0a570786fa965cd90409f265197a9e097af2904bdb164a659a629cd",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,71 @@
+{
+  "id": 1127,
+  "company": "ElevenLabs",
+  "page_url": "product",
+  "detected_at": "2025-08-18T15:57:56.158Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of Eleven Music and addition of 'For Students' solution",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of Eleven Music and addition of 'For Students' solution",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of Eleven Music with a 'Meet Eleven Music' section",
+      "Addition of 'For Students' solution under the Solutions category"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of Eleven Music and the addition of 'For Students' solution could lead to increased revenue and market share for ElevenLabs, as well as enhanced competitiveness in the AI audio market.",
+    "market_signals": [
+      "expansion into new markets",
+      "diversification of product offerings"
+    ],
+    "competitive_implications": "The introduction of Eleven Music and the addition of 'For Students' solution could pose a competitive threat to other companies in the AI audio market, particularly those that do not have a strong presence in the education sector.",
+    "strategic_direction": "The changes suggest that ElevenLabs is pursuing a strategy of expansion and diversification, with a focus on developing new products and solutions that can appeal to a broader range of customers."
+  },
+  "entities": {
+    "products": [
+      "Eleven Music"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "education"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "ElevenLabs is expanding its product offerings to include music generation",
+      "The company is targeting the education sector with its 'For Students' solution"
+    ],
+    "opportunities": [
+      "increased revenue and market share",
+      "enhanced competitiveness"
+    ],
+    "threats": [
+      "increased competition from other AI audio companies",
+      "potential cannibalization of existing products"
+    ],
+    "recommended_actions": [
+      "monitor ElevenLabs' progress in the education sector",
+      "assess the potential impact of Eleven Music on the company's overall business strategy"
+    ]
+  },
+  "key_insights": [
+    "ElevenLabs is expanding its product offerings to include music generation",
+    "The company is targeting the education sector with its 'For Students' solution"
+  ],
+  "business_impact": "The introduction of Eleven Music and the addition of 'For Students' solution could lead to increased revenue and market share for ElevenLabs, as well as enhanced competitiveness in the AI audio market.",
+  "competitive_implications": "The introduction of Eleven Music and the addition of 'For Students' solution could pose a competitive threat to other companies in the AI audio market, particularly those that do not have a strong presence in the education sector.",
+  "content_hash_before": "abfd7dacc341a01f50c2c426ac9117bd1c6a5c9a785f62d2db40341988cd2fd2",
+  "content_hash_after": "e5dd96b49371b0cdd851cac027365d4138b347c942c05edbe79a041545db77b1",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,56 @@
+{
+  "id": 1092,
+  "company": "NVIDIA",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:05:36.091Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "The pixel.gif URL parameter 'cm' changed from '92600d47c6ee076a99821754435066' to 'b09195edf5309c45a8681755533124'",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The pixel.gif URL parameter 'cm' changed from '92600d47c6ee076a99821754435066' to 'b09195edf5309c45a8681755533124'",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated tracking pixel parameter"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact expected from this minor change.",
+    "market_signals": [
+      "NVIDIA may be refining its tracking and analytics capabilities."
+    ],
+    "competitive_implications": "No direct competitive implications from this minor change.",
+    "strategic_direction": "NVIDIA continues to focus on AI and related technologies, but this change does not reveal new strategic directions."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Minor update to tracking pixel parameter."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue monitoring NVIDIA's website for more significant changes or updates."
+    ]
+  },
+  "key_insights": [
+    "Minor update to tracking pixel parameter."
+  ],
+  "business_impact": "No significant business impact expected from this minor change.",
+  "competitive_implications": "No direct competitive implications from this minor change.",
+  "content_hash_before": "3af794b2497ef9973b3b4ffdb3e6e1df010258d566dc2af33a45ba8b62080b87",
+  "content_hash_after": "3361d872787cd7aed4723dd2a4f81ea06e677ba03046625b9cc93bb0c0ad6045",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

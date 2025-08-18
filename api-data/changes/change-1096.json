@@ -1,0 +1,54 @@
+{
+  "id": 1096,
+  "company": "Midjourney",
+  "page_url": "pricing",
+  "detected_at": "2025-08-18T16:03:18.774Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Video resolution details added to the plan comparison table",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Video resolution details added to the plan comparison table",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Video Resolution' column to the plan comparison table with 'SD', 'SD & HD' values for respective plans"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change is unlikely to have a significant impact on the business, as it is a minor update to the presentation of information.",
+    "market_signals": [
+      "Midjourney is refining its pricing and plan information to better communicate the value of its service to customers."
+    ],
+    "competitive_implications": "The change does not significantly affect Midjourney's competitive position, as it is a minor update and does not introduce new features or pricing that would differentiate it from competitors.",
+    "strategic_direction": "Midjourney continues to focus on refining its service and communicating its value to customers, but this change does not indicate a significant shift in strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Midjourney is focused on refining its pricing and plan information to better communicate the value of its service to customers."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [
+    "Midjourney is focused on refining its pricing and plan information to better communicate the value of its service to customers."
+  ],
+  "business_impact": "The change is unlikely to have a significant impact on the business, as it is a minor update to the presentation of information.",
+  "competitive_implications": "The change does not significantly affect Midjourney's competitive position, as it is a minor update and does not introduce new features or pricing that would differentiate it from competitors.",
+  "content_hash_before": "823666b2cbc29261f2343d1cb1082928176e446331abb0a6db694a32d77b959e",
+  "content_hash_after": "88a3148628b5895b2a6be3cd2cb15bf26ab6340ef4ea73f611dcd43d7ae53b26",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

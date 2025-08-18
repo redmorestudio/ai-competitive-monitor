@@ -1,0 +1,73 @@
+{
+  "id": 1059,
+  "company": "Weights & Biases",
+  "page_url": "pricing",
+  "detected_at": "2025-08-18T16:11:52.325Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Addition of a notice about service accessibility, change in Weave description from LLMOps to AIOps, and addition of Inference: Hosting section",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Addition of a notice about service accessibility, change in Weave description from LLMOps to AIOps, and addition of Inference: Hosting section",
+    "change_type": "addition/update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Notice about service accessibility added",
+      "Weave description changed from LLMOps to AIOps",
+      "Inference: Hosting section added with various models listed"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes could improve the platform's competitiveness and user experience, but may also affect user accessibility",
+    "market_signals": [
+      "Increased focus on AIops and hosting",
+      "Potential expansion of services"
+    ],
+    "competitive_implications": "The updates could help Weights & Biases stay competitive in the market, but may also lead to increased competition from other platforms",
+    "strategic_direction": "The changes suggest a strategic direction towards expanding services and improving user experience"
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "Weave: AIOps",
+      "Inference: Hosting"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Notice about service accessibility added",
+      "Weave description changed from LLMOps to AIOps",
+      "Inference: Hosting section added"
+    ],
+    "opportunities": [
+      "Improved user experience",
+      "Increased competitiveness"
+    ],
+    "threats": [
+      "Potential impact on user accessibility",
+      "Increased competition"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and accessibility",
+      "Analyze competitors' responses to the updates"
+    ]
+  },
+  "key_insights": [
+    "Notice about service accessibility added",
+    "Weave description changed from LLMOps to AIOps",
+    "Inference: Hosting section added"
+  ],
+  "business_impact": "The changes could improve the platform's competitiveness and user experience, but may also affect user accessibility",
+  "competitive_implications": "The updates could help Weights & Biases stay competitive in the market, but may also lead to increased competition from other platforms",
+  "content_hash_before": "f5d3d4ac893e3f8bea43d728cc93c76030e30065b1f6dbf232348c9c9fa5bb18",
+  "content_hash_after": "7750a62b8e2f55bfef7e8de1678bee580a7182f94031b1d7f399e319bd8bc371",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,108 @@
+{
+  "id": 1136,
+  "company": "Cohere",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T15:57:00.495Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of North, a new enterprise-ready AI platform, and changes in the website's structure and content",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of North, a new enterprise-ready AI platform, and changes in the website's structure and content",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of North to the Workplace Systems section",
+      "Changes in the homepage content, including a new introduction and call-to-action",
+      "Update of the products section to include North",
+      "Removal of some customer stories and addition of new ones",
+      "Changes in the trusted partners section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of North and the changes in the website's structure and content indicate a significant update to Cohere's product offerings and marketing strategy, which may impact their competitive positioning and market share.",
+    "market_signals": [
+      "Increased focus on enterprise-ready AI solutions",
+      "Expansion of product offerings to include North",
+      "Changes in marketing strategy to emphasize the benefits of Cohere's AI solutions"
+    ],
+    "competitive_implications": "The introduction of North and the changes in the website's structure and content may pose a competitive threat to other companies in the AI solutions market, particularly those that do not have a strong enterprise-ready offering.",
+    "strategic_direction": "Cohere's strategic direction appears to be focused on expanding its product offerings and marketing efforts to target enterprise customers and increase its market share in the AI solutions market."
+  },
+  "entities": {
+    "products": [
+      "North",
+      "Command",
+      "Aya Expanse",
+      "Embed",
+      "Rerank"
+    ],
+    "features": [],
+    "partnerships": [
+      "Oracle",
+      "Dell Technologies",
+      "RBC",
+      "LG CNS",
+      "Fujitsu",
+      "Bell",
+      "SAP",
+      "Salesforce",
+      "Notion",
+      "TD Bank",
+      "Johnson Lambert",
+      "Ensemble",
+      "Second Front",
+      "McKinsey & Company",
+      "Accenture",
+      "Borderless AI",
+      "BambooHR"
+    ],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Technology",
+      "Financial Services",
+      "Healthcare and Life Sciences",
+      "Manufacturing",
+      "Energy and Utilities",
+      "Public Sector"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Cohere has introduced a new enterprise-ready AI platform called North",
+      "The company has updated its website's structure and content to reflect its new product offerings and marketing strategy",
+      "Cohere's partnerships with various companies, including Oracle and Dell Technologies, may be an indicator of its growing influence in the AI solutions market"
+    ],
+    "opportunities": [
+      "Cohere's introduction of North and its updated marketing strategy may create opportunities for the company to increase its market share and revenue",
+      "The company's partnerships with various companies may lead to new business opportunities and collaborations"
+    ],
+    "threats": [
+      "The introduction of North and the changes in the website's structure and content may not be well-received by customers or the market, which could negatively impact Cohere's reputation and sales",
+      "Cohere's competitors may respond to the introduction of North by introducing their own enterprise-ready AI solutions, which could increase competition in the market"
+    ],
+    "recommended_actions": [
+      "Monitor Cohere's progress and the market's response to the introduction of North",
+      "Analyze the competitive implications of Cohere's updated product offerings and marketing strategy",
+      "Consider potential partnerships or collaborations with Cohere or other companies in the AI solutions market"
+    ]
+  },
+  "key_insights": [
+    "Cohere has introduced a new enterprise-ready AI platform called North",
+    "The company has updated its website's structure and content to reflect its new product offerings and marketing strategy",
+    "Cohere's partnerships with various companies, including Oracle and Dell Technologies, may be an indicator of its growing influence in the AI solutions market"
+  ],
+  "business_impact": "The introduction of North and the changes in the website's structure and content indicate a significant update to Cohere's product offerings and marketing strategy, which may impact their competitive positioning and market share.",
+  "competitive_implications": "The introduction of North and the changes in the website's structure and content may pose a competitive threat to other companies in the AI solutions market, particularly those that do not have a strong enterprise-ready offering.",
+  "content_hash_before": "7c2d07db3ab4280443411e119db20ccc6057bcaf9d53d3e95c05e6302b5638eb",
+  "content_hash_after": "8f0a1083e94ffac38dab44ef3479544bbdfc0330cfa8b94790f51dc31434e62b",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
