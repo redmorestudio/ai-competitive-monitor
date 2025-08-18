@@ -1,0 +1,83 @@
+{
+  "id": 1125,
+  "company": "ElevenLabs",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T15:58:06.674Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog posts were added, and some sections were reorganized or updated.",
+  "category": "product_update/partnership",
+  "change_summary": {
+    "what_changed": "New blog posts were added, and some sections were reorganized or updated.",
+    "change_type": "addition/update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of new blog posts, such as 'Graydon Carter’s Air Mail, now in audio' and 'AI Student Pack'.",
+      "Update of the 'Solutions' section to include 'For Students'.",
+      "Update of the 'Company' section to include 'CCPA Notice'."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest that ElevenLabs is expanding its services and partnerships, which could lead to increased revenue and market share.",
+    "market_signals": [
+      "Growing demand for AI-generated content",
+      "Increasing importance of partnerships in the tech industry"
+    ],
+    "competitive_implications": "The changes could make ElevenLabs a more competitive player in the AI audio market, potentially threatening other companies in the space.",
+    "strategic_direction": "The changes suggest that ElevenLabs is focused on expanding its services and partnerships, with a emphasis on AI-generated content and voice AI."
+  },
+  "entities": {
+    "products": [
+      "Eleven Music"
+    ],
+    "features": [
+      "AI-generated music",
+      "Voice AI"
+    ],
+    "partnerships": [
+      "Air Mail",
+      "Cisco Webex"
+    ],
+    "technologies": [
+      "Conversational AI"
+    ],
+    "people": [
+      "Graydon Carter",
+      "Dustin Blank"
+    ],
+    "pricing": [],
+    "markets": [
+      "Netherlands"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "ElevenLabs is expanding its services and partnerships",
+      "The company is focused on AI-generated content and voice AI"
+    ],
+    "opportunities": [
+      "Partnership opportunities with ElevenLabs",
+      "Growing demand for AI-generated content"
+    ],
+    "threats": [
+      "Increased competition in the AI audio market",
+      "Potential disruption of traditional content creation methods"
+    ],
+    "recommended_actions": [
+      "Monitor ElevenLabs' further developments and partnerships",
+      "Consider potential partnership opportunities with the company"
+    ]
+  },
+  "key_insights": [
+    "ElevenLabs is expanding its services and partnerships",
+    "The company is focused on AI-generated content and voice AI"
+  ],
+  "business_impact": "The changes suggest that ElevenLabs is expanding its services and partnerships, which could lead to increased revenue and market share.",
+  "competitive_implications": "The changes could make ElevenLabs a more competitive player in the AI audio market, potentially threatening other companies in the space.",
+  "content_hash_before": "d387f1c97a0987782d028b2c06c485d615df77d22026bf26971b31d18e551781",
+  "content_hash_after": "6ab652ecd8fed71772206463fcf954e9e48b3e236ab1cd6b80b83fa83e208b76",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

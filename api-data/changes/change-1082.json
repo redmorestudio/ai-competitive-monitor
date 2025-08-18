@@ -1,0 +1,70 @@
+{
+  "id": 1082,
+  "company": "Redmore Studio",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T16:08:16.270Z",
+  "change_type": "modified",
+  "interest_level": 7,
+  "ai_confidence": 0.8,
+  "summary": "Addition of a cookie consent banner and detailed cookie information",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Addition of a cookie consent banner and detailed cookie information",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of a customizable cookie consent banner",
+      "Detailed information about necessary, functional, analytics, performance, and advertisement cookies",
+      "Option to accept, reject, or customize cookie preferences"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Enhanced user trust and compliance with regulations, potentially leading to increased engagement and revenue.",
+    "market_signals": [
+      "Increased focus on user privacy and data protection",
+      "Compliance with regulations such as GDPR and CCPA"
+    ],
+    "competitive_implications": "Redmore Studio is taking steps to prioritize user privacy and data protection, which may give them a competitive edge in terms of user trust and loyalty.",
+    "strategic_direction": "Redmore Studio is likely to continue prioritizing user privacy and data protection, potentially exploring new technologies and features to enhance user experience and trust."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "CookieYes"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Redmore Studio has added a customizable cookie consent banner and detailed cookie information",
+      "The website is using CookieYes technology for cookie management"
+    ],
+    "opportunities": [
+      "Enhanced user trust and loyalty",
+      "Increased engagement and revenue"
+    ],
+    "threats": [
+      "Non-compliance with regulations may lead to fines and reputational damage",
+      "Users may reject cookies, potentially impacting website functionality and revenue"
+    ],
+    "recommended_actions": [
+      "Monitor user response to the new cookie consent banner and adjust as needed",
+      "Explore new technologies and features to enhance user experience and trust"
+    ]
+  },
+  "key_insights": [
+    "Redmore Studio has added a customizable cookie consent banner and detailed cookie information",
+    "The website is using CookieYes technology for cookie management"
+  ],
+  "business_impact": "Enhanced user trust and compliance with regulations, potentially leading to increased engagement and revenue.",
+  "competitive_implications": "Redmore Studio is taking steps to prioritize user privacy and data protection, which may give them a competitive edge in terms of user trust and loyalty.",
+  "content_hash_before": "50f342bd68f34f8b57a589757059d92f2b407cb499e1b72e8d778a1a98b79ba9",
+  "content_hash_after": "9232156ce0d72228a68502a320934c4fc159f07456a5e60c85093991900ec52a",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

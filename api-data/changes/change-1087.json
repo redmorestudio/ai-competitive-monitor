@@ -1,0 +1,79 @@
+{
+  "id": 1087,
+  "company": "Perplexity AI",
+  "page_url": "product",
+  "detected_at": "2025-08-18T16:06:41.574Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Updates to Pro and Max subscription plans, including changes to AI models and features",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Updates to Pro and Max subscription plans, including changes to AI models and features",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Added 'Limited access to video generation' to Pro plan",
+      "Updated AI models in Pro plan to include GPT-5 and Claude Sonnet 4",
+      "Updated AI models in Max plan to include Anthropic Claude Opus 4.1",
+      "Added 'Enhanced access to video generation' to Max plan"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates to the Pro and Max plans demonstrate Perplexity AI's commitment to staying at the forefront of AI technology and providing its customers with the latest advancements",
+    "market_signals": [
+      "Increased competition in the AI market",
+      "Growing demand for advanced AI features"
+    ],
+    "competitive_implications": "The updates may give Perplexity AI a competitive edge over other companies in the AI market, but also increase the pressure to continue innovating and improving its products",
+    "strategic_direction": "Perplexity AI is likely to continue focusing on developing and integrating new AI technologies into its products"
+  },
+  "entities": {
+    "products": [
+      "Perplexity Pro",
+      "Perplexity Max"
+    ],
+    "features": [
+      "Video generation",
+      "GPT-5",
+      "Claude Sonnet 4",
+      "Anthropic Claude Opus 4.1"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI models"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Perplexity AI is expanding its AI capabilities and features",
+      "The company is committed to providing its customers with the latest AI advancements"
+    ],
+    "opportunities": [
+      "Partnerships with other companies to integrate Perplexity AI's technology",
+      "Expansion into new markets or industries"
+    ],
+    "threats": [
+      "Increased competition from other AI companies",
+      "Regulatory challenges related to AI development and use"
+    ],
+    "recommended_actions": [
+      "Monitor Perplexity AI's continued development and innovation in the AI space",
+      "Assess potential partnership or collaboration opportunities with Perplexity AI"
+    ]
+  },
+  "key_insights": [
+    "Perplexity AI is expanding its AI capabilities and features",
+    "The company is committed to providing its customers with the latest AI advancements"
+  ],
+  "business_impact": "The updates to the Pro and Max plans demonstrate Perplexity AI's commitment to staying at the forefront of AI technology and providing its customers with the latest advancements",
+  "competitive_implications": "The updates may give Perplexity AI a competitive edge over other companies in the AI market, but also increase the pressure to continue innovating and improving its products",
+  "content_hash_before": "4fa9e55d8f0374b9d0d0fb68270b48fe5531497527f0370413b5a0a8236e2416",
+  "content_hash_after": "1ac06f57a8d81056961e8104e99538a74f0cfcf196d1bcb9fa7f82718a55304c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

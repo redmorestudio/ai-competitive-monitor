@@ -1,0 +1,86 @@
+{
+  "id": 1101,
+  "company": "Luma AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:02:17.723Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "Addition of 'Creative Partner Program' and removal of 'Inner Circle' from the navigation menu",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Addition of 'Creative Partner Program' and removal of 'Inner Circle' from the navigation menu",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Creative Partner Program' to the main navigation menu",
+      "Removed 'Inner Circle' from the main navigation menu"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of a 'Creative Partner Program' may attract more creative professionals and businesses to Luma AI's platform, potentially increasing revenue and expanding their user base.",
+    "market_signals": [
+      "Expansion of offerings",
+      "Shift in business strategy"
+    ],
+    "competitive_implications": "Luma AI's updated navigation menu may indicate a more focused approach to their business, potentially making them more competitive in the AI video generation market.",
+    "strategic_direction": "Luma AI appears to be focusing on building a more comprehensive platform for creative professionals and businesses, with a emphasis on multimodal general intelligence and video generation capabilities."
+  },
+  "entities": {
+    "products": [
+      "Dream Machine",
+      "Ray2",
+      "Photon",
+      "Luma API"
+    ],
+    "features": [
+      "Modify Video",
+      "Camera Motion Concepts",
+      "Ray2 Flash",
+      "Image to Video"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Multimodal General Intelligence",
+      "Video Generation",
+      "Image Generation"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Media",
+      "Entertainment",
+      "Marketing",
+      "Advertising"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Luma AI has added a 'Creative Partner Program' to their navigation menu",
+      "The removal of 'Inner Circle' may indicate a reevaluation of their community engagement approach"
+    ],
+    "opportunities": [
+      "Potential for increased revenue and user base expansion",
+      "Improved competitiveness in the AI video generation market"
+    ],
+    "threats": [
+      "Potential backlash from users who relied on the 'Inner Circle' feature",
+      "Increased competition from other AI video generation platforms"
+    ],
+    "recommended_actions": [
+      "Monitor Luma AI's 'Creative Partner Program' and its impact on their business",
+      "Analyze the effectiveness of their updated navigation menu and overall business strategy"
+    ]
+  },
+  "key_insights": [
+    "Luma AI has added a 'Creative Partner Program' to their navigation menu",
+    "The removal of 'Inner Circle' may indicate a reevaluation of their community engagement approach"
+  ],
+  "business_impact": "The introduction of a 'Creative Partner Program' may attract more creative professionals and businesses to Luma AI's platform, potentially increasing revenue and expanding their user base.",
+  "competitive_implications": "Luma AI's updated navigation menu may indicate a more focused approach to their business, potentially making them more competitive in the AI video generation market.",
+  "content_hash_before": "c32c0cd17dce6bbd9282e31751dd4067e6b33832b2692ddd6f44dc9a6a5da476",
+  "content_hash_after": "659f13fe39c3c0a00798352a845793d9bbe4cb76ec4e6036074b18dc8d37a364",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,72 @@
+{
+  "id": 1145,
+  "company": "Cerebras",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T15:56:06.444Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog post added: OpenAI GPT OSS 120B Runs Fastest on Cerebras",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog post added: OpenAI GPT OSS 120B Runs Fastest on Cerebras",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added a new blog post on August 06, 2025, titled 'OpenAI GPT OSS 120B Runs Fastest on Cerebras'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of OpenAI GPT OSS 120B to Cerebras' platform could enhance its competitiveness in the AI market and attract new customers.",
+    "market_signals": [
+      "Increased focus on AI and inference capabilities"
+    ],
+    "competitive_implications": "Cerebras' competitors may need to respond by enhancing their own AI and inference capabilities to remain competitive.",
+    "strategic_direction": "Cerebras is likely to continue investing in AI and inference capabilities to maintain its competitive position."
+  },
+  "entities": {
+    "products": [
+      "OpenAI GPT OSS 120B"
+    ],
+    "features": [],
+    "partnerships": [
+      "OpenAI"
+    ],
+    "technologies": [
+      "AI",
+      "Inference"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Cerebras has added OpenAI GPT OSS 120B to its platform",
+      "The company is actively promoting its capabilities and partnerships"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other AI companies",
+      "Increased demand for Cerebras' AI and inference capabilities"
+    ],
+    "threats": [
+      "Competitors may respond by enhancing their own AI and inference capabilities",
+      "Regulatory challenges related to AI development and deployment"
+    ],
+    "recommended_actions": [
+      "Monitor Cerebras' future announcements and partnerships",
+      "Assess the competitive implications of Cerebras' enhanced AI and inference capabilities"
+    ]
+  },
+  "key_insights": [
+    "Cerebras has added OpenAI GPT OSS 120B to its platform",
+    "The company is actively promoting its capabilities and partnerships"
+  ],
+  "business_impact": "The addition of OpenAI GPT OSS 120B to Cerebras' platform could enhance its competitiveness in the AI market and attract new customers.",
+  "competitive_implications": "Cerebras' competitors may need to respond by enhancing their own AI and inference capabilities to remain competitive.",
+  "content_hash_before": "40bf4a69323014a577ef3e0c1054b88538814c9bfacd71eace6124f651f44323",
+  "content_hash_after": "94413e27bbdfd81783209a4c73542d5750cfc3513a8eb9997c75d16f0c84afe8",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

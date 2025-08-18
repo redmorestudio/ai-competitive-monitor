@@ -1,0 +1,58 @@
+{
+  "id": 1094,
+  "company": "Neeva",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:05:21.839Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Addition of 'Legal' link and update of 'Privacy Policy' link, removal of JavaScript void link, and minor formatting changes",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Addition of 'Legal' link and update of 'Privacy Policy' link, removal of JavaScript void link, and minor formatting changes",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Legal' link",
+      "Updated 'Privacy Policy' link to point to '/privacy' instead of JavaScript void",
+      "Removed unnecessary characters and formatting"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes may improve user experience and accessibility of legal and privacy information, but do not have significant business implications",
+    "market_signals": [
+      "Commitment to transparency and compliance"
+    ],
+    "competitive_implications": "The changes do not provide a significant competitive advantage, but rather maintain a standard level of transparency and compliance",
+    "strategic_direction": "The changes do not indicate a shift in strategic direction, but rather a focus on refining existing infrastructure"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Neeva prioritizes transparency and compliance by making legal and privacy information easily accessible"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor Neeva's future updates for potential strategic shifts or significant changes"
+    ]
+  },
+  "key_insights": [
+    "Neeva prioritizes transparency and compliance by making legal and privacy information easily accessible"
+  ],
+  "business_impact": "The changes may improve user experience and accessibility of legal and privacy information, but do not have significant business implications",
+  "competitive_implications": "The changes do not provide a significant competitive advantage, but rather maintain a standard level of transparency and compliance",
+  "content_hash_before": "582c430e8a26549f9d659e1c56bf804311c42a0d4e275f2a2794002b1b8a3a27",
+  "content_hash_after": "9db41e18882e58ef8b8e7765ec7a68ff7f69b9f03d3980433860e4d99b6dd977",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

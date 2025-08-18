@@ -1,0 +1,72 @@
+{
+  "id": 1104,
+  "company": "Leonardo AI",
+  "page_url": "pricing",
+  "detected_at": "2025-08-18T16:01:43.674Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Introduction of Lucid Origin, a new standard in image generation, and updates to the pricing plans, including the addition of Top-up Tokens and changes to the Generation Power and Creative Features sections",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of Lucid Origin, a new standard in image generation, and updates to the pricing plans, including the addition of Top-up Tokens and changes to the Generation Power and Creative Features sections",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of Lucid Origin",
+      "Updates to pricing plans",
+      "Addition of Top-up Tokens",
+      "Changes to Generation Power and Creative Features sections"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of Lucid Origin and updates to pricing plans could lead to increased customer engagement and revenue growth, while also impacting the competitive landscape",
+    "market_signals": [
+      "Increased focus on image generation and AI technology"
+    ],
+    "competitive_implications": "The introduction of Lucid Origin could give Leonardo.Ai a competitive edge in the market, while updates to pricing plans could impact customer loyalty and acquisition",
+    "strategic_direction": "Leonardo.Ai is focusing on developing and improving its image generation technology, while also expanding its pricing options to cater to different customer needs"
+  },
+  "entities": {
+    "products": [
+      "Lucid Origin"
+    ],
+    "features": [
+      "Top-up Tokens"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Updates to pricing plans"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The introduction of Lucid Origin is a significant development in Leonardo.Ai's image generation technology",
+      "Updates to pricing plans could impact customer engagement and revenue growth"
+    ],
+    "opportunities": [
+      "Increased customer engagement and revenue growth through the introduction of Lucid Origin and updates to pricing plans"
+    ],
+    "threats": [
+      "Potential negative impact on customer loyalty and acquisition due to changes in pricing plans"
+    ],
+    "recommended_actions": [
+      "Monitor customer feedback and adjust pricing plans accordingly",
+      "Continue to develop and improve image generation technology to maintain a competitive edge"
+    ]
+  },
+  "key_insights": [
+    "The introduction of Lucid Origin is a significant development in Leonardo.Ai's image generation technology",
+    "Updates to pricing plans could impact customer engagement and revenue growth"
+  ],
+  "business_impact": "The introduction of Lucid Origin and updates to pricing plans could lead to increased customer engagement and revenue growth, while also impacting the competitive landscape",
+  "competitive_implications": "The introduction of Lucid Origin could give Leonardo.Ai a competitive edge in the market, while updates to pricing plans could impact customer loyalty and acquisition",
+  "content_hash_before": "1343a4961b2a9a904bc50902d970c7195e899fff35b23c80b3bfcc249ff20ab3",
+  "content_hash_after": "3966e7b03a796bcb96080b6cd8c516b015599fab75a629500ec7b9f4022f750b",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,69 @@
+{
+  "id": 1073,
+  "company": "Resemble AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:09:20.524Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Addition of 'Deepfake Detection for Meetings' feature under Detect product",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Addition of 'Deepfake Detection for Meetings' feature under Detect product",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New feature added: Deepfake Detection for Meetings",
+      "No removals or updates of existing features observed"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of Deepfake Detection for Meetings enhances Resemble AI's security offerings, potentially increasing its appeal to enterprise clients and expanding its market share in the AI voice and deepfake detection space.",
+    "market_signals": [
+      "Increased focus on security and deepfake detection",
+      "Potential expansion into new markets or industries"
+    ],
+    "competitive_implications": "Resemble AI's competitors may need to respond with similar security-focused features to remain competitive.",
+    "strategic_direction": "Resemble AI is likely focusing on enhancing its security and deepfake detection capabilities to maintain a competitive edge and expand its customer base."
+  },
+  "entities": {
+    "products": [
+      "Deepfake Detection for Meetings"
+    ],
+    "features": [
+      "Realtime Deepfake Detection for Meet, Teams, Zoom, & Webex"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Resemble AI has added a new feature focused on deepfake detection for meetings.",
+      "This addition indicates a strategic focus on security and expanding market reach."
+    ],
+    "opportunities": [
+      "Potential for Resemble AI to expand into new markets or industries with its enhanced security features."
+    ],
+    "threats": [
+      "Competitors may respond with similar features, potentially mitigating Resemble AI's competitive advantage."
+    ],
+    "recommended_actions": [
+      "Monitor Resemble AI's competitors for similar feature additions.",
+      "Assess the market demand for deepfake detection and security features in AI voice technology."
+    ]
+  },
+  "key_insights": [
+    "Resemble AI has added a new feature focused on deepfake detection for meetings.",
+    "This addition indicates a strategic focus on security and expanding market reach."
+  ],
+  "business_impact": "The addition of Deepfake Detection for Meetings enhances Resemble AI's security offerings, potentially increasing its appeal to enterprise clients and expanding its market share in the AI voice and deepfake detection space.",
+  "competitive_implications": "Resemble AI's competitors may need to respond with similar security-focused features to remain competitive.",
+  "content_hash_before": "dbfaefef40e47ec6ed692bbf13936d3ecedcb52ef6e978c3c37f56bfa98553d6",
+  "content_hash_after": "a9c2b11b95e4d92e753bcb2f83658b231465af4276f18a73d7d73290682d0fc1",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,77 @@
+{
+  "id": 1147,
+  "company": "Anyscale",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T15:55:50.514Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog posts were added, and the order of existing posts changed",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog posts were added, and the order of existing posts changed",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Added new blog post: 'Deploy DeepSeek‑R1 with vLLM and Ray Serve on Kubernetes'",
+      "Changed order of blog posts to feature more recent and relevant content"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updated blog content demonstrates Anyscale's commitment to thought leadership and innovation in the AI and compute space, potentially attracting new customers and partners",
+    "market_signals": [
+      "Increased focus on AI and compute",
+      "Growing importance of Kubernetes and PyTorch"
+    ],
+    "competitive_implications": "Anyscale is positioning itself as a leader in the AI and compute space, potentially gaining a competitive advantage over other companies in the industry",
+    "strategic_direction": "Anyscale is likely to continue investing in research and development, as well as thought leadership and marketing efforts, to maintain its position in the market"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "Ray",
+      "Kubernetes",
+      "PyTorch",
+      "vLLM"
+    ],
+    "people": [
+      "Robert Nishihara",
+      "Gabe Monroy",
+      "Keerti Melkote",
+      "Christina Zhu"
+    ],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Anyscale is committed to innovation and thought leadership in the AI and compute space",
+      "The company is positioning itself for growth and expansion in the market"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the AI and compute space",
+      "Potential for increased market share and revenue growth"
+    ],
+    "threats": [
+      "Competition from other companies in the AI and compute space",
+      "Potential for market saturation or decline in demand for AI and compute solutions"
+    ],
+    "recommended_actions": [
+      "Continue to monitor Anyscale's blog and other marketing efforts for signs of future innovation and growth",
+      "Consider potential partnership opportunities with Anyscale or other companies in the AI and compute space"
+    ]
+  },
+  "key_insights": [
+    "Anyscale is committed to innovation and thought leadership in the AI and compute space",
+    "The company is positioning itself for growth and expansion in the market"
+  ],
+  "business_impact": "The updated blog content demonstrates Anyscale's commitment to thought leadership and innovation in the AI and compute space, potentially attracting new customers and partners",
+  "competitive_implications": "Anyscale is positioning itself as a leader in the AI and compute space, potentially gaining a competitive advantage over other companies in the industry",
+  "content_hash_before": "b0b5f645d232702978e5ac1ff478658cccaad13564f4b3cfc99874859a281bfb",
+  "content_hash_after": "f8a3e2c3d4b103439f9ea29601250c6976f263ae267dad5123c635e9dc48da2d",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,62 @@
+{
+  "id": 1132,
+  "company": "DataRobot",
+  "page_url": "product",
+  "detected_at": "2025-08-18T15:57:23.244Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Update of SAP partnership link from relative to absolute URL",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Update of SAP partnership link from relative to absolute URL",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated SAP partnership link in Co-Engineered section under Apps & Agents and Platform"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact expected from this minor update",
+    "market_signals": [
+      "Maintenance of existing partnerships"
+    ],
+    "competitive_implications": "No direct competitive implications, but indicates ongoing partnership maintenance",
+    "strategic_direction": "Continued focus on partnerships and ecosystem development"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [
+      "SAP"
+    ],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "DataRobot continues to maintain and update its partnerships"
+    ],
+    "opportunities": [
+      "Potential for deeper integration with SAP in the future"
+    ],
+    "threats": [
+      "Dependence on partnerships for ecosystem strength"
+    ],
+    "recommended_actions": [
+      "Monitor DataRobot's partnership announcements for potential strategic shifts"
+    ]
+  },
+  "key_insights": [
+    "DataRobot continues to maintain and update its partnerships"
+  ],
+  "business_impact": "No significant business impact expected from this minor update",
+  "competitive_implications": "No direct competitive implications, but indicates ongoing partnership maintenance",
+  "content_hash_before": "32f2936aaf1bcc9a8bfc1d18d309a923532bc3afc1a5e7c7f2c2ad0671983271",
+  "content_hash_after": "8af00304c82ab633587a180a9efd5fee9a65ec80b17cf5fee2b73baed38d5205",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,83 @@
+{
+  "id": 1100,
+  "company": "Meta AI",
+  "page_url": "api",
+  "detected_at": "2025-08-18T16:02:26.515Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Removal of redundant content, addition of new resources and updates to existing sections",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Removal of redundant content, addition of new resources and updates to existing sections",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Removal of redundant text and images",
+      "Addition of new case studies and resources",
+      "Updates to documentation and community sections"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates suggest a focus on improving the user experience and providing more resources for developers, which could lead to increased adoption and revenue",
+    "market_signals": [
+      "increased competition in the AI market",
+      "growing demand for multimodal models"
+    ],
+    "competitive_implications": "The updates position Meta AI as a leader in the AI market, with a strong focus on innovation and customer support",
+    "strategic_direction": "The changes indicate a strategic direction towards providing more comprehensive and user-friendly AI solutions"
+  },
+  "entities": {
+    "products": [
+      "Llama 4",
+      "Llama API"
+    ],
+    "features": [
+      "natively multimodal models",
+      "advanced reasoning",
+      "industry-leading context windows"
+    ],
+    "partnerships": [
+      "Amazon Web Services"
+    ],
+    "technologies": [
+      "AI",
+      "machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "US",
+      "Australia"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "significant updates to content and resources",
+      "focus on streamlining and improving user experience"
+    ],
+    "opportunities": [
+      "increased adoption and revenue",
+      "expanded partnerships and collaborations"
+    ],
+    "threats": [
+      "increased competition in the AI market",
+      "potential challenges in maintaining user engagement"
+    ],
+    "recommended_actions": [
+      "continue to monitor and update content and resources",
+      "explore new partnerships and collaborations"
+    ]
+  },
+  "key_insights": [
+    "significant updates to content and resources",
+    "focus on streamlining and improving user experience"
+  ],
+  "business_impact": "The updates suggest a focus on improving the user experience and providing more resources for developers, which could lead to increased adoption and revenue",
+  "competitive_implications": "The updates position Meta AI as a leader in the AI market, with a strong focus on innovation and customer support",
+  "content_hash_before": "743f740fb962ed96beb181fefd8ab25a0c855782d3291f96eb8d19c5ccf865bc",
+  "content_hash_after": "f32109c40c95d7c137cd8f427cde3dd6913023911ddb92880d10bc6e80075821",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

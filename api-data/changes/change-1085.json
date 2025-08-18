@@ -1,0 +1,55 @@
+{
+  "id": 1085,
+  "company": "Pika",
+  "page_url": "pricing",
+  "detected_at": "2025-08-18T16:08:00.490Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "Removal of 'About Us' link from the top and bottom navigation menus",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Removal of 'About Us' link from the top and bottom navigation menus",
+    "change_type": "removal",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Removed 'About Us' link from top navigation menu",
+      "Removed 'About Us' link from bottom navigation menu"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact expected from this minor change",
+    "market_signals": [],
+    "competitive_implications": "No competitive implications expected from this minor change",
+    "strategic_direction": "No change in strategic direction indicated by this minor update"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The removal of the 'About Us' link may indicate a shift in focus towards more prominent navigation items"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor the website for further changes to navigation or content"
+    ]
+  },
+  "key_insights": [
+    "The removal of the 'About Us' link may indicate a shift in focus towards more prominent navigation items"
+  ],
+  "business_impact": "No significant business impact expected from this minor change",
+  "competitive_implications": "No competitive implications expected from this minor change",
+  "content_hash_before": "08f1a835502fdd816052874d99065a2817eb316c428eebcc817bf74d4f2486d6",
+  "content_hash_after": "7ec736ffc33ce931d4bc757f270efb3557d427d287905cb9f15a46f1795a5f8d",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

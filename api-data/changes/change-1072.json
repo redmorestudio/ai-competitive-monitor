@@ -1,0 +1,58 @@
+{
+  "id": 1072,
+  "company": "SambaNova",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T16:09:58.671Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Addition of 'Customer Spotlight' under 'Resources' section",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Addition of 'Customer Spotlight' under 'Resources' section",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Customer Spotlight' link under 'Resources' section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of 'Customer Spotlight' may indicate an increased focus on customer success stories and case studies",
+    "market_signals": [
+      "Increased transparency and customer-centric approach"
+    ],
+    "competitive_implications": "The change does not directly impact competitive positioning, but may contribute to a positive brand image",
+    "strategic_direction": "Potential increased focus on customer success and storytelling"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The addition of 'Customer Spotlight' is a minor update, but may indicate a shift in marketing strategy"
+    ],
+    "opportunities": [
+      "Potential for increased customer engagement and brand loyalty"
+    ],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor the 'Customer Spotlight' section for updates and customer testimonials"
+    ]
+  },
+  "key_insights": [
+    "The addition of 'Customer Spotlight' is a minor update, but may indicate a shift in marketing strategy"
+  ],
+  "business_impact": "The addition of 'Customer Spotlight' may indicate an increased focus on customer success stories and case studies",
+  "competitive_implications": "The change does not directly impact competitive positioning, but may contribute to a positive brand image",
+  "content_hash_before": "1b19a33be3e05da84fd888f0fc0d13819f0af9499700b994913aab13de748b64",
+  "content_hash_after": "18ada2c07806704d00932577ffdefe23a1386620a332c3c0d2163894de2199d2",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

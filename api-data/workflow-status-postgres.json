@@ -1,8 +1,8 @@
 {
-  "last_run": "2025-08-06T01:33:10.366Z",
+  "last_run": "2025-08-18T16:34:59.648Z",
   "status": "success",
-  "workflow_run_id": "16765126704",
-  "trigger_source": "manual",
+  "workflow_run_id": "17045657695",
+  "trigger_source": "full-monitor-postgres",
   "backend": "postgresql",
   "database": "postgresql"
 }

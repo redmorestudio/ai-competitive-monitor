@@ -1,0 +1,81 @@
+{
+  "id": 1137,
+  "company": "Cohere",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T15:56:55.436Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Introduction of North, a new enterprise-ready AI platform, and updates to the blog section with new articles",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of North, a new enterprise-ready AI platform, and updates to the blog section with new articles",
+    "change_type": "addition/update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of North, a new AI platform",
+      "Update to the blog section with new articles, including 'Building AI agents that reshape financial services', 'Elo ratings beyond arena-style evaluations', and 'Cohere raises $500M at $6.8B valuation'",
+      "Changes to the website's layout and design"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of North and updates to the blog section could enhance Cohere's reputation as a leader in AI technology and increase its appeal to potential customers, particularly in the enterprise sector",
+    "market_signals": [
+      "Growing demand for AI solutions in the enterprise sector",
+      "Increasing competition in the AI market"
+    ],
+    "competitive_implications": "Cohere's introduction of North and updates to its blog section could put pressure on competitors to innovate and expand their own AI offerings",
+    "strategic_direction": "Cohere's strategic direction appears to be focused on expanding its AI capabilities and increasing its presence in the enterprise sector"
+  },
+  "entities": {
+    "products": [
+      "North",
+      "Command",
+      "Aya Expanse",
+      "Embed",
+      "Rerank"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Financial Services",
+      "Healthcare and Life Sciences",
+      "Manufacturing",
+      "Energy and Utilities",
+      "Public Sector"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Cohere has introduced a new AI platform, North, which could enhance its reputation as a leader in AI technology",
+      "The company has updated its blog section with new articles, indicating a focus on thought leadership and industry expertise"
+    ],
+    "opportunities": [
+      "Cohere could leverage its new AI platform and thought leadership efforts to increase its market share and appeal to potential customers"
+    ],
+    "threats": [
+      "The introduction of North and updates to the blog section could put pressure on competitors, potentially leading to increased competition and market saturation"
+    ],
+    "recommended_actions": [
+      "Monitor Cohere's progress and market response to its new AI platform and thought leadership efforts",
+      "Assess the potential impact of Cohere's strategic direction on the competitive landscape and market trends"
+    ]
+  },
+  "key_insights": [
+    "Cohere has introduced a new AI platform, North, which could enhance its reputation as a leader in AI technology",
+    "The company has updated its blog section with new articles, indicating a focus on thought leadership and industry expertise"
+  ],
+  "business_impact": "The introduction of North and updates to the blog section could enhance Cohere's reputation as a leader in AI technology and increase its appeal to potential customers, particularly in the enterprise sector",
+  "competitive_implications": "Cohere's introduction of North and updates to its blog section could put pressure on competitors to innovate and expand their own AI offerings",
+  "content_hash_before": "4ed565ce5d0a853b7e18abad0922c0ad4b4addfe9af23568b8a815e4899349c3",
+  "content_hash_after": "4cf63544b34e105d4fcfc18774187017a5444ec841a8dcabc1ef061fef3e8920",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

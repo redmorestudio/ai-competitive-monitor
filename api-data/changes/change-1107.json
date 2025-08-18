@@ -1,0 +1,55 @@
+{
+  "id": 1107,
+  "company": "LangChain",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:01:31.433Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The 'Resources' section has been updated to include 'Guides' instead of 'Resources Hub'.",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "The 'Resources' section has been updated to include 'Guides' instead of 'Resources Hub'.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated 'Resources' section to include 'Guides'",
+      "No changes to product offerings or company information"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change is unlikely to have a significant impact on the company's business or operations.",
+    "market_signals": [],
+    "competitive_implications": "The change does not indicate any significant competitive implications or advantages.",
+    "strategic_direction": "The company's strategic direction remains unclear from this change."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company has updated its 'Resources' section to include 'Guides'."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor the company's website and updates for any significant changes or announcements."
+    ]
+  },
+  "key_insights": [
+    "The company has updated its 'Resources' section to include 'Guides'."
+  ],
+  "business_impact": "The change is unlikely to have a significant impact on the company's business or operations.",
+  "competitive_implications": "The change does not indicate any significant competitive implications or advantages.",
+  "content_hash_before": "d55c913610a63046aedee2cff3486dea968718a505cedb5dbc17d5f2febe10b0",
+  "content_hash_after": "035fd680176946cc6d5bd59acc6c8f5f7a6a6f64e4085c43db3b47e8bb8573cc",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

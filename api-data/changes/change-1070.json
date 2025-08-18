@@ -1,0 +1,68 @@
+{
+  "id": 1070,
+  "company": "SambaNova",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:10:05.537Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "Addition of a new section 'Customer Spotlight' and a new logo 'maitai-logo', removal of redundant links, and minor reorganization of the content",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Addition of a new section 'Customer Spotlight' and a new logo 'maitai-logo', removal of redundant links, and minor reorganization of the content",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added a new section 'Customer Spotlight' with a link to a customer spotlight page",
+      "Added a new logo 'maitai-logo' to the list of partner logos",
+      "Removed redundant links to the same pages",
+      "Minor reorganization of the content for better readability"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes do not have a significant impact on the company's business strategy or operations",
+    "market_signals": [
+      "The company is continuing to focus on AI innovation and customer success"
+    ],
+    "competitive_implications": "The changes do not indicate a significant change in the company's competitive position",
+    "strategic_direction": "The company is continuing to invest in AI technology and customer success"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [
+      "Hume AI"
+    ],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is continuing to focus on AI innovation and customer success",
+      "The company is investing in new technologies and partnerships to drive growth"
+    ],
+    "opportunities": [
+      "The company may be able to leverage its AI technology to drive growth in new markets"
+    ],
+    "threats": [
+      "The company may face increased competition from other AI technology providers"
+    ],
+    "recommended_actions": [
+      "Continue to monitor the company's AI technology and customer success initiatives",
+      "Assess the potential for the company to leverage its AI technology to drive growth in new markets"
+    ]
+  },
+  "key_insights": [
+    "The company is continuing to focus on AI innovation and customer success",
+    "The company is investing in new technologies and partnerships to drive growth"
+  ],
+  "business_impact": "The changes do not have a significant impact on the company's business strategy or operations",
+  "competitive_implications": "The changes do not indicate a significant change in the company's competitive position",
+  "content_hash_before": "b14fdcd74e9b2a16d4042b0a09086c99edeed050812c62ea5d34d59e14b3c353",
+  "content_hash_after": "35b27182bbbc0e29d3cb6910adf3c1d9fc7645e51ce07e14f146a65dc83bce2e",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

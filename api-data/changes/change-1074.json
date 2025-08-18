@@ -1,0 +1,67 @@
+{
+  "id": 1074,
+  "company": "Resemble AI",
+  "page_url": "blog",
+  "detected_at": "2025-08-18T16:09:17.058Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Addition of Deepfake Detection for Meetings feature",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Addition of Deepfake Detection for Meetings feature",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of Deepfake Detection for Meetings",
+      "No removal of existing features"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of Deepfake Detection for Meetings enhances the company's product offerings, potentially increasing its competitiveness in the market.",
+    "market_signals": [
+      "Growing demand for secure AI voice technology solutions"
+    ],
+    "competitive_implications": "The update may pressure competitors to also invest in security features, potentially altering the competitive landscape.",
+    "strategic_direction": "The company is likely focusing on expanding its product capabilities to meet emerging market needs."
+  },
+  "entities": {
+    "products": [
+      "Deepfake Detection for Meetings"
+    ],
+    "features": [
+      "Realtime Deepfake Detection for Meet, Teams, Zoom, & Webex"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI voice technology"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Resemble AI is prioritizing security in its product development"
+    ],
+    "opportunities": [
+      "Potential for increased market share due to enhanced security features"
+    ],
+    "threats": [
+      "Competitors may respond with similar security updates, maintaining competitive pressure"
+    ],
+    "recommended_actions": [
+      "Monitor competitor responses and market feedback to the new feature"
+    ]
+  },
+  "key_insights": [
+    "Resemble AI is prioritizing security in its product development"
+  ],
+  "business_impact": "The addition of Deepfake Detection for Meetings enhances the company's product offerings, potentially increasing its competitiveness in the market.",
+  "competitive_implications": "The update may pressure competitors to also invest in security features, potentially altering the competitive landscape.",
+  "content_hash_before": "3487bddc8b4cecc9194e4047fb33ce6ddb5ceaa4e6e01ab466cd0032abef194d",
+  "content_hash_after": "5ed37887531d45d98ea6f2bef6c362f871fc3b34deaf0464d014adbd48523c3c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

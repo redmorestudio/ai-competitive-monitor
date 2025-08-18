@@ -1,0 +1,80 @@
+{
+  "id": 1066,
+  "company": "Stability AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:10:57.087Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Updated news section with new articles, changed the call-to-action for solutions from 'Speak with an expert' to 'Explore our solutions', and added a new partnership announcement with NVIDIA",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Updated news section with new articles, changed the call-to-action for solutions from 'Speak with an expert' to 'Explore our solutions', and added a new partnership announcement with NVIDIA",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New news articles added",
+      "Call-to-action for solutions changed",
+      "Partnership announcement with NVIDIA added"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates and new partnership could lead to increased adoption and revenue for Stability AI",
+    "market_signals": [
+      "Growing demand for generative AI solutions",
+      "Increasing importance of partnerships in the AI industry"
+    ],
+    "competitive_implications": "The updates and new partnership could give Stability AI a competitive advantage in the market",
+    "strategic_direction": "Expansion of solutions and partnerships to increase market share and revenue"
+  },
+  "entities": {
+    "products": [
+      "Stable Diffusion 3.5"
+    ],
+    "features": [
+      "Image generation",
+      "Video generation",
+      "Audio generation"
+    ],
+    "partnerships": [
+      "NVIDIA"
+    ],
+    "technologies": [
+      "Generative AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Enterprise"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Stability AI is expanding its solutions and partnerships",
+      "The company is focusing on enterprise customers"
+    ],
+    "opportunities": [
+      "Potential for increased adoption and revenue",
+      "Opportunities for partnerships and collaborations"
+    ],
+    "threats": [
+      "Increased competition in the market",
+      "Potential regulatory challenges"
+    ],
+    "recommended_actions": [
+      "Monitor Stability AI's progress and updates",
+      "Consider potential partnerships or collaborations"
+    ]
+  },
+  "key_insights": [
+    "Stability AI is expanding its solutions and partnerships",
+    "The company is focusing on enterprise customers"
+  ],
+  "business_impact": "The updates and new partnership could lead to increased adoption and revenue for Stability AI",
+  "competitive_implications": "The updates and new partnership could give Stability AI a competitive advantage in the market",
+  "content_hash_before": "8b5c433418e1a7435c2ce82cac52c024b19e57aa623f3a05b7757963db764d04",
+  "content_hash_after": "fd6d528112d94880c1db9133486e7e8912547cca8074fef4b9692471a80b0463",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

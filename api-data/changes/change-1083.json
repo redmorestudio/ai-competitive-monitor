@@ -1,0 +1,59 @@
+{
+  "id": 1083,
+  "company": "Pika",
+  "page_url": "homepage",
+  "detected_at": "2025-08-18T16:08:06.176Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Removal of about page link and reorganization of footer links",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Removal of about page link and reorganization of footer links",
+    "change_type": "removal",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Removed about page link from the top section",
+      "Removed about page link from the footer",
+      "Reorganized footer links to prioritize careers and social media"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes may slightly improve user experience by streamlining the homepage, but the impact is likely minimal",
+    "market_signals": [
+      "Pika may be focusing on simplifying their online presence"
+    ],
+    "competitive_implications": "The changes do not significantly impact Pika's competitive positioning",
+    "strategic_direction": "Pika's strategic direction remains unclear from these changes alone"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Pika is prioritizing careers and social media links over the about page"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor Pika's hiring page for potential talent acquisition insights",
+      "Analyze Pika's social media presence for brand and marketing strategy clues"
+    ]
+  },
+  "key_insights": [
+    "Pika is prioritizing careers and social media links over the about page"
+  ],
+  "business_impact": "The changes may slightly improve user experience by streamlining the homepage, but the impact is likely minimal",
+  "competitive_implications": "The changes do not significantly impact Pika's competitive positioning",
+  "content_hash_before": "139703c9fd74a0b53101ef977775d4c1b48078a03c05de9bae17c8d9fa99a105",
+  "content_hash_after": "f231ecbd964523c6201fd7d19b2ba4b38b8a701df6291e1a1d8ef68ceba218b2",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
