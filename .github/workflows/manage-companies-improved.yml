@@ -34,6 +34,11 @@ on:
         type: string
         default: 'homepage'
 
+# Prevent concurrent Pages deployments
+concurrency:
+  group: pages-deployment
+  cancel-in-progress: false
+
 jobs:
   manage-companies:
     runs-on: ubuntu-latest

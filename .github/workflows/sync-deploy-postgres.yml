@@ -68,6 +68,11 @@ permissions:
   id-token: write
   issues: write
 
+# Prevent concurrent Pages deployments
+concurrency:
+  group: pages-deployment
+  cancel-in-progress: false
+
 jobs:
   sync-and-deploy:
     runs-on: ubuntu-latest
