@@ -19,6 +19,7 @@ class KWICManager {
      * Initialize the KWIC module
      */
     init() {
+        console.log('KWIC: Initializing module');
         this.createModal();
         this.setupEventListeners();
         
@@ -27,6 +28,8 @@ class KWICManager {
             show: (entity, entityType) => this.show(entity, entityType),
             close: () => this.close()
         };
+        
+        console.log('KWIC: Module initialized, modal:', this.modal ? 'created' : 'not created');
     }
 
     /**
@@ -82,7 +85,23 @@ class KWICManager {
      * Show KWIC modal for an entity
      */
     async show(entity, entityType = 'technologies') {
-        if (this.isLoading) return;
+        console.log(`KWIC: Showing modal for ${entity} (${entityType})`);
+        
+        if (this.isLoading) {
+            console.log('KWIC: Already loading, skipping');
+            return;
+        }
+        
+        // Ensure modal exists
+        if (!this.modal) {
+            console.log('KWIC: Modal not found, creating it now');
+            this.createModal();
+        }
+        
+        if (!this.modal) {
+            console.error('KWIC: Failed to create modal');
+            return;
+        }
         
         this.currentEntity = entity;
         this.currentType = entityType;
@@ -139,12 +158,16 @@ class KWICManager {
         const fileName = fileMap[entityType] || 'contexts-technologies.json';
         
         try {
-            const response = await fetch(`./api-data/${fileName}`);
+            const url = `./api-data/${fileName}`;
+            console.log(`KWIC: Loading contexts from ${url}`);
+            
+            const response = await fetch(url);
             if (!response.ok) {
-                throw new Error(`Failed to load ${fileName}`);
+                throw new Error(`Failed to load ${fileName}: ${response.status} ${response.statusText}`);
             }
             
             const data = await response.json();
+            console.log(`KWIC: Loaded ${Object.keys(data.contexts || {}).length} entities from ${fileName}`);
             
             // Cache the data
             this.contextsCache.set(entityType, data);
