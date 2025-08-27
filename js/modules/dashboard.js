@@ -340,7 +340,7 @@ class Dashboard {
         
         return `
             <div class="recent-change-item" 
-                 onclick="window.controls.showChangeDetail('${changeId}', '${escapeHtml(change.company)}', event)">
+                 onclick="event.stopPropagation(); window.controls.showChangeDetail('${changeId}', '${escapeHtml(change.company)}', event); return false;">
                 <div class="change-header">
                     <span class="company-name">${escapeHtml(change.company)}</span>
                     <span class="interest-indicator">${interestEmoji} ${change.interest_level}/10</span>

@@ -53,12 +53,21 @@ export function closeModal() {
 
 // Initialize global click handler for modals
 export function initModalClickHandler() {
-    window.onclick = function(event) {
+    // Remove any existing handler first
+    if (window.modalClickHandler) {
+        window.removeEventListener('click', window.modalClickHandler);
+    }
+    
+    // Create new handler
+    window.modalClickHandler = function(event) {
         const modal = document.getElementById('companyModal');
         if (event.target === modal) {
             modal.style.display = 'none';
         }
     };
+    
+    // Add as event listener instead of replacing window.onclick
+    window.addEventListener('click', window.modalClickHandler);
 }
 
 // Show company details modal
@@ -221,14 +230,18 @@ export async function showCompanyUrls(companyName) {
 export async function showChangeDetail(changeId, companyName, event) {
     if (event) {
         event.stopPropagation();
+        event.preventDefault();
     }
     
     const modal = document.getElementById('companyModal');
     const modalTitle = document.getElementById('modalTitle');
     const modalContent = document.getElementById('modalContent');
     
-    modalTitle.textContent = `Change Details - ${companyName}`;
-    modal.style.display = 'block';
+    // Use setTimeout to ensure the modal opens after any conflicting handlers
+    setTimeout(() => {
+        modalTitle.textContent = `Change Details - ${companyName}`;
+        modal.style.display = 'block';
+    }, 0);
     
     try {
         let changeData = null;
@@ -574,7 +587,7 @@ async function loadCompanyRecentChanges(companyName) {
             
             html += `
                 <div class="change-item" style="margin-bottom: 10px; padding: 10px; background: var(--card-bg); border-radius: 8px; cursor: pointer;"
-                     onclick="window.controls.showChangeDetail('${changeId}', '${escapeHtml(companyName)}', event)">
+                     onclick="event.stopPropagation(); window.controls.showChangeDetail('${changeId}', '${escapeHtml(companyName)}', event); return false;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
                         <span class="interest-badge interest-${interestLevel}">Interest: ${interestLevel}/10</span>
                         <span style="color: var(--text-secondary); font-size: 0.85rem;">${changeDate.toLocaleDateString()}</span>
@@ -720,7 +733,7 @@ function renderFilteredChanges() {
             const changeId = globalIndex !== -1 ? `change-${globalIndex}` : `change-temp-${index}`;
             
             html += `
-                <div class="change-item" style="border-left-color: ${interestColor}; cursor: pointer;" onclick="window.controls.showChangeDetail('${changeId}', '${escapeHtml(change.company)}', event)">
+                <div class="change-item" style="border-left-color: ${interestColor}; cursor: pointer;" onclick="event.stopPropagation(); window.controls.showChangeDetail('${changeId}', '${escapeHtml(change.company)}', event); return false;">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
                         <div style="display: flex; align-items: center; gap: 10px;">
                             <strong>${escapeHtml(change.company)}</strong>
