@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Entity Management - AI Competitive Monitor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 20px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .header h1 {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        
+        .header .subtitle {
+            color: #888;
+            font-size: 14px;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: #1a1a1f;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 15px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-2px);
+            border-color: #00ff88;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #00ff88;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        .stat-trend {
+            font-size: 0.8em;
+            color: #4CAF50;
+            margin-top: 5px;
+        }
+        
+        /* Main Layout */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 20px;
+            height: calc(100vh - 250px);
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            background: #1a1a1f;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .sidebar h2 {
+            color: #fff;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        /* Search and Filters */
+        .search-container {
+            margin-bottom: 20px;
+        }
+        
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            background: #0f0f15;
+            border: 1px solid #444;
+            border-radius: 4px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        .search-box:focus {
+            outline: none;
+            border-color: #00ff88;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+        
+        .filter-btn {
+            padding: 5px 12px;
+            background: #0f0f15;
+            border: 1px solid #444;
+            border-radius: 20px;
+            color: #888;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.2s;
+        }
+        
+        .filter-btn:hover {
+            border-color: #666;
+        }
+        
+        .filter-btn.active {
+            background: #00ff88;
+            color: #000;
+            border-color: #00ff88;
+        }
+        
+        /* Entity List */
+        .entity-list {
+            max-height: calc(100vh - 450px);
+            overflow-y: auto;
+            padding-right: 5px;
+        }
+        
+        .entity-list::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .entity-list::-webkit-scrollbar-track {
+            background: #0f0f15;
+        }
+        
+        .entity-list::-webkit-scrollbar-thumb {
+            background: #444;
+            border-radius: 3px;
+        }
+        
+        .entity-item {
+            background: #0f0f15;
+            border: 1px solid #333;
+            border-radius: 6px;
+            padding: 12px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+        
+        .entity-item:hover {
+            border-color: #00ff88;
+            transform: translateX(3px);
+        }
+        
+        .entity-item.selected {
+            border-color: #00ff88;
+            background: #1a2a1a;
+        }
+        
+        .entity-item.suggested {
+            border-left: 3px solid #FFC107;
+        }
+        
+        .entity-name {
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .entity-meta {
+            display: flex;
+            gap: 8px;
+            font-size: 0.85em;
+            color: #888;
+            flex-wrap: wrap;
+        }
+        
+        .expand-btn {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #666;
+            background: transparent;
+            color: #888;
+            border-radius: 3px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        
+        .expand-btn:hover {
+            border-color: #00ff88;
+            color: #00ff88;
+        }
+        
+        .entity-variations {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #333;
+            display: none;
+        }
+        
+        .entity-item.expanded .entity-variations {
+            display: block;
+        }
+        
+        .variation-item {
+            padding: 4px 8px;
+            background: #1a1a1f;
+            border-radius: 3px;
+            margin: 3px 0;
+            font-size: 0.85em;
+            color: #aaa;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .variation-item:hover {
+            background: #222;
+        }
+        
+        /* Main Content Area */
+        .main-content {
+            background: #1a1a1f;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .content-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .content-header h2 {
+            color: #fff;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            background: #00ff88;
+            color: #000;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .btn:hover {
+            background: #00cc70;
+            transform: translateY(-1px);
+        }
+        
+        .btn.secondary {
+            background: transparent;
+            color: #00ff88;
+            border: 1px solid #00ff88;
+        }
+        
+        .btn.secondary:hover {
+            background: rgba(0, 255, 136, 0.1);
+        }
+        
+        .btn.danger {
+            background: transparent;
+            color: #ff4444;
+            border: 1px solid #ff4444;
+        }
+        
+        .btn.danger:hover {
+            background: rgba(255, 68, 68, 0.1);
+        }
+        
+        /* Entity Details */
+        .entity-details {
+            display: none;
+        }
+        
+        .entity-details.active {
+            display: block;
+        }
+        
+        .detail-section {
+            margin-bottom: 30px;
+        }
+        
+        .detail-section h3 {
+            color: #00ff88;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        .variations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .variation-card {
+            background: #0f0f15;
+            border: 1px solid #333;
+            border-radius: 6px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .variation-card:hover {
+            border-color: #666;
+        }
+        
+        .remove-btn {
+            color: #ff4444;
+            cursor: pointer;
+            padding: 2px 6px;
+            border: 1px solid #ff4444;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        
+        .remove-btn:hover {
+            background: rgba(255, 68, 68, 0.1);
+        }
+        
+        /* Suggestions Panel */
+        .suggestions-panel {
+            background: #0f0f15;
+            border: 1px solid #444;
+            border-radius: 6px;
+            padding: 15px;
+        }
+        
+        .suggestion-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: #1a1a1f;
+            border: 1px solid #333;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+        
+        .suggestion-item:hover {
+            border-color: #FFC107;
+        }
+        
+        .suggestion-text {
+            flex: 1;
+        }
+        
+        .suggestion-confidence {
+            color: #FFC107;
+            font-size: 0.9em;
+            margin-right: 10px;
+        }
+        
+        /* Graph View */
+        .graph-container {
+            width: 100%;
+            height: 400px;
+            background: #0f0f15;
+            border: 1px solid #333;
+            border-radius: 6px;
+            position: relative;
+        }
+        
+        .graph-placeholder {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #666;
+            text-align: center;
+        }
+        
+        /* Welcome Screen */
+        .welcome-screen {
+            text-align: center;
+            padding: 60px 20px;
+            color: #888;
+        }
+        
+        .welcome-screen h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .welcome-screen p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        
+        /* Badge Styles */
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 500;
+        }
+        
+        .badge.company {
+            background: #FF9800;
+            color: #000;
+        }
+        
+        .badge.product {
+            background: #9C27B0;
+            color: #fff;
+        }
+        
+        .badge.technology {
+            background: #00BCD4;
+            color: #000;
+        }
+        
+        .badge.concept {
+            background: #4CAF50;
+            color: #fff;
+        }
+        
+        .badge.monitored {
+            background: #f44336;
+            color: #fff;
+        }
+        
+        /* Loading State */
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            color: #888;
+        }
+        
+        .spinner {
+            border: 2px solid #333;
+            border-top: 2px solid #00ff88;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: #1a1a1f;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+        }
+        
+        .modal-header {
+            margin-bottom: 20px;
+        }
+        
+        .modal-header h3 {
+            color: #fff;
+        }
+        
+        .modal-body {
+            margin-bottom: 20px;
+        }
+        
+        .modal-footer {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            background: #0f0f15;
+            border: 1px solid #444;
+            border-radius: 4px;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        
+        .input-field:focus {
+            outline: none;
+            border-color: #00ff88;
+        }
+        
+        select.input-field {
+            cursor: pointer;
+        }
+        
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #aaa;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        
+        .checkbox-label input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>🎯 Enhanced Entity Management</h1>
+            <p class="subtitle">Smart normalization, grouping, and drill-down capabilities for entity management</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <!-- Statistics -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="stat-total">0</div>
+                <div class="stat-label">Total Entities</div>
+                <div class="stat-trend">↑ 12% from last week</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-groups">0</div>
+                <div class="stat-label">Entity Groups</div>
+                <div class="stat-trend">85% normalized</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-suggestions">0</div>
+                <div class="stat-label">Auto Suggestions</div>
+                <div class="stat-trend">Ready to apply</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-conflicts">0</div>
+                <div class="stat-label">Conflicts</div>
+                <div class="stat-trend">Needs review</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-reduction">0%</div>
+                <div class="stat-label">Noise Reduction</div>
+                <div class="stat-trend">Via grouping</div>
+            </div>
+        </div>
+        
+        <!-- Main Grid -->
+        <div class="main-grid">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h2>Entity Groups</h2>
+                
+                <div class="search-container">
+                    <input type="text" class="search-box" id="entity-search" placeholder="Search entities...">
+                    
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="grouped">Grouped</button>
+                        <button class="filter-btn" data-filter="ungrouped">Ungrouped</button>
+                        <button class="filter-btn" data-filter="suggested">Suggested</button>
+                        <button class="filter-btn" data-filter="company">Companies</button>
+                        <button class="filter-btn" data-filter="product">Products</button>
+                        <button class="filter-btn" data-filter="technology">Tech</button>
+                        <button class="filter-btn" data-filter="concept">Concepts</button>
+                    </div>
+                </div>
+                
+                <div class="entity-list" id="entity-list">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        Loading entities...
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Welcome Screen (shown when no entity selected) -->
+                <div class="welcome-screen" id="welcome-screen">
+                    <h2>Welcome to Enhanced Entity Management</h2>
+                    <p>Select an entity from the sidebar to view details, manage variations, and apply normalizations.</p>
+                    <p>Use the smart suggestions to automatically group similar entities and reduce noise in your data.</p>
+                    <br>
+                    <button class="btn" onclick="autoNormalize()">🤖 Run Auto-Normalization</button>
+                    <button class="btn secondary" onclick="showImportModal()">📤 Import Rules</button>
+                </div>
+                
+                <!-- Entity Details (hidden initially) -->
+                <div class="entity-details" id="entity-details">
+                    <div class="content-header">
+                        <h2 id="entity-title">Entity Name</h2>
+                        <div class="action-buttons">
+                            <button class="btn secondary" onclick="addVariation()">+ Add Variation</button>
+                            <button class="btn secondary" onclick="findSimilar()">🔍 Find Similar</button>
+                            <button class="btn secondary" onclick="splitGroup()">✂️ Split Group</button>
+                            <button class="btn danger" onclick="deleteGroup()">🗑️ Delete</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Variations Section -->
+                    <div class="detail-section">
+                        <h3>Variations & Synonyms</h3>
+                        <div class="variations-grid" id="variations-grid">
+                            <!-- Variations will be populated here -->
+                        </div>
+                        <button class="btn secondary" onclick="addVariation()">+ Add New Variation</button>
+                    </div>
+                    
+                    <!-- Smart Suggestions -->
+                    <div class="detail-section">
+                        <h3>Smart Suggestions</h3>
+                        <div class="suggestions-panel" id="suggestions-panel">
+                            <p style="color: #666;">No suggestions available for this entity.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Relationships Graph -->
+                    <div class="detail-section">
+                        <h3>Entity Relationships</h3>
+                        <div class="graph-container">
+                            <div class="graph-placeholder">
+                                <p>📊 Interactive graph view</p>
+                                <p style="font-size: 0.9em;">Shows connections between entities</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Usage Statistics -->
+                    <div class="detail-section">
+                        <h3>Usage & Mentions</h3>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+                            <div class="stat-card">
+                                <div class="stat-value" id="mention-count">0</div>
+                                <div class="stat-label">Total Mentions</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value" id="company-count">0</div>
+                                <div class="stat-label">Companies</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value" id="context-count">0</div>
+                                <div class="stat-label">Contexts</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add Variation Modal -->
+    <div class="modal" id="add-variation-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add Entity Variation</h3>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="input-field" id="new-variation-name" placeholder="Enter variation name...">
+                <select class="input-field" id="variation-confidence">
+                    <option value="1.0">High Confidence (100%)</option>
+                    <option value="0.8">Medium Confidence (80%)</option>
+                    <option value="0.6">Low Confidence (60%)</option>
+                </select>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="auto-detect-similar">
+                    Auto-detect similar variations
+                </label>
+            </div>
+            <div class="modal-footer">
+                <button class="btn secondary" onclick="closeModal('add-variation-modal')">Cancel</button>
+                <button class="btn" onclick="saveVariation()">Add Variation</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Global state
+        let entityGroups = [];
+        let selectedEntity = null;
+        let currentFilter = 'all';
+        let suggestions = {};
+        
+        // Initialize
+        async function init() {
+            try {
+                await loadEntityData();
+                setupEventHandlers();
+                generateSuggestions();
+            } catch (error) {
+                console.error('Failed to initialize:', error);
+            }
+        }
+        
+        // Load entity data
+        async function loadEntityData() {
+            try {
+                const response = await fetch('https://redmorestudio.github.io/ai-competitive-monitor/api-data/entity-groups.json');
+                const data = await response.json();
+                
+                entityGroups = data.all_entities || [];
+                
+                // Update statistics
+                updateStatistics(data);
+                
+                // Display entities
+                displayEntities();
+                
+            } catch (error) {
+                console.error('Error loading entity data:', error);
+                document.getElementById('entity-list').innerHTML = 
+                    '<div class="error">Failed to load entity data</div>';
+            }
+        }
+        
+        // Update statistics
+        function updateStatistics(data) {
+            const totalEntities = entityGroups.reduce((sum, g) => sum + (parseInt(g.variations) || 1), 0);
+            const groupedCount = entityGroups.filter(g => parseInt(g.variations) > 1).length;
+            const reduction = Math.round((1 - entityGroups.length / totalEntities) * 100);
+            
+            document.getElementById('stat-total').textContent = totalEntities;
+            document.getElementById('stat-groups').textContent = entityGroups.length;
+            document.getElementById('stat-suggestions').textContent = Object.keys(suggestions).length;
+            document.getElementById('stat-conflicts').textContent = '0';
+            document.getElementById('stat-reduction').textContent = reduction + '%';
+        }
+        
+        // Display entities in sidebar
+        function displayEntities() {
+            const listEl = document.getElementById('entity-list');
+            const searchTerm = document.getElementById('entity-search').value.toLowerCase();
+            
+            let filtered = entityGroups;
+            
+            // Apply filter
+            if (currentFilter === 'grouped') {
+                filtered = filtered.filter(e => parseInt(e.variations) > 1);
+            } else if (currentFilter === 'ungrouped') {
+                filtered = filtered.filter(e => parseInt(e.variations) === 1);
+            } else if (currentFilter === 'suggested') {
+                filtered = filtered.filter(e => suggestions[e.name]);
+            } else if (currentFilter !== 'all') {
+                filtered = filtered.filter(e => e.type === currentFilter);
+            }
+            
+            // Apply search
+            if (searchTerm) {
+                filtered = filtered.filter(e => 
+                    e.name.toLowerCase().includes(searchTerm) ||
+                    e.type.toLowerCase().includes(searchTerm)
+                );
+            }
+            
+            // Sort by variations count (grouped first)
+            filtered.sort((a, b) => (b.variations || 1) - (a.variations || 1));
+            
+            // Generate HTML
+            const html = filtered.map(entity => {
+                const isSuggested = suggestions[entity.name];
+                const isGrouped = parseInt(entity.variations) > 1;
+                
+                return `
+                    <div class="entity-item ${isSuggested ? 'suggested' : ''} ${selectedEntity?.name === entity.name ? 'selected' : ''}" 
+                         data-entity="${entity.name}"
+                         onclick="selectEntity('${entity.name.replace(/'/g, "\\'")}')"
+                         id="entity-${entity.name.replace(/[^a-z0-9]/gi, '-')}">
+                        <div class="entity-name">
+                            <span>${entity.name}</span>
+                            ${isGrouped ? `<button class="expand-btn" onclick="toggleExpand(event, '${entity.name.replace(/'/g, "\\'")}')">▼</button>` : ''}
+                        </div>
+                        <div class="entity-meta">
+                            <span class="badge ${entity.type}">${entity.type}</span>
+                            ${entity.variations > 1 ? `<span>${entity.variations} variations</span>` : ''}
+                            ${entity.mentioned_by ? `<span>${entity.mentioned_by} mentions</span>` : ''}
+                            ${entity.is_monitored ? '<span class="badge monitored">Monitored</span>' : ''}
+                            ${isSuggested ? '<span style="color: #FFC107;">⚡ Suggestion</span>' : ''}
+                        </div>
+                        <div class="entity-variations">
+                            <!-- Variations would be loaded here -->
+                            <div class="loading">Loading variations...</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            listEl.innerHTML = html || '<div class="loading">No entities found</div>';
+        }
+        
+        // Select entity
+        function selectEntity(entityName) {
+            selectedEntity = entityGroups.find(e => e.name === entityName);
+            
+            if (!selectedEntity) return;
+            
+            // Update UI
+            document.getElementById('welcome-screen').style.display = 'none';
+            document.getElementById('entity-details').classList.add('active');
+            
+            // Update selected state in sidebar
+            document.querySelectorAll('.entity-item').forEach(el => {
+                el.classList.remove('selected');
+            });
+            const selectedEl = document.querySelector(`[data-entity="${entityName}"]`);
+            if (selectedEl) {
+                selectedEl.classList.add('selected');
+            }
+            
+            // Update details
+            updateEntityDetails();
+        }
+        
+        // Update entity details panel
+        function updateEntityDetails() {
+            if (!selectedEntity) return;
+            
+            document.getElementById('entity-title').textContent = selectedEntity.name;
+            
+            // Mock variations for demo
+            const variations = [
+                selectedEntity.name,
+                selectedEntity.name.toLowerCase(),
+                selectedEntity.name.replace(/\s+/g, '-'),
+                selectedEntity.name.replace(/\s+/g, '_')
+            ];
+            
+            const variationsHtml = variations.map(v => `
+                <div class="variation-card">
+                    <span>${v}</span>
+                    <span class="remove-btn" onclick="removeVariation('${v}')">Remove</span>
+                </div>
+            `).join('');
+            
+            document.getElementById('variations-grid').innerHTML = variationsHtml;
+            
+            // Update usage stats
+            document.getElementById('mention-count').textContent = selectedEntity.mentioned_by || 0;
+            document.getElementById('company-count').textContent = Math.floor((selectedEntity.mentioned_by || 0) / 3);
+            document.getElementById('context-count').textContent = selectedEntity.variations || 1;
+            
+            // Update suggestions
+            updateSuggestions();
+        }
+        
+        // Generate smart suggestions
+        function generateSuggestions() {
+            // Simple similarity check for demo
+            entityGroups.forEach(entity => {
+                const similar = entityGroups.filter(other => 
+                    other.name !== entity.name &&
+                    (
+                        other.name.toLowerCase().includes(entity.name.toLowerCase()) ||
+                        entity.name.toLowerCase().includes(other.name.toLowerCase()) ||
+                        levenshteinDistance(entity.name.toLowerCase(), other.name.toLowerCase()) < 3
+                    )
+                );
+                
+                if (similar.length > 0) {
+                    suggestions[entity.name] = similar.map(s => s.name);
+                }
+            });
+            
+            updateStatistics({ all_entities: entityGroups });
+        }
+        
+        // Update suggestions panel
+        function updateSuggestions() {
+            if (!selectedEntity) return;
+            
+            const entitySuggestions = suggestions[selectedEntity.name] || [];
+            const panel = document.getElementById('suggestions-panel');
+            
+            if (entitySuggestions.length === 0) {
+                panel.innerHTML = '<p style="color: #666;">No suggestions available for this entity.</p>';
+                return;
+            }
+            
+            const html = entitySuggestions.map(suggestion => `
+                <div class="suggestion-item">
+                    <div class="suggestion-text">
+                        Merge with: <strong>${suggestion}</strong>
+                    </div>
+                    <span class="suggestion-confidence">85% match</span>
+                    <button class="btn" onclick="applySuggestion('${suggestion}')">Apply</button>
+                </div>
+            `).join('');
+            
+            panel.innerHTML = html;
+        }
+        
+        // Toggle entity expansion
+        function toggleExpand(event, entityName) {
+            event.stopPropagation();
+            const entityEl = document.getElementById(`entity-${entityName.replace(/[^a-z0-9]/gi, '-')}`);
+            entityEl.classList.toggle('expanded');
+            
+            // Load variations if expanded
+            if (entityEl.classList.contains('expanded')) {
+                loadVariations(entityName);
+            }
+        }
+        
+        // Load variations for an entity
+        async function loadVariations(entityName) {
+            // This would normally fetch from API
+            const entity = entityGroups.find(e => e.name === entityName);
+            const variationsEl = document.querySelector(`#entity-${entityName.replace(/[^a-z0-9]/gi, '-')} .entity-variations`);
+            
+            // Mock variations
+            const variations = [
+                entityName.toLowerCase(),
+                entityName.replace(/\s+/g, '-'),
+                entityName.replace(/\s+/g, '_'),
+                entityName.replace(/[^a-z0-9]/gi, '')
+            ];
+            
+            const html = variations.map(v => `
+                <div class="variation-item">
+                    <span>${v}</span>
+                    <span style="color: #666; font-size: 0.8em;">100% confidence</span>
+                </div>
+            `).join('');
+            
+            variationsEl.innerHTML = html;
+        }
+        
+        // Event handlers
+        function setupEventHandlers() {
+            // Search
+            document.getElementById('entity-search').addEventListener('input', displayEntities);
+            
+            // Filter buttons
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.dataset.filter;
+                    displayEntities();
+                });
+            });
+        }
+        
+        // Action functions
+        function autoNormalize() {
+            alert('Auto-normalization would analyze all entities and apply smart grouping rules. This feature requires backend processing.');
+        }
+        
+        function showImportModal() {
+            alert('Import functionality would allow uploading custom normalization rules.');
+        }
+        
+        function addVariation() {
+            document.getElementById('add-variation-modal').classList.add('active');
+        }
+        
+        function saveVariation() {
+            const name = document.getElementById('new-variation-name').value;
+            if (name) {
+                alert(`Would add variation: ${name}`);
+                closeModal('add-variation-modal');
+            }
+        }
+        
+        function removeVariation(variation) {
+            if (confirm(`Remove variation "${variation}"?`)) {
+                alert(`Would remove: ${variation}`);
+                updateEntityDetails();
+            }
+        }
+        
+        function findSimilar() {
+            alert('Would search for entities similar to: ' + selectedEntity.name);
+        }
+        
+        function splitGroup() {
+            alert('Would split this entity group into individual entities');
+        }
+        
+        function deleteGroup() {
+            if (confirm(`Delete entity group "${selectedEntity.name}"?`)) {
+                alert('Would delete group');
+            }
+        }
+        
+        function applySuggestion(suggestion) {
+            if (confirm(`Merge "${selectedEntity.name}" with "${suggestion}"?`)) {
+                alert(`Would merge entities`);
+                updateEntityDetails();
+            }
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+        }
+        
+        // Utility: Calculate Levenshtein distance
+        function levenshteinDistance(a, b) {
+            const matrix = [];
+            for (let i = 0; i <= b.length; i++) {
+                matrix[i] = [i];
+            }
+            for (let j = 0; j <= a.length; j++) {
+                matrix[0][j] = j;
+            }
+            for (let i = 1; i <= b.length; i++) {
+                for (let j = 1; j <= a.length; j++) {
+                    if (b.charAt(i - 1) === a.charAt(j - 1)) {
+                        matrix[i][j] = matrix[i - 1][j - 1];
+                    } else {
+                        matrix[i][j] = Math.min(
+                            matrix[i - 1][j - 1] + 1,
+                            matrix[i][j - 1] + 1,
+                            matrix[i - 1][j] + 1
+                        );
+                    }
+                }
+            }
+            return matrix[b.length][a.length];
+        }
+        
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

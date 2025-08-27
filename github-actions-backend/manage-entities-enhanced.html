@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Entity Management - AI Monitor</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.1rem;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-2px);
+            border-color: #667eea;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #888;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        @media (max-width: 1200px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .section {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .section-header {
+            background: #252525;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .section-header h2 {
+            font-size: 1.2rem;
+            color: white;
+        }
+        
+        .section-content {
+            padding: 1.5rem;
+        }
+        
+        .search-container {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 2.5rem;
+            background: #0f0f0f;
+            border: 1px solid #444;
+            border-radius: 8px;
+            color: white;
+            font-size: 0.95rem;
+            transition: border-color 0.2s;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
+        }
+        
+        .filter-bar {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 0.4rem 0.8rem;
+            background: #252525;
+            border: 1px solid #444;
+            border-radius: 20px;
+            color: #aaa;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .filter-btn:hover {
+            border-color: #667eea;
+            color: white;
+        }
+        
+        .filter-btn.active {
+            background: #667eea;
+            border-color: #667eea;
+            color: white;
+        }
+        
+        .entity-list {
+            max-height: 600px;
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+        
+        .entity-group {
+            background: #0f0f0f;
+            border: 1px solid #333;
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+            overflow: hidden;
+            transition: border-color 0.2s;
+        }
+        
+        .entity-group:hover {
+            border-color: #444;
+        }
+        
+        .entity-group-header {
+            padding: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+        }
+        
+        .entity-group-header:hover {
+            background: #1a1a1a;
+        }
+        
+        .entity-info {
+            flex: 1;
+        }
+        
+        .entity-name {
+            font-weight: 600;
+            color: white;
+            margin-bottom: 0.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .expand-icon {
+            display: inline-block;
+            transition: transform 0.2s;
+            color: #666;
+        }
+        
+        .entity-group.expanded .expand-icon {
+            transform: rotate(90deg);
+        }
+        
+        .entity-meta {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+        
+        .badge {
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+        
+        .badge-type {
+            background: #2196F3;
+            color: white;
+        }
+        
+        .badge-variations {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        .badge-mentions {
+            background: #FF9800;
+            color: white;
+        }
+        
+        .badge-confidence {
+            background: #9C27B0;
+            color: white;
+        }
+        
+        .entity-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .action-btn {
+            padding: 0.4rem 0.8rem;
+            background: transparent;
+            border: 1px solid #444;
+            border-radius: 6px;
+            color: #aaa;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .action-btn:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+        
+        .entity-variations {
+            padding: 0 1rem 1rem 1rem;
+            background: #0a0a0a;
+            border-top: 1px solid #222;
+            display: none;
+        }
+        
+        .entity-group.expanded .entity-variations {
+            display: block;
+        }
+        
+        .variation-item {
+            padding: 0.5rem;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .variation-name {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+        
+        .variation-confidence {
+            color: #666;
+            font-size: 0.8rem;
+        }
+        
+        .suggestion-panel {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .suggestion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .suggestion-title {
+            font-weight: 600;
+            color: #667eea;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .suggestion-item {
+            background: #0f0f0f;
+            border: 1px solid #333;
+            border-radius: 6px;
+            padding: 0.8rem;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .suggestion-item:hover {
+            border-color: #667eea;
+            transform: translateX(4px);
+        }
+        
+        .suggestion-entities {
+            display: flex;
+            gap: 0.3rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+        
+        .suggestion-entity {
+            padding: 0.2rem 0.5rem;
+            background: #252525;
+            border: 1px solid #444;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-secondary {
+            background: #252525;
+            color: white;
+            border: 1px solid #444;
+        }
+        
+        .btn-secondary:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        
+        .modal-header {
+            margin-bottom: 1.5rem;
+        }
+        
+        .modal-header h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #aaa;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 0.75rem;
+            background: #0f0f0f;
+            border: 1px solid #444;
+            border-radius: 8px;
+            color: white;
+            font-size: 0.95rem;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .variation-list {
+            background: #0f0f0f;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 1rem;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .variation-input-group {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .variation-input {
+            flex: 1;
+            padding: 0.5rem;
+            background: #1a1a1a;
+            border: 1px solid #444;
+            border-radius: 6px;
+            color: white;
+        }
+        
+        .remove-variation {
+            padding: 0.5rem;
+            background: #ff4444;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+        .add-variation {
+            padding: 0.5rem 1rem;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+        }
+        
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #444;
+            border-top-color: #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #666;
+        }
+        
+        .empty-state-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #444;
+        }
+        
+        .scrollbar-custom::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .scrollbar-custom::-webkit-scrollbar-track {
+            background: #0f0f0f;
+            border-radius: 4px;
+        }
+        
+        .scrollbar-custom::-webkit-scrollbar-thumb {
+            background: #444;
+            border-radius: 4px;
+        }
+        
+        .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+        .hierarchy-tree {
+            margin-left: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #333;
+        }
+        
+        .hierarchy-child {
+            padding: 0.5rem;
+            background: #0a0a0a;
+            border: 1px solid #222;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .auto-suggestions {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            border: 1px solid #667eea;
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .confidence-bar {
+            height: 4px;
+            background: #333;
+            border-radius: 2px;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+        
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            transition: width 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 Enhanced Entity Management</h1>
+        <p>Smart normalization with hierarchical relationships and auto-suggestions</p>
+    </div>
+
+    <div class="container">
+        <!-- Statistics -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="total-entities">0</div>
+                <div class="stat-label">Total Entities</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="entity-groups">0</div>
+                <div class="stat-label">Entity Groups</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="hierarchies">0</div>
+                <div class="stat-label">Hierarchies</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="noise-reduction">0%</div>
+                <div class="stat-label">Noise Reduction</div>
+            </div>
+        </div>
+
+        <!-- Auto Suggestions Panel -->
+        <div class="auto-suggestions" id="auto-suggestions">
+            <div class="suggestion-header">
+                <div class="suggestion-title">
+                    <span>✨</span>
+                    <span>Smart Normalization Suggestions</span>
+                </div>
+                <button class="action-btn" onclick="runAutoNormalization()">Run Analysis</button>
+            </div>
+            <div id="suggestions-list"></div>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="main-layout">
+            <!-- Entity Groups -->
+            <div class="section">
+                <div class="section-header">
+                    <h2>Entity Groups</h2>
+                    <button class="action-btn" onclick="showCreateGroupModal()">+ New Group</button>
+                </div>
+                <div class="section-content">
+                    <div class="search-container">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" class="search-input" placeholder="Search entities..." id="search-entities">
+                    </div>
+                    <div class="filter-bar">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="company">Companies</button>
+                        <button class="filter-btn" data-filter="product">Products</button>
+                        <button class="filter-btn" data-filter="technology">Technologies</button>
+                        <button class="filter-btn" data-filter="concept">Concepts</button>
+                        <button class="filter-btn" data-filter="parent">Parents</button>
+                        <button class="filter-btn" data-filter="ungrouped">Ungrouped</button>
+                    </div>
+                    <div class="entity-list scrollbar-custom" id="entity-list"></div>
+                </div>
+            </div>
+
+            <!-- Hierarchy Viewer -->
+            <div class="section">
+                <div class="section-header">
+                    <h2>Hierarchy Explorer</h2>
+                </div>
+                <div class="section-content">
+                    <div id="hierarchy-viewer"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-primary" onclick="applyGroupings()">Apply Groupings</button>
+            <button class="btn btn-secondary" onclick="exportGroups()">Export Groups</button>
+            <button class="btn btn-secondary" onclick="refreshData()">Refresh Data</button>
+        </div>
+    </div>
+
+    <!-- Create Group Modal -->
+    <div class="modal" id="create-group-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Create Entity Group</h3>
+                <p>Group similar entities together for better analysis</p>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Canonical Name</label>
+                <input type="text" class="form-input" id="group-name" placeholder="e.g., artificial intelligence">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Type</label>
+                <select class="form-input" id="group-type">
+                    <option value="company">Company</option>
+                    <option value="product">Product</option>
+                    <option value="technology">Technology</option>
+                    <option value="concept">Concept</option>
+                    <option value="parent">Parent Concept</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Variations</label>
+                <div class="variation-list" id="variations-list">
+                    <div class="variation-input-group">
+                        <input type="text" class="variation-input" placeholder="Add variation...">
+                        <button class="remove-variation" onclick="removeVariation(this)">×</button>
+                    </div>
+                </div>
+                <button class="add-variation" onclick="addVariationInput()">+ Add Variation</button>
+            </div>
+            <div class="action-buttons">
+                <button class="btn btn-primary" onclick="saveGroup()">Save Group</button>
+                <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global state
+        let entityData = {
+            groups: [],
+            hierarchies: {},
+            suggestions: [],
+            stats: {
+                totalEntities: 0,
+                totalGroups: 0,
+                totalHierarchies: 0,
+                noiseReduction: 0
+            }
+        };
+
+        let currentFilter = 'all';
+        let searchQuery = '';
+
+        // Initialize
+        async function init() {
+            await loadEntityData();
+            setupEventListeners();
+            renderStats();
+            renderEntityList();
+            renderHierarchyViewer();
+        }
+
+        // Load entity data
+        async function loadEntityData() {
+            try {
+                const response = await fetch('/api/entities/groups');
+                if (response.ok) {
+                    entityData = await response.json();
+                } else {
+                    // Use mock data for demo
+                    entityData = getMockData();
+                }
+            } catch (error) {
+                console.error('Failed to load entity data:', error);
+                entityData = getMockData();
+            }
+        }
+
+        // Mock data for demo
+        function getMockData() {
+            return {
+                groups: [
+                    {
+                        id: 1,
+                        canonical: 'artificial intelligence',
+                        type: 'concept',
+                        variations: ['ai', 'a.i.', 'artificial-intelligence'],
+                        confidence: 1.0,
+                        mentions: 450,
+                        children: ['machine learning', 'deep learning', 'neural networks']
+                    },
+                    {
+                        id: 2,
+                        canonical: 'gpt',
+                        type: 'parent',
+                        variations: ['gpt model', 'gpt models'],
+                        confidence: 0.95,
+                        mentions: 320,
+                        children: ['gpt-3', 'gpt-3.5', 'gpt-4', 'gpt-4-turbo']
+                    },
+                    {
+                        id: 3,
+                        canonical: 'peanuts',
+                        type: 'parent',
+                        variations: ['peanut', 'groundnut'],
+                        confidence: 0.9,
+                        mentions: 85,
+                        children: ['peanut butter', 'peanut flour', 'peanut oil']
+                    },
+                    {
+                        id: 4,
+                        canonical: 'openai',
+                        type: 'company',
+                        variations: ['open ai', 'open-ai'],
+                        confidence: 1.0,
+                        mentions: 280
+                    },
+                    {
+                        id: 5,
+                        canonical: 'machine learning',
+                        type: 'concept',
+                        variations: ['ml', 'machine-learning'],
+                        confidence: 1.0,
+                        mentions: 380,
+                        parent: 'artificial intelligence'
+                    }
+                ],
+                hierarchies: {
+                    'artificial intelligence': ['machine learning', 'deep learning', 'neural networks'],
+                    'gpt': ['gpt-3', 'gpt-3.5', 'gpt-4', 'gpt-4-turbo'],
+                    'peanuts': ['peanut butter', 'peanut flour', 'peanut oil'],
+                    'machine learning': ['supervised learning', 'unsupervised learning', 'reinforcement learning']
+                },
+                suggestions: [
+                    {
+                        type: 'merge',
+                        confidence: 0.92,
+                        entities: ['chatgpt', 'chat-gpt', 'chat gpt'],
+                        canonical: 'chatgpt'
+                    },
+                    {
+                        type: 'hierarchy',
+                        confidence: 0.88,
+                        parent: 'cloud computing',
+                        children: ['aws', 'azure', 'google cloud']
+                    },
+                    {
+                        type: 'synonym',
+                        confidence: 0.95,
+                        entities: ['llm', 'large language model', 'llms'],
+                        canonical: 'large language model'
+                    }
+                ],
+                stats: {
+                    totalEntities: 1250,
+                    totalGroups: 87,
+                    totalHierarchies: 12,
+                    noiseReduction: 65
+                }
+            };
+        }
+
+        // Render statistics
+        function renderStats() {
+            document.getElementById('total-entities').textContent = entityData.stats.totalEntities;
+            document.getElementById('entity-groups').textContent = entityData.stats.totalGroups;
+            document.getElementById('hierarchies').textContent = entityData.stats.totalHierarchies;
+            document.getElementById('noise-reduction').textContent = `${entityData.stats.noiseReduction}%`;
+        }
+
+        // Render entity list with drill-down capability
+        function renderEntityList() {
+            const container = document.getElementById('entity-list');
+            let filteredGroups = entityData.groups;
+
+            // Apply filters
+            if (currentFilter !== 'all') {
+                if (currentFilter === 'parent') {
+                    filteredGroups = filteredGroups.filter(g => g.children && g.children.length > 0);
+                } else if (currentFilter === 'ungrouped') {
+                    filteredGroups = filteredGroups.filter(g => (!g.variations || g.variations.length <= 1) && !g.parent);
+                } else {
+                    filteredGroups = filteredGroups.filter(g => g.type === currentFilter);
+                }
+            }
+
+            // Apply search
+            if (searchQuery) {
+                filteredGroups = filteredGroups.filter(g => 
+                    g.canonical.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                    (g.variations && g.variations.some(v => v.toLowerCase().includes(searchQuery.toLowerCase())))
+                );
+            }
+
+            if (filteredGroups.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">📭</div>
+                        <p>No entities found</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = filteredGroups.map(group => `
+                <div class="entity-group" data-id="${group.id}">
+                    <div class="entity-group-header" onclick="toggleEntityGroup(${group.id})">
+                        <div class="entity-info">
+                            <div class="entity-name">
+                                <span class="expand-icon">▶</span>
+                                ${group.canonical}
+                            </div>
+                            <div class="entity-meta">
+                                <span class="badge badge-type">${group.type}</span>
+                                ${group.variations ? `<span class="badge badge-variations">${group.variations.length} variations</span>` : ''}
+                                <span class="badge badge-mentions">${group.mentions || 0} mentions</span>
+                                ${group.confidence ? `<span class="badge badge-confidence">${Math.round(group.confidence * 100)}% conf</span>` : ''}
+                            </div>
+                        </div>
+                        <div class="entity-actions" onclick="event.stopPropagation()">
+                            <button class="action-btn" onclick="editGroup(${group.id})">Edit</button>
+                            <button class="action-btn" onclick="mergeGroup(${group.id})">Merge</button>
+                        </div>
+                    </div>
+                    <div class="entity-variations">
+                        ${renderVariations(group)}
+                        ${renderChildren(group)}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Render variations for an entity group
+        function renderVariations(group) {
+            if (!group.variations || group.variations.length === 0) return '';
+            
+            return `
+                <div style="margin-bottom: 0.5rem; color: #888; font-size: 0.85rem;">Variations:</div>
+                ${group.variations.map(v => `
+                    <div class="variation-item">
+                        <span class="variation-name">${v}</span>
+                        <span class="variation-confidence">100% match</span>
+                    </div>
+                `).join('')}
+            `;
+        }
+
+        // Render children for hierarchical entities
+        function renderChildren(group) {
+            if (!group.children || group.children.length === 0) return '';
+            
+            return `
+                <div style="margin-top: 1rem; margin-bottom: 0.5rem; color: #888; font-size: 0.85rem;">Child Entities:</div>
+                <div class="hierarchy-tree">
+                    ${group.children.map(child => `
+                        <div class="hierarchy-child">
+                            <span>${child}</span>
+                            <button class="action-btn" onclick="viewEntity('${child}')">View</button>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
+        // Toggle entity group expansion
+        function toggleEntityGroup(id) {
+            const element = document.querySelector(`[data-id="${id}"]`);
+            element.classList.toggle('expanded');
+        }
+
+        // Render hierarchy viewer
+        function renderHierarchyViewer() {
+            const container = document.getElementById('hierarchy-viewer');
+            const hierarchies = Object.entries(entityData.hierarchies);
+            
+            if (hierarchies.length === 0) {
+                container.innerHTML = `
+                    <div class="empty-state">
+                        <div class="empty-state-icon">🌳</div>
+                        <p>No hierarchies defined</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = hierarchies.map(([parent, children]) => `
+                <div class="suggestion-panel">
+                    <div class="suggestion-header">
+                        <div class="suggestion-title">${parent}</div>
+                        <span class="badge badge-variations">${children.length} children</span>
+                    </div>
+                    <div class="suggestion-entities">
+                        ${children.map(child => `
+                            <span class="suggestion-entity">${child}</span>
+                        `).join('')}
+                    </div>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Run auto-normalization
+        async function runAutoNormalization() {
+            const container = document.getElementById('suggestions-list');
+            container.innerHTML = '<div class="loading-spinner"></div> Analyzing entities...';
+            
+            // Simulate API call
+            setTimeout(() => {
+                container.innerHTML = entityData.suggestions.map(suggestion => {
+                    if (suggestion.type === 'merge') {
+                        return `
+                            <div class="suggestion-item" onclick="applySuggestion(${JSON.stringify(suggestion).replace(/"/g, '&quot;')})">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <strong>Merge Similar Entities</strong>
+                                        <div class="suggestion-entities">
+                                            ${suggestion.entities.map(e => `<span class="suggestion-entity">${e}</span>`).join('')}
+                                        </div>
+                                    </div>
+                                    <span class="badge badge-confidence">${Math.round(suggestion.confidence * 100)}%</span>
+                                </div>
+                            </div>
+                        `;
+                    } else if (suggestion.type === 'hierarchy') {
+                        return `
+                            <div class="suggestion-item" onclick="applySuggestion(${JSON.stringify(suggestion).replace(/"/g, '&quot;')})">
+                                <div>
+                                    <strong>Create Hierarchy: ${suggestion.parent}</strong>
+                                    <div class="suggestion-entities">
+                                        ${suggestion.children.map(c => `<span class="suggestion-entity">${c}</span>`).join('')}
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    return '';
+                }).join('');
+            }, 1500);
+        }
+
+        // Apply a suggestion
+        function applySuggestion(suggestion) {
+            console.log('Applying suggestion:', suggestion);
+            // Implementation would apply the suggestion to the database
+            alert(`Applied ${suggestion.type} suggestion for ${suggestion.canonical || suggestion.parent}`);
+            refreshData();
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Search
+            document.getElementById('search-entities').addEventListener('input', (e) => {
+                searchQuery = e.target.value;
+                renderEntityList();
+            });
+
+            // Filters
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.dataset.filter;
+                    renderEntityList();
+                });
+            });
+        }
+
+        // Modal functions
+        function showCreateGroupModal() {
+            document.getElementById('create-group-modal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('create-group-modal').classList.remove('active');
+        }
+
+        function addVariationInput() {
+            const container = document.getElementById('variations-list');
+            const div = document.createElement('div');
+            div.className = 'variation-input-group';
+            div.innerHTML = `
+                <input type="text" class="variation-input" placeholder="Add variation...">
+                <button class="remove-variation" onclick="removeVariation(this)">×</button>
+            `;
+            container.appendChild(div);
+        }
+
+        function removeVariation(button) {
+            button.parentElement.remove();
+        }
+
+        function saveGroup() {
+            const name = document.getElementById('group-name').value;
+            const type = document.getElementById('group-type').value;
+            const variations = Array.from(document.querySelectorAll('.variation-input'))
+                .map(input => input.value)
+                .filter(v => v.trim());
+
+            console.log('Saving group:', { name, type, variations });
+            closeModal();
+            refreshData();
+        }
+
+        // Other actions
+        function editGroup(id) {
+            console.log('Edit group:', id);
+        }
+
+        function mergeGroup(id) {
+            console.log('Merge group:', id);
+        }
+
+        function viewEntity(name) {
+            console.log('View entity:', name);
+        }
+
+        function applyGroupings() {
+            console.log('Applying groupings...');
+            alert('Groupings applied successfully!');
+        }
+
+        function exportGroups() {
+            const dataStr = JSON.stringify(entityData, null, 2);
+            const dataBlob = new Blob([dataStr], {type: 'application/json'});
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'entity-groups.json';
+            link.click();
+        }
+
+        function refreshData() {
+            loadEntityData().then(() => {
+                renderStats();
+                renderEntityList();
+                renderHierarchyViewer();
+            });
+        }
+
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

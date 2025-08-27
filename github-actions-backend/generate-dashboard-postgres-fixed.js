@@ -180,7 +180,7 @@ async function generateDashboard() {
                 WHERE ch.company = $1
                 AND ch.detected_at > NOW() - INTERVAL '30 days'
                 ORDER BY ch.detected_at DESC
-                LIMIT 10
+                -- No limit, show all companies
             `, [company.name]);
 
             // Get baseline analysis data for this company

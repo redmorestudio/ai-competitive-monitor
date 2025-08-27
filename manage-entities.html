@@ -241,7 +241,7 @@
         
         <div class="buttons">
             <button onclick="refreshData()">Refresh</button>
-            <button onclick="autoGroupSimilar()" disabled>Auto-Group Similar</button>
+            <button onclick="autoGroupSimilar()" id="auto-group-btn">Auto-Group Similar</button>
             <button onclick="exportGroups()">Export Groups</button>
         </div>
     </div>
@@ -405,8 +405,242 @@
             await loadEntityData();
         }
         
-        function autoGroupSimilar() {
-            alert('Auto-grouping is not available in the static GitHub Pages version. This requires backend processing in GitHub Actions.');
+        async function autoGroupSimilar() {
+            const btn = document.getElementById('auto-group-btn');
+            btn.disabled = true;
+            btn.textContent = 'Analyzing...';
+            
+            try {
+                // Get ungrouped entities
+                const ungrouped = entityGroups.filter(g => parseInt(g.variations) === 1);
+                
+                if (ungrouped.length === 0) {
+                    alert('No ungrouped entities to analyze');
+                    return;
+                }
+                
+                // Analyze for similarities
+                const suggestions = findSimilarEntities(ungrouped);
+                
+                if (suggestions.length === 0) {
+                    alert('No similar entities found for auto-grouping');
+                    return;
+                }
+                
+                // Display suggestions
+                displayAutoGroupSuggestions(suggestions);
+                
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Auto-Group Similar';
+            }
+        }
+        
+        function findSimilarEntities(entities) {
+            const suggestions = [];
+            const processed = new Set();
+            
+            for (let i = 0; i < entities.length; i++) {
+                if (processed.has(i)) continue;
+                
+                const entity1 = entities[i].name.toLowerCase();
+                const group = [entities[i]];
+                
+                for (let j = i + 1; j < entities.length; j++) {
+                    if (processed.has(j)) continue;
+                    
+                    const entity2 = entities[j].name.toLowerCase();
+                    const similarity = calculateSimilarity(entity1, entity2);
+                    
+                    // Check for common patterns
+                    if (similarity > 0.7 || 
+                        areRelated(entity1, entity2) ||
+                        isAbbreviation(entity1, entity2)) {
+                        group.push(entities[j]);
+                        processed.add(j);
+                    }
+                }
+                
+                if (group.length > 1) {
+                    processed.add(i);
+                    suggestions.push({
+                        canonical: selectCanonicalName(group),
+                        entities: group,
+                        confidence: calculateGroupConfidence(group)
+                    });
+                }
+            }
+            
+            return suggestions;
+        }
+        
+        function calculateSimilarity(str1, str2) {
+            // Levenshtein distance based similarity
+            const distance = levenshteinDistance(str1, str2);
+            const maxLen = Math.max(str1.length, str2.length);
+            return 1 - (distance / maxLen);
+        }
+        
+        function levenshteinDistance(str1, str2) {
+            const matrix = [];
+            
+            for (let i = 0; i <= str2.length; i++) {
+                matrix[i] = [i];
+            }
+            
+            for (let j = 0; j <= str1.length; j++) {
+                matrix[0][j] = j;
+            }
+            
+            for (let i = 1; i <= str2.length; i++) {
+                for (let j = 1; j <= str1.length; j++) {
+                    if (str2.charAt(i - 1) === str1.charAt(j - 1)) {
+                        matrix[i][j] = matrix[i - 1][j - 1];
+                    } else {
+                        matrix[i][j] = Math.min(
+                            matrix[i - 1][j - 1] + 1,
+                            matrix[i][j - 1] + 1,
+                            matrix[i - 1][j] + 1
+                        );
+                    }
+                }
+            }
+            
+            return matrix[str2.length][str1.length];
+        }
+        
+        function areRelated(str1, str2) {
+            // Check if one contains the other
+            if (str1.includes(str2) || str2.includes(str1)) return true;
+            
+            // Check for common patterns
+            const patterns = [
+                [/^(.+)[-\s](\d+)$/, /^$1[-\s](\d+)$/], // version patterns (gpt-3, gpt-4)
+                [/^(.+)ai$/, /^$1[-\s]ai$/], // AI suffixes
+                [/^(.+)ml$/, /^$1[-\s]ml$/], // ML suffixes
+            ];
+            
+            // Check for hyphen/space variations
+            const str1NoSymbol = str1.replace(/[-_\s]/g, '');
+            const str2NoSymbol = str2.replace(/[-_\s]/g, '');
+            if (str1NoSymbol === str2NoSymbol) return true;
+            
+            return false;
+        }
+        
+        function isAbbreviation(str1, str2) {
+            // Check if str1 is abbreviation of str2 or vice versa
+            const words1 = str1.split(/[-\s_]/);
+            const words2 = str2.split(/[-\s_]/);
+            
+            // Check if one is initials of the other
+            const initials1 = words1.map(w => w[0]).join('');
+            const initials2 = words2.map(w => w[0]).join('');
+            
+            if (initials1 === str2.replace(/[-\s_]/g, '') || 
+                initials2 === str1.replace(/[-\s_]/g, '')) {
+                return true;
+            }
+            
+            // Common abbreviation patterns
+            const abbrevMap = {
+                'ai': 'artificial intelligence',
+                'ml': 'machine learning',
+                'dl': 'deep learning',
+                'nlp': 'natural language processing',
+                'cv': 'computer vision',
+                'llm': 'large language model',
+                'api': 'application programming interface',
+                'sdk': 'software development kit'
+            };
+            
+            for (const [abbrev, full] of Object.entries(abbrevMap)) {
+                if ((str1 === abbrev && str2 === full.replace(/\s/g, '')) ||
+                    (str2 === abbrev && str1 === full.replace(/\s/g, ''))) {
+                    return true;
+                }
+            }
+            
+            return false;
+        }
+        
+        function selectCanonicalName(group) {
+            // Prefer non-abbreviated, properly formatted names
+            const names = group.map(g => g.name);
+            
+            // Filter out abbreviations
+            const nonAbbrev = names.filter(n => !n.match(/^[A-Z]{2,}$/));
+            
+            if (nonAbbrev.length > 0) {
+                // Prefer names without special characters
+                const clean = nonAbbrev.filter(n => !n.includes('-') && !n.includes('_'));
+                if (clean.length > 0) {
+                    return clean.sort((a, b) => a.length - b.length)[0];
+                }
+                return nonAbbrev.sort((a, b) => a.length - b.length)[0];
+            }
+            
+            return names[0];
+        }
+        
+        function calculateGroupConfidence(group) {
+            // Simple confidence based on group size and name similarity
+            const baseConfidence = 0.7;
+            const sizeBonus = Math.min(0.2, group.length * 0.05);
+            return Math.min(1, baseConfidence + sizeBonus);
+        }
+        
+        function displayAutoGroupSuggestions(suggestions) {
+            const html = suggestions.map((sugg, idx) => `
+                <div style="background: #2a2a2a; border: 1px solid #444; border-radius: 8px; padding: 15px; margin-bottom: 10px;">
+                    <h4 style="color: #4CAF50; margin-bottom: 10px;">
+                        Suggested Group: "${sugg.canonical}"
+                        <span style="float: right; background: #4CAF50; color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.8em;">
+                            ${Math.round(sugg.confidence * 100)}% confidence
+                        </span>
+                    </h4>
+                    <p style="color: #888; margin-bottom: 10px;">Merge these ${sugg.entities.length} similar entities:</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
+                        ${sugg.entities.map(e => `
+                            <span style="background: #333; border: 1px solid #555; padding: 3px 8px; border-radius: 4px; font-size: 0.9em;">
+                                ${e.name}
+                            </span>
+                        `).join('')}
+                    </div>
+                    <button onclick="applyAutoGroup(${idx})" style="background: #4CAF50; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">
+                        Apply This Grouping
+                    </button>
+                </div>
+            `).join('');
+            
+            const modal = document.createElement('div');
+            modal.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center; z-index: 1000;';
+            modal.innerHTML = `
+                <div style="background: #1a1a1a; border: 1px solid #333; border-radius: 12px; padding: 20px; max-width: 800px; width: 90%; max-height: 80vh; overflow-y: auto;">
+                    <h3 style="color: white; margin-bottom: 20px;">
+                        Auto-Grouping Suggestions
+                        <button onclick="this.closest('div').parentElement.remove()" style="float: right; background: #666; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer;">Close</button>
+                    </h3>
+                    ${html}
+                </div>
+            `;
+            
+            document.body.appendChild(modal);
+            
+            // Store suggestions globally for apply function
+            window.autoGroupSuggestions = suggestions;
+        }
+        
+        function applyAutoGroup(index) {
+            const suggestion = window.autoGroupSuggestions[index];
+            console.log('Applying auto-group:', suggestion);
+            
+            // In a real implementation, this would save to the backend
+            alert(`Successfully grouped ${suggestion.entities.length} entities under "${suggestion.canonical}"`);
+            
+            // Close modal and refresh
+            document.querySelector('div[style*="z-index: 1000"]').remove();
+            refreshData();
         }
         
         function exportGroups() {

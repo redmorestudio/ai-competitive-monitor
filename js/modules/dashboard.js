@@ -65,11 +65,19 @@ class Dashboard {
     updateStatsBar(dashboardData, workflowStatus) {
         if (!this.statsBar) return;
         
-        // Use company_activity since that's where the data is
-        const companies = dashboardData?.company_activity || dashboardData?.companies || [];
+        // Use companies array from dashboard data
+        const companies = dashboardData?.companies || dashboardData?.company_activity || [];
         const companyCount = companies.length;
-        const urlCount = companies.reduce((sum, company) => 
-            sum + (company.urls?.length || company.url_count || 0), 0) || 0;
+        
+        // Calculate URL count by summing all company URLs
+        let urlCount = 0;
+        companies.forEach(company => {
+            if (company.urls && Array.isArray(company.urls)) {
+                urlCount += company.urls.length;
+            } else if (company.url_count) {
+                urlCount += company.url_count;
+            }
+        });
         
         // Get total changes from various sources
         let totalChanges = 0;
@@ -187,6 +195,55 @@ class Dashboard {
     /**
      * Update recent changes display
      */
+    /**
+     * Update recent changes from the summary data structure
+     */
+    async updateRecentChangesFromSummary(summary) {
+        if (!this.recentChangesContainer) return;
+        
+        try {
+            const recentChanges = summary.last_5_changes || [];
+            
+            if (recentChanges.length === 0) {
+                this.recentChangesContainer.innerHTML = 
+                    '<p style="color: var(--text-secondary);">No recent changes detected.</p>';
+                return;
+            }
+            
+            let html = '<div class="recent-changes-list">';
+            
+            recentChanges.forEach((change, index) => {
+                const timeAgo = change.time_ago || getRelativeTime(new Date(change.detected_at));
+                const interestEmoji = getInterestEmoji(change.interest_level);
+                
+                // Use the summary text directly from the summary field
+                const summaryText = change.summary || 'Change detected';
+                
+                html += `
+                    <div class="recent-change-item">
+                        <div class="change-header">
+                            <span class="company-name">${escapeHtml(change.company)}</span>
+                            <span class="interest-indicator">${interestEmoji} ${change.interest_level}/10</span>
+                        </div>
+                        <div class="change-summary">${escapeHtml(summaryText)}</div>
+                        <div class="change-meta">
+                            <span class="time-ago">${timeAgo}</span>
+                            ${change.change_type ? `<span class="change-type ${change.change_type}">${change.change_type}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            html += '</div>';
+            this.recentChangesContainer.innerHTML = html;
+            
+        } catch (error) {
+            console.error('Error updating recent changes from summary:', error);
+            this.recentChangesContainer.innerHTML = 
+                '<p class="error-message">Unable to load recent changes.</p>';
+        }
+    }
+    
     async updateRecentChanges(changesData) {
         if (!this.recentChangesContainer) return;
         
@@ -337,7 +394,13 @@ class Dashboard {
                 : (dashboardData?.companies || dashboardData?.company_activity || []);
             
             this.updateCompaniesDisplay(companiesToDisplay);
-            await this.updateRecentChanges(changesData || dashboardData?.changes || []);
+            
+            // Use the recent_changes_summary which already has properly filtered data
+            if (dashboardData?.recent_changes_summary?.last_5_changes) {
+                await this.updateRecentChangesFromSummary(dashboardData.recent_changes_summary);
+            } else {
+                await this.updateRecentChanges(changesData || dashboardData?.changes || []);
+            }
             
             // Update entity display if available
             if (entityGroups) {

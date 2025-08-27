@@ -11,10 +11,10 @@
 
 // Version information
 export const VERSION = {
-    number: '2.1.2',
-    name: 'Debug Dashboard',
-    buildNumber: '175',
-    releaseDate: '2025-08-03',
+    number: '2.1.3',
+    name: 'Dashboard Fix',
+    buildNumber: '176',
+    releaseDate: '2025-08-27',
     features: [
         'Keyword-in-Context (KWIC) feature for entity exploration',
         'Clickable intelligence pills showing contexts',
@@ -36,6 +36,7 @@ export function displayVersion(elementId) {
         element.innerHTML = `
             <span class="version-number">v${VERSION.number}</span>
             <span class="version-name">${VERSION.name}</span>
+            <span class="version-date" style="opacity: 0.7; margin-left: 8px;">(${VERSION.releaseDate})</span>
         `;
         element.title = `Build ${VERSION.buildNumber} - Released ${VERSION.releaseDate}`;
     }
