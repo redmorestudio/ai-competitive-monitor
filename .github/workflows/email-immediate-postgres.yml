@@ -44,8 +44,8 @@ jobs:
             exit 0
           fi
           
-          # Run immediate alert check
-          if node email-notifications-postgres.js immediate; then
+          # Run immediate alert check (using fixed version)
+          if node email-notifications-postgres-fixed.js immediate; then
             echo "alerts_sent=true" >> $GITHUB_OUTPUT
           else
             echo "alerts_sent=false" >> $GITHUB_OUTPUT

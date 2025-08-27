@@ -62,8 +62,8 @@ jobs:
             echo "🧪 Running in test mode - email will be saved to file"
           fi
           
-          # Send daily digest
-          node email-notifications-postgres.js daily
+          # Send daily digest (using fixed version)
+          node email-notifications-postgres-fixed.js daily
           
           echo ""
           echo "✅ Daily digest process completed"

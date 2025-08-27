@@ -57,7 +57,7 @@ jobs:
           fi
           
           # Send health check
-          node email-notifications-postgres.js health
+          node email-notifications-postgres-fixed.js health
           
           echo ""
           echo "✅ Health check email sent"
