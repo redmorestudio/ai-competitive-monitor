@@ -458,6 +458,7 @@ async function generateAllChanges() {
     console.log('Generating changes.json...');
     
     try {
+        // Get ALL recent changes, not limited to 100 or 1000
         const allChanges = await db.all(`
             SELECT 
                 ch.id,
@@ -472,32 +473,57 @@ async function generateAllChanges() {
                 ea.risk_assessment
             FROM intelligence.changes ch
             LEFT JOIN intelligence.enhanced_analysis ea ON ea.change_id = ch.id
-            WHERE ch.detected_at > NOW() - INTERVAL '30 days'
+            WHERE ch.detected_at > NOW() - INTERVAL '90 days'
             ORDER BY ch.detected_at DESC
-            LIMIT 1000
         `);
         
-        const changesData = allChanges.map(change => ({
-            id: change.id,
-            company: change.company,
-            url: change.url,
-            detected_at: change.detected_at,
-            detectedAt: change.detected_at,
-            interest_level: change.interest_level || 0,
-            summary: change.analysis || 'Change detected',
-            change_type: change.change_type,
-            business_impact: change.business_impact,
-            competitive_implications: change.competitive_implications,
-            ai_analysis: JSON.stringify({
-                summary: change.analysis || 'Change detected',
-                category: change.change_type,
-                interest_level: change.interest_level
-            })
-        }));
+        const changesData = allChanges.map(change => {
+            // Parse the analysis JSON if it's a string
+            let parsedAnalysis = {};
+            try {
+                if (typeof change.analysis === 'string') {
+                    parsedAnalysis = JSON.parse(change.analysis);
+                } else if (change.analysis) {
+                    parsedAnalysis = change.analysis;
+                }
+            } catch (e) {
+                console.log(`Could not parse analysis for change ${change.id}`);
+            }
+            
+            // Extract summary from parsed analysis
+            const summary = parsedAnalysis.change_summary?.what_changed || 
+                          parsedAnalysis.summary || 
+                          'Change detected';
+            
+            return {
+                id: change.id,
+                change_id: change.id, // Some views expect change_id
+                company: change.company,
+                url: change.url,
+                detected_at: change.detected_at,
+                detectedAt: change.detected_at,
+                timestamp: change.detected_at, // Some views expect timestamp
+                interest_level: change.interest_level || 0,
+                interestLevel: change.interest_level || 0, // Some views use camelCase
+                summary: summary,
+                change_type: change.change_type || 'content',
+                changeType: change.change_type || 'content',
+                business_impact: change.business_impact,
+                competitive_implications: change.competitive_implications,
+                ai_analysis: change.analysis // Keep original for detail view
+            };
+        });
+        
+        // Write in the format the frontend expects
+        const outputData = {
+            changes: changesData,
+            total: changesData.length,
+            lastUpdated: new Date().toISOString()
+        };
         
         fs.writeFileSync(
             path.join(OUTPUT_DIR, 'changes.json'),
-            JSON.stringify(changesData, null, 2)
+            JSON.stringify(outputData, null, 2)
         );
         
         console.log(`✅ Generated changes.json with ${changesData.length} changes`);
