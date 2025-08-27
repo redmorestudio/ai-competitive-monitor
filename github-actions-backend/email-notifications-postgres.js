@@ -88,18 +88,18 @@ class PostgresEmailNotificationService {
       const query = `
         SELECT 
           cd.id,
-          cd.company_name,
+          cd.company,
           cd.url,
-          cd.summary,
+          cd.url_name,
           cd.change_type,
           cd.interest_level,
-          cd.interest_data,
+          cd.ai_analysis as interest_data,
           cd.detected_at,
           ba.analysis_data,
           ba.entities_extracted
         FROM processed_content.change_detection cd
         LEFT JOIN intelligence.baseline_analysis ba 
-          ON cd.new_content_id = ba.content_id
+          ON cd.company = ba.company AND cd.url = ba.url
         WHERE cd.detected_at > NOW() - INTERVAL '4 hours'
           AND cd.interest_level >= 8
           AND (cd.email_sent IS NULL OR cd.email_sent = false)
@@ -146,18 +146,19 @@ class PostgresEmailNotificationService {
       `;
       
       for (const change of changes) {
-        const interestData = change.interest_data || {};
+        const interestData = typeof change.interest_data === 'string' ? 
+          JSON.parse(change.interest_data || '{}') : (change.interest_data || {});
         const analysisData = change.analysis_data || {};
         
         html += `
           <div class="change-card high-priority">
             <div>
-              <span class="company-name">${change.company_name}</span>
+              <span class="company-name">${change.company}</span>
               <span class="interest-badge interest-${change.interest_level}">Interest: ${change.interest_level}/10</span>
             </div>
             
             <div class="summary">
-              <strong>Summary:</strong> ${change.summary || 'Change detected'}
+              <strong>Page:</strong> ${change.url_name || 'Change detected'}
             </div>
             
             <div style="margin: 10px 0;">
@@ -241,12 +242,12 @@ class PostgresEmailNotificationService {
       // Get all changes from the last 24 hours
       const changesQuery = `
         SELECT 
-          cd.company_name,
+          cd.company,
           cd.url,
-          cd.summary,
+          cd.url_name,
           cd.change_type,
           cd.interest_level,
-          cd.interest_data,
+          cd.ai_analysis as interest_data,
           cd.detected_at,
           ba.analysis_data
         FROM processed_content.change_detection cd
@@ -261,7 +262,7 @@ class PostgresEmailNotificationService {
       // Get system statistics
       const statsQuery = `
         SELECT 
-          COUNT(DISTINCT company_name) as companies_with_changes,
+          COUNT(DISTINCT company) as companies_with_changes,
           COUNT(*) as total_changes,
           AVG(interest_level) as avg_interest,
           MAX(interest_level) as max_interest,
@@ -278,11 +279,11 @@ class PostgresEmailNotificationService {
       // Get monitoring health stats
       const healthQuery = `
         SELECT 
-          COUNT(DISTINCT company_name) as companies_monitored,
+          COUNT(DISTINCT company) as companies_monitored,
           COUNT(DISTINCT url) as urls_checked,
           COUNT(*) as total_checks,
-          SUM(CASE WHEN scrape_status = 'success' THEN 1 ELSE 0 END) as successful_checks,
-          SUM(CASE WHEN scrape_status = 'blocked' THEN 1 ELSE 0 END) as blocked_checks,
+          SUM(CASE WHEN status_code = 200 THEN 1 ELSE 0 END) as successful_checks,
+          SUM(CASE WHEN status_code >= 400 THEN 1 ELSE 0 END) as blocked_checks,
           MAX(scraped_at) as last_check_time
         FROM raw_content.scraped_pages
         WHERE scraped_at > NOW() - INTERVAL '24 hours'
@@ -461,7 +462,7 @@ class PostgresEmailNotificationService {
       const healthQuery = `
         WITH recent_activity AS (
           SELECT 
-            COUNT(DISTINCT company_name) as companies_monitored,
+            COUNT(DISTINCT company) as companies_monitored,
             COUNT(DISTINCT url) as urls_checked,
             COUNT(*) as total_checks,
             SUM(CASE WHEN scrape_status = 'success' THEN 1 ELSE 0 END) as successful_checks,

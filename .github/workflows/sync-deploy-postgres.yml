@@ -745,6 +745,23 @@ jobs:
           CHANGES_DETAILS: ${{ steps.check-changes.outputs.CHANGES_FILE && format('{0}', steps.check-changes.outputs.CHANGES_FILE) || 'See dashboard for details' }}
       
       # Email notifications (PostgreSQL compatible)
+      - name: Setup email tracking columns
+        if: env.SMTP_HOST != ''
+        run: |
+          cd github-actions-backend
+          echo "🔧 Ensuring email tracking columns exist in PostgreSQL..."
+          
+          # Add email tracking columns if needed
+          if [ -f "add-email-tracking-columns-simple.js" ]; then
+            node add-email-tracking-columns-simple.js || {
+              echo "⚠️  Failed to add email tracking columns, continuing anyway..."
+            }
+          else
+            echo "⚠️  Email tracking column script not found"
+          fi
+        env:
+          POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+      
       - name: Send email notifications
         run: |
           cd github-actions-backend
