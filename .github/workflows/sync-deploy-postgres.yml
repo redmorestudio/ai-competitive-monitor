@@ -437,7 +437,7 @@ jobs:
           cd github-actions-backend
           
           echo "📝 Generating entity contexts for Keyword in Context (KWIC) feature..."
-          echo "This step extracts text snippets showing where entities appear in content"
+          echo "🚀 Using MINIMAL mode to prevent timeouts (temporary fix)"
           
           # First ensure we have markdown content
           echo "Step 1: Converting HTML to markdown if needed..."
@@ -446,18 +446,33 @@ jobs:
             node markdown-converter-three-db-postgres.js || echo "⚠️  Markdown conversion had issues"
           fi
           
-          # Now generate contexts from the markdown
-          echo "Step 2: Extracting contexts for all entities..."
-          if [ -f "generate-entity-contexts-grouped.js" ]; then
-            echo "Generating contexts for grouped entities (may take 2-3 minutes)..."
-            if node generate-entity-contexts-grouped.js; then
+          # Now generate contexts using MINIMAL version for speed
+          echo "Step 2: Extracting contexts for HIGH-PRIORITY entities only..."
+          if [ -f "generate-entity-contexts-minimal.js" ]; then
+            echo "⚡ Using minimal context generator (50 entities max, reduced sampling)..."
+            if timeout 5m node generate-entity-contexts-minimal.js; then
+              echo "✅ Minimal entity contexts generated successfully"
+            else
+              echo "⚠️  Minimal context generation failed or timed out, trying fallback..."
+              # Create empty context files so dashboard doesn't break
+              echo '{"entities": [], "mode": "empty", "message": "Context generation skipped to prevent timeout"}' > ../api-data/contexts-companies.json
+              echo '{"entities": [], "mode": "empty", "message": "Context generation skipped to prevent timeout"}' > ../api-data/contexts-products.json
+            fi
+          elif [ -f "generate-entity-contexts-grouped.js" ]; then
+            echo "⚠️  Minimal version not found, using full version with timeout..."
+            if timeout 5m node generate-entity-contexts-grouped.js; then
               echo "✅ Entity contexts generated successfully"
             else
-              echo "⚠️  Context generation failed, KWIC feature will not work"
+              echo "⚠️  Context generation timed out after 5 minutes"
+              # Create empty context files so dashboard doesn't break
+              echo '{"entities": [], "mode": "empty", "message": "Context generation timed out"}' > ../api-data/contexts-companies.json
+              echo '{"entities": [], "mode": "empty", "message": "Context generation timed out"}' > ../api-data/contexts-products.json
             fi
           else
             echo "❌ Context generation script not found!"
-            echo "   KWIC feature will be broken in dashboard"
+            echo "   Creating empty context files so dashboard doesn't break..."
+            echo '{"entities": [], "mode": "empty", "message": "No context generator available"}' > ../api-data/contexts-companies.json
+            echo '{"entities": [], "mode": "empty", "message": "No context generator available"}' > ../api-data/contexts-products.json
           fi
           
           # Verify context files were created and have content
@@ -494,10 +509,13 @@ jobs:
               if [ -f "generate-static-data-three-db-postgres-with-contexts.js" ]; then
                 echo "Using CONTEXT-ENABLED static data generator without filtering..."
                 
-                # Generate grouped entity contexts first
-                if [ -f "generate-entity-contexts-grouped.js" ]; then
-                  echo "📊 Generating contexts for grouped entities..."
-                  node generate-entity-contexts-grouped.js || echo "⚠️  Grouped context generation failed"
+                # Generate minimal entity contexts first
+                if [ -f "generate-entity-contexts-minimal.js" ]; then
+                  echo "⚡ Generating minimal contexts for high-priority entities..."
+                  timeout 3m node generate-entity-contexts-minimal.js || echo "⚠️  Minimal context generation failed"
+                elif [ -f "generate-entity-contexts-grouped.js" ]; then
+                  echo "📊 Generating contexts for grouped entities (with timeout)..."
+                  timeout 3m node generate-entity-contexts-grouped.js || echo "⚠️  Grouped context generation timed out"
                 fi
                 node generate-static-data-three-db-postgres-with-contexts.js
               fi
@@ -505,10 +523,13 @@ jobs:
           elif [ -f "generate-static-data-three-db-postgres-with-contexts.js" ]; then
             echo "Using CONTEXT-ENABLED static data generator with source navigation..."
             
-            # Generate grouped entity contexts first
-            if [ -f "generate-entity-contexts-grouped.js" ]; then
-              echo "📊 Generating contexts for grouped entities..."
-              node generate-entity-contexts-grouped.js || echo "⚠️  Grouped context generation failed"
+            # Generate minimal entity contexts first
+            if [ -f "generate-entity-contexts-minimal.js" ]; then
+              echo "⚡ Generating minimal contexts for high-priority entities..."
+              timeout 3m node generate-entity-contexts-minimal.js || echo "⚠️  Minimal context generation failed"
+            elif [ -f "generate-entity-contexts-grouped.js" ]; then
+              echo "📊 Generating contexts for grouped entities (with timeout)..."
+              timeout 3m node generate-entity-contexts-grouped.js || echo "⚠️  Grouped context generation timed out"
             fi
             if ! node generate-static-data-three-db-postgres-with-contexts.js; then
               echo "⚠️  Context generator failed, trying enhanced version..."
