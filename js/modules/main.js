@@ -280,8 +280,9 @@ function displayVersionInfo() {
     displayVersion('versionInfo');
     
     // Also log to console for debugging
-    console.log(`🚀 AI Monitor ${VERSION.number} - ${VERSION.name}`);
-    console.log(`Build: ${VERSION.buildNumber} | Released: ${VERSION.releaseDate}`);
+    console.log(`🚀 AI Monitor v${VERSION.number} - ${VERSION.name}`);
+    console.log(`Build: ${VERSION.buildNumber} | Deployed: ${new Date(VERSION.deployTime).toLocaleString()}`);
+    console.log(`Latest fix: ${VERSION.features[0]}`);
 }
 
 /**
