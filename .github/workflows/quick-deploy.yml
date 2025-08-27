@@ -1,0 +1,60 @@
+name: Quick Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+  
+  push:
+    branches:
+      - main
+    paths:
+      - '**.html'
+      - '**.js'
+      - '**.css'
+      - 'js/**'
+      - 'css/**'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      
+      - name: Summary
+        run: |
+          echo "## ✅ Deployment Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **URL**: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Time**: $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Version**: 2.1.3" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Changes deployed:" >> $GITHUB_STEP_SUMMARY
+          echo "- All 54 companies now displayed" >> $GITHUB_STEP_SUMMARY
+          echo "- Fixed URL counts in dashboard" >> $GITHUB_STEP_SUMMARY
+          echo "- Fixed timestamps showing recent activity" >> $GITHUB_STEP_SUMMARY
+          echo "- Email system fixes" >> $GITHUB_STEP_SUMMARY
