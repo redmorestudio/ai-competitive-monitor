@@ -1,0 +1,68 @@
+{
+  "id": 1209,
+  "company": "Runway",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:40:25.458Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "The 'Get Started' button URL changed from 'https://app.runwayml.com/' to 'https://app.runwayml.com/signup', and the 'Act-Two' link in the product section now points to '/research/introducing-act-one'. Additionally, 'Game Worlds' was added to the product section.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The 'Get Started' button URL changed from 'https://app.runwayml.com/' to 'https://app.runwayml.com/signup', and the 'Act-Two' link in the product section now points to '/research/introducing-act-one'. Additionally, 'Game Worlds' was added to the product section.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated 'Get Started' button URL",
+      "Added 'Game Worlds' to product section",
+      "Updated 'Act-Two' link in product section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are unlikely to have a significant impact on the business, as they are minor and do not introduce new products or features.",
+    "market_signals": [
+      "The company is continuing to refine its product offerings and user experience."
+    ],
+    "competitive_implications": "The changes do not provide a significant competitive advantage, but rather demonstrate the company's ongoing efforts to improve its products and services.",
+    "strategic_direction": "The company appears to be focused on refining its existing products and services, rather than introducing new ones."
+  },
+  "entities": {
+    "products": [
+      "Runway Gen-4",
+      "Game Worlds"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is focused on refining its product section and user experience.",
+      "The addition of 'Game Worlds' to the product section may indicate an expansion of the company's offerings in the gaming industry."
+    ],
+    "opportunities": [
+      "The company may be able to leverage its updated product section and 'Get Started' button to improve user engagement and conversion rates."
+    ],
+    "threats": [
+      "The company's minor changes may not be enough to keep up with competitors who are introducing new products or features."
+    ],
+    "recommended_actions": [
+      "Continue to monitor the company's product section and user experience for further updates and improvements.",
+      "Assess the potential impact of the 'Game Worlds' addition on the company's competitive position in the gaming industry."
+    ]
+  },
+  "key_insights": [
+    "The company is focused on refining its product section and user experience.",
+    "The addition of 'Game Worlds' to the product section may indicate an expansion of the company's offerings in the gaming industry."
+  ],
+  "business_impact": "The changes are unlikely to have a significant impact on the business, as they are minor and do not introduce new products or features.",
+  "competitive_implications": "The changes do not provide a significant competitive advantage, but rather demonstrate the company's ongoing efforts to improve its products and services.",
+  "content_hash_before": "f681a6cf49de1c083c9bb7dfb709fe3670b6ca1f8f1f41755daa1e57f3d2c939",
+  "content_hash_after": "f161684c52767cd1c61d29ee8c84736b2027c329cfd81242ff3e64647a3010f5",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

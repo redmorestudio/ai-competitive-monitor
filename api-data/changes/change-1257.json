@@ -1,0 +1,86 @@
+{
+  "id": 1257,
+  "company": "Descript",
+  "page_url": "product",
+  "detected_at": "2025-08-27T16:31:11.599Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Removal of redundant company logos, addition of new features such as Video Regenerate, and reorganization of the website's layout and content",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Removal of redundant company logos, addition of new features such as Video Regenerate, and reorganization of the website's layout and content",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Removal of redundant company logos",
+      "Addition of Video Regenerate feature",
+      "Reorganization of website layout and content",
+      "Addition of new guides and tools",
+      "Update of product and pricing information"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are likely to improve user engagement and retention, and increase revenue through the addition of new features and services",
+    "market_signals": [
+      "Increased focus on video editing and creation",
+      "Growing demand for AI-powered audio repair and video editing tools"
+    ],
+    "competitive_implications": "The changes position Descript as a leader in the video editing and creation market, with a strong focus on AI-powered tools and services",
+    "strategic_direction": "The company is likely to continue investing in AI-powered tools and services, and expanding its product offerings to meet the growing demand for video editing and creation tools"
+  },
+  "entities": {
+    "products": [
+      "Video Regenerate",
+      "Descript"
+    ],
+    "features": [
+      "AI-powered audio repair",
+      "Video editing",
+      "Podcasting",
+      "Screen recording",
+      "Captions & subtitles"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Descript is focusing on improving user experience and adding new features to its product",
+      "The company is investing in AI-powered tools and services",
+      "The video editing and creation market is growing, with a increasing demand for AI-powered tools and services"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the video editing and creation market",
+      "Expansion into new markets and industries",
+      "Development of new AI-powered tools and services"
+    ],
+    "threats": [
+      "Competition from other companies in the video editing and creation market",
+      "Regulatory challenges and changes in the market"
+    ],
+    "recommended_actions": [
+      "Continue to monitor the company's progress and updates",
+      "Explore partnership opportunities with Descript",
+      "Invest in AI-powered tools and services to stay competitive"
+    ]
+  },
+  "key_insights": [
+    "Descript is focusing on improving user experience and adding new features to its product",
+    "The company is investing in AI-powered tools and services",
+    "The video editing and creation market is growing, with a increasing demand for AI-powered tools and services"
+  ],
+  "business_impact": "The changes are likely to improve user engagement and retention, and increase revenue through the addition of new features and services",
+  "competitive_implications": "The changes position Descript as a leader in the video editing and creation market, with a strong focus on AI-powered tools and services",
+  "content_hash_before": "9ff9768ada92eb7dc0e5d8c7b408e3779e2fe504fc3d6ba42b624a409947a1ed",
+  "content_hash_after": "a17c6e95ebc98397ef35e036d3e7e050e52f9c8561362aa5f8f564d1bf8c8f77",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

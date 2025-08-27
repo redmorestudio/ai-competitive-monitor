@@ -1,0 +1,56 @@
+{
+  "id": 1282,
+  "company": "AI21 Labs",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:27:42.198Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The title of a blog post was changed from 'RAG Agent Solutions for Enterprises' to 'Knowledge Agent Solutions for Enterprises'",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The title of a blog post was changed from 'RAG Agent Solutions for Enterprises' to 'Knowledge Agent Solutions for Enterprises'",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Title change in a single blog post"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Minimal, as the change is minor and does not affect the overall business strategy",
+    "market_signals": [
+      "AI21 Labs is actively maintaining and updating their blog content"
+    ],
+    "competitive_implications": "None, as the change is minor and does not provide a competitive advantage",
+    "strategic_direction": "AI21 Labs is continuing to focus on enterprise AI and knowledge work"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "AI21 Labs is actively maintaining and updating their blog content"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor AI21 Labs' blog for updates on their products and services"
+    ]
+  },
+  "key_insights": [
+    "AI21 Labs is actively maintaining and updating their blog content"
+  ],
+  "business_impact": "Minimal, as the change is minor and does not affect the overall business strategy",
+  "competitive_implications": "None, as the change is minor and does not provide a competitive advantage",
+  "content_hash_before": "efb1582a8ceb91193ad46c3ad7e03008f0f5feb6684ccd7cf49e760cca4f7193",
+  "content_hash_after": "271df3da903f81aacc6455b5b3978668d919426cfd3411a8940cace61347f503",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

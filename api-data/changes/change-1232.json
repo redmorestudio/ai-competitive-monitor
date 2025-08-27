@@ -1,0 +1,55 @@
+{
+  "id": 1232,
+  "company": "LangChain",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:34:00.669Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "The 'ajs_aid' parameter in the URLs for LangGraph and LangChain documentation changed from 'f92f2785-c719-475d-ac56-7adc8ecbca6e' to 'f98ba99e-8d18-4bb2-a977-668a669e56e1'.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The 'ajs_aid' parameter in the URLs for LangGraph and LangChain documentation changed from 'f92f2785-c719-475d-ac56-7adc8ecbca6e' to 'f98ba99e-8d18-4bb2-a977-668a669e56e1'.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated 'ajs_aid' parameter in LangGraph and LangChain documentation URLs"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change is unlikely to have a significant impact on the business.",
+    "market_signals": [],
+    "competitive_implications": "The change does not provide any significant competitive advantages or disadvantages.",
+    "strategic_direction": "The change does not indicate a shift in the company's strategic direction."
+  },
+  "entities": {
+    "products": [
+      "LangGraph",
+      "LangChain"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The 'ajs_aid' parameter in the URLs for LangGraph and LangChain documentation was updated."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [
+    "The 'ajs_aid' parameter in the URLs for LangGraph and LangChain documentation was updated."
+  ],
+  "business_impact": "The change is unlikely to have a significant impact on the business.",
+  "competitive_implications": "The change does not provide any significant competitive advantages or disadvantages.",
+  "content_hash_before": "035fd680176946cc6d5bd59acc6c8f5f7a6a6f64e4085c43db3b47e8bb8573cc",
+  "content_hash_after": "b05f6a7290a279a3b208319572d03455d76b5063b2832a4ac3f212627aaf306f",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

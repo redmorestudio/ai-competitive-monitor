@@ -1,0 +1,73 @@
+{
+  "id": 1236,
+  "company": "Hugging Face",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:33:15.151Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New articles and community posts have been added, and some existing ones have been updated or removed.",
+  "category": "community_update",
+  "change_summary": {
+    "what_changed": "New articles and community posts have been added, and some existing ones have been updated or removed.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New article: 'Generate Images with Claude and Hugging Face'",
+      "New community post: 'NVIDIA Releases 6 Million Multi-Lingual Reasoning Dataset'",
+      "Updated community post: 'NVIDIA Releases 3 Million Sample Dataset for OCR, Visual Question Answering, and Captioning Tasks'",
+      "Removed community posts: 'RynnVLA-001: Using Human Demonstrations to Improve Robot Manipulation', 'AWorld Multi-Agent System Hits #1 on GAIA Leaderboard', etc."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest that Hugging Face is continuing to invest in its community and content, which is likely to have a positive impact on its business.",
+    "market_signals": [
+      "Increased community engagement",
+      "New content and features"
+    ],
+    "competitive_implications": "The changes may indicate that Hugging Face is trying to stay ahead of its competitors in the AI and machine learning space.",
+    "strategic_direction": "The changes suggest that Hugging Face is focused on community-driven innovation and content creation."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "Claude",
+      "Hugging Face",
+      "NVIDIA"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Hugging Face is investing in its community and content",
+      "New content and features are being added regularly"
+    ],
+    "opportunities": [
+      "Partnership opportunities with Hugging Face",
+      "New business opportunities in the AI and machine learning space"
+    ],
+    "threats": [
+      "Competition from other AI and machine learning companies",
+      "Decreased community engagement"
+    ],
+    "recommended_actions": [
+      "Monitor Hugging Face's community and content",
+      "Explore partnership opportunities with Hugging Face"
+    ]
+  },
+  "key_insights": [
+    "Hugging Face is investing in its community and content",
+    "New content and features are being added regularly"
+  ],
+  "business_impact": "The changes suggest that Hugging Face is continuing to invest in its community and content, which is likely to have a positive impact on its business.",
+  "competitive_implications": "The changes may indicate that Hugging Face is trying to stay ahead of its competitors in the AI and machine learning space.",
+  "content_hash_before": "64b04575e116c6eaa283ffd9656ae4d41faaf60a9b94d6bb94caee68fda24412",
+  "content_hash_after": "5f386b20992978e1f58896448f704c738902b25691b7d1ccf2a3eda6fdb4ccea",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

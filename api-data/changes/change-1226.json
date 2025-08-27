@@ -1,0 +1,72 @@
+{
+  "id": 1226,
+  "company": "Meta AI",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:35:04.624Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "New blog post added: 'How Llama and Oracle are helping Instituto PROA kickstart careers for students in Brazil'",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "New blog post added: 'How Llama and Oracle are helping Instituto PROA kickstart careers for students in Brazil'",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added new blog post with title 'How Llama and Oracle are helping Instituto PROA kickstart careers for students in Brazil' and date 'Aug 27, 2025'",
+      "Updated 'Latest News' section with the new blog post"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The partnership between Llama and Oracle to help Instituto PROA kickstart careers for students in Brazil may indicate an expansion of Meta AI's services into the education sector.",
+    "market_signals": [
+      "Expansion into education sector",
+      "Partnership with Oracle"
+    ],
+    "competitive_implications": "The partnership may give Meta AI a competitive advantage in the education sector, particularly in Brazil.",
+    "strategic_direction": "Meta AI may be focusing on expanding its services into new sectors, such as education, and forming partnerships with other companies to achieve this goal."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [
+      "Llama",
+      "Oracle",
+      "Instituto PROA"
+    ],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Brazil"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Meta AI is expanding its services into the education sector",
+      "Partnership with Oracle may give Meta AI a competitive advantage"
+    ],
+    "opportunities": [
+      "Expansion into new sectors",
+      "Partnerships with other companies"
+    ],
+    "threats": [
+      "Increased competition in the education sector"
+    ],
+    "recommended_actions": [
+      "Monitor Meta AI's expansion into new sectors",
+      "Analyze the impact of the partnership with Oracle on Meta AI's competitive advantage"
+    ]
+  },
+  "key_insights": [
+    "Meta AI is expanding its services into the education sector",
+    "Partnership with Oracle may give Meta AI a competitive advantage"
+  ],
+  "business_impact": "The partnership between Llama and Oracle to help Instituto PROA kickstart careers for students in Brazil may indicate an expansion of Meta AI's services into the education sector.",
+  "competitive_implications": "The partnership may give Meta AI a competitive advantage in the education sector, particularly in Brazil.",
+  "content_hash_before": "75e1419cbf35c9606044c38d4def5a15e7a7fa092b3dea8dbb561f4ff4e1fd3b",
+  "content_hash_after": "342275f136d9a2cad375a5ded72debaf859071833594df950dee2ab304504fa9",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

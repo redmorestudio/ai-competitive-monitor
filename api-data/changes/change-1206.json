@@ -1,0 +1,70 @@
+{
+  "id": 1206,
+  "company": "SambaNova",
+  "page_url": "product",
+  "detected_at": "2025-08-27T16:40:58.899Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New AI model DeepSeek-V3.1 is live on SambaCloud, and the press release section has been updated with new articles.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New AI model DeepSeek-V3.1 is live on SambaCloud, and the press release section has been updated with new articles.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Added new blog post: DeepSeek-V3.1 Is Live on SambaCloud",
+      "Updated press release section with new articles"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update demonstrates SambaNova's commitment to innovation and its ability to deploy new AI models, which can attract new customers and increase revenue.",
+    "market_signals": [
+      "Increased competition in the AI market",
+      "Growing demand for AI solutions"
+    ],
+    "competitive_implications": "SambaNova's update may put pressure on competitors to accelerate their own AI development and deployment.",
+    "strategic_direction": "SambaNova is likely to continue investing in AI research and development to maintain its competitive edge."
+  },
+  "entities": {
+    "products": [
+      "SambaCloud",
+      "DeepSeek-V3.1"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "SambaNova is actively developing and deploying new AI models",
+      "The company is committed to innovation and customer satisfaction"
+    ],
+    "opportunities": [
+      "Partnership opportunities with SambaNova to leverage its AI capabilities",
+      "Potential for SambaNova to expand its customer base and increase revenue"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential for SambaNova's competitors to catch up with their own AI developments"
+    ],
+    "recommended_actions": [
+      "Monitor SambaNova's AI developments and deployments",
+      "Consider partnership opportunities with SambaNova"
+    ]
+  },
+  "key_insights": [
+    "SambaNova is actively developing and deploying new AI models",
+    "The company is committed to innovation and customer satisfaction"
+  ],
+  "business_impact": "The update demonstrates SambaNova's commitment to innovation and its ability to deploy new AI models, which can attract new customers and increase revenue.",
+  "competitive_implications": "SambaNova's update may put pressure on competitors to accelerate their own AI development and deployment.",
+  "content_hash_before": "f30ba2d4d376c99a2c3bb907e122cc08d3f7d117d9ade2a624ab250764fdd0a8",
+  "content_hash_after": "a900e64249a855afbf43d20478b6d6dade265b22c874f24d12c4063b7884cc9e",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

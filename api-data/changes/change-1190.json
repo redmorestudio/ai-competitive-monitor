@@ -1,0 +1,57 @@
+{
+  "id": 1190,
+  "company": "Weights & Biases",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:43:04.934Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Removal of 'Hosting' from Inference section and update of Hangzhou DeepSeek models",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Removal of 'Hosting' from Inference section and update of Hangzhou DeepSeek models",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Inference section updated to remove 'Hosting'",
+      "Hangzhou DeepSeek models updated from 'DeepSeek V3-0324, DeepSeek R1-0528' to 'DeepSeek V3.1, V3-0324, R1-0528'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are unlikely to have a significant impact on the company's business or competitive position.",
+    "market_signals": [
+      "The company may be refining its messaging and offerings, but the changes do not indicate a major strategic shift."
+    ],
+    "competitive_implications": "The changes are unlikely to affect the company's competitive position in the market.",
+    "strategic_direction": "The company's strategic direction remains unclear based on these minor changes."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is making minor updates to its website and offerings."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor the company's website and announcements for more significant changes or updates."
+    ]
+  },
+  "key_insights": [
+    "The company is making minor updates to its website and offerings."
+  ],
+  "business_impact": "The changes are unlikely to have a significant impact on the company's business or competitive position.",
+  "competitive_implications": "The changes are unlikely to affect the company's competitive position in the market.",
+  "content_hash_before": "fc96a105ccc347660e72b82114b43ed1652a9a57c9adc152ae8d0419d2d336a2",
+  "content_hash_after": "4a68bc42d9902f6688302e5c2c6f398ebbbb52986f0ef5e2b9d5b2159444e42a",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

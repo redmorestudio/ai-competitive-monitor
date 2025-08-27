@@ -1,0 +1,90 @@
+{
+  "id": 1191,
+  "company": "Weights & Biases",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:42:56.304Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "The website has undergone a significant restructure, with changes to the main page layout, addition of new topics and categories, and updates to the navigation menu.",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "The website has undergone a significant restructure, with changes to the main page layout, addition of new topics and categories, and updates to the navigation menu.",
+    "change_type": "restructure",
+    "change_scale": "major",
+    "specific_changes": [
+      "Added new topics such as GenAI, Agents, Evaluations, MLOps, Fine-tuning",
+      "Added new framework/integration categories such as Keras, PyTorch, HuggingFace, GPT, OpenAI",
+      "Added new domain categories such as Computer Vision, Domain Agnostic, NLP, LLM, Reinforcement Learning",
+      "Updated navigation menu with new links to documentation, courses, forum, tutorials, and benchmarks",
+      "Removed or rearranged some of the previous content and links"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are likely to attract more developers and researchers to the platform, increasing the company's revenue and market share.",
+    "market_signals": [
+      "increased focus on AI and machine learning",
+      "expansion of resources and tools"
+    ],
+    "competitive_implications": "The company is positioning itself as a leader in the AI and machine learning space, potentially threatening competitors who do not have similar offerings.",
+    "strategic_direction": "The company is likely to continue investing in AI and machine learning, with a focus on providing more resources and tools for developers and researchers."
+  },
+  "entities": {
+    "products": [
+      "Weights & Biases",
+      "CoreWeave"
+    ],
+    "features": [
+      "GenAI",
+      "Agents",
+      "Evaluations",
+      "MLOps",
+      "Fine-tuning"
+    ],
+    "partnerships": [
+      "CoreWeave"
+    ],
+    "technologies": [
+      "Keras",
+      "PyTorch",
+      "HuggingFace",
+      "GPT",
+      "OpenAI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "AI",
+      "machine learning"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "The company is shifting its focus towards AI and machine learning",
+      "The company is expanding its resources and tools for developers and researchers"
+    ],
+    "opportunities": [
+      "increased revenue and market share",
+      "attracting more developers and researchers to the platform"
+    ],
+    "threats": [
+      "competition from other companies in the AI and machine learning space",
+      "potential difficulties in integrating new technologies and partnerships"
+    ],
+    "recommended_actions": [
+      "continue monitoring the company's progress and adjustments in the AI and machine learning space",
+      "consider investing in AI and machine learning technologies and partnerships"
+    ]
+  },
+  "key_insights": [
+    "The company is shifting its focus towards AI and machine learning",
+    "The company is expanding its resources and tools for developers and researchers"
+  ],
+  "business_impact": "The changes are likely to attract more developers and researchers to the platform, increasing the company's revenue and market share.",
+  "competitive_implications": "The company is positioning itself as a leader in the AI and machine learning space, potentially threatening competitors who do not have similar offerings.",
+  "content_hash_before": "f7bd2bcc47c76eb2dfd842bef7617211c7387e1362fe69079cdcd65ecfcbf643",
+  "content_hash_after": "5c5bb9fdb51a32977e861e72993e931fabb90481933dc35eb34e2c370606d052",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,62 @@
+{
+  "id": 1271,
+  "company": "Codeium",
+  "page_url": "pricing",
+  "detected_at": "2025-08-27T16:29:39.053Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Unlimited SWE-1 Lite changed to Unlimited SWE-1 in the Free plan features",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Unlimited SWE-1 Lite changed to Unlimited SWE-1 in the Free plan features",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Unlimited SWE-1 Lite is now Unlimited SWE-1 in the Free plan"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may slightly improve the attractiveness of the Free plan, but its overall impact is likely to be minimal",
+    "market_signals": [
+      "Codeium is continually refining its offerings to better meet customer needs"
+    ],
+    "competitive_implications": "The change is unlikely to significantly impact Codeium's competitive position",
+    "strategic_direction": "Codeium is focused on providing high-quality AI-powered tools and services"
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "Unlimited SWE-1"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Codeium is making minor adjustments to its plans and features"
+    ],
+    "opportunities": [
+      "Codeium may be able to attract more customers to its Free plan with the updated features"
+    ],
+    "threats": [
+      "The change may not be enough to differentiate Codeium from its competitors"
+    ],
+    "recommended_actions": [
+      "Monitor Codeium's future updates and changes to its plans and features"
+    ]
+  },
+  "key_insights": [
+    "Codeium is making minor adjustments to its plans and features"
+  ],
+  "business_impact": "The change may slightly improve the attractiveness of the Free plan, but its overall impact is likely to be minimal",
+  "competitive_implications": "The change is unlikely to significantly impact Codeium's competitive position",
+  "content_hash_before": "92ffea11c933892dab356c4cca021e04de001403b08037cbfa263613e3093278",
+  "content_hash_after": "9e275619f0b3b775216a21e26ce30a4f3a3ae55f44b7f28f8d7bfae1e03e29f3",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

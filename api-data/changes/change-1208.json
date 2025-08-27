@@ -1,0 +1,69 @@
+{
+  "id": 1208,
+  "company": "Runway",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:40:27.696Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.7,
+  "summary": "The 'Get Started' button URL changed from 'https://app.runwayml.com/' to 'https://app.runwayml.com/signup', and a new product 'Game Worlds' was added under the 'Product' section.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The 'Get Started' button URL changed from 'https://app.runwayml.com/' to 'https://app.runwayml.com/signup', and a new product 'Game Worlds' was added under the 'Product' section.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated 'Get Started' button URL",
+      "Added 'Game Worlds' product"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes may improve user experience and attract new customers, but their overall impact on the business is likely to be limited.",
+    "market_signals": [
+      "Increased focus on user acquisition",
+      "Expansion of product offerings"
+    ],
+    "competitive_implications": "The changes do not significantly alter the competitive landscape, but they may indicate a desire to stay competitive in the AI research and technology market.",
+    "strategic_direction": "The company may be shifting its focus towards more commercial applications of its technology, in addition to its research-oriented approach."
+  },
+  "entities": {
+    "products": [
+      "Game Worlds"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is updating its website to improve user experience",
+      "New product 'Game Worlds' may be a significant development in the company's product lineup"
+    ],
+    "opportunities": [
+      "Potential for increased user engagement and acquisition",
+      "Expansion into new markets or industries with the 'Game Worlds' product"
+    ],
+    "threats": [
+      "Limited impact on the competitive landscape",
+      "Potential for the 'Game Worlds' product to cannibalize existing product sales"
+    ],
+    "recommended_actions": [
+      "Monitor the company's website and product updates for further changes",
+      "Analyze the 'Game Worlds' product and its potential impact on the market"
+    ]
+  },
+  "key_insights": [
+    "The company is updating its website to improve user experience",
+    "New product 'Game Worlds' may be a significant development in the company's product lineup"
+  ],
+  "business_impact": "The changes may improve user experience and attract new customers, but their overall impact on the business is likely to be limited.",
+  "competitive_implications": "The changes do not significantly alter the competitive landscape, but they may indicate a desire to stay competitive in the AI research and technology market.",
+  "content_hash_before": "dc9ee0958d785007db43a1f60363ce5f11311a44d06f66befde9431a9c347f35",
+  "content_hash_after": "6c4b7e92ccb5e149a3aa3e7e0b681900bf8af0693383685e672172ceb16ef768",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

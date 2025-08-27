@@ -1,0 +1,62 @@
+{
+  "id": 1217,
+  "company": "Pieces",
+  "page_url": "features",
+  "detected_at": "2025-08-27T16:39:08.520Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Addition of 'Academy' resource and minor adjustments in the layout and content of the features page",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Addition of 'Academy' resource and minor adjustments in the layout and content of the features page",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Academy' to the resources section",
+      "Minor layout adjustments for better readability and user experience"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Enhanced user experience and additional resources may lead to increased user engagement and satisfaction, potentially influencing customer retention and acquisition.",
+    "market_signals": [
+      "Commitment to continuous improvement and user experience"
+    ],
+    "competitive_implications": "The minor nature of the changes does not significantly impact the competitive positioning of Pieces in the market.",
+    "strategic_direction": "Focus on user-centric development and resource provision"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Pieces is investing in user experience and resource development"
+    ],
+    "opportunities": [
+      "Potential for increased user engagement and retention due to improved experience and resources"
+    ],
+    "threats": [
+      "Competitors may respond with similar enhancements, mitigating the competitive advantage"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and market response to the changes",
+      "Consider strategic investments in user experience and resource development"
+    ]
+  },
+  "key_insights": [
+    "Pieces is investing in user experience and resource development"
+  ],
+  "business_impact": "Enhanced user experience and additional resources may lead to increased user engagement and satisfaction, potentially influencing customer retention and acquisition.",
+  "competitive_implications": "The minor nature of the changes does not significantly impact the competitive positioning of Pieces in the market.",
+  "content_hash_before": "2d10c969a581806846ddd8c3bc85e0e882e4055ceb8e7f1ac4044f460c5f02d6",
+  "content_hash_after": "2e836d2b6007d5c763951d5fba3a05f3365b6fe9d0a9f08350be0de49ea184c7",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

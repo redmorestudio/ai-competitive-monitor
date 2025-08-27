@@ -1,0 +1,75 @@
+{
+  "id": 1225,
+  "company": "Neeva",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:37:34.219Z",
+  "change_type": "modified",
+  "interest_level": 10,
+  "ai_confidence": 0.95,
+  "summary": "The entire content of the webpage changed from Neeva's homepage to AliExpress's homepage",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "The entire content of the webpage changed from Neeva's homepage to AliExpress's homepage",
+    "change_type": "complete replacement",
+    "change_scale": "major overhaul",
+    "specific_changes": [
+      "Replacement of Neeva's content with AliExpress's content",
+      "Introduction of AliExpress's product categories, search functionality, and user account features",
+      "Addition of links to AliExpress's mobile apps, help center, and language options"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may indicate a significant shift in Neeva's business strategy, potentially involving a pivot towards e-commerce or a merger with AliExpress",
+    "market_signals": [
+      "Increased competition in the e-commerce market",
+      "Potential disruption to Neeva's existing business model"
+    ],
+    "competitive_implications": "The change may impact Neeva's competitive positioning in the market, potentially leading to a loss of market share or a shift in customer loyalty",
+    "strategic_direction": "The change suggests a potential strategic direction towards e-commerce and online retail"
+  },
+  "entities": {
+    "products": [
+      "AliExpress mobile app"
+    ],
+    "features": [
+      "Search functionality",
+      "User account features"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "E-commerce market"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "The complete replacement of Neeva's homepage with AliExpress's content indicates a significant strategic move",
+      "The change may impact Neeva's competitive positioning in the market"
+    ],
+    "opportunities": [
+      "Potential for Neeva to expand its business into the e-commerce market",
+      "Opportunity for AliExpress to gain a stronger presence in the market"
+    ],
+    "threats": [
+      "Potential disruption to Neeva's existing business model",
+      "Increased competition in the e-commerce market"
+    ],
+    "recommended_actions": [
+      "Monitor the situation closely to understand the implications of the change",
+      "Analyze the potential impact on Neeva's business model and competitive positioning"
+    ]
+  },
+  "key_insights": [
+    "The complete replacement of Neeva's homepage with AliExpress's content indicates a significant strategic move",
+    "The change may impact Neeva's competitive positioning in the market"
+  ],
+  "business_impact": "The change may indicate a significant shift in Neeva's business strategy, potentially involving a pivot towards e-commerce or a merger with AliExpress",
+  "competitive_implications": "The change may impact Neeva's competitive positioning in the market, potentially leading to a loss of market share or a shift in customer loyalty",
+  "content_hash_before": "9db41e18882e58ef8b8e7765ec7a68ff7f69b9f03d3980433860e4d99b6dd977",
+  "content_hash_after": "d6f7bf8b3dadace45d05e10950d636662d459379c9e826435164e933b8b5da37",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

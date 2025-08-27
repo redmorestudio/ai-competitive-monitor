@@ -1,0 +1,71 @@
+{
+  "id": 1243,
+  "company": "H2O.ai",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:32:44.531Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "Update in blog post titles and categories, addition of new blog posts, and minor changes in website layout",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Update in blog post titles and categories, addition of new blog posts, and minor changes in website layout",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated title of a blog post from 'How Government Agencies and Leaders can Unlock Value with AI' to 'Return on Intelligence: How Government Agencies and Leaders can Unlock Value with AI'",
+      "Added new categories to blog posts, such as 'Cybersecurity' and 'Security'",
+      "Minor changes in website layout, including updates to image URLs and navigation menus"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes do not have a significant impact on the company's business strategy or operations",
+    "market_signals": [
+      "Increased focus on government and financial services sectors"
+    ],
+    "competitive_implications": "The changes do not provide any significant competitive advantages or disadvantages",
+    "strategic_direction": "The company continues to focus on providing AI solutions for various industries, including government and financial services"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [
+      "Bruna Smith",
+      "Jeffrey Phelan"
+    ],
+    "pricing": [],
+    "markets": [
+      "Government",
+      "Financial Services"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "The company is updating its blog content to reflect its focus on government and financial services sectors",
+      "The company is highlighting its expertise in AI solutions for these sectors"
+    ],
+    "opportunities": [
+      "Potential for increased business in government and financial services sectors"
+    ],
+    "threats": [
+      "Potential for decreased business in other sectors if the company's focus shifts too much to government and financial services"
+    ],
+    "recommended_actions": [
+      "Continue to monitor the company's website and blog for updates on its products and services",
+      "Assess the company's competitive position in the government and financial services sectors"
+    ]
+  },
+  "key_insights": [
+    "The company is updating its blog content to reflect its focus on government and financial services sectors",
+    "The company is highlighting its expertise in AI solutions for these sectors"
+  ],
+  "business_impact": "The changes do not have a significant impact on the company's business strategy or operations",
+  "competitive_implications": "The changes do not provide any significant competitive advantages or disadvantages",
+  "content_hash_before": "5c4974e10eb42b007c1cbb9607f9560928a938100c38afa051f84699c2af04f5",
+  "content_hash_after": "31d691f97f3349f3818a51b14b04ec7ff8c93465cda95d9890e2ce3ce049dc98",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

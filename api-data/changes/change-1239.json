@@ -1,0 +1,107 @@
+{
+  "id": 1239,
+  "company": "HeyGen",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:33:02.116Z",
+  "change_type": "modified",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "The company website has been completely overhauled, transitioning from a security verification page to a fully functional website with various sections, including products, features, industry, teams, use cases, resources, company, and a blog with multiple articles.",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "The company website has been completely overhauled, transitioning from a security verification page to a fully functional website with various sections, including products, features, industry, teams, use cases, resources, company, and a blog with multiple articles.",
+    "change_type": "major overhaul",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of a new website layout and design",
+      "Addition of multiple products and features",
+      "Inclusion of industry, teams, and use cases sections",
+      "Creation of a resource hub with guides, eBooks, and more",
+      " Establishment of a company section with information on about us, careers, trust and safety, and AI research",
+      "Launch of a blog with various articles on AI video creation, marketing, and tech insights"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest a significant expansion of the company's offerings and a shift towards a more comprehensive platform for AI video creation, marketing, and tech insights.",
+    "market_signals": [
+      "Increased focus on AI video creation",
+      "Expansion into new markets such as e-learning",
+      "Partnership with HubSpot indicates a focus on marketing and sales"
+    ],
+    "competitive_implications": "The changes suggest that HeyGen is positioning itself as a major player in the AI video creation and marketing space, potentially threatening competitors in the industry.",
+    "strategic_direction": "The company appears to be focusing on expanding its product offerings, building strategic partnerships, and establishing itself as a thought leader in the AI video creation and marketing space."
+  },
+  "entities": {
+    "products": [
+      "AI Studio",
+      "Video Avatars",
+      "Avatar IV",
+      "Talking Photo",
+      "Generative Avatars",
+      "AI UGC",
+      "Video Translator",
+      "Interactive Avatar",
+      "AI Avatar Generator",
+      "AI Dubbing",
+      "Text to Video",
+      "Image to Video"
+    ],
+    "features": [
+      "Stock Avatars",
+      "Avatar Looks",
+      "Localization",
+      "API"
+    ],
+    "partnerships": [
+      "HubSpot"
+    ],
+    "technologies": [
+      "AI",
+      "Cloudflare"
+    ],
+    "people": [
+      "Nick Warner",
+      "Holly Xiao"
+    ],
+    "pricing": [
+      "Pricing Plans",
+      "API Pricing"
+    ],
+    "markets": [
+      "Agencies",
+      "E-Learning"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "HeyGen has launched a new website with a comprehensive platform for AI video creation, marketing, and tech insights.",
+      "The company has expanded its product offerings and features.",
+      "HeyGen has partnered with HubSpot, indicating a focus on marketing and sales."
+    ],
+    "opportunities": [
+      "Potential for increased market share in the AI video creation and marketing space.",
+      "Opportunities for strategic partnerships and collaborations."
+    ],
+    "threats": [
+      "Increased competition in the AI video creation and marketing space.",
+      "Potential challenges in establishing the company as a thought leader in the industry."
+    ],
+    "recommended_actions": [
+      "Monitor HeyGen's progress and adjust competitive strategy accordingly.",
+      "Consider potential partnerships or collaborations with HeyGen.",
+      "Keep a close eye on the company's marketing and sales efforts."
+    ]
+  },
+  "key_insights": [
+    "HeyGen has launched a new website with a comprehensive platform for AI video creation, marketing, and tech insights.",
+    "The company has expanded its product offerings and features.",
+    "HeyGen has partnered with HubSpot, indicating a focus on marketing and sales."
+  ],
+  "business_impact": "The changes suggest a significant expansion of the company's offerings and a shift towards a more comprehensive platform for AI video creation, marketing, and tech insights.",
+  "competitive_implications": "The changes suggest that HeyGen is positioning itself as a major player in the AI video creation and marketing space, potentially threatening competitors in the industry.",
+  "content_hash_before": "6973dddd3ef9cb6a2932702f31777faad9c9bf3124d147a84f31aadb6d139546",
+  "content_hash_after": "d7d44d595b1166b7a7d9ade75be41bf8ab7a4aeeadf2d9b2d2e29c595f8e0e10",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

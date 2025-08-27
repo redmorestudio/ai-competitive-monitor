@@ -1,0 +1,59 @@
+{
+  "id": 1234,
+  "company": "Inflection AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:33:41.546Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Removal of the 'Get in touch' and 'News' links from the main navigation, addition of double underscore in '_Emotional__Intelligence_', removal of 'at Pi Lab' from the CEO's letter",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Removal of the 'Get in touch' and 'News' links from the main navigation, addition of double underscore in '_Emotional__Intelligence_', removal of 'at Pi Lab' from the CEO's letter",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Removal of 'Get in touch' link",
+      "Removal of 'News' link",
+      "Addition of double underscore in '_Emotional__Intelligence_'",
+      "Removal of 'at Pi Lab' from the CEO's letter"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes do not have any significant impact on the company's business or operations",
+    "market_signals": [
+      "The company may be streamlining its website and removing unnecessary links"
+    ],
+    "competitive_implications": "The changes do not provide any significant competitive advantages or disadvantages",
+    "strategic_direction": "The company's strategic direction remains unchanged"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is focusing on simplifying its website and removing unnecessary links"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor the company's website for any significant changes or updates"
+    ]
+  },
+  "key_insights": [
+    "The company is focusing on simplifying its website and removing unnecessary links"
+  ],
+  "business_impact": "The changes do not have any significant impact on the company's business or operations",
+  "competitive_implications": "The changes do not provide any significant competitive advantages or disadvantages",
+  "content_hash_before": "e8165a678ef48365401a8f45a0d57ddf88adb5cafa3ec0031f635d952e277198",
+  "content_hash_after": "115f3235a783ea00bb22255a18a8ffb480ecc97e02e9f6fdb544eb5d64c705b2",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

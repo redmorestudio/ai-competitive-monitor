@@ -1,0 +1,83 @@
+{
+  "id": 1233,
+  "company": "Intel",
+  "page_url": "news",
+  "detected_at": "2025-08-27T16:33:47.692Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New articles and partnerships were added, including Intel's collaboration with LG Innotek for an AI-powered smart factory and an investment agreement with SoftBank Group.",
+  "category": "partnership/investment",
+  "change_summary": {
+    "what_changed": "New articles and partnerships were added, including Intel's collaboration with LG Innotek for an AI-powered smart factory and an investment agreement with SoftBank Group.",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Intel Collaborates with LG Innotek to Implement an AI-powered Smart Factory",
+      "Intel and Trump Administration Reach Historic Agreement to Accelerate American Technology and Manufacturing Leadership",
+      "SoftBank Group and Intel Corporation Sign $2B Investment Agreement"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The investments and partnerships are expected to enhance Intel's position in the AI and manufacturing sectors, driving growth and competitiveness.",
+    "market_signals": [
+      "Increased investment in AI and manufacturing",
+      "Partnerships with key industry players"
+    ],
+    "competitive_implications": "The moves are likely to put pressure on competitors to invest in similar areas, potentially altering the competitive landscape.",
+    "strategic_direction": "Intel is focusing on AI, manufacturing, and strategic partnerships to drive growth and maintain its position in the technology sector."
+  },
+  "entities": {
+    "products": [
+      "Intel Core",
+      "Intel Xeon processors",
+      "Intel Arc GPUs"
+    ],
+    "features": [],
+    "partnerships": [
+      "LG Innotek",
+      "SoftBank Group",
+      "Trump Administration"
+    ],
+    "technologies": [
+      "AI",
+      "Artificial Intelligence"
+    ],
+    "people": [
+      "Lip-Bu Tan"
+    ],
+    "pricing": [],
+    "markets": [
+      "United States"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Intel is investing heavily in AI and manufacturing",
+      "Partnerships are a key component of Intel's growth strategy"
+    ],
+    "opportunities": [
+      "Growth in the AI and manufacturing sectors",
+      "Increased competitiveness through strategic partnerships"
+    ],
+    "threats": [
+      "Intensified competition in the technology sector",
+      "Potential risks associated with large investments"
+    ],
+    "recommended_actions": [
+      "Monitor Intel's progress in AI and manufacturing",
+      "Analyze the impact of partnerships on the competitive landscape"
+    ]
+  },
+  "key_insights": [
+    "Intel is investing heavily in AI and manufacturing",
+    "Partnerships are a key component of Intel's growth strategy"
+  ],
+  "business_impact": "The investments and partnerships are expected to enhance Intel's position in the AI and manufacturing sectors, driving growth and competitiveness.",
+  "competitive_implications": "The moves are likely to put pressure on competitors to invest in similar areas, potentially altering the competitive landscape.",
+  "content_hash_before": "533765016d7f2a42b960f1233212febc8fc70c64a86b23498e5b52bf92b1b898",
+  "content_hash_after": "fb7f4a80b99ad219e00f1b5203bf979c44e14a23821a1e4129798a5d49e6f1dd",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,75 @@
+{
+  "id": 1201,
+  "company": "Sourcegraph",
+  "page_url": "product",
+  "detected_at": "2025-08-27T16:41:29.020Z",
+  "change_type": "modified",
+  "interest_level": 7,
+  "ai_confidence": 0.8,
+  "summary": "Changes to Cody Free, Cody Pro, and Enterprise Starter plans",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Changes to Cody Free, Cody Pro, and Enterprise Starter plans",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Update to plan details",
+      "No visible changes to features or pricing pages"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes to plans may impact the company's revenue streams and customer acquisition strategies.",
+    "market_signals": [
+      "Potential shift in target market or customer segments",
+      "Update to competitive strategy"
+    ],
+    "competitive_implications": "The update may influence the company's competitive positioning in the market, potentially impacting its ability to attract and retain customers.",
+    "strategic_direction": "The changes suggest a focus on refining the company's product offerings and pricing strategy to better meet customer needs and stay competitive in the market."
+  },
+  "entities": {
+    "products": [
+      "Cody",
+      "Code Search",
+      "Amp"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Cody Free",
+      "Cody Pro",
+      "Enterprise Starter plans"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The update to plans may indicate a strategic shift in the company's approach to its products and services.",
+      "The changes may impact the company's revenue streams and customer acquisition strategies."
+    ],
+    "opportunities": [
+      "Potential for increased revenue through optimized pricing strategies",
+      "Improved customer satisfaction through refined product offerings"
+    ],
+    "threats": [
+      "Potential loss of customers due to changes in pricing or plan details",
+      "Increased competition from other companies in the market"
+    ],
+    "recommended_actions": [
+      "Monitor the company's pricing and product strategies for further updates",
+      "Analyze customer feedback and market trends to understand the impact of the changes"
+    ]
+  },
+  "key_insights": [
+    "The update to plans may indicate a strategic shift in the company's approach to its products and services.",
+    "The changes may impact the company's revenue streams and customer acquisition strategies."
+  ],
+  "business_impact": "The changes to plans may impact the company's revenue streams and customer acquisition strategies.",
+  "competitive_implications": "The update may influence the company's competitive positioning in the market, potentially impacting its ability to attract and retain customers.",
+  "content_hash_before": "dfec485c95dc3a2c721c39097f324490e1cf9953fc9ea0550dd38104da57634f",
+  "content_hash_after": "0654de8e0109427919d413354a0c189411bd21ea793b56136e3f91e0c39f482f",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

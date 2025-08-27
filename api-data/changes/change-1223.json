@@ -1,0 +1,59 @@
+{
+  "id": 1223,
+  "company": "NVIDIA",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:37:47.428Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "The tracking pixel URL was updated from \"00e46635df886f5b64e71756312656\" to \"b09195edf5309c45a8681755533124\" in the AFTER CONTENT.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The tracking pixel URL was updated from \"00e46635df886f5b64e71756312656\" to \"b09195edf5309c45a8681755533124\" in the AFTER CONTENT.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated tracking pixel URL"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updated tracking pixel URL may improve the accuracy of user tracking and analytics, but it does not have a significant impact on the overall business strategy.",
+    "market_signals": [
+      "NVIDIA is continuing to monitor and optimize its website for user engagement and analytics."
+    ],
+    "competitive_implications": "The change does not provide a significant competitive advantage or disadvantage, as it is a minor update to the tracking pixel URL.",
+    "strategic_direction": "NVIDIA is likely to continue focusing on AI and machine learning solutions, as evident from the content of the webpage."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The updated tracking pixel URL may improve user tracking and analytics.",
+      "NVIDIA is continuing to focus on AI and machine learning solutions."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor NVIDIA's website and content for any significant changes or updates.",
+      "Analyze the impact of the updated tracking pixel URL on user engagement and analytics."
+    ]
+  },
+  "key_insights": [
+    "The updated tracking pixel URL may improve user tracking and analytics.",
+    "NVIDIA is continuing to focus on AI and machine learning solutions."
+  ],
+  "business_impact": "The updated tracking pixel URL may improve the accuracy of user tracking and analytics, but it does not have a significant impact on the overall business strategy.",
+  "competitive_implications": "The change does not provide a significant competitive advantage or disadvantage, as it is a minor update to the tracking pixel URL.",
+  "content_hash_before": "3361d872787cd7aed4723dd2a4f81ea06e677ba03046625b9cc93bb0c0ad6045",
+  "content_hash_after": "b8e9783d090e2353fdf28e7e3708f4f2166ba4fdebd32851c1f8ff06f5b50426",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

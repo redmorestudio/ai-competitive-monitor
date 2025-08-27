@@ -1,0 +1,78 @@
+{
+  "id": 1205,
+  "company": "SambaNova",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:41:03.449Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Addition of new content and updates to existing sections, including the announcement of DeepSeek-V3.1 being live on SambaCloud and the upcoming support for OpenAI's GPT-OSS 120B model",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Addition of new content and updates to existing sections, including the announcement of DeepSeek-V3.1 being live on SambaCloud and the upcoming support for OpenAI's GPT-OSS 120B model",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New blog post announcements",
+      "Update on model support",
+      "Addition of new model support announcements"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates could lead to increased customer engagement and revenue for SambaNova, as well as enhanced competitiveness in the AI market",
+    "market_signals": [
+      "Increasing demand for AI solutions",
+      "Growing importance of partnerships in the AI industry"
+    ],
+    "competitive_implications": "SambaNova's updates could pose a challenge to competitors in the AI market, particularly those that do not have similar partnerships or product offerings",
+    "strategic_direction": "The changes suggest that SambaNova is focused on expanding its product offerings and partnerships to maintain its position in the AI market"
+  },
+  "entities": {
+    "products": [
+      "SambaCloud",
+      "DeepSeek-V3.1",
+      "OpenAI's GPT-OSS 120B"
+    ],
+    "features": [],
+    "partnerships": [
+      "Meta",
+      "OpenAI"
+    ],
+    "technologies": [
+      "RDU",
+      "SambaRack"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "SambaNova is expanding its support for open-source models",
+      "The company is partnering with key players in the AI industry"
+    ],
+    "opportunities": [
+      "Increased customer engagement and revenue",
+      "Enhanced competitiveness in the AI market"
+    ],
+    "threats": [
+      "Intensified competition in the AI market",
+      "Potential challenges in integrating new models and partnerships"
+    ],
+    "recommended_actions": [
+      "Monitor SambaNova's progress and updates",
+      "Assess the potential impact on the competitive landscape"
+    ]
+  },
+  "key_insights": [
+    "SambaNova is expanding its support for open-source models",
+    "The company is partnering with key players in the AI industry"
+  ],
+  "business_impact": "The updates could lead to increased customer engagement and revenue for SambaNova, as well as enhanced competitiveness in the AI market",
+  "competitive_implications": "SambaNova's updates could pose a challenge to competitors in the AI market, particularly those that do not have similar partnerships or product offerings",
+  "content_hash_before": "35b27182bbbc0e29d3cb6910adf3c1d9fc7645e51ce07e14f146a65dc83bce2e",
+  "content_hash_after": "0d7c22136d958c5bfada9381ae10b253ade165a07ba57c0be030b81aa296d1b6",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-08-27T15:35:17.645Z",
+  "generated_at": "2025-08-27T16:59:37.694Z",
   "type": "monitored_companies",
   "total_entities": 18,
   "mode": "minimal",
@@ -23,16 +23,16 @@
         {
           "company": "Tabnine",
           "source_url": "https://tabnine.com/pricing",
-          "text": "leading LLMs from Anthropic, OpenAI, and Tabnine Foundational AI agents Support for all major IDEs 0 { Free for qualified users",
-          "position": 422,
+          "text": "implementation AI-powered chat using leading LLMs from Anthropic, OpenAI, Google, Meta, Mistral and others Foundational AI agents Support for all major",
+          "position": 440,
           "matched_variation": "anthropic",
           "co_mentions": []
         },
         {
           "company": "Tabnine",
           "source_url": "https://tabnine.com/pricing",
-          "text": "including Anthropic Claude, OpenAI GPT-4o, and Cohere Command R+ // Personalization // AI personalized to your projects Tabnine makes recommendations based",
-          "position": 986,
+          "text": "third-party models from top-tier vendors such as Anthropic, OpenAI, Google, Meta, Mistral and others * AI-powered code completion Code suggestions as",
+          "position": 563,
           "matched_variation": "anthropic",
           "co_mentions": []
         },
@@ -40,7 +40,7 @@
           "company": "Scale AI",
           "source_url": "https://scale.com",
           "text": "anybody else. Partner Anthropic Partners with Scale to Bring Generative AI to Enterprises Partner Meta and Scale Partner to Drive Enterprise",
-          "position": 666,
+          "position": 668,
           "matched_variation": "anthropic",
           "co_mentions": []
         },
@@ -48,14 +48,14 @@
           "company": "Scale AI",
           "source_url": "https://scale.com",
           "text": "Anthropic’s rival to ChatGPT Blog How Much Better Is OpenAI's Newest GPT-3 Model? Secure Our cloud platform’s infrastructure and operations are",
-          "position": 720,
+          "position": 722,
           "matched_variation": "anthropic",
           "co_mentions": []
         },
         {
           "company": "Replit",
           "source_url": "https://blog.replit.com",
-          "text": "Access Smarter with realtime app design preview In partnership with Anthropic’s Claude 3.7 Sonnet launch, we're excited to ann... Fri, Aug",
+          "text": "Access Smarter with realtime app design preview In partnership with Anthropic’s Claude 3.7 Sonnet launch, we're excited to ann... Tue, Aug",
           "position": 54,
           "matched_variation": "anthropic",
           "co_mentions": []
@@ -97,7 +97,7 @@
           "company": "SambaNova",
           "source_url": "https://sambanova.ai/blog",
           "text": "A New Model Better than DeepSeek V3 February 4, 2025 Hugging Face Partners with SambaNova to Supercharge its Inference API Capabilities",
-          "position": 438,
+          "position": 468,
           "matched_variation": "hugging face",
           "co_mentions": []
         },
@@ -105,7 +105,7 @@
           "company": "SambaNova",
           "source_url": "https://sambanova.ai/blog",
           "text": "Face Partners with SambaNova to Supercharge its Inference API Capabilities Hugging Face Partners with SambaNova to Supercharge its Inference API Capabilities",
-          "position": 449,
+          "position": 479,
           "matched_variation": "hugging face",
           "co_mentions": []
         },
@@ -127,50 +127,49 @@
         "openai",
         "openai"
       ],
-      "mentioned_by_count": 2,
+      "mentioned_by_count": 1,
       "mentioned_by_companies": [
-        44,
-        14
+        44
       ],
       "total_contexts": 6,
       "contexts": [
         {
           "company": "Weights & Biases",
           "source_url": "https://wandb.ai",
-          "text": "HF TRANSFORMERS LIGHTNING TENSORFLOW KERAS SCIKIT-LEARN XGBOOST import openai, weave weave.init(\"weave-intro\") @weave.op def correct_grammar(user_input): client = openai.OpenAI() response = client.chat.completions.create( model=\"o1-mini\",",
-          "position": 300,
+          "text": "attacks and harmful outputs Monitors Continuously improve in production Inference OpenAI OSS GPT OSS 20B, GPT OSS 120B Alibaba Qwen3 235B",
+          "position": 69,
           "matched_variation": "openai",
           "co_mentions": []
         },
         {
           "company": "Weights & Biases",
           "source_url": "https://wandb.ai",
-          "text": "weave weave.init(\"weave-intro\") @weave.op def correct_grammar(user_input): client = openai.OpenAI() response = client.chat.completions.create( model=\"o1-mini\", messages=[{ \"role\": \"user\", \"content\": \"Correct the grammar:\\n\\n\" + user_input,",
-          "position": 309,
+          "text": "projects Toyota Learn how Toyota uses W&B for autonomous driving OpenAI Learn how OpenAI Robotics uses W&B for large scale ML",
+          "position": 230,
           "matched_variation": "openai",
           "co_mentions": []
         },
         {
           "company": "Weights & Biases",
           "source_url": "https://wandb.ai/fully-connected",
-          "text": "Justin Tenuto Aug 01 Articles, GenAI, Framework / Integration, Evaluations OpenAI GPT OSS models on W&B Inference Chander Matrubhutam Aug 06",
-          "position": 52,
+          "text": "Clear Search English Popular Topics Task GenAIAgentsEvaluationsMLOpsFine-tuningAll Framework / Integration KerasPyTorchHuggingFaceGPTOpenAIAll Domain Computer VisionDomain AgnosticNLPLLMReinforcement LearningAll Iterate on AI agents and",
+          "position": 41,
           "matched_variation": "openai",
           "co_mentions": []
         },
         {
           "company": "Weights & Biases",
           "source_url": "https://wandb.ai/fully-connected",
-          "text": "on W&B Inference Chander Matrubhutam Aug 06 Articles, Weave, LLM, OpenAI Tutorials: GPT-5 evaluation across multiple tasks Brett Young Aug 13",
+          "text": "Clear Search English Popular Topics Task GenAIAgentsEvaluationsMLOpsFine-tuningAll Framework / Integration KerasPyTorchHuggingFaceGPTOpenAIAll Domain Computer VisionDomain AgnosticNLPLLMReinforcement LearningAll Iterate on AI agents and",
+          "position": 41,
+          "matched_variation": "openai",
+          "co_mentions": []
+        },
+        {
+          "company": "Weights & Biases",
+          "source_url": "https://wandb.ai/pricing",
+          "text": "attacks and harmful outputs Monitors Continuously improve in production Inference OpenAI OSS GPT OSS 20B, GPT OSS 120B Alibaba Qwen3 235B",
           "position": 66,
-          "matched_variation": "openai",
-          "co_mentions": []
-        },
-        {
-          "company": "Tabnine",
-          "source_url": "https://tabnine.com/pricing",
-          "text": "from Anthropic, OpenAI, and Tabnine Foundational AI agents Support for all major IDEs 0 { Free for qualified users } Install",
-          "position": 424,
           "matched_variation": "openai",
           "co_mentions": []
         }
@@ -258,7 +257,7 @@
           "company": "Aleph Alpha",
           "source_url": "https://aleph-alpha.com",
           "text": "AI Research Innovation and Technology Breakthroughs Research Learn more Aleph Alpha is driving change — Building a better AI future alongside",
-          "position": 79,
+          "position": 76,
           "matched_variation": "Aleph Alpha",
           "co_mentions": []
         },
@@ -363,16 +362,16 @@
         {
           "company": "Tabnine",
           "source_url": "https://tabnine.com/pricing",
-          "text": "and Cohere Command R+ // Personalization // AI personalized to your projects Tabnine makes recommendations based on the context of all",
-          "position": 991,
+          "text": "including Anthropic Claude, OpenAI GPT-4o, and Cohere Command R+ // Personalization // AI personalized to your projects Tabnine makes recommendations based",
+          "position": 977,
           "matched_variation": "Cohere",
           "co_mentions": []
         },
         {
           "company": "Tabnine",
           "source_url": "https://tabnine.com/pricing",
-          "text": "and Cohere Command R+ // Personalization // AI personalized to your projects Tabnine makes recommendations based on the context of all",
-          "position": 991,
+          "text": "including Anthropic Claude, OpenAI GPT-4o, and Cohere Command R+ // Personalization // AI personalized to your projects Tabnine makes recommendations based",
+          "position": 977,
           "matched_variation": "cohere",
           "co_mentions": []
         },
@@ -388,7 +387,7 @@
           "company": "Scale AI",
           "source_url": "https://scale.com",
           "text": "Customer Case Study: Cohere Blog Scale's SEAL Research Lab Launches Expert-Evaluated LLM Leaderboards Blog Why Is ChatGPT So Good? Dataset Open",
-          "position": 692,
+          "position": 694,
           "matched_variation": "Cohere",
           "co_mentions": []
         },
@@ -410,42 +409,43 @@
         "Google DeepMind",
         "google deepmind"
       ],
-      "mentioned_by_count": 1,
+      "mentioned_by_count": 2,
       "mentioned_by_companies": [
+        43,
         3
       ],
       "total_contexts": 6,
       "contexts": [
         {
-          "company": "Google DeepMind",
-          "source_url": "https://ai.google.dev",
-          "text": "cutting-edge AI models, like Gemini, Imagen, and Veo, from Google DeepMind View Gemini API docs Integrate models into apps Unlock AI",
-          "position": 92,
+          "company": "Hugging Face",
+          "source_url": "https://huggingface.co/blog",
+          "text": "Title: Hugging Face – Blog Hugging Face Models Datasets Spaces Community",
+          "position": 0,
           "matched_variation": "Google DeepMind",
           "co_mentions": []
         },
         {
-          "company": "Google DeepMind",
-          "source_url": "https://ai.google.dev",
-          "text": "cutting-edge AI models, like Gemini, Imagen, and Veo, from Google DeepMind View Gemini API docs Integrate models into apps Unlock AI",
-          "position": 92,
+          "company": "Hugging Face",
+          "source_url": "https://huggingface.co/blog",
+          "text": "Title: Hugging Face – Blog Hugging Face Models Datasets Spaces Community",
+          "position": 0,
           "matched_variation": "google deepmind",
           "co_mentions": []
         },
         {
           "company": "Google DeepMind",
-          "source_url": "https://blog.google/technology/ai",
-          "text": "and an AI-ready workforce in Oklahoma. AUG 11 · GOOGLE DEEPMIND Hear Google DeepMind CEO Demis Hassabis discuss how world model",
-          "position": 311,
+          "source_url": "https://ai.google.dev",
+          "text": "cutting-edge AI models, like Gemini, Imagen, and Veo, from Google DeepMind View Gemini API docs Integrate models into apps Unlock AI",
+          "position": 90,
           "matched_variation": "Google DeepMind",
           "co_mentions": []
         },
         {
           "company": "Google DeepMind",
-          "source_url": "https://blog.google/technology/ai",
-          "text": "workforce in Oklahoma. AUG 11 · GOOGLE DEEPMIND Hear Google DeepMind CEO Demis Hassabis discuss how world model capabilities are helping",
-          "position": 314,
-          "matched_variation": "Google DeepMind",
+          "source_url": "https://ai.google.dev",
+          "text": "cutting-edge AI models, like Gemini, Imagen, and Veo, from Google DeepMind View Gemini API docs Integrate models into apps Unlock AI",
+          "position": 90,
+          "matched_variation": "google deepmind",
           "co_mentions": []
         },
         {
@@ -483,8 +483,8 @@
         {
           "company": "Inflection AI",
           "source_url": "https://inflection.ai",
-          "text": "the CEO Sean White CEO Inflection AI Every day, AI is becoming an increasingly integral part of our lives. At Inflection",
-          "position": 177,
+          "text": "Title: Inflection AI Developers Developers Enterprise Enterprise Get in touch Get",
+          "position": 0,
           "matched_variation": "Inflection AI",
           "co_mentions": []
         },
@@ -532,16 +532,16 @@
         {
           "company": "Weights & Biases",
           "source_url": "https://wandb.ai",
-          "text": "Title: Weights & Biases: The AI Developer Platform Skip to content",
-          "position": 0,
+          "text": "Co-founder and CDO Neuralift INTEGRATE QUICKLY LANGCHAIN LLAMAINDEX PyTorch HF Transformers Lightning TensorFlow Keras Scikit-LEARN XGBoost import openai, weave weave.init(\"weave-intro\") @weave.op",
+          "position": 529,
           "matched_variation": "LangChain",
           "co_mentions": []
         },
         {
           "company": "Weights & Biases",
           "source_url": "https://wandb.ai",
-          "text": "Title: Weights & Biases: The AI Developer Platform Skip to content",
-          "position": 0,
+          "text": "Co-founder and CDO Neuralift INTEGRATE QUICKLY LANGCHAIN LLAMAINDEX PyTorch HF Transformers Lightning TensorFlow Keras Scikit-LEARN XGBoost import openai, weave weave.init(\"weave-intro\") @weave.op",
+          "position": 529,
           "matched_variation": "langchain",
           "co_mentions": []
         },
@@ -702,7 +702,7 @@
           "company": "NVIDIA",
           "source_url": "https://nvidia.com/ai",
           "text": "Frontier AI in Your Hands 24:56 Gennady Pekhimenko Accelerating DNN Inference with End-to-End Compilation 21:35 Tri Dao FlashAttention: Fast and Memory-Efficient",
-          "position": 855,
+          "position": 840,
           "matched_variation": "Mistral AI",
           "co_mentions": []
         },
@@ -710,7 +710,7 @@
           "company": "NVIDIA",
           "source_url": "https://nvidia.com/ai",
           "text": "Frontier AI in Your Hands 24:56 Gennady Pekhimenko Accelerating DNN Inference with End-to-End Compilation 21:35 Tri Dao FlashAttention: Fast and Memory-Efficient",
-          "position": 855,
+          "position": 840,
           "matched_variation": "mistral ai",
           "co_mentions": []
         },
@@ -756,9 +756,25 @@
       "total_contexts": 6,
       "contexts": [
         {
+          "company": "Synthesia",
+          "source_url": "https://synthesia.io/blog",
+          "text": "Title: Synthesia Blog | How-to guides, Case Studies, and more Platform",
+          "position": 0,
+          "matched_variation": "Replicate",
+          "co_mentions": []
+        },
+        {
+          "company": "Synthesia",
+          "source_url": "https://synthesia.io/blog",
+          "text": "Title: Synthesia Blog | How-to guides, Case Studies, and more Platform",
+          "position": 0,
+          "matched_variation": "replicate",
+          "co_mentions": []
+        },
+        {
           "company": "Replicate",
           "source_url": "https://replicate.com",
-          "text": "Title: Replicate - Run AI with an API ctrl+k Explore Pricing Enterprise",
+          "text": "Title: Replicate - Run AI with an API cmd+k Explore Pricing Enterprise",
           "position": 1,
           "matched_variation": "Replicate",
           "co_mentions": []
@@ -775,22 +791,6 @@
           "company": "Replicate",
           "source_url": "https://replicate.com/blog",
           "text": "Title: Blog – Replicate ctrl+k Explore Pricing Enterprise Docs Blog Sign in Try for",
-          "position": 3,
-          "matched_variation": "Replicate",
-          "co_mentions": []
-        },
-        {
-          "company": "Replicate",
-          "source_url": "https://replicate.com/blog",
-          "text": "Blog Sign in Try for free Blog RSS Atom Announcing Replicate's remote MCP server Use our MCP to discover, compare, and",
-          "position": 19,
-          "matched_variation": "Replicate",
-          "co_mentions": []
-        },
-        {
-          "company": "Replicate",
-          "source_url": "https://replicate.com/pricing",
-          "text": "Title: Pricing – Replicate ctrl+k Explore Pricing Enterprise Docs Blog Sign in Try for",
           "position": 3,
           "matched_variation": "Replicate",
           "co_mentions": []
@@ -990,8 +990,8 @@
         {
           "company": "Weights & Biases",
           "source_url": "https://wandb.ai",
-          "text": "new AI cloud software products and capabilities from CoreWeave and Weights & Biases AI is easy to productionize The AI developer",
-          "position": 41,
+          "text": "cloud software products and capabilities from CoreWeave and Weights & Biases AI is easy to productionize The AI developer platform to",
+          "position": 281,
           "matched_variation": "Weights & Biases",
           "co_mentions": []
         },
@@ -1014,7 +1014,7 @@
         {
           "company": "Weights & Biases",
           "source_url": "https://wandb.ai/pricing",
-          "text": "Title: Weights & Biases pricing Skip to content Platform OPEN PLATFORM Solutions",
+          "text": "Title: Weights & Biases pricing Skip to content Platform Open Platform Solutions",
           "position": 1,
           "matched_variation": "Weights & Biases",
           "co_mentions": []

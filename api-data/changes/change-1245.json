@@ -1,0 +1,78 @@
+{
+  "id": 1245,
+  "company": "Google DeepMind",
+  "page_url": "api",
+  "detected_at": "2025-08-27T16:32:32.819Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New Veo 3 model is now available in the Gemini API",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New Veo 3 model is now available in the Gemini API",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New Veo 3 model announcement",
+      "Update to Gemini API"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of Veo 3 can increase the competitiveness of Google DeepMind in the AI market and attract more developers to the Gemini API.",
+    "market_signals": [
+      "Growing demand for AI models",
+      "Increasing competition in the AI market"
+    ],
+    "competitive_implications": "The update can help Google DeepMind to stay competitive in the market and potentially gain market share.",
+    "strategic_direction": "The introduction of Veo 3 aligns with Google DeepMind's strategy to provide innovative AI solutions and expand its presence in the AI market."
+  },
+  "entities": {
+    "products": [
+      "Veo 3",
+      "Gemini API"
+    ],
+    "features": [
+      "New model announcement"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Developer community",
+      "AI market"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "The new Veo 3 model can improve the capabilities of the Gemini API",
+      "The update can increase the adoption of the Gemini API among developers"
+    ],
+    "opportunities": [
+      "Increased competitiveness in the AI market",
+      "Growing demand for AI models"
+    ],
+    "threats": [
+      "Increasing competition in the AI market",
+      "Potential technical challenges with the new model"
+    ],
+    "recommended_actions": [
+      "Monitor the market response to the new Veo 3 model",
+      "Evaluate the potential applications and use cases of the new model"
+    ]
+  },
+  "key_insights": [
+    "The new Veo 3 model can improve the capabilities of the Gemini API",
+    "The update can increase the adoption of the Gemini API among developers"
+  ],
+  "business_impact": "The introduction of Veo 3 can increase the competitiveness of Google DeepMind in the AI market and attract more developers to the Gemini API.",
+  "competitive_implications": "The update can help Google DeepMind to stay competitive in the market and potentially gain market share.",
+  "content_hash_before": "e91e8fa1b59e87dce62227b00c55027c9f69f1b27eefa90e091df33497698a88",
+  "content_hash_after": "c34cb1c6273c7a99cd6da8b1c13bb47740a23271a98fb7de0e2cd53b49ec92a6",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

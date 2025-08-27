@@ -1,0 +1,57 @@
+{
+  "id": 1199,
+  "company": "Sourcegraph",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:41:38.399Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Removal of Discord link and minor adjustments in the footer section",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Removal of Discord link and minor adjustments in the footer section",
+    "change_type": "removal",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Discord link removed from the footer",
+      "Minor layout adjustments"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Minimal impact on the business, as the changes are minor and do not affect the core functionality or messaging",
+    "market_signals": [
+      "Potential indication of a shift in community engagement strategies"
+    ],
+    "competitive_implications": "No significant implications for competitive positioning",
+    "strategic_direction": "No clear indication of a change in strategic direction"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Sourcegraph may be adjusting its community engagement strategy"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor Sourcegraph's community engagement strategies for further changes"
+    ]
+  },
+  "key_insights": [
+    "Sourcegraph may be adjusting its community engagement strategy"
+  ],
+  "business_impact": "Minimal impact on the business, as the changes are minor and do not affect the core functionality or messaging",
+  "competitive_implications": "No significant implications for competitive positioning",
+  "content_hash_before": "fef655bbe7f5594fdb6ccb6ecaf26ac01965520eb0a6399077887fded82c1348",
+  "content_hash_after": "6a5adb3a73ce4ec99164b90042a2e38854e46773422ef69c770d362fee661953",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

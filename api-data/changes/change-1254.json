@@ -1,0 +1,91 @@
+{
+  "id": 1254,
+  "company": "ElevenLabs",
+  "page_url": "pricing",
+  "detected_at": "2025-08-27T16:31:33.675Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Pricing plans and features",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Pricing plans and features",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Added 2 months free for annual billing",
+      "Updated pricing for Starter, Creator, Pro, Scale, and Business plans",
+      "Changed 'Platform' to 'Creative Platform' and 'Agents Platform' in navigation",
+      "Added 'Multilingual v2 & v3' and 'Flash' to model options",
+      "Updated audio quality and concurrency limits for each plan"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes may attract more customers with the updated pricing and features, potentially increasing revenue.",
+    "market_signals": [
+      "Increased competition in the AI audio market",
+      "Growing demand for high-quality AI audio solutions"
+    ],
+    "competitive_implications": "The updates may help ElevenLabs stay competitive in the market, but also put pressure on other companies to follow suit.",
+    "strategic_direction": "The changes suggest a focus on expanding the customer base and increasing revenue through competitive pricing and features."
+  },
+  "entities": {
+    "products": [
+      "Starter",
+      "Creator",
+      "Pro",
+      "Scale",
+      "Business",
+      "Enterprise"
+    ],
+    "features": [
+      "Text to Speech",
+      "Speech to Text",
+      "Music",
+      "Conversational AI",
+      "Studio",
+      "Automated Dubbing",
+      "API access"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Machine Learning"
+    ],
+    "people": [],
+    "pricing": [
+      "2 months free for annual billing",
+      "Updated pricing for each plan"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The updated pricing and features may attract more customers",
+      "The changes indicate a strategic shift in the company's approach to the market"
+    ],
+    "opportunities": [
+      "Increased revenue through competitive pricing and features",
+      "Expansion into new markets or customer segments"
+    ],
+    "threats": [
+      "Increased competition in the AI audio market",
+      "Potential backlash from existing customers if the changes are not well-received"
+    ],
+    "recommended_actions": [
+      "Monitor customer feedback and adjust the pricing and features as needed",
+      "Continue to invest in research and development to stay ahead of the competition"
+    ]
+  },
+  "key_insights": [
+    "The updated pricing and features may attract more customers",
+    "The changes indicate a strategic shift in the company's approach to the market"
+  ],
+  "business_impact": "The changes may attract more customers with the updated pricing and features, potentially increasing revenue.",
+  "competitive_implications": "The updates may help ElevenLabs stay competitive in the market, but also put pressure on other companies to follow suit.",
+  "content_hash_before": "4a1895d5c32784b9a4ef111c30218a63be8197f6a09cc90e4c18210378e157f8",
+  "content_hash_after": "ad9a66d812f4704390c5ed04db661a6db0fa863dc06d33ae08435d40d4395408",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

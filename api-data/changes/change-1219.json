@@ -1,0 +1,81 @@
+{
+  "id": 1219,
+  "company": "Perplexity AI",
+  "page_url": "product",
+  "detected_at": "2025-08-27T16:38:42.535Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Access to Comet, the agentic browser, is now included in Perplexity Pro",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Access to Comet, the agentic browser, is now included in Perplexity Pro",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Comet, the agentic browser, added to Perplexity Pro features",
+      "Perplexity Labs access remains in both Pro and Max plans"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Enhanced Pro plan may lead to increased subscriptions and revenue, positioning Perplexity AI more competitively in the AI market.",
+    "market_signals": [
+      "Increased focus on user experience and value-added features",
+      "Potential for expanded user base"
+    ],
+    "competitive_implications": "Perplexity AI is enhancing its competitive positioning by offering more comprehensive features in its Pro plan, potentially attracting users from competitors.",
+    "strategic_direction": "Perplexity AI is focusing on expanding its feature set and enhancing user experience to drive growth and competitiveness."
+  },
+  "entities": {
+    "products": [
+      "Comet, the agentic browser"
+    ],
+    "features": [
+      "Access to Comet",
+      "Unlimited file and photo uploads",
+      "Extended access to Perplexity Research"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "GPT-5",
+      "Claude Sonnet 4",
+      "OpenAI o3-pro",
+      "Anthropic Claude Opus 4.1"
+    ],
+    "people": [],
+    "pricing": [
+      "$20.00/month for Pro",
+      "$200.00/month for Max"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Comet, the agentic browser, is a key addition to the Pro plan",
+      "Perplexity AI is focusing on enhancing user experience and value"
+    ],
+    "opportunities": [
+      "Potential for increased revenue through enhanced Pro plan",
+      "Expanded user base and market share"
+    ],
+    "threats": [
+      "Competition from other AI companies offering similar features",
+      "Potential for pricing pressure"
+    ],
+    "recommended_actions": [
+      "Monitor user adoption and feedback on the enhanced Pro plan",
+      "Continuously assess and improve the competitive positioning of Perplexity AI"
+    ]
+  },
+  "key_insights": [
+    "Comet, the agentic browser, is a key addition to the Pro plan",
+    "Perplexity AI is focusing on enhancing user experience and value"
+  ],
+  "business_impact": "Enhanced Pro plan may lead to increased subscriptions and revenue, positioning Perplexity AI more competitively in the AI market.",
+  "competitive_implications": "Perplexity AI is enhancing its competitive positioning by offering more comprehensive features in its Pro plan, potentially attracting users from competitors.",
+  "content_hash_before": "1ac06f57a8d81056961e8104e99538a74f0cfcf196d1bcb9fa7f82718a55304c",
+  "content_hash_after": "9c98140d085a773eaf2ade7d06233fbdd66b0be7eacdd5bbffae62c3d7433d71",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

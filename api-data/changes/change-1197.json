@@ -1,0 +1,67 @@
+{
+  "id": 1197,
+  "company": "Synthesia",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:42:09.978Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "The feature 'AI Video Editor' was removed and replaced with 'AI Video Generator'.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "The feature 'AI Video Editor' was removed and replaced with 'AI Video Generator'.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Removal of AI Video Editor feature",
+      "Addition of AI Video Generator feature"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update could lead to increased customer engagement and retention, as well as improved competitiveness in the market.",
+    "market_signals": [
+      "Increased focus on AI-powered video creation"
+    ],
+    "competitive_implications": "The change could put pressure on competitors to update their own video creation capabilities.",
+    "strategic_direction": "The update suggests a strategic direction towards AI-powered video creation and editing."
+  },
+  "entities": {
+    "products": [
+      "AI Video Generator"
+    ],
+    "features": [
+      "AI Video Editor"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The removal of AI Video Editor and addition of AI Video Generator indicates a shift in the platform's video creation strategy."
+    ],
+    "opportunities": [
+      "Increased customer engagement and retention",
+      "Improved competitiveness in the market"
+    ],
+    "threats": [
+      "Potential backlash from customers who preferred the old AI Video Editor feature"
+    ],
+    "recommended_actions": [
+      "Monitor customer feedback and adjust the platform's video creation strategy accordingly.",
+      "Invest in marketing efforts to promote the new AI Video Generator feature."
+    ]
+  },
+  "key_insights": [
+    "The removal of AI Video Editor and addition of AI Video Generator indicates a shift in the platform's video creation strategy."
+  ],
+  "business_impact": "The update could lead to increased customer engagement and retention, as well as improved competitiveness in the market.",
+  "competitive_implications": "The change could put pressure on competitors to update their own video creation capabilities.",
+  "content_hash_before": "8946ac430d20174df507aa966225980770d78131f9956774417709f4b574a5d6",
+  "content_hash_after": "6c0fc897a5b24a080d6dad05235049c5cafa656914ad219ca0343942c3602cb0",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

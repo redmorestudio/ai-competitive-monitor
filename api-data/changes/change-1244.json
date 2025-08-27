@@ -1,0 +1,66 @@
+{
+  "id": 1244,
+  "company": "H2O.ai",
+  "page_url": "product",
+  "detected_at": "2025-08-27T16:32:38.550Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "Removal of the 'Healthcare' industry link from the SOLUTIONS section and replacement with 'Public Sector', updates in image URLs, and minor text changes",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Removal of the 'Healthcare' industry link from the SOLUTIONS section and replacement with 'Public Sector', updates in image URLs, and minor text changes",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Removal of 'Healthcare' industry link",
+      "Addition of 'Public Sector' industry link",
+      "Updates in image URLs",
+      "Minor text changes"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The removal of 'Healthcare' and addition of 'Public Sector' may indicate a shift in H2O.ai's target markets or industries",
+    "market_signals": [
+      "Potential expansion into the public sector market"
+    ],
+    "competitive_implications": "The changes do not directly impact H2O.ai's competitive position, but may indicate a strategic shift",
+    "strategic_direction": "H2O.ai may be focusing on expanding its presence in the public sector market"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Public Sector"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "H2O.ai has updated its website to reflect a shift in target markets or industries"
+    ],
+    "opportunities": [
+      "Potential for H2O.ai to expand its customer base in the public sector market"
+    ],
+    "threats": [
+      "Potential loss of focus on the healthcare industry"
+    ],
+    "recommended_actions": [
+      "Monitor H2O.ai's activities in the public sector market",
+      "Assess the potential impact on the competitive landscape"
+    ]
+  },
+  "key_insights": [
+    "H2O.ai has updated its website to reflect a shift in target markets or industries"
+  ],
+  "business_impact": "The removal of 'Healthcare' and addition of 'Public Sector' may indicate a shift in H2O.ai's target markets or industries",
+  "competitive_implications": "The changes do not directly impact H2O.ai's competitive position, but may indicate a strategic shift",
+  "content_hash_before": "f4fbbdaa3189fb220c17bcb5f4e581f7dff51a4eefef94ee370184ca723672b1",
+  "content_hash_after": "63bf86c41d8359718d0eadfee6d932326d756bc703bfc94972152192deae1df5",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

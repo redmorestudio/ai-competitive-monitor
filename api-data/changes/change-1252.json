@@ -1,0 +1,65 @@
+{
+  "id": 1252,
+  "company": "ElevenLabs",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:31:43.088Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "Navigation menu items and some content sections",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Navigation menu items and some content sections",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated navigation menu from 'Platform', 'Solutions', 'API', 'Resources' to 'Creative Platform', 'Agents Platform', 'Developers'",
+      "Added new logos and customer stories",
+      "Minor content adjustments and rewording"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes aim to improve user experience and potentially attract more developers and enterprises by highlighting the platform's capabilities and customer success stories.",
+    "market_signals": [
+      "ElevenLabs is focusing on enhancing its platform and marketing efforts to attract more customers."
+    ],
+    "competitive_implications": "The updates do not significantly alter the competitive landscape but demonstrate ElevenLabs' ongoing efforts to refine its offerings and marketing strategy.",
+    "strategic_direction": "ElevenLabs continues to focus on AI-powered audio solutions, aiming to expand its customer base and solidify its position in the market."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "ElevenLabs is investing in user experience and marketing.",
+      "The company is highlighting its technology and customer success stories more prominently."
+    ],
+    "opportunities": [
+      "Potential for increased customer engagement and attraction due to improved navigation and highlighted success stories."
+    ],
+    "threats": [
+      "Competitors may respond with similar updates, maintaining the competitive pressure."
+    ],
+    "recommended_actions": [
+      "Monitor user feedback on the updates.",
+      "Analyze competitors' responses and market trends."
+    ]
+  },
+  "key_insights": [
+    "ElevenLabs is investing in user experience and marketing.",
+    "The company is highlighting its technology and customer success stories more prominently."
+  ],
+  "business_impact": "The changes aim to improve user experience and potentially attract more developers and enterprises by highlighting the platform's capabilities and customer success stories.",
+  "competitive_implications": "The updates do not significantly alter the competitive landscape but demonstrate ElevenLabs' ongoing efforts to refine its offerings and marketing strategy.",
+  "content_hash_before": "e19db5d71f8e894dbbbea520e86b9a3d814b1c0a781d593ddfa95ce674260beb",
+  "content_hash_after": "e1729c266258e1800de4e0f8fa8c6f93ac52251aab4846bf225d45258dd8f7bb",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,79 @@
+{
+  "id": 1238,
+  "company": "HeyGen",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:33:07.116Z",
+  "change_type": "modified",
+  "interest_level": 9,
+  "ai_confidence": 0.9,
+  "summary": "The entire content of the webpage has changed from a security verification page to a product homepage for HeyGen, an AI video generator company.",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "The entire content of the webpage has changed from a security verification page to a product homepage for HeyGen, an AI video generator company.",
+    "change_type": "major overhaul",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of AI video generator product",
+      "Addition of product features and use cases",
+      "Inclusion of customer logos and testimonials",
+      "New navigation menu and website structure"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change is likely to impact the company's revenue and market position, as it introduces a new product and features that can attract new customers and increase engagement.",
+    "market_signals": [
+      "Growing demand for AI-powered video generation",
+      "Increasing competition in the video creation market"
+    ],
+    "competitive_implications": "The change may give HeyGen a competitive advantage in the market, as it offers a unique AI-powered video generation product.",
+    "strategic_direction": "The company is likely to focus on developing and marketing its AI video generator product, and expanding its customer base."
+  },
+  "entities": {
+    "products": [
+      "AI Video Generator"
+    ],
+    "features": [
+      "AI avatars",
+      "video translation",
+      "customization tools"
+    ],
+    "partnerships": [
+      "Trivago"
+    ],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "HeyGen has introduced a new AI video generator product",
+      "The company has a strong focus on AI-powered video generation"
+    ],
+    "opportunities": [
+      "Partnership opportunities with other companies in the video creation market",
+      "Expansion into new markets and industries"
+    ],
+    "threats": [
+      "Increasing competition in the video creation market",
+      "Technical challenges in developing and maintaining AI-powered video generation technology"
+    ],
+    "recommended_actions": [
+      "Monitor HeyGen's product development and marketing strategies",
+      "Assess the potential for partnership or collaboration with HeyGen"
+    ]
+  },
+  "key_insights": [
+    "HeyGen has introduced a new AI video generator product",
+    "The company has a strong focus on AI-powered video generation"
+  ],
+  "business_impact": "The change is likely to impact the company's revenue and market position, as it introduces a new product and features that can attract new customers and increase engagement.",
+  "competitive_implications": "The change may give HeyGen a competitive advantage in the market, as it offers a unique AI-powered video generation product.",
+  "content_hash_before": "6973dddd3ef9cb6a2932702f31777faad9c9bf3124d147a84f31aadb6d139546",
+  "content_hash_after": "1b409957b09410988320100c5910faafb48e4e5a860d42ed96c2dc81dd2ce647",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

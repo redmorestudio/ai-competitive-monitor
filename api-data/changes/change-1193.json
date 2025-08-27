@@ -1,0 +1,61 @@
+{
+  "id": 1193,
+  "company": "Tabnine",
+  "page_url": "docs",
+  "detected_at": "2025-08-27T16:42:44.329Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Minor updates to the documentation, including rewording and reorganization of certain sections, with no significant changes to the product's features or functionality.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Minor updates to the documentation, including rewording and reorganization of certain sections, with no significant changes to the product's features or functionality.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Reorganization of the 'Getting Started' section",
+      "Addition of new links to relevant documentation pages",
+      "Minor rewording of introductory paragraphs"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are unlikely to have a significant impact on the company's business or revenue.",
+    "market_signals": [
+      "The company is continuing to refine and improve its documentation, indicating a focus on user experience and customer support."
+    ],
+    "competitive_implications": "The changes do not appear to be a response to any specific competitive pressures or market trends.",
+    "strategic_direction": "The company's strategic direction remains focused on providing AI-powered coding assistance tools."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is investing in improving its documentation and user experience.",
+      "There are no significant changes to the product's features or functionality."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor the company's documentation and user experience efforts.",
+      "Assess the potential impact of the company's focus on user experience on its competitive position."
+    ]
+  },
+  "key_insights": [
+    "The company is investing in improving its documentation and user experience.",
+    "There are no significant changes to the product's features or functionality."
+  ],
+  "business_impact": "The changes are unlikely to have a significant impact on the company's business or revenue.",
+  "competitive_implications": "The changes do not appear to be a response to any specific competitive pressures or market trends.",
+  "content_hash_before": "d9172b0e0480727c2a1faf917716fa3391eb8e9b89038395ca21c5ab90b762a4",
+  "content_hash_after": "ad56cc9bc9bd72b8f264a853c9c638c977725dde2c5fa7b25ad17c0a22b7f957",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

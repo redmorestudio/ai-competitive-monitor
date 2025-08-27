@@ -1,0 +1,46 @@
+{
+  "id": 1251,
+  "company": "GitHub Copilot",
+  "page_url": "pricing",
+  "detected_at": "2025-08-27T16:31:51.718Z",
+  "change_type": "modified",
+  "interest_level": 1,
+  "ai_confidence": 0.8,
+  "summary": "No significant changes were detected in the provided content. Both versions appear to be identical, with the same features, pricing, and descriptions.",
+  "category": "no change",
+  "change_summary": {
+    "what_changed": "No significant changes were detected in the provided content. Both versions appear to be identical, with the same features, pricing, and descriptions.",
+    "change_type": "no change",
+    "change_scale": "none",
+    "specific_changes": []
+  },
+  "strategic_analysis": {
+    "business_impact": "No impact, as there were no changes detected.",
+    "market_signals": [],
+    "competitive_implications": "No implications, as the content remains the same.",
+    "strategic_direction": "No direction indicated, due to lack of changes."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [],
+  "business_impact": "No impact, as there were no changes detected.",
+  "competitive_implications": "No implications, as the content remains the same.",
+  "content_hash_before": "2889dd786dab253b67626100146bea7d7d51fb9a58c7d790ab58889ec1ca4440",
+  "content_hash_after": "ed3a3c49ff605aaf90ae0c9da941512437420585b309da87b4856fc3ffaab0c4",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

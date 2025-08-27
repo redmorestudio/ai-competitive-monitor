@@ -1,9 +1,60 @@
 {
   "recent_changes_summary": {
-    "last_5_changes": [],
-    "last_24h_count": 0,
-    "last_7d_count": 0,
-    "high_priority_last_7d": 0
+    "last_5_changes": [
+      {
+        "change_id": 1189,
+        "company": "WellSaid Labs",
+        "url": "blog",
+        "summary": "New articles and blog posts were added, and some links were updated",
+        "interest_level": 6,
+        "time_ago": "19 min ago",
+        "detected_at": "2025-08-27T16:43:16.477Z",
+        "change_type": "modified"
+      },
+      {
+        "change_id": 1190,
+        "company": "Weights & Biases",
+        "url": "homepage",
+        "summary": "Removal of 'Hosting' from Inference section and update of Hangzhou DeepSeek models",
+        "interest_level": 3,
+        "time_ago": "20 min ago",
+        "detected_at": "2025-08-27T16:43:04.934Z",
+        "change_type": "modified"
+      },
+      {
+        "change_id": 1191,
+        "company": "Weights & Biases",
+        "url": "blog",
+        "summary": "The website has undergone a significant restructure, with changes to the main page layout, addition of new topics and categories, and updates to the navigation menu.",
+        "interest_level": 8,
+        "time_ago": "20 min ago",
+        "detected_at": "2025-08-27T16:42:56.304Z",
+        "change_type": "modified"
+      },
+      {
+        "change_id": 1192,
+        "company": "Weights & Biases",
+        "url": "pricing",
+        "summary": "Update of Hangzhou DeepSeek models from DeepSeek V3-0324, DeepSeek R1-0528 to DeepSeek V3.1, V3-0324, R1-0528",
+        "interest_level": 5,
+        "time_ago": "20 min ago",
+        "detected_at": "2025-08-27T16:42:50.562Z",
+        "change_type": "modified"
+      },
+      {
+        "change_id": 1193,
+        "company": "Tabnine",
+        "url": "docs",
+        "summary": "Minor updates to the documentation, including rewording and reorganization of certain sections, with no significant changes to the product's features or functionality.",
+        "interest_level": 3,
+        "time_ago": "20 min ago",
+        "detected_at": "2025-08-27T16:42:44.329Z",
+        "change_type": "modified"
+      }
+    ],
+    "last_24h_count": 85,
+    "last_7d_count": 85,
+    "high_priority_last_7d": 36
   },
   "companies": [
     {
@@ -37,6 +88,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1282,
+          "id": 1282,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:27:42.198Z",
+          "relativeTime": "35 min ago",
+          "interestLevel": 3,
+          "summary": "The title of a blog post was changed from 'RAG Agent Solutions for Enterprises' to 'Knowledge Agent Solutions for Enterprises'",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1025,
           "id": 1025,
@@ -102,48 +165,36 @@
         "products": [
           "Jamba",
           "Jamba 1.6",
-          "Jamba Mini 1.6",
-          "Mistral",
-          "Llama",
-          "Cohere",
+          "Jamba Large",
+          "Jamba Mini",
           "AI21 Maestro",
           "Custom AI Systems",
+          "Mamba-Transformer MoE",
           "Jamba Models",
           "Flexible Deployment Options",
-          "Foundation Models",
-          "Jamba Mini",
-          "Jamba Large"
+          "Foundation Models"
         ],
         "ai_technologies": [
-          "Mamba-Transformer MoE",
           "Python",
-          "PyTorch",
-          "TensorFlow",
-          "AWS",
-          "Google Cloud",
-          "Microsoft Azure",
-          "Snowflake",
-          "Nvidia",
+          "Mamba-Transformer MoE",
+          "Transformer",
+          "MoE",
+          "VPC",
           "LLM",
           "RAG",
           "GenAI",
+          "PyTorch",
           "Jamba",
-          "APIs",
-          "SaaS",
-          "VPC",
-          "On-premises",
           "Language Models",
-          "LLMs",
-          "AI Agents",
-          "Private AI",
-          "SDKs"
+          "APIs",
+          "SDK"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 5,
+        "totalChanges": 6,
         "highInterestChanges": 4,
-        "lastActivity": "2025-08-05T22:53:59.696Z"
+        "lastActivity": "2025-08-27T16:27:42.198Z"
       }
     },
     {
@@ -177,6 +228,30 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1280,
+          "id": 1280,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:28:04.670Z",
+          "relativeTime": "35 min ago",
+          "interestLevel": 6,
+          "summary": "The image for the product section has changed from phariafiles2 to primer, and the accompanying text now links to 'Breaking Free of Tokenizers: Why We Built T-Free and What It Means for Sovereign AI' instead of 'Introducing PhariaFiles'.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1281,
+          "id": 1281,
+          "url": "product",
+          "detectedAt": "2025-08-27T16:28:00.151Z",
+          "relativeTime": "35 min ago",
+          "interestLevel": 5,
+          "summary": "The product section now features 'Breaking Free of Tokenizers: Why We Built T-Free and What It Means for Sovereign AI' instead of 'Introducing PhariaFiles'.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1154,
           "id": 1154,
@@ -278,38 +353,49 @@
         "products": [
           "Luminous",
           "Luminous-World",
+          "GPT-3",
+          "ChatGPT",
           "PhariaAI",
           "PhariaAssistant",
           "PhariaCatch",
           "PhariaStudio",
           "PhariaOS",
-          "ChatGPT",
-          "GPT-3",
+          "Lumi",
           "Creance",
+          "T-Free",
+          "u-μP",
+          "Trigram",
+          "AtMan",
+          "DTM",
+          "MultiFusion",
+          "MAGMA",
           "PhariaFiles",
-          "GovTech AI Assistant",
-          "DORA Contract Compliance",
-          "Industrial Engineering",
-          "Pharia-1-LLM-7B",
-          "Pharia LLM",
-          "APIs"
+          "Pharia-1-LLM-7B"
         ],
         "ai_technologies": [
           "AI",
           "Machine Learning",
           "Natural Language Processing",
           "Transformers",
-          "Artificial Intelligence",
-          "Computer Vision",
+          "Tokenizers",
+          "ML",
           "Deep Learning",
-          "generative AI"
+          "Neural Networks",
+          "Tokenization",
+          "Hierarchical Autoregressive Transformers",
+          "Maximal Update Parametrization",
+          "Unit Scaling",
+          "Autoregressive Transformers",
+          "Language Fairness",
+          "Sovereign AI",
+          "large language model (LLM)"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 8,
+        "totalChanges": 10,
         "highInterestChanges": 7,
-        "lastActivity": "2025-08-18T15:54:39.602Z"
+        "lastActivity": "2025-08-27T16:28:04.670Z"
       }
     },
     {
@@ -343,6 +429,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1279,
+          "id": 1279,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:28:25.475Z",
+          "relativeTime": "34 min ago",
+          "interestLevel": 4,
+          "summary": "Minor updates to the website content, including changes to image URLs, addition of a 'Feedback' section, and updates to the 'Customers empower development teams with Amazon Q Developer' section",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 647,
           "id": 647,
@@ -398,30 +496,19 @@
           "Amazon SageMaker",
           "Amazon EC2",
           "Amazon S3",
-          "Amazon DynamoDB",
           "Amazon API Gateway",
-          "Amazon Lambda",
-          "Amazon CloudWatch",
-          "Amazon CloudFormation",
-          "AWS CodePipeline",
+          "Amazon DynamoDB",
+          "Amazon RDS",
+          "AWS Lambda",
+          "AWS AppRunner",
+          "AWS Cloud9",
+          "AWS CodeArtifact",
           "AWS CodeBuild",
           "AWS CodeCommit",
-          "AWS CodeArtifact",
+          "AWS CodeDeploy",
+          "AWS CodePipeline",
+          "AWS Device Farm",
           "AWS X-Ray",
-          "AWS CloudTrail",
-          "AWS Config",
-          "AWS CloudHSM",
-          "AWS Directory Service",
-          "AWS IAM",
-          "AWS Cognito",
-          "AWS Lake Formation",
-          "AWS Glue",
-          "AWS Step Functions",
-          "AWS AppFlow",
-          "AWS EventBridge",
-          "AWS SQS",
-          "AWS SNS",
-          "AWS MQ",
           "Amazon CodeWhisperer",
           "AWS Toolkit for Visual Studio Code",
           "AWS Toolkit for JetBrains",
@@ -429,8 +516,6 @@
           "JupyterLab",
           "Amazon EMR Studio",
           "AWS Glue Studio",
-          "AWS Lambda",
-          "AWS Cloud9",
           "AWS Toolkit for Visual Studio",
           "Amazon Q Developer",
           "AWS",
@@ -438,7 +523,9 @@
           "AWS Management Console",
           "AWS IAM Identity Center",
           "GitLab Duo",
-          "Sagemaker Studio"
+          "SWE-Bench Leaderboard",
+          "Leaderboard Lite",
+          "AWS Console Mobile Application"
         ],
         "ai_technologies": [
           "Artificial Intelligence",
@@ -448,30 +535,27 @@
           "Computer Vision",
           "Python",
           "Java",
-          "C++",
           "JavaScript",
-          "TensorFlow",
-          "PyTorch",
-          "Keras",
-          "Scikit-learn",
-          "OpenCV",
-          "NLTK",
-          "spaCy",
-          "Docker",
-          "Kubernetes",
           "AWS CloudFormation",
+          "AWS IAM",
           "Integrated Development Environment",
+          "AI",
+          "ML",
           "Generative AI",
           "Cloud Computing",
-          ".NET",
-          "AWS IAM"
+          "PHP",
+          "NET",
+          "IntelliJ IDEA",
+          "Visual Studio",
+          "VS Code",
+          "Eclipse"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 4,
+        "totalChanges": 5,
         "highInterestChanges": 3,
-        "lastActivity": "2025-08-01T22:26:03.770Z"
+        "lastActivity": "2025-08-27T16:28:25.475Z"
       }
     },
     {
@@ -517,6 +601,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1278,
+          "id": 1278,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:28:41.970Z",
+          "relativeTime": "34 min ago",
+          "interestLevel": 5,
+          "summary": "The search queries and examples provided on the homepage have changed.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1153,
           "id": 1153,
@@ -581,21 +677,20 @@
       "intelligence": {
         "products": [
           "Andi App",
-          "Andi Chrome Extension",
-          "Next.js"
+          "Chrome Extension",
+          "Go Language"
         ],
         "ai_technologies": [
           "AI",
-          "Next.js",
-          "Vercel",
-          "Chrome Extension"
+          "no-code AI tools",
+          "Go Language"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 5,
+        "totalChanges": 6,
         "highInterestChanges": 1,
-        "lastActivity": "2025-08-18T15:55:20.080Z"
+        "lastActivity": "2025-08-27T16:28:41.970Z"
       }
     },
     {
@@ -635,6 +730,30 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1276,
+          "id": 1276,
+          "url": "news",
+          "detectedAt": "2025-08-27T16:28:53.381Z",
+          "relativeTime": "34 min ago",
+          "interestLevel": 8,
+          "summary": "New announcements and updates on Anthropic's products, partnerships, and policies were added, while some older news items were removed.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1277,
+          "id": 1277,
+          "url": "docs",
+          "detectedAt": "2025-08-27T16:28:45.350Z",
+          "relativeTime": "34 min ago",
+          "interestLevel": 3,
+          "summary": "Logo and image URLs, and a change from 'Claude Code release notes' to 'Claude Code changelog' with a link to the CHANGELOG.md file on GitHub",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1148,
           "id": 1148,
@@ -730,30 +849,6 @@
           "changeType": "modified",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 1023,
-          "id": 1023,
-          "url": "pricing",
-          "detectedAt": "2025-08-05T22:55:01.338Z",
-          "relativeTime": "8/5/2025",
-          "interestLevel": 4,
-          "summary": "Claude Opus model version updated from 4 to 4.1",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 712,
-          "id": 712,
-          "url": "product",
-          "detectedAt": "2025-08-04T00:12:00.366Z",
-          "relativeTime": "8/4/2025",
-          "interestLevel": 3,
-          "summary": "The URL parameters in the 'Download apps' and 'Claude log in' links have changed.",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
@@ -766,38 +861,37 @@
           "Claude Opus 4.1",
           "Claude Sonnet 4",
           "Claude Haiku 3.5",
-          "Max plan",
-          "Team plan",
-          "Enterprise plan"
+          "Amazon Bedrock",
+          "Google Cloud's Vertex AI",
+          "Claude for Financial Services"
         ],
         "ai_technologies": [
           "API",
           "SDKs",
           "AI",
-          "Machine Learning",
+          "ML",
           "Deep Learning",
           "Natural Language Processing",
+          "Cloud Computing",
           "Python",
-          "PyTorch",
+          "Java",
+          "C++",
           "TensorFlow",
+          "PyTorch",
           "JAX",
-          "AWS",
-          "Kubernetes",
-          "Docker",
-          "PostgreSQL",
-          "Redis",
-          "Pinecone",
+          "Artificial Intelligence",
+          "Machine Learning",
           "HTML",
           "CSS",
-          "JS",
+          "JavaScript",
           "Pandas"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
         "totalChanges": 10,
-        "highInterestChanges": 6,
-        "lastActivity": "2025-08-18T15:55:40.522Z"
+        "highInterestChanges": 7,
+        "lastActivity": "2025-08-27T16:28:53.381Z"
       }
     },
     {
@@ -825,6 +919,30 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1274,
+          "id": 1274,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:29:13.297Z",
+          "relativeTime": "34 min ago",
+          "interestLevel": 3,
+          "summary": "The link for booking Ray training has been updated to 'See Support Plans' and now points to /support",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1275,
+          "id": 1275,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:29:10.050Z",
+          "relativeTime": "34 min ago",
+          "interestLevel": 8,
+          "summary": "The blog post layout and content have been reorganized and updated with new articles and images.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1146,
           "id": 1146,
@@ -928,35 +1046,41 @@
           "Anyscale Platform",
           "RayTurbo",
           "ChatGPT",
-          "Ray Open Source",
-          "Anyscale Support",
+          "Ray Serve",
           "KubeRay",
-          "vLLM",
           "PyTorch",
-          "Kubernetes"
+          "vLLM",
+          "DeepSeek-R1",
+          "Ray Data",
+          "Ray Train"
         ],
         "ai_technologies": [
-          "Python",
+          "AI",
+          "ML",
+          "Deep Learning",
+          "Ray",
           "Kubernetes",
           "Docker",
           "AWS",
           "GCP",
           "NVIDIA",
-          "Ray",
-          "LLM",
+          "Python",
+          "LLaMA",
+          "XGBoost",
           "GPU",
           "CPU",
           "PyTorch",
           "vLLM",
+          "GKE",
           "RLHF",
           "RAG"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 8,
-        "highInterestChanges": 4,
-        "lastActivity": "2025-08-18T15:55:55.095Z"
+        "totalChanges": 10,
+        "highInterestChanges": 5,
+        "lastActivity": "2025-08-27T16:29:13.297Z"
       }
     },
     {
@@ -984,6 +1108,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1273,
+          "id": 1273,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:29:22.927Z",
+          "relativeTime": "33 min ago",
+          "interestLevel": 6,
+          "summary": "New blog post added: 'Debugging Dead MoE Models: A Step-by-Step Guide'",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1144,
           "id": 1144,
@@ -1090,9 +1226,9 @@
           "Cerebras Inference",
           "OpenAI GPT OSS 120B",
           "Qwen3 235B 2507 Instruct",
-          "Llama3.1-70B",
-          "Llama 3.1 405B",
           "DeepSeek R1 Llama-70B",
+          "Llama3.1-70B",
+          "Llama3.1-405B",
           "Cerebras Code",
           "CePO",
           "LongCePO",
@@ -1100,24 +1236,26 @@
         ],
         "ai_technologies": [
           "AI",
-          "ML",
           "Deep Learning",
           "GPU",
+          "Cloud Computing",
+          "Artificial Intelligence",
+          "Machine Learning",
           "Natural Language Processing",
           "Computer Vision",
-          "Sparse Attention",
-          "Test-Time Compute",
-          "Maximal Update Parameterization",
-          "wafer packaging",
+          "Python",
+          "PyTorch",
+          "TensorFlow",
+          "Wafer packaging",
           "TCP-IP",
           "Ethernet"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 8,
+        "totalChanges": 9,
         "highInterestChanges": 7,
-        "lastActivity": "2025-08-18T15:56:11.311Z"
+        "lastActivity": "2025-08-27T16:29:22.927Z"
       }
     },
     {
@@ -1133,6 +1271,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1272,
+          "id": 1272,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:29:30.088Z",
+          "relativeTime": "33 min ago",
+          "interestLevel": 2,
+          "summary": "No significant changes were detected in the provided content",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1143,
           "id": 1143,
@@ -1174,39 +1324,39 @@
         "products": [
           "Cisco Secure Firewall 6100 Series",
           "Cisco Hybrid Mesh Firewall",
-          "Webex",
-          "Cisco U.",
-          "Packet Tracer",
-          "Cisco Modeling Labs",
-          "DevNet",
-          "Cisco Validated",
           "AI Defense",
+          "Cisco Duo",
           "Email Threat Defense",
           "Firewall",
           "Hypershield",
           "Identity Services Engine (ISE)",
           "Secure Access (SSE)",
           "Secure Endpoint",
-          "XDR"
+          "Umbrella",
+          "XDR",
+          "Webex",
+          "Webex Suite",
+          "Cisco Intersight",
+          "Cisco Networking Cloud"
         ],
         "ai_technologies": [
           "AI",
-          "Machine Learning",
-          "Cloud Computing",
-          "Networking",
+          "Cloud",
           "Cybersecurity",
-          "Internet of Things (IoT)",
-          "Wi-Fi 7",
-          "5G",
+          "Data Center",
+          "Firewall",
+          "Hybrid Cloud",
+          "Networking",
           "SD-WAN",
-          "SASE"
+          "SASE",
+          "Wi-Fi 7"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 3,
+        "totalChanges": 4,
         "highInterestChanges": 2,
-        "lastActivity": "2025-08-18T15:56:14.960Z"
+        "lastActivity": "2025-08-27T16:29:30.088Z"
       }
     },
     {
@@ -1240,6 +1390,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1269,
+          "id": 1269,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:29:48.192Z",
+          "relativeTime": "33 min ago",
+          "interestLevel": 3,
+          "summary": "Removal of duplicate testimonials and minor reorganization of the homepage content",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1270,
+          "id": 1270,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:29:43.164Z",
+          "relativeTime": "33 min ago",
+          "interestLevel": 5,
+          "summary": "Download options for the Windsurf Editor",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1271,
+          "id": 1271,
+          "url": "pricing",
+          "detectedAt": "2025-08-27T16:29:39.053Z",
+          "relativeTime": "33 min ago",
+          "interestLevel": 3,
+          "summary": "Unlimited SWE-1 Lite changed to Unlimited SWE-1 in the Free plan features",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1139,
           "id": 1139,
@@ -1323,79 +1509,46 @@
           "changeType": "modified",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 1013,
-          "id": 1013,
-          "url": "product",
-          "detectedAt": "2025-08-05T22:55:51.019Z",
-          "relativeTime": "8/5/2025",
-          "interestLevel": 4,
-          "summary": "The download option for the Windsurf Editor changed from Linux to macOS, with additional options for Apple Silicon and Intel.",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 711,
-          "id": 711,
-          "url": "homepage",
-          "detectedAt": "2025-08-04T00:12:45.437Z",
-          "relativeTime": "8/4/2025",
-          "interestLevel": 4,
-          "summary": "The download option for the Windsurf Editor has changed from Windows to macOS, and the 'Let's surf' section now offers download options for Apple Silicon and Intel.",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 717,
-          "id": 717,
-          "url": "homepage",
-          "detectedAt": "2025-08-03T22:58:23.079Z",
-          "relativeTime": "8/3/2025",
-          "interestLevel": 4,
-          "summary": "Added download options for Windows, updated blog posts, and minor UI changes",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
         "products": [
           "Windsurf Editor",
-          "Windsurf Plugins",
           "Cascade",
           "Tab",
           "Windsurf Reviews",
-          "GitHub Copilot",
-          "GPT-5",
-          "Plugins",
-          "JetBrains"
+          "Windsurf for Enterprise",
+          "GPT-5"
         ],
         "ai_technologies": [
           "AI",
           "DevOps",
-          "Linux",
-          "Machine Learning",
-          "Deep Learning",
-          "Natural Language Processing",
-          "Generative AI",
+          "ML",
+          "GenAI",
+          "IDE",
           "VS Code",
           "Python",
+          "PyTorch",
           "PostgresSQL",
           "Playwright",
           "Neon",
           "Figma",
           "Slack",
-          "Stripe"
+          "Stripe",
+          "GitHub",
+          "JetBrains",
+          "Prompt credits",
+          "Add-on prompt credits",
+          "Role-Based Access Control (RBAC)",
+          "Single Sign-On (SSO)",
+          "Hybrid deployment"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
         "totalChanges": 10,
         "highInterestChanges": 2,
-        "lastActivity": "2025-08-18T15:56:32.729Z"
+        "lastActivity": "2025-08-27T16:29:48.192Z"
       }
     },
     {
@@ -1435,6 +1588,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1266,
+          "id": 1266,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:30:13.193Z",
+          "relativeTime": "33 min ago",
+          "interestLevel": 3,
+          "summary": "Image quality and compression settings",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1267,
+          "id": 1267,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:30:08.201Z",
+          "relativeTime": "33 min ago",
+          "interestLevel": 8,
+          "summary": "New blog posts were added, including 'Command A Reasoning: Enterprise-grade control for AI agents', 'Cohere deepens partnership with Government of Canada', and the image quality of certain pages was updated from 1200 to 1280 pixels",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1268,
+          "id": 1268,
+          "url": "docs",
+          "detectedAt": "2025-08-27T16:29:55.075Z",
+          "relativeTime": "33 min ago",
+          "interestLevel": 3,
+          "summary": "Removal of the 'New multimodal model: Command A Vision!' announcement and update of the 'Release Notes' link from '/v2/changelog' to '/changelog'",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1136,
           "id": 1136,
@@ -1518,42 +1707,6 @@
           "changeType": "new",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 632,
-          "id": 632,
-          "url": "blog",
-          "detectedAt": "2025-08-01T22:28:28.227Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 8,
-          "summary": "New blog posts and updated content on the Cohere blog",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 633,
-          "id": 633,
-          "url": "product",
-          "detectedAt": "2025-08-01T22:28:16.630Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "New content introduction with detailed product and service offerings, company information, and customer stories",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 634,
-          "id": 634,
-          "url": "docs",
-          "detectedAt": "2025-08-01T22:28:10.561Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "New documentation content for Cohere, including a new multimodal model announcement, updated API references, and additional resources such as LLM University and Cookbooks",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
@@ -1563,21 +1716,27 @@
           "Command",
           "Embed",
           "Rerank",
-          "Aya Expanse",
+          "Aya",
           "Command A Vision",
           "v2 API",
+          "Cohere Platform",
           "LLM University",
-          "Cohere Platform"
+          "Cookbooks",
+          "Dashboard",
+          "Playground",
+          "Aya Expanse"
         ],
         "ai_technologies": [
           "AI",
           "Machine Learning",
-          "Natural Language Processing",
-          "Cloud Computing",
           "ML",
+          "Deep Learning",
+          "Natural Language Processing",
+          "Computer Vision",
           "Large Language Models",
-          "API",
+          "APIs",
           "JavaScript",
+          "Linux",
           "LLM",
           "Python"
         ],
@@ -1585,8 +1744,8 @@
       },
       "stats": {
         "totalChanges": 10,
-        "highInterestChanges": 8,
-        "lastActivity": "2025-08-18T15:57:00.495Z"
+        "highInterestChanges": 6,
+        "lastActivity": "2025-08-27T16:30:13.193Z"
       }
     },
     {
@@ -1620,6 +1779,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1263,
+          "id": 1263,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:30:25.344Z",
+          "relativeTime": "32 min ago",
+          "interestLevel": 3,
+          "summary": "The download option for Cursor has been updated to specify 'macOS' instead of 'Windows'.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1264,
+          "id": 1264,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:30:21.904Z",
+          "relativeTime": "32 min ago",
+          "interestLevel": 8,
+          "summary": "New blog posts were added, and some existing ones were removed or updated.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1265,
+          "id": 1265,
+          "url": "features",
+          "detectedAt": "2025-08-27T16:30:19.267Z",
+          "relativeTime": "32 min ago",
+          "interestLevel": 3,
+          "summary": "Minor updates in feature descriptions and image URLs",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1134,
           "id": 1134,
@@ -1703,75 +1898,39 @@
           "changeType": "new",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 628,
-          "id": 628,
-          "url": "blog",
-          "detectedAt": "2025-08-01T22:28:56.151Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 8,
-          "summary": "Initial blog content creation with multiple posts and pages",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 629,
-          "id": 629,
-          "url": "features",
-          "detectedAt": "2025-08-01T22:28:50.514Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "Initial content creation for the features page of Cursor, the AI code editor",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 630,
-          "id": 630,
-          "url": "pricing",
-          "detectedAt": "2025-08-01T22:28:44.625Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "Initial content creation for Cursor's pricing page",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
         "products": [
           "Cursor",
+          "Copilot",
+          "VSCode",
           "Bugbot",
           "Cursor Agent",
           "GPT-5",
-          "Llama",
           "Cursor Tab",
           "Claude Sonnet 4",
-          "OpenAI o3-pro",
           "OpenAI GPT-4.1",
           "Gemini 2.5 Pro",
           "Claude Opus 4"
         ],
         "ai_technologies": [
           "AI",
+          "ML",
           "GPT",
-          "Machine Learning",
-          "Proprietary Models",
-          "Code Completion",
-          "Inference",
+          "Proprietary models",
+          "Python",
+          "MXFP8 Kernels",
           "API",
           "Custom models",
-          "Language models"
+          "API models"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
         "totalChanges": 10,
-        "highInterestChanges": 5,
-        "lastActivity": "2025-08-18T15:57:09.648Z"
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-27T16:30:25.344Z"
       }
     },
     {
@@ -1793,6 +1952,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1262,
+          "id": 1262,
+          "url": "pricing",
+          "detectedAt": "2025-08-27T16:30:29.320Z",
+          "relativeTime": "32 min ago",
+          "interestLevel": 9,
+          "summary": "The content changed from a blocked page to a detailed pricing page for ChatGPT by OpenAI, including various plans such as Free, Plus, Pro, Team, and Enterprise.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1133,
           "id": 1133,
@@ -1870,16 +2041,15 @@
           "Python",
           "PyTorch",
           "TensorFlow",
-          "JAX",
           "JavaScript",
           "C++"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 5,
-        "highInterestChanges": 5,
-        "lastActivity": "2025-08-18T15:57:16.786Z"
+        "totalChanges": 6,
+        "highInterestChanges": 6,
+        "lastActivity": "2025-08-27T16:30:29.320Z"
       }
     },
     {
@@ -1907,6 +2077,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1259,
+          "id": 1259,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:30:41.734Z",
+          "relativeTime": "32 min ago",
+          "interestLevel": 8,
+          "summary": "Addition of new content sections and updates to existing sections, including the introduction of 'Foundational agents', 'Business agents', 'Purpose-built agents', and an emphasis on the 'Agent Workforce Platform'.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1260,
+          "id": 1260,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:30:39.246Z",
+          "relativeTime": "32 min ago",
+          "interestLevel": 6,
+          "summary": "New blog posts were added, and the 'Resources' section was updated with a new link to 'Agents in the AM'.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1261,
+          "id": 1261,
+          "url": "product",
+          "detectedAt": "2025-08-27T16:30:36.103Z",
+          "relativeTime": "32 min ago",
+          "interestLevel": 3,
+          "summary": "Addition of 'Agents in the AM' under Resources > Connect",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1131,
           "id": 1131,
@@ -2000,7 +2206,6 @@
           "AI Apps & Agents",
           "Covalent",
           "syftr",
-          "NVIDIA Nemotron models",
           "AI Governance",
           "AI Observability",
           "AI Foundation"
@@ -2012,10 +2217,8 @@
           "Generative AI",
           "Predictive AI",
           "Deep Learning",
-          "LLMs",
-          "Embeddings",
-          "ML",
-          "Cloud",
+          "Natural Language Processing",
+          "Cloud Computing",
           "On-Premise",
           "Virtual Private Cloud",
           "Software as a Service"
@@ -2023,9 +2226,9 @@
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 7,
-        "highInterestChanges": 6,
-        "lastActivity": "2025-08-18T15:57:26.123Z"
+        "totalChanges": 10,
+        "highInterestChanges": 7,
+        "lastActivity": "2025-08-27T16:30:41.734Z"
       }
     },
     {
@@ -2059,6 +2262,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1256,
+          "id": 1256,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:31:23.178Z",
+          "relativeTime": "31 min ago",
+          "interestLevel": 5,
+          "summary": "Addition of a 'Templates' resource and removal of 'Video regenerate' feature",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1257,
+          "id": 1257,
+          "url": "product",
+          "detectedAt": "2025-08-27T16:31:11.599Z",
+          "relativeTime": "32 min ago",
+          "interestLevel": 8,
+          "summary": "Removal of redundant company logos, addition of new features such as Video Regenerate, and reorganization of the website's layout and content",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1258,
+          "id": 1258,
+          "url": "pricing",
+          "detectedAt": "2025-08-27T16:31:06.996Z",
+          "relativeTime": "32 min ago",
+          "interestLevel": 3,
+          "summary": "Addition of 'Templates' to the resources section and removal of 'Customer stories' from the same section, update of company logos in the 'More than 6 million creators & teams use Descript' section",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1128,
           "id": 1128,
@@ -2142,59 +2381,40 @@
           "changeType": "new",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 621,
-          "id": 621,
-          "url": "product",
-          "detectedAt": "2025-08-01T22:29:45.409Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "New website content and features",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 622,
-          "id": 622,
-          "url": "pricing",
-          "detectedAt": "2025-08-01T22:29:38.651Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 8,
-          "summary": "New pricing page with detailed plans and features",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
         "products": [
           "Descript",
           "Underlord",
+          "Video Regenerate",
+          "Overdub",
+          "Chatgpt",
           "ChatGPT",
-          "Video Editor",
-          "Voice Enhancer",
-          "Speech to Text Converter",
-          "Audio to Text Converter",
-          "YouTube Clip Maker"
+          "YouTube",
+          "Spotify",
+          "Apple Podcasts"
         ],
         "ai_technologies": [
           "AI",
           "Machine Learning",
           "Video Editing",
-          "Podcasting",
+          "Audio Editing",
           "Transcription",
+          "Podcasting",
           "Screen Recording",
           "Text-to-Speech",
-          "Speech Recognition"
+          "Speech Recognition",
+          "Natural Language Processing",
+          "Deep Learning",
+          "Neural Networks"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 9,
-        "highInterestChanges": 6,
-        "lastActivity": "2025-08-18T15:57:50.161Z"
+        "totalChanges": 10,
+        "highInterestChanges": 5,
+        "lastActivity": "2025-08-27T16:31:23.178Z"
       }
     },
     {
@@ -2228,6 +2448,54 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1252,
+          "id": 1252,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:31:43.088Z",
+          "relativeTime": "31 min ago",
+          "interestLevel": 5,
+          "summary": "Navigation menu items and some content sections",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1253,
+          "id": 1253,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:31:38.274Z",
+          "relativeTime": "31 min ago",
+          "interestLevel": 8,
+          "summary": "The navigation menu has been updated, with 'Platform' replacing 'Solutions', and 'Agents Platform' and 'Creative Platform' have been added as new menu items. Additionally, new blog posts have been published, including 'Eleven v3 (alpha), now available in the API' and 'Eleven Music, now available in the API'.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1254,
+          "id": 1254,
+          "url": "pricing",
+          "detectedAt": "2025-08-27T16:31:33.675Z",
+          "relativeTime": "31 min ago",
+          "interestLevel": 8,
+          "summary": "Pricing plans and features",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1255,
+          "id": 1255,
+          "url": "product",
+          "detectedAt": "2025-08-27T16:31:29.117Z",
+          "relativeTime": "31 min ago",
+          "interestLevel": 8,
+          "summary": "Removal and reorganization of menu items and links",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1124,
           "id": 1124,
@@ -2299,79 +2567,32 @@
           "changeType": "modified",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 999,
-          "id": 999,
-          "url": "pricing",
-          "detectedAt": "2025-08-05T22:57:26.706Z",
-          "relativeTime": "8/5/2025",
-          "interestLevel": 6,
-          "summary": "Addition of 'Music use in social media and ads' feature to the Starter plan and introduction of 'AI Music Generator' in the Research section",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 1000,
-          "id": 1000,
-          "url": "product",
-          "detectedAt": "2025-08-05T22:57:21.804Z",
-          "relativeTime": "8/5/2025",
-          "interestLevel": 6,
-          "summary": "Addition of AI Music Generator to the Research and Products sections",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 615,
-          "id": 615,
-          "url": "homepage",
-          "detectedAt": "2025-08-01T22:30:32.940Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "New content introduction on the ElevenLabs homepage, including product features, customer testimonials, and use cases.",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 616,
-          "id": 616,
-          "url": "blog",
-          "detectedAt": "2025-08-01T22:30:25.606Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 8,
-          "summary": "New blog content and updates on AI audio research, product deployment, and company updates",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
         "products": [
           "Eleven Music",
-          "11.ai",
+          "Eleven v3 (alpha)",
+          "Eleven Music API",
           "ElevenLabs app",
+          "ElevenReader",
+          "ElevenStudios",
           "Conversational AI",
           "Dubbing Studio",
           "Voice Library",
           "Audio Native",
-          "ElevenStudios",
-          "API",
           "Voiceover Studio",
-          "ElevenReader",
+          "11.ai",
+          "Creative Platform",
+          "Agents Platform",
+          "Studio",
+          "API",
           "Mobile App",
-          "Eleven v3",
-          "Text to Speech API",
-          "Speech to Text API",
-          "Voice Changer API"
+          "Eleven v3"
         ],
         "ai_technologies": [
           "AI",
           "Machine Learning",
-          "Natural Language Processing",
           "Text-to-Speech",
           "Speech-to-Text",
           "Voice Changer",
@@ -2379,22 +2600,21 @@
           "Voice Cloning",
           "Voice Isolator",
           "AI Music Generator",
-          "Audio Editing",
           "Conversational AI",
+          "JavaScript",
           "Text to Speech",
           "Speech to Text",
           "Sound Effects",
-          "Music Generation",
+          "Music Generator",
           "Dubbing",
-          "GPT-5",
-          "Voicemail Detection"
+          "AI Music Generation"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
         "totalChanges": 10,
-        "highInterestChanges": 6,
-        "lastActivity": "2025-08-18T15:58:11.696Z"
+        "highInterestChanges": 7,
+        "lastActivity": "2025-08-27T16:31:43.088Z"
       }
     },
     {
@@ -2475,11 +2695,8 @@
           "FLUX API"
         ],
         "ai_technologies": [
-          "AI",
-          "Machine Learning",
-          "Deep Learning",
           "API",
-          "GitHub"
+          "Open Weights"
         ],
         "ai_ml_concepts": []
       },
@@ -2520,6 +2737,54 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1248,
+          "id": 1248,
+          "url": "docs",
+          "detectedAt": "2025-08-27T16:32:03.143Z",
+          "relativeTime": "31 min ago",
+          "interestLevel": 3,
+          "summary": "Addition of 'Manage request allowances' under 'Manage and track spending' in the 'How-tos' section",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1249,
+          "id": 1249,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:31:59.635Z",
+          "relativeTime": "31 min ago",
+          "interestLevel": 1,
+          "summary": "No significant changes were detected in the provided content.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1250,
+          "id": 1250,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:31:55.877Z",
+          "relativeTime": "31 min ago",
+          "interestLevel": 3,
+          "summary": "Navigation menu item 'Product' was changed to 'Platform'",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1251,
+          "id": 1251,
+          "url": "pricing",
+          "detectedAt": "2025-08-27T16:31:51.718Z",
+          "relativeTime": "31 min ago",
+          "interestLevel": 1,
+          "summary": "No significant changes were detected in the provided content. Both versions appear to be identical, with the same features, pricing, and descriptions.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1119,
           "id": 1119,
@@ -2591,115 +2856,41 @@
           "changeType": "modified",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 495,
-          "id": 495,
-          "url": "docs",
-          "detectedAt": "2025-08-01T20:39:58.043Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 1,
-          "summary": "No significant changes were detected in the provided content.",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 482,
-          "id": 482,
-          "url": "docs",
-          "detectedAt": "2025-08-01T18:38:57.523Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 6,
-          "summary": "Billing section updated to reflect changes in billing for organizations and enterprises",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 483,
-          "id": 483,
-          "url": "blog",
-          "detectedAt": "2025-08-01T18:38:51.413Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 1,
-          "summary": "No significant changes were detected in the provided content.",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 470,
-          "id": 470,
-          "url": "docs",
-          "detectedAt": "2025-07-30T14:14:55.328Z",
-          "relativeTime": "7/30/2025",
-          "interestLevel": 2,
-          "summary": "No significant changes were detected in the content structure or links between the two versions.",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
         "products": [
           "GitHub Copilot",
-          "ChatGPT",
-          "GitHub Desktop",
-          "Atom",
-          "Electron",
-          "GitHub Copilot Chat",
-          "GitHub Copilot Extensions",
           "GitHub Spark",
-          "Model Context Protocol (MCP)",
           "GitHub Models",
           "GitHub Advanced Security",
-          "Actions",
-          "Codespaces",
-          "Issues",
-          "Code Review",
-          "Discussions",
-          "Code Search",
           "Visual Studio Code",
           "Visual Studio",
           "JetBrains IDEs",
           "Neovim",
           "Azure Data Studio",
-          "Eclipse",
-          "GPT-4",
-          "GPT-4.1",
-          "GPT-5",
-          "GPT-5 mini",
-          "Claude Sonnet 3.5",
-          "Claude Sonnet 4",
-          "Gemini 2.0 Flash",
-          "Gemini 2.5 Pro",
-          "o3",
-          "o3-mini",
-          "o4-mini",
+          "GitHub CLI",
+          "Windows Terminal",
+          "GitHub Mobile",
+          "Bing",
+          "Copilot Chat",
+          "GitHub Copilot Extensions",
+          "ChatGPT",
+          "GitHub Desktop",
+          "Atom",
+          "Electron",
+          "MCP",
           "GitHub Codespaces",
           "GitHub Actions",
           "GitHub Packages",
           "GitHub Secret Protection",
-          "GitHub Code Security",
-          "Git Large File Storage"
+          "GitHub Code Security"
         ],
         "ai_technologies": [
           "Python",
           "JavaScript",
-          "Git",
-          "CI/CD",
-          "DevOps",
-          "DevSecOps",
-          "MCP",
-          "Playwright",
-          "AI",
-          "Machine Learning",
-          "Natural Language Processing",
-          "Java",
-          "C++",
-          "TensorFlow",
           "PyTorch",
+          "TensorFlow",
           "JAX",
           "AWS",
           "Kubernetes",
@@ -2707,15 +2898,23 @@
           "PostgreSQL",
           "Redis",
           "Pinecone",
-          "GitHub Actions",
-          "GitHub Packages"
+          "AI",
+          "Machine Learning",
+          "Git",
+          "CI/CD",
+          "DevOps",
+          "DevSecOps",
+          "ML",
+          "Cloud Computing",
+          "Automation",
+          "Security"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
         "totalChanges": 10,
         "highInterestChanges": 3,
-        "lastActivity": "2025-08-18T15:58:32.924Z"
+        "lastActivity": "2025-08-27T16:32:03.143Z"
       }
     },
     {
@@ -2755,6 +2954,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1245,
+          "id": 1245,
+          "url": "api",
+          "detectedAt": "2025-08-27T16:32:32.819Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 8,
+          "summary": "New Veo 3 model is now available in the Gemini API",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1246,
+          "id": 1246,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:32:20.099Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 8,
+          "summary": "New articles and updates were added to the Google Blog, including new features in the Gemini app, AI-powered live translation and language learning tools in Google Translate, and updates to Gemini Code Assist.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1247,
+          "id": 1247,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:32:09.635Z",
+          "relativeTime": "31 min ago",
+          "interestLevel": 6,
+          "summary": "Addition of a new model variant, Gemini 2.5 Flash Image",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1117,
           "id": 1117,
@@ -2838,76 +3073,35 @@
           "changeType": "modified",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 468,
-          "id": 468,
-          "url": "blog",
-          "detectedAt": "2025-07-30T14:15:22.285Z",
-          "relativeTime": "7/30/2025",
-          "interestLevel": 8,
-          "summary": "New articles and updates were added to the Google Blog, including 'Google Earth AI: Our state-of-the-art geospatial AI models', 'The inside story of building NotebookLM', and updates to Gemini Code Assist.",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 469,
-          "id": 469,
-          "url": "homepage",
-          "detectedAt": "2025-07-30T14:15:04.585Z",
-          "relativeTime": "7/30/2025",
-          "interestLevel": 2,
-          "summary": "No significant changes were detected in the content between the two versions.",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 449,
-          "id": 449,
-          "url": "blog",
-          "detectedAt": "2025-07-29T14:46:17.001Z",
-          "relativeTime": "7/29/2025",
-          "interestLevel": 8,
-          "summary": "New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inference?', 'Find out the latest Gemini updates with Gemini Drops', 'Turn your photos into videos in Gemini', 'Check out the first images of wildfires detected by FireSat', 'How we built one of the most ambitious datasets in brain activity research', 'Google Beam: Our AI-first 3D video communication platform', 'New in Gemini Code Assist: Agent Mode and IDE enhancements', 'Gemini CLI: your open-source AI agent', 'Gemini Code Assist adds Gemini 2.5, personalization and context management', 'Try on styles with AI, jump on great prices and more', 'Web Guide: An experimental AI-organized search results page'",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
         "products": [
           "Vertex AI",
-          "Google Cloud Storage",
-          "Google Cloud SQL",
+          "Google Cloud",
+          "Compute Engine",
+          "Cloud Storage",
+          "BigQuery",
+          "Cloud Run",
+          "Kubernetes Engine",
+          "Cloud SQL",
+          "Cloud IAM",
+          "Cloud CDN",
+          "Google Workspace",
+          "Google Cloud AI Platform",
+          "Google Cloud Data Fusion",
           "Google Cloud Dataflow",
           "Google Cloud Dataproc",
-          "Google Cloud BigQuery",
           "Google Cloud Pub/Sub",
-          "Google Cloud Functions",
-          "Google Cloud Run",
-          "Google Cloud Kubernetes Engine",
-          "Google Cloud App Engine",
-          "Google Cloud Compute Engine",
-          "Google Workspace",
-          "Google Workspace Essentials",
+          "Google Cloud Spanner",
+          "Google Cloud Firestore",
+          "Google Cloud Bigtable",
+          "Google Cloud Memorystore",
+          "Google Cloud Filestore",
+          "Google Cloud Local SSD",
+          "Google Cloud Parallelstore",
+          "Google Cloud NetApp Volumes",
           "Gemini",
-          "Looker",
-          "Apigee API Management",
-          "Cloud CDN",
-          "Cloud Load Balancing",
-          "Cloud NAT",
-          "Cloud VPN",
-          "Cloud Interconnect",
-          "Cloud DNS",
-          "Cloud IAM",
-          "Cloud Key Management",
-          "Cloud Security Command Center",
-          "Cloud Threat Intelligence",
-          "Cloud Data Loss Prevention",
-          "Cloud Identity and Access Management",
-          "Cloud Security Scanner",
           "Gemini API",
           "Gemini Nano",
           "Gemma",
@@ -2916,6 +3110,8 @@
           "Google AI Edge",
           "Imagen",
           "Veo",
+          "Android Studio",
+          "Chrome DevTools",
           "AI Mode",
           "NotebookLM",
           "Flow",
@@ -2928,21 +3124,12 @@
           "Project Mariner",
           "Whisk",
           "Lyria",
-          "Colab",
-          "Jules",
-          "Android Studio",
-          "Chrome DevTools",
-          "Firebase Studio",
           "Gemini CLI",
           "Gemini Code Assist",
-          "Google Cloud",
+          "Google Translate",
+          "Pixel",
           "FireSat",
           "Google Beam",
-          "Google Finance",
-          "Chromebooks",
-          "Google Play",
-          "Google Nest",
-          "Pixel",
           "AlphaFold",
           "AlphaGenome",
           "AlphaMissense",
@@ -2955,60 +3142,45 @@
           "GNoME",
           "Fusion",
           "AlphaQubit",
-          "SynthID",
-          "Gemini Diffusion"
+          "SynthID"
         ],
         "ai_technologies": [
           "Artificial Intelligence",
           "Machine Learning",
-          "Deep Learning",
-          "Natural Language Processing",
-          "Computer Vision",
           "Cloud Computing",
           "Containerization",
-          "Orchestration",
+          "Kubernetes",
           "Serverless Computing",
-          "Internet of Things",
-          "Blockchain",
-          "Big Data",
           "Data Analytics",
-          "Business Intelligence",
           "Data Science",
-          "DevOps",
-          "Security",
+          "Cybersecurity",
           "Networking",
           "Storage",
           "Databases",
           "API Management",
           "Identity and Access Management",
-          "Cloud Security",
+          "AI",
+          "ML",
+          "Deep Learning",
+          "Natural Language Processing",
           "Python",
           "Keras",
           "Colab",
           "Android",
           "Chrome",
-          "Firebase",
-          "Google Cloud",
-          "JetBrains",
-          "VS Code",
-          "AI",
-          "ML",
-          "inference",
-          "satellite constellation",
-          "video communication platform",
-          "cloud service",
-          "development tool",
-          "web browser",
-          "app store",
-          "smart home device",
-          "smartphone"
+          "Computer Vision",
+          "TensorFlow",
+          "PyTorch",
+          "JAX",
+          "Neural Networks",
+          "Transformers"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
         "totalChanges": 10,
         "highInterestChanges": 5,
-        "lastActivity": "2025-08-18T15:58:50.971Z"
+        "lastActivity": "2025-08-27T16:32:32.819Z"
       }
     },
     {
@@ -3036,6 +3208,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1242,
+          "id": 1242,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:32:48.887Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 5,
+          "summary": "Addition of a new navigation item 'Public Sector' under SOLUTIONS and removal of 'Healthcare' under SOLUTIONS. Addition of 'On-Demand Demos' under RESOURCES.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1243,
+          "id": 1243,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:32:44.531Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 5,
+          "summary": "Update in blog post titles and categories, addition of new blog posts, and minor changes in website layout",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1244,
+          "id": 1244,
+          "url": "product",
+          "detectedAt": "2025-08-27T16:32:38.550Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 5,
+          "summary": "Removal of the 'Healthcare' industry link from the SOLUTIONS section and replacement with 'Public Sector', updates in image URLs, and minor text changes",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1114,
           "id": 1114,
@@ -3114,21 +3322,20 @@
           "h2oGPTe",
           "H2O LLM Studio",
           "H2O Driverless AI",
-          "H2O Hydrogen Torch",
-          "H2O Danube3",
-          "H2OVL Mississippi",
-          "H2O Label Genie",
           "H2O Feature Store",
-          "H2O MLOps",
+          "H2O Document AI",
           "H2O Wave",
           "H2O AI Cloud",
           "H2O-3",
-          "H2O Document AI",
           "Sparkling Water",
-          "Label Genie",
+          "H2O Hydrogen Torch",
+          "H2O Danube3",
+          "H2OVL Mississippi",
           "H2O Danube",
-          "H2O VL Mississippi",
-          "H2O GenAI App Store"
+          "H2O GenAI App Store",
+          "H2O MLOps",
+          "H2O Eval Studio",
+          "H2O LLM DataStudio"
         ],
         "ai_technologies": [
           "Python",
@@ -3136,23 +3343,22 @@
           "TensorFlow",
           "Kubernetes",
           "Docker",
-          "PostgreSQL",
-          "Redis",
-          "Pinecone",
           "AutoML",
           "No-code deep learning",
           "R",
           "Spark",
-          "SOC2",
-          "HIPAA",
-          "HITECH"
+          "JAX",
+          "AWS",
+          "PostgreSQL",
+          "Redis",
+          "Pinecone"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 6,
+        "totalChanges": 9,
         "highInterestChanges": 6,
-        "lastActivity": "2025-08-18T15:59:14.420Z"
+        "lastActivity": "2025-08-27T16:32:48.887Z"
       }
     },
     {
@@ -3187,6 +3393,54 @@
       ],
       "recentChanges": [
         {
+          "change_id": 1238,
+          "id": 1238,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:33:07.116Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 9,
+          "summary": "The entire content of the webpage has changed from a security verification page to a product homepage for HeyGen, an AI video generator company.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1239,
+          "id": 1239,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:33:02.116Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 9,
+          "summary": "The company website has been completely overhauled, transitioning from a security verification page to a fully functional website with various sections, including products, features, industry, teams, use cases, resources, company, and a blog with multiple articles.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1240,
+          "id": 1240,
+          "url": "features",
+          "detectedAt": "2025-08-27T16:32:58.305Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 8,
+          "summary": "The content of the webpage has changed from a security verification page to a 'page not found' error page with HeyGen branding",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1241,
+          "id": 1241,
+          "url": "pricing",
+          "detectedAt": "2025-08-27T16:32:55.503Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 8,
+          "summary": "Introduction of pricing plans for HeyGen's video creation platform",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
           "change_id": 707,
           "id": 707,
           "url": "pricing",
@@ -3201,6 +3455,7 @@
       ],
       "intelligence": {
         "products": [
+          "HeyGen Video Agent",
           "AI Studio",
           "Video Avatars",
           "Avatar IV",
@@ -3212,23 +3467,22 @@
           "AI Avatar Generator",
           "AI Dubbing",
           "Text to Video",
-          "Image to Video",
-          "Audio to Video",
-          "Lip Sync AI",
-          "AI Podcast Generator",
-          "AI Tools"
+          "Image to Video"
         ],
         "ai_technologies": [
           "AI",
           "Machine Learning",
-          "Deep Learning"
+          "Deep Learning",
+          "Natural Language Processing",
+          "Computer Vision",
+          "Neural Networks"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 1,
-        "highInterestChanges": 1,
-        "lastActivity": "2025-08-04T00:15:51.588Z"
+        "totalChanges": 5,
+        "highInterestChanges": 5,
+        "lastActivity": "2025-08-27T16:33:07.116Z"
       }
     },
     {
@@ -3262,6 +3516,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1235,
+          "id": 1235,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:33:17.905Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 8,
+          "summary": "Model listings, dataset listings, and organization profiles have been updated with new numbers and information.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1236,
+          "id": 1236,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:33:15.151Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 8,
+          "summary": "New articles and community posts have been added, and some existing ones have been updated or removed.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1237,
+          "id": 1237,
+          "url": "docs",
+          "detectedAt": "2025-08-27T16:33:11.918Z",
+          "relativeTime": "30 min ago",
+          "interestLevel": 5,
+          "summary": "Addition of Trackio, a lightweight, local-first, and free experiment tracking Python library, under the Collaboration & Extras section",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1112,
           "id": 1112,
@@ -3345,136 +3635,83 @@
           "changeType": "new",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 607,
-          "id": 607,
-          "url": "blog",
-          "detectedAt": "2025-08-01T22:34:01.501Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 8,
-          "summary": "New blog posts and articles have been added to the Hugging Face blog, including topics such as AI shopping assistants, multimodal AI, GPU-powered image generators, and more.",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 608,
-          "id": 608,
-          "url": "docs",
-          "detectedAt": "2025-08-01T22:33:56.154Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "Initial documentation content creation",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 609,
-          "id": 609,
-          "url": "pricing",
-          "detectedAt": "2025-08-01T22:33:51.383Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "Initial pricing page content",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
         "products": [
-          "GPT-OSS",
-          "ChatML",
-          "Harmony",
-          "Gradio",
-          "Hugging Face Inference",
-          "JAX",
-          "Diffusers",
-          "PEFT",
-          "Trackio",
-          "hf",
-          "SmolFactory",
-          "GAIA",
-          "LeRobot",
-          "Isaac GR00T N1.5",
-          "RAG",
-          "KV Caching",
-          "Parquet",
-          "Timescope",
-          "Lora",
-          "Flux",
-          "Consilium",
-          "FilBench",
-          "TRL",
-          "MXFP4",
-          "GPT-4",
-          "GPT-3.5",
-          "GPT-OSS Models",
           "Transformers",
+          "Diffusers",
           "Safetensors",
           "Hub Python Library",
           "Tokenizers",
+          "TRL",
           "Transformers.js",
           "Smolagents",
+          "PEFT",
           "Datasets",
           "Text Generation Inference",
           "Accelerate",
-          "GLM-4.5V",
-          "Gemma-3-270m",
-          "GPT-oss-20b",
-          "Hunyuan-GameCraft-1.0",
-          "GPT-oss-120b",
+          "Grok-2",
+          "VibeVoice-1.5B",
+          "Qwen-Image-Edit",
+          "DeepSeek-V3.1",
+          "MiniCPM-V-4_5",
+          "ChatML",
+          "Harmony",
+          "GPT-OSS",
+          "Gradio",
+          "Hugging Face Inference",
+          "Trackio",
+          "hf",
+          "Parquet",
+          "CUDA",
+          "Flux",
+          "AlphaEvolve",
           "Hugging Face Hub",
-          "Hugging Face Transformers",
-          "Hugging Face Diffusers",
-          "Optimum",
-          "Bitsandbytes",
-          "Lighteval",
-          "AutoTrain",
-          "Chat UI",
-          "Leaderboards",
-          "Distilabel",
           "Inference Endpoints",
           "Spaces",
           "PRO Account",
-          "Dataset Viewer",
-          "ZeroGPU",
-          "Inference Providers"
+          "Team",
+          "Enterprise",
+          "Optimum",
+          "Bitsandbytes",
+          "Lighteval",
+          "LeRobot",
+          "AutoTrain",
+          "Chat UI",
+          "Leaderboards",
+          "Argilla",
+          "Distilabel"
         ],
         "ai_technologies": [
-          "Python",
-          "JAX",
           "PyTorch",
-          "Diffusers",
-          "PEFT",
-          "Gradio",
-          "Hugging Face Inference",
-          "KV Caching",
-          "Parquet",
-          "Timescope",
-          "Lora",
-          "Flux",
-          "MXFP4",
+          "Python",
           "JavaScript",
           "GPU",
-          "TPU",
-          "Mixed Precision",
-          "AWS",
-          "Azure",
+          "CUDA",
+          "TensorFlow",
+          "Keras",
+          "Transformers",
+          "RLHF",
+          "PPO",
+          "GAE",
+          "DPO",
+          "GRPO",
+          "DAPO",
+          "GSPO",
           "Machine Learning",
-          "Deep Learning",
           "Git",
           "SSH",
-          "VS Code"
+          "VS Code",
+          "AWS",
+          "DLCs"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
         "totalChanges": 10,
-        "highInterestChanges": 7,
-        "lastActivity": "2025-08-18T16:00:50.482Z"
+        "highInterestChanges": 6,
+        "lastActivity": "2025-08-27T16:33:17.905Z"
       }
     },
     {
@@ -3532,6 +3769,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1234,
+          "id": 1234,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:33:41.546Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 3,
+          "summary": "Removal of the 'Get in touch' and 'News' links from the main navigation, addition of double underscore in '_Emotional__Intelligence_', removal of 'at Pi Lab' from the CEO's letter",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1111,
           "id": 1111,
@@ -3591,16 +3840,15 @@
         ],
         "ai_technologies": [
           "AI",
-          "conversational intelligence",
           "LLM",
           "MLPerf"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 4,
+        "totalChanges": 5,
         "highInterestChanges": 4,
-        "lastActivity": "2025-08-18T16:01:04.238Z"
+        "lastActivity": "2025-08-27T16:33:41.546Z"
       }
     },
     {
@@ -3622,6 +3870,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1233,
+          "id": 1233,
+          "url": "news",
+          "detectedAt": "2025-08-27T16:33:47.692Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 8,
+          "summary": "New articles and partnerships were added, including Intel's collaboration with LG Innotek for an AI-powered smart factory and an investment agreement with SoftBank Group.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1109,
           "id": 1109,
@@ -3709,27 +3969,29 @@
       ],
       "intelligence": {
         "products": [
-          "Aurora Supercomputer",
           "Intel Core Ultra",
-          "AI PC",
           "Intel Tiber AI Cloud",
+          "Qwen3 LLMs",
           "Llama 4",
-          "Qwen3 LLMs"
+          "Intel Core",
+          "Intel Xeon",
+          "Intel Arc",
+          "Xeon 6"
         ],
         "ai_technologies": [
           "Artificial Intelligence",
-          "Speculative Decoding",
-          "Immersion Cooling",
           "Machine Learning",
           "Generative AI",
-          "Transformer"
+          "Language Models",
+          "Cloud Computing",
+          "Semiconductor Manufacturing"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 7,
-        "highInterestChanges": 5,
-        "lastActivity": "2025-08-18T16:01:22.830Z"
+        "totalChanges": 8,
+        "highInterestChanges": 6,
+        "lastActivity": "2025-08-27T16:33:47.692Z"
       }
     },
     {
@@ -3763,6 +4025,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1230,
+          "id": 1230,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:34:09.934Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 1,
+          "summary": "No significant changes were detected in the content of the LangChain blog between the two versions.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1231,
+          "id": 1231,
+          "url": "docs",
+          "detectedAt": "2025-08-27T16:34:06.231Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 3,
+          "summary": "Logo image URLs and minor text adjustments",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1232,
+          "id": 1232,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:34:00.669Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 2,
+          "summary": "The 'ajs_aid' parameter in the URLs for LangGraph and LangChain documentation changed from 'f92f2785-c719-475d-ac56-7adc8ecbca6e' to 'f98ba99e-8d18-4bb2-a977-668a669e56e1'.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1105,
           "id": 1105,
@@ -3846,66 +4144,31 @@
           "changeType": "modified",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 597,
-          "id": 597,
-          "url": "blog",
-          "detectedAt": "2025-08-01T22:35:21.545Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "Initial content creation",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 598,
-          "id": 598,
-          "url": "docs",
-          "detectedAt": "2025-08-01T22:35:15.467Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "Initial content creation",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 599,
-          "id": 599,
-          "url": "homepage",
-          "detectedAt": "2025-08-01T22:35:09.421Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 8,
-          "summary": "New homepage content with added sections and features",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
         "products": [
-          "LangGraph Platform",
-          "LangSmith",
-          "Open SWE",
-          "LangChain",
           "LangGraph",
+          "LangSmith",
+          "LangGraph Platform",
           "LangGraph Studio",
+          "LangChain",
+          "Open SWE",
           "OpenTelemetry"
         ],
         "ai_technologies": [
+          "Python",
+          "Pregel",
+          "Apache Beam",
+          "NetworkX",
           "LLM",
           "AI",
-          "Python",
+          "Agent Infrastructure",
           "JavaScript",
           "TypeScript",
           "LangGraph",
           "LangChain",
           "LangSmith",
-          "Pregel",
-          "Apache Beam",
-          "NetworkX",
           "OpenTelemetry",
           "Kubernetes",
           "GCP"
@@ -3914,8 +4177,8 @@
       },
       "stats": {
         "totalChanges": 10,
-        "highInterestChanges": 5,
-        "lastActivity": "2025-08-18T16:01:39.839Z"
+        "highInterestChanges": 2,
+        "lastActivity": "2025-08-27T16:34:09.934Z"
       }
     },
     {
@@ -3937,6 +4200,30 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1228,
+          "id": 1228,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:34:18.845Z",
+          "relativeTime": "28 min ago",
+          "interestLevel": 2,
+          "summary": "No significant changes were detected in the content structure or features between the two versions.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1229,
+          "id": 1229,
+          "url": "pricing",
+          "detectedAt": "2025-08-27T16:34:15.800Z",
+          "relativeTime": "29 min ago",
+          "interestLevel": 5,
+          "summary": "The main change is the addition of a note explaining the limitations of 'Unlimited relaxed generations' for image and video generation, specifically excluding Flow State, GPT-Image-1, Flux.1 Kontext, and Veo 3, and the potential throttling of concurrency and queuing based on demand.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1103,
           "id": 1103,
@@ -4019,6 +4306,18 @@
           "Universal Upscaler",
           "AI Art Generator",
           "AI Video Generator",
+          "Transparent PNG Generator",
+          "AI Marketing Tools",
+          "AI Graphic Design",
+          "AI Print on Demand",
+          "AI Photography",
+          "AI Interior Design",
+          "AI Architecture",
+          "GPT-Image-1",
+          "Flux.1 Kontext",
+          "Motion 1.0",
+          "Motion 2.0",
+          "Motion 2.0 Fast",
           "Leonardo Anime XL",
           "Leonardo Lightning XL",
           "Leonardo Kino XL",
@@ -4041,34 +4340,26 @@
           "Luna",
           "Paper art style",
           "Ilustration V2",
-          "Spirit Creatures",
-          "Transparent PNG Generator",
-          "AI Marketing Tools",
-          "AI Graphic Design",
-          "AI Print on Demand",
-          "AI Photography",
-          "AI Interior Design",
-          "AI Architecture"
+          "Spirit Creatures"
         ],
         "ai_technologies": [
           "AI",
           "Machine Learning",
           "Deep Learning",
           "Neural Networks",
+          "Transformers",
+          "GPU",
           "Image Generation",
           "Video Generation",
           "Text-to-Image",
-          "Diffusion-based",
-          "Transformers",
-          "GPU",
-          "Python"
+          "Diffusion-based"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 6,
+        "totalChanges": 8,
         "highInterestChanges": 5,
-        "lastActivity": "2025-08-18T16:01:47.373Z"
+        "lastActivity": "2025-08-27T16:34:18.845Z"
       }
     },
     {
@@ -4096,6 +4387,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1227,
+          "id": 1227,
+          "url": "product",
+          "detectedAt": "2025-08-27T16:34:27.497Z",
+          "relativeTime": "28 min ago",
+          "interestLevel": 4,
+          "summary": "Minor updates to image URLs, addition of new image references, and slight rewording of certain sections",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1101,
           "id": 1101,
@@ -4186,7 +4489,6 @@
           "Dream Machine",
           "Photon",
           "Ray2",
-          "Luma",
           "Luma API",
           "Genie",
           "App",
@@ -4200,19 +4502,20 @@
           "Machine Learning",
           "Image Model",
           "Video Model",
-          "Deep Learning",
-          "Neural Networks",
-          "VAE",
-          "DDIM",
+          "Video Generation",
+          "Image Generation",
+          "Multimodal Intelligence",
           "JavaScript",
-          "Linux"
+          "Linux",
+          "Twitter API",
+          "Google Analytics"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 7,
+        "totalChanges": 8,
         "highInterestChanges": 3,
-        "lastActivity": "2025-08-18T16:02:17.723Z"
+        "lastActivity": "2025-08-27T16:34:27.497Z"
       }
     },
     {
@@ -4246,6 +4549,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1226,
+          "id": 1226,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:35:04.624Z",
+          "relativeTime": "28 min ago",
+          "interestLevel": 6,
+          "summary": "New blog post added: 'How Llama and Oracle are helping Instituto PROA kickstart careers for students in Brazil'",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1097,
           "id": 1097,
@@ -4346,7 +4661,6 @@
       "intelligence": {
         "products": [
           "Llama",
-          "DINOv3",
           "Llama 4",
           "Llama 4 Scout",
           "Llama 4 Maverick",
@@ -4356,32 +4670,33 @@
           "Gemini 2.0 Flash",
           "DeepSeek v3.1",
           "GPT-4o",
+          "DINOv3",
+          "Uma",
           "Meta AI",
           "V-JEPA 2",
           "AI Studio",
-          "ChatGPT"
+          "Meta AI app"
         ],
         "ai_technologies": [
-          "self-supervised learning",
-          "computer vision",
-          "natural language processing",
           "native multimodality",
           "early fusion",
           "mixture-of-experts models",
           "advanced reasoning",
           "industry-leading context windows",
-          "Artificial Intelligence",
-          "Machine Learning",
-          "Deep Learning",
-          "Self-Supervised Learning",
-          "Mixture-of-Experts Architecture"
+          "Self-supervised learning",
+          "Natural Language Processing",
+          "Computer Vision",
+          "Python",
+          "self-supervised learning",
+          "mixture-of-experts architecture",
+          "multimodal capabilities"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 8,
+        "totalChanges": 9,
         "highInterestChanges": 7,
-        "lastActivity": "2025-08-18T16:02:48.241Z"
+        "lastActivity": "2025-08-27T16:35:04.624Z"
       }
     },
     {
@@ -4473,13 +4788,12 @@
       "intelligence": {
         "products": [
           "Midjourney",
-          "Midjourney Basic Plan",
-          "Midjourney Standard Plan",
-          "Midjourney Pro Plan",
-          "Midjourney Mega Plan",
           "Relax Mode",
           "Stealth Mode",
-          "Discord"
+          "Basic Plan",
+          "Standard Plan",
+          "Pro Plan",
+          "Mega Plan"
         ],
         "ai_technologies": [
           "GPU",
@@ -4652,8 +4966,7 @@
           "Pixtral",
           "Mistral NeMo",
           "Codestral Mamba",
-          "Mathstral 7b",
-          "Mistral Medium 3"
+          "Mathstral 7b"
         ],
         "ai_technologies": [
           "fine-tuning",
@@ -4661,30 +4974,18 @@
           "satellite imagery",
           "speech understanding",
           "agentic coding",
-          "reasoning",
-          "Text generation",
-          "Vision",
-          "OCR",
-          "Code generation",
-          "Embeddings",
-          "Function calling",
-          "Citations",
-          "Structured Outputs",
-          "Fine-tuning",
-          "Guardrailing",
-          "AI",
-          "LLM",
+          "Artificial Intelligence",
           "Machine Learning",
-          "Deep Learning",
           "Natural Language Processing",
-          "Computer Vision",
+          "Deep Learning",
+          "LLMs",
+          "OCR",
+          "APIs",
+          "AI",
           "API",
           "Python",
-          "Inference engine",
-          "Caching",
-          "Routing",
-          "Security controls",
-          "Automated deployment"
+          "GPU",
+          "Cloud"
         ],
         "ai_ml_concepts": []
       },
@@ -4766,8 +5067,8 @@
           "Murf API",
           "Murf Voice Changer API",
           "Murf TTS Streaming API",
-          "Adobe Audition",
           "Adobe Captivate",
+          "Adobe Audition",
           "PowerPoint",
           "Canva"
         ],
@@ -4778,8 +5079,8 @@
           "Machine Learning",
           "Artificial Intelligence",
           "Natural Language Processing",
-          "Deep Learning",
-          "Neural Networks"
+          "Voice Changer",
+          "TTS Streaming"
         ],
         "ai_ml_concepts": []
       },
@@ -4802,6 +5103,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1225,
+          "id": 1225,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:37:34.219Z",
+          "relativeTime": "25 min ago",
+          "interestLevel": 10,
+          "summary": "The entire content of the webpage changed from Neeva's homepage to AliExpress's homepage",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1094,
           "id": 1094,
@@ -4857,9 +5170,9 @@
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 4,
-        "highInterestChanges": 2,
-        "lastActivity": "2025-08-18T16:05:21.839Z"
+        "totalChanges": 5,
+        "highInterestChanges": 3,
+        "lastActivity": "2025-08-27T16:37:34.219Z"
       }
     },
     {
@@ -4893,6 +5206,54 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1221,
+          "id": 1221,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:37:54.993Z",
+          "relativeTime": "25 min ago",
+          "interestLevel": 8,
+          "summary": "New articles and updates to the NVIDIA blog",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1222,
+          "id": 1222,
+          "url": "docs",
+          "detectedAt": "2025-08-27T16:37:51.245Z",
+          "relativeTime": "25 min ago",
+          "interestLevel": 8,
+          "summary": "New blog posts, updates to training and on-demand video sections, introduction of NVIDIA Jetson Thor, and updates to various software releases",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1223,
+          "id": 1223,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:37:47.428Z",
+          "relativeTime": "25 min ago",
+          "interestLevel": 2,
+          "summary": "The tracking pixel URL was updated from \"00e46635df886f5b64e71756312656\" to \"b09195edf5309c45a8681755533124\" in the AFTER CONTENT.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1224,
+          "id": 1224,
+          "url": "product",
+          "detectedAt": "2025-08-27T16:37:40.552Z",
+          "relativeTime": "25 min ago",
+          "interestLevel": 2,
+          "summary": "The tracking pixel URL was updated from \"b09195edf5309c45a8681755533124\" to \"00e46635df886f5b64e71756312656\" in the NVIDIA Data Center Products webpage.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1090,
           "id": 1090,
@@ -4964,60 +5325,12 @@
           "changeType": "modified",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 976,
-          "id": 976,
-          "url": "homepage",
-          "detectedAt": "2025-08-05T23:04:37.090Z",
-          "relativeTime": "8/5/2025",
-          "interestLevel": 2,
-          "summary": "The pixel.gif URL parameter 'cm' changed from 'fa3350abc6ddca0f23c31754266738' to '92600d47c6ee076a99821754435066'",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 977,
-          "id": 977,
-          "url": "product",
-          "detectedAt": "2025-08-05T23:04:29.128Z",
-          "relativeTime": "8/5/2025",
-          "interestLevel": 2,
-          "summary": "The pixel.gif URL parameter 'cm' changed from '50db334797dde90aeae91754087911' to '92600d47c6ee076a99821754435066'",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 697,
-          "id": 697,
-          "url": "docs",
-          "detectedAt": "2025-08-04T00:19:14.830Z",
-          "relativeTime": "8/4/2025",
-          "interestLevel": 6,
-          "summary": "New tutorial added: '7 Drop-In Replacements to Instantly Speed Up Your Python Data Science Workflows', removal of 'Using CI/CD to Automate Network Configuration and Deployment' tutorial, and updates to 'Latest Releases' section",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 698,
-          "id": 698,
-          "url": "homepage",
-          "detectedAt": "2025-08-04T00:19:10.136Z",
-          "relativeTime": "8/4/2025",
-          "interestLevel": 2,
-          "summary": "The pixel.gif URL parameter 'cm' changed from '50db334797dde90aeae91754087911' to 'fa3350abc6ddca0f23c31754266738'",
-          "changeType": "modified",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
         "products": [
-          "GeForce NOW",
-          "Warhammer 40,000: Dawn of War – Definitive Edition",
+          "DRIVE AGX Thor",
+          "Jetson Thor",
           "BioNeMo",
           "DGX Cloud",
           "NVIDIA APIs",
@@ -5055,23 +5368,12 @@
           "AI Inference - Dynamo",
           "AI Inference Microservices - NIM",
           "AI Microservices - CUDA-X",
-          "Automotive - DRIVE",
           "Avatar - Tokkio",
-          "Cloud-AI Video Streaming - Maxine",
           "Cybersecurity - Morpheus",
-          "Data Science - Apache Spark",
           "Data Science - RAPIDS",
           "Decision Optimization - cuOpt",
           "Generative AI - NeMo",
-          "Healthcare - Clara",
-          "Industrial AI - Omniverse",
-          "Intelligent Video Analytics - Metropolis",
-          "NVIDIA Mission Control",
-          "NVIDIA AI Enterprise Platform",
           "Physical AI - Cosmos",
-          "NVIDIA Run:ai",
-          "Robotics - Isaac",
-          "Telecommunications - Aerial",
           "Speech AI - Riva",
           "CUDA Toolkit",
           "CUDA-X Libraries",
@@ -5082,35 +5384,69 @@
           "RTX AI Apps",
           "NVIDIA DGX Cloud",
           "NGC Catalog",
+          "NVIDIA Drive",
+          "NVIDIA Drive Hyperion",
+          "NVIDIA DriveOS",
+          "NVIDIA Drive Sim",
+          "CUDA-Q",
+          "CUDA-QX",
+          "cuQuantum",
+          "cuPQC",
           "TensorRT",
           "Triton Inference Server",
           "RAPIDS",
           "Sionna",
           "PhysicsNeMo",
           "HPC SDK",
-          "Nsight Systems"
+          "Nsight Systems",
+          "GeForce Laptops",
+          "Studio Laptops",
+          "NVIDIA RTX PRO Laptops",
+          "DPUs and SuperNICs",
+          "Ethernet",
+          "InfiniBand",
+          "Networking Software",
+          "Network Acceleration",
+          "DGX Spark",
+          "DGX Station",
+          "NVIDIA RTX PRO AI Workstations",
+          "NVIDIA RTX PRO Desktops",
+          "Automotive - DRIVE",
+          "Cloud-AI Video Streaming - Maxine",
+          "Data Science - Apache Spark",
+          "Healthcare - Clara",
+          "Industrial AI - Omniverse",
+          "Intelligent Video Analytics - Metropolis",
+          "NVIDIA Mission Control",
+          "NVIDIA AI Enterprise Platform",
+          "NVIDIA Run:ai",
+          "Robotics - Isaac",
+          "Telecommunications - Aerial",
+          "AI Workbench",
+          "API Catalog",
+          "Data Center Management",
+          "GPU Monitoring",
+          "Nsight",
+          "NVIDIA App for Laptops",
+          "Desktop Manager",
+          "RTX Accelerated Creative Apps",
+          "Video Conferencing"
         ],
         "ai_technologies": [
           "Artificial Intelligence",
-          "Deep Learning",
-          "Cloud Gaming",
+          "Generative AI",
+          "Inference",
+          "Networking",
           "AI",
           "Machine Learning",
-          "Cloud Computing",
-          "GPU Computing",
-          "CUDA",
-          "Python",
-          "Apache Spark",
-          "RAPIDS",
-          "cuOpt",
-          "NeMo",
-          "Clara",
-          "Omniverse",
-          "Metropolis",
-          "Morpheus",
+          "Deep Learning",
           "Neural Networks",
           "Natural Language Processing",
           "Computer Vision",
+          "Python",
+          "CUDA",
+          "GPU Computing",
+          "Cloud Computing",
           "Edge Computing",
           "Internet of Things",
           "Autonomous Vehicles",
@@ -5118,16 +5454,25 @@
           "Healthcare",
           "Finance",
           "Gaming",
-          "Simulation",
           "High-Performance Computing",
-          "Quantum Computing"
+          "Quantum Computing",
+          "TensorFlow",
+          "PyTorch",
+          "Kubernetes",
+          "Docker",
+          "Data Science",
+          "5G",
+          "Artificial Intelligence Computing",
+          "HPC and AI",
+          "Scientific Visualization",
+          "Simulation and Modeling"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
         "totalChanges": 10,
-        "highInterestChanges": 4,
-        "lastActivity": "2025-08-18T16:05:45.873Z"
+        "highInterestChanges": 6,
+        "lastActivity": "2025-08-27T16:37:54.993Z"
       }
     },
     {
@@ -5208,28 +5553,35 @@
         "products": [
           "ChatGPT",
           "GPT-4",
-          "GPT-4.1",
-          "GPT-4.1 mini",
-          "GPT-4.5",
           "GPT-4o",
           "GPT-4o mini",
+          "Sora",
+          "OpenAI API",
           "OpenAI o3",
           "OpenAI o4-mini",
-          "OpenAI o4-mini-high",
-          "Sora",
           "Codex",
-          "OpenAI API",
+          "GPT-4.5",
           "o3",
-          "o4-mini"
+          "o4-mini",
+          "GPT-4.1",
+          "GPT-4.1 mini",
+          "OpenAI o3-pro",
+          "OpenAI o4-mini-high"
         ],
         "ai_technologies": [
           "Python",
           "PyTorch",
           "TensorFlow",
           "JavaScript",
-          "C++",
+          "SQL",
           "Image Generation API",
-          "SQL"
+          "JAX",
+          "AWS",
+          "Kubernetes",
+          "Docker",
+          "PostgreSQL",
+          "Redis",
+          "Pinecone"
         ],
         "ai_ml_concepts": []
       },
@@ -5264,6 +5616,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1220,
+          "id": 1220,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:38:33.024Z",
+          "relativeTime": "24 min ago",
+          "interestLevel": 2,
+          "summary": "No significant changes were detected between the two versions of the content.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1088,
           "id": 1088,
@@ -5332,35 +5696,32 @@
           "Gotham",
           "Apollo",
           "TITAN",
-          "Ontology SDK",
           "Vantage",
           "Maven Smart System",
           "Warp Speed"
         ],
         "ai_technologies": [
-          "Artificial Intelligence",
-          "Machine Learning",
+          "AI",
+          "ML",
           "Data Integration",
           "Digital Twin",
           "Dynamic Scheduling",
           "Edge AI",
-          "Marketplace",
           "MetaConstellation",
           "Pipeline Builder",
           "Process Mining",
           "Real-Time Alerting",
           "Streaming",
           "Titanium",
-          "Warp Speed",
-          "AI",
-          "ML"
+          "Marketplace",
+          "Warp Speed"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 5,
+        "totalChanges": 6,
         "highInterestChanges": 3,
-        "lastActivity": "2025-08-18T16:06:30.983Z"
+        "lastActivity": "2025-08-27T16:38:33.024Z"
       }
     },
     {
@@ -5389,6 +5750,18 @@
       ],
       "recentChanges": [
         {
+          "change_id": 1219,
+          "id": 1219,
+          "url": "product",
+          "detectedAt": "2025-08-27T16:38:42.535Z",
+          "relativeTime": "24 min ago",
+          "interestLevel": 8,
+          "summary": "Access to Comet, the agentic browser, is now included in Perplexity Pro",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
           "change_id": 1087,
           "id": 1087,
           "url": "product",
@@ -5404,10 +5777,11 @@
       "intelligence": {
         "products": [
           "Perplexity Pro",
-          "Perplexity Max",
+          "Comet",
+          "Perplexity Labs",
+          "Perplexity Research",
           "GPT-5",
           "Claude Sonnet 4",
-          "Comet",
           "OpenAI o3-pro",
           "Anthropic Claude Opus 4.1"
         ],
@@ -5415,14 +5789,15 @@
           "security",
           "connection verification",
           "performance optimization",
-          "AI"
+          "AI",
+          "agentic browser"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 1,
-        "highInterestChanges": 1,
-        "lastActivity": "2025-08-18T16:06:41.574Z"
+        "totalChanges": 2,
+        "highInterestChanges": 2,
+        "lastActivity": "2025-08-27T16:38:42.535Z"
       }
     },
     {
@@ -5486,6 +5861,54 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1215,
+          "id": 1215,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:39:19.048Z",
+          "relativeTime": "24 min ago",
+          "interestLevel": 4,
+          "summary": "Minor tweaks in the content, including the addition of a new testimonial and slight rewording of certain sections",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1216,
+          "id": 1216,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:39:13.405Z",
+          "relativeTime": "24 min ago",
+          "interestLevel": 8,
+          "summary": "New blog posts were added, and some existing ones were removed or updated. The 'Academy' resource was added to the website.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1217,
+          "id": 1217,
+          "url": "features",
+          "detectedAt": "2025-08-27T16:39:08.520Z",
+          "relativeTime": "24 min ago",
+          "interestLevel": 4,
+          "summary": "Addition of 'Academy' resource and minor adjustments in the layout and content of the features page",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1218,
+          "id": 1218,
+          "url": "pricing",
+          "detectedAt": "2025-08-27T16:39:03.127Z",
+          "relativeTime": "24 min ago",
+          "interestLevel": 3,
+          "summary": "Addition of 'Academy' resource under the 'RESOURCES' section",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1086,
           "id": 1086,
@@ -5557,59 +5980,51 @@
           "changeType": "new",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 573,
-          "id": 573,
-          "url": "pricing",
-          "detectedAt": "2025-08-01T22:40:17.920Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 8,
-          "summary": "Initial content creation for Pieces pricing page",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
         "products": [
           "Pieces",
           "Long-Term Memory",
-          "Copilot",
           "GitHub Copilot",
           "Claude",
           "Cursor",
           "Goose",
-          "GPT-OSS",
-          "Gemma 3n",
-          "ChatGPT",
           "Pieces Copilot",
           "Pieces Drive",
           "Claude 4 Sonnet & Opus",
-          "Gemini 2.5"
+          "Gemini 2.5",
+          "ChatGPT",
+          "GPT-OSS",
+          "Gemma 3n",
+          "Codeium",
+          "Copilot",
+          "Windsurf",
+          "ProxyAI",
+          "Augment"
         ],
         "ai_technologies": [
           "Long-Term Memory",
-          "AI",
-          "Machine Learning",
-          "Natural Language Processing",
-          "Cloud Computing",
-          "Local Storage",
-          "Python",
-          "Local-first AI",
-          "Large Language Models",
-          "Small Language Models",
           "LLM",
+          "AI",
+          "Memory",
+          "Cloud",
+          "Local",
+          "End-to-end control",
+          "On-device",
           "On-device AI",
           "Context awareness",
-          "Long-term memory"
+          "Long-term memory",
+          "Python",
+          "Local-first AI",
+          "Parallel computing"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 7,
+        "totalChanges": 10,
         "highInterestChanges": 6,
-        "lastActivity": "2025-08-18T16:07:50.851Z"
+        "lastActivity": "2025-08-27T16:39:19.048Z"
       }
     },
     {
@@ -5712,6 +6127,10 @@
       ],
       "intelligence": {
         "products": [
+          "Pika",
+          "Pika API",
+          "Pikapocalypse",
+          "Pikaffects",
           "Pika 1.0",
           "Pika 1.5",
           "Pika 2.1",
@@ -5722,20 +6141,16 @@
           "Pikaswaps",
           "Pikascenes",
           "Pikatwists",
-          "Pikaffects",
-          "Selfie With Your Younger Self",
-          "Pikapocalypse",
-          "Pika",
-          "Pika 1.0 model"
+          "Selfie With Your Younger Self"
         ],
         "ai_technologies": [
-          "video generation",
-          "image-to-video",
-          "text-to-video",
-          "email",
           "video creation",
           "AI",
-          "machine learning"
+          "machine learning",
+          "email",
+          "video generation",
+          "image-to-video",
+          "text-to-video"
         ],
         "ai_ml_concepts": []
       },
@@ -5815,13 +6230,13 @@
       ],
       "intelligence": {
         "products": [
-          "Generative AI for the Curious Businessperson",
-          "IlluminAIte"
+          "IlluminAIte",
+          "Generative AI for the Curious Businessperson"
         ],
         "ai_technologies": [
-          "Artificial Intelligence",
-          "Generative AI",
-          "Agentic Workflows"
+          "AI",
+          "WordPress",
+          "Cookies"
         ],
         "ai_ml_concepts": []
       },
@@ -5856,6 +6271,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1214,
+          "id": 1214,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:39:50.160Z",
+          "relativeTime": "23 min ago",
+          "interestLevel": 8,
+          "summary": "Multiple changes including updates to model runs, new model additions, and changes to the PlaygroundBeta link",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1079,
           "id": 1079,
@@ -5963,46 +6390,59 @@
           "changeType": "new",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 564,
-          "id": 564,
-          "url": "pricing",
-          "detectedAt": "2025-08-01T22:41:20.456Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "Initial pricing page content",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
         "products": [
-          "Replicate API",
+          "Replicate",
           "Cog",
-          "Playground",
           "Ideogram V2A",
           "Ideogram V2A Turbo",
-          "Minimax Image 01",
-          "Bytedance Seedream 3",
-          "Luma Photon",
-          "Luma Photon Flash",
-          "Pruna AI Hidream L1 Full",
-          "Google Imagen 4 Fast",
-          "OpenAI GPT 5",
-          "Runway ML Gen4 Image Turbo",
-          "Wan Video Wan 2.2 T2V Fast",
-          "Bytedance Dreamina 3.1",
+          "Image-01",
+          "Seedream-3",
+          "Photon",
+          "Photon Flash",
+          "Hidream-L1-Full",
+          "Imagen-4-Fast",
+          "GPT-5",
+          "Nano Banana",
+          "Qwen Image Lora Trainer",
+          "Qwen Image Edit",
+          "Gen4 Aleph",
+          "Qwen Image",
+          "Wan 2.2 T2V Fast",
           "Ideogram Character",
-          "Runway ML Gen4 Aleph",
-          "OpenAI GPT OSS 120B",
-          "Qwen Qwen Image",
-          "Minimax Hailuo 02 Fast",
-          "Bytedance Omni Human",
-          "Black Forest Labs Flux Krea Dev",
-          "Pruna AI Wan 2.2 Image",
-          "Replicate",
+          "Hailuo 02 Fast",
+          "Flux Krea Dev",
+          "Wan 2.2 Image",
+          "ChatGPT",
+          "GPT-4",
+          "GPT-4.1",
+          "GPT-4o",
+          "Stable Diffusion",
+          "Stable Diffusion 3",
+          "Stable Diffusion 3.5",
+          "Stable Diffusion XL",
+          "FLUX",
+          "FLUX.1",
+          "Llama 2",
+          "Llama 3",
+          "Llama 3.1",
+          "Mistral 7B",
+          "Alpaca",
+          "DreamBooth",
+          "LoRA",
+          "Wan2.1",
+          "Veo 3",
+          "Ideogram",
+          "MusicGen",
+          "MusicGen-Chord",
+          "Yi",
+          "Claude",
+          "Cursor",
+          "VS Code",
+          "H100",
+          "L40S",
           "Claude-3.7-Sonnet",
           "Flux-1.1-Pro",
           "Flux-Dev",
@@ -6012,42 +6452,19 @@
           "Ideogram-V3-Quality",
           "Recraft-V3",
           "Wan-2.1-I2V-480p",
-          "Wan-2.1-I2V-720p",
-          "ChatGPT",
-          "GPT-4",
-          "GPT-4.1",
-          "GPT-4o",
-          "Stable Diffusion",
-          "Stable Diffusion 3",
-          "Stable Diffusion 3.5",
-          "Stable Diffusion XL",
-          "Llama 2",
-          "Llama 3",
-          "Llama 3.1",
-          "Mistral 7B",
-          "Alpaca",
-          "Yi",
-          "Veo 3",
-          "Wan2.1",
-          "FLUX",
-          "FLUX.1",
-          "Ideogram",
-          "MusicGen",
-          "MusicGen-Chord"
+          "Wan-2.1-I2V-720p"
         ],
         "ai_technologies": [
+          "Python",
+          "Node",
+          "HTTP",
           "API",
-          "Machine Learning",
           "GPU",
           "CUDA",
-          "Python",
-          "Next.js",
-          "Vercel",
-          "Deep Learning",
-          "Nvidia GPU",
-          "CPU",
-          "GPU RAM",
-          "RAM",
+          "Nvidia T4",
+          "Nvidia L40S",
+          "Nvidia A100",
+          "JavaScript",
           "PyTorch",
           "TensorFlow",
           "JAX",
@@ -6056,14 +6473,21 @@
           "Docker",
           "PostgreSQL",
           "Redis",
-          "Pinecone"
+          "Pinecone",
+          "MPS",
+          "Machine Learning",
+          "Deep Learning",
+          "Nvidia A100 GPU",
+          "Nvidia H100 GPU",
+          "Nvidia L40S GPU",
+          "Nvidia T4 GPU"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
         "totalChanges": 10,
         "highInterestChanges": 4,
-        "lastActivity": "2025-08-18T16:08:42.855Z"
+        "lastActivity": "2025-08-27T16:39:50.160Z"
       }
     },
     {
@@ -6097,6 +6521,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1211,
+          "id": 1211,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:40:08.997Z",
+          "relativeTime": "23 min ago",
+          "interestLevel": 7,
+          "summary": "New blog post added: 'Introducing the Most Comprehensive Design Support for AI Apps'",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1212,
+          "id": 1212,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:40:04.274Z",
+          "relativeTime": "23 min ago",
+          "interestLevel": 3,
+          "summary": "The prompt in the 'Turn your ideas into apps' section has changed from 'Make me a game for families with young children that helps manage resources and build communities with sustainable practices' to 'Make me a business tool for account managers that helps manage client relationships and follow-ups'. Additionally, a limited time offer to save $60 on the annual plan with a promo code has been added.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1213,
+          "id": 1213,
+          "url": "product",
+          "detectedAt": "2025-08-27T16:39:59.810Z",
+          "relativeTime": "23 min ago",
+          "interestLevel": 4,
+          "summary": "Added a limited time offer promo code (LD25A) for $60 off the annual plan",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1076,
           "id": 1076,
@@ -6180,30 +6640,6 @@
           "changeType": "new",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 560,
-          "id": 560,
-          "url": "homepage",
-          "detectedAt": "2025-08-01T22:42:01.992Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "New content added to the Replit homepage, including features, solutions, customer testimonials, and security information",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 561,
-          "id": 561,
-          "url": "product",
-          "detectedAt": "2025-08-01T22:41:49.664Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "Introduction of Replit AI, a new feature that allows users to turn natural language into apps and websites",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
@@ -6215,11 +6651,11 @@
           "Security",
           "Integrations",
           "Mobile",
+          "Replit Databases",
           "Replit Import",
           "Replit Auth",
-          "Claude 3.7 Sonnet",
+          "Claude 3.7",
           "Figma",
-          "Element Editor",
           "ChatGPT",
           "Replit Design",
           "Replit Database",
@@ -6230,19 +6666,18 @@
         ],
         "ai_technologies": [
           "AI",
-          "Machine Learning",
           "Natural Language Processing",
-          "Vibe Coding",
-          "Dynamic Intelligence",
-          "No-code",
-          "JavaScript"
+          "Machine Learning",
+          "Python",
+          "JavaScript",
+          "GitHub"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 9,
-        "highInterestChanges": 6,
-        "lastActivity": "2025-08-18T16:09:03.630Z"
+        "totalChanges": 10,
+        "highInterestChanges": 5,
+        "lastActivity": "2025-08-27T16:40:08.997Z"
       }
     },
     {
@@ -6345,49 +6780,38 @@
       ],
       "intelligence": {
         "products": [
-          "Resemble AI Voice Generator",
           "Chatterbox",
+          "Resemblyzer",
           "DETECT-2B",
           "PerTH Watermarker",
-          "Resemblyzer",
-          "Rapid Voice Cloning 2.0",
-          "Voice Design",
-          "AI Watermarker",
-          "Deepfake Detector",
-          "Audio Intelligence",
-          "Chatterbox Lite",
-          "Chatterbox Pro",
-          "AI Voice Marketplace",
-          "Conversational AI Assistants",
-          "Digital Characters",
-          "Resemble Detect",
-          "Resemble Fill",
-          "Smart Assistants",
-          "Speech Localization",
+          "Resemble AI Voice Generator",
+          "Voice Cloning",
+          "Text to Speech Converter",
           "Speech to Speech",
-          "Text Generation",
-          "AI Voice Cloning",
-          "Speech Enhancement",
-          "Free Deepfake Detector",
+          "Voice Design",
+          "Multilingual",
+          "Audio Editing",
           "Detect",
-          "Simulations"
+          "Deepfake Detection",
+          "AI Watermarker",
+          "Identity",
+          "Audio Intelligence",
+          "Deepfake Detection for Meetings",
+          "Security Awareness Training",
+          "Chatterbox Lite",
+          "Chatterbox Pro"
         ],
         "ai_technologies": [
           "Generative AI",
           "Deep Learning",
-          "Neural Networks",
-          "Transformers",
           "Text-to-Speech",
           "Speech-to-Speech",
-          "Voice Cloning",
-          "Deepfake Detection",
-          "Watermarking",
-          "Audio Analysis",
-          "AI",
+          "Neural Networks",
           "Natural Language Processing",
-          "Speech Recognition",
-          "Deepfakes",
-          "Python"
+          "Text to Speech",
+          "Speech to Speech",
+          "Voice Cloning",
+          "Deepfake Detection"
         ],
         "ai_ml_concepts": []
       },
@@ -6422,6 +6846,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1208,
+          "id": 1208,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:40:27.696Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 5,
+          "summary": "The 'Get Started' button URL changed from 'https://app.runwayml.com/' to 'https://app.runwayml.com/signup', and a new product 'Game Worlds' was added under the 'Product' section.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1209,
+          "id": 1209,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:40:25.458Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 4,
+          "summary": "The 'Get Started' button URL changed from 'https://app.runwayml.com/' to 'https://app.runwayml.com/signup', and the 'Act-Two' link in the product section now points to '/research/introducing-act-one'. Additionally, 'Game Worlds' was added to the product section.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1210,
+          "id": 1210,
+          "url": "pricing",
+          "detectedAt": "2025-08-27T16:40:22.723Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 3,
+          "summary": "Addition of 'Game Worlds' to the product section and change in 'Get Started' button link from https://app.runwayml.com/ to https://app.runwayml.com/signup",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 962,
           "id": 962,
@@ -6498,43 +6958,36 @@
       "intelligence": {
         "products": [
           "Runway Aleph",
-          "Gen-4 Image API",
-          "Runway API for Gen-3 Alpha Turbo",
+          "Gen-4",
+          "Game Worlds",
           "Act-Two",
           "General World Models",
           "Runway Gen-4",
           "Aleph",
-          "Runway API",
-          "Runway Studios",
-          "AI Film Festival",
-          "Gen:48",
-          "Watch",
-          "Academy",
-          "Telescope Magazine",
-          "Creative Partners Program",
-          "The Hundred Film Fund",
           "Gen-4 Turbo",
-          "Gen-3 Alpha Turbo"
+          "Gen-3 Alpha Turbo",
+          "Gen-3 Alpha",
+          "Runway API",
+          "Gen-4 Image API"
         ],
         "ai_technologies": [
-          "Machine Learning",
           "AI",
-          "Deep Learning",
-          "API",
-          "Cloud Infrastructure",
           "Multimodal Simulators",
-          "General-purpose Multimodal Simulators",
-          "AI Tools",
+          "Narrative Capabilities",
+          "Machine Learning",
           "Video Editing",
           "Image to Video",
-          "Performance Capture"
+          "Performance Capture",
+          "API",
+          "Image API",
+          "AWS"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 6,
+        "totalChanges": 9,
         "highInterestChanges": 3,
-        "lastActivity": "2025-08-05T23:07:48.007Z"
+        "lastActivity": "2025-08-27T16:40:27.696Z"
       }
     },
     {
@@ -6562,6 +7015,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1205,
+          "id": 1205,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:41:03.449Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 8,
+          "summary": "Addition of new content and updates to existing sections, including the announcement of DeepSeek-V3.1 being live on SambaCloud and the upcoming support for OpenAI's GPT-OSS 120B model",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1206,
+          "id": 1206,
+          "url": "product",
+          "detectedAt": "2025-08-27T16:40:58.899Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 8,
+          "summary": "New AI model DeepSeek-V3.1 is live on SambaCloud, and the press release section has been updated with new articles.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1207,
+          "id": 1207,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:40:58.562Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 8,
+          "summary": "New blog posts and updates to existing content",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1070,
           "id": 1070,
@@ -6643,36 +7132,35 @@
           "SambaRack",
           "RDU",
           "DeepSeek",
-          "Llama",
-          "Qwen",
-          "Tülu",
-          "GPT-4",
-          "Whisper",
+          "Whisper Large-V3",
+          "Qwen 2.5 32B-Coder",
+          "Qwen QwQ-32B-Preview",
+          "Tülu 3 405B",
+          "Llama 3.3 70B",
+          "Llama 4",
           "DeepSeek R1 671B",
           "Llama 4 Maverick",
-          "OpenAI Whisper"
+          "OpenAI Whisper",
+          "Llama",
+          "Whisper"
         ],
         "ai_technologies": [
           "AI",
-          "Machine Learning",
-          "Deep Learning",
-          "Natural Language Processing",
-          "Computer Vision",
           "ML",
-          "Python",
-          "TensorFlow",
-          "PyTorch",
-          "Kubernetes",
-          "Docker",
+          "Deep Learning",
+          "Inference",
+          "Reconfigurable Dataflow Unit (RDU)",
           "Cloud Computing",
-          "Reconfigurable Dataflow Unit (RDU)"
+          "Python",
+          "Natural Language Processing",
+          "Computer Vision"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 6,
-        "highInterestChanges": 3,
-        "lastActivity": "2025-08-18T16:10:05.537Z"
+        "totalChanges": 9,
+        "highInterestChanges": 6,
+        "lastActivity": "2025-08-27T16:41:03.449Z"
       }
     },
     {
@@ -6700,6 +7188,30 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1203,
+          "id": 1203,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:41:18.554Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 3,
+          "summary": "Removal of redundant customer logos and minor adjustments in the layout and wording of certain sections",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1204,
+          "id": 1204,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:41:12.957Z",
+          "relativeTime": "22 min ago",
+          "interestLevel": 8,
+          "summary": "New blog posts were added, and some older posts were removed from the main page.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1068,
           "id": 1068,
@@ -6795,18 +7307,6 @@
           "changeType": "new",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 549,
-          "id": 549,
-          "url": "product",
-          "detectedAt": "2025-08-01T22:43:35.917Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "New content added to the Scale AI product page, including various products, features, resources, and company information",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
@@ -6816,34 +7316,29 @@
           "Scale Donovan",
           "Llama",
           "GPT-3",
-          "ChatGPT",
-          "Claude",
-          "HealthBench",
-          "AMIE",
-          "SDBench",
-          "MultiNRC",
-          "WebGuard"
+          "ChatGPT"
         ],
         "ai_technologies": [
-          "JavaScript",
-          "Linux",
+          "Diffusion Models",
+          "Computer Vision",
+          "Large Language Models",
+          "ML Model Training",
+          "Artificial Intelligence (AI)",
+          "Machine Learning (ML)",
+          "Natural Language Processing (NLP)",
+          "Reinforcement Learning",
+          "Deep Learning",
           "RLHF",
           "Fine-Tuning",
           "Foundation Models",
-          "Generative AI",
-          "Python",
-          "PyTorch",
-          "Reinforcement Learning",
-          "LLM",
-          "AI",
-          "ML"
+          "Generative AI"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 9,
+        "totalChanges": 10,
         "highInterestChanges": 5,
-        "lastActivity": "2025-08-18T16:10:20.534Z"
+        "lastActivity": "2025-08-27T16:41:18.554Z"
       }
     },
     {
@@ -6877,6 +7372,54 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1199,
+          "id": 1199,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:41:38.399Z",
+          "relativeTime": "21 min ago",
+          "interestLevel": 3,
+          "summary": "Removal of Discord link and minor adjustments in the footer section",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1200,
+          "id": 1200,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:41:33.872Z",
+          "relativeTime": "21 min ago",
+          "interestLevel": 3,
+          "summary": "The link to the Support Forum has been removed from the Resources section, and a link to the Brand Guide has been added to the Company section.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1201,
+          "id": 1201,
+          "url": "product",
+          "detectedAt": "2025-08-27T16:41:29.020Z",
+          "relativeTime": "21 min ago",
+          "interestLevel": 7,
+          "summary": "Changes to Cody Free, Cody Pro, and Enterprise Starter plans",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1202,
+          "id": 1202,
+          "url": "pricing",
+          "detectedAt": "2025-08-27T16:41:23.992Z",
+          "relativeTime": "21 min ago",
+          "interestLevel": 3,
+          "summary": "Minor updates to the pricing page, including changes to the layout, removal of the 'Support Forum' link, and updates to the 'Community' section",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1067,
           "id": 1067,
@@ -6956,7 +7499,8 @@
           "Code Search",
           "Amp",
           "Batch Changes",
-          "Sourcegraph Enterprise Starter"
+          "Deep Search",
+          "Sherlock"
         ],
         "ai_technologies": [
           "AI",
@@ -6964,25 +7508,26 @@
           "VS Code",
           "CLI",
           "LLM",
-          "VSCode",
-          "IntelliJ IDEA",
+          "Webflow",
+          "UX Design",
           "GitHub",
           "GitLab",
-          "Webflow",
+          "Google Auth",
           "Okta",
           "SAML",
           "Python",
-          "JavaScript",
-          "BM25F",
+          "BM25",
           "cAdvisor",
-          "Visual Studio Code"
+          "Visual Studio Code",
+          "VSCode",
+          "IntelliJ IDEA"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 6,
-        "highInterestChanges": 6,
-        "lastActivity": "2025-08-18T16:10:26.827Z"
+        "totalChanges": 10,
+        "highInterestChanges": 7,
+        "lastActivity": "2025-08-27T16:41:38.399Z"
       }
     },
     {
@@ -7141,10 +7686,15 @@
         "ai_technologies": [
           "Generative AI",
           "Open-source",
-          "Cloud platforms",
-          "AI",
-          "Adversarial Diffusion Distillation",
-          "API"
+          "Cloud Platforms",
+          "API",
+          "Self-Hosted License",
+          "open-source generative AI",
+          "image generation",
+          "video generation",
+          "audio generation",
+          "3d generation",
+          "Adversarial Diffusion Distillation"
         ],
         "ai_ml_concepts": []
       },
@@ -7185,6 +7735,30 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1197,
+          "id": 1197,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:42:09.978Z",
+          "relativeTime": "21 min ago",
+          "interestLevel": 8,
+          "summary": "The feature 'AI Video Editor' was removed and replaced with 'AI Video Generator'.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1198,
+          "id": 1198,
+          "url": "pricing",
+          "detectedAt": "2025-08-27T16:41:59.345Z",
+          "relativeTime": "21 min ago",
+          "interestLevel": 8,
+          "summary": "Pricing plans and features",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1064,
           "id": 1064,
@@ -7287,11 +7861,6 @@
           "Synthesia",
           "Synthesia API",
           "ChatGPT",
-          "AI Avatar Generator",
-          "AI Video Editor",
-          "AI Voice Generator",
-          "AI Voice Cloning",
-          "AI Screen Recorder",
           "Synthesia AI Video Generator",
           "Synthesia AI Avatar Generator",
           "Synthesia AI Voice Generator",
@@ -7300,22 +7869,34 @@
           "Synthesia AI Text to Video",
           "Synthesia Script to Video",
           "Synthesia AI Script Generator",
-          "Synthesia Video Translator"
+          "Synthesia Video Translator",
+          "AI Avatar Generator",
+          "AI Video Editor",
+          "AI Voice Generator",
+          "AI Voice Cloning",
+          "AI Screen Recorder",
+          "AI Text to Video",
+          "Script to Video"
         ],
         "ai_technologies": [
           "AI",
           "Machine Learning",
           "API",
-          "Deep Learning",
+          "Artificial Intelligence",
           "Natural Language Processing",
-          "Computer Vision"
+          "Deep Learning",
+          "Neural Networks",
+          "Python",
+          "JavaScript",
+          "NVIDIA Blackwell GPUs",
+          "Google Cloud"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 8,
-        "highInterestChanges": 7,
-        "lastActivity": "2025-08-18T16:11:11.629Z"
+        "totalChanges": 10,
+        "highInterestChanges": 9,
+        "lastActivity": "2025-08-27T16:42:09.978Z"
       }
     },
     {
@@ -7349,6 +7930,54 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1193,
+          "id": 1193,
+          "url": "docs",
+          "detectedAt": "2025-08-27T16:42:44.329Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 3,
+          "summary": "Minor updates to the documentation, including rewording and reorganization of certain sections, with no significant changes to the product's features or functionality.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1194,
+          "id": 1194,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:42:38.171Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 4,
+          "summary": "Removal of 'Get a live demo' button and addition of 'Talk to an expert' button",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1195,
+          "id": 1195,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:42:33.077Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 8,
+          "summary": "Addition of new blog posts, updates to existing content, and changes to the website's structure and navigation",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1196,
+          "id": 1196,
+          "url": "pricing",
+          "detectedAt": "2025-08-27T16:42:27.735Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 8,
+          "summary": "Changes in pricing plans, feature updates, and additions to supported integrations and models",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1060,
           "id": 1060,
@@ -7420,30 +8049,6 @@
           "changeType": "new",
           "businessImpact": null,
           "competitiveImplications": null
-        },
-        {
-          "change_id": 534,
-          "id": 534,
-          "url": "blog",
-          "detectedAt": "2025-08-01T22:45:45.811Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 8,
-          "summary": "New blog content and features announced",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
-        },
-        {
-          "change_id": 535,
-          "id": 535,
-          "url": "pricing",
-          "detectedAt": "2025-08-01T22:45:37.784Z",
-          "relativeTime": "8/1/2025",
-          "interestLevel": 9,
-          "summary": "New content introduction with detailed plans and pricing information for Tabnine's AI code assistant",
-          "changeType": "new",
-          "businessImpact": null,
-          "competitiveImplications": null
         }
       ],
       "intelligence": {
@@ -7453,64 +8058,46 @@
           "Tabnine Enterprise",
           "VS Code",
           "IntelliJ",
-          "WebStorm",
-          "PyCharm",
-          "AppCode",
-          "Android Studio",
-          "Eclipse",
           "Visual Studio",
+          "Eclipse",
+          "Android Studio",
+          "AppCode",
           "CLion",
           "GoLand",
           "PhpStorm",
           "RubyMine",
-          "Jira",
-          "GitHub Copilot",
-          "CodeWhisperer",
-          "SourceGraph Cody",
+          "WebStorm",
+          "Neovim",
+          "Rider",
           "Tabnine",
           "Tabnine Chat",
           "Tabnine Code Completions",
-          "Kubernetes",
-          "MicroK8s",
-          "Prometheus Operator",
+          "Jira",
           "NVIDIA Nemotron",
           "Perforce Helix Core",
           "Atlassian Jira",
           "Bitbucket",
           "Tabnine Code Review Agent",
-          "Copilot",
-          "Cursor",
+          "NVIDIA NIM",
           "Tabnine Dev",
-          "ChatGPT",
-          "GPT-4",
-          "Claude",
-          "Neovim",
-          "Rider"
+          "Anthropic Claude",
+          "OpenAI GPT-4",
+          "Cohere Command",
+          "GitHub",
+          "GitLab"
         ],
         "ai_technologies": [
           "AI",
           "Machine Learning",
           "Python",
           "JavaScript",
-          "Java",
-          "C++",
-          "VS Code",
-          "IntelliJ",
-          "WebStorm",
-          "PyCharm",
-          "AppCode",
-          "Android Studio",
-          "Eclipse",
-          "Visual Studio",
-          "CLion",
-          "GoLand",
-          "PhpStorm",
-          "RubyMine",
-          "Code Completion",
+          "HTML5",
+          "JQuery",
+          "CSS",
+          "React",
+          "WebGL",
+          "Code Completions",
           "Chat Interface",
-          "Kubernetes",
-          "MicroK8s",
-          "Prometheus Operator",
           "Deep Learning",
           "Natural Language Processing",
           "Code Generation",
@@ -7518,14 +8105,18 @@
           "Code Debugging",
           "Code Documentation",
           "Unit Testing",
-          "Code Review"
+          "LLM",
+          "Code Completion",
+          "Code Review",
+          "Test Generation",
+          "Kubernetes"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 8,
+        "totalChanges": 10,
         "highInterestChanges": 5,
-        "lastActivity": "2025-08-18T16:11:44.320Z"
+        "lastActivity": "2025-08-27T16:42:44.329Z"
       }
     },
     {
@@ -7553,6 +8144,42 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1190,
+          "id": 1190,
+          "url": "homepage",
+          "detectedAt": "2025-08-27T16:43:04.934Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 3,
+          "summary": "Removal of 'Hosting' from Inference section and update of Hangzhou DeepSeek models",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1191,
+          "id": 1191,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:42:56.304Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 8,
+          "summary": "The website has undergone a significant restructure, with changes to the main page layout, addition of new topics and categories, and updates to the navigation menu.",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
+        {
+          "change_id": 1192,
+          "id": 1192,
+          "url": "pricing",
+          "detectedAt": "2025-08-27T16:42:50.562Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 5,
+          "summary": "Update of Hangzhou DeepSeek models from DeepSeek V3-0324, DeepSeek R1-0528 to DeepSeek V3.1, V3-0324, R1-0528",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 1057,
           "id": 1057,
@@ -7631,24 +8258,23 @@
           "Weave",
           "Inference",
           "Models",
+          "Registry",
+          "Artifacts",
+          "Reports",
+          "SDK",
+          "Automations",
           "GPT OSS",
-          "Qwen3",
+          "Qwen",
           "Llama",
-          "Kimi K2",
-          "Phi 4 Mini",
-          "DeepSeek V3-0324",
-          "DeepSeek R1-0528",
+          "Phi",
+          "DeepSeek",
+          "Kimi",
           "Weights & Biases",
-          "W&B Inference",
-          "CoreWeave AI Object Storage",
-          "OpenAI API",
+          "GenAI",
           "GPT",
-          "GPT-5",
-          "Google ADK",
-          "Agent Reinforcement Trainer (ART)",
-          "CrewAI",
-          "Bedrock AgentCore",
-          "Qwen3 Coder",
+          "Dashboard",
+          "Sweeps",
+          "Tables",
           "Traces",
           "Evaluations",
           "Playground",
@@ -7656,44 +8282,36 @@
           "Guardrails",
           "Monitors",
           "Experiments",
-          "Sweeps",
-          "Tables",
-          "Registry",
-          "Artifacts",
-          "Reports",
-          "SDK",
-          "Automations"
+          "Qwen3",
+          "Kimi K2"
         ],
         "ai_technologies": [
           "Python",
           "PyTorch",
           "TensorFlow",
           "Keras",
-          "Scikit-LEARN",
+          "Scikit-learn",
           "XGBoost",
           "LangChain",
-          "OpenAI",
+          "Transformers",
+          "Lightning",
           "HuggingFace",
-          "GPT",
-          "OpenAI API",
-          "Google ADK",
-          "Agent Reinforcement Trainer (ART)",
-          "Bedrock AgentCore",
-          "Qwen3 Coder",
-          "RLHF",
-          "Fine-tuning",
-          "MLOps",
           "Docker",
+          "AWS",
+          "GCP",
           "Linux",
           "macOS",
-          "Windows"
+          "Windows",
+          "Git",
+          "SCIM",
+          "HIPAA"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 6,
-        "highInterestChanges": 6,
-        "lastActivity": "2025-08-18T16:12:08.313Z"
+        "totalChanges": 9,
+        "highInterestChanges": 7,
+        "lastActivity": "2025-08-27T16:43:04.934Z"
       }
     },
     {
@@ -7721,6 +8339,18 @@
         }
       ],
       "recentChanges": [
+        {
+          "change_id": 1189,
+          "id": 1189,
+          "url": "blog",
+          "detectedAt": "2025-08-27T16:43:16.477Z",
+          "relativeTime": "20 min ago",
+          "interestLevel": 6,
+          "summary": "New articles and blog posts were added, and some links were updated",
+          "changeType": "modified",
+          "businessImpact": null,
+          "competitiveImplications": null
+        },
         {
           "change_id": 526,
           "id": 526,
@@ -7760,15 +8390,15 @@
       ],
       "intelligence": {
         "products": [
+          "WellSaid Studio",
+          "WellSaid API",
+          "Caruso",
           "Studio",
           "API",
           "Voices",
           "Teams",
           "Security",
           "Integrations",
-          "Caruso",
-          "WellSaid Studio",
-          "WellSaid API",
           "WellSaid Voices",
           "WellSaid Teams",
           "WellSaid Security",
@@ -7780,16 +8410,15 @@
           "Adobe Express",
           "Adobe Premiere Pro",
           "Natural Language Processing",
-          "Voice AI",
           "Deep Learning",
-          "Voiceover"
+          "Python"
         ],
         "ai_ml_concepts": []
       },
       "stats": {
-        "totalChanges": 3,
+        "totalChanges": 4,
         "highInterestChanges": 3,
-        "lastActivity": "2025-08-01T22:46:58.981Z"
+        "lastActivity": "2025-08-27T16:43:16.477Z"
       }
     },
     {
@@ -7833,10 +8462,11 @@
       "intelligence": {
         "products": [
           "ARI",
-          "You.com API"
+          "You.com API",
+          "You.com Agents"
         ],
         "ai_technologies": [
-          "Deep learning",
+          "Deep Research",
           "LLMs"
         ],
         "ai_ml_concepts": []
@@ -7848,9 +8478,80 @@
       }
     }
   ],
-  "lastUpdated": "2025-08-27T15:39:34.201Z",
-  "totalChanges": 337,
-  "highInterestChanges": 221,
+  "lastUpdated": "2025-08-27T17:03:15.056Z",
+  "totalChanges": 390,
+  "highInterestChanges": 232,
   "backend": "postgresql",
-  "company_activity": []
+  "company_activity": [
+    {
+      "company_name": "HeyGen",
+      "change_count": 4,
+      "max_interest_level": 9,
+      "last_activity": "2025-08-27T16:33:07.116Z",
+      "relative_time": "30 min ago"
+    },
+    {
+      "company_name": "Sourcegraph",
+      "change_count": 4,
+      "max_interest_level": 7,
+      "last_activity": "2025-08-27T16:41:38.399Z",
+      "relative_time": "21 min ago"
+    },
+    {
+      "company_name": "Pieces",
+      "change_count": 4,
+      "max_interest_level": 8,
+      "last_activity": "2025-08-27T16:39:19.048Z",
+      "relative_time": "24 min ago"
+    },
+    {
+      "company_name": "GitHub Copilot",
+      "change_count": 4,
+      "max_interest_level": 3,
+      "last_activity": "2025-08-27T16:32:03.143Z",
+      "relative_time": "31 min ago"
+    },
+    {
+      "company_name": "ElevenLabs",
+      "change_count": 4,
+      "max_interest_level": 8,
+      "last_activity": "2025-08-27T16:31:43.088Z",
+      "relative_time": "31 min ago"
+    },
+    {
+      "company_name": "Tabnine",
+      "change_count": 4,
+      "max_interest_level": 8,
+      "last_activity": "2025-08-27T16:42:44.329Z",
+      "relative_time": "20 min ago"
+    },
+    {
+      "company_name": "NVIDIA",
+      "change_count": 4,
+      "max_interest_level": 8,
+      "last_activity": "2025-08-27T16:37:54.993Z",
+      "relative_time": "25 min ago"
+    },
+    {
+      "company_name": "Weights & Biases",
+      "change_count": 3,
+      "max_interest_level": 8,
+      "last_activity": "2025-08-27T16:43:04.934Z",
+      "relative_time": "20 min ago"
+    },
+    {
+      "company_name": "Cohere",
+      "change_count": 3,
+      "max_interest_level": 8,
+      "last_activity": "2025-08-27T16:30:13.193Z",
+      "relative_time": "33 min ago"
+    },
+    {
+      "company_name": "Cursor",
+      "change_count": 3,
+      "max_interest_level": 8,
+      "last_activity": "2025-08-27T16:30:25.344Z",
+      "relative_time": "32 min ago"
+    }
+  ]
 }

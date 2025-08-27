@@ -1,0 +1,100 @@
+{
+  "id": 1262,
+  "company": "DALL-E",
+  "page_url": "pricing",
+  "detected_at": "2025-08-27T16:30:29.320Z",
+  "change_type": "modified",
+  "interest_level": 9,
+  "ai_confidence": 0.95,
+  "summary": "The content changed from a blocked page to a detailed pricing page for ChatGPT by OpenAI, including various plans such as Free, Plus, Pro, Team, and Enterprise.",
+  "category": "strategic_move",
+  "change_summary": {
+    "what_changed": "The content changed from a blocked page to a detailed pricing page for ChatGPT by OpenAI, including various plans such as Free, Plus, Pro, Team, and Enterprise.",
+    "change_type": "update",
+    "change_scale": "major",
+    "specific_changes": [
+      "Introduction of a pricing page for ChatGPT",
+      "Details of different plans including Free, Plus, Pro, Team, and Enterprise",
+      "Features and limitations of each plan",
+      "Pricing information for each plan"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of a pricing page for ChatGPT indicates OpenAI's strategic move towards commercialization, which could lead to significant revenue generation and further investment in AI research and development.",
+    "market_signals": [
+      "OpenAI is moving towards monetizing its AI technology",
+      "ChatGPT is being positioned as a commercial product"
+    ],
+    "competitive_implications": "The commercialization of ChatGPT could lead to increased competition in the AI market, with other companies potentially responding with their own AI-powered products and services.",
+    "strategic_direction": "OpenAI's strategic direction appears to be focused on commercializing its AI technology, with a focus on providing a range of products and services to different customer segments."
+  },
+  "entities": {
+    "products": [
+      "ChatGPT",
+      "GPT-5",
+      "GPT-4o",
+      "GPT-4.1",
+      "GPT-4.5",
+      "OpenAI o3",
+      "OpenAI o4-mini"
+    ],
+    "features": [
+      "Advanced voice",
+      "Advanced voice with video",
+      "Standard voice",
+      "Memory",
+      "Memory with past chats",
+      "Search",
+      "Canvas",
+      "Code edits on macOS",
+      "ChatGPT agent"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "GPT-5",
+      "GPT-4o",
+      "GPT-4.1",
+      "GPT-4.5",
+      "OpenAI o3",
+      "OpenAI o4-mini"
+    ],
+    "people": [],
+    "pricing": [
+      "$0/month for Free plan",
+      "$20/month for Plus plan",
+      "$200/month for Pro plan",
+      "$25/user/month for Team plan (billed annually)"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "OpenAI is commercializing its ChatGPT technology",
+      "ChatGPT is being positioned as a commercial product with different pricing plans"
+    ],
+    "opportunities": [
+      "Potential for significant revenue generation for OpenAI",
+      "Opportunities for other companies to respond with their own AI-powered products and services"
+    ],
+    "threats": [
+      "Increased competition in the AI market",
+      "Potential for ChatGPT to be perceived as less accessible due to commercialization"
+    ],
+    "recommended_actions": [
+      "Monitor OpenAI's commercialization efforts and respond accordingly",
+      "Consider developing AI-powered products and services to compete with ChatGPT"
+    ]
+  },
+  "key_insights": [
+    "OpenAI is commercializing its ChatGPT technology",
+    "ChatGPT is being positioned as a commercial product with different pricing plans"
+  ],
+  "business_impact": "The introduction of a pricing page for ChatGPT indicates OpenAI's strategic move towards commercialization, which could lead to significant revenue generation and further investment in AI research and development.",
+  "competitive_implications": "The commercialization of ChatGPT could lead to increased competition in the AI market, with other companies potentially responding with their own AI-powered products and services.",
+  "content_hash_before": "6973dddd3ef9cb6a2932702f31777faad9c9bf3124d147a84f31aadb6d139546",
+  "content_hash_after": "87f0f5e2450f237372428f2b2f2a1186f3948e635798a7c69765212f3e0f4ed7",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,96 @@
+{
+  "id": 1241,
+  "company": "HeyGen",
+  "page_url": "pricing",
+  "detected_at": "2025-08-27T16:32:55.503Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Introduction of pricing plans for HeyGen's video creation platform",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Introduction of pricing plans for HeyGen's video creation platform",
+    "change_type": "addition",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of Free, Creator, Team, and Enterprise pricing plans",
+      "Details on video generation capabilities, features, and limitations for each plan",
+      "Comparison table for pricing plans and features"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of pricing plans may attract more customers and increase revenue for HeyGen, while also potentially creating new opportunities for partnerships and collaborations.",
+    "market_signals": [
+      "Growing demand for video creation platforms",
+      "Increasing competition in the AI-powered video creation market"
+    ],
+    "competitive_implications": "HeyGen's pricing plans may influence the pricing strategies of competitors in the market, potentially leading to a price war or a shift in focus towards differentiating features and services.",
+    "strategic_direction": "HeyGen's introduction of pricing plans suggests a focus on monetizing its platform and expanding its customer base, while also investing in the development of new features and technologies."
+  },
+  "entities": {
+    "products": [
+      "HeyGen video creation platform"
+    ],
+    "features": [
+      "AI studio editor",
+      "Video generation",
+      "Custom video avatars",
+      "Interactive avatars",
+      "Brand kit",
+      "Workspace collaboration"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [
+      {
+        "plan": "Free",
+        "price": "$0/mo"
+      },
+      {
+        "plan": "Creator",
+        "price": "$29/mo"
+      },
+      {
+        "plan": "Team",
+        "price": "$39/seat/mo"
+      },
+      {
+        "plan": "Enterprise",
+        "price": "Custom"
+      }
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "HeyGen's pricing plans cater to a range of customers, from individuals to enterprises",
+      "The platform's features and capabilities are designed to support various use cases, including video creation, marketing, and collaboration"
+    ],
+    "opportunities": [
+      "Partnerships with other companies to expand HeyGen's reach and offerings",
+      "Development of new features and technologies to stay competitive in the market"
+    ],
+    "threats": [
+      "Intense competition in the AI-powered video creation market",
+      "Potential challenges in maintaining a strong customer base and revenue growth"
+    ],
+    "recommended_actions": [
+      "Monitor HeyGen's pricing plans and features to stay informed about the company's strategy and competitive positioning",
+      "Analyze the market demand and competition to identify potential opportunities and threats for HeyGen and its competitors"
+    ]
+  },
+  "key_insights": [
+    "HeyGen's pricing plans cater to a range of customers, from individuals to enterprises",
+    "The platform's features and capabilities are designed to support various use cases, including video creation, marketing, and collaboration"
+  ],
+  "business_impact": "The introduction of pricing plans may attract more customers and increase revenue for HeyGen, while also potentially creating new opportunities for partnerships and collaborations.",
+  "competitive_implications": "HeyGen's pricing plans may influence the pricing strategies of competitors in the market, potentially leading to a price war or a shift in focus towards differentiating features and services.",
+  "content_hash_before": "68f3c36a7911fd2fe9382ac239f90acd20de245c1ceefe704ea09946d292e8b3",
+  "content_hash_after": "2bbf3f8f08a5264dad66f812f065b16ea8ba81585a7d8868b1469eca58647089",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

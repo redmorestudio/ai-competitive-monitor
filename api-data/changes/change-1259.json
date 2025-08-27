@@ -1,0 +1,86 @@
+{
+  "id": 1259,
+  "company": "DataRobot",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:30:41.734Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Addition of new content sections and updates to existing sections, including the introduction of 'Foundational agents', 'Business agents', 'Purpose-built agents', and an emphasis on the 'Agent Workforce Platform'.",
+  "category": "significant update",
+  "change_summary": {
+    "what_changed": "Addition of new content sections and updates to existing sections, including the introduction of 'Foundational agents', 'Business agents', 'Purpose-built agents', and an emphasis on the 'Agent Workforce Platform'.",
+    "change_type": "addition/update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of new agent types",
+      "Emphasis on the Agent Workforce Platform",
+      "Updates to the Resources section, including the addition of 'Agents in the AM'",
+      "Enhanced focus on integration with SAP and NVIDIA"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates suggest DataRobot is strengthening its position in the AI market, particularly in the enterprise segment, by offering more comprehensive and integrated solutions.",
+    "market_signals": [
+      "Increased focus on agentic AI",
+      "Deepening partnerships with key technology players like NVIDIA and SAP"
+    ],
+    "competitive_implications": "DataRobot's enhanced offerings and partnerships may pose a competitive challenge to other AI solution providers, especially those targeting the enterprise market.",
+    "strategic_direction": "DataRobot appears to be moving towards a more integrated and comprehensive AI platform strategy, emphasizing the importance of agentic AI in enterprise environments."
+  },
+  "entities": {
+    "products": [
+      "Agent Workforce Platform",
+      "Agentic AI Platform",
+      "AI Apps & Agents"
+    ],
+    "features": [
+      "Foundational agents",
+      "Business agents",
+      "Purpose-built agents"
+    ],
+    "partnerships": [
+      "NVIDIA",
+      "SAP"
+    ],
+    "technologies": [
+      "Agentic AI",
+      "Generative AI",
+      "Predictive AI"
+    ],
+    "people": [
+      "John Fanelli, Vice President, Enterprise Software at NVIDIA"
+    ],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "DataRobot is expanding its AI offerings with a focus on agentic AI",
+      "The company is deepening its partnerships with key technology players"
+    ],
+    "opportunities": [
+      "Potential for increased adoption of DataRobot's solutions in the enterprise market",
+      "Opportunities for partnerships and collaborations in the AI space"
+    ],
+    "threats": [
+      "Intensified competition in the AI market",
+      "Potential challenges in integrating new technologies and partnerships"
+    ],
+    "recommended_actions": [
+      "Monitor DataRobot's progress and strategy in the AI market",
+      "Assess potential partnership opportunities with DataRobot or similar companies"
+    ]
+  },
+  "key_insights": [
+    "DataRobot is expanding its AI offerings with a focus on agentic AI",
+    "The company is deepening its partnerships with key technology players"
+  ],
+  "business_impact": "The updates suggest DataRobot is strengthening its position in the AI market, particularly in the enterprise segment, by offering more comprehensive and integrated solutions.",
+  "competitive_implications": "DataRobot's enhanced offerings and partnerships may pose a competitive challenge to other AI solution providers, especially those targeting the enterprise market.",
+  "content_hash_before": "4f776b9b9358b28e6f191a524ae7811ac3cdef3e1eb08bbb044d07905d75b733",
+  "content_hash_after": "06cd5b232f36928b1ecfe56ad27d710004950c14fb8c3948035c4c3af9fd17eb",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,70 @@
+{
+  "id": 1279,
+  "company": "Amazon CodeWhisperer",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:28:25.475Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Minor updates to the website content, including changes to image URLs, addition of a 'Feedback' section, and updates to the 'Customers empower development teams with Amazon Q Developer' section",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Minor updates to the website content, including changes to image URLs, addition of a 'Feedback' section, and updates to the 'Customers empower development teams with Amazon Q Developer' section",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated image URLs",
+      "Added 'Feedback' section",
+      "Updated 'Customers empower development teams with Amazon Q Developer' section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes do not have a significant impact on the business, but may improve user experience and engagement",
+    "market_signals": [
+      "Improved user experience",
+      "Enhanced customer engagement"
+    ],
+    "competitive_implications": "The changes do not provide a significant competitive advantage, but may help maintain market position",
+    "strategic_direction": "The changes are consistent with Amazon's strategic direction of improving customer experience and engagement"
+  },
+  "entities": {
+    "products": [
+      "Amazon Q Developer"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "Generative AI",
+      "AWS"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Minor updates to the website content",
+      "Addition of a 'Feedback' section"
+    ],
+    "opportunities": [
+      "Improved user experience",
+      "Enhanced customer engagement"
+    ],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor user feedback",
+      "Continuously update and improve the website content"
+    ]
+  },
+  "key_insights": [
+    "Minor updates to the website content",
+    "Addition of a 'Feedback' section"
+  ],
+  "business_impact": "The changes do not have a significant impact on the business, but may improve user experience and engagement",
+  "competitive_implications": "The changes do not provide a significant competitive advantage, but may help maintain market position",
+  "content_hash_before": "b31fec6cd8e911d9e508e434789dbe88398d1f65a5758337d5dd7be13862df49",
+  "content_hash_after": "25c7477e9c3a4e8bc4e022c025401cfa5b31df2fe35523b0c3796e9f66a5f4aa",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

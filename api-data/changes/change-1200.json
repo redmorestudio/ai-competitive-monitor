@@ -1,0 +1,57 @@
+{
+  "id": 1200,
+  "company": "Sourcegraph",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:41:33.872Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The link to the Support Forum has been removed from the Resources section, and a link to the Brand Guide has been added to the Company section.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The link to the Support Forum has been removed from the Resources section, and a link to the Brand Guide has been added to the Company section.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Removed Support Forum link from Resources",
+      "Added Brand Guide link to Company section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes do not have any significant impact on the company's business or operations.",
+    "market_signals": [
+      "No significant market signals are sent by these changes."
+    ],
+    "competitive_implications": "The changes do not affect the company's competitive positioning.",
+    "strategic_direction": "The changes do not indicate any changes in the company's strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company has removed the Support Forum link from the Resources section.",
+      "The company has added a link to the Brand Guide in the Company section."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [
+    "The company has removed the Support Forum link from the Resources section.",
+    "The company has added a link to the Brand Guide in the Company section."
+  ],
+  "business_impact": "The changes do not have any significant impact on the company's business or operations.",
+  "competitive_implications": "The changes do not affect the company's competitive positioning.",
+  "content_hash_before": "344400fc3320838e362e913964f0bd970b945809ab5b54aad4fd6570d5ba27e4",
+  "content_hash_after": "6806e16be4e189ca9a51d93efa73677c3dd4bc237ddb6201fb32874f6b708f5c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

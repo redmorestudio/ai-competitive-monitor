@@ -1,0 +1,82 @@
+{
+  "id": 1264,
+  "company": "Cursor",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:30:21.904Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog posts were added, and some existing ones were removed or updated.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog posts were added, and some existing ones were removed or updated.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of new blog posts, such as '1.5x Faster MoE Training on Blackwell with MXFP8 Kernels Built from Scratch' and 'Bringing the Cursor Agent to Linear'.",
+      "Removal of some existing blog posts.",
+      "Update of the 'Featured' section to highlight new posts."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates may attract new customers and retain existing ones by showcasing the company's innovation and commitment to AI coding research.",
+    "market_signals": [
+      "Increased focus on AI coding research",
+      "Expansion of the Cursor Agent's capabilities"
+    ],
+    "competitive_implications": "The company may be gaining a competitive edge in the AI coding market by introducing new features and technologies.",
+    "strategic_direction": "The updates suggest a continued focus on AI coding research and development, with potential expansion into new areas such as Linear integration."
+  },
+  "entities": {
+    "products": [
+      "Cursor Agent",
+      "Bugbot"
+    ],
+    "features": [
+      "MXFP8 Kernels",
+      "Linear Integration"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "MoE Training"
+    ],
+    "people": [
+      "Stuart",
+      "Rohan",
+      "Jacob",
+      "Michael",
+      "Aman"
+    ],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is actively developing and updating its blog to showcase new features and technologies.",
+      "The updates may signal new partnerships or collaborations, such as the integration with Linear."
+    ],
+    "opportunities": [
+      "Potential for increased market share and customer acquisition",
+      "Expansion into new areas, such as Linear integration"
+    ],
+    "threats": [
+      "Competitors may respond with similar updates, reducing the company's competitive edge"
+    ],
+    "recommended_actions": [
+      "Monitor the company's blog and updates for further insights into their strategic direction",
+      "Analyze the impact of the updates on the company's market position and customer acquisition"
+    ]
+  },
+  "key_insights": [
+    "The company is actively developing and updating its blog to showcase new features and technologies.",
+    "The updates may signal new partnerships or collaborations, such as the integration with Linear."
+  ],
+  "business_impact": "The updates may attract new customers and retain existing ones by showcasing the company's innovation and commitment to AI coding research.",
+  "competitive_implications": "The company may be gaining a competitive edge in the AI coding market by introducing new features and technologies.",
+  "content_hash_before": "7bcca4e37e115baa24dbe6e685af7c02edf3caa6b0d52e5d4773daab4d9e376b",
+  "content_hash_after": "401a80ad850d1bb374fcff5ba00347ea5b17f4ead78e1431b9ba22f502ff2378",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,46 @@
+{
+  "id": 1228,
+  "company": "Leonardo AI",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:34:18.845Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "No significant changes were detected in the content structure or features between the two versions.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "No significant changes were detected in the content structure or features between the two versions.",
+    "change_type": "no change",
+    "change_scale": "minor",
+    "specific_changes": []
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact is expected from these changes.",
+    "market_signals": [],
+    "competitive_implications": "No change in competitive positioning is expected.",
+    "strategic_direction": "No new strategic direction is indicated by these changes."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [],
+  "business_impact": "No significant business impact is expected from these changes.",
+  "competitive_implications": "No change in competitive positioning is expected.",
+  "content_hash_before": "26eea6027b9bf4df88b4552e6f55825866842980403fe8db6cb4b18ed1e5319a",
+  "content_hash_after": "ded37f09a6c631febdb8a704775a0042127b18cc4c86d55da192ca9d21c7a22c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

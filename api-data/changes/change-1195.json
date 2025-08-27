@@ -1,0 +1,89 @@
+{
+  "id": 1195,
+  "company": "Tabnine",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:42:33.077Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Addition of new blog posts, updates to existing content, and changes to the website's structure and navigation",
+  "category": "product_update/partnership",
+  "change_summary": {
+    "what_changed": "Addition of new blog posts, updates to existing content, and changes to the website's structure and navigation",
+    "change_type": "addition/update/restructure",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New blog posts added, including 'Tabnine Adds Support for NVIDIA Nemotron Models' and 'Tabnine Now Accelerating Enterprise AI: Tabnine Integrates NVIDIA Universal LLM NIM Microservices for Secure, Scalable Deployments Perforce Helix Core'",
+      "Updates to existing blog posts, such as 'Tabnine Is The Only Air-Gapped AI Software Development Platform'",
+      "Changes to the website's navigation and structure, including the addition of new pages and sections"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest a significant investment in marketing and customer engagement, which could lead to increased brand awareness and customer acquisition. The partnership with NVIDIA and Perforce Helix Core demonstrates a commitment to industry collaboration and thought leadership.",
+    "market_signals": [
+      "Increased focus on AI and machine learning in software development",
+      "Growing demand for air-gapped and secure AI solutions"
+    ],
+    "competitive_implications": "The changes position Tabnine as a leader in the AI-powered software development market, with a strong focus on security, collaboration, and industry expertise. Competitors may need to respond with similar investments in marketing and partnerships to remain competitive.",
+    "strategic_direction": "The changes suggest a strategic direction focused on thought leadership, industry collaboration, and customer engagement, with a commitment to delivering secure and innovative AI-powered software development solutions."
+  },
+  "entities": {
+    "products": [
+      "Tabnine AI code assistant",
+      "NVIDIA Nemotron models",
+      "NVIDIA Universal LLM NIM Microservices"
+    ],
+    "features": [
+      "Air-gapped AI software development platform",
+      "Context-aware AI",
+      "Code review agent"
+    ],
+    "partnerships": [
+      "NVIDIA",
+      "Perforce Helix Core"
+    ],
+    "technologies": [
+      "AI",
+      "Machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Software development",
+      "AI and machine learning"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "Tabnine is investing heavily in marketing and customer engagement",
+      "The company is committed to industry collaboration and thought leadership",
+      "There is a growing demand for air-gapped and secure AI solutions in software development"
+    ],
+    "opportunities": [
+      "Increased brand awareness and customer acquisition",
+      "New partnership and collaboration opportunities",
+      "Growing demand for Tabnine's AI-powered software development solutions"
+    ],
+    "threats": [
+      "Increased competition in the AI-powered software development market",
+      "Potential challenges in integrating new technologies and partnerships"
+    ],
+    "recommended_actions": [
+      "Monitor Tabnine's marketing and customer engagement efforts",
+      "Analyze the impact of the NVIDIA and Perforce Helix Core partnerships on the company's competitive position",
+      "Assess the growing demand for air-gapped and secure AI solutions in software development"
+    ]
+  },
+  "key_insights": [
+    "Tabnine is investing heavily in marketing and customer engagement",
+    "The company is committed to industry collaboration and thought leadership",
+    "There is a growing demand for air-gapped and secure AI solutions in software development"
+  ],
+  "business_impact": "The changes suggest a significant investment in marketing and customer engagement, which could lead to increased brand awareness and customer acquisition. The partnership with NVIDIA and Perforce Helix Core demonstrates a commitment to industry collaboration and thought leadership.",
+  "competitive_implications": "The changes position Tabnine as a leader in the AI-powered software development market, with a strong focus on security, collaboration, and industry expertise. Competitors may need to respond with similar investments in marketing and partnerships to remain competitive.",
+  "content_hash_before": "0e42b5e44a654de98eb3125a8f4a370500bbf2b6055a22700e2c8ac80e6945b9",
+  "content_hash_after": "4a18a2d75a280ea477683b4b70f9e78ed1e6f565bd420865b71ec059d960dd78",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

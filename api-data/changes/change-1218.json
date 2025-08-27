@@ -1,0 +1,61 @@
+{
+  "id": 1218,
+  "company": "Pieces",
+  "page_url": "pricing",
+  "detected_at": "2025-08-27T16:39:03.127Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Addition of 'Academy' resource under the 'RESOURCES' section",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Addition of 'Academy' resource under the 'RESOURCES' section",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Introduction of a new resource link titled 'Academy' under the 'RESOURCES' section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of an 'Academy' resource may enhance user engagement and retention by providing additional educational content or training programs, potentially leading to increased customer satisfaction and loyalty.",
+    "market_signals": [
+      "Expansion of educational content or training programs"
+    ],
+    "competitive_implications": "The introduction of an 'Academy' resource may be seen as a competitive move to differentiate Pieces from other similar products or services by providing additional value to users.",
+    "strategic_direction": "The addition of an 'Academy' resource suggests that Pieces is focusing on user education and retention, which may be a key aspect of their growth strategy."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Pieces has added an 'Academy' resource under the 'RESOURCES' section, potentially indicating an expansion of educational content or training programs."
+    ],
+    "opportunities": [
+      "Pieces may be able to attract more users by providing high-quality educational content or training programs through the 'Academy' resource."
+    ],
+    "threats": [
+      "The addition of an 'Academy' resource may not be enough to differentiate Pieces from competitors, and the quality of the educational content or training programs will be crucial to its success."
+    ],
+    "recommended_actions": [
+      "Monitor the 'Academy' resource for updates and evaluate its impact on user engagement and retention.",
+      "Assess the quality and relevance of the educational content or training programs provided through the 'Academy' resource."
+    ]
+  },
+  "key_insights": [
+    "Pieces has added an 'Academy' resource under the 'RESOURCES' section, potentially indicating an expansion of educational content or training programs."
+  ],
+  "business_impact": "The addition of an 'Academy' resource may enhance user engagement and retention by providing additional educational content or training programs, potentially leading to increased customer satisfaction and loyalty.",
+  "competitive_implications": "The introduction of an 'Academy' resource may be seen as a competitive move to differentiate Pieces from other similar products or services by providing additional value to users.",
+  "content_hash_before": "25875a65b6eee9392aec34f2235344dec7978de9ddefa06b6d1fa02f3ccfaab1",
+  "content_hash_after": "b1f4e1f57cb12e381b281ec8a58f673434030d11dfa48ca1f58bf9b93b3a55f0",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

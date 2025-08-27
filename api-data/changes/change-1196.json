@@ -1,0 +1,85 @@
+{
+  "id": 1196,
+  "company": "Tabnine",
+  "page_url": "pricing",
+  "detected_at": "2025-08-27T16:42:27.735Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Changes in pricing plans, feature updates, and additions to supported integrations and models",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Changes in pricing plans, feature updates, and additions to supported integrations and models",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Dev plan now offers 14-day free trial instead of 30 days",
+      "Addition of Perforce P4 (Helix Core) to Advanced Context Engine in Enterprise plan",
+      "Update in LLM providers for AI-powered chat",
+      "Changes in IP protection and code attribution features"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Enhanced user experience, increased security, and broader integration capabilities are likely to attract more users and improve customer retention",
+    "market_signals": [
+      "Growing demand for AI-powered development tools",
+      "Increasing importance of security and privacy in software development"
+    ],
+    "competitive_implications": "Tabnine strengthens its position in the market for AI code assistants, potentially challenging competitors to match its feature set and integration capabilities",
+    "strategic_direction": "Expansion of AI capabilities, enhancement of security features, and broadening of integrations to maintain a competitive edge"
+  },
+  "entities": {
+    "products": [
+      "Tabnine Dev",
+      "Tabnine Enterprise"
+    ],
+    "features": [
+      "AI chat",
+      "AI agents",
+      "Code Review Agent",
+      "Autonomous implementation and validation of Atlassian Jira issues"
+    ],
+    "partnerships": [
+      "Atlassian Jira",
+      "Perforce Helix Core"
+    ],
+    "technologies": [
+      "LLMs from Anthropic, OpenAI, Google, Meta, Mistral"
+    ],
+    "people": [],
+    "pricing": [
+      "$9/month for Dev plan",
+      "$39/user/month for Enterprise plan"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Tabnine's updates reflect a focus on enhancing user experience and security",
+      "The company is expanding its integration capabilities to support more development workflows"
+    ],
+    "opportunities": [
+      "Partnerships with other development tool providers",
+      "Expansion into new markets or industries"
+    ],
+    "threats": [
+      "Competition from other AI code assistant providers",
+      "Potential backlash over pricing changes"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback on the updates",
+      "Consider strategic partnerships to further enhance the platform's capabilities"
+    ]
+  },
+  "key_insights": [
+    "Tabnine's updates reflect a focus on enhancing user experience and security",
+    "The company is expanding its integration capabilities to support more development workflows"
+  ],
+  "business_impact": "Enhanced user experience, increased security, and broader integration capabilities are likely to attract more users and improve customer retention",
+  "competitive_implications": "Tabnine strengthens its position in the market for AI code assistants, potentially challenging competitors to match its feature set and integration capabilities",
+  "content_hash_before": "b49def6a3c2614de65c43fbda6a70edab24b2c6bcfe00ec40f2809f4443160ce",
+  "content_hash_after": "fdc1ac250d064bdb24d8143ae453da5285c0ab2d992b0eb354ab155e8bb75c25",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
