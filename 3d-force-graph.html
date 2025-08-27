@@ -461,6 +461,7 @@
                 <div class="stat-item">URLs: <span id="url-count" class="green">--</span></div>
                 <div class="stat-item">Nodes: <span id="node-count" class="green">--</span></div>
                 <div class="stat-item">Links: <span id="link-count" class="green">--</span></div>
+                <div class="stat-item">Last Update: <span id="last-update" class="green">--</span></div>
             </div>
             
             <div class="control-group simple-group">
@@ -1040,11 +1041,12 @@
                 try {
                     console.log('Loading data...');
                     
-                    const [companiesResponse, detailsResponse, changesResponse, dashboardResponse] = await Promise.all([
+                    const [companiesResponse, detailsResponse, changesResponse, dashboardResponse, workflowStatusResponse] = await Promise.all([
                         fetch('https://redmorestudio.github.io/ai-competitive-monitor/api-data/companies.json'),
                         fetch('https://redmorestudio.github.io/ai-competitive-monitor/api-data/company-details.json'),
                         fetch('https://redmorestudio.github.io/ai-competitive-monitor/api-data/changes.json').catch(() => ({ ok: false })),
-                        fetch('https://redmorestudio.github.io/ai-competitive-monitor/api-data/dashboard.json').catch(() => ({ ok: false }))
+                        fetch('https://redmorestudio.github.io/ai-competitive-monitor/api-data/dashboard.json').catch(() => ({ ok: false })),
+                        fetch('https://redmorestudio.github.io/ai-competitive-monitor/api-data/workflow-status-postgres.json').catch(() => ({ ok: false }))
                     ]);
                     
                     if (!companiesResponse.ok || !detailsResponse.ok) {
@@ -1143,6 +1145,21 @@
                     console.log('Technologies found:', [...new Set(rawData.dashboard.company_activity.flatMap(c => c.intelligence?.ai_technologies || []))]);
                     console.log('Concepts found:', [...new Set(rawData.dashboard.company_activity.flatMap(c => c.intelligence?.ai_ml_concepts || []))]);
 
+                    // Parse workflow status for last update time
+                    let lastDataUpdate = null;
+                    if (workflowStatusResponse && workflowStatusResponse.ok) {
+                        try {
+                            const workflowStatus = await workflowStatusResponse.json();
+                            if (workflowStatus.last_run) {
+                                lastDataUpdate = new Date(workflowStatus.last_run);
+                                window.lastDataUpdate = lastDataUpdate; // Store globally for stats display
+                                console.log('Data last updated:', lastDataUpdate);
+                            }
+                        } catch (e) {
+                            console.log('Could not parse workflow status:', e);
+                        }
+                    }
+                    
                         // PostgreSQL format compatibility (dashboard.json)
                     if (dashboardResponse && dashboardResponse.ok) {
                         const dashboardData = await dashboardResponse.json();
@@ -1456,6 +1473,38 @@
                 document.getElementById('url-count').textContent = totalUrls;
                 document.getElementById('node-count').textContent = graphData.nodes.length;
                 document.getElementById('link-count').textContent = graphData.links.length;
+                
+                // Update timestamp
+                if (window.lastDataUpdate) {
+                    // Show when data was actually generated
+                    const now = new Date();
+                    const diffMs = now - window.lastDataUpdate;
+                    const diffMins = Math.floor(diffMs / 60000);
+                    const diffHours = Math.floor(diffMs / 3600000);
+                    const diffDays = Math.floor(diffMs / 86400000);
+                    
+                    let timeAgo;
+                    if (diffMins < 60) {
+                        timeAgo = diffMins + ' min ago';
+                    } else if (diffHours < 24) {
+                        timeAgo = diffHours + ' hours ago';
+                    } else {
+                        timeAgo = diffDays + ' days ago';
+                    }
+                    
+                    document.getElementById('last-update').textContent = timeAgo;
+                    document.getElementById('last-update').title = 'Data generated: ' + window.lastDataUpdate.toLocaleString();
+                } else {
+                    // Fallback to current time
+                    const now = new Date();
+                    const timeStr = now.toLocaleString('en-US', { 
+                        month: 'short', 
+                        day: 'numeric', 
+                        hour: '2-digit', 
+                        minute: '2-digit' 
+                    });
+                    document.getElementById('last-update').textContent = timeStr;
+                }
                 
                 // Update technology and concept summary
                 updateGraphSummary();
@@ -2852,6 +2901,38 @@
                 document.getElementById('url-count').textContent = totalUrls;
                 document.getElementById('node-count').textContent = graphData.nodes.length;
                 document.getElementById('link-count').textContent = graphData.links.length;
+                
+                // Update timestamp
+                if (window.lastDataUpdate) {
+                    // Show when data was actually generated
+                    const now = new Date();
+                    const diffMs = now - window.lastDataUpdate;
+                    const diffMins = Math.floor(diffMs / 60000);
+                    const diffHours = Math.floor(diffMs / 3600000);
+                    const diffDays = Math.floor(diffMs / 86400000);
+                    
+                    let timeAgo;
+                    if (diffMins < 60) {
+                        timeAgo = diffMins + ' min ago';
+                    } else if (diffHours < 24) {
+                        timeAgo = diffHours + ' hours ago';
+                    } else {
+                        timeAgo = diffDays + ' days ago';
+                    }
+                    
+                    document.getElementById('last-update').textContent = timeAgo;
+                    document.getElementById('last-update').title = 'Data generated: ' + window.lastDataUpdate.toLocaleString();
+                } else {
+                    // Fallback to current time
+                    const now = new Date();
+                    const timeStr = now.toLocaleString('en-US', { 
+                        month: 'short', 
+                        day: 'numeric', 
+                        hour: '2-digit', 
+                        minute: '2-digit' 
+                    });
+                    document.getElementById('last-update').textContent = timeStr;
+                }
                 
                 // Update technology and concept summary
                 updateGraphSummary();

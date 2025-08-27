@@ -205,6 +205,43 @@ jobs:
         env:
           POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
       
+      - name: Diagnose PostgreSQL data freshness
+        run: |
+          cd github-actions-backend
+          echo "🔍 Checking PostgreSQL data freshness..."
+          
+          # Run diagnostic to check if data is stale
+          if [ -f "diagnose-postgres-data.js" ]; then
+            node diagnose-postgres-data.js || echo "⚠️  Diagnostic failed"
+          fi
+          
+          # Check if we have recent data
+          node -e "
+            const { db, end } = require('./postgres-db');
+            db.get('SELECT MAX(scraped_at) as latest FROM raw_content.scraped_pages')
+              .then(result => {
+                const latest = new Date(result.latest);
+                const now = new Date();
+                const hoursSince = (now - latest) / (1000 * 60 * 60);
+                
+                if (hoursSince > 24) {
+                  console.log('⚠️  WARNING: No scrapes in the last ' + Math.round(hoursSince) + ' hours!');
+                  console.log('   Latest scrape: ' + latest);
+                  console.log('   Data may be stale - check if scraping stage ran successfully');
+                } else {
+                  console.log('✅ Data is fresh - last scrape ' + Math.round(hoursSince) + ' hours ago');
+                }
+                process.exit(0);
+              })
+              .catch(error => {
+                console.error('Failed to check data freshness:', error.message);
+                process.exit(0);
+              })
+              .finally(() => end());
+          "
+        env:
+          POSTGRES_CONNECTION_STRING: ${{ secrets.POSTGRES_CONNECTION_STRING }}
+      
       - name: Ensure latest PostgreSQL data files
         run: |
           echo "✅ Checking for required PostgreSQL data files..."
