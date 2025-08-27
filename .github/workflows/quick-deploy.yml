@@ -47,11 +47,11 @@ jobs:
       
       - name: Summary
         run: |
-          echo "## ✅ Deployment Complete" >> $GITHUB_STEP_SUMMARY
+          echo "## Deployment Complete" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **URL**: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Time**: $(date)" >> $GITHUB_STEP_SUMMARY
-          echo "- **Version**: 2.1.3" >> $GITHUB_STEP_SUMMARY
+          echo "- URL: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Time: $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "- Version: 2.1.3" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "Changes deployed:" >> $GITHUB_STEP_SUMMARY
           echo "- All 54 companies now displayed" >> $GITHUB_STEP_SUMMARY
