@@ -463,7 +463,7 @@ export async function showChangeDetail(changeId, companyName, event) {
                     <p><strong>Products:</strong></p>
                     <div class="tag-list">
                         ${changeData.entities.products.map(product => 
-                            `<span class="tag">${escapeHtml(product)}</span>`
+                            `<span class="tag" onclick="event.stopPropagation(); if(window.kwic) window.kwic.show('${escapeHtml(product).replace(/'/g, "\\'")}',' products')" style="cursor: pointer;" title="Click to see where this appears">${escapeHtml(product)}</span>`
                         ).join('')}
                     </div>
                 ` : ''}
@@ -471,7 +471,7 @@ export async function showChangeDetail(changeId, companyName, event) {
                     <p><strong>Features:</strong></p>
                     <div class="tag-list">
                         ${changeData.entities.features.map(feature => 
-                            `<span class="tag">${escapeHtml(feature)}</span>`
+                            `<span class="tag" onclick="event.stopPropagation(); if(window.kwic) window.kwic.show('${escapeHtml(feature).replace(/'/g, "\\'")}',' concepts')" style="cursor: pointer;" title="Click to see where this appears">${escapeHtml(feature)}</span>`
                         ).join('')}
                     </div>
                 ` : ''}
@@ -479,7 +479,7 @@ export async function showChangeDetail(changeId, companyName, event) {
                     <p><strong>Technologies:</strong></p>
                     <div class="tag-list">
                         ${changeData.entities.technologies.map(tech => 
-                            `<span class="tag tech-tag">${escapeHtml(tech)}</span>`
+                            `<span class="tag tech-tag" onclick="event.stopPropagation(); if(window.kwic) window.kwic.show('${escapeHtml(tech).replace(/'/g, "\\'")}',' technologies')" style="cursor: pointer;" title="Click to see where this appears">${escapeHtml(tech)}</span>`
                         ).join('')}
                     </div>
                 ` : ''}
@@ -720,7 +720,7 @@ function renderFilteredChanges() {
             const changeId = globalIndex !== -1 ? `change-${globalIndex}` : `change-temp-${index}`;
             
             html += `
-                <div class="change-item" style="border-left-color: ${interestColor};" onclick="window.controls.showChangeDetail('${changeId}', '${escapeHtml(change.company)}', event)">
+                <div class="change-item" style="border-left-color: ${interestColor}; cursor: pointer;" onclick="window.controls.showChangeDetail('${changeId}', '${escapeHtml(change.company)}', event)">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
                         <div style="display: flex; align-items: center; gap: 10px;">
                             <strong>${escapeHtml(change.company)}</strong>

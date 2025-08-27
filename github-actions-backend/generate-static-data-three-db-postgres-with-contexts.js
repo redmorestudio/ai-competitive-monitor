@@ -780,7 +780,7 @@ async function generateChangelog() {
             WHERE ch.detected_at > NOW() - INTERVAL '7 days'
             AND ch.interest_level >= 3
             ORDER BY ch.detected_at DESC
-            LIMIT 100
+            LIMIT 500
         `);
         
         const changelogData = recentChanges.map(change => ({
@@ -847,6 +847,87 @@ async function generateWorkflowStatus() {
     }
 }
 
+// Generate changes.json (all changes for the changes tab)
+async function generateAllChanges() {
+    console.log('Generating changes.json...');
+    
+    try {
+        // Get ALL recent changes, not limited to 100 or 1000
+        const allChanges = await db.all(`
+            SELECT 
+                ch.id,
+                ch.company,
+                ch.url,
+                ch.detected_at,
+                ch.interest_level,
+                ch.analysis,
+                ch.change_type,
+                ea.business_impact,
+                ea.competitive_implications,
+                ea.risk_assessment
+            FROM intelligence.changes ch
+            LEFT JOIN intelligence.enhanced_analysis ea ON ea.change_id = ch.id
+            WHERE ch.detected_at > NOW() - INTERVAL '90 days'
+            ORDER BY ch.detected_at DESC
+        `);
+        
+        const changesData = allChanges.map(change => {
+            // Parse the analysis JSON if it's a string
+            let parsedAnalysis = {};
+            try {
+                if (typeof change.analysis === 'string') {
+                    parsedAnalysis = JSON.parse(change.analysis);
+                } else if (change.analysis) {
+                    parsedAnalysis = change.analysis;
+                }
+            } catch (e) {
+                console.log(`Could not parse analysis for change ${change.id}`);
+            }
+            
+            // Extract summary from parsed analysis
+            const summary = parsedAnalysis.change_summary?.what_changed || 
+                          parsedAnalysis.summary || 
+                          'Change detected';
+            
+            return {
+                id: change.id,
+                change_id: change.id, // Some views expect change_id
+                company: change.company,
+                url: change.url,
+                detected_at: change.detected_at,
+                detectedAt: change.detected_at,
+                timestamp: change.detected_at, // Some views expect timestamp
+                interest_level: change.interest_level || 0,
+                interestLevel: change.interest_level || 0, // Some views use camelCase
+                summary: summary,
+                change_type: change.change_type || 'content',
+                changeType: change.change_type || 'content',
+                business_impact: change.business_impact,
+                competitive_implications: change.competitive_implications,
+                ai_analysis: change.analysis // Keep original for detail view
+            };
+        });
+        
+        // Write in the format the frontend expects
+        const outputData = {
+            changes: changesData,
+            total: changesData.length,
+            lastUpdated: new Date().toISOString()
+        };
+        
+        fs.writeFileSync(
+            path.join(OUTPUT_DIR, 'changes.json'),
+            JSON.stringify(outputData, null, 2)
+        );
+        
+        console.log(`✅ Generated changes.json with ${changesData.length} changes`);
+        
+    } catch (error) {
+        console.error('Error generating changes:', error);
+        throw error;
+    }
+}
+
 // Main function
 async function main() {
     console.log('Starting static data generation with context extraction...');
@@ -857,6 +938,7 @@ async function main() {
         await generateDashboard();
         await generateCompaniesData();
         await generateChangelog();
+        await generateAllChanges(); // ADD THIS LINE
         await generateWorkflowStatus();
         
         // Generate new context files
