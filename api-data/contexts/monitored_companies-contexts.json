@@ -1,0 +1,1025 @@
+{
+  "generated_at": "2025-08-27T15:35:17.645Z",
+  "type": "monitored_companies",
+  "total_entities": 18,
+  "mode": "minimal",
+  "entities": [
+    {
+      "entity_id": 4,
+      "canonical_name": "anthropic",
+      "group_type": "monitored_company",
+      "variations": [
+        "anthropic",
+        "anthropic"
+      ],
+      "mentioned_by_count": 3,
+      "mentioned_by_companies": [
+        14,
+        40,
+        15
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Tabnine",
+          "source_url": "https://tabnine.com/pricing",
+          "text": "leading LLMs from Anthropic, OpenAI, and Tabnine Foundational AI agents Support for all major IDEs 0 { Free for qualified users",
+          "position": 422,
+          "matched_variation": "anthropic",
+          "co_mentions": []
+        },
+        {
+          "company": "Tabnine",
+          "source_url": "https://tabnine.com/pricing",
+          "text": "including Anthropic Claude, OpenAI GPT-4o, and Cohere Command R+ // Personalization // AI personalized to your projects Tabnine makes recommendations based",
+          "position": 986,
+          "matched_variation": "anthropic",
+          "co_mentions": []
+        },
+        {
+          "company": "Scale AI",
+          "source_url": "https://scale.com",
+          "text": "anybody else. Partner Anthropic Partners with Scale to Bring Generative AI to Enterprises Partner Meta and Scale Partner to Drive Enterprise",
+          "position": 666,
+          "matched_variation": "anthropic",
+          "co_mentions": []
+        },
+        {
+          "company": "Scale AI",
+          "source_url": "https://scale.com",
+          "text": "Anthropic’s rival to ChatGPT Blog How Much Better Is OpenAI's Newest GPT-3 Model? Secure Our cloud platform’s infrastructure and operations are",
+          "position": 720,
+          "matched_variation": "anthropic",
+          "co_mentions": []
+        },
+        {
+          "company": "Replit",
+          "source_url": "https://blog.replit.com",
+          "text": "Access Smarter with realtime app design preview In partnership with Anthropic’s Claude 3.7 Sonnet launch, we're excited to ann... Fri, Aug",
+          "position": 54,
+          "matched_variation": "anthropic",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 23,
+      "canonical_name": "hugging face",
+      "group_type": "monitored_company",
+      "variations": [
+        "hugging face",
+        "hugging face"
+      ],
+      "mentioned_by_count": 2,
+      "mentioned_by_companies": [
+        52,
+        47
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "SambaNova",
+          "source_url": "https://sambanova.ai",
+          "text": "Title: SambaNova | The Fastest AI Inference Platform & Hardware New",
+          "position": 0,
+          "matched_variation": "hugging face",
+          "co_mentions": []
+        },
+        {
+          "company": "SambaNova",
+          "source_url": "https://sambanova.ai",
+          "text": "Title: SambaNova | The Fastest AI Inference Platform & Hardware New",
+          "position": 0,
+          "matched_variation": "hugging face",
+          "co_mentions": []
+        },
+        {
+          "company": "SambaNova",
+          "source_url": "https://sambanova.ai/blog",
+          "text": "A New Model Better than DeepSeek V3 February 4, 2025 Hugging Face Partners with SambaNova to Supercharge its Inference API Capabilities",
+          "position": 438,
+          "matched_variation": "hugging face",
+          "co_mentions": []
+        },
+        {
+          "company": "SambaNova",
+          "source_url": "https://sambanova.ai/blog",
+          "text": "Face Partners with SambaNova to Supercharge its Inference API Capabilities Hugging Face Partners with SambaNova to Supercharge its Inference API Capabilities",
+          "position": 449,
+          "matched_variation": "hugging face",
+          "co_mentions": []
+        },
+        {
+          "company": "Replicate",
+          "source_url": "https://replicate.com/blog",
+          "text": "16, 2025 Run 30,000+ LoRAs on Hugging Face with Replicate We've partnered with Hugging Face to bring Replicate inference to their",
+          "position": 386,
+          "matched_variation": "hugging face",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 37,
+      "canonical_name": "openai",
+      "group_type": "monitored_company",
+      "variations": [
+        "openai",
+        "openai"
+      ],
+      "mentioned_by_count": 2,
+      "mentioned_by_companies": [
+        44,
+        14
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Weights & Biases",
+          "source_url": "https://wandb.ai",
+          "text": "HF TRANSFORMERS LIGHTNING TENSORFLOW KERAS SCIKIT-LEARN XGBOOST import openai, weave weave.init(\"weave-intro\") @weave.op def correct_grammar(user_input): client = openai.OpenAI() response = client.chat.completions.create( model=\"o1-mini\",",
+          "position": 300,
+          "matched_variation": "openai",
+          "co_mentions": []
+        },
+        {
+          "company": "Weights & Biases",
+          "source_url": "https://wandb.ai",
+          "text": "weave weave.init(\"weave-intro\") @weave.op def correct_grammar(user_input): client = openai.OpenAI() response = client.chat.completions.create( model=\"o1-mini\", messages=[{ \"role\": \"user\", \"content\": \"Correct the grammar:\\n\\n\" + user_input,",
+          "position": 309,
+          "matched_variation": "openai",
+          "co_mentions": []
+        },
+        {
+          "company": "Weights & Biases",
+          "source_url": "https://wandb.ai/fully-connected",
+          "text": "Justin Tenuto Aug 01 Articles, GenAI, Framework / Integration, Evaluations OpenAI GPT OSS models on W&B Inference Chander Matrubhutam Aug 06",
+          "position": 52,
+          "matched_variation": "openai",
+          "co_mentions": []
+        },
+        {
+          "company": "Weights & Biases",
+          "source_url": "https://wandb.ai/fully-connected",
+          "text": "on W&B Inference Chander Matrubhutam Aug 06 Articles, Weave, LLM, OpenAI Tutorials: GPT-5 evaluation across multiple tasks Brett Young Aug 13",
+          "position": 66,
+          "matched_variation": "openai",
+          "co_mentions": []
+        },
+        {
+          "company": "Tabnine",
+          "source_url": "https://tabnine.com/pricing",
+          "text": "from Anthropic, OpenAI, and Tabnine Foundational AI agents Support for all major IDEs 0 { Free for qualified users } Install",
+          "position": 424,
+          "matched_variation": "openai",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 156,
+      "canonical_name": "AI21 Labs",
+      "group_type": "monitored_company",
+      "variations": [
+        "AI21 Labs",
+        "ai21 labs"
+      ],
+      "mentioned_by_count": 1,
+      "mentioned_by_companies": [
+        7
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "AI21 Labs",
+          "source_url": "https://ai21.com",
+          "text": "Title: AI21 Labs | AI Systems Built for the Enterprise Skip to",
+          "position": 1,
+          "matched_variation": "AI21 Labs",
+          "co_mentions": []
+        },
+        {
+          "company": "AI21 Labs",
+          "source_url": "https://ai21.com",
+          "text": "where we are now. CEO WRITE LABEL Using AI21 Labs’ GenAI technology, researchers and students will be able to receive cited",
+          "position": 289,
+          "matched_variation": "AI21 Labs",
+          "co_mentions": []
+        },
+        {
+          "company": "AI21 Labs",
+          "source_url": "https://ai21.com",
+          "text": "Title: AI21 Labs | AI Systems Built for the Enterprise Skip to",
+          "position": 1,
+          "matched_variation": "AI21 Labs",
+          "co_mentions": []
+        },
+        {
+          "company": "AI21 Labs",
+          "source_url": "https://ai21.com",
+          "text": "where we are now. CEO WRITE LABEL Using AI21 Labs’ GenAI technology, researchers and students will be able to receive cited",
+          "position": 289,
+          "matched_variation": "AI21 Labs",
+          "co_mentions": []
+        },
+        {
+          "company": "AI21 Labs",
+          "source_url": "https://ai21.com",
+          "text": "Title: AI21 Labs | AI Systems Built for the Enterprise Skip to",
+          "position": 1,
+          "matched_variation": "AI21 Labs",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 164,
+      "canonical_name": "Aleph Alpha",
+      "group_type": "monitored_company",
+      "variations": [
+        "Aleph Alpha",
+        "aleph alpha"
+      ],
+      "mentioned_by_count": 1,
+      "mentioned_by_companies": [
+        9
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Aleph Alpha",
+          "source_url": "https://aleph-alpha.com",
+          "text": "Title: Sovereign AI Solutions for Enterprises | ALEPH ALPHA Solutions PhariaAI Research Partners Company Blog Book a demo",
+          "position": 7,
+          "matched_variation": "Aleph Alpha",
+          "co_mentions": []
+        },
+        {
+          "company": "Aleph Alpha",
+          "source_url": "https://aleph-alpha.com",
+          "text": "AI Research Innovation and Technology Breakthroughs Research Learn more Aleph Alpha is driving change — Building a better AI future alongside",
+          "position": 79,
+          "matched_variation": "Aleph Alpha",
+          "co_mentions": []
+        },
+        {
+          "company": "Aleph Alpha",
+          "source_url": "https://aleph-alpha.com/luminous",
+          "text": "Title: Luminous: European AI closes gap to world leaders - Aleph Alpha Solutions PhariaAI Research Partners Company Blog Book a demo",
+          "position": 10,
+          "matched_variation": "Aleph Alpha",
+          "co_mentions": []
+        },
+        {
+          "company": "Aleph Alpha",
+          "source_url": "https://aleph-alpha.com/luminous",
+          "text": "16, 2023 16. Februar 2023, Heidelberg The Heidelberg AI start-up Aleph Alpha has released a performance report on its AI language",
+          "position": 40,
+          "matched_variation": "Aleph Alpha",
+          "co_mentions": []
+        },
+        {
+          "company": "Aleph Alpha",
+          "source_url": "https://aleph-alpha.com/pricing",
+          "text": "Title: Page not found - Aleph Alpha Solutions PhariaAI Research Partners Company Blog Book a demo",
+          "position": 5,
+          "matched_variation": "Aleph Alpha",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 186,
+      "canonical_name": "Anyscale",
+      "group_type": "monitored_company",
+      "variations": [
+        "Anyscale",
+        "anyscale"
+      ],
+      "mentioned_by_count": 1,
+      "mentioned_by_companies": [
+        46
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Anyscale",
+          "source_url": "https://anyscale.com",
+          "text": "Title: Anyscale | Production-Ready AI with Ray Join Us at Ray Summit",
+          "position": 1,
+          "matched_variation": "Anyscale",
+          "co_mentions": []
+        },
+        {
+          "company": "Anyscale",
+          "source_url": "https://anyscale.com",
+          "text": "Us at Ray Summit 2025 — Register Early and Save! Anyscale Product Solutions Templates Resources Company Pricing Get Started with $100",
+          "position": 18,
+          "matched_variation": "Anyscale",
+          "co_mentions": []
+        },
+        {
+          "company": "Anyscale",
+          "source_url": "https://anyscale.com/blog",
+          "text": "Title: Blog | Anyscale Join Us at Ray Summit 2025 — Register Early and",
+          "position": 3,
+          "matched_variation": "Anyscale",
+          "co_mentions": []
+        },
+        {
+          "company": "Anyscale",
+          "source_url": "https://anyscale.com/blog",
+          "text": "Us at Ray Summit 2025 — Register Early and Save! Anyscale Product Solutions Templates Resources Company Pricing Get Started with $100",
+          "position": 15,
+          "matched_variation": "Anyscale",
+          "co_mentions": []
+        },
+        {
+          "company": "Anyscale",
+          "source_url": "https://anyscale.com/pricing",
+          "text": "Us at Ray Summit 2025 — Register Early and Save! Anyscale Product Solutions Templates Resources Company Pricing Get Started with $100",
+          "position": 13,
+          "matched_variation": "Anyscale",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 285,
+      "canonical_name": "Cohere",
+      "group_type": "monitored_company",
+      "variations": [
+        "Cohere",
+        "cohere"
+      ],
+      "mentioned_by_count": 3,
+      "mentioned_by_companies": [
+        14,
+        40,
+        47
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Tabnine",
+          "source_url": "https://tabnine.com/pricing",
+          "text": "and Cohere Command R+ // Personalization // AI personalized to your projects Tabnine makes recommendations based on the context of all",
+          "position": 991,
+          "matched_variation": "Cohere",
+          "co_mentions": []
+        },
+        {
+          "company": "Tabnine",
+          "source_url": "https://tabnine.com/pricing",
+          "text": "and Cohere Command R+ // Personalization // AI personalized to your projects Tabnine makes recommendations based on the context of all",
+          "position": 991,
+          "matched_variation": "cohere",
+          "co_mentions": []
+        },
+        {
+          "company": "Scale AI",
+          "source_url": "https://scale.com",
+          "text": "AI models, from open-source to closed-source, including Google, Meta, Cohere, and more. Enterprise Data Scale's Data Engine enables you to integrate",
+          "position": 130,
+          "matched_variation": "Cohere",
+          "co_mentions": []
+        },
+        {
+          "company": "Scale AI",
+          "source_url": "https://scale.com",
+          "text": "Customer Case Study: Cohere Blog Scale's SEAL Research Lab Launches Expert-Evaluated LLM Leaderboards Blog Why Is ChatGPT So Good? Dataset Open",
+          "position": 692,
+          "matched_variation": "Cohere",
+          "co_mentions": []
+        },
+        {
+          "company": "Replicate",
+          "source_url": "https://replicate.com/blog",
+          "text": "Title: Blog – Replicate ctrl+k Explore Pricing Enterprise Docs Blog Sign",
+          "position": 0,
+          "matched_variation": "Cohere",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 402,
+      "canonical_name": "Google DeepMind",
+      "group_type": "monitored_company",
+      "variations": [
+        "Google DeepMind",
+        "google deepmind"
+      ],
+      "mentioned_by_count": 1,
+      "mentioned_by_companies": [
+        3
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Google DeepMind",
+          "source_url": "https://ai.google.dev",
+          "text": "cutting-edge AI models, like Gemini, Imagen, and Veo, from Google DeepMind View Gemini API docs Integrate models into apps Unlock AI",
+          "position": 92,
+          "matched_variation": "Google DeepMind",
+          "co_mentions": []
+        },
+        {
+          "company": "Google DeepMind",
+          "source_url": "https://ai.google.dev",
+          "text": "cutting-edge AI models, like Gemini, Imagen, and Veo, from Google DeepMind View Gemini API docs Integrate models into apps Unlock AI",
+          "position": 92,
+          "matched_variation": "google deepmind",
+          "co_mentions": []
+        },
+        {
+          "company": "Google DeepMind",
+          "source_url": "https://blog.google/technology/ai",
+          "text": "and an AI-ready workforce in Oklahoma. AUG 11 · GOOGLE DEEPMIND Hear Google DeepMind CEO Demis Hassabis discuss how world model",
+          "position": 311,
+          "matched_variation": "Google DeepMind",
+          "co_mentions": []
+        },
+        {
+          "company": "Google DeepMind",
+          "source_url": "https://blog.google/technology/ai",
+          "text": "workforce in Oklahoma. AUG 11 · GOOGLE DEEPMIND Hear Google DeepMind CEO Demis Hassabis discuss how world model capabilities are helping",
+          "position": 314,
+          "matched_variation": "Google DeepMind",
+          "co_mentions": []
+        },
+        {
+          "company": "Google DeepMind",
+          "source_url": "https://deepmind.google",
+          "text": "Title: Google DeepMind Google DeepMind Models Research Science About Build with Gemini",
+          "position": 1,
+          "matched_variation": "Google DeepMind",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 440,
+      "canonical_name": "Inflection AI",
+      "group_type": "monitored_company",
+      "variations": [
+        "Inflection AI",
+        "inflection ai"
+      ],
+      "mentioned_by_count": 1,
+      "mentioned_by_companies": [
+        8
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Inflection AI",
+          "source_url": "https://inflection.ai",
+          "text": "Title: Inflection AI Developers Developers Enterprise Enterprise Get in touch Get in",
+          "position": 1,
+          "matched_variation": "Inflection AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Inflection AI",
+          "source_url": "https://inflection.ai",
+          "text": "the CEO Sean White CEO Inflection AI Every day, AI is becoming an increasingly integral part of our lives. At Inflection",
+          "position": 177,
+          "matched_variation": "Inflection AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Inflection AI",
+          "source_url": "https://inflection.ai/blog",
+          "text": "Title: Inflection AI | Blog Blog Inflection Insights: a dialog with your",
+          "position": 1,
+          "matched_variation": "Inflection AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Inflection AI",
+          "source_url": "https://inflection.ai/blog",
+          "text": "Insights: a dialog with your data Mar 28, 2025 Porting Inflection AI’s Inference Stack to Intel Gaudi: Lessons Learned Mar 25,",
+          "position": 17,
+          "matched_variation": "Inflection AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Inflection AI",
+          "source_url": "https://inflection.ai",
+          "text": "Title: Inflection AI Developers Developers Enterprise Enterprise Get in touch Get in",
+          "position": 1,
+          "matched_variation": "Inflection AI",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 473,
+      "canonical_name": "LangChain",
+      "group_type": "monitored_company",
+      "variations": [
+        "LangChain",
+        "langchain"
+      ],
+      "mentioned_by_count": 2,
+      "mentioned_by_companies": [
+        44,
+        45
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Weights & Biases",
+          "source_url": "https://wandb.ai",
+          "text": "Title: Weights & Biases: The AI Developer Platform Skip to content",
+          "position": 0,
+          "matched_variation": "LangChain",
+          "co_mentions": []
+        },
+        {
+          "company": "Weights & Biases",
+          "source_url": "https://wandb.ai",
+          "text": "Title: Weights & Biases: The AI Developer Platform Skip to content",
+          "position": 0,
+          "matched_variation": "langchain",
+          "co_mentions": []
+        },
+        {
+          "company": "LangChain",
+          "source_url": "https://blog.langchain.dev",
+          "text": "Title: LangChain Blog Skip to content Case Studies In the Loop LangChain",
+          "position": 1,
+          "matched_variation": "LangChain",
+          "co_mentions": []
+        },
+        {
+          "company": "LangChain",
+          "source_url": "https://blog.langchain.dev",
+          "text": "LangChain Blog Skip to content Case Studies In the Loop LangChain Docs Changelog Sign in Subscribe Introducing Open SWE: An Open-Source",
+          "position": 11,
+          "matched_variation": "LangChain",
+          "co_mentions": []
+        },
+        {
+          "company": "LangChain",
+          "source_url": "https://docs.langchain.com",
+          "text": "Title: Overview - Docs by LangChain Our new LangChain Academy Course Deep Research with LangGraph is",
+          "position": 5,
+          "matched_variation": "LangChain",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 520,
+      "canonical_name": "Meta AI",
+      "group_type": "monitored_company",
+      "variations": [
+        "Meta AI",
+        "meta ai"
+      ],
+      "mentioned_by_count": 1,
+      "mentioned_by_companies": [
+        4
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Meta AI",
+          "source_url": "https://ai.meta.com",
+          "text": "Title: AI at Meta Our approach Research Meta AI Llama Blog Try Meta AI META AI Introducing the",
+          "position": 7,
+          "matched_variation": "Meta AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Meta AI",
+          "source_url": "https://ai.meta.com",
+          "text": "at Meta Our approach Research Meta AI Llama Blog Try Meta AI META AI Introducing the new Meta AI app Experience",
+          "position": 12,
+          "matched_variation": "Meta AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Meta AI",
+          "source_url": "https://ai.meta.com/blog",
+          "text": "Title: AI at Meta Blog Our approach Research Meta AI Llama Blog Try Meta AI The latest AI news",
+          "position": 8,
+          "matched_variation": "Meta AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Meta AI",
+          "source_url": "https://ai.meta.com/blog",
+          "text": "Meta Blog Our approach Research Meta AI Llama Blog Try Meta AI The latest AI news from Meta FEATURED Open Source",
+          "position": 13,
+          "matched_variation": "Meta AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Meta AI",
+          "source_url": "https://ai.meta.com",
+          "text": "Title: AI at Meta Our approach Research Meta AI Llama Blog Try Meta AI META AI Introducing the",
+          "position": 7,
+          "matched_variation": "Meta AI",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 522,
+      "canonical_name": "Midjourney",
+      "group_type": "monitored_company",
+      "variations": [
+        "Midjourney",
+        "midjourney"
+      ],
+      "mentioned_by_count": 1,
+      "mentioned_by_companies": [
+        34
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Midjourney",
+          "source_url": "https://docs.midjourney.com",
+          "text": "Title: Midjourney Skip to main content Midjourney Learn about Midjourney How can",
+          "position": 1,
+          "matched_variation": "Midjourney",
+          "co_mentions": []
+        },
+        {
+          "company": "Midjourney",
+          "source_url": "https://docs.midjourney.com",
+          "text": "Title: Midjourney Skip to main content Midjourney Learn about Midjourney How can we help? Getting Started Begin",
+          "position": 6,
+          "matched_variation": "Midjourney",
+          "co_mentions": []
+        },
+        {
+          "company": "Midjourney",
+          "source_url": "https://docs.midjourney.com/docs/plans",
+          "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing",
+          "position": 2,
+          "matched_variation": "Midjourney",
+          "co_mentions": []
+        },
+        {
+          "company": "Midjourney",
+          "source_url": "https://docs.midjourney.com/docs/plans",
+          "text": "Title: Comparing Midjourney Plans – Midjourney Skip to main content Midjourney Midjourney Billing Support Plan Information",
+          "position": 5,
+          "matched_variation": "Midjourney",
+          "co_mentions": []
+        },
+        {
+          "company": "Midjourney",
+          "source_url": "https://docs.midjourney.com",
+          "text": "Title: Midjourney Skip to main content Midjourney Learn about Midjourney How can",
+          "position": 1,
+          "matched_variation": "Midjourney",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 526,
+      "canonical_name": "Mistral AI",
+      "group_type": "monitored_company",
+      "variations": [
+        "Mistral AI",
+        "mistral ai"
+      ],
+      "mentioned_by_count": 2,
+      "mentioned_by_companies": [
+        48,
+        5
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "NVIDIA",
+          "source_url": "https://nvidia.com/ai",
+          "text": "Frontier AI in Your Hands 24:56 Gennady Pekhimenko Accelerating DNN Inference with End-to-End Compilation 21:35 Tri Dao FlashAttention: Fast and Memory-Efficient",
+          "position": 855,
+          "matched_variation": "Mistral AI",
+          "co_mentions": []
+        },
+        {
+          "company": "NVIDIA",
+          "source_url": "https://nvidia.com/ai",
+          "text": "Frontier AI in Your Hands 24:56 Gennady Pekhimenko Accelerating DNN Inference with End-to-End Compilation 21:35 Tri Dao FlashAttention: Fast and Memory-Efficient",
+          "position": 855,
+          "matched_variation": "mistral ai",
+          "co_mentions": []
+        },
+        {
+          "company": "Mistral AI",
+          "source_url": "https://docs.mistral.ai",
+          "text": "Title: Bienvenue to Mistral AI Documentation | Mistral AI Skip to main content Le",
+          "position": 3,
+          "matched_variation": "Mistral AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Mistral AI",
+          "source_url": "https://docs.mistral.ai",
+          "text": "Title: Bienvenue to Mistral AI Documentation | Mistral AI Skip to main content Le Chat La Plateforme Docs",
+          "position": 7,
+          "matched_variation": "Mistral AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Mistral AI",
+          "source_url": "https://mistral.ai",
+          "text": "Title: Frontier AI LLMs, assistants, agents, services | Mistral AI Products Solutions Research Resources Pricing Company Try the API",
+          "position": 8,
+          "matched_variation": "Mistral AI",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 627,
+      "canonical_name": "Replicate",
+      "group_type": "monitored_company",
+      "variations": [
+        "Replicate",
+        "replicate"
+      ],
+      "mentioned_by_count": 2,
+      "mentioned_by_companies": [
+        29,
+        47
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Replicate",
+          "source_url": "https://replicate.com",
+          "text": "Title: Replicate - Run AI with an API ctrl+k Explore Pricing Enterprise",
+          "position": 1,
+          "matched_variation": "Replicate",
+          "co_mentions": []
+        },
+        {
+          "company": "Replicate",
+          "source_url": "https://replicate.com",
+          "text": "of code. Get started for free Node Python HTTP import Replicate from \"replicate\" ; const replicate = new Replicate({ auth: process.env.REPLICATE_API_TOKEN",
+          "position": 50,
+          "matched_variation": "Replicate",
+          "co_mentions": []
+        },
+        {
+          "company": "Replicate",
+          "source_url": "https://replicate.com/blog",
+          "text": "Title: Blog – Replicate ctrl+k Explore Pricing Enterprise Docs Blog Sign in Try for",
+          "position": 3,
+          "matched_variation": "Replicate",
+          "co_mentions": []
+        },
+        {
+          "company": "Replicate",
+          "source_url": "https://replicate.com/blog",
+          "text": "Blog Sign in Try for free Blog RSS Atom Announcing Replicate's remote MCP server Use our MCP to discover, compare, and",
+          "position": 19,
+          "matched_variation": "Replicate",
+          "co_mentions": []
+        },
+        {
+          "company": "Replicate",
+          "source_url": "https://replicate.com/pricing",
+          "text": "Title: Pricing – Replicate ctrl+k Explore Pricing Enterprise Docs Blog Sign in Try for",
+          "position": 3,
+          "matched_variation": "Replicate",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 638,
+      "canonical_name": "Runway",
+      "group_type": "monitored_company",
+      "variations": [
+        "Runway",
+        "runway"
+      ],
+      "mentioned_by_count": 1,
+      "mentioned_by_companies": [
+        32
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Runway",
+          "source_url": "https://runwayml.com",
+          "text": "Title: Runway | Tools for human imagination. RESEARCH PRODUCT STUDIOS COMPANY Get",
+          "position": 1,
+          "matched_variation": "Runway",
+          "co_mentions": []
+        },
+        {
+          "company": "Runway",
+          "source_url": "https://runwayml.com",
+          "text": "read and understand our Privacy Policy. Technology for creating anything. Runway is a global AI research and technology company building foundational",
+          "position": 83,
+          "matched_variation": "Runway",
+          "co_mentions": []
+        },
+        {
+          "company": "Runway",
+          "source_url": "https://runwayml.com/blog",
+          "text": "Title: News | Runway RESEARCH PRODUCT STUDIOS COMPANY Get Started FEATURED Introducing Runway Aleph",
+          "position": 3,
+          "matched_variation": "Runway",
+          "co_mentions": []
+        },
+        {
+          "company": "Runway",
+          "source_url": "https://runwayml.com/blog",
+          "text": "| Runway RESEARCH PRODUCT STUDIOS COMPANY Get Started FEATURED Introducing Runway Aleph Runway / July 25th, 2025 Learn More ALL NEWS",
+          "position": 12,
+          "matched_variation": "Runway",
+          "co_mentions": []
+        },
+        {
+          "company": "Runway",
+          "source_url": "https://runwayml.com/pricing",
+          "text": "Title: Pricing | Runway RESEARCH PRODUCT STUDIOS COMPANY Get Started Choose the best plan",
+          "position": 3,
+          "matched_variation": "Runway",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 650,
+      "canonical_name": "Scale AI",
+      "group_type": "monitored_company",
+      "variations": [
+        "Scale AI",
+        "scale ai"
+      ],
+      "mentioned_by_count": 1,
+      "mentioned_by_companies": [
+        40
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Scale AI",
+          "source_url": "https://scale.com",
+          "text": "Title: Accelerate the Development of AI Applications | Scale AI Scale AI logo Products Leaderboards Enterprise Government Customers Resources",
+          "position": 8,
+          "matched_variation": "Scale AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Scale AI",
+          "source_url": "https://scale.com",
+          "text": "Title: Accelerate the Development of AI Applications | Scale AI Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a",
+          "position": 10,
+          "matched_variation": "Scale AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Scale AI",
+          "source_url": "https://scale.com/blog",
+          "text": "Title: AI & ML Blog | Scale AI Scale AI logo Products Leaderboards Enterprise Government Customers Resources",
+          "position": 6,
+          "matched_variation": "Scale AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Scale AI",
+          "source_url": "https://scale.com/blog",
+          "text": "Title: AI & ML Blog | Scale AI Scale AI logo Products Leaderboards Enterprise Government Customers Resources Book a",
+          "position": 8,
+          "matched_variation": "Scale AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Scale AI",
+          "source_url": "https://scale.com/enterprise",
+          "text": "Title: 404 - Page Not Found | Scale AI Scale AI logo Products Leaderboards Enterprise Government Customers Resources",
+          "position": 7,
+          "matched_variation": "Scale AI",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 687,
+      "canonical_name": "Stability AI",
+      "group_type": "monitored_company",
+      "variations": [
+        "Stability AI",
+        "stability ai"
+      ],
+      "mentioned_by_count": 1,
+      "mentioned_by_companies": [
+        10
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Stability AI",
+          "source_url": "https://stability.ai",
+          "text": "Title: Stability AI Skip to Content Models Image Video Audio 3D Solutions",
+          "position": 1,
+          "matched_variation": "Stability AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Stability AI",
+          "source_url": "https://stability.ai",
+          "text": "too big, no timeline too tight. Get to production with Stability AI, your enterprise-ready creative partner. Let's get started It starts",
+          "position": 61,
+          "matched_variation": "Stability AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Stability AI",
+          "source_url": "https://stability.ai/blog",
+          "text": "Title: 404 — Stability AI Skip to Content Models Image Video Audio 3D Solutions",
+          "position": 3,
+          "matched_variation": "Stability AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Stability AI",
+          "source_url": "https://stability.ai/blog",
+          "text": "exist. Try searching again or head back home. Go Home Stability AI is unlocking the power of open-source generative AI to",
+          "position": 68,
+          "matched_variation": "Stability AI",
+          "co_mentions": []
+        },
+        {
+          "company": "Stability AI",
+          "source_url": "https://stability.ai/pricing",
+          "text": "Title: 404 — Stability AI Skip to Content Models Image Video Audio 3D Solutions",
+          "position": 3,
+          "matched_variation": "Stability AI",
+          "co_mentions": []
+        }
+      ]
+    },
+    {
+      "entity_id": 779,
+      "canonical_name": "Weights & Biases",
+      "group_type": "monitored_company",
+      "variations": [
+        "Weights & Biases",
+        "weights & biases"
+      ],
+      "mentioned_by_count": 1,
+      "mentioned_by_companies": [
+        44
+      ],
+      "total_contexts": 6,
+      "contexts": [
+        {
+          "company": "Weights & Biases",
+          "source_url": "https://wandb.ai",
+          "text": "Title: Weights & Biases: The AI Developer Platform Skip to content Platform",
+          "position": 1,
+          "matched_variation": "Weights & Biases",
+          "co_mentions": []
+        },
+        {
+          "company": "Weights & Biases",
+          "source_url": "https://wandb.ai",
+          "text": "new AI cloud software products and capabilities from CoreWeave and Weights & Biases AI is easy to productionize The AI developer",
+          "position": 41,
+          "matched_variation": "Weights & Biases",
+          "co_mentions": []
+        },
+        {
+          "company": "Weights & Biases",
+          "source_url": "https://wandb.ai/fully-connected",
+          "text": "Title: Weights & Biases Skip to main content Weights & Biases Products",
+          "position": 1,
+          "matched_variation": "Weights & Biases",
+          "co_mentions": []
+        },
+        {
+          "company": "Weights & Biases",
+          "source_url": "https://wandb.ai/fully-connected",
+          "text": "Title: Weights & Biases Skip to main content Weights & Biases Products Resources DocsPricingEnterprise Log inSign up Announcing new",
+          "position": 8,
+          "matched_variation": "Weights & Biases",
+          "co_mentions": []
+        },
+        {
+          "company": "Weights & Biases",
+          "source_url": "https://wandb.ai/pricing",
+          "text": "Title: Weights & Biases pricing Skip to content Platform OPEN PLATFORM Solutions",
+          "position": 1,
+          "matched_variation": "Weights & Biases",
+          "co_mentions": []
+        }
+      ]
+    }
+  ]
+}

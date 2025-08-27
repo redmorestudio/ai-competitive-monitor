@@ -1,19 +1,9 @@
 {
-  "generated_at": "2025-08-18T16:45:24.669Z",
-  "statistics": {
-    "total_groups": "800",
-    "total_variations": "808",
-    "companies": "682",
-    "products": "0",
-    "technologies": "0",
-    "concepts": "0"
-  },
-  "files_generated": [
-    "mentioned_companies-contexts.json",
-    "other-contexts.json"
-  ],
-  "total_entities_with_contexts": 555,
-  "total_entities_processed": 555,
-  "total_entities_skipped": 245,
-  "total_entities_failed": 0
+  "generated_at": "2025-08-27T15:35:17.647Z",
+  "mode": "minimal",
+  "message": "Generated minimal contexts for high-priority entities only",
+  "total_entities_processed": 18,
+  "max_entities": 50,
+  "max_contexts_per_entity": 5,
+  "max_pages_per_entity": 10
 }

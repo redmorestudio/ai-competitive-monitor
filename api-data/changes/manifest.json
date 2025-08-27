@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "generated_at": "2025-08-18T16:47:25.960Z",
+  "generated_at": "2025-08-27T15:39:45.993Z",
   "source": "postgresql",
-  "total_changes": 403,
+  "total_changes": 361,
   "files": [
     {
       "filename": "change-978.json",
@@ -943,156 +943,6 @@
       "interest_level": 9,
       "change_type": "modified",
       "summary": "The content changed from a blocked page to a detailed pricing page for ChatGPT, including various pl..."
-    },
-    {
-      "filename": "change-228.json",
-      "change_id": 228,
-      "api_path": "/api-data/changes/change-228.json",
-      "company": "OpenAI",
-      "detected_at": "2025-07-22T18:18:01.891Z",
-      "interest_level": 9,
-      "change_type": "modified",
-      "summary": "The content has changed from a security verification page to the OpenAI homepage, featuring various ..."
-    },
-    {
-      "filename": "change-208.json",
-      "change_id": 208,
-      "api_path": "/api-data/changes/change-208.json",
-      "company": "OpenAI",
-      "detected_at": "2025-07-22T17:33:40.166Z",
-      "interest_level": 9,
-      "change_type": "modified",
-      "summary": "The content has changed from a security verification page to a ChatGPT interface"
-    },
-    {
-      "filename": "change-72.json",
-      "change_id": 72,
-      "api_path": "/api-data/changes/change-72.json",
-      "company": "Perplexity AI",
-      "detected_at": "2025-07-21T15:21:10.364Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "Introduction of Perplexity Pro and Max subscription plans with various features and pricing"
-    },
-    {
-      "filename": "change-161.json",
-      "change_id": 161,
-      "api_path": "/api-data/changes/change-161.json",
-      "company": "Midjourney",
-      "detected_at": "2025-07-21T15:17:43.481Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "Introduction of a new pricing page with detailed plan comparisons and features"
-    },
-    {
-      "filename": "change-361.json",
-      "change_id": 361,
-      "api_path": "/api-data/changes/change-361.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-21T03:13:08.841Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "Introduction of the Gemini Developer API and associated models, including Gemini, Imagen, Veo, and G..."
-    },
-    {
-      "filename": "change-363.json",
-      "change_id": 363,
-      "api_path": "/api-data/changes/change-363.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-21T03:12:55.045Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "New content added to the Google DeepMind homepage, including models, research, science, and about se..."
-    },
-    {
-      "filename": "change-365.json",
-      "change_id": 365,
-      "api_path": "/api-data/changes/change-365.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-21T03:12:34.152Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "Introduction of new AI-powered products and features, including Gemini, AI Mode, NotebookLM, Flow, a..."
-    },
-    {
-      "filename": "change-367.json",
-      "change_id": 367,
-      "api_path": "/api-data/changes/change-367.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-21T03:12:22.286Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "Initial documentation release for GitHub Copilot"
-    },
-    {
-      "filename": "change-368.json",
-      "change_id": 368,
-      "api_path": "/api-data/changes/change-368.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-21T03:12:15.826Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "Introduction of GitHub Copilot, a new AI-powered developer tool, with various features, pricing plan..."
-    },
-    {
-      "filename": "change-369.json",
-      "change_id": 369,
-      "api_path": "/api-data/changes/change-369.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-21T03:12:08.824Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "New pricing page content for GitHub Copilot"
-    },
-    {
-      "filename": "change-370.json",
-      "change_id": 370,
-      "api_path": "/api-data/changes/change-370.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-21T03:07:11.303Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "Initial content creation for Anthropic documentation"
-    },
-    {
-      "filename": "change-371.json",
-      "change_id": 371,
-      "api_path": "/api-data/changes/change-371.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-21T03:07:04.850Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "New content added to the homepage of Anthropic, including introduction to Claude, API, solutions, re..."
-    },
-    {
-      "filename": "change-372.json",
-      "change_id": 372,
-      "api_path": "/api-data/changes/change-372.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-21T03:06:58.430Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "New content added to the newsroom section of Anthropic's website, including announcements, product u..."
-    },
-    {
-      "filename": "change-373.json",
-      "change_id": 373,
-      "api_path": "/api-data/changes/change-373.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-21T03:06:50.654Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "Introduction of pricing plans for Anthropic's AI services, including Free, Pro, Max, Team, and Enter..."
-    },
-    {
-      "filename": "change-374.json",
-      "change_id": 374,
-      "api_path": "/api-data/changes/change-374.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-21T03:06:44.412Z",
-      "interest_level": 9,
-      "change_type": "new",
-      "summary": "Initial content creation for Anthropic's product page"
     },
     {
       "filename": "change-1057.json",
@@ -2435,106 +2285,6 @@
       "summary": "Changes in pricing plans, usage limits, and features for Claude models"
     },
     {
-      "filename": "change-438.json",
-      "change_id": 438,
-      "api_path": "/api-data/changes/change-438.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-24T15:45:05.834Z",
-      "interest_level": 8,
-      "change_type": "modified",
-      "summary": "New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inferenc..."
-    },
-    {
-      "filename": "change-289.json",
-      "change_id": 289,
-      "api_path": "/api-data/changes/change-289.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-23T19:40:46.363Z",
-      "interest_level": 8,
-      "change_type": "modified",
-      "summary": "New articles and updates were added to the Google Blog, specifically in the AI, Gemini, Research, an..."
-    },
-    {
-      "filename": "change-296.json",
-      "change_id": 296,
-      "api_path": "/api-data/changes/change-296.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-23T19:03:49.432Z",
-      "interest_level": 8,
-      "change_type": "modified",
-      "summary": "New articles and updates were added to the Google Blog, including 'Check out the first images of wil..."
-    },
-    {
-      "filename": "change-298.json",
-      "change_id": 298,
-      "api_path": "/api-data/changes/change-298.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-23T19:03:26.617Z",
-      "interest_level": 8,
-      "change_type": "modified",
-      "summary": "Addition of new links and reorganization of existing content, including the addition of a 'Use AI mo..."
-    },
-    {
-      "filename": "change-285.json",
-      "change_id": 285,
-      "api_path": "/api-data/changes/change-285.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-23T19:03:14.475Z",
-      "interest_level": 8,
-      "change_type": "modified",
-      "summary": "GitHub Spark was added as a new feature"
-    },
-    {
-      "filename": "change-286.json",
-      "change_id": 286,
-      "api_path": "/api-data/changes/change-286.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-23T19:02:49.922Z",
-      "interest_level": 8,
-      "change_type": "modified",
-      "summary": "New news articles and updates were added to the newsroom section of the Anthropic website, including..."
-    },
-    {
-      "filename": "change-160.json",
-      "change_id": 160,
-      "api_path": "/api-data/changes/change-160.json",
-      "company": "Midjourney",
-      "detected_at": "2025-07-21T15:18:22.044Z",
-      "interest_level": 8,
-      "change_type": "new",
-      "summary": "Initial content creation"
-    },
-    {
-      "filename": "change-362.json",
-      "change_id": 362,
-      "api_path": "/api-data/changes/change-362.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-21T03:13:00.463Z",
-      "interest_level": 8,
-      "change_type": "new",
-      "summary": "New content added to the Google Blog, including AI news and updates, product news, company news, and..."
-    },
-    {
-      "filename": "change-364.json",
-      "change_id": 364,
-      "api_path": "/api-data/changes/change-364.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-21T03:12:46.820Z",
-      "interest_level": 8,
-      "change_type": "new",
-      "summary": "New content introduction for Google Cloud pricing page"
-    },
-    {
-      "filename": "change-366.json",
-      "change_id": 366,
-      "api_path": "/api-data/changes/change-366.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-21T03:12:28.715Z",
-      "interest_level": 8,
-      "change_type": "new",
-      "summary": "New content added to the GitHub blog, including various categories and subcategories related to AI, ..."
-    },
-    {
       "filename": "change-1082.json",
       "change_id": 1082,
       "api_path": "/api-data/changes/change-1082.json",
@@ -2593,16 +2343,6 @@
       "interest_level": 7,
       "change_type": "modified",
       "summary": "New blog post added: 'The AI Risk Matrix: Evolving AI Safety and Security for Today'"
-    },
-    {
-      "filename": "change-439.json",
-      "change_id": 439,
-      "api_path": "/api-data/changes/change-439.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-24T15:44:39.009Z",
-      "interest_level": 7,
-      "change_type": "modified",
-      "summary": "Reorganization and updates of GitHub Copilot documentation"
     },
     {
       "filename": "change-1069.json",
@@ -2863,46 +2603,6 @@
       "interest_level": 6,
       "change_type": "modified",
       "summary": "New article 'Anthropic Signs CMS Health Tech Ecosystem Pledge to Advance Healthcare Interoperability..."
-    },
-    {
-      "filename": "change-295.json",
-      "change_id": 295,
-      "api_path": "/api-data/changes/change-295.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-23T19:39:42.299Z",
-      "interest_level": 6,
-      "change_type": "modified",
-      "summary": "New article 'Thoughts on America’s AI Action Plan' was added, and some older articles were removed f..."
-    },
-    {
-      "filename": "change-347.json",
-      "change_id": 347,
-      "api_path": "/api-data/changes/change-347.json",
-      "company": "OpenAI",
-      "detected_at": "2025-07-22T19:04:16.736Z",
-      "interest_level": 6,
-      "change_type": "modified",
-      "summary": "Addition of 'Voice' feature"
-    },
-    {
-      "filename": "change-219.json",
-      "change_id": 219,
-      "api_path": "/api-data/changes/change-219.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-22T17:13:18.357Z",
-      "interest_level": 6,
-      "change_type": "modified",
-      "summary": "New article 'Build AI in America' added to the newsroom"
-    },
-    {
-      "filename": "change-360.json",
-      "change_id": 360,
-      "api_path": "/api-data/changes/change-360.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-21T14:21:02.651Z",
-      "interest_level": 6,
-      "change_type": "modified",
-      "summary": "Addition of a new policy announcement: Anthropic to sign the EU Code of Practice"
     },
     {
       "filename": "change-1068.json",
@@ -3223,36 +2923,6 @@
       "interest_level": 4,
       "change_type": "modified",
       "summary": "The download link for Claude has changed from https://claude.ai/redirect/website.v1.e0360d15-f344-40..."
-    },
-    {
-      "filename": "change-275.json",
-      "change_id": 275,
-      "api_path": "/api-data/changes/change-275.json",
-      "company": "Perplexity AI",
-      "detected_at": "2025-07-23T00:38:32.210Z",
-      "interest_level": 4,
-      "change_type": "modified",
-      "summary": "Rephrased introductory sentence for Perplexity Pro"
-    },
-    {
-      "filename": "change-227.json",
-      "change_id": 227,
-      "api_path": "/api-data/changes/change-227.json",
-      "company": "OpenAI",
-      "detected_at": "2025-07-22T18:46:20.404Z",
-      "interest_level": 4,
-      "change_type": "modified",
-      "summary": "Removal of Voice feature"
-    },
-    {
-      "filename": "change-210.json",
-      "change_id": 210,
-      "api_path": "/api-data/changes/change-210.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-22T17:17:58.613Z",
-      "interest_level": 4,
-      "change_type": "modified",
-      "summary": "Addition of a new concept 'About GitHub Copilot Chat' and removal of 'Set extension permissions' fro..."
     },
     {
       "filename": "change-1060.json",
@@ -3585,16 +3255,6 @@
       "summary": "Update of download and login links for Claude"
     },
     {
-      "filename": "change-440.json",
-      "change_id": 440,
-      "api_path": "/api-data/changes/change-440.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-24T15:44:05.779Z",
-      "interest_level": 3,
-      "change_type": "modified",
-      "summary": "The URL parameters for downloading the Claude app and logging in have changed."
-    },
-    {
       "filename": "change-1061.json",
       "change_id": 1061,
       "api_path": "/api-data/changes/change-1061.json",
@@ -3893,86 +3553,6 @@
       "interest_level": 2,
       "change_type": "modified",
       "summary": "No significant changes were detected in the content structure or links between the two versions."
-    },
-    {
-      "filename": "change-310.json",
-      "change_id": 310,
-      "api_path": "/api-data/changes/change-310.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-23T23:36:42.053Z",
-      "interest_level": 2,
-      "change_type": "modified",
-      "summary": "No significant changes were detected in the provided content."
-    },
-    {
-      "filename": "change-297.json",
-      "change_id": 297,
-      "api_path": "/api-data/changes/change-297.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-23T19:03:32.433Z",
-      "interest_level": 2,
-      "change_type": "modified",
-      "summary": "No significant changes were detected in the content structure or major updates to the models, resear..."
-    },
-    {
-      "filename": "change-257.json",
-      "change_id": 257,
-      "api_path": "/api-data/changes/change-257.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-22T22:52:15.696Z",
-      "interest_level": 2,
-      "change_type": "modified",
-      "summary": "No significant changes were detected in the content structure or links between the two versions."
-    },
-    {
-      "filename": "change-225.json",
-      "change_id": 225,
-      "api_path": "/api-data/changes/change-225.json",
-      "company": "OpenAI",
-      "detected_at": "2025-07-22T19:04:23.608Z",
-      "interest_level": 2,
-      "change_type": "modified",
-      "summary": "The 'openaicom-did' parameter in the URLs has changed from '4aa03562-c3c6-4634-98a2-6d29cf24c479' to..."
-    },
-    {
-      "filename": "change-226.json",
-      "change_id": 226,
-      "api_path": "/api-data/changes/change-226.json",
-      "company": "OpenAI",
-      "detected_at": "2025-07-22T18:46:27.592Z",
-      "interest_level": 2,
-      "change_type": "modified",
-      "summary": "The 'openaicom-did' parameter in the URLs has changed from '99580f75-39b7-4bf3-9a9c-e2a544c14234' to..."
-    },
-    {
-      "filename": "change-209.json",
-      "change_id": 209,
-      "api_path": "/api-data/changes/change-209.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-22T17:18:26.929Z",
-      "interest_level": 2,
-      "change_type": "modified",
-      "summary": "No significant changes were detected in the content between the two versions."
-    },
-    {
-      "filename": "change-10.json",
-      "change_id": 10,
-      "api_path": "/api-data/changes/change-10.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-21T16:18:27.267Z",
-      "interest_level": 2,
-      "change_type": "modified",
-      "summary": "No significant changes were detected in the provided content, only minor formatting and loading erro..."
-    },
-    {
-      "filename": "change-184.json",
-      "change_id": 184,
-      "api_path": "/api-data/changes/change-184.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-21T15:11:46.979Z",
-      "interest_level": 2,
-      "change_type": "modified",
-      "summary": "No significant changes were detected in the content between the two versions."
     },
     {
       "filename": "change-1001.json",
