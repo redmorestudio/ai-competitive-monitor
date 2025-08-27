@@ -11,17 +11,18 @@
 
 // Version information
 export const VERSION = {
-    number: '2.1.3',
-    name: 'Dashboard Fix',
-    buildNumber: '176',
+    number: '2.1.4',
+    name: 'Modal & Changes Fix',
+    buildNumber: '177',
     releaseDate: '2025-08-27',
+    deployTime: new Date().toISOString(),
     features: [
-        'Keyword-in-Context (KWIC) feature for entity exploration',
-        'Clickable intelligence pills showing contexts',
-        'Modular architecture with 23 specialized modules',
-        'Enhanced 3D visualization with 40+ controls',
-        'Improved performance and maintainability',
-        'Better error handling and recovery'
+        'Fixed modal reopening issue after first close',
+        'Fixed changes view to show all recent data',
+        'Added KWIC integration to change detail modals',
+        'Clickable entity tags in modals',
+        'Extended changes timeframe to 90 days',
+        'Removed artificial limits on changes display'
     ]
 };
 
@@ -33,12 +34,18 @@ export const VERSION = {
 export function displayVersion(elementId) {
     const element = document.getElementById(elementId);
     if (element) {
+        const deployTime = new Date(VERSION.deployTime);
+        const timeString = deployTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        const dateString = deployTime.toLocaleDateString();
+        
         element.innerHTML = `
             <span class="version-number">v${VERSION.number}</span>
             <span class="version-name">${VERSION.name}</span>
-            <span class="version-date" style="opacity: 0.7; margin-left: 8px;">(${VERSION.releaseDate})</span>
+            <span class="version-date" style="opacity: 0.7; margin-left: 8px;">
+                (${dateString} ${timeString})
+            </span>
         `;
-        element.title = `Build ${VERSION.buildNumber} - Released ${VERSION.releaseDate}`;
+        element.title = `Build ${VERSION.buildNumber} - Deployed ${VERSION.deployTime}`;
     }
 }
 
