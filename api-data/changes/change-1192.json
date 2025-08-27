@@ -1,0 +1,62 @@
+{
+  "id": 1192,
+  "company": "Weights & Biases",
+  "page_url": "pricing",
+  "detected_at": "2025-08-27T16:42:50.562Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "Update of Hangzhou DeepSeek models from DeepSeek V3-0324, DeepSeek R1-0528 to DeepSeek V3.1, V3-0324, R1-0528",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Update of Hangzhou DeepSeek models from DeepSeek V3-0324, DeepSeek R1-0528 to DeepSeek V3.1, V3-0324, R1-0528",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added DeepSeek V3.1 to Hangzhou DeepSeek models"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The update may improve the performance or capabilities of Hangzhou DeepSeek models, but the impact is likely to be limited.",
+    "market_signals": [
+      "Continued investment in AI and ML technologies"
+    ],
+    "competitive_implications": "The update may help Weights & Biases maintain its competitive position in the AI and ML market, but it is unlikely to significantly change the competitive landscape.",
+    "strategic_direction": "The update is consistent with Weights & Biases' focus on AI and ML technologies, but it does not reveal any new strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "Hangzhou DeepSeek"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The update is minor and only affects a specific model."
+    ],
+    "opportunities": [
+      "The update may provide an opportunity for Weights & Biases to improve its market position in the AI and ML market."
+    ],
+    "threats": [
+      "The update may not be sufficient to maintain Weights & Biases' competitive position in the market."
+    ],
+    "recommended_actions": [
+      "Monitor the impact of the update on Weights & Biases' market position and competitive landscape."
+    ]
+  },
+  "key_insights": [
+    "The update is minor and only affects a specific model."
+  ],
+  "business_impact": "The update may improve the performance or capabilities of Hangzhou DeepSeek models, but the impact is likely to be limited.",
+  "competitive_implications": "The update may help Weights & Biases maintain its competitive position in the AI and ML market, but it is unlikely to significantly change the competitive landscape.",
+  "content_hash_before": "7750a62b8e2f55bfef7e8de1678bee580a7182f94031b1d7f399e319bd8bc371",
+  "content_hash_after": "15ee72b90b8bbf2e709ac2be24331716f0ecd997d446bfbdbd2948cd4bec8828",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

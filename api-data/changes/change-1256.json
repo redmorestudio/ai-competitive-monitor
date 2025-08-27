@@ -1,0 +1,64 @@
+{
+  "id": 1256,
+  "company": "Descript",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:31:23.178Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "Addition of a 'Templates' resource and removal of 'Video regenerate' feature",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "Addition of a 'Templates' resource and removal of 'Video regenerate' feature",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Templates' to the resources section",
+      "Removed 'Video regenerate' feature from the AI features section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of 'Templates' may improve user experience and increase engagement, while the removal of 'Video regenerate' may not significantly impact the business",
+    "market_signals": [
+      "Descript is focusing on improving user experience and streamlining its features"
+    ],
+    "competitive_implications": "The changes do not significantly impact Descript's competitive positioning",
+    "strategic_direction": "Descript is likely focusing on refining its existing features and improving user experience"
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "Templates"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Descript is refining its features and improving user experience"
+    ],
+    "opportunities": [
+      "Descript could explore adding more features to its 'Templates' section to increase user engagement"
+    ],
+    "threats": [
+      "The removal of 'Video regenerate' may disappoint some users who relied on this feature"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and adjust the 'Templates' section accordingly",
+      "Consider adding new features to replace 'Video regenerate'"
+    ]
+  },
+  "key_insights": [
+    "Descript is refining its features and improving user experience"
+  ],
+  "business_impact": "The addition of 'Templates' may improve user experience and increase engagement, while the removal of 'Video regenerate' may not significantly impact the business",
+  "competitive_implications": "The changes do not significantly impact Descript's competitive positioning",
+  "content_hash_before": "40da8966a2f5724f4d096b5fa490933cada19db5b95b720d57594b68879ff733",
+  "content_hash_after": "a26dcffd056ba46c2bb210ea8ee2841f142c4692d21ce9bd7c66c00a027c4afa",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

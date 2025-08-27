@@ -1,0 +1,75 @@
+{
+  "id": 1202,
+  "company": "Sourcegraph",
+  "page_url": "pricing",
+  "detected_at": "2025-08-27T16:41:23.992Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Minor updates to the pricing page, including changes to the layout, removal of the 'Support Forum' link, and updates to the 'Community' section",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Minor updates to the pricing page, including changes to the layout, removal of the 'Support Forum' link, and updates to the 'Community' section",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Removal of the 'Support Forum' link",
+      "Updates to the 'Community' section",
+      "Changes to the layout of the pricing page"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes do not have a significant impact on the business, but may improve the user experience and clarity of the pricing page",
+    "market_signals": [
+      "No significant changes to the pricing or product offerings"
+    ],
+    "competitive_implications": "The changes do not indicate any significant competitive advantages or disadvantages",
+    "strategic_direction": "The company may be focusing on refining its pricing and product offerings, but the changes do not indicate any major shifts in strategy"
+  },
+  "entities": {
+    "products": [
+      "Amp",
+      "Code Search"
+    ],
+    "features": [
+      "At-cost pricing",
+      "Docs and Discord + Limited support",
+      "Single Sign-on",
+      "No training on data",
+      "Team billing",
+      "Zero LLM retention"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "$10 in free credits for most users",
+      "50% more expensive for Enterprise"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is refining its pricing page and product offerings",
+      "No significant changes to the pricing or product offerings"
+    ],
+    "opportunities": [
+      "The company may be able to improve its user experience and clarity of its pricing page"
+    ],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor the company's pricing and product offerings for any significant changes"
+    ]
+  },
+  "key_insights": [
+    "The company is refining its pricing page and product offerings",
+    "No significant changes to the pricing or product offerings"
+  ],
+  "business_impact": "The changes do not have a significant impact on the business, but may improve the user experience and clarity of the pricing page",
+  "competitive_implications": "The changes do not indicate any significant competitive advantages or disadvantages",
+  "content_hash_before": "514e25d574f1eedae3a1b706dd374e5df813b8b3679c9cb962d162f49b67abd4",
+  "content_hash_after": "ace24fb31b26019688f4b438fdbacc093699e00b67b3cd15bc2d1c802192ef98",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,60 @@
+{
+  "id": 1268,
+  "company": "Cohere",
+  "page_url": "docs",
+  "detected_at": "2025-08-27T16:29:55.075Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Removal of the 'New multimodal model: Command A Vision!' announcement and update of the 'Release Notes' link from '/v2/changelog' to '/changelog'",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Removal of the 'New multimodal model: Command A Vision!' announcement and update of the 'Release Notes' link from '/v2/changelog' to '/changelog'",
+    "change_type": "update/removal",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Removal of the 'New multimodal model: Command A Vision!' announcement",
+      "Update of the 'Release Notes' link from '/v2/changelog' to '/changelog'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The removal of the announcement may indicate that the new multimodal model is no longer a key focus area for Cohere. The update of the 'Release Notes' link may improve user experience by providing easier access to the latest releases and platform updates.",
+    "market_signals": [
+      "Cohere may be shifting its focus away from multimodal models"
+    ],
+    "competitive_implications": "The changes do not provide any significant competitive advantages or disadvantages.",
+    "strategic_direction": "Cohere may be focusing on other areas, such as improving its API and platform updates."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Cohere removed the announcement for the new multimodal model",
+      "Cohere updated the 'Release Notes' link to improve user experience"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor Cohere's future updates and announcements to understand its strategic direction",
+      "Assess the impact of the removal of the multimodal model announcement on Cohere's competitive positioning"
+    ]
+  },
+  "key_insights": [
+    "Cohere removed the announcement for the new multimodal model",
+    "Cohere updated the 'Release Notes' link to improve user experience"
+  ],
+  "business_impact": "The removal of the announcement may indicate that the new multimodal model is no longer a key focus area for Cohere. The update of the 'Release Notes' link may improve user experience by providing easier access to the latest releases and platform updates.",
+  "competitive_implications": "The changes do not provide any significant competitive advantages or disadvantages.",
+  "content_hash_before": "e943d7dd4bbc5ddd867223bf94cc861b9fb54532de74988a4f8fa5045a1adc34",
+  "content_hash_after": "6f5f05d90184eb8f1cdb28bde8804bb9a89748f36421f1e2c2f5eacf65c8b36c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

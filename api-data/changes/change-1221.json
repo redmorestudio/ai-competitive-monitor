@@ -1,0 +1,85 @@
+{
+  "id": 1221,
+  "company": "NVIDIA",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:37:54.993Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New articles and updates to the NVIDIA blog",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New articles and updates to the NVIDIA blog",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "New article: 'Take It for a Spin: NVIDIA Rolls Out DRIVE AGX Thor Developer Kit to World’s Automotive Developers'",
+      "New article: 'NVIDIA Jetson Thor Unlocks Real-Time Reasoning for General Robotics and Physical AI'",
+      "New article: 'Hot Topics at Hot Chips: Inference, Networking, AI Innovation at Every Scale — All Built on NVIDIA'",
+      "Removal of previous articles: 'Now We’re Talking: NVIDIA Releases Open Dataset, Models for Multilingual Speech AI', 'Warhammer 40,000: Dawn of War – Definitive Edition’ Storms GeForce NOW at Launch', 'NVIDIA, National Science Foundation Support Ai2 Development of Open AI Models to Drive U.S. Scientific Leadership'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates demonstrate NVIDIA's continued focus on advancing their technologies in the automotive and robotics spaces, which could lead to increased market share and revenue.",
+    "market_signals": [
+      "Increased competition in the automotive and robotics markets",
+      "Growing demand for advanced AI and sensor technologies"
+    ],
+    "competitive_implications": "NVIDIA's advancements in automotive and robotics technologies could pose a competitive threat to other companies in these spaces.",
+    "strategic_direction": "NVIDIA's strategic direction appears to be focused on advancing their technologies in key markets, such as automotive and robotics, and expanding their presence in the AI and sensor technology spaces."
+  },
+  "entities": {
+    "products": [
+      "DRIVE AGX Thor Developer Kit",
+      "Jetson Thor"
+    ],
+    "features": [
+      "Real-time reasoning for general robotics and physical AI"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "Autonomous vehicle systems",
+      "Generative AI",
+      "Advanced sensor technologies"
+    ],
+    "people": [
+      "Ali Kani",
+      "Chen Su",
+      "Dave Salvator"
+    ],
+    "pricing": [],
+    "markets": [
+      "Automotive",
+      "Robotics"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "NVIDIA is advancing their technologies in the automotive and robotics spaces",
+      "The company is involved in AI innovation and is developing advanced sensor technologies"
+    ],
+    "opportunities": [
+      "Partnership opportunities with NVIDIA in the automotive and robotics spaces",
+      "Potential for increased market share and revenue in these spaces"
+    ],
+    "threats": [
+      "Increased competition in the automotive and robotics markets",
+      "Potential for NVIDIA's advancements to disrupt existing business models"
+    ],
+    "recommended_actions": [
+      "Monitor NVIDIA's advancements in the automotive and robotics spaces",
+      "Consider partnership opportunities with NVIDIA in these spaces"
+    ]
+  },
+  "key_insights": [
+    "NVIDIA is advancing their technologies in the automotive and robotics spaces",
+    "The company is involved in AI innovation and is developing advanced sensor technologies"
+  ],
+  "business_impact": "The updates demonstrate NVIDIA's continued focus on advancing their technologies in the automotive and robotics spaces, which could lead to increased market share and revenue.",
+  "competitive_implications": "NVIDIA's advancements in automotive and robotics technologies could pose a competitive threat to other companies in these spaces.",
+  "content_hash_before": "53131d965681a1e4935870e1f99d753f36e29fbbb6672c746b5a3f037015dd5e",
+  "content_hash_after": "1c8f3cd9c76ee8b35a20ab4f52ae469624d6a0d8789ddbd0b507abe2c41e64c3",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

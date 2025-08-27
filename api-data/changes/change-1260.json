@@ -1,0 +1,64 @@
+{
+  "id": 1260,
+  "company": "DataRobot",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:30:39.246Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "New blog posts were added, and the 'Resources' section was updated with a new link to 'Agents in the AM'.",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "New blog posts were added, and the 'Resources' section was updated with a new link to 'Agents in the AM'.",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Addition of new blog posts",
+      "Update to the 'Resources' section with a new link"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updates to the blog and resources section may improve user engagement and provide more value to customers, but do not significantly impact the company's overall business strategy.",
+    "market_signals": [
+      "Increased focus on content creation and user engagement"
+    ],
+    "competitive_implications": "The changes do not significantly impact the company's competitive position, but may contribute to a stronger online presence.",
+    "strategic_direction": "The updates suggest a continued focus on thought leadership and customer engagement, but do not indicate a major shift in the company's strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is continuing to invest in content creation and user engagement.",
+      "The updates to the 'Resources' section may improve user experience and provide more value to customers."
+    ],
+    "opportunities": [
+      "The company may be able to increase user engagement and drive more traffic to the website through the updated blog and resources section."
+    ],
+    "threats": [
+      "The changes may not be sufficient to significantly impact the company's competitive position or drive major business growth."
+    ],
+    "recommended_actions": [
+      "Continue to monitor the company's content creation and user engagement strategies.",
+      "Assess the impact of the updates on user engagement and website traffic."
+    ]
+  },
+  "key_insights": [
+    "The company is continuing to invest in content creation and user engagement.",
+    "The updates to the 'Resources' section may improve user experience and provide more value to customers."
+  ],
+  "business_impact": "The updates to the blog and resources section may improve user engagement and provide more value to customers, but do not significantly impact the company's overall business strategy.",
+  "competitive_implications": "The changes do not significantly impact the company's competitive position, but may contribute to a stronger online presence.",
+  "content_hash_before": "70b21055dec72e8fa14c41fc9648e40c2621454d1201502ce1c7e1443575e374",
+  "content_hash_after": "193374546d3f59d9d9cf119a599ecc81f2b368c6357de327154aace5fe9113f1",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

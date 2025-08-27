@@ -1,0 +1,58 @@
+{
+  "id": 1215,
+  "company": "Pieces",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:39:19.048Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Minor tweaks in the content, including the addition of a new testimonial and slight rewording of certain sections",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Minor tweaks in the content, including the addition of a new testimonial and slight rewording of certain sections",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added a new testimonial from a user",
+      "Reworded some sections for clarity and concision",
+      "No major changes to the overall structure or content"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The minor changes are unlikely to have a significant impact on the company's business or market position",
+    "market_signals": [
+      "The company is continuing to refine its messaging and content"
+    ],
+    "competitive_implications": "The changes do not indicate any significant competitive advantages or disadvantages",
+    "strategic_direction": "The company's strategic direction remains unchanged"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is focused on refining its content and messaging"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor the company's content and messaging for any significant changes"
+    ]
+  },
+  "key_insights": [
+    "The company is focused on refining its content and messaging"
+  ],
+  "business_impact": "The minor changes are unlikely to have a significant impact on the company's business or market position",
+  "competitive_implications": "The changes do not indicate any significant competitive advantages or disadvantages",
+  "content_hash_before": "5175cfa55df861eae80dba11d31883216cf137f71915ec40df62f79d033e0a53",
+  "content_hash_after": "4396f8c729e930057d6af44ec7731600292da1376b045a1ed0a6c9d6d9e94385",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,71 @@
+{
+  "id": 1189,
+  "company": "WellSaid Labs",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:43:16.477Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "New articles and blog posts were added, and some links were updated",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "New articles and blog posts were added, and some links were updated",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added new article: '6 ways leading health systems and payers use AI voice — securely and effectively'",
+      "Updated link for Help Center",
+      "Added new categories and articles under 'All articles' section"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The added articles and updated links may improve user engagement and provide more value to customers, but do not significantly impact the company's overall business strategy",
+    "market_signals": [
+      "Increased focus on AI voice technology and its applications in various industries"
+    ],
+    "competitive_implications": "The company is maintaining its position in the market by providing updated content and features, but not necessarily gaining a significant competitive advantage",
+    "strategic_direction": "The company is continuing to invest in AI voice technology and its applications, and is likely to continue expanding its offerings in this area"
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "Caption Files and Word Timing features"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI Voice"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": [
+      "Health systems and payers"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "The company is focusing on providing more value to customers through updated content and features",
+      "The company is investing in AI voice technology and its applications"
+    ],
+    "opportunities": [
+      "Expanding into new markets and industries with AI voice technology"
+    ],
+    "threats": [
+      "Competition from other companies providing similar AI voice technology and services"
+    ],
+    "recommended_actions": [
+      "Continue monitoring the company's updates and investments in AI voice technology",
+      "Assess the potential for expansion into new markets and industries"
+    ]
+  },
+  "key_insights": [
+    "The company is focusing on providing more value to customers through updated content and features",
+    "The company is investing in AI voice technology and its applications"
+  ],
+  "business_impact": "The added articles and updated links may improve user engagement and provide more value to customers, but do not significantly impact the company's overall business strategy",
+  "competitive_implications": "The company is maintaining its position in the market by providing updated content and features, but not necessarily gaining a significant competitive advantage",
+  "content_hash_before": "eff1c6922712cd7a36dc5da60ce7c2fa8a750314a3800f8089365fce16f03f0a",
+  "content_hash_after": "1338e40aace32a0e07bb280e6eb49928b7632b31ea11579905f4a58cdfd2fd55",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

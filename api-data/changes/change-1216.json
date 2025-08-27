@@ -1,0 +1,78 @@
+{
+  "id": 1216,
+  "company": "Pieces",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:39:13.405Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "New blog posts were added, and some existing ones were removed or updated. The 'Academy' resource was added to the website.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog posts were added, and some existing ones were removed or updated. The 'Academy' resource was added to the website.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Addition of new blog posts, such as '10 Questions no other AI tool can answer #OnlyInPieces' and 'Back to school: the best AI programming languages to learn first'",
+      "Removal of old blog posts, such as 'Visionary AI investor Flat Capital Invests in Pieces to Accelerate Artificial Memory For Individuals and the Enterprise'",
+      "Update of existing blog posts, such as 'Most people don’t think about tokens, and honestly, should they?'",
+      "Addition of the 'Academy' resource to the website"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest that Pieces is focusing on establishing itself as a thought leader in the AI and developer community, which could lead to increased brand recognition and customer loyalty.",
+    "market_signals": [
+      "Increased focus on community engagement and knowledge sharing",
+      "Expansion of content offerings to include more diverse topics and authors"
+    ],
+    "competitive_implications": "Pieces is likely trying to differentiate itself from competitors by providing high-quality, informative content that showcases its expertise and thought leadership in the AI and developer space.",
+    "strategic_direction": "Pieces appears to be heading in a direction that prioritizes community engagement, knowledge sharing, and thought leadership, which could help the company establish a strong reputation and attract new customers."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [
+      "Ali Mustuga Shaikh",
+      "Antreas Antoniou",
+      "Judson Bonneville",
+      "The Pieces Team",
+      "Tsavo Knott"
+    ],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Pieces is actively updating and expanding its content offerings",
+      "The company is focusing on community engagement and knowledge sharing",
+      "Pieces is trying to establish itself as a thought leader in the AI and developer community"
+    ],
+    "opportunities": [
+      "Increased brand recognition and customer loyalty",
+      "Establishment of Pieces as a thought leader in the AI and developer community"
+    ],
+    "threats": [
+      "Competition from other companies that also focus on community engagement and knowledge sharing",
+      "Difficulty in maintaining the quality and relevance of content offerings"
+    ],
+    "recommended_actions": [
+      "Continue to monitor Pieces' content offerings and strategic direction",
+      "Assess the effectiveness of Pieces' community engagement and knowledge sharing efforts",
+      "Consider how Pieces' focus on thought leadership and community engagement could impact the competitive landscape"
+    ]
+  },
+  "key_insights": [
+    "Pieces is actively updating and expanding its content offerings",
+    "The company is focusing on community engagement and knowledge sharing",
+    "Pieces is trying to establish itself as a thought leader in the AI and developer community"
+  ],
+  "business_impact": "The changes suggest that Pieces is focusing on establishing itself as a thought leader in the AI and developer community, which could lead to increased brand recognition and customer loyalty.",
+  "competitive_implications": "Pieces is likely trying to differentiate itself from competitors by providing high-quality, informative content that showcases its expertise and thought leadership in the AI and developer space.",
+  "content_hash_before": "5e1cad15068fba80d29b3edce88455bb3c790c87ef50c2dea2d49fc16a0e9aae",
+  "content_hash_after": "73f943911ef1ab6494aa2f545f331d07c806e1b6bb40b2ba2f8dc6f10897849a",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

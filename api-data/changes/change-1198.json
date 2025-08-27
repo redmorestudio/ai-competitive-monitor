@@ -1,0 +1,82 @@
+{
+  "id": 1198,
+  "company": "Synthesia",
+  "page_url": "pricing",
+  "detected_at": "2025-08-27T16:41:59.345Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "Pricing plans and features",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Pricing plans and features",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Basic plan now starts at $18/month, down from $29/month",
+      "Starter plan now includes AI Video Assistant and AI Dubbing",
+      "Creator plan now includes 5 Personal Avatars and Branded video pages",
+      "Enterprise plan now includes Unlimited video minutes and 1-Click Translations into 80+ languages"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "Increased competitiveness in the market, potential for increased revenue and customer acquisition",
+    "market_signals": [
+      "Expansion of product offerings",
+      "Increased focus on AI technology"
+    ],
+    "competitive_implications": "Synthesia is now more competitive in the market, potentially threatening other video software companies",
+    "strategic_direction": "Synthesia is focusing on expanding its product offerings and increasing its use of AI technology"
+  },
+  "entities": {
+    "products": [
+      "Synthesia"
+    ],
+    "features": [
+      "AI Video Assistant",
+      "AI Dubbing",
+      "Branded video pages",
+      "1-Click Translations"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI"
+    ],
+    "people": [],
+    "pricing": [
+      "Basic plan: $18/month",
+      "Starter plan: $29/month",
+      "Creator plan: $89/month"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Synthesia has updated its pricing plans and features",
+      "Synthesia is focusing on expanding its product offerings and increasing its use of AI technology"
+    ],
+    "opportunities": [
+      "Increased revenue and customer acquisition",
+      "Expansion into new markets"
+    ],
+    "threats": [
+      "Increased competition from other video software companies",
+      "Potential for decreased revenue if pricing plans are not competitive"
+    ],
+    "recommended_actions": [
+      "Monitor competitor pricing and features",
+      "Consider expanding product offerings and increasing use of AI technology"
+    ]
+  },
+  "key_insights": [
+    "Synthesia has updated its pricing plans and features",
+    "Synthesia is focusing on expanding its product offerings and increasing its use of AI technology"
+  ],
+  "business_impact": "Increased competitiveness in the market, potential for increased revenue and customer acquisition",
+  "competitive_implications": "Synthesia is now more competitive in the market, potentially threatening other video software companies",
+  "content_hash_before": "ac903fd81708e7a2ac2eaf991e1ff2d224c3d4edd3ad760cbdc872d3b433f37d",
+  "content_hash_after": "a3c7eac08bd92f867fbb7b96e711a4d258408e79538f8577eea7e000b2e4a479",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

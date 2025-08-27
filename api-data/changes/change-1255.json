@@ -1,0 +1,71 @@
+{
+  "id": 1255,
+  "company": "ElevenLabs",
+  "page_url": "product",
+  "detected_at": "2025-08-27T16:31:29.117Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "Removal and reorganization of menu items and links",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "Removal and reorganization of menu items and links",
+    "change_type": "removal and restructure",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Removal of 'Platform', 'Solutions', 'API', 'Research' menu items",
+      "Addition of 'Creative Platform', 'Agents Platform', 'Developers' menu items",
+      "Removal of multiple links under 'Research', 'Products', 'Solutions', 'Earn As', 'Resources', 'Company' sections",
+      "Changes in tracking and analytics scripts"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes may impact the user experience and accessibility of certain features or information on the website.",
+    "market_signals": [
+      "Potential shift in target audience or market focus",
+      "Increased emphasis on creative and developer platforms"
+    ],
+    "competitive_implications": "The reorganization may be a response to competitive pressures or an attempt to differentiate the company's offerings.",
+    "strategic_direction": "The changes suggest a potential shift towards more focused and streamlined product offerings."
+  },
+  "entities": {
+    "products": [
+      "Creative Platform",
+      "Agents Platform"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is reorganizing its website and product offerings",
+      "There is a potential shift in focus towards creative and developer platforms"
+    ],
+    "opportunities": [
+      "Potential for increased adoption and engagement with the reorganized platform"
+    ],
+    "threats": [
+      "Potential disruption to existing users and customers",
+      "Risk of losing visibility or accessibility of certain features or information"
+    ],
+    "recommended_actions": [
+      "Monitor the company's website and product offerings for further changes",
+      "Assess the impact of the changes on the competitive landscape and market positioning"
+    ]
+  },
+  "key_insights": [
+    "The company is reorganizing its website and product offerings",
+    "There is a potential shift in focus towards creative and developer platforms"
+  ],
+  "business_impact": "The changes may impact the user experience and accessibility of certain features or information on the website.",
+  "competitive_implications": "The reorganization may be a response to competitive pressures or an attempt to differentiate the company's offerings.",
+  "content_hash_before": "e5dd96b49371b0cdd851cac027365d4138b347c942c05edbe79a041545db77b1",
+  "content_hash_after": "8cfd7be99fc79ca6f3ac37ef9703e9100eb0e9cfb2dbd8c1594ef20e7f33e129",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

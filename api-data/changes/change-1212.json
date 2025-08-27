@@ -1,0 +1,57 @@
+{
+  "id": 1212,
+  "company": "Replit",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:40:04.274Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The prompt in the 'Turn your ideas into apps' section has changed from 'Make me a game for families with young children that helps manage resources and build communities with sustainable practices' to 'Make me a business tool for account managers that helps manage client relationships and follow-ups'. Additionally, a limited time offer to save $60 on the annual plan with a promo code has been added.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The prompt in the 'Turn your ideas into apps' section has changed from 'Make me a game for families with young children that helps manage resources and build communities with sustainable practices' to 'Make me a business tool for account managers that helps manage client relationships and follow-ups'. Additionally, a limited time offer to save $60 on the annual plan with a promo code has been added.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated prompt in the 'Turn your ideas into apps' section",
+      "Added limited time offer to save $60 on the annual plan"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes are unlikely to have a significant impact on the company's business.",
+    "market_signals": [
+      "The company is trying to incentivize users to sign up for the annual plan with a limited time offer."
+    ],
+    "competitive_implications": "The changes do not indicate any significant competitive implications.",
+    "strategic_direction": "The company's strategic direction remains unchanged."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "Limited time offer to save $60 on the annual plan"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is trying to incentivize users to sign up for the annual plan with a limited time offer."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": []
+  },
+  "key_insights": [
+    "The company is trying to incentivize users to sign up for the annual plan with a limited time offer."
+  ],
+  "business_impact": "The changes are unlikely to have a significant impact on the company's business.",
+  "competitive_implications": "The changes do not indicate any significant competitive implications.",
+  "content_hash_before": "0c3b8b5ec781c9f446d6d7cada81e8481ef215cd0db39e013865b75e0e6fba29",
+  "content_hash_after": "cad200c06b4ed5e27d42f2e70ba6ce0b656a0d9e8e7637a3df122a5e39e6781d",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,57 @@
+{
+  "id": 1250,
+  "company": "GitHub Copilot",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:31:55.877Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Navigation menu item 'Product' was changed to 'Platform'",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Navigation menu item 'Product' was changed to 'Platform'",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated navigation menu item from 'Product' to 'Platform'",
+      "No significant changes in features or pricing plans"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact",
+    "market_signals": [
+      "GitHub continues to refine its user interface and experience"
+    ],
+    "competitive_implications": "No significant competitive implications",
+    "strategic_direction": "Continued focus on user experience and interface refinement"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "GitHub Copilot's navigation menu was updated"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor GitHub Copilot's updates and changes"
+    ]
+  },
+  "key_insights": [
+    "GitHub Copilot's navigation menu was updated"
+  ],
+  "business_impact": "No significant business impact",
+  "competitive_implications": "No significant competitive implications",
+  "content_hash_before": "7388ce69f7bc1e3b55adfb7a901e549fdcd677a3472b3fec5b281cbe23459c26",
+  "content_hash_after": "5513b8a97ce1b2e4abd6d8c461c0d9459c1f6e2f160e34d9588a33e323586298",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

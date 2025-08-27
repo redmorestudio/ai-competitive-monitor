@@ -1,0 +1,63 @@
+{
+  "id": 1210,
+  "company": "Runway",
+  "page_url": "pricing",
+  "detected_at": "2025-08-27T16:40:22.723Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Addition of 'Game Worlds' to the product section and change in 'Get Started' button link from https://app.runwayml.com/ to https://app.runwayml.com/signup",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Addition of 'Game Worlds' to the product section and change in 'Get Started' button link from https://app.runwayml.com/ to https://app.runwayml.com/signup",
+    "change_type": "addition/update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Game Worlds' to the product section",
+      "Updated 'Get Started' button link"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of 'Game Worlds' may indicate an expansion of the company's product offerings, but the impact is likely to be minor",
+    "market_signals": [
+      "Potential expansion into new markets or industries"
+    ],
+    "competitive_implications": "The changes do not appear to have significant competitive implications",
+    "strategic_direction": "The company may be exploring new areas of growth, but the changes do not indicate a major shift in strategy"
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "Game Worlds"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is exploring new areas of growth",
+      "The changes are minor and do not indicate significant strategic moves"
+    ],
+    "opportunities": [
+      "Potential for expansion into new markets or industries"
+    ],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor the company's product offerings and strategic direction for further changes or updates"
+    ]
+  },
+  "key_insights": [
+    "The company is exploring new areas of growth",
+    "The changes are minor and do not indicate significant strategic moves"
+  ],
+  "business_impact": "The addition of 'Game Worlds' may indicate an expansion of the company's product offerings, but the impact is likely to be minor",
+  "competitive_implications": "The changes do not appear to have significant competitive implications",
+  "content_hash_before": "fbaccc4e9a8192be4fcd7749c65696ebde7ed2ba2f13deda8e69d319b68a0525",
+  "content_hash_after": "b43bcb0b0be4a2f275e74f107026efa1e72bc742f60caa128d2674128f3fe19d",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

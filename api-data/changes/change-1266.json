@@ -1,0 +1,57 @@
+{
+  "id": 1266,
+  "company": "Cohere",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:30:13.193Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Image quality and compression settings",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Image quality and compression settings",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated image URLs with new query parameters (e.g., &w=1280&q=75)",
+      "Modified image compression settings for better quality"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact is expected from these minor changes.",
+    "market_signals": [
+      "Cohere is focusing on improving user experience through better image quality."
+    ],
+    "competitive_implications": "The changes do not provide a significant competitive advantage.",
+    "strategic_direction": "Cohere is likely focusing on refining its website and user experience."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Cohere is investing in minor updates to improve its website's visual appeal."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue monitoring Cohere's website for more significant updates or changes."
+    ]
+  },
+  "key_insights": [
+    "Cohere is investing in minor updates to improve its website's visual appeal."
+  ],
+  "business_impact": "No significant business impact is expected from these minor changes.",
+  "competitive_implications": "The changes do not provide a significant competitive advantage.",
+  "content_hash_before": "8f0a1083e94ffac38dab44ef3479544bbdfc0330cfa8b94790f51dc31434e62b",
+  "content_hash_after": "b4ec14c36f172bdd84be21ca81614f787a2e1bc22ba15f130fb6d509643064cf",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

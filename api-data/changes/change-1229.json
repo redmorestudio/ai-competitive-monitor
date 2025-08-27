@@ -1,0 +1,74 @@
+{
+  "id": 1229,
+  "company": "Leonardo AI",
+  "page_url": "pricing",
+  "detected_at": "2025-08-27T16:34:15.800Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "The main change is the addition of a note explaining the limitations of 'Unlimited relaxed generations' for image and video generation, specifically excluding Flow State, GPT-Image-1, Flux.1 Kontext, and Veo 3, and the potential throttling of concurrency and queuing based on demand.",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "The main change is the addition of a note explaining the limitations of 'Unlimited relaxed generations' for image and video generation, specifically excluding Flow State, GPT-Image-1, Flux.1 Kontext, and Veo 3, and the potential throttling of concurrency and queuing based on demand.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added note on limitations of 'Unlimited relaxed generations'",
+      "Clarified exclusions for Unlimited Generation",
+      "Mentioned potential throttling for stability and fairness"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may affect user expectations and behavior, potentially leading to increased customer support inquiries or concerns about the value proposition of the Unlimited Generation feature.",
+    "market_signals": [
+      "Increased transparency about service limitations",
+      "Potential impact on user satisfaction and retention"
+    ],
+    "competitive_implications": "The clarification of limitations may influence how competitors position their similar features and pricing plans.",
+    "strategic_direction": "The update suggests a focus on managing user expectations, ensuring fair access to resources, and maintaining service stability."
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "Unlimited relaxed generations",
+      "Flow State",
+      "GPT-Image-1",
+      "Flux.1 Kontext",
+      "Veo 3"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The update highlights the importance of clear communication about service limitations.",
+      "The potential for throttling based on demand may impact user experience."
+    ],
+    "opportunities": [
+      "Enhanced transparency could build trust with users.",
+      "Competitive differentiation through clear communication of features and limitations."
+    ],
+    "threats": [
+      "User dissatisfaction due to perceived limitations of the Unlimited Generation feature.",
+      "Potential loss of competitive edge if limitations are seen as too restrictive."
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and adjust communication strategies accordingly.",
+      "Review competitive landscape to ensure feature and pricing plans remain competitive."
+    ]
+  },
+  "key_insights": [
+    "The update highlights the importance of clear communication about service limitations.",
+    "The potential for throttling based on demand may impact user experience."
+  ],
+  "business_impact": "The change may affect user expectations and behavior, potentially leading to increased customer support inquiries or concerns about the value proposition of the Unlimited Generation feature.",
+  "competitive_implications": "The clarification of limitations may influence how competitors position their similar features and pricing plans.",
+  "content_hash_before": "3966e7b03a796bcb96080b6cd8c516b015599fab75a629500ec7b9f4022f750b",
+  "content_hash_after": "ed96fa64bbce3ce6e8a9e91d5c0d593a48abdc3515b07ef2a8656a50ea366c55",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

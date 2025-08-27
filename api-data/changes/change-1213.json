@@ -1,0 +1,69 @@
+{
+  "id": 1213,
+  "company": "Replit",
+  "page_url": "product",
+  "detected_at": "2025-08-27T16:39:59.810Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Added a limited time offer promo code (LD25A) for $60 off the annual plan",
+  "category": "marketing_strategy",
+  "change_summary": {
+    "what_changed": "Added a limited time offer promo code (LD25A) for $60 off the annual plan",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added a promo code (LD25A) for a limited time offer",
+      "No changes to product features or pricing structure"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The promo code may attract new customers and increase revenue, but its impact on the overall business strategy is limited",
+    "market_signals": [
+      "marketing strategy",
+      "sales promotion"
+    ],
+    "competitive_implications": "The promo code may be a response to competitors' pricing strategies, but it does not significantly alter the competitive landscape",
+    "strategic_direction": "The change suggests a focus on short-term revenue growth, but does not indicate a shift in the company's long-term strategy"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [
+      "annual plan with promo code LD25A"
+    ],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The promo code is a limited time offer, indicating a sense of urgency",
+      "The discount is $60 off the annual plan, which may appeal to price-sensitive customers"
+    ],
+    "opportunities": [
+      "The promo code may attract new customers who are interested in trying the product",
+      "The limited time offer may create a sense of urgency and drive sales"
+    ],
+    "threats": [
+      "The promo code may cannibalize sales from customers who would have paid full price",
+      "The discount may be perceived as a sign of desperation or a lack of confidence in the product"
+    ],
+    "recommended_actions": [
+      "Monitor the effectiveness of the promo code and adjust marketing strategies accordingly",
+      "Consider offering similar promotions in the future to drive sales and attract new customers"
+    ]
+  },
+  "key_insights": [
+    "The promo code is a limited time offer, indicating a sense of urgency",
+    "The discount is $60 off the annual plan, which may appeal to price-sensitive customers"
+  ],
+  "business_impact": "The promo code may attract new customers and increase revenue, but its impact on the overall business strategy is limited",
+  "competitive_implications": "The promo code may be a response to competitors' pricing strategies, but it does not significantly alter the competitive landscape",
+  "content_hash_before": "1438b3ea0496656a68dcb325da763ebf2840a6d78a0f15291d0f858cfa050741",
+  "content_hash_after": "0a24f1facd6fab90c0219562d22bb68f3343aed6f70c8bd1f9b941f7d7ec0360",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,54 @@
+{
+  "id": 1274,
+  "company": "Anyscale",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:29:13.297Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The link for booking Ray training has been updated to 'See Support Plans' and now points to /support",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The link for booking Ray training has been updated to 'See Support Plans' and now points to /support",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated link for booking Ray training from '/training' to '/support'"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change is unlikely to have a significant impact on the company's business or operations.",
+    "market_signals": [],
+    "competitive_implications": "The change does not indicate any significant changes to the company's competitive positioning.",
+    "strategic_direction": "The change does not provide any significant insights into the company's strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company has updated the link for booking Ray training to point to the support page."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor the company's support page for any additional updates or changes."
+    ]
+  },
+  "key_insights": [
+    "The company has updated the link for booking Ray training to point to the support page."
+  ],
+  "business_impact": "The change is unlikely to have a significant impact on the company's business or operations.",
+  "competitive_implications": "The change does not indicate any significant changes to the company's competitive positioning.",
+  "content_hash_before": "0e12bf61becfb03cc172e3fa1880d8ee5ff10d696c83e92fa8dd09bf38fd77fd",
+  "content_hash_after": "0b7a799ddbdfaf67af8d9ac1a9a6d772f3c4b36122517959c85bb7d1e8de4a0c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

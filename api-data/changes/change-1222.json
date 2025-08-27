@@ -1,0 +1,86 @@
+{
+  "id": 1222,
+  "company": "NVIDIA",
+  "page_url": "docs",
+  "detected_at": "2025-08-27T16:37:51.245Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.9,
+  "summary": "New blog posts, updates to training and on-demand video sections, introduction of NVIDIA Jetson Thor, and updates to various software releases",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "New blog posts, updates to training and on-demand video sections, introduction of NVIDIA Jetson Thor, and updates to various software releases",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Introduction of NVIDIA Jetson Thor",
+      "New blog posts on various AI and computing topics",
+      "Updates to training section with new learning paths and courses",
+      "Updates to on-demand video section with new GTC talks",
+      "Release updates for CUDA Toolkit, HPC SDK, Nsight Systems, and other software"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The introduction of NVIDIA Jetson Thor and updates to various software releases can enhance NVIDIA's position in the AI and computing market, potentially leading to increased adoption and revenue.",
+    "market_signals": [
+      "Growing demand for AI and computing capabilities",
+      "Increasing importance of Physical AI and Co-Packaged Optics"
+    ],
+    "competitive_implications": "NVIDIA's advancements in AI and computing capabilities can put pressure on competitors to innovate and keep pace, potentially altering the competitive landscape.",
+    "strategic_direction": "NVIDIA's focus on AI and computing capabilities, particularly Physical AI and Co-Packaged Optics, indicates a strategic direction towards enhancing its position in the AI and computing market."
+  },
+  "entities": {
+    "products": [
+      "NVIDIA Jetson Thor",
+      "CUDA Toolkit",
+      "HPC SDK",
+      "Nsight Systems"
+    ],
+    "features": [
+      "AI and computing capabilities",
+      "Physical AI",
+      "Co-Packaged Optics"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Computing",
+      "Optics"
+    ],
+    "people": [
+      "Jensen Huang"
+    ],
+    "pricing": [],
+    "markets": [
+      "AI and Computing"
+    ]
+  },
+  "insights": {
+    "key_findings": [
+      "NVIDIA Jetson Thor is a significant development in Physical AI",
+      "Updates to software releases indicate ongoing innovation and improvement"
+    ],
+    "opportunities": [
+      "Increased adoption of NVIDIA's AI and computing capabilities",
+      "Potential for partnerships and collaborations in the AI and computing space"
+    ],
+    "threats": [
+      "Competitors may respond with their own innovations, potentially altering the competitive landscape"
+    ],
+    "recommended_actions": [
+      "Monitor NVIDIA's progress and advancements in AI and computing capabilities",
+      "Consider potential partnerships or collaborations with NVIDIA"
+    ]
+  },
+  "key_insights": [
+    "NVIDIA Jetson Thor is a significant development in Physical AI",
+    "Updates to software releases indicate ongoing innovation and improvement"
+  ],
+  "business_impact": "The introduction of NVIDIA Jetson Thor and updates to various software releases can enhance NVIDIA's position in the AI and computing market, potentially leading to increased adoption and revenue.",
+  "competitive_implications": "NVIDIA's advancements in AI and computing capabilities can put pressure on competitors to innovate and keep pace, potentially altering the competitive landscape.",
+  "content_hash_before": "3000921da0be3e97e7478527ad6e88b641652492b8944f4b2552fa5a6a04df54",
+  "content_hash_after": "f25442b3a7d41667b81a4fa4195fa432f415f586c36decbb17434e58a0092380",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

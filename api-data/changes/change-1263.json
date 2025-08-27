@@ -1,0 +1,63 @@
+{
+  "id": 1263,
+  "company": "Cursor",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:30:25.344Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "The download option for Cursor has been updated to specify 'macOS' instead of 'Windows'.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The download option for Cursor has been updated to specify 'macOS' instead of 'Windows'.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Download for macOS instead of Download for Windows"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may indicate that Cursor is expanding its compatibility to include macOS, which could potentially increase its user base and market share.",
+    "market_signals": [
+      "Expansion into new markets or platforms"
+    ],
+    "competitive_implications": "The change may put pressure on competitors to also expand their compatibility to include macOS, which could lead to increased competition in the market.",
+    "strategic_direction": "The change suggests that Cursor is focused on expanding its user base and increasing its market share, which could be a key part of its overall business strategy."
+  },
+  "entities": {
+    "products": [
+      "Cursor"
+    ],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Cursor is expanding its compatibility to include macOS"
+    ],
+    "opportunities": [
+      "Increased market share and user base"
+    ],
+    "threats": [
+      "Increased competition in the market"
+    ],
+    "recommended_actions": [
+      "Monitor the market and competitors for similar changes",
+      "Consider expanding compatibility to other platforms"
+    ]
+  },
+  "key_insights": [
+    "Cursor is expanding its compatibility to include macOS"
+  ],
+  "business_impact": "The change may indicate that Cursor is expanding its compatibility to include macOS, which could potentially increase its user base and market share.",
+  "competitive_implications": "The change may put pressure on competitors to also expand their compatibility to include macOS, which could lead to increased competition in the market.",
+  "content_hash_before": "3abf6a3b9e952360edfd85d93741a8dbe1d254f402e047c2408325309724e1df",
+  "content_hash_after": "923cd25f7081d6ffcee9186f97b7b1b789b44aa2b12c5fc79936019d7af09ccc",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -9,15 +9,15 @@
         "ai21 maestro",
         "custom ai systems",
         "jamba models",
-        "flexible deployment options",
-        "foundation models"
+        "jamba mini",
+        "jamba large"
       ],
       "ai_technologies": [
-        "apis",
         "python",
+        "rag",
+        "genai",
         "language models",
-        "llms",
-        "ai agents"
+        "apis"
       ]
     }
   },
@@ -37,9 +37,9 @@
       "ai_technologies": [
         "ai",
         "transformers",
-        "machine learning",
-        "natural language processing",
-        "generative ai"
+        "large language model (llm)",
+        "autoregressive transformers",
+        "language fairness"
       ]
     }
   },
@@ -50,11 +50,11 @@
     "industry": null,
     "intelligence": {
       "top_products": [
+        "aws lambda",
+        "aws cloud9",
         "amazon q",
         "amazon codewhisperer",
-        "aws toolkit for visual studio code",
-        "aws toolkit for jetbrains",
-        "amazon sagemaker ai studio"
+        "aws toolkit for visual studio code"
       ],
       "ai_technologies": [
         "machine learning",
@@ -92,14 +92,13 @@
     "intelligence": {
       "top_products": [
         "andi app",
-        "andi chrome extension",
-        "next.js"
+        "chrome extension",
+        "go language"
       ],
       "ai_technologies": [
         "ai",
-        "next.js",
-        "vercel",
-        "chrome extension"
+        "no-code ai tools",
+        "go language"
       ]
     }
   },
@@ -112,16 +111,16 @@
       "top_products": [
         "claude",
         "claude code",
+        "anthropic api",
         "claude opus 4.1",
-        "claude sonnet 4",
-        "claude haiku 3.5"
+        "claude sonnet 4"
       ],
       "ai_technologies": [
         "python",
         "api",
-        "ai",
-        "machine learning",
-        "deep learning"
+        "natural language processing",
+        "sdks",
+        "ai"
       ]
     }
   },
@@ -133,17 +132,17 @@
     "intelligence": {
       "top_products": [
         "ray",
-        "anyscale platform",
         "rayturbo",
+        "anyscale platform",
         "chatgpt",
         "kuberay"
       ],
       "ai_technologies": [
-        "python",
-        "kubernetes",
-        "docker",
         "ray",
-        "aws"
+        "kubernetes",
+        "python",
+        "ai",
+        "ml"
       ]
     }
   },
@@ -161,11 +160,11 @@
         "qwen3 235b 2507 instruct"
       ],
       "ai_technologies": [
-        "ai",
-        "ml",
         "deep learning",
         "wafer packaging",
-        "tcp-ip"
+        "tcp-ip",
+        "ethernet",
+        "artificial intelligence"
       ]
     }
   },
@@ -178,16 +177,16 @@
       "top_products": [
         "cisco secure firewall 6100 series",
         "cisco hybrid mesh firewall",
-        "webex",
-        "cisco u.",
-        "packet tracer"
+        "ai defense",
+        "cisco duo",
+        "email threat defense"
       ],
       "ai_technologies": [
         "ai",
-        "machine learning",
-        "cloud computing",
-        "networking",
-        "cybersecurity"
+        "cloud",
+        "cybersecurity",
+        "data center",
+        "firewall"
       ]
     }
   },
@@ -201,15 +200,15 @@
         "windsurf editor",
         "cascade",
         "tab",
-        "windsurf plugins",
-        "windsurf reviews"
+        "windsurf reviews",
+        "gpt-5"
       ],
       "ai_technologies": [
         "ai",
-        "linux",
-        "machine learning",
-        "deep learning",
-        "natural language processing"
+        "ml",
+        "genai",
+        "ide",
+        "vs code"
       ]
     }
   },
@@ -231,7 +230,7 @@
         "natural language processing",
         "ml",
         "large language models",
-        "api"
+        "apis"
       ]
     }
   },
@@ -250,10 +249,10 @@
       ],
       "ai_technologies": [
         "ai",
-        "machine learning",
         "api",
         "custom models",
-        "language models"
+        "api models",
+        "proprietary models"
       ]
     }
   },
@@ -274,8 +273,8 @@
         "python",
         "pytorch",
         "tensorflow",
-        "jax",
-        "javascript"
+        "javascript",
+        "c++"
       ]
     }
   },
@@ -287,17 +286,17 @@
     "intelligence": {
       "top_products": [
         "agentic ai",
-        "ai apps & agents",
         "generative ai",
         "predictive ai",
-        "covalent"
+        "covalent",
+        "syftr"
       ],
       "ai_technologies": [
         "ai",
-        "agentic ai",
-        "generative ai",
-        "predictive ai",
-        "machine learning"
+        "machine learning",
+        "deep learning",
+        "cloud computing",
+        "on-premise"
       ]
     }
   },
@@ -309,17 +308,17 @@
     "intelligence": {
       "top_products": [
         "descript",
-        "chatgpt",
         "underlord",
-        "video editor",
-        "voice enhancer"
+        "chatgpt",
+        "video regenerate",
+        "overdub"
       ],
       "ai_technologies": [
         "ai",
         "machine learning",
         "video editing",
-        "podcasting",
-        "transcription"
+        "transcription",
+        "audio editing"
       ]
     }
   },
@@ -338,10 +337,10 @@
       ],
       "ai_technologies": [
         "voice changer",
-        "voice cloning",
-        "voice isolator",
+        "conversational ai",
         "ai",
-        "ai music generator"
+        "voice cloning",
+        "voice isolator"
       ]
     }
   },
@@ -360,10 +359,7 @@
       ],
       "ai_technologies": [
         "api",
-        "github",
-        "ai",
-        "machine learning",
-        "deep learning"
+        "open weights"
       ]
     }
   },
@@ -381,11 +377,11 @@
         "github actions"
       ],
       "ai_technologies": [
-        "python",
-        "javascript",
-        "java",
+        "ai",
         "git",
-        "github actions"
+        "machine learning",
+        "devops",
+        "ci/cd"
       ]
     }
   },
@@ -405,9 +401,9 @@
       "ai_technologies": [
         "ai",
         "deep learning",
-        "ml",
-        "artificial intelligence",
-        "machine learning"
+        "machine learning",
+        "natural language processing",
+        "computer vision"
       ]
     }
   },
@@ -421,8 +417,8 @@
         "h2o driverless ai",
         "h2o wave",
         "h2o llm studio",
-        "h2o hydrogen torch",
-        "h2o mlops"
+        "h2o ai cloud",
+        "h2o feature store"
       ],
       "ai_technologies": [
         "kubernetes",
@@ -449,7 +445,9 @@
       "ai_technologies": [
         "ai",
         "machine learning",
-        "deep learning"
+        "deep learning",
+        "natural language processing",
+        "computer vision"
       ]
     }
   },
@@ -460,18 +458,18 @@
     "industry": null,
     "intelligence": {
       "top_products": [
+        "diffusers",
         "peft",
         "hugging face hub",
-        "transformers.js",
-        "tokenizers",
-        "accelerate"
+        "transformers",
+        "datasets"
       ],
       "ai_technologies": [
         "python",
         "pytorch",
         "javascript",
         "machine learning",
-        "deep learning"
+        "git"
       ]
     }
   },
@@ -510,8 +508,7 @@
       "ai_technologies": [
         "llm",
         "mlperf",
-        "ai",
-        "conversational intelligence"
+        "ai"
       ]
     }
   },
@@ -522,17 +519,17 @@
     "industry": null,
     "intelligence": {
       "top_products": [
-        "intel core ultra",
-        "aurora supercomputer",
-        "ai pc",
-        "intel tiber ai cloud",
-        "llama 4"
+        "intel core",
+        "intel xeon",
+        "intel arc",
+        "xeon 6",
+        "intel core ultra"
       ],
       "ai_technologies": [
         "artificial intelligence",
-        "speculative decoding",
-        "immersion cooling",
         "machine learning",
+        "cloud computing",
+        "semiconductor manufacturing",
         "generative ai"
       ]
     }
@@ -596,10 +593,10 @@
       ],
       "ai_technologies": [
         "ai",
-        "machine learning",
         "javascript",
         "linux",
-        "image model"
+        "twitter api",
+        "google analytics"
       ]
     }
   },
@@ -632,11 +629,11 @@
     "industry": null,
     "intelligence": {
       "top_products": [
-        "midjourney basic plan",
-        "midjourney standard plan",
-        "midjourney pro plan",
-        "midjourney mega plan",
-        "relax mode"
+        "midjourney",
+        "relax mode",
+        "stealth mode",
+        "basic plan",
+        "standard plan"
       ],
       "ai_technologies": [
         "gpu",
@@ -660,10 +657,10 @@
       ],
       "ai_technologies": [
         "api",
-        "ai",
-        "fine-tuning",
         "python",
-        "inference engine"
+        "gpu",
+        "cloud",
+        "ai"
       ]
     }
   },
@@ -681,9 +678,9 @@
         "ai dubbing"
       ],
       "ai_technologies": [
+        "text to speech",
         "machine learning",
         "ai",
-        "text to speech",
         "voice cloning",
         "artificial intelligence"
       ]
@@ -715,18 +712,18 @@
     "industry": null,
     "intelligence": {
       "top_products": [
+        "nvidia ngc",
         "dlss",
         "bionemo",
         "dgx cloud",
-        "nvidia apis",
-        "omniverse cloud"
+        "nvidia apis"
       ],
       "ai_technologies": [
-        "deep learning",
         "machine learning",
+        "deep learning",
         "cloud computing",
-        "cuda",
-        "python"
+        "autonomous vehicles",
+        "robotics"
       ]
     }
   },
@@ -747,8 +744,8 @@
         "python",
         "pytorch",
         "tensorflow",
-        "javascript",
-        "c++"
+        "jax",
+        "aws"
       ]
     }
   },
@@ -766,11 +763,11 @@
         "titan"
       ],
       "ai_technologies": [
+        "ai",
+        "ml",
         "data integration",
         "digital twin",
-        "dynamic scheduling",
-        "edge ai",
-        "marketplace"
+        "dynamic scheduling"
       ]
     }
   },
@@ -782,13 +779,14 @@
     "intelligence": {
       "top_products": [
         "perplexity pro",
-        "perplexity max",
-        "gpt-5",
-        "claude sonnet 4",
-        "comet"
+        "comet",
+        "perplexity labs",
+        "perplexity research",
+        "gpt-5"
       ],
       "ai_technologies": [
         "ai",
+        "agentic browser",
         "security",
         "connection verification",
         "performance optimization"
@@ -824,15 +822,15 @@
         "pieces",
         "github copilot",
         "long-term memory",
-        "copilot",
-        "pieces copilot"
+        "pieces copilot",
+        "pieces drive"
       ],
       "ai_technologies": [
+        "llm",
         "ai",
         "long-term memory",
-        "machine learning",
-        "llm",
-        "on-device ai"
+        "on-device ai",
+        "context awareness"
       ]
     }
   },
@@ -865,13 +863,13 @@
     "industry": null,
     "intelligence": {
       "top_products": [
-        "generative ai for the curious businessperson",
-        "illuminaite"
+        "illuminaite",
+        "generative ai for the curious businessperson"
       ],
       "ai_technologies": [
-        "artificial intelligence",
-        "generative ai",
-        "agentic workflows"
+        "ai",
+        "wordpress",
+        "cookies"
       ]
     }
   },
@@ -883,17 +881,17 @@
     "intelligence": {
       "top_products": [
         "cog",
-        "replicate",
         "claude-3.7-sonnet",
         "flux-1.1-pro",
-        "flux-dev"
+        "flux-dev",
+        "flux-schnell"
       ],
       "ai_technologies": [
-        "machine learning",
         "python",
+        "machine learning",
         "deep learning",
-        "nvidia gpu",
-        "cpu"
+        "nvidia a100 gpu",
+        "nvidia h100 gpu"
       ]
     }
   },
@@ -912,10 +910,10 @@
       ],
       "ai_technologies": [
         "ai",
-        "natural language processing",
         "machine learning",
-        "vibe coding",
-        "no-code"
+        "natural language processing",
+        "python",
+        "javascript"
       ]
     }
   },
@@ -928,16 +926,16 @@
       "top_products": [
         "chatterbox",
         "resemblyzer",
-        "perth watermarker",
         "detect-2b",
-        "ai watermarker"
+        "perth watermarker",
+        "chatterbox lite"
       ],
       "ai_technologies": [
         "deep learning",
-        "text-to-speech",
-        "speech-to-speech",
         "generative ai",
-        "neural networks"
+        "natural language processing",
+        "speech-to-speech",
+        "text-to-speech"
       ]
     }
   },
@@ -952,14 +950,14 @@
         "runway gen-4",
         "aleph",
         "runway api",
-        "general world models"
+        "game worlds"
       ],
       "ai_technologies": [
-        "machine learning",
         "ai",
-        "ai tools",
+        "machine learning",
         "video editing",
-        "image to video"
+        "image to video",
+        "performance capture"
       ]
     }
   },
@@ -978,10 +976,10 @@
       ],
       "ai_technologies": [
         "ai",
+        "ml",
         "deep learning",
-        "natural language processing",
-        "machine learning",
-        "python"
+        "reconfigurable dataflow unit (rdu)",
+        "cloud computing"
       ]
     }
   },
@@ -995,15 +993,15 @@
         "scale data engine",
         "scale genai platform",
         "scale donovan",
-        "healthbench",
-        "amie"
+        "llama",
+        "gpt-3"
       ],
       "ai_technologies": [
-        "python",
-        "javascript",
-        "linux",
-        "reinforcement learning",
-        "llm"
+        "diffusion models",
+        "computer vision",
+        "large language models",
+        "ml model training",
+        "artificial intelligence (ai)"
       ]
     }
   },
@@ -1018,14 +1016,14 @@
         "code search",
         "batch changes",
         "cody",
-        "sourcegraph enterprise starter"
+        "deep search"
       ],
       "ai_technologies": [
         "llm",
-        "github",
-        "gitlab",
         "ai",
-        "webflow"
+        "webflow",
+        "ux design",
+        "github"
       ]
     }
   },
@@ -1043,11 +1041,11 @@
         "stable 3d"
       ],
       "ai_technologies": [
-        "generative ai",
-        "open-source",
-        "adversarial diffusion distillation",
         "api",
-        "ai"
+        "adversarial diffusion distillation",
+        "open-source generative ai",
+        "image generation",
+        "video generation"
       ]
     }
   },
@@ -1065,11 +1063,11 @@
         "ai video editor"
       ],
       "ai_technologies": [
-        "ai",
         "machine learning",
+        "ai",
         "deep learning",
-        "api",
-        "natural language processing"
+        "natural language processing",
+        "api"
       ]
     }
   },
@@ -1081,17 +1079,17 @@
     "intelligence": {
       "top_products": [
         "tabnine",
-        "jira",
         "tabnine enterprise",
-        "vs code",
-        "intellij"
+        "jira",
+        "bitbucket",
+        "perforce helix core"
       ],
       "ai_technologies": [
         "ai",
         "machine learning",
         "natural language processing",
         "code generation",
-        "code completion"
+        "code documentation"
       ]
     }
   },
@@ -1102,18 +1100,18 @@
     "industry": null,
     "intelligence": {
       "top_products": [
+        "artifacts",
+        "reports",
+        "weights & biases",
         "weave",
-        "inference",
-        "models",
-        "kimi k2",
-        "traces"
+        "inference"
       ],
       "ai_technologies": [
         "python",
-        "pytorch",
         "keras",
+        "pytorch",
         "docker",
-        "linux"
+        "aws"
       ]
     }
   },
@@ -1125,10 +1123,10 @@
     "intelligence": {
       "top_products": [
         "caruso",
-        "studio",
-        "api",
-        "voices",
-        "teams"
+        "wellsaid studio",
+        "wellsaid api",
+        "wellsaid voices",
+        "wellsaid teams"
       ],
       "ai_technologies": [
         "ai",
@@ -1147,10 +1145,11 @@
     "intelligence": {
       "top_products": [
         "ari",
-        "you.com api"
+        "you.com api",
+        "you.com agents"
       ],
       "ai_technologies": [
-        "deep learning",
+        "deep research",
         "llms"
       ]
     }

@@ -1,9 +1,19 @@
 {
   "version": "1.0",
-  "generated_at": "2025-08-27T15:39:45.993Z",
+  "generated_at": "2025-08-27T16:58:25.350Z",
   "source": "postgresql",
-  "total_changes": 361,
+  "total_changes": 455,
   "files": [
+    {
+      "filename": "change-1225.json",
+      "change_id": 1225,
+      "api_path": "/api-data/changes/change-1225.json",
+      "company": "Neeva",
+      "detected_at": "2025-08-27T16:37:34.219Z",
+      "interest_level": 10,
+      "change_type": "modified",
+      "summary": "The entire content of the webpage changed from Neeva's homepage to AliExpress's homepage"
+    },
     {
       "filename": "change-978.json",
       "change_id": 978,
@@ -23,6 +33,36 @@
       "interest_level": 10,
       "change_type": "modified",
       "summary": "The content of the webpage changed from Neeva's homepage to AliExpress's homepage"
+    },
+    {
+      "filename": "change-1238.json",
+      "change_id": 1238,
+      "api_path": "/api-data/changes/change-1238.json",
+      "company": "HeyGen",
+      "detected_at": "2025-08-27T16:33:07.116Z",
+      "interest_level": 9,
+      "change_type": "modified",
+      "summary": "The entire content of the webpage has changed from a security verification page to a product homepag..."
+    },
+    {
+      "filename": "change-1239.json",
+      "change_id": 1239,
+      "api_path": "/api-data/changes/change-1239.json",
+      "company": "HeyGen",
+      "detected_at": "2025-08-27T16:33:02.116Z",
+      "interest_level": 9,
+      "change_type": "modified",
+      "summary": "The company website has been completely overhauled, transitioning from a security verification page ..."
+    },
+    {
+      "filename": "change-1262.json",
+      "change_id": 1262,
+      "api_path": "/api-data/changes/change-1262.json",
+      "company": "DALL-E",
+      "detected_at": "2025-08-27T16:30:29.320Z",
+      "interest_level": 9,
+      "change_type": "modified",
+      "summary": "The content changed from a blocked page to a detailed pricing page for ChatGPT by OpenAI, including ..."
     },
     {
       "filename": "change-1106.json",
@@ -943,6 +983,306 @@
       "interest_level": 9,
       "change_type": "modified",
       "summary": "The content changed from a blocked page to a detailed pricing page for ChatGPT, including various pl..."
+    },
+    {
+      "filename": "change-1191.json",
+      "change_id": 1191,
+      "api_path": "/api-data/changes/change-1191.json",
+      "company": "Weights & Biases",
+      "detected_at": "2025-08-27T16:42:56.304Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "The website has undergone a significant restructure, with changes to the main page layout, addition ..."
+    },
+    {
+      "filename": "change-1195.json",
+      "change_id": 1195,
+      "api_path": "/api-data/changes/change-1195.json",
+      "company": "Tabnine",
+      "detected_at": "2025-08-27T16:42:33.077Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Addition of new blog posts, updates to existing content, and changes to the website's structure and ..."
+    },
+    {
+      "filename": "change-1196.json",
+      "change_id": 1196,
+      "api_path": "/api-data/changes/change-1196.json",
+      "company": "Tabnine",
+      "detected_at": "2025-08-27T16:42:27.735Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Changes in pricing plans, feature updates, and additions to supported integrations and models"
+    },
+    {
+      "filename": "change-1197.json",
+      "change_id": 1197,
+      "api_path": "/api-data/changes/change-1197.json",
+      "company": "Synthesia",
+      "detected_at": "2025-08-27T16:42:09.978Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "The feature 'AI Video Editor' was removed and replaced with 'AI Video Generator'."
+    },
+    {
+      "filename": "change-1198.json",
+      "change_id": 1198,
+      "api_path": "/api-data/changes/change-1198.json",
+      "company": "Synthesia",
+      "detected_at": "2025-08-27T16:41:59.345Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Pricing plans and features"
+    },
+    {
+      "filename": "change-1204.json",
+      "change_id": 1204,
+      "api_path": "/api-data/changes/change-1204.json",
+      "company": "Scale AI",
+      "detected_at": "2025-08-27T16:41:12.957Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New blog posts were added, and some older posts were removed from the main page."
+    },
+    {
+      "filename": "change-1205.json",
+      "change_id": 1205,
+      "api_path": "/api-data/changes/change-1205.json",
+      "company": "SambaNova",
+      "detected_at": "2025-08-27T16:41:03.449Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Addition of new content and updates to existing sections, including the announcement of DeepSeek-V3...."
+    },
+    {
+      "filename": "change-1206.json",
+      "change_id": 1206,
+      "api_path": "/api-data/changes/change-1206.json",
+      "company": "SambaNova",
+      "detected_at": "2025-08-27T16:40:58.899Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New AI model DeepSeek-V3.1 is live on SambaCloud, and the press release section has been updated wit..."
+    },
+    {
+      "filename": "change-1207.json",
+      "change_id": 1207,
+      "api_path": "/api-data/changes/change-1207.json",
+      "company": "SambaNova",
+      "detected_at": "2025-08-27T16:40:58.562Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New blog posts and updates to existing content"
+    },
+    {
+      "filename": "change-1214.json",
+      "change_id": 1214,
+      "api_path": "/api-data/changes/change-1214.json",
+      "company": "Replicate",
+      "detected_at": "2025-08-27T16:39:50.160Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Multiple changes including updates to model runs, new model additions, and changes to the Playground..."
+    },
+    {
+      "filename": "change-1216.json",
+      "change_id": 1216,
+      "api_path": "/api-data/changes/change-1216.json",
+      "company": "Pieces",
+      "detected_at": "2025-08-27T16:39:13.405Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New blog posts were added, and some existing ones were removed or updated. The 'Academy' resource wa..."
+    },
+    {
+      "filename": "change-1219.json",
+      "change_id": 1219,
+      "api_path": "/api-data/changes/change-1219.json",
+      "company": "Perplexity AI",
+      "detected_at": "2025-08-27T16:38:42.535Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Access to Comet, the agentic browser, is now included in Perplexity Pro"
+    },
+    {
+      "filename": "change-1221.json",
+      "change_id": 1221,
+      "api_path": "/api-data/changes/change-1221.json",
+      "company": "NVIDIA",
+      "detected_at": "2025-08-27T16:37:54.993Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New articles and updates to the NVIDIA blog"
+    },
+    {
+      "filename": "change-1222.json",
+      "change_id": 1222,
+      "api_path": "/api-data/changes/change-1222.json",
+      "company": "NVIDIA",
+      "detected_at": "2025-08-27T16:37:51.245Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New blog posts, updates to training and on-demand video sections, introduction of NVIDIA Jetson Thor..."
+    },
+    {
+      "filename": "change-1233.json",
+      "change_id": 1233,
+      "api_path": "/api-data/changes/change-1233.json",
+      "company": "Intel",
+      "detected_at": "2025-08-27T16:33:47.692Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New articles and partnerships were added, including Intel's collaboration with LG Innotek for an AI-..."
+    },
+    {
+      "filename": "change-1235.json",
+      "change_id": 1235,
+      "api_path": "/api-data/changes/change-1235.json",
+      "company": "Hugging Face",
+      "detected_at": "2025-08-27T16:33:17.905Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Model listings, dataset listings, and organization profiles have been updated with new numbers and i..."
+    },
+    {
+      "filename": "change-1236.json",
+      "change_id": 1236,
+      "api_path": "/api-data/changes/change-1236.json",
+      "company": "Hugging Face",
+      "detected_at": "2025-08-27T16:33:15.151Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New articles and community posts have been added, and some existing ones have been updated or remove..."
+    },
+    {
+      "filename": "change-1240.json",
+      "change_id": 1240,
+      "api_path": "/api-data/changes/change-1240.json",
+      "company": "HeyGen",
+      "detected_at": "2025-08-27T16:32:58.305Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "The content of the webpage has changed from a security verification page to a 'page not found' error..."
+    },
+    {
+      "filename": "change-1241.json",
+      "change_id": 1241,
+      "api_path": "/api-data/changes/change-1241.json",
+      "company": "HeyGen",
+      "detected_at": "2025-08-27T16:32:55.503Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Introduction of pricing plans for HeyGen's video creation platform"
+    },
+    {
+      "filename": "change-1245.json",
+      "change_id": 1245,
+      "api_path": "/api-data/changes/change-1245.json",
+      "company": "Google DeepMind",
+      "detected_at": "2025-08-27T16:32:32.819Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New Veo 3 model is now available in the Gemini API"
+    },
+    {
+      "filename": "change-1246.json",
+      "change_id": 1246,
+      "api_path": "/api-data/changes/change-1246.json",
+      "company": "Google DeepMind",
+      "detected_at": "2025-08-27T16:32:20.099Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New articles and updates were added to the Google Blog, including new features in the Gemini app, AI..."
+    },
+    {
+      "filename": "change-1253.json",
+      "change_id": 1253,
+      "api_path": "/api-data/changes/change-1253.json",
+      "company": "ElevenLabs",
+      "detected_at": "2025-08-27T16:31:38.274Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "The navigation menu has been updated, with 'Platform' replacing 'Solutions', and 'Agents Platform' a..."
+    },
+    {
+      "filename": "change-1254.json",
+      "change_id": 1254,
+      "api_path": "/api-data/changes/change-1254.json",
+      "company": "ElevenLabs",
+      "detected_at": "2025-08-27T16:31:33.675Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Pricing plans and features"
+    },
+    {
+      "filename": "change-1255.json",
+      "change_id": 1255,
+      "api_path": "/api-data/changes/change-1255.json",
+      "company": "ElevenLabs",
+      "detected_at": "2025-08-27T16:31:29.117Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Removal and reorganization of menu items and links"
+    },
+    {
+      "filename": "change-1257.json",
+      "change_id": 1257,
+      "api_path": "/api-data/changes/change-1257.json",
+      "company": "Descript",
+      "detected_at": "2025-08-27T16:31:11.599Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Removal of redundant company logos, addition of new features such as Video Regenerate, and reorganiz..."
+    },
+    {
+      "filename": "change-1259.json",
+      "change_id": 1259,
+      "api_path": "/api-data/changes/change-1259.json",
+      "company": "DataRobot",
+      "detected_at": "2025-08-27T16:30:41.734Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "Addition of new content sections and updates to existing sections, including the introduction of 'Fo..."
+    },
+    {
+      "filename": "change-1264.json",
+      "change_id": 1264,
+      "api_path": "/api-data/changes/change-1264.json",
+      "company": "Cursor",
+      "detected_at": "2025-08-27T16:30:21.904Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New blog posts were added, and some existing ones were removed or updated."
+    },
+    {
+      "filename": "change-1267.json",
+      "change_id": 1267,
+      "api_path": "/api-data/changes/change-1267.json",
+      "company": "Cohere",
+      "detected_at": "2025-08-27T16:30:08.201Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New blog posts were added, including 'Command A Reasoning: Enterprise-grade control for AI agents', ..."
+    },
+    {
+      "filename": "change-1275.json",
+      "change_id": 1275,
+      "api_path": "/api-data/changes/change-1275.json",
+      "company": "Anyscale",
+      "detected_at": "2025-08-27T16:29:10.050Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "The blog post layout and content have been reorganized and updated with new articles and images."
+    },
+    {
+      "filename": "change-1276.json",
+      "change_id": 1276,
+      "api_path": "/api-data/changes/change-1276.json",
+      "company": "Anthropic",
+      "detected_at": "2025-08-27T16:28:53.381Z",
+      "interest_level": 8,
+      "change_type": "modified",
+      "summary": "New announcements and updates on Anthropic's products, partnerships, and policies were added, while ..."
     },
     {
       "filename": "change-1057.json",
@@ -2285,6 +2625,26 @@
       "summary": "Changes in pricing plans, usage limits, and features for Claude models"
     },
     {
+      "filename": "change-1201.json",
+      "change_id": 1201,
+      "api_path": "/api-data/changes/change-1201.json",
+      "company": "Sourcegraph",
+      "detected_at": "2025-08-27T16:41:29.020Z",
+      "interest_level": 7,
+      "change_type": "modified",
+      "summary": "Changes to Cody Free, Cody Pro, and Enterprise Starter plans"
+    },
+    {
+      "filename": "change-1211.json",
+      "change_id": 1211,
+      "api_path": "/api-data/changes/change-1211.json",
+      "company": "Replit",
+      "detected_at": "2025-08-27T16:40:08.997Z",
+      "interest_level": 7,
+      "change_type": "modified",
+      "summary": "New blog post added: 'Introducing the Most Comprehensive Design Support for AI Apps'"
+    },
+    {
       "filename": "change-1082.json",
       "change_id": 1082,
       "api_path": "/api-data/changes/change-1082.json",
@@ -2343,6 +2703,66 @@
       "interest_level": 7,
       "change_type": "modified",
       "summary": "New blog post added: 'The AI Risk Matrix: Evolving AI Safety and Security for Today'"
+    },
+    {
+      "filename": "change-1189.json",
+      "change_id": 1189,
+      "api_path": "/api-data/changes/change-1189.json",
+      "company": "WellSaid Labs",
+      "detected_at": "2025-08-27T16:43:16.477Z",
+      "interest_level": 6,
+      "change_type": "modified",
+      "summary": "New articles and blog posts were added, and some links were updated"
+    },
+    {
+      "filename": "change-1226.json",
+      "change_id": 1226,
+      "api_path": "/api-data/changes/change-1226.json",
+      "company": "Meta AI",
+      "detected_at": "2025-08-27T16:35:04.624Z",
+      "interest_level": 6,
+      "change_type": "modified",
+      "summary": "New blog post added: 'How Llama and Oracle are helping Instituto PROA kickstart careers for students..."
+    },
+    {
+      "filename": "change-1247.json",
+      "change_id": 1247,
+      "api_path": "/api-data/changes/change-1247.json",
+      "company": "Google DeepMind",
+      "detected_at": "2025-08-27T16:32:09.635Z",
+      "interest_level": 6,
+      "change_type": "modified",
+      "summary": "Addition of a new model variant, Gemini 2.5 Flash Image"
+    },
+    {
+      "filename": "change-1260.json",
+      "change_id": 1260,
+      "api_path": "/api-data/changes/change-1260.json",
+      "company": "DataRobot",
+      "detected_at": "2025-08-27T16:30:39.246Z",
+      "interest_level": 6,
+      "change_type": "modified",
+      "summary": "New blog posts were added, and the 'Resources' section was updated with a new link to 'Agents in the..."
+    },
+    {
+      "filename": "change-1273.json",
+      "change_id": 1273,
+      "api_path": "/api-data/changes/change-1273.json",
+      "company": "Cerebras",
+      "detected_at": "2025-08-27T16:29:22.927Z",
+      "interest_level": 6,
+      "change_type": "modified",
+      "summary": "New blog post added: 'Debugging Dead MoE Models: A Step-by-Step Guide'"
+    },
+    {
+      "filename": "change-1280.json",
+      "change_id": 1280,
+      "api_path": "/api-data/changes/change-1280.json",
+      "company": "Aleph Alpha",
+      "detected_at": "2025-08-27T16:28:04.670Z",
+      "interest_level": 6,
+      "change_type": "modified",
+      "summary": "The image for the product section has changed from phariafiles2 to primer, and the accompanying text..."
     },
     {
       "filename": "change-1069.json",
@@ -2605,6 +3025,126 @@
       "summary": "New article 'Anthropic Signs CMS Health Tech Ecosystem Pledge to Advance Healthcare Interoperability..."
     },
     {
+      "filename": "change-1192.json",
+      "change_id": 1192,
+      "api_path": "/api-data/changes/change-1192.json",
+      "company": "Weights & Biases",
+      "detected_at": "2025-08-27T16:42:50.562Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "Update of Hangzhou DeepSeek models from DeepSeek V3-0324, DeepSeek R1-0528 to DeepSeek V3.1, V3-0324..."
+    },
+    {
+      "filename": "change-1208.json",
+      "change_id": 1208,
+      "api_path": "/api-data/changes/change-1208.json",
+      "company": "Runway",
+      "detected_at": "2025-08-27T16:40:27.696Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "The 'Get Started' button URL changed from 'https://app.runwayml.com/' to 'https://app.runwayml.com/s..."
+    },
+    {
+      "filename": "change-1229.json",
+      "change_id": 1229,
+      "api_path": "/api-data/changes/change-1229.json",
+      "company": "Leonardo AI",
+      "detected_at": "2025-08-27T16:34:15.800Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "The main change is the addition of a note explaining the limitations of 'Unlimited relaxed generatio..."
+    },
+    {
+      "filename": "change-1237.json",
+      "change_id": 1237,
+      "api_path": "/api-data/changes/change-1237.json",
+      "company": "Hugging Face",
+      "detected_at": "2025-08-27T16:33:11.918Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "Addition of Trackio, a lightweight, local-first, and free experiment tracking Python library, under ..."
+    },
+    {
+      "filename": "change-1242.json",
+      "change_id": 1242,
+      "api_path": "/api-data/changes/change-1242.json",
+      "company": "H2O.ai",
+      "detected_at": "2025-08-27T16:32:48.887Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "Addition of a new navigation item 'Public Sector' under SOLUTIONS and removal of 'Healthcare' under ..."
+    },
+    {
+      "filename": "change-1243.json",
+      "change_id": 1243,
+      "api_path": "/api-data/changes/change-1243.json",
+      "company": "H2O.ai",
+      "detected_at": "2025-08-27T16:32:44.531Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "Update in blog post titles and categories, addition of new blog posts, and minor changes in website ..."
+    },
+    {
+      "filename": "change-1244.json",
+      "change_id": 1244,
+      "api_path": "/api-data/changes/change-1244.json",
+      "company": "H2O.ai",
+      "detected_at": "2025-08-27T16:32:38.550Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "Removal of the 'Healthcare' industry link from the SOLUTIONS section and replacement with 'Public Se..."
+    },
+    {
+      "filename": "change-1252.json",
+      "change_id": 1252,
+      "api_path": "/api-data/changes/change-1252.json",
+      "company": "ElevenLabs",
+      "detected_at": "2025-08-27T16:31:43.088Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "Navigation menu items and some content sections"
+    },
+    {
+      "filename": "change-1256.json",
+      "change_id": 1256,
+      "api_path": "/api-data/changes/change-1256.json",
+      "company": "Descript",
+      "detected_at": "2025-08-27T16:31:23.178Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "Addition of a 'Templates' resource and removal of 'Video regenerate' feature"
+    },
+    {
+      "filename": "change-1270.json",
+      "change_id": 1270,
+      "api_path": "/api-data/changes/change-1270.json",
+      "company": "Codeium",
+      "detected_at": "2025-08-27T16:29:43.164Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "Download options for the Windsurf Editor"
+    },
+    {
+      "filename": "change-1278.json",
+      "change_id": 1278,
+      "api_path": "/api-data/changes/change-1278.json",
+      "company": "Andi",
+      "detected_at": "2025-08-27T16:28:41.970Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "The search queries and examples provided on the homepage have changed."
+    },
+    {
+      "filename": "change-1281.json",
+      "change_id": 1281,
+      "api_path": "/api-data/changes/change-1281.json",
+      "company": "Aleph Alpha",
+      "detected_at": "2025-08-27T16:28:00.151Z",
+      "interest_level": 5,
+      "change_type": "modified",
+      "summary": "The product section now features 'Breaking Free of Tokenizers: Why We Built T-Free and What It Means..."
+    },
+    {
       "filename": "change-1068.json",
       "change_id": 1068,
       "api_path": "/api-data/changes/change-1068.json",
@@ -2723,6 +3263,76 @@
       "interest_level": 5,
       "change_type": "modified",
       "summary": "Addition of a new case study and removal of several news articles"
+    },
+    {
+      "filename": "change-1194.json",
+      "change_id": 1194,
+      "api_path": "/api-data/changes/change-1194.json",
+      "company": "Tabnine",
+      "detected_at": "2025-08-27T16:42:38.171Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "Removal of 'Get a live demo' button and addition of 'Talk to an expert' button"
+    },
+    {
+      "filename": "change-1209.json",
+      "change_id": 1209,
+      "api_path": "/api-data/changes/change-1209.json",
+      "company": "Runway",
+      "detected_at": "2025-08-27T16:40:25.458Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "The 'Get Started' button URL changed from 'https://app.runwayml.com/' to 'https://app.runwayml.com/s..."
+    },
+    {
+      "filename": "change-1213.json",
+      "change_id": 1213,
+      "api_path": "/api-data/changes/change-1213.json",
+      "company": "Replit",
+      "detected_at": "2025-08-27T16:39:59.810Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "Added a limited time offer promo code (LD25A) for $60 off the annual plan"
+    },
+    {
+      "filename": "change-1215.json",
+      "change_id": 1215,
+      "api_path": "/api-data/changes/change-1215.json",
+      "company": "Pieces",
+      "detected_at": "2025-08-27T16:39:19.048Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "Minor tweaks in the content, including the addition of a new testimonial and slight rewording of cer..."
+    },
+    {
+      "filename": "change-1217.json",
+      "change_id": 1217,
+      "api_path": "/api-data/changes/change-1217.json",
+      "company": "Pieces",
+      "detected_at": "2025-08-27T16:39:08.520Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "Addition of 'Academy' resource and minor adjustments in the layout and content of the features page"
+    },
+    {
+      "filename": "change-1227.json",
+      "change_id": 1227,
+      "api_path": "/api-data/changes/change-1227.json",
+      "company": "Luma AI",
+      "detected_at": "2025-08-27T16:34:27.497Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "Minor updates to image URLs, addition of new image references, and slight rewording of certain secti..."
+    },
+    {
+      "filename": "change-1279.json",
+      "change_id": 1279,
+      "api_path": "/api-data/changes/change-1279.json",
+      "company": "Amazon CodeWhisperer",
+      "detected_at": "2025-08-27T16:28:25.475Z",
+      "interest_level": 4,
+      "change_type": "modified",
+      "summary": "Minor updates to the website content, including changes to image URLs, addition of a 'Feedback' sect..."
     },
     {
       "filename": "change-1071.json",
@@ -2923,6 +3533,246 @@
       "interest_level": 4,
       "change_type": "modified",
       "summary": "The download link for Claude has changed from https://claude.ai/redirect/website.v1.e0360d15-f344-40..."
+    },
+    {
+      "filename": "change-1190.json",
+      "change_id": 1190,
+      "api_path": "/api-data/changes/change-1190.json",
+      "company": "Weights & Biases",
+      "detected_at": "2025-08-27T16:43:04.934Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Removal of 'Hosting' from Inference section and update of Hangzhou DeepSeek models"
+    },
+    {
+      "filename": "change-1193.json",
+      "change_id": 1193,
+      "api_path": "/api-data/changes/change-1193.json",
+      "company": "Tabnine",
+      "detected_at": "2025-08-27T16:42:44.329Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Minor updates to the documentation, including rewording and reorganization of certain sections, with..."
+    },
+    {
+      "filename": "change-1199.json",
+      "change_id": 1199,
+      "api_path": "/api-data/changes/change-1199.json",
+      "company": "Sourcegraph",
+      "detected_at": "2025-08-27T16:41:38.399Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Removal of Discord link and minor adjustments in the footer section"
+    },
+    {
+      "filename": "change-1200.json",
+      "change_id": 1200,
+      "api_path": "/api-data/changes/change-1200.json",
+      "company": "Sourcegraph",
+      "detected_at": "2025-08-27T16:41:33.872Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "The link to the Support Forum has been removed from the Resources section, and a link to the Brand G..."
+    },
+    {
+      "filename": "change-1202.json",
+      "change_id": 1202,
+      "api_path": "/api-data/changes/change-1202.json",
+      "company": "Sourcegraph",
+      "detected_at": "2025-08-27T16:41:23.992Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Minor updates to the pricing page, including changes to the layout, removal of the 'Support Forum' l..."
+    },
+    {
+      "filename": "change-1203.json",
+      "change_id": 1203,
+      "api_path": "/api-data/changes/change-1203.json",
+      "company": "Scale AI",
+      "detected_at": "2025-08-27T16:41:18.554Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Removal of redundant customer logos and minor adjustments in the layout and wording of certain secti..."
+    },
+    {
+      "filename": "change-1210.json",
+      "change_id": 1210,
+      "api_path": "/api-data/changes/change-1210.json",
+      "company": "Runway",
+      "detected_at": "2025-08-27T16:40:22.723Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Addition of 'Game Worlds' to the product section and change in 'Get Started' button link from https:..."
+    },
+    {
+      "filename": "change-1212.json",
+      "change_id": 1212,
+      "api_path": "/api-data/changes/change-1212.json",
+      "company": "Replit",
+      "detected_at": "2025-08-27T16:40:04.274Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "The prompt in the 'Turn your ideas into apps' section has changed from 'Make me a game for families ..."
+    },
+    {
+      "filename": "change-1218.json",
+      "change_id": 1218,
+      "api_path": "/api-data/changes/change-1218.json",
+      "company": "Pieces",
+      "detected_at": "2025-08-27T16:39:03.127Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Addition of 'Academy' resource under the 'RESOURCES' section"
+    },
+    {
+      "filename": "change-1231.json",
+      "change_id": 1231,
+      "api_path": "/api-data/changes/change-1231.json",
+      "company": "LangChain",
+      "detected_at": "2025-08-27T16:34:06.231Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Logo image URLs and minor text adjustments"
+    },
+    {
+      "filename": "change-1234.json",
+      "change_id": 1234,
+      "api_path": "/api-data/changes/change-1234.json",
+      "company": "Inflection AI",
+      "detected_at": "2025-08-27T16:33:41.546Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Removal of the 'Get in touch' and 'News' links from the main navigation, addition of double undersco..."
+    },
+    {
+      "filename": "change-1248.json",
+      "change_id": 1248,
+      "api_path": "/api-data/changes/change-1248.json",
+      "company": "GitHub Copilot",
+      "detected_at": "2025-08-27T16:32:03.143Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Addition of 'Manage request allowances' under 'Manage and track spending' in the 'How-tos' section"
+    },
+    {
+      "filename": "change-1250.json",
+      "change_id": 1250,
+      "api_path": "/api-data/changes/change-1250.json",
+      "company": "GitHub Copilot",
+      "detected_at": "2025-08-27T16:31:55.877Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Navigation menu item 'Product' was changed to 'Platform'"
+    },
+    {
+      "filename": "change-1258.json",
+      "change_id": 1258,
+      "api_path": "/api-data/changes/change-1258.json",
+      "company": "Descript",
+      "detected_at": "2025-08-27T16:31:06.996Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Addition of 'Templates' to the resources section and removal of 'Customer stories' from the same sec..."
+    },
+    {
+      "filename": "change-1261.json",
+      "change_id": 1261,
+      "api_path": "/api-data/changes/change-1261.json",
+      "company": "DataRobot",
+      "detected_at": "2025-08-27T16:30:36.103Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Addition of 'Agents in the AM' under Resources > Connect"
+    },
+    {
+      "filename": "change-1263.json",
+      "change_id": 1263,
+      "api_path": "/api-data/changes/change-1263.json",
+      "company": "Cursor",
+      "detected_at": "2025-08-27T16:30:25.344Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "The download option for Cursor has been updated to specify 'macOS' instead of 'Windows'."
+    },
+    {
+      "filename": "change-1265.json",
+      "change_id": 1265,
+      "api_path": "/api-data/changes/change-1265.json",
+      "company": "Cursor",
+      "detected_at": "2025-08-27T16:30:19.267Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Minor updates in feature descriptions and image URLs"
+    },
+    {
+      "filename": "change-1266.json",
+      "change_id": 1266,
+      "api_path": "/api-data/changes/change-1266.json",
+      "company": "Cohere",
+      "detected_at": "2025-08-27T16:30:13.193Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Image quality and compression settings"
+    },
+    {
+      "filename": "change-1268.json",
+      "change_id": 1268,
+      "api_path": "/api-data/changes/change-1268.json",
+      "company": "Cohere",
+      "detected_at": "2025-08-27T16:29:55.075Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Removal of the 'New multimodal model: Command A Vision!' announcement and update of the 'Release Not..."
+    },
+    {
+      "filename": "change-1269.json",
+      "change_id": 1269,
+      "api_path": "/api-data/changes/change-1269.json",
+      "company": "Codeium",
+      "detected_at": "2025-08-27T16:29:48.192Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Removal of duplicate testimonials and minor reorganization of the homepage content"
+    },
+    {
+      "filename": "change-1271.json",
+      "change_id": 1271,
+      "api_path": "/api-data/changes/change-1271.json",
+      "company": "Codeium",
+      "detected_at": "2025-08-27T16:29:39.053Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Unlimited SWE-1 Lite changed to Unlimited SWE-1 in the Free plan features"
+    },
+    {
+      "filename": "change-1274.json",
+      "change_id": 1274,
+      "api_path": "/api-data/changes/change-1274.json",
+      "company": "Anyscale",
+      "detected_at": "2025-08-27T16:29:13.297Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "The link for booking Ray training has been updated to 'See Support Plans' and now points to /support"
+    },
+    {
+      "filename": "change-1277.json",
+      "change_id": 1277,
+      "api_path": "/api-data/changes/change-1277.json",
+      "company": "Anthropic",
+      "detected_at": "2025-08-27T16:28:45.350Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "Logo and image URLs, and a change from 'Claude Code release notes' to 'Claude Code changelog' with a..."
+    },
+    {
+      "filename": "change-1282.json",
+      "change_id": 1282,
+      "api_path": "/api-data/changes/change-1282.json",
+      "company": "AI21 Labs",
+      "detected_at": "2025-08-27T16:27:42.198Z",
+      "interest_level": 3,
+      "change_type": "modified",
+      "summary": "The title of a blog post was changed from 'RAG Agent Solutions for Enterprises' to 'Knowledge Agent ..."
     },
     {
       "filename": "change-1060.json",
@@ -3255,6 +4105,66 @@
       "summary": "Update of download and login links for Claude"
     },
     {
+      "filename": "change-1220.json",
+      "change_id": 1220,
+      "api_path": "/api-data/changes/change-1220.json",
+      "company": "Palantir",
+      "detected_at": "2025-08-27T16:38:33.024Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "No significant changes were detected between the two versions of the content."
+    },
+    {
+      "filename": "change-1223.json",
+      "change_id": 1223,
+      "api_path": "/api-data/changes/change-1223.json",
+      "company": "NVIDIA",
+      "detected_at": "2025-08-27T16:37:47.428Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "The tracking pixel URL was updated from \"00e46635df886f5b64e71756312656\" to \"b09195edf5309c45a868175..."
+    },
+    {
+      "filename": "change-1224.json",
+      "change_id": 1224,
+      "api_path": "/api-data/changes/change-1224.json",
+      "company": "NVIDIA",
+      "detected_at": "2025-08-27T16:37:40.552Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "The tracking pixel URL was updated from \"b09195edf5309c45a8681755533124\" to \"00e46635df886f5b64e7175..."
+    },
+    {
+      "filename": "change-1228.json",
+      "change_id": 1228,
+      "api_path": "/api-data/changes/change-1228.json",
+      "company": "Leonardo AI",
+      "detected_at": "2025-08-27T16:34:18.845Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "No significant changes were detected in the content structure or features between the two versions."
+    },
+    {
+      "filename": "change-1232.json",
+      "change_id": 1232,
+      "api_path": "/api-data/changes/change-1232.json",
+      "company": "LangChain",
+      "detected_at": "2025-08-27T16:34:00.669Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "The 'ajs_aid' parameter in the URLs for LangGraph and LangChain documentation changed from 'f92f2785..."
+    },
+    {
+      "filename": "change-1272.json",
+      "change_id": 1272,
+      "api_path": "/api-data/changes/change-1272.json",
+      "company": "Cisco Systems",
+      "detected_at": "2025-08-27T16:29:30.088Z",
+      "interest_level": 2,
+      "change_type": "modified",
+      "summary": "No significant changes were detected in the provided content"
+    },
+    {
       "filename": "change-1061.json",
       "change_id": 1061,
       "api_path": "/api-data/changes/change-1061.json",
@@ -3553,6 +4463,36 @@
       "interest_level": 2,
       "change_type": "modified",
       "summary": "No significant changes were detected in the content structure or links between the two versions."
+    },
+    {
+      "filename": "change-1230.json",
+      "change_id": 1230,
+      "api_path": "/api-data/changes/change-1230.json",
+      "company": "LangChain",
+      "detected_at": "2025-08-27T16:34:09.934Z",
+      "interest_level": 1,
+      "change_type": "modified",
+      "summary": "No significant changes were detected in the content of the LangChain blog between the two versions."
+    },
+    {
+      "filename": "change-1249.json",
+      "change_id": 1249,
+      "api_path": "/api-data/changes/change-1249.json",
+      "company": "GitHub Copilot",
+      "detected_at": "2025-08-27T16:31:59.635Z",
+      "interest_level": 1,
+      "change_type": "modified",
+      "summary": "No significant changes were detected in the provided content."
+    },
+    {
+      "filename": "change-1251.json",
+      "change_id": 1251,
+      "api_path": "/api-data/changes/change-1251.json",
+      "company": "GitHub Copilot",
+      "detected_at": "2025-08-27T16:31:51.718Z",
+      "interest_level": 1,
+      "change_type": "modified",
+      "summary": "No significant changes were detected in the provided content. Both versions appear to be identical, ..."
     },
     {
       "filename": "change-1001.json",

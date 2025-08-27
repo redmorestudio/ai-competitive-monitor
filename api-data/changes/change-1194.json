@@ -1,0 +1,61 @@
+{
+  "id": 1194,
+  "company": "Tabnine",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:42:38.171Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Removal of 'Get a live demo' button and addition of 'Talk to an expert' button",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Removal of 'Get a live demo' button and addition of 'Talk to an expert' button",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Removal of 'Get a live demo' button",
+      "Addition of 'Talk to an expert' button"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may slightly impact the conversion rate of potential customers, but the overall business impact is minimal",
+    "market_signals": [
+      "The company may be shifting its focus from demos to expert consultations"
+    ],
+    "competitive_implications": "The change does not significantly impact the company's competitive position",
+    "strategic_direction": "The company may be focusing on building stronger relationships with potential customers through expert consultations"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company has removed the 'Get a live demo' button and added a 'Talk to an expert' button"
+    ],
+    "opportunities": [
+      "The company may be able to build stronger relationships with potential customers through expert consultations"
+    ],
+    "threats": [
+      "The change may slightly impact the conversion rate of potential customers"
+    ],
+    "recommended_actions": [
+      "Monitor the impact of the change on conversion rates and customer engagement"
+    ]
+  },
+  "key_insights": [
+    "The company has removed the 'Get a live demo' button and added a 'Talk to an expert' button"
+  ],
+  "business_impact": "The change may slightly impact the conversion rate of potential customers, but the overall business impact is minimal",
+  "competitive_implications": "The change does not significantly impact the company's competitive position",
+  "content_hash_before": "445e7c3565f36fc4daa78070fdce069bccd250d6584e84c674898f830b3d9e7e",
+  "content_hash_after": "77c45e33442f5343c0d12aaf0a11fca0192f8389951b754c126504eba7b25a95",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

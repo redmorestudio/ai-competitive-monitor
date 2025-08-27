@@ -1,0 +1,65 @@
+{
+  "id": 1278,
+  "company": "Andi",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:28:41.970Z",
+  "change_type": "modified",
+  "interest_level": 5,
+  "ai_confidence": 0.8,
+  "summary": "The search queries and examples provided on the homepage have changed.",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "The search queries and examples provided on the homepage have changed.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "New search queries have been added, such as 'chess for beginners', 'how many grams in a pound?', and 'prettiest cities in the world'.",
+      "Some examples of search queries have been removed or replaced, such as 'AI career ideas' and 'write a meal plan for the perfect dinner party with a moroccan theme'.",
+      "The formatting and wording of some sections have been tweaked for better readability and user experience."
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes may lead to increased user engagement and retention, as the new examples and search queries may better resonate with the target audience and demonstrate the AI search agent's capabilities.",
+    "market_signals": [
+      "The updates may signal a focus on improving the user experience and showcasing the AI search agent's features and capabilities."
+    ],
+    "competitive_implications": "The changes are minor and do not significantly impact the competitive landscape, but they may contribute to a more engaging and user-friendly experience, potentially attracting more users.",
+    "strategic_direction": "The updates suggest a focus on refining the product and improving the user experience, which may be a strategic direction for the company."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The changes are minor and primarily focus on updating examples and search queries.",
+      "The updates may indicate an effort to improve user engagement and showcase the capabilities of the AI search agent."
+    ],
+    "opportunities": [
+      "The company may consider further refining the product and user experience to attract more users and increase engagement."
+    ],
+    "threats": [
+      "The minor changes may not be enough to significantly impact the competitive landscape, and the company may need to consider more substantial updates or innovations to stay competitive."
+    ],
+    "recommended_actions": [
+      "Continuously monitor user feedback and engagement to identify areas for improvement.",
+      "Consider conducting market research to better understand the target audience and their needs."
+    ]
+  },
+  "key_insights": [
+    "The changes are minor and primarily focus on updating examples and search queries.",
+    "The updates may indicate an effort to improve user engagement and showcase the capabilities of the AI search agent."
+  ],
+  "business_impact": "The changes may lead to increased user engagement and retention, as the new examples and search queries may better resonate with the target audience and demonstrate the AI search agent's capabilities.",
+  "competitive_implications": "The changes are minor and do not significantly impact the competitive landscape, but they may contribute to a more engaging and user-friendly experience, potentially attracting more users.",
+  "content_hash_before": "987a7e71d565831e578b2f357cb63f1f1199b440593b3d1c19b7ef30981f38ef",
+  "content_hash_after": "1148537f3b98693ecc2c0ae7958da03d3574585a0567878ca4e65eb31a5c0485",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

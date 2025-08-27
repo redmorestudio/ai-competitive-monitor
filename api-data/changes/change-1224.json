@@ -1,0 +1,56 @@
+{
+  "id": 1224,
+  "company": "NVIDIA",
+  "page_url": "product",
+  "detected_at": "2025-08-27T16:37:40.552Z",
+  "change_type": "modified",
+  "interest_level": 2,
+  "ai_confidence": 0.8,
+  "summary": "The tracking pixel URL was updated from \"b09195edf5309c45a8681755533124\" to \"00e46635df886f5b64e71756312656\" in the NVIDIA Data Center Products webpage.",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "The tracking pixel URL was updated from \"b09195edf5309c45a8681755533124\" to \"00e46635df886f5b64e71756312656\" in the NVIDIA Data Center Products webpage.",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated tracking pixel URL"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The updated tracking pixel URL may improve the accuracy of user tracking and analytics, but it does not have a significant impact on the overall business strategy.",
+    "market_signals": [
+      "NVIDIA is continuing to monitor and optimize its website for user tracking and analytics."
+    ],
+    "competitive_implications": "The change does not have a significant impact on NVIDIA's competitive position in the market.",
+    "strategic_direction": "NVIDIA is focused on optimizing its website for user experience and analytics, but this change is not a significant indicator of its overall strategic direction."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The updated tracking pixel URL may improve user tracking and analytics."
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor NVIDIA's website for any significant changes or updates that may indicate a shift in its strategic direction."
+    ]
+  },
+  "key_insights": [
+    "The updated tracking pixel URL may improve user tracking and analytics."
+  ],
+  "business_impact": "The updated tracking pixel URL may improve the accuracy of user tracking and analytics, but it does not have a significant impact on the overall business strategy.",
+  "competitive_implications": "The change does not have a significant impact on NVIDIA's competitive position in the market.",
+  "content_hash_before": "d663ea22568e7fc45ea54e5e7f2a4bfa97eb7f594262ad249bc80bba960b759e",
+  "content_hash_after": "51c78e37fe2ea9fb95d76965673afc10a8117d030bce36a3c9faeb8cd6b85440",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

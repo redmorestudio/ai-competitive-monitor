@@ -1,0 +1,55 @@
+{
+  "id": 1269,
+  "company": "Codeium",
+  "page_url": "homepage",
+  "detected_at": "2025-08-27T16:29:48.192Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Removal of duplicate testimonials and minor reorganization of the homepage content",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Removal of duplicate testimonials and minor reorganization of the homepage content",
+    "change_type": "removal",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Duplicate testimonials from Avi Schiffmann, Andrew Brown, Alex Finn, The Jack Forge, Alvaro Cintas, Luca, Jon Myers, The Bodega Man, elvis, Catalin, Tom Blomfield, Tom Dörr, and Alexander Wilczek have been removed",
+      "Minor reorganization of the homepage content for better readability"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The removal of duplicate testimonials may slightly improve the user experience by reducing clutter, but it does not have a significant impact on the business",
+    "market_signals": [],
+    "competitive_implications": "The minor changes do not send any significant signals to competitors",
+    "strategic_direction": "The changes do not indicate a shift in the company's strategic direction"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "The company is focusing on refining its user experience"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Continue to monitor the company's updates and announcements for more significant changes"
+    ]
+  },
+  "key_insights": [
+    "The company is focusing on refining its user experience"
+  ],
+  "business_impact": "The removal of duplicate testimonials may slightly improve the user experience by reducing clutter, but it does not have a significant impact on the business",
+  "competitive_implications": "The minor changes do not send any significant signals to competitors",
+  "content_hash_before": "061779b0e282362b7299c8cb27a37940500fd7be83b8e46412c31ca5efd850eb",
+  "content_hash_after": "ed18bb2ef7798c4fbbfccdb0b7f999a3ed683f43928ae533746c1e855d9f1530",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

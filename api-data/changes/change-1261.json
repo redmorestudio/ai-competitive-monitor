@@ -1,0 +1,59 @@
+{
+  "id": 1261,
+  "company": "DataRobot",
+  "page_url": "product",
+  "detected_at": "2025-08-27T16:30:36.103Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Addition of 'Agents in the AM' under Resources > Connect",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Addition of 'Agents in the AM' under Resources > Connect",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "New link added for 'Agents in the AM' under Resources > Connect",
+      "No significant changes to product offerings or features"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact expected from this minor change",
+    "market_signals": [
+      "DataRobot continues to expand its resources and support for customers"
+    ],
+    "competitive_implications": "No direct competitive implications from this minor change",
+    "strategic_direction": "DataRobot's strategic direction remains focused on providing AI solutions and supporting its customers"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "DataRobot added a new resource for customers, 'Agents in the AM'"
+    ],
+    "opportunities": [
+      "DataRobot may be expanding its support and resources for customers, potentially increasing customer satisfaction and loyalty"
+    ],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor DataRobot's future updates and changes to its products and services"
+    ]
+  },
+  "key_insights": [
+    "DataRobot added a new resource for customers, 'Agents in the AM'"
+  ],
+  "business_impact": "No significant business impact expected from this minor change",
+  "competitive_implications": "No direct competitive implications from this minor change",
+  "content_hash_before": "8af00304c82ab633587a180a9efd5fee9a65ec80b17cf5fee2b73baed38d5205",
+  "content_hash_after": "8b1713a9591c710412641ffe859000da1d21d42dd672087c1c1490ad33eca214",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,68 @@
+{
+  "id": 1273,
+  "company": "Cerebras",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:29:22.927Z",
+  "change_type": "modified",
+  "interest_level": 6,
+  "ai_confidence": 0.8,
+  "summary": "New blog post added: 'Debugging Dead MoE Models: A Step-by-Step Guide'",
+  "category": "content_update",
+  "change_summary": {
+    "what_changed": "New blog post added: 'Debugging Dead MoE Models: A Step-by-Step Guide'",
+    "change_type": "addition",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added a new blog post titled 'Debugging Dead MoE Models: A Step-by-Step Guide' dated August 04, 2025"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of this blog post may attract more developers and users to the Cerebras platform, potentially leading to increased adoption and revenue.",
+    "market_signals": [
+      "Cerebras is committed to providing resources and support for its users",
+      "The company is focused on troubleshooting and improving model performance"
+    ],
+    "competitive_implications": "Cerebras is positioning itself as a thought leader in the AI and machine learning space, potentially gaining a competitive advantage over other companies in the industry.",
+    "strategic_direction": "Cerebras is likely to continue creating content and providing resources to support its users and drive adoption of its platform."
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "MoE Models"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Cerebras is actively creating content to support its users",
+      "The company is focused on troubleshooting and improving model performance"
+    ],
+    "opportunities": [
+      "Cerebras may be able to attract more developers and users to its platform",
+      "The company can establish itself as a thought leader in the AI and machine learning space"
+    ],
+    "threats": [
+      "Competitors may respond by creating similar content and resources",
+      "Cerebras may face challenges in maintaining the quality and relevance of its content"
+    ],
+    "recommended_actions": [
+      "Monitor Cerebras' content creation and strategy",
+      "Assess the impact of Cerebras' content on its user base and market position"
+    ]
+  },
+  "key_insights": [
+    "Cerebras is actively creating content to support its users",
+    "The company is focused on troubleshooting and improving model performance"
+  ],
+  "business_impact": "The addition of this blog post may attract more developers and users to the Cerebras platform, potentially leading to increased adoption and revenue.",
+  "competitive_implications": "Cerebras is positioning itself as a thought leader in the AI and machine learning space, potentially gaining a competitive advantage over other companies in the industry.",
+  "content_hash_before": "94413e27bbdfd81783209a4c73542d5750cfc3513a8eb9997c75d16f0c84afe8",
+  "content_hash_after": "dfd68bf3f1792f647431f2ea1223d4413c5c2af89cad281cd3e1e6628d597c41",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

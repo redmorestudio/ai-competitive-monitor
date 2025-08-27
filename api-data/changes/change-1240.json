@@ -1,0 +1,75 @@
+{
+  "id": 1240,
+  "company": "HeyGen",
+  "page_url": "features",
+  "detected_at": "2025-08-27T16:32:58.305Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "The content of the webpage has changed from a security verification page to a 'page not found' error page with HeyGen branding",
+  "category": "rebranding/update",
+  "change_summary": {
+    "what_changed": "The content of the webpage has changed from a security verification page to a 'page not found' error page with HeyGen branding",
+    "change_type": "update",
+    "change_scale": "major",
+    "specific_changes": [
+      "Removal of security verification content",
+      "Addition of HeyGen branding and logo",
+      "Introduction of a 'page not found' error message",
+      "Update of the webpage's visual design and layout"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The change may impact user experience and perception of the HeyGen brand, potentially affecting customer engagement and loyalty",
+    "market_signals": [
+      "Rebranding",
+      "Updated online presence"
+    ],
+    "competitive_implications": "The update may be an attempt to differentiate HeyGen from competitors and establish a stronger brand identity",
+    "strategic_direction": "The change suggests a focus on improving user experience and reinforcing the company's brand image"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [
+      "Cloudflare",
+      "Sanity.io"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "HeyGen has updated its webpage with a new design and branding",
+      "The company is using Cloudflare for performance and security",
+      "The update may be part of a larger rebranding effort"
+    ],
+    "opportunities": [
+      "Improved user experience and engagement",
+      "Enhanced brand recognition and differentiation"
+    ],
+    "threats": [
+      "Potential disruption to existing customer relationships",
+      "Increased competition in the market"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and engagement metrics",
+      "Analyze competitor responses to the update",
+      "Consider similar branding and design updates to maintain competitiveness"
+    ]
+  },
+  "key_insights": [
+    "HeyGen has updated its webpage with a new design and branding",
+    "The company is using Cloudflare for performance and security",
+    "The update may be part of a larger rebranding effort"
+  ],
+  "business_impact": "The change may impact user experience and perception of the HeyGen brand, potentially affecting customer engagement and loyalty",
+  "competitive_implications": "The update may be an attempt to differentiate HeyGen from competitors and establish a stronger brand identity",
+  "content_hash_before": "6973dddd3ef9cb6a2932702f31777faad9c9bf3124d147a84f31aadb6d139546",
+  "content_hash_after": "58f93afee45ff4d80bffb2e973250925fddaebbef5e70683c41c4bb20e57e1ad",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

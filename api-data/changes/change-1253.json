@@ -1,0 +1,78 @@
+{
+  "id": 1253,
+  "company": "ElevenLabs",
+  "page_url": "blog",
+  "detected_at": "2025-08-27T16:31:38.274Z",
+  "change_type": "modified",
+  "interest_level": 8,
+  "ai_confidence": 0.8,
+  "summary": "The navigation menu has been updated, with 'Platform' replacing 'Solutions', and 'Agents Platform' and 'Creative Platform' have been added as new menu items. Additionally, new blog posts have been published, including 'Eleven v3 (alpha), now available in the API' and 'Eleven Music, now available in the API'.",
+  "category": "product_update",
+  "change_summary": {
+    "what_changed": "The navigation menu has been updated, with 'Platform' replacing 'Solutions', and 'Agents Platform' and 'Creative Platform' have been added as new menu items. Additionally, new blog posts have been published, including 'Eleven v3 (alpha), now available in the API' and 'Eleven Music, now available in the API'.",
+    "change_type": "update",
+    "change_scale": "significant",
+    "specific_changes": [
+      "Updated navigation menu",
+      "New blog posts published",
+      "Changes to product and solution offerings"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The changes suggest that ElevenLabs is expanding its product and service offerings, which could lead to increased revenue and market share. The focus on conversational AI and AI audio research may also help the company to establish itself as a thought leader in these areas.",
+    "market_signals": [
+      "Increased focus on AI audio research and conversational AI",
+      "Expansion of product and service offerings"
+    ],
+    "competitive_implications": "The changes may put pressure on competitors to expand their own product and service offerings, particularly in the areas of AI audio research and conversational AI.",
+    "strategic_direction": "The changes suggest that ElevenLabs is focused on establishing itself as a leader in the AI audio research and conversational AI spaces, and is expanding its product and service offerings to achieve this goal."
+  },
+  "entities": {
+    "products": [
+      "Eleven Music",
+      "Eleven v3 (alpha)"
+    ],
+    "features": [
+      "Conversational AI",
+      "AI audio research"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "Conversational AI"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "ElevenLabs is expanding its product and service offerings",
+      "The company is focusing on AI audio research and conversational AI"
+    ],
+    "opportunities": [
+      "Partnership opportunities with ElevenLabs",
+      "Potential for increased adoption of AI audio research and conversational AI technologies"
+    ],
+    "threats": [
+      "Increased competition in the AI audio research and conversational AI spaces",
+      "Potential for ElevenLabs to establish itself as a dominant player in these areas"
+    ],
+    "recommended_actions": [
+      "Monitor ElevenLabs' product and service offerings",
+      "Consider partnership opportunities with the company",
+      "Stay up-to-date with the latest developments in AI audio research and conversational AI"
+    ]
+  },
+  "key_insights": [
+    "ElevenLabs is expanding its product and service offerings",
+    "The company is focusing on AI audio research and conversational AI"
+  ],
+  "business_impact": "The changes suggest that ElevenLabs is expanding its product and service offerings, which could lead to increased revenue and market share. The focus on conversational AI and AI audio research may also help the company to establish itself as a thought leader in these areas.",
+  "competitive_implications": "The changes may put pressure on competitors to expand their own product and service offerings, particularly in the areas of AI audio research and conversational AI.",
+  "content_hash_before": "6ab652ecd8fed71772206463fcf954e9e48b3e236ab1cd6b80b83fa83e208b76",
+  "content_hash_after": "61fcf3d27509d6fe75aca90708d72452a8e70f6a46a6307ce4903ddd749447d6",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

@@ -1,0 +1,66 @@
+{
+  "id": 1258,
+  "company": "Descript",
+  "page_url": "pricing",
+  "detected_at": "2025-08-27T16:31:06.996Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Addition of 'Templates' to the resources section and removal of 'Customer stories' from the same section, update of company logos in the 'More than 6 million creators & teams use Descript' section",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Addition of 'Templates' to the resources section and removal of 'Customer stories' from the same section, update of company logos in the 'More than 6 million creators & teams use Descript' section",
+    "change_type": "addition and removal",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Added 'Templates' to resources",
+      "Removed 'Customer stories' from resources",
+      "Updated company logos"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The addition of 'Templates' may attract more users who are looking for pre-designed templates to help them get started with their projects",
+    "market_signals": [
+      "Increased focus on user experience and ease of use"
+    ],
+    "competitive_implications": "The removal of 'Customer stories' may indicate a shift in marketing strategy, but it is not a significant change",
+    "strategic_direction": "Descript is continuing to focus on providing a user-friendly and feature-rich service"
+  },
+  "entities": {
+    "products": [],
+    "features": [
+      "Templates"
+    ],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Minor changes to the resources section",
+      "Updated company logos"
+    ],
+    "opportunities": [
+      "Descript may be able to attract more users with the addition of 'Templates'"
+    ],
+    "threats": [
+      "The removal of 'Customer stories' may be seen as a negative change by some users"
+    ],
+    "recommended_actions": [
+      "Monitor user feedback and adjust the resources section accordingly"
+    ]
+  },
+  "key_insights": [
+    "Minor changes to the resources section",
+    "Updated company logos"
+  ],
+  "business_impact": "The addition of 'Templates' may attract more users who are looking for pre-designed templates to help them get started with their projects",
+  "competitive_implications": "The removal of 'Customer stories' may indicate a shift in marketing strategy, but it is not a significant change",
+  "content_hash_before": "5c127f8225cab39709e4444b35d51d8f3215bc5d61e79027892f528cce7441e5",
+  "content_hash_after": "bb0fe7f1fb848ddceed2c48ac94326180516d6c257255595630654f820e9a45c",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

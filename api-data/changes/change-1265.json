@@ -1,0 +1,58 @@
+{
+  "id": 1265,
+  "company": "Cursor",
+  "page_url": "features",
+  "detected_at": "2025-08-27T16:30:19.267Z",
+  "change_type": "modified",
+  "interest_level": 3,
+  "ai_confidence": 0.8,
+  "summary": "Minor updates in feature descriptions and image URLs",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Minor updates in feature descriptions and image URLs",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated image URLs",
+      "Minor rewording of feature descriptions",
+      "Change from ⌘ to Ctrl for keyboard shortcuts"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "No significant business impact",
+    "market_signals": [
+      "Maintenance of existing features"
+    ],
+    "competitive_implications": "No change in competitive positioning",
+    "strategic_direction": "Continued focus on AI-powered code editing"
+  },
+  "entities": {
+    "products": [],
+    "features": [],
+    "partnerships": [],
+    "technologies": [],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Cursor continues to refine its features"
+    ],
+    "opportunities": [],
+    "threats": [],
+    "recommended_actions": [
+      "Monitor Cursor's feature updates for potential opportunities"
+    ]
+  },
+  "key_insights": [
+    "Cursor continues to refine its features"
+  ],
+  "business_impact": "No significant business impact",
+  "competitive_implications": "No change in competitive positioning",
+  "content_hash_before": "7439893c7ce7b002f41c4ba18f5e66b81f6b3178f8064d7c5150a37b75cf2952",
+  "content_hash_after": "84f771f23f4ea0d374a9dce30e0802dd56b118fab8643c27625defad3da0d6f9",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}

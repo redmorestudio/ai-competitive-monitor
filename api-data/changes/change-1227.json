@@ -1,0 +1,74 @@
+{
+  "id": 1227,
+  "company": "Luma AI",
+  "page_url": "product",
+  "detected_at": "2025-08-27T16:34:27.497Z",
+  "change_type": "modified",
+  "interest_level": 4,
+  "ai_confidence": 0.8,
+  "summary": "Minor updates to image URLs, addition of new image references, and slight rewording of certain sections",
+  "category": "minor_change",
+  "change_summary": {
+    "what_changed": "Minor updates to image URLs, addition of new image references, and slight rewording of certain sections",
+    "change_type": "update",
+    "change_scale": "minor",
+    "specific_changes": [
+      "Updated image URLs for various personas and features",
+      "Added new image references for character creation and modification",
+      "Reworded certain sections for clarity and consistency"
+    ]
+  },
+  "strategic_analysis": {
+    "business_impact": "The minor updates may improve user experience and engagement, but are unlikely to have a significant impact on the company's overall business strategy",
+    "market_signals": [
+      "continued focus on AI-powered creative tools"
+    ],
+    "competitive_implications": "The updates may help Luma AI maintain its competitive position in the market, but are unlikely to give it a significant advantage",
+    "strategic_direction": "The company appears to be continuing its focus on developing and refining its creative tools, with an emphasis on AI-powered technology"
+  },
+  "entities": {
+    "products": [
+      "Luma Dream Machine"
+    ],
+    "features": [
+      "character creation",
+      "image modification",
+      "video creation"
+    ],
+    "partnerships": [],
+    "technologies": [
+      "AI",
+      "machine learning"
+    ],
+    "people": [],
+    "pricing": [],
+    "markets": []
+  },
+  "insights": {
+    "key_findings": [
+      "Luma AI is continuing to develop and refine its creative tools",
+      "The company is focused on improving user experience and engagement"
+    ],
+    "opportunities": [
+      "Luma AI may be able to leverage its AI-powered technology to expand into new markets or offer new features"
+    ],
+    "threats": [
+      "The company may face increased competition from other providers of creative tools and AI-powered technology"
+    ],
+    "recommended_actions": [
+      "Continue to monitor Luma AI's development and refinement of its creative tools",
+      "Assess the potential for Luma AI to expand into new markets or offer new features"
+    ]
+  },
+  "key_insights": [
+    "Luma AI is continuing to develop and refine its creative tools",
+    "The company is focused on improving user experience and engagement"
+  ],
+  "business_impact": "The minor updates may improve user experience and engagement, but are unlikely to have a significant impact on the company's overall business strategy",
+  "competitive_implications": "The updates may help Luma AI maintain its competitive position in the market, but are unlikely to give it a significant advantage",
+  "content_hash_before": "c64ea1bcbba80a2187f717ad1edf5b8f590b2d0925fff8ae261a6b8035acad82",
+  "content_hash_after": "0034abe4088d5e5423837551295460aa68fcfe9f1f2535464b9c1fdc0c907f25",
+  "ai_model": "groq-llama-3.3-70b",
+  "database_source": "postgresql",
+  "schema": "intelligence.changes"
+}
