@@ -228,6 +228,8 @@ export async function showCompanyUrls(companyName) {
 
 // Show change detail modal
 export async function showChangeDetail(changeId, companyName, event) {
+    console.log(`Showing change detail for ${changeId}, company: ${companyName}`);
+    
     if (event) {
         event.stopPropagation();
         event.preventDefault();
@@ -237,11 +239,17 @@ export async function showChangeDetail(changeId, companyName, event) {
     const modalTitle = document.getElementById('modalTitle');
     const modalContent = document.getElementById('modalContent');
     
-    // Use setTimeout to ensure the modal opens after any conflicting handlers
-    setTimeout(() => {
-        modalTitle.textContent = `Change Details - ${companyName}`;
-        modal.style.display = 'block';
-    }, 0);
+    if (!modal) {
+        console.error('Company modal element not found!');
+        return;
+    }
+    
+    // Set title immediately
+    modalTitle.textContent = `Change Details - ${companyName}`;
+    modalContent.innerHTML = '<div class="loading">Loading change details...</div>';
+    
+    // Show modal immediately
+    modal.style.display = 'block';
     
     try {
         let changeData = null;
@@ -252,35 +260,46 @@ export async function showChangeDetail(changeId, companyName, event) {
             const index = parseInt(parts[2]);
             if (!isNaN(index) && window.companyModalChanges && window.companyModalChanges[index]) {
                 changeData = window.companyModalChanges[index];
+                console.log('Found change data via Strategy 0 (company modal)');
             }
         }
         
         // Strategy 1: Check if we have the change in window.allChanges (from changes tab)
         if (!changeData && window.allChanges) {
+            console.log(`Strategy 1: Checking window.allChanges (${window.allChanges.length} items)`);
             // If it's a generated ID, find by index
             if (changeId.startsWith('recent-') || changeId.startsWith('change-')) {
                 const parts = changeId.split('-');
                 const index = parseInt(parts[1]);
+                console.log(`Looking for index ${index}`);
                 if (!isNaN(index) && window.allChanges[index]) {
                     changeData = window.allChanges[index];
+                    console.log('Found change data via Strategy 1 (allChanges by index)');
                 }
             } else {
                 // Try to find by exact ID match
                 changeData = window.allChanges.find(change => change.id === changeId);
+                if (changeData) console.log('Found change data via Strategy 1 (allChanges by ID)');
             }
+        } else if (!window.allChanges) {
+            console.log('window.allChanges not available');
         }
         
         // Strategy 1.5: Check if it's a high-interest change from the dashboard
         if (!changeData && changeId.startsWith('high-interest-')) {
+            console.log(`Strategy 1.5: Checking for high-interest change ${changeId}`);
             // First try to get the data directly from the stored reference
             if (window[`changeData_${changeId}`]) {
                 changeData = window[`changeData_${changeId}`];
+                console.log('Found change data via Strategy 1.5 (stored reference)');
             } else {
                 // Fall back to parsing the index
                 const parts = changeId.split('-');
                 const index = parseInt(parts[2]);
+                console.log(`Looking for high interest index ${index}`);
                 if (!isNaN(index) && window.highInterestChanges && window.highInterestChanges[index]) {
                     changeData = window.highInterestChanges[index];
+                    console.log('Found change data via Strategy 1.5 (highInterestChanges)');
                 }
             }
         }
@@ -347,8 +366,11 @@ export async function showChangeDetail(changeId, companyName, event) {
         }
         
         if (!changeData) {
+            console.error(`No change data found for changeId: ${changeId}`);
             throw new Error('Change details not found');
         }
+        
+        console.log('Change data found:', changeData);
         
         // Parse AI analysis from the summary field
         let aiAnalysis = {};
