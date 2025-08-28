@@ -428,6 +428,13 @@ class Graph3DCoordinator {
                     this.applyFiltersAndRender();
                 }
             },
+            
+            onShowProductNodesChange: (checked) => {
+                if (graph3DFilters && graph3DFilters.setNodeTypeVisibility) {
+                    graph3DFilters.setNodeTypeVisibility('product', checked);
+                    this.applyFiltersAndRender();
+                }
+            },
 
             onShowCompanyNodesChange: (checked) => {
                 if (graph3DFilters && graph3DFilters.setNodeTypeVisibility) {

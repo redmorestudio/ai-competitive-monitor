@@ -269,6 +269,10 @@ export class Graph3DUI {
                         <input type="checkbox" id="show-concept-nodes-simple" checked style="width: 20px; height: 20px;">
                     </label>
                     <label style="display: flex; align-items: center; justify-content: space-between;">
+                        <span>Show Product Nodes</span>
+                        <input type="checkbox" id="show-product-nodes-simple" checked style="width: 20px; height: 20px;">
+                    </label>
+                    <label style="display: flex; align-items: center; justify-content: space-between;">
                         <span>Show Company Nodes</span>
                         <input type="checkbox" id="show-company-nodes-simple" checked style="width: 20px; height: 20px;">
                     </label>
@@ -596,6 +600,10 @@ export class Graph3DUI {
                         <input type="checkbox" id="show-concept-nodes" checked style="width: 20px; height: 20px;">
                     </label>
                     <label style="display: flex; align-items: center; justify-content: space-between;">
+                        <span>Show Product Nodes</span>
+                        <input type="checkbox" id="show-product-nodes" checked style="width: 20px; height: 20px;">
+                    </label>
+                    <label style="display: flex; align-items: center; justify-content: space-between;">
                         <span>Show Company Nodes</span>
                         <input type="checkbox" id="show-company-nodes" checked style="width: 20px; height: 20px;">
                     </label>
@@ -861,6 +869,7 @@ export class Graph3DUI {
             flattenGraphSimple: document.getElementById('flatten-graph-simple'),
             showTechnologyNodesSimple: document.getElementById('show-technology-nodes-simple'),
             showConceptNodesSimple: document.getElementById('show-concept-nodes-simple'),
+            showProductNodesSimple: document.getElementById('show-product-nodes-simple'),
             showCompanyNodesSimple: document.getElementById('show-company-nodes-simple'),
             forceStrengthSimple: document.getElementById('force-strength-simple'),
             linkDistanceSimple: document.getElementById('link-distance-simple'),
@@ -906,6 +915,7 @@ export class Graph3DUI {
             flattenGraph: document.getElementById('flatten-graph'),
             showTechnologyNodes: document.getElementById('show-technology-nodes'),
             showConceptNodes: document.getElementById('show-concept-nodes'),
+            showProductNodes: document.getElementById('show-product-nodes'),
             showCompanyNodes: document.getElementById('show-company-nodes'),
             
             // Display elements
@@ -1057,6 +1067,7 @@ export class Graph3DUI {
         this.attachCheckboxListener('flattenGraphSimple', 'onFlattenGraphChange');
         this.attachCheckboxListener('showTechnologyNodesSimple', 'onShowTechnologyNodesChange');
         this.attachCheckboxListener('showConceptNodesSimple', 'onShowConceptNodesChange');
+        this.attachCheckboxListener('showProductNodesSimple', 'onShowProductNodesChange');
         this.attachCheckboxListener('showCompanyNodesSimple', 'onShowCompanyNodesChange');
 
         // Simple mode sliders
@@ -1183,6 +1194,7 @@ export class Graph3DUI {
         this.attachCheckboxListener('flattenGraph', 'onFlattenGraphChange');
         this.attachCheckboxListener('showTechnologyNodes', 'onShowTechnologyNodesChange');
         this.attachCheckboxListener('showConceptNodes', 'onShowConceptNodesChange');
+        this.attachCheckboxListener('showProductNodes', 'onShowProductNodesChange');
         this.attachCheckboxListener('showCompanyNodes', 'onShowCompanyNodesChange');
 
         // Filter searches
