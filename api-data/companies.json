@@ -116,11 +116,11 @@
         "claude sonnet 4"
       ],
       "ai_technologies": [
-        "python",
-        "api",
-        "natural language processing",
-        "sdks",
-        "ai"
+        "Claude",
+        "Constitutional AI",
+        "RLHF",
+        "Context Windows",
+        "Claude Instant"
       ]
     }
   },
