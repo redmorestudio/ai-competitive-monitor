@@ -434,7 +434,8 @@
                 const response = await fetch(`https://redmorestudio.github.io/ai-competitive-monitor/api-data/companies.json?t=${Date.now()}`);
                 const data = await response.json();
                 
-                companiesData = data.companies || [];
+                // Handle both array format and object with companies property
+                companiesData = Array.isArray(data) ? data : (data.companies || []);
                 
                 // Extract categories
                 categories = new Set(companiesData.map(c => c.category || c.type || 'Other'));
