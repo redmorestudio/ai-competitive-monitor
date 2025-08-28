@@ -189,9 +189,9 @@ export class Graph3DData {
             const intelligence = company.intelligence || {};
             
             // Extract products from recent changes if not in intelligence
-            let products = intelligence.top_products || [];
+            let products = intelligence.top_products || intelligence.products || [];
             let technologies = intelligence.ai_technologies || [];
-            let concepts = [];
+            let concepts = intelligence.ai_ml_concepts || [];
             
             // Try to extract from recent changes
             if (company.recentChanges && company.recentChanges.length > 0) {
