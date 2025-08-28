@@ -1056,11 +1056,9 @@
     "industry": null,
     "intelligence": {
       "top_products": [
-        "synthesia",
-        "synthesia api",
-        "chatgpt",
-        "ai avatar generator",
-        "ai video editor"
+        "AI Platform",
+        "Developer Tools",
+        "Enterprise Solutions"
       ],
       "ai_technologies": [
         "machine learning",
