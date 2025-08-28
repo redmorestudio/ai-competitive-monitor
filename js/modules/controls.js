@@ -264,6 +264,17 @@ export async function showChangeDetail(changeId, companyName, event) {
             }
         }
         
+        // Strategy 0.5: Check if it's from the summary recent changes
+        if (!changeData && changeId.startsWith('summary-change-')) {
+            const parts = changeId.split('-');
+            const index = parseInt(parts[2]);
+            console.log(`Strategy 0.5: Looking for summary change index ${index}`);
+            if (!isNaN(index) && window.summaryChanges && window.summaryChanges[index]) {
+                changeData = window.summaryChanges[index];
+                console.log('Found change data via Strategy 0.5 (summary changes)');
+            }
+        }
+        
         // Strategy 1: Check if we have the change in window.allChanges (from changes tab)
         if (!changeData && window.allChanges) {
             console.log(`Strategy 1: Checking window.allChanges (${window.allChanges.length} items)`);
@@ -293,13 +304,18 @@ export async function showChangeDetail(changeId, companyName, event) {
                 changeData = window[`changeData_${changeId}`];
                 console.log('Found change data via Strategy 1.5 (stored reference)');
             } else {
-                // Fall back to parsing the index
-                const parts = changeId.split('-');
-                const index = parseInt(parts[2]);
-                console.log(`Looking for high interest index ${index}`);
-                if (!isNaN(index) && window.highInterestChanges && window.highInterestChanges[index]) {
-                    changeData = window.highInterestChanges[index];
-                    console.log('Found change data via Strategy 1.5 (highInterestChanges)');
+                // Fall back to parsing the index from format: high-interest-INDEX-TIMESTAMP
+                // The timestamp part has many segments due to date formatting, so we just need the first number after 'high-interest-'
+                const match = changeId.match(/^high-interest-(\d+)-/);
+                if (match) {
+                    const index = parseInt(match[1]);
+                    console.log(`Looking for high interest index ${index}`);
+                    if (!isNaN(index) && window.highInterestChanges && window.highInterestChanges[index]) {
+                        changeData = window.highInterestChanges[index];
+                        console.log('Found change data via Strategy 1.5 (highInterestChanges array)');
+                    }
+                } else {
+                    console.log('Could not parse index from changeId:', changeId);
                 }
             }
         }

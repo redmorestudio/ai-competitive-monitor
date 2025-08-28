@@ -219,8 +219,17 @@ class Dashboard {
                 // Use the summary text directly from the summary field
                 const summaryText = change.summary || 'Change detected';
                 
+                // Create a unique identifier for this change
+                const changeId = `summary-change-${index}`;
+                
+                // Store the change data for modal access
+                if (!window.summaryChanges) window.summaryChanges = [];
+                window.summaryChanges[index] = change;
+                
                 html += `
-                    <div class="recent-change-item">
+                    <div class="recent-change-item" 
+                         onclick="event.stopPropagation(); window.controls.showChangeDetail('${changeId}', '${escapeHtml(change.company)}', event); return false;"
+                         style="cursor: pointer;">
                         <div class="change-header">
                             <span class="company-name">${escapeHtml(change.company)}</span>
                             <span class="interest-indicator">${interestEmoji} ${change.interest_level}/10</span>
