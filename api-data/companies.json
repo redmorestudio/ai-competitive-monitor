@@ -351,11 +351,9 @@
     "industry": null,
     "intelligence": {
       "top_products": [
-        "flux.1 kontext",
-        "flux 1.1 pro ultra",
-        "flux 1.1 pro",
-        "flux api",
-        "flux"
+        "AI Platform",
+        "Developer Tools",
+        "Enterprise Solutions"
       ],
       "ai_technologies": [
         "api",
@@ -1056,9 +1054,11 @@
     "industry": null,
     "intelligence": {
       "top_products": [
-        "AI Platform",
-        "Developer Tools",
-        "Enterprise Solutions"
+        "synthesia",
+        "synthesia api",
+        "chatgpt",
+        "ai avatar generator",
+        "ai video editor"
       ],
       "ai_technologies": [
         "machine learning",
