@@ -588,6 +588,17 @@ class Graph3DCoordinator {
         if (graph3DUI && graph3DUI.updateConceptFilters) {
             graph3DUI.updateConceptFilters(concepts, graph3DFilters.conceptFilters || new Set());
         }
+        
+        // Products
+        const products = this.rawData.nodes
+            .filter(n => n.nodeType === 'product')
+            .map(n => ({ name: n.name, count: n.companyCount }))
+            .sort((a, b) => b.count - a.count)
+            .slice(0, 50); // Limit to top 50 products for UI performance
+            
+        if (graph3DUI && graph3DUI.updateProductFilters) {
+            graph3DUI.updateProductFilters(products, graph3DFilters.productFilters || new Set());
+        }
     }
 
     /**
@@ -792,6 +803,22 @@ class Graph3DCoordinator {
                     if (window.handleConceptChange) window.handleConceptChange(cb);
                 });
         };
+        
+        window.selectAllProducts = () => {
+            document.querySelectorAll('#product-filters input[type="checkbox"]')
+                .forEach(cb => {
+                    cb.checked = true;
+                    if (window.handleProductChange) window.handleProductChange(cb);
+                });
+        };
+        
+        window.selectNoneProducts = () => {
+            document.querySelectorAll('#product-filters input[type="checkbox"]')
+                .forEach(cb => {
+                    cb.checked = false;
+                    if (window.handleProductChange) window.handleProductChange(cb);
+                });
+        };
 
         window.centerView = () => {
             if (graph3DCore && graph3DCore.fitToView) {
@@ -893,6 +920,16 @@ class Graph3DCoordinator {
                 .forEach(cb => concepts.add(cb.value));
             if (graph3DFilters && graph3DFilters.setConceptFilters) {
                 graph3DFilters.setConceptFilters(concepts);
+            }
+            this.applyFiltersAndRender();
+        };
+        
+        window.handleProductChange = (checkbox) => {
+            const products = new Set();
+            document.querySelectorAll('#product-filters input[type="checkbox"]:checked')
+                .forEach(cb => products.add(cb.value));
+            if (graph3DFilters && graph3DFilters.setProductFilters) {
+                graph3DFilters.setProductFilters(products);
             }
             this.applyFiltersAndRender();
         };
