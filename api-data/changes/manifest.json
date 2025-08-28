@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "generated_at": "2025-08-28T04:23:58.290Z",
+  "generated_at": "2025-08-28T15:59:58.249Z",
   "source": "postgresql",
-  "total_changes": 455,
+  "total_changes": 446,
   "files": [
     {
       "filename": "change-1225.json",
@@ -2595,36 +2595,6 @@
       "summary": "New articles and updates were added to the Google Blog, including 'Google Earth AI: Our state-of-the..."
     },
     {
-      "filename": "change-449.json",
-      "change_id": 449,
-      "api_path": "/api-data/changes/change-449.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-29T14:46:17.001Z",
-      "interest_level": 8,
-      "change_type": "modified",
-      "summary": "New articles and updates were added to the Google Blog, including 'Ask a Techspert: What is inferenc..."
-    },
-    {
-      "filename": "change-452.json",
-      "change_id": 452,
-      "api_path": "/api-data/changes/change-452.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-29T14:45:53.478Z",
-      "interest_level": 8,
-      "change_type": "modified",
-      "summary": "Reorganization and simplification of GitHub Copilot documentation"
-    },
-    {
-      "filename": "change-457.json",
-      "change_id": 457,
-      "api_path": "/api-data/changes/change-457.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-29T14:45:10.018Z",
-      "interest_level": 8,
-      "change_type": "modified",
-      "summary": "Changes in pricing plans, usage limits, and features for Claude models"
-    },
-    {
       "filename": "change-1201.json",
       "change_id": 1201,
       "api_path": "/api-data/changes/change-1201.json",
@@ -3255,16 +3225,6 @@
       "summary": "Download option for Windows added"
     },
     {
-      "filename": "change-456.json",
-      "change_id": 456,
-      "api_path": "/api-data/changes/change-456.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-29T14:45:17.004Z",
-      "interest_level": 5,
-      "change_type": "modified",
-      "summary": "Addition of a new case study and removal of several news articles"
-    },
-    {
       "filename": "change-1194.json",
       "change_id": 1194,
       "api_path": "/api-data/changes/change-1194.json",
@@ -3523,16 +3483,6 @@
       "interest_level": 4,
       "change_type": "modified",
       "summary": "Download options for the Windsurf Editor were updated to include a direct link for Linux and the rem..."
-    },
-    {
-      "filename": "change-455.json",
-      "change_id": 455,
-      "api_path": "/api-data/changes/change-455.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-29T14:45:23.411Z",
-      "interest_level": 4,
-      "change_type": "modified",
-      "summary": "The download link for Claude has changed from https://claude.ai/redirect/website.v1.e0360d15-f344-40..."
     },
     {
       "filename": "change-1190.json",
@@ -4095,16 +4045,6 @@
       "summary": "The download and login links for Claude have been updated with a new URL parameter."
     },
     {
-      "filename": "change-454.json",
-      "change_id": 454,
-      "api_path": "/api-data/changes/change-454.json",
-      "company": "Anthropic",
-      "detected_at": "2025-07-29T14:45:29.310Z",
-      "interest_level": 3,
-      "change_type": "modified",
-      "summary": "Update of download and login links for Claude"
-    },
-    {
       "filename": "change-1220.json",
       "change_id": 1220,
       "api_path": "/api-data/changes/change-1220.json",
@@ -4430,36 +4370,6 @@
       "api_path": "/api-data/changes/change-470.json",
       "company": "GitHub Copilot",
       "detected_at": "2025-07-30T14:14:55.328Z",
-      "interest_level": 2,
-      "change_type": "modified",
-      "summary": "No significant changes were detected in the content structure or links between the two versions."
-    },
-    {
-      "filename": "change-450.json",
-      "change_id": 450,
-      "api_path": "/api-data/changes/change-450.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-29T14:46:11.731Z",
-      "interest_level": 2,
-      "change_type": "modified",
-      "summary": "No significant changes were detected in the provided content."
-    },
-    {
-      "filename": "change-451.json",
-      "change_id": 451,
-      "api_path": "/api-data/changes/change-451.json",
-      "company": "Google DeepMind",
-      "detected_at": "2025-07-29T14:46:00.101Z",
-      "interest_level": 2,
-      "change_type": "modified",
-      "summary": "No significant changes were detected in the content structure or major updates to the models, resear..."
-    },
-    {
-      "filename": "change-453.json",
-      "change_id": 453,
-      "api_path": "/api-data/changes/change-453.json",
-      "company": "GitHub Copilot",
-      "detected_at": "2025-07-29T14:45:46.743Z",
       "interest_level": 2,
       "change_type": "modified",
       "summary": "No significant changes were detected in the content structure or links between the two versions."
