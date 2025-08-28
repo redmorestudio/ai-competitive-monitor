@@ -213,10 +213,21 @@ class EntityDisplay {
         const mentionCount = entity.mentioned_by > 0 ? 
             `<span class="entity-mention-count">${entity.mentioned_by}</span>` : '';
         
+        // Map entity type to plural form for KWIC
+        const entityTypeMap = {
+            'company': 'companies',
+            'product': 'products',
+            'technology': 'technologies',
+            'concept': 'concepts',
+            'person': 'companies', // People might be in company contexts
+            'other': 'technologies' // Default fallback
+        };
+        const kwicType = entityTypeMap[entity.type] || 'technologies';
+        
         return `
             <span class="${classes.join(' ')}" 
                   title="${escapeHtml(entity.description || `${entity.type}: ${entity.name}`)}"
-                  onclick="window.kwic && window.kwic.show('${escapeHtml(entity.name).replace(/'/g, "\\\\'")}')"
+                  onclick="window.kwic && window.kwic.show('${escapeHtml(entity.name).replace(/'/g, "\\\\'")}', '${kwicType}')"
                   data-entity-id="${entity.id}">
                 ${escapeHtml(entity.name)}
                 ${mentionCount}
