@@ -364,6 +364,7 @@ export class Graph3DData {
         const links = [];
         const techNodes = new Map();
         const conceptNodes = new Map();
+        const productNodes = new Map();
 
         console.log('Processing', companies.length, 'companies into graph data');
         console.log('Sample company:', companies[0]);
@@ -408,10 +409,21 @@ export class Graph3DData {
                     conceptNodes.get(concept).add(company.id);
                 });
             }
+            
+            // Track product nodes (ensure array exists)
+            if (company.intelligence.products && company.intelligence.products.length > 0) {
+                company.intelligence.products.forEach(product => {
+                    if (!productNodes.has(product)) {
+                        productNodes.set(product, new Set());
+                    }
+                    productNodes.get(product).add(company.id);
+                });
+            }
         });
 
         console.log('Found', techNodes.size, 'unique technologies');
         console.log('Found', conceptNodes.size, 'unique concepts');
+        console.log('Found', productNodes.size, 'unique products');
 
         // Create technology nodes
         techNodes.forEach((companies, tech) => {
@@ -459,6 +471,32 @@ export class Graph3DData {
                     source: companyId,
                     target: conceptId,
                     linkType: 'concept',
+                    strength: companies.size, // Use actual company count as strength
+                    connectionCount: companies.size
+                });
+            });
+        });
+        
+        // Create product nodes
+        productNodes.forEach((companies, product) => {
+            const productId = `product-${product}`;
+            nodes.push({
+                id: productId,
+                name: product,
+                nodeType: 'product',
+                companyCount: companies.size,
+                // Initial random 3D positions for true 3D layout
+                x: (Math.random() - 0.5) * 600,
+                y: (Math.random() - 0.5) * 600,
+                z: (Math.random() - 0.5) * 600
+            });
+
+            // Create links from companies to products
+            companies.forEach(companyId => {
+                links.push({
+                    source: companyId,
+                    target: productId,
+                    linkType: 'product',
                     strength: companies.size, // Use actual company count as strength
                     connectionCount: companies.size
                 });

@@ -41,7 +41,8 @@ export class Graph3DVisuals {
             'Video AI': '#3f51b5',
             'AI Consulting and Education': '#808080',  // Gray for consulting
             'technology': '#00ff88',
-            'concept': '#00ffff'
+            'concept': '#00ffff',
+            'product': '#ff00ff'  // Magenta for products
         };
 
         // Size multipliers
@@ -251,6 +252,7 @@ export class Graph3DVisuals {
     getEntityColor(node) {
         if (node.nodeType === 'technology') return this.entityColors.technology;
         if (node.nodeType === 'concept') return this.entityColors.concept;
+        if (node.nodeType === 'product') return this.entityColors.product;
         if (node.nodeType === 'company') {
             return this.entityColors[node.companyType] || '#ffffff'; // Default white for unknown types
         }

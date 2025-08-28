@@ -483,17 +483,25 @@ jobs:
             node markdown-converter-three-db-postgres.js || echo "⚠️  Markdown conversion had issues"
           fi
           
-          # Now generate contexts using MINIMAL version for speed
-          echo "Step 2: Extracting contexts for HIGH-PRIORITY entities only..."
-          if [ -f "generate-entity-contexts-minimal.js" ]; then
-            echo "⚡ Using minimal context generator (50 entities max, reduced sampling)..."
-            if timeout 5m node generate-entity-contexts-minimal.js; then
-              echo "✅ Minimal entity contexts generated successfully"
+          # Now generate contexts using OPTIMIZED version for better coverage
+          echo "Step 2: Extracting contexts for all entity types..."
+          if [ -f "generate-entity-contexts-optimized.js" ]; then
+            echo "⚡ Using optimized context generator..."
+            if timeout 8m node generate-entity-contexts-optimized.js; then
+              echo "✅ Optimized entity contexts generated successfully"
             else
-              echo "⚠️  Minimal context generation failed or timed out, trying fallback..."
-              # Create empty context files so dashboard doesn't break
-              echo '{"entities": [], "mode": "empty", "message": "Context generation skipped to prevent timeout"}' > ../api-data/contexts-companies.json
-              echo '{"entities": [], "mode": "empty", "message": "Context generation skipped to prevent timeout"}' > ../api-data/contexts-products.json
+              echo "⚠️  Optimized context generation failed or timed out, trying minimal fallback..."
+              if [ -f "generate-entity-contexts-minimal.js" ]; then
+                if timeout 5m node generate-entity-contexts-minimal.js; then
+                  echo "✅ Minimal fallback succeeded"
+                else
+                  # Create empty context files so dashboard doesn't break
+                  echo '{"contexts": {}, "type": "companies", "message": "Context generation skipped"}' > ../api-data/contexts-companies.json
+                  echo '{"contexts": {}, "type": "products", "message": "Context generation skipped"}' > ../api-data/contexts-products.json
+                  echo '{"contexts": {}, "type": "technologies", "message": "Context generation skipped"}' > ../api-data/contexts-technologies.json
+                  echo '{"contexts": {}, "type": "concepts", "message": "Context generation skipped"}' > ../api-data/contexts-concepts.json
+                fi
+              fi
             fi
           elif [ -f "generate-entity-contexts-grouped.js" ]; then
             echo "⚠️  Minimal version not found, using full version with timeout..."

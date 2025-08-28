@@ -15,12 +15,14 @@ export class Graph3DFilters {
         this.entityTypeFilters = new Set();
         this.technologyFilters = new Set();
         this.conceptFilters = new Set();
+        this.productFilters = new Set();
         this.searchQuery = '';
         this.searchDepth = 1;
         this.linkThreshold = 0;
         this.entityLimit = 200;
         this.showTechnologyNodes = true;
         this.showConceptNodes = true;
+        this.showProductNodes = true;
         this.showCompanyNodes = true;
         this.customTagFilter = null;
         this.viewModeFilter = null;
@@ -71,8 +73,13 @@ export class Graph3DFilters {
         if (this.conceptFilters.size > 0) {
             filteredNodes = this.filterByConcept(filteredNodes, rawData);
         }
+        
+        // Step 8: Apply product filters
+        if (this.productFilters.size > 0) {
+            filteredNodes = this.filterByProduct(filteredNodes, rawData);
+        }
 
-        // Step 8: Apply entity limit
+        // Step 9: Apply entity limit
         if (filteredNodes.length > this.entityLimit) {
             filteredNodes = filteredNodes.slice(0, this.entityLimit);
         }
@@ -98,6 +105,7 @@ export class Graph3DFilters {
                                    this.searchQuery !== '' ||
                                    !this.showTechnologyNodes ||
                                    !this.showConceptNodes ||
+                                   !this.showProductNodes ||
                                    !this.showCompanyNodes;
         
         if (shouldFilterOrphans && filteredLinks.length > 0) {
@@ -135,6 +143,7 @@ export class Graph3DFilters {
         return nodes.filter(node => {
             if (node.nodeType === 'technology' && !this.showTechnologyNodes) return false;
             if (node.nodeType === 'concept' && !this.showConceptNodes) return false;
+            if (node.nodeType === 'product' && !this.showProductNodes) return false;
             if (node.nodeType === 'company' && !this.showCompanyNodes) return false;
             return true;
         });
@@ -312,6 +321,36 @@ export class Graph3DFilters {
             node.nodeType === 'technology'
         );
     }
+    
+    /**
+     * Filter by product
+     * @param {Array} nodes - Nodes to filter
+     * @param {Object} rawData - Original data
+     * @returns {Array} Filtered nodes
+     */
+    filterByProduct(nodes, rawData) {
+        const productNodes = Array.from(this.productFilters).map(product => `product-${product}`);
+        const companiesWithProduct = new Set();
+
+        // Find companies with selected products
+        rawData.nodes.forEach(node => {
+            if (node.nodeType === 'company' && node.products) {
+                const hasProduct = node.products.some(product => 
+                    this.productFilters.has(product)
+                );
+                if (hasProduct) {
+                    companiesWithProduct.add(node.id);
+                }
+            }
+        });
+
+        return nodes.filter(node => 
+            productNodes.includes(node.id) || 
+            companiesWithProduct.has(node.id) ||
+            node.nodeType === 'technology' ||
+            node.nodeType === 'concept'
+        );
+    }
 
     /**
      * Set entity type filters
@@ -335,6 +374,14 @@ export class Graph3DFilters {
      */
     setConceptFilters(concepts) {
         this.conceptFilters = new Set(concepts);
+    }
+    
+    /**
+     * Set product filters
+     * @param {Set} products - Set of products to filter by
+     */
+    setProductFilters(products) {
+        this.productFilters = new Set(products);
     }
 
     /**
@@ -382,6 +429,9 @@ export class Graph3DFilters {
             case 'concept':
                 this.showConceptNodes = visible;
                 break;
+            case 'product':
+                this.showProductNodes = visible;
+                break;
             case 'company':
                 this.showCompanyNodes = visible;
                 break;
@@ -417,6 +467,7 @@ export class Graph3DFilters {
         this.entityLimit = 200;
         this.showTechnologyNodes = true;
         this.showConceptNodes = true;
+        this.showProductNodes = true;
         this.showCompanyNodes = true;
         this.customTagFilter = null;
         this.viewModeFilter = null;
@@ -440,7 +491,7 @@ export class Graph3DFilters {
         if (this.searchQuery) stats.activeFilters++;
         if (this.linkThreshold > 0) stats.activeFilters++;
         if (this.entityLimit < 200) stats.activeFilters++;
-        if (!this.showTechnologyNodes || !this.showConceptNodes || !this.showCompanyNodes) stats.activeFilters++;
+        if (!this.showTechnologyNodes || !this.showConceptNodes || !this.showProductNodes || !this.showCompanyNodes) stats.activeFilters++;
         if (this.customTagFilter) stats.activeFilters++;
         if (this.viewModeFilter) stats.activeFilters++;
 
@@ -462,6 +513,7 @@ export class Graph3DFilters {
             entityLimit: this.entityLimit,
             showTechnologyNodes: this.showTechnologyNodes,
             showConceptNodes: this.showConceptNodes,
+            showProductNodes: this.showProductNodes,
             showCompanyNodes: this.showCompanyNodes,
             customTagFilter: this.customTagFilter,
             viewModeFilter: this.viewModeFilter
@@ -482,6 +534,7 @@ export class Graph3DFilters {
         if (settings.entityLimit !== undefined) this.entityLimit = settings.entityLimit;
         if (settings.showTechnologyNodes !== undefined) this.showTechnologyNodes = settings.showTechnologyNodes;
         if (settings.showConceptNodes !== undefined) this.showConceptNodes = settings.showConceptNodes;
+        if (settings.showProductNodes !== undefined) this.showProductNodes = settings.showProductNodes;
         if (settings.showCompanyNodes !== undefined) this.showCompanyNodes = settings.showCompanyNodes;
         if (settings.customTagFilter !== undefined) this.customTagFilter = settings.customTagFilter;
         if (settings.viewModeFilter !== undefined) this.viewModeFilter = settings.viewModeFilter;

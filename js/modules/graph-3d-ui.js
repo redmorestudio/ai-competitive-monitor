@@ -117,6 +117,9 @@ export class Graph3DUI {
                     <!-- Filter by AI Concepts -->
                     ${this.renderConceptFilter()}
                     
+                    <!-- Filter by Products -->
+                    ${this.renderProductFilter()}
+                    
                     <!-- Search -->
                     ${this.renderSearchAdvanced()}
                 </div>
@@ -784,6 +787,38 @@ export class Graph3DUI {
             </div>
         `;
     }
+    
+    renderProductFilter() {
+        return `
+            <div class="control-group">
+                <h4 style="color: #00ff88; font-size: 14px; margin-bottom: 10px;">Filter by Products</h4>
+                <div class="select-buttons" style="display: flex; gap: 10px; margin-bottom: 10px;">
+                    <button onclick="selectAllProducts()" 
+                            style="flex: 1; padding: 8px; background: transparent; 
+                                   border: 1px solid #00ff88; color: #00ff88; 
+                                   border-radius: 4px; cursor: pointer;">
+                        Select All
+                    </button>
+                    <button onclick="selectNoneProducts()" 
+                            style="flex: 1; padding: 8px; background: transparent; 
+                                   border: 1px solid #00ff88; color: #00ff88; 
+                                   border-radius: 4px; cursor: pointer;">
+                        Select None
+                    </button>
+                </div>
+                <input type="text" id="product-search" placeholder="Search products..." 
+                       style="width: 100%; padding: 8px; margin-bottom: 10px; 
+                              background: rgba(0, 0, 0, 0.5); 
+                              border: 1px solid #333; border-radius: 4px; color: #eee;">
+                <div id="product-filters" class="checkbox-group" 
+                     style="max-height: 200px; overflow-y: auto; 
+                            background: rgba(0, 0, 0, 0.3); 
+                            border: 1px solid #333; border-radius: 4px; 
+                            padding: 10px;">
+                </div>
+            </div>
+        `;
+    }
 
     renderSearchAdvanced() {
         return `
@@ -893,7 +928,9 @@ export class Graph3DUI {
             typeFiltersSimple: document.getElementById('type-filters-simple'),
             typeFilters: document.getElementById('type-filters'),
             techFilters: document.getElementById('tech-filters'),
-            conceptFilters: document.getElementById('concept-filters')
+            conceptFilters: document.getElementById('concept-filters'),
+            productFilters: document.getElementById('product-filters'),
+            productSearch: document.getElementById('product-search')
         };
     }
 
@@ -1160,6 +1197,12 @@ export class Graph3DUI {
                 this.filterCheckboxList('concept-filters', e.target.value);
             });
         }
+        
+        if (this.elements.productSearch) {
+            this.elements.productSearch.addEventListener('input', (e) => {
+                this.filterCheckboxList('product-filters', e.target.value);
+            });
+        }
     }
 
     /**
@@ -1267,6 +1310,24 @@ export class Graph3DUI {
                        style="width: 20px; height: 20px; margin-right: 8px;">
                 <span style="flex: 1; font-size: 12px;">${concept.name}</span>
                 <span style="color: #666; font-size: 11px;">(${concept.count})</span>
+            </label>
+        `).join('');
+    }
+    
+    /**
+     * Update product filters
+     */
+    updateProductFilters(products, selected) {
+        if (!this.elements.productFilters) return;
+        
+        this.elements.productFilters.innerHTML = products.map(product => `
+            <label style="display: flex; align-items: center; padding: 6px 0;">
+                <input type="checkbox" value="${product.name}" 
+                       ${selected.has(product.name) ? 'checked' : ''}
+                       onchange="handleProductChange(this)"
+                       style="width: 20px; height: 20px; margin-right: 8px;">
+                <span style="flex: 1; font-size: 12px;">${product.name}</span>
+                <span style="color: #666; font-size: 11px;">(${product.count})</span>
             </label>
         `).join('');
     }
