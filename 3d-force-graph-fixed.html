@@ -2619,17 +2619,25 @@
                 // Visual toggles
                 document.getElementById('toggle-links').addEventListener('change', (e) => {
                     linksEnabled = e.target.checked;
-                    Graph.linkVisibility(linksEnabled);
+                    if (Graph) {
+                        // Use linkOpacity for better visual effect
+                        Graph.linkOpacity(linksEnabled ? CONFIG.linkOpacity : 0);
+                    }
                 });
                 
                 document.getElementById('toggle-labels').addEventListener('change', (e) => {
                     labelsEnabled = e.target.checked;
-                    Graph.nodeThreeObject(node => {
-                        if (!labelsEnabled) {
-                            return null;
-                        }
-                        return createNodeObject(node);
-                    });
+                    if (Graph) {
+                        // Force re-render of all nodes
+                        Graph.nodeThreeObject(node => {
+                            if (!labelsEnabled) {
+                                // Return empty mesh instead of null
+                                return new THREE.Mesh();
+                            }
+                            return createNodeObject(node);
+                        });
+                        Graph.refresh();
+                    }
                 });
                 
                 // Font size control
@@ -2643,7 +2651,10 @@
                 
                 document.getElementById('toggle-particles').addEventListener('change', (e) => {
                     particlesEnabled = e.target.checked;
-                    Graph.linkDirectionalParticles(link => particlesEnabled ? 2 : 0);
+                    if (Graph) {
+                        // Set particles for all links
+                        Graph.linkDirectionalParticles(particlesEnabled ? 2 : 0);
+                    }
                 });
                 
                 // Link width multiplier control
@@ -3689,24 +3700,7 @@
             }
             
             
-            // Event handlers
-            document.getElementById('toggle-links').addEventListener('change', (e) => {
-                linksEnabled = e.target.checked;
-                if (Graph) {
-                    Graph.linkOpacity(linksEnabled ? CONFIG.linkOpacity : 0);
-                }
-            });
-            
-            // Already handled above - remove duplicate handler
-            
-            document.getElementById('toggle-particles').addEventListener('change', (e) => {
-                particlesEnabled = e.target.checked;
-                if (Graph) {
-                    Graph.linkDirectionalParticles(particlesEnabled ? 2 : 0);
-                }
-            });
-            
-            // Already handled above - remove duplicate handler
+            // Event handlers - REMOVED DUPLICATES (already handled above)
             
             document.getElementById('toggle-floating-tooltip').addEventListener('change', (e) => {
                 floatingTooltipEnabled = e.target.checked;
