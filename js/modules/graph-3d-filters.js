@@ -100,6 +100,7 @@ export class Graph3DFilters {
                                    this.linkThreshold > 0 || 
                                    this.technologyFilters.size > 0 || 
                                    this.conceptFilters.size > 0 ||
+                                   this.productFilters.size > 0 ||
                                    this.customTagFilter !== null ||
                                    this.viewModeFilter !== null ||
                                    this.searchQuery !== '' ||
@@ -461,6 +462,7 @@ export class Graph3DFilters {
         this.entityTypeFilters.clear();
         this.technologyFilters.clear();
         this.conceptFilters.clear();
+        this.productFilters.clear();
         this.searchQuery = '';
         this.searchDepth = 1;
         this.linkThreshold = 0;
@@ -488,6 +490,7 @@ export class Graph3DFilters {
         if (this.entityTypeFilters.size > 0) stats.activeFilters++;
         if (this.technologyFilters.size > 0) stats.activeFilters++;
         if (this.conceptFilters.size > 0) stats.activeFilters++;
+        if (this.productFilters.size > 0) stats.activeFilters++;
         if (this.searchQuery) stats.activeFilters++;
         if (this.linkThreshold > 0) stats.activeFilters++;
         if (this.entityLimit < 200) stats.activeFilters++;
@@ -507,6 +510,7 @@ export class Graph3DFilters {
             entityTypeFilters: Array.from(this.entityTypeFilters),
             technologyFilters: Array.from(this.technologyFilters),
             conceptFilters: Array.from(this.conceptFilters),
+            productFilters: Array.from(this.productFilters),
             searchQuery: this.searchQuery,
             searchDepth: this.searchDepth,
             linkThreshold: this.linkThreshold,
@@ -528,6 +532,7 @@ export class Graph3DFilters {
         if (settings.entityTypeFilters) this.setEntityTypeFilters(new Set(settings.entityTypeFilters));
         if (settings.technologyFilters) this.setTechnologyFilters(new Set(settings.technologyFilters));
         if (settings.conceptFilters) this.setConceptFilters(new Set(settings.conceptFilters));
+        if (settings.productFilters) this.setProductFilters(new Set(settings.productFilters));
         if (settings.searchQuery !== undefined) this.searchQuery = settings.searchQuery;
         if (settings.searchDepth !== undefined) this.searchDepth = settings.searchDepth;
         if (settings.linkThreshold !== undefined) this.linkThreshold = settings.linkThreshold;
