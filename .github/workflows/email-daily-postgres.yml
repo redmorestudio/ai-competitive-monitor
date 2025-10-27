@@ -1,10 +1,6 @@
 name: Email Daily Digest (PostgreSQL)
 
 on:
-  schedule:
-    # Run at 2 PM UTC (9 AM EST / 8 AM CST) every day
-    - cron: '0 14 * * *'
-  
   workflow_dispatch:
     inputs:
       test_mode:

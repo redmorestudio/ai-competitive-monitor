@@ -1,10 +1,6 @@
 name: Complete State Report
 
 on:
-  # Run weekly on Mondays at 10 AM UTC
-  schedule:
-    - cron: '0 10 * * 1'
-  
   # Allow manual trigger
   workflow_dispatch:
 

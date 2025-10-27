@@ -1,10 +1,6 @@
 name: System Health Check
 
 on:
-  # Run every 6 hours
-  schedule:
-    - cron: '0 */6 * * *'
-  
   # Allow manual trigger
   workflow_dispatch:
 
